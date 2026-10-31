@@ -1,0 +1,711 @@
+[
+  {
+    "name": "SIGMOD/PODS 2027",
+    "year": 2027,
+    "location": "Huntington Beach, CA, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://2027.sigmod.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2026",
+    "year": 2026,
+    "location": "Bengaluru, India",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://2026.sigmod.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2025",
+    "year": 2025,
+    "location": "Berlin, Germany",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://2025.sigmod.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2024",
+    "year": 2024,
+    "location": "Santiago, Chile",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://2024.sigmod.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2023",
+    "year": 2023,
+    "location": "Seattle, Washington, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://2023.sigmod.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2022",
+    "year": 2022,
+    "location": "Philadelphia, Pennsylvania, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://2022.sigmod.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2021",
+    "year": 2021,
+    "location": "Xian, Shaanxi, China",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://2021.sigmod.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2020",
+    "year": 2020,
+    "location": "Portland, Oregon, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://sigmod2020.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2019",
+    "year": 2019,
+    "location": "Amsterdam, The Netherlands",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://sigmod2019.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2018",
+    "year": 2018,
+    "location": "Houston, Texas, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://sigmod2018.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2017",
+    "year": 2017,
+    "location": "Raleigh, North Carolina, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.sigmod2017.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2016",
+    "year": 2016,
+    "location": "San Francisco, California, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.sigmod2016.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2015",
+    "year": 2015,
+    "location": "Melbourne, Victoria, Australia",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.sigmod2015.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2014",
+    "year": 2014,
+    "location": "Snowbird, Utah, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.sigmod2014.org"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2013",
+    "year": 2013,
+    "location": "New York, New York, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://sigmod.org/2013/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2012",
+    "year": 2012,
+    "location": "Scottsdale, Arizona, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://sigmod.org/2012/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2012/index.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2011",
+    "year": 2011,
+    "location": "Athens, Greece",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.sigmod2011.org/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2010",
+    "year": 2010,
+    "location": "Indianapolis, Indiana, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.sigmod2010.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2010/index.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2009",
+    "year": 2009,
+    "location": "Providence, Rhode Island, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.sigmod09.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2009/index.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2008",
+    "year": 2008,
+    "location": "Vancouver, BC, Canada",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.sigmod08.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2008/index.shtml.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2007",
+    "year": 2007,
+    "location": "Beijing, China",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://sigmod07.riit.tsinghua.edu.cn/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2007/index.shtml.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2006",
+    "year": 2006,
+    "location": "Chicago, Illinois, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.umich.edu/sigmod-pods06"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2006/sigmod-pods06.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2005",
+    "year": 2005,
+    "location": "Baltimore, Maryland, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://cimic.rutgers.edu/~sigmod05/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2005/~sigmod05.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2004",
+    "year": 2004,
+    "location": "Paris, France",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.sciences.univ-nantes.fr/lina/SIGMODPODS04/"
+      },
+      {
+        "label": "[Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2004/index.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2003",
+    "year": 2003,
+    "location": "San Diego, California, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.db.ucsd.edu/SIGMODPODS03/welcome.htm"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2003/index.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2002",
+    "year": 2002,
+    "location": "Madison, Wisconsin, USA",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www-db.cs.wisc.edu/sigmodpods2002"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2002/sigmodpods2002.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2001",
+    "year": 2001,
+    "location": "Santa Barbara, California, USA",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-2001/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 2000",
+    "year": 2000,
+    "location": "Dallas, Texas",
+    "links": [
+      {
+        "label": "Conference Website",
+        "url": "http://www.seas.smu.edu/sigmod2000/index.html"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod.org/publications/pastconf/sigmod2000/index.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 1999",
+    "year": 1999,
+    "location": "Philadelphia, PA",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1999/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 1998",
+    "year": 1998,
+    "location": "Seattle, Washington",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1998/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 1997",
+    "year": 1997,
+    "location": "Tucson, Arizona",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1997/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/the-pods-pages/pods-organization.html"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 1996",
+    "year": 1996,
+    "location": "Montreal, Canada",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1996/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 1995",
+    "year": 1995,
+    "location": "San Jose, California",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1995/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 1994",
+    "year": 1994,
+    "location": "Minneapolis, Minnesota",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1994/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 1993",
+    "year": 1993,
+    "location": "Washington, D.C.",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1993/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 1992",
+    "year": 1992,
+    "location": "San Diego, California",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1992/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD/PODS 1991",
+    "year": 1991,
+    "location": "Denver, Colorado",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1991/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1990 PODS 1990",
+    "year": 1990,
+    "location": "Atlantic City, NJ Nashville, Tennessee",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1990/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1989 PODS 1989",
+    "year": 1989,
+    "location": "Portland, Oregon Philadelphia, Pennsylvania",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1989/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1988 PODS 1988",
+    "year": 1988,
+    "location": "Chicago, Illinoi Austin, Texas",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1988/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1987 PODS 1987",
+    "year": 1987,
+    "location": "San Francisco, California San Diego, California",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1987/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1986 PODS 1986",
+    "year": 1986,
+    "location": "Washington, D.C. Cambridge, Massachusetts",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1986/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1985 PODS 1985",
+    "year": 1985,
+    "location": "Austin, Texas Portland, Oregon",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1985/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1984 PODS 1984",
+    "year": 1984,
+    "location": "Boston, Massachusetts Waterloo, Ontario, Canada",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1984/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1983 PODS 1983",
+    "year": 1983,
+    "location": "San Jose, California Atlanta, Georgia",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1983/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1982 PODS 1982",
+    "year": 1982,
+    "location": "Orlando, Florida Los Angeles, California",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1982/"
+      },
+      {
+        "label": "PODS OC & PC",
+        "url": "https://sigmod.org/conferences/pods/pods-organization"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1981",
+    "year": 1981,
+    "location": "Ann Arbor, Michigan",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1981/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1980",
+    "year": 1980,
+    "location": "Santa Monica, California",
+    "links": []
+  },
+  {
+    "name": "SIGMOD 1979",
+    "year": 1979,
+    "location": "Boston, Massachusetts",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1979/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1978",
+    "year": 1978,
+    "location": "Austin, Texas",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1978/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1977",
+    "year": 1977,
+    "location": "Toronto, Canada",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1977/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1976",
+    "year": 1976,
+    "location": "Washington, D.C.",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1976/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1975",
+    "year": 1975,
+    "location": "San Jose, California",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1975/"
+      }
+    ]
+  },
+  {
+    "name": "SIGMOD 1974",
+    "year": 1974,
+    "location": "Ann Arbor, Michigan",
+    "links": [
+      {
+        "label": "SIGMOD OC & PC",
+        "url": "/conferences/sigmod-1974/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "theme-a",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "serve:a"
+      ],
+      "port": 8081
+    },
+    {
+      "name": "theme-b",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "serve:b"
+      ],
+      "port": 8082
+    },
+    {
+      "name": "theme-c",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "serve:c"
+      ],
+      "port": 8083
+    },
+    {
+      "name": "theme-d",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "serve:d"
+      ],
+      "port": 8084
+    },
+    {
+      "name": "preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "preview"
+      ],
+      "port": 8090
+    }
+  ]
+}

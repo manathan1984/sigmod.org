@@ -1,0 +1,44 @@
+{%- from "shared/brand.njk" import brand -%}
+{%- if redirect_to %}{% include "shared/redirect.njk" %}{% else -%}
+<!doctype html>
+<html lang="en">
+<head>
+{% include "shared/head.njk" %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="space-{{ 'pods' if section == 'pods' else 'sigmod' }}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="/" aria-label="ACM SIGMOD home">{{ brand() }}</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      {%- for m in nav.main %}
+      <div class="nav-item{% if m | isActive(page.url) or (m.area == 'pods' and section == 'pods') %} active{% endif %}">
+        <a class="nav-top" href="{{ m.url }}">{{ m.label }}</a>
+        <div class="mega">
+          <p class="mega-title">{{ m.label }}</p>
+          <ul>{% for c in m.children %}<li><a href="{{ c.url }}">{{ c.label }}{% if c.external %} <span aria-hidden="true">↗</span>{% endif %}</a></li>{% endfor %}</ul>
+        </div>
+      </div>
+      {%- endfor %}
+    </nav>
+    <a class="btn btn-sm" href="{{ nav.join.url }}">{{ nav.join.label }}</a>
+    <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+<main id="main">
+{{ content | safe }}
+</main>
+{% include "shared/footer-dark.njk" %}
+<script>
+document.querySelector('.burger').addEventListener('click', e => {
+  const open = document.body.classList.toggle('nav-open');
+  e.currentTarget.setAttribute('aria-expanded', open);
+});
+</script>
+{% include "shared/devbar.njk" %}
+</body>
+</html>
+{%- endif %}

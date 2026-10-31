@@ -1,0 +1,34 @@
+{%- from "shared/brand.njk" import brand -%}
+{%- if redirect_to %}{% include "shared/redirect.njk" %}{% else -%}
+<!doctype html>
+<html lang="en">
+<head>
+{% include "shared/head.njk" %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+</head>
+<body class="{{ 'is-pods' if section == 'pods' }}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="/" aria-label="ACM SIGMOD home">
+      {{ brand() }}
+      <span class="logo-tag">Special Interest Group<br>on Management of Data</span>
+    </a>
+    <button class="burger" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">{% include "shared/nav-combined.njk" %}</nav>
+    <a class="btn-join" href="{{ nav.join.url }}">{{ nav.join.label }}</a>
+  </div>
+</header>
+<main id="main">
+{{ content | safe }}
+</main>
+{% include "shared/footer-dark.njk" %}
+<script>
+document.querySelector('.burger').addEventListener('click', e => e.currentTarget.setAttribute('aria-expanded', document.body.classList.toggle('nav-open')));
+</script>
+{% include "shared/devbar.njk" %}
+</body>
+</html>
+{%- endif %}

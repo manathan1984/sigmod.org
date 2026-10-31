@@ -1,0 +1,18 @@
+---
+layout: c/base.njk
+---
+{%- set menu = nav.main | findMenu(page.url, area) -%}
+<div class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Home</a>{% if menu %}<span>/</span><a href="{{ menu.url }}">{{ menu.label }}</a>{% endif %}{% if wp_type == "post" %}<span>/</span><a href="/news/">News</a>{% endif %}</p>
+    <h1>{{ title }}</h1>
+    {%- if wp_type == "post" %}<p class="page-date">{{ date | date }}</p>{% endif %}
+  </div>
+</div>
+<div class="wrap page-grid{% if not menu %} no-side{% endif %}">
+  <article class="prose">
+    {{ content | safe }}
+    {% include "shared/meta.njk" %}
+  </article>
+  {%- if menu %}<aside class="side">{% include "shared/side-menu.njk" %}</aside>{% endif %}
+</div>

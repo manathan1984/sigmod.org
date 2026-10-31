@@ -1,0 +1,14 @@
+{%- set menu = nav.main | findMenu(page.url, area) -%}
+{%- if menu %}
+<nav class="side-nav" aria-label="{{ menu.label }}">
+  <a class="side-title" href="{{ menu.url }}">{{ menu.label }}</a>
+  {%- if menu.groups %}
+  {%- for g in menu.groups %}
+  <p class="side-group">{{ g.label }}</p>
+  <ul>{% for c in g.children %}<li><a href="{{ c.url }}"{% if c.url == page.url %} aria-current="page"{% endif %}>{{ c.label }}</a></li>{% endfor %}</ul>
+  {%- endfor %}
+  {%- else %}
+  <ul>{% for c in menu.children %}<li><a href="{{ c.url }}"{% if c.url == page.url %} aria-current="page"{% endif %}>{{ c.label }}{% if c.external %} ↗{% endif %}</a></li>{% endfor %}</ul>
+  {%- endif %}
+</nav>
+{%- endif %}

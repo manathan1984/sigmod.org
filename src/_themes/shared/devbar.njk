@@ -1,0 +1,18 @@
+{#- Design switcher: by port when serving locally, by folder in the preview build #}
+{%- if dev or preview %}
+<div class="devbar" role="navigation" aria-label="Design alternatives">
+  <span>Design</span>
+  {%- for t in site.themes %}
+  <a href="{% if preview %}{{ page.url | toThemesRoot }}{{ t.id }}{{ page.url }}{% else %}http://localhost:{{ t.port }}{{ page.url }}{% endif %}"{% if t.id == theme %} aria-current="true"{% endif %}>{{ t.id | upper }} · {{ t.name }}</a>
+  {%- endfor %}
+  <a href="/proposals/logos/"{% if page.url == "/proposals/logos/" %} aria-current="true"{% endif %}>Logos</a>
+</div>
+<style>
+.devbar{position:fixed;z-index:9999;right:16px;bottom:16px;display:flex;gap:4px;align-items:center;padding:6px;border-radius:999px;background:#111;color:#bbb;font:600 12px/1 system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.devbar span{padding:0 8px;text-transform:uppercase;letter-spacing:.08em;font-size:10px}
+.devbar a{color:#ddd;text-decoration:none;padding:7px 11px;border-radius:999px}
+.devbar a:hover{background:#333}
+.devbar a[aria-current]{background:#fff;color:#111}
+@media (max-width:600px){.devbar span{display:none}.devbar{left:16px;right:16px;justify-content:center}}
+</style>
+{%- endif %}

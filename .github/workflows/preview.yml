@@ -1,0 +1,47 @@
+# Builds every design alternative and publishes them side by side on GitHub Pages:
+#   https://<owner>.github.io/<repo>/a/ … /d/   (switch with the bar at the bottom)
+name: Preview on GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Build all designs
+        run: npm run build:preview
+        env:
+          PREVIEW_BASE: ${{ steps.pages.outputs.base_path }}/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _preview
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}c/
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

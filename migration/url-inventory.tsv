@@ -1,0 +1,358 @@
+path	type	section	area	updated	title	redirect_to
+/	page	sigmod	about	2026-09-23	Welcome to the SIGMOD Website	
+/2015-acm-fellows/	post	sigmod	news	2016-03-01	2015 ACM Fellows	
+/2016-heidelberg-laureate-forum/	post	sigmod	news	2016-03-01	2016 Heidelberg Laureate Forum	
+/2017-acm-sigmod-awards-call-for-nominations/	post	sigmod	news	2017-01-31	2017 ACM SIGMOD Awards – Call for Nominations	
+/2017-program-for-research-in-acm-history/	post	sigmod	news	2016-12-20	2017 Program for Research in ACM History	
+/2017-reproducibility-award/	post	sigmod	news	2017-07-04	ACM SIGMOD 2017 Most Reproducible Paper Award Winners	/sigmod-awards/citations/2017-sigmod-most-reproducible-paper-award-winners/
+/2018-sigmod-edgar-f-codd-innovations-award/	post	sigmod	news	2018-05-28	2018 SIGMOD Edgar F. Codd Innovations Award	/sigmod-awards/people/raghu-ramakrishnan-2018-sigmod-edgar-f-codd-innovations-award/
+/2018-sigmod-jim-gray-doctoral-dissertation-award/	post	sigmod	news	2018-05-28	2018 SIGMOD Jim Gray Doctoral Dissertation Award	/sigmod-awards/citations/2018-sigmod-jim-gray-doctoral-dissertation-award/
+/2019-sigmod-edgar-f-codd-innovations-award/	post	sigmod	news	2019-06-20	2019 SIGMOD Edgar F. Codd Innovations Award	/sigmod-awards/people/anastasia-ailamaki-2019-sigmod-edgar-f-codd-innovations-award/
+/2019-sigmod-jim-gray-doctoral-dissertation-award/	post	sigmod	news	2019-04-26	2019 SIGMOD Jim Gray Doctoral Dissertation Award	/sigmod-awards/citations/2019-sigmod-jim-gray-doctoral-dissertation-award/
+/2020-pods-alberto-mendelzon-test-of-time-award/	post	pods	news	2020-06-10	2020 PODS Alberto Mendelzon Test of Time Award	
+/2020-sigmod-best-paper-award/	post	sigmod	news	2020-06-01	2020 SIGMOD Best Paper Award	
+/2020-sigmod-contributions-award/	post	sigmod	news	2020-05-29	2020 SIGMOD Contributions Award	/sigmod-awards/citations/2020-sigmod-contributions-award/
+/2020-sigmod-edgar-f-codd-innovations-award/	post	sigmod	news	2020-12-16	2020 SIGMOD Edgar F. Codd Innovations Award	/sigmod-awards/people/beng-chin-ooi-2020-sigmod-edgar-f-codd-innovations-award/
+/2020-sigmod-jim-gray-doctoral-dissertation-award/	post	sigmod	news	2020-05-26	2020 SIGMOD Jim Gray Doctoral Dissertation Award	/sigmod-awards/citations/2020-sigmod-jim-gray-doctoral-dissertation-award/
+/2020-sigmod-systems-award/	post	sigmod	news	2020-12-16	2020 SIGMOD Systems Award	/sigmod-awards/citations/2020-sigmod-systems-award/
+/2020-test-of-time-award/	post	sigmod	news	2020-05-28	2020 Test of Time Award	/sigmod-awards/citations/2020-sigmod-test-of-time-award/
+/2021-sigmod-awards-announcement/	post	sigmod	news	2021-05-29	2021 SIGMOD Awards	
+/2021-sigmod-jim-gray-doctoral-dissertation-award/	post	sigmod	news	2021-06-15	2021 SIGMOD Jim Gray Doctoral Dissertation Award	/sigmod-awards/citations/2021-sigmod-jim-gray-doctoral-dissertation-award/
+/2021-sigmod-systems-award/	page	sigmod	awards	2022-05-17	2021 SIGMOD Systems Award	
+/2021-sigmod-test-of-time-award/	page	sigmod	awards	2022-05-17	2021 SIGMOD Test of Time Award	
+/2022-sigmod-awards/	post	sigmod	news	2022-05-13	2022 SIGMOD Awards	
+/2022-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2022-05-10	2022 SIGMOD Jim Gray Doctoral Dissertation Award	
+/2022-sigmod-systems-award/	page	sigmod	awards	2022-05-13	2022 SIGMOD Systems Award	
+/2023-sigmod-awards/	post	sigmod	news	2023-06-27	2023 SIGMOD Awards	
+/2023-sigmod-systems-award/	page	sigmod	awards	2023-06-27	2023 SIGMOD Systems Award	
+/2024-sigmod-awards/	post	sigmod	news	2024-06-12	2024 SIGMOD Awards	
+/2024-sigmod-systems-award/	page	sigmod	awards	2025-04-25	2024 SIGMOD Systems Award	
+/2025-sigmod-awards/	post	sigmod	news	2025-07-04	2025 SIGMOD Awards	
+/2025-sigmod-systems-award/	page	sigmod	awards	2025-04-25	2025 SIGMOD Systems Award	
+/2061-2/	page	sigmod	about	2016-09-21		
+/about-sigmod/	page	sigmod	about	2026-06-08	About SIGMOD	
+/about-sigmod/sigmod-logo-renderings/	page	sigmod	about	2025-04-04	SIGMOD Logo Renderings	
+/about-sigmod/sponsorship/	page	sigmod	conferences	2015-08-13	sponsorship	
+/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/	page	sigmod	conferences	2024-06-04	Conferences, Symposia, and Workshops held in Cooperation with SIGMOD	
+/about-sigmod/sponsorship/sponsorship-of-meetings/	page	sigmod	conferences	2024-06-04	Meetings Sponsored or Co-Sponsored by SIGMOD	
+/acm-fellows-2025/	post	sigmod	news	2026-02-16	Database Researchers Named ACM Fellows 2025	
+/acm-names-2016-distinguished-members/	post	sigmod	news	2016-12-20	ACM Names 2016 Distinguished Members	
+/acm-names-2016-fellows/	post	sigmod	news	2016-12-20	ACM Names 2016 Fellows	
+/acm-open-sigmod/	page	sigmod	about	2026-01-26	ACM Open	
+/acm-webinar-on-open-data-science/	post	sigmod	news	2016-08-18	ACM Webinar on Open Data Science	
+/alon-halevy-2021-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2022-05-17	Alon Halevy — 2021 SIGMOD Edgar F. Codd Innovations Award	
+/announcing-the-sigmod-2017-student-research-competition/	post	sigmod	news	2016-09-08	Announcing the SIGMOD 2017 Student Research Competition	
+/archive/	page	sigmod	about	2025-01-11	Archive	
+/call-for-nominations-2016-acm-sigmod-innovations-and-contributions-awards/	post	sigmod	news	2016-03-01	Call for Nominations – 2016 ACM SIGMOD Innovations and Contributions Awards	
+/call-for-nominations-2016-sigmod-systems-award/	post	sigmod	news	2016-03-01	Call for Nominations – 2016 SIGMOD Systems Award	
+/call-for-nominations-2018-acm-sigmod-innovations-contributions-test-of-time-awards/	post	sigmod	news	2018-02-13	Call for Nominations – 2018 SIGMOD Innovations, Contributions, and Test-of-time Awards	
+/call-for-nominations-2019-acm-sigmod-innovations-and-contributions-award/	post	sigmod	news	2019-03-27	Call for Nominations – 2019 SIGMOD Innovations, Contributions, and Test-of-time Awards	
+/call-for-nominations-2020-acm-sigmod-awards/	post	sigmod	news	2020-03-04	Call for Nominations – 2020 ACM SIGMOD AWARDS	
+/call-for-nominations-2021-acm-sigmod-awards/	post	sigmod	news	2021-02-12	Call for Nominations – 2021 ACM SIGMOD Awards	
+/call-for-nominations-2022-acm-sigmod-awards/	page	sigmod	awards	2022-02-28	Call for Nominations – 2022 ACM SIGMOD AWARDS	
+/call-for-nominations-editor-in-chief -of-acm-transactions-on-knowledge-discovery-from-data/	post	sigmod	news	2017-04-28	Call for Nominations: Editor-In-Chief of ACM Transactions on Knowledge Discovery from Data	
+/call-for-nominations-editor-in-chief-acm-transactions-on-database-systems/	post	sigmod	news	2020-03-04	Call for Nominations: Editor-In-Chief ACM Transactions on Database Systems	
+/call-for-nominations-editor-in-chief-of-the-acm-journal-on-data-and-information-quality/	post	sigmod	news	2017-02-01	Call for Nominations: Editor-In-Chief of the ACM Journal on Data and Information Quality	
+/call-for-nominations-sigmod-officer-elections/	post	sigmod	news	2020-10-13	Call for Nominations — SIGMOD Officer elections	
+/carlo-zaniolo-2025-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2025-04-25	Carlo Zaniolo — 2025 SIGMOD Edgar F. Codd Innovations Award	
+/christian-s-jensen-2022-sigmod-contributions-award/	page	sigmod	awards	2022-05-13	Christian S. Jensen — 2022 SIGMOD Contributions Award	
+/christopher-re-named-a-2015-macarthur-fellow/	post	sigmod	news	2015-10-08	Christopher Ré Named a 2015 MacArthur Fellow	
+/conferences/	page	shared	conferences	2025-07-04	SIGMOD/PODS Conferences	
+/conferences/sigmod-1974/	page	shared	conferences	2016-02-24	SIGMOD 1974	
+/conferences/sigmod-1975/	page	shared	conferences	2016-02-24	SIGMOD 1975	
+/conferences/sigmod-1976/	page	shared	conferences	2016-02-24	SIGMOD 1976	
+/conferences/sigmod-1977/	page	shared	conferences	2016-02-24	SIGMOD 1977	
+/conferences/sigmod-1978/	page	shared	conferences	2016-02-24	SIGMOD 1978	
+/conferences/sigmod-1979/	page	shared	conferences	2016-02-24	SIGMOD 1979	
+/conferences/sigmod-1981/	page	shared	conferences	2016-02-24	SIGMOD 1981	
+/conferences/sigmod-1982/	page	shared	conferences	2016-02-24	SIGMOD 1982	
+/conferences/sigmod-1983/	page	shared	conferences	2016-02-24	SIGMOD 1983	
+/conferences/sigmod-1984/	page	shared	conferences	2016-02-24	SIGMOD 1984	
+/conferences/sigmod-1985/	page	shared	conferences	2016-02-24	SIGMOD 1985	
+/conferences/sigmod-1986/	page	shared	conferences	2016-02-24	SIGMOD 1986	
+/conferences/sigmod-1987/	page	shared	conferences	2016-02-24	SIGMOD 1987	
+/conferences/sigmod-1988/	page	shared	conferences	2016-02-24	SIGMOD 1988	
+/conferences/sigmod-1989/	page	shared	conferences	2016-02-22	SIGMOD 1989	
+/conferences/sigmod-1990/	page	shared	conferences	2016-02-22	SIGMOD 1990	
+/conferences/sigmod-1991/	page	shared	conferences	2016-02-22	SIGMOD 1991	
+/conferences/sigmod-1992/	page	shared	conferences	2016-02-22	SIGMOD 1992	
+/conferences/sigmod-1993/	page	shared	conferences	2016-02-22	SIGMOD 1993	
+/conferences/sigmod-1994/	page	shared	conferences	2016-02-22	SIGMOD 1994	
+/conferences/sigmod-1995/	page	shared	conferences	2016-02-22	SIGMOD 1995	
+/conferences/sigmod-1996/	page	shared	conferences	2016-02-22	SIGMOD 1996	
+/conferences/sigmod-1997/	page	shared	conferences	2016-02-22	SIGMOD 1997	
+/conferences/sigmod-1998/	page	shared	conferences	2016-02-22	SIGMOD 1998	
+/conferences/sigmod-1999/	page	shared	conferences	2016-02-22	SIGMOD 1999	
+/conferences/sigmod-2001/	page	shared	conferences	2016-02-22	SIGMOD 2001	
+/dan-suciu-2022-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2022-05-13	Dan Suciu  — 2022 SIGMOD Edgar F. Codd Innovations Award	
+/divesh-srivastava-2021-contributions-award/	page	sigmod	awards	2022-05-17	Divesh Srivastava — 2021 Contributions Award	
+/divyakant-agrawal-2026-sigmod-contributions-award/	page	sigmod	awards	2026-04-01	Divyakant Agrawal — 2026 SIGMOD Contributions Award	
+/dr-laura-haas-is-the-recipient-of-the-2015-sigmod-edgar-f-codd-innovation-award/	post	sigmod	news	2015-10-07	Dr. Laura Haas is the recipient of the 2015 SIGMOD Edgar F. Codd Innovation Award	/sigmod-awards/people/laura-haas/
+/executive-committee-message-on-diversity-and-inclusion/	post	sigmod	news	2021-06-08	Executive Committee Message on Diversity and Inclusion	
+/freepublic-domain-software/	page	sigmod	publications	2015-07-17	Free/public domain software	
+/h-v-jagadish-2026-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2026-04-01	H.V. Jagadish — 2026 SIGMOD Edgar F. Codd Innovations Award	
+/hector-garcia-molina-2025-sigmod-distinguished-mentorship-award/	page	sigmod	awards	2026-04-06	Hector Garcia-Molina Distinguished Mentorship Award	
+/hector-j-munoz-avila-sylvia-spengler-2025-sigmod-contributions-award/	page	sigmod	awards	2025-07-04	Hector Munoz-Avila & Sylvia Spengler — 2025 SIGMOD Contributions Award	
+/jeffrey-d-ullman-2006-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2022-05-13	Jeffrey D. Ullman — 2006 SIGMOD Edgar F. Codd Innovations Award	/sigmod-awards/people/jeffrey-d-ullman-2006/
+/jennifer-widom-named-the-acm-w-2015-6-athena-lecturer/	post	sigmod	news	2015-10-08	Jennifer Widom named the ACM-W 2015-6 Athena Lecturer	
+/joseph-m-hellerstein-2023-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2023-05-23	Joseph M. Hellerstein — 2023 SIGMOD Edgar F. Codd Innovations Award	
+/k-selcuk-candan-2023-sigmod-contributions-award/	page	sigmod	awards	2023-05-23	K. Selcuk Candan — 2023 SIGMOD Contributions Award	
+/lei-chen-m-tamer-ozsu-vincent-oria-win-the-2015-sigmod-test-of-time-award/	post	sigmod	news	2015-10-08	Lei Chen, M. Tamer Özsu, Vincent Oria win the 2015 SIGMOD Test of Time award	/sigmod-awards/citations/2015-sigmod-test-of-time-award/
+/magdalena-balazinska-hari-balakrishnan-samuel-madden-and-michael-stonebraker-receive-the-2017-sigmod-test-of-time-award/	post	sigmod	news	2017-04-26	Magdalena Balazinska, Hari Balakrishnan, Samuel Madden, and Michael Stonebraker receive the 2017 SIGMOD Test of Time Award	/sigmod-awards/citations/2017-sigmod-test-of-time-award/
+/membership/	page	sigmod	community	2018-04-10	Membership	
+/membership/for-students/	page	sigmod	community	2025-07-01	For Students	
+/membership/sigmod-chapters/	page	sigmod	community	2025-07-03	SIGMOD Chapters	
+/message-from-the-acm-sigmod-chair/	page	sigmod	about	2023-04-04	Message from the ACM SIGMOD Chair	
+/message-from-the-acm-sigmod-chair/	post	sigmod	news	2023-04-04	Message from the ACM SIGMOD Chair	/message-from-the-acm-sigmod-chair/
+/michael-cahill-uwe-rohm-and-alan-fekete-receive-the-2018-sigmod-test-of-time-award/	post	sigmod	news	2018-05-25	Michael Cahill, Uwe Röhm, and Alan Fekete receive the 2018 SIGMOD Test of Time Award	/sigmod-awards/citations/2018-sigmod-test-of-time-award/
+/michael-stonebraker-and-lawrence-rowe-receive-the-inagural-2015-sigmod-systems-award/	post	sigmod	news	2015-10-08	Michael Stonebraker and Lawrence Rowe Receive the Inagural (2015) SIGMOD Systems Award	/sigmod-awards/people/2015-sigmod-systems-award/
+/new-acm-policy-on-authorship/	post	sigmod	news	2023-05-05	New ACM Policy on Authorship	
+/new-acm-sigmod-officers-2017/	post	sigmod	news	2017-07-05	New ACM SIGMOD Officers – Chair: Juliana Freire,  Vice-chair: Ihab Ilyas, Secretary/Treasurer: Fatma Ozcan	
+/new-acm-sigmod-officers-divyakant-agrawal-fatma-ozcan-and-rachel-pottinger/	post	sigmod	news	2021-07-27	New ACM SIGMOD Officers – Divyakant Agrawal, Fatma Ozcan, and Rachel Pottinger	
+/new-acm-sigmod-officers/	post	sigmod	news	2025-07-24	New ACM SIGMOD Officers – Angela Bonifati, Alexandra Meliou, and Manos Athanassoulis!	
+/note-about-ranking-indexing-of-pacmmod/	page	sigmod	about	2024-11-18	Note about Ranking/Indexing of PACMMOD	
+/peter-buneman-adriane-chapman-james-cheney-receive-the-2016-sigmod-test-of-time-award/	post	sigmod	news	2016-05-24	Peter Buneman, Adriane Chapman, James Cheney receive the 2016 SIGMOD Test of Time Award	/sigmod-awards/citations/2016-sigmod-test-of-time-award/
+/pods-2020-best-paper-award/	post	pods	news	2020-06-10	PODS 2020 Best Paper Award	
+/pods-home/	page	pods	pods	2026-03-26	PODS	
+/pods-home/acm-pods-alberto-o-mendelzon-test-of-time-award/	page	pods	pods	2026-05-27	ACM PODS Alberto O. Mendelzon Test-of-Time Award	
+/pods-home/gems-of-pods/	page	pods	pods	2026-04-05	Gems of PODS	
+/pods-home/opentocs/	page	pods	pods	2023-04-29	OpenTOC for PODS Proceedings	
+/pods-home/pods-30th-anniversary-statistics/	page	pods	pods	2015-07-17	PODS 30th Anniversary Statistics	
+/pods-home/pods-30th-anniversary/	page	pods	pods	2024-06-04	PODS 30th Anniversary	
+/pods-home/pods-best-paper-awards/	page	pods	pods	2026-05-27	PODS Best Paper Awards	
+/pods-home/pods-corrigenda/	page	pods	pods	2024-06-04	PODS Corrigenda	
+/pods-home/pods-keynote-speakers/	page	pods	pods	2026-05-27	PODS Keynote Speakers	
+/pods-home/pods-organization/	page	pods	pods	2026-08-16	PODS Organization	
+/pods-home/pods-tutorials/	page	pods	pods	2026-05-27	PODS Tutorials	
+/pods-home/technical-section/	page	pods	pods	2024-09-06	Technical Section	
+/pods-home/who-are-we/	page	pods	pods	2024-09-06	PODS Hall of Fame	
+/professor-gerhard-weikum-receives-the-2016-sigmod-edgar-f-codd-innovations-award/	post	sigmod	news	2016-05-27	Professor Gerhard Weikum receives the 2016 SIGMOD Edgar F. Codd Innovations Award	/sigmod-awards/people/gerhard-weikum-2016-sigmod-edgar-f-codd-innovations-award/
+/professor-goetz-graefe-receives-the-2017-sigmod-edgar-f-codd-innovations-award/	post	sigmod	news	2017-05-07	Professor Goetz Graefe receives the 2017 SIGMOD Edgar F. Codd Innovations Award	/sigmod-awards/people/goetz-graefe-2017-sigmod-edgar-f-codd-innovations-award/
+/professor-martin-kersten-receives-the-2016-sigmod-systems-award/	post	sigmod	news	2016-05-25	Professor Martin Kersten receives the 2016 SIGMOD Systems Award	/sigmod-awards/people/martin-kersten-2016-sigmod-systems-award/
+/professor-samuel-madden-receives-the-2016-sigmod-contributions-award/	post	sigmod	news	2016-05-24	Professor Samuel Madden receives the 2016 SIGMOD Contributions Award	/sigmod-awards/people/samuel-madden-2016-sigmod-contributions-award/
+/publication-list/	page	sigmod	publications	2025-01-14	SIGMOD Publications	
+/publications/	page	sigmod	publications	2015-07-17	Publications	
+/publications/anthology/	page	sigmod	publications	2016-02-22	The ACM SIGMOD Anthology	
+/publications/anthologyhome/	page	sigmod	publications	2019-08-13	The ACM SIGMOD Anthology	
+/publications/interview/	page	sigmod	publications	2016-11-11	Distinguished Profiles in Databases	
+/publications/interview/aditya-parameswaran/	page	sigmod	publications	2016-02-22	Aditya Parameswaran	
+/publications/interview/agrawal/	page	sigmod	publications	2016-02-21	Rakesh Agrawal	
+/publications/interview/alberto-laender/	page	sigmod	publications	2016-02-21	Alberto Laender	
+/publications/interview/anand-rajaraman/	page	sigmod	publications	2016-02-22	Anand Rajaraman	
+/publications/interview/andreas-reuter/	page	sigmod	publications	2016-02-22	Andreas Reuter	
+/publications/interview/andy-pavlo/	page	sigmod	publications	2016-02-22	Andy Pavlo	
+/publications/interview/anhai-doan/	page	sigmod	publications	2016-02-21	Anhai Doan	
+/publications/interview/avi-silberschatz/	page	sigmod	publications	2016-02-22	Avi Silberschatz	
+/publications/interview/beng-chin-ooi/	page	sigmod	publications	2016-02-21	Beng Chin Ooi	
+/publications/interview/boon-thau-loo/	page	sigmod	publications	2016-02-21	Boon Thau Loo	
+/publications/interview/bruce-lindsay/	page	sigmod	publications	2016-02-21	Bruce Lindsay	
+/publications/interview/buneman/	page	sigmod	publications	2016-02-21	Peter Buneman	
+/publications/interview/c-mohan/	page	sigmod	publications	2016-02-21	C. Mohan	
+/publications/interview/carlo-zaniolo/	page	sigmod	publications	2016-02-22	Carlo Zaniolo	
+/publications/interview/catriel-beeri/	page	sigmod	publications	2016-02-21	Catriel Beeri	
+/publications/interview/chris-re/	page	sigmod	publications	2016-02-22	Chris Ré	
+/publications/interview/christos-faloutsos/	page	sigmod	publications	2016-02-21	Christos Faloutsos	
+/publications/interview/dan-suciu/	page	sigmod	publications	2016-11-11	Dan Suciu	
+/publications/interview/daniel-abadi/	page	sigmod	publications	2016-02-20	Daniel Abadi	
+/publications/interview/david-dewitt/	page	sigmod	publications	2016-02-21	David DeWitt	
+/publications/interview/david-lomet/	page	sigmod	publications	2016-02-21	David Lomet	
+/publications/interview/david-maier/	page	sigmod	publications	2016-02-21	David Maier	
+/publications/interview/dennis-shasha/	page	sigmod	publications	2016-02-22	Dennis Shasha	
+/publications/interview/divesh-srivastava/	page	sigmod	publications	2016-02-22	Divesh Srivastava	
+/publications/interview/elisa-bertino/	page	sigmod	publications	2016-02-21	Elisa Bertino	
+/publications/interview/erich-neuhold/	page	sigmod	publications	2016-02-21	Erich Neuhold	
+/publications/interview/georg-gottlob/	page	sigmod	publications	2016-02-21	Georg Gottlob	
+/publications/interview/gerhard-weikum-2010/	page	sigmod	publications	2016-02-22	Gerhard Weikum	
+/publications/interview/gerome-miklau/	page	sigmod	publications	2016-02-21	Gerome Miklau	
+/publications/interview/h-v-jagadish/	page	sigmod	publications	2016-02-21	H V Jagadish	
+/publications/interview/hank-korth/	page	sigmod	publications	2016-02-21	Hank Korth	
+/publications/interview/hector-garcia-molina/	page	sigmod	publications	2016-02-21	Hector García-Molina	
+/publications/interview/jeffrey-naughton/	page	sigmod	publications	2016-02-21	Jeffrey Naughton	
+/publications/interview/jennifer-widom/	page	sigmod	publications	2016-02-22	Jennifer Widom	
+/publications/interview/jiawei-han/	page	sigmod	publications	2016-02-21	Jiawei Han	
+/publications/interview/jim-gray/	page	sigmod	publications	2016-02-21	Jim Gray	
+/publications/interview/john-wilkes/	page	sigmod	publications	2016-02-22	John Wilkes	
+/publications/interview/kenneth-ross/	page	sigmod	publications	2016-02-22	Kenneth Ross	
+/publications/interview/kian-lee-tan/	page	sigmod	publications	2016-02-22	Kian-Lee Tan	
+/publications/interview/kyu-young-whang/	page	sigmod	publications	2016-02-22	Kyu-Young Whang	
+/publications/interview/laura-haas/	page	sigmod	publications	2016-02-21	Laura Haas	
+/publications/interview/masaru-kitsuregawa/	page	sigmod	publications	2016-02-21	Masaru Kitsuregawa	
+/publications/interview/meral-ozsoyoglu/	page	sigmod	publications	2016-02-21	Meral Özsoyoglu	
+/publications/interview/michael-stonebraker/	page	sigmod	publications	2016-02-22	Michael Stonebraker	
+/publications/interview/moshe-vardi/	page	sigmod	publications	2016-02-22	Moshe Vardi	
+/publications/interview/pat-selinger/	page	sigmod	publications	2016-02-22	Pat Selinger	
+/publications/interview/peter-chen/	page	sigmod	publications	2016-02-21	Peter Chen	
+/publications/interview/philip-bernstein/	page	sigmod	publications	2016-02-21	Philip A. Bernstein	
+/publications/interview/raghu-ramakrishnan/	page	sigmod	publications	2016-02-22	Raghu Ramakrishnan	
+/publications/interview/ricardo-baeza-yates/	page	sigmod	publications	2016-02-21	Ricardo Baeza-Yates	
+/publications/interview/rick-cattell/	page	sigmod	publications	2016-02-21	Rick Cattell	
+/publications/interview/rick-hull/	page	sigmod	publications	2016-11-08	Rick Hull	
+/publications/interview/rick-snodgrass/	page	sigmod	publications	2016-02-22	Rick Snodgrass	
+/publications/interview/ron-fagin/	page	sigmod	publications	2016-02-21	Ron Fagin	
+/publications/interview/ryan-johnson/	page	sigmod	publications	2016-02-21	Ryan Johnson	
+/publications/interview/serge-abiteboul/	page	sigmod	publications	2016-02-21	Serge Abiteboul	
+/publications/interview/stefano-ceri/	page	sigmod	publications	2016-02-21	Stefano Ceri	
+/publications/interview/stratos-idreos/	page	sigmod	publications	2016-02-21	Stratos Idreos	
+/publications/interview/sudipto-das/	page	sigmod	publications	2016-02-21	Sudipto Das	
+/publications/interview/surajit-chaudhuri/	page	sigmod	publications	2016-02-21	Surajit Chaudhuri	
+/publications/interview/tamer-ozsu/	page	sigmod	publications	2016-02-22	Tamer Özsu	
+/publications/interview/timos-sellis/	page	sigmod	publications	2016-02-22	Timos Sellis	
+/publications/interview/tova-milo/	page	sigmod	publications	2016-02-21	Tova Milo	
+/publications/interview/vitter/	page	sigmod	publications	2016-02-22	Jeff Vitter	
+/publications/interview/yannis-ioannidis/	page	sigmod	publications	2016-02-21	Yannis Ioannidis	
+/publications/publications/	page	sigmod	publications	2025-01-14	Publications	
+/publications/sigmod-digital-symposium-collection/	page	sigmod	publications	2016-02-22	SIGMOD Digital Symposium Collection	
+/samuel-madden-2024-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2024-06-11	Samuel Madden — 2024 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-2017-change-of-venue/	post	sigmod	news	2017-01-19	SIGMOD 2017 Change of Venue	
+/sigmod-2022-test-of-time-award/	page	sigmod	awards	2022-05-13	SIGMOD 2022 Test-of-Time Award	
+/sigmod-2023-test-of-time-award/	page	sigmod	awards	2023-05-23	SIGMOD 2023 Test-of-Time Award	
+/sigmod-2024-test-of-time-award/	page	sigmod	awards	2024-06-28	SIGMOD 2024 Test-of-Time Award	
+/sigmod-2025-test-of-time-award/	page	sigmod	awards	2025-04-25	SIGMOD 2025 Test-of-Time Award	
+/sigmod-2026-test-of-time-award/	page	sigmod	awards	2026-04-14	SIGMOD 2026 Test-of-Time Award	
+/sigmod-awards/	page	sigmod	awards	2026-05-11	SIGMOD Awards	
+/sigmod-awards/2017-doctoral-dissertation-award/	page	sigmod	awards	2016-12-07	The SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/	page	sigmod	awards	2024-09-06	citations	
+/sigmod-awards/citations/2003-sigmod-test-of-time-award/	page	sigmod	awards	2015-07-17	2003 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2004-sigmod-test-of-time-award-2/	page	sigmod	awards	2015-07-17	2004 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2004-sigmod-test-of-time-award/	page	sigmod	awards	2015-07-17	2004 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2006-sigmod-test-of-time-award-2/	page	sigmod	awards	2015-07-17	2006 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2006-sigmod-test-of-time-award/	page	sigmod	awards	2015-07-17	2006 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2007-sigmod-test-of-time-award/	page	sigmod	awards	2015-07-17	2007 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2008-sigmod-test-of-time-award/	page	sigmod	awards	2022-05-13	2008 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2009-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2015-07-17	2009 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2009-sigmod-test-of-time-award/	page	sigmod	awards	2024-06-04	2009 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2010-sigmod-best-paper-award/	page	sigmod	awards	2015-07-17	2010 SIGMOD Best Paper Award	
+/sigmod-awards/citations/2010-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2015-07-17	2010 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2010-sigmod-test-of-time-award/	page	sigmod	awards	2015-07-17	2010 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2011-sigmod-test-of-time-award/	page	sigmod	awards	2015-07-17	2011 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2012-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2015-07-17	2012 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2012-sigmod-test-of-time-award/	page	sigmod	awards	2022-05-13	2012 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2013-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2025-01-27	2013 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2013-sigmod-test-of-time-award/	page	sigmod	awards	2022-05-13	2013 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2014-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2024-12-23	2014 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2014-sigmod-test-of-time-award/	page	sigmod	awards	2024-06-04	2014 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2015-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2015-07-17	2015 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2015-sigmod-test-of-time-award/	page	sigmod	awards	2024-09-06	2015 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2016-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2016-05-16	2016 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2016-sigmod-test-of-time-award/	page	sigmod	awards	2022-05-13	2016 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2017-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2017-04-10	2017 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2017-sigmod-most-reproducible-paper-award-winners/	page	sigmod	awards	2017-05-26	2017 SIGMOD Most Reproducible Paper Award Winners	
+/sigmod-awards/citations/2017-sigmod-test-of-time-award/	page	sigmod	awards	2017-04-26	2017 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2018-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2018-05-27	2018 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2018-sigmod-systems-award/	page	sigmod	awards	2022-05-13	2018 SIGMOD Systems Award	
+/sigmod-awards/citations/2018-sigmod-test-of-time-award/	page	sigmod	awards	2018-05-25	2018 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2019-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2019-04-26	2019 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2019-sigmod-systems-award/	page	sigmod	awards	2022-05-13	2019 SIGMOD Systems Award	
+/sigmod-awards/citations/2019-sigmod-test-of-time-award/	page	sigmod	awards	2019-08-21	2019 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2020-sigmod-contributions-award/	page	sigmod	awards	2022-05-10	Philippe Bonnet, Juliana Freire, Stratos Idreos, Stefan Manegold, Ioana Manolescu, and Dennis Shasha — 2020 SIGMOD Contributions Award	
+/sigmod-awards/citations/2020-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2020-05-26	2020 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/citations/2020-sigmod-systems-award/	page	sigmod	awards	2022-05-13	2020 SIGMOD Systems Award	
+/sigmod-awards/citations/2020-sigmod-test-of-time-award/	page	sigmod	awards	2020-06-12	2020 SIGMOD Test of Time Award	
+/sigmod-awards/citations/2021-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2021-06-15	2021 SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/committees/	page	sigmod	awards	2018-10-04	Committees	
+/sigmod-awards/committees/jim-gray-doctoral-dissertation-awards-committee/	page	sigmod	awards	2026-03-18	Jim Gray Doctoral Dissertation Awards Committee	
+/sigmod-awards/committees/sigmod-awards-committee/	page	sigmod	awards	2025-12-22	SIGMOD Awards Committee	
+/sigmod-awards/committees/systems-awards-committee/	page	sigmod	awards	2019-04-08	Systems Awards Committee	
+/sigmod-awards/doctoral-dissertation-award/	page	sigmod	awards	2026-03-18	Call for SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/people/	page	sigmod	awards	2015-08-13	people	
+/sigmod-awards/people/2015-sigmod-systems-award/	page	sigmod	awards	2022-05-13	Michael Stonebraker and Lawrence Rowe — 2015 SIGMOD Systems Award	
+/sigmod-awards/people/ahmed-elmagarmid-2019-sigmod-contributions-award/	page	sigmod	awards	2022-05-10	Ahmed Elmagarmid — 2019 SIGMOD Contributions Award	
+/sigmod-awards/people/anastasia-ailamaki-2019-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2022-05-13	Anastasia Ailamaki — 2019 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/avi-silberschatz/	page	sigmod	awards	2022-05-10	Avi Silberschatz – 1997 SIGMOD Contribution Award Winner	
+/sigmod-awards/people/beng-chin-ooi-2020-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2022-05-13	Beng Chin Ooi — 2020 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/beng-chin-ooi/	page	sigmod	awards	2025-01-11	Beng Chin Ooi — 2009 SIGMOD Contribution Award Winner	
+/sigmod-awards/people/bruce-lindsay/	page	sigmod	awards	2022-05-13	Bruce Lindsay —  2012 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/c-mohan/	page	sigmod	awards	2022-05-13	C. Mohan — 1996 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/curtis-dyreson/	page	sigmod	awards	2022-05-10	Curtis Dyreson — 2015 SIGMOD Contributions Award	
+/sigmod-awards/people/daniel-rosenkrantz/	page	sigmod	awards	2022-05-10	Daniel Rosenkrantz — 2001 SIGMOD Contributions Award	
+/sigmod-awards/people/david-dewitt/	page	sigmod	awards	2022-05-13	David DeWitt — 1995 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/david-lomet/	page	sigmod	awards	2022-05-10	David Lomet — 2010 SIGMOD Contributions Award	
+/sigmod-awards/people/david-maier/	page	sigmod	awards	2022-05-13	David Maier — 1997 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/don-chamberlin/	page	sigmod	awards	2022-05-13	Don Chamberlin — 2003 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/gerhard-weikum-2016-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2022-05-13	Gerhard Weikum — 2016 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/gerhard-weikum/	page	sigmod	awards	2022-05-10	Gerhard Weikum — 2011 SIGMOD Contributions Award	
+/sigmod-awards/people/gio-wiederhold/	page	sigmod	awards	2022-05-10	Gio Wiederhold — 1995 SIGMOD Contributions Award	
+/sigmod-awards/people/goetz-graefe-2017-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2022-05-13	Goetz Graefe — 2017 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/h-v-jagadish/	page	sigmod	awards	2022-05-10	H. V. Jagadish — 2013 SIGMOD Contributions Award	
+/sigmod-awards/people/hans-jorg-schek-acm-sigmod-official-website/	page	sigmod	awards	2015-07-17	Hans-Jörg Schek — 2007 SIGMOD Contributions Award	
+/sigmod-awards/people/hector-garcia-molina/	page	sigmod	awards	2025-04-12	Hector Garcia-Molina — 1999 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/hongjun-lu/	page	sigmod	awards	2022-05-10	Hongjun Lu —  2005 SIGMOD Contributions Award	
+/sigmod-awards/people/jeffrey-d-ullman-2006/	page	sigmod	awards	2015-07-17	Jeffrey D. Ullman — 2006 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/jeffrey-ullman/	page	sigmod	awards	2022-05-10	Jeffrey Ullman — 1996 SIGMOD Contributions Award	
+/sigmod-awards/people/jennifer-widom/	page	sigmod	awards	2022-05-13	Jennifer Widom —  2007 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/jim-gray/	page	sigmod	awards	2022-05-13	Jim Gray — 1993 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/klaus-r-dittrich/	page	sigmod	awards	2022-05-10	Klaus R. Dittrich — 2008 SIGMOD Contributions Award	
+/sigmod-awards/people/kyu-young-whang/	page	sigmod	awards	2022-05-10	Kyu-Young Whang — 2014 SIGMOD Contributions Award	
+/sigmod-awards/people/laura-haas-contributions/	page	sigmod	awards	2022-05-10	Laura Haas — 2000 SIGMOD Contributions Award	
+/sigmod-awards/people/laura-haas/	page	sigmod	awards	2022-05-13	Laura Haas — 2015 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/maria-zemankova/	page	sigmod	awards	2026-10-04	Maria Zemankova — 1992 SIGMOD Contributions Award	
+/sigmod-awards/people/marianne-winslett/	page	sigmod	awards	2022-05-10	Marianne Winslett — 2012 SIGMOD Contributions Award	
+/sigmod-awards/people/martin-kersten-2016-sigmod-systems-award/	page	sigmod	awards	2022-05-13	Martin Kersten — 2016 SIGMOD Systems Award	
+/sigmod-awards/people/martin-kersten/	page	sigmod	awards	2024-09-16	Martin Kersten — 2014 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/masaru-kitsuregawa/	page	sigmod	awards	2022-05-13	Masaru Kitsuregawa — 2009 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/michael-carey-contributions/	page	sigmod	awards	2022-05-10	Michael Carey — 2000 SIGMOD Contributions Award	
+/sigmod-awards/people/michael-carey/	page	sigmod	awards	2022-05-13	Michael Carey — 2005 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/michael-ley/	page	sigmod	awards	2022-05-10	Michael Ley — 2003 SIGMOD Contributions Award	
+/sigmod-awards/people/michael-stonebraker/	page	sigmod	awards	2025-07-13	Michael Stonebraker —  1992 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/moshe-y-vardi/	page	sigmod	awards	2022-05-13	Moshe Y. Vardi — 2008 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/patricia-selinger/	page	sigmod	awards	2024-07-07	Patricia Selinger — 2002 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/philip-bernstein/	page	sigmod	awards	2022-05-13	Philip Bernstein — 1994 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/raghu-ramakrishnan-2018-sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2022-05-13	Raghu Ramakrishnan — 2018 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/raghu-ramakrishnan/	page	sigmod	awards	2022-05-10	Raghu Ramakrishnan —  1999 SIGMOD Contributions Award	
+/sigmod-awards/people/rakesh-agrawal/	page	sigmod	awards	2022-05-13	Rakesh Agrawal —  2000 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/richard-hipp-2017-sigmod-systems-award/	page	sigmod	awards	2022-05-13	Richard Hipp — 2017 SIGMOD Systems Award	
+/sigmod-awards/people/richard-snodgrass/	page	sigmod	awards	2024-09-06	Richard Snodgrass — 2002 SIGMOD Contributions Award	
+/sigmod-awards/people/ronald-fagin/	page	sigmod	awards	2025-02-14	Ronald Fagin — 2004 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/rudolf-bayer/	page	sigmod	awards	2022-05-13	Rudolf Bayer — 2001 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/samuel-madden-2016-sigmod-contributions-award/	page	sigmod	awards	2022-05-10	Samuel Madden — 2016 SIGMOD Contributions Award	
+/sigmod-awards/people/serge-abiteboul/	page	sigmod	awards	2022-05-13	Serge Abiteboul — 1998 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/stefano-ceri/	page	sigmod	awards	2022-05-13	Stefano Ceri — 2013 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/surajit-chaudhuri-innovations/	page	sigmod	awards	2022-05-13	Surajit Chaudhuri — 2011 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/surajit-chaudhuri/	page	sigmod	awards	2022-05-10	Surajit Chaudhuri — 2004 SIGMOD Contributions Award	
+/sigmod-awards/people/tamer-ozsu/	page	sigmod	awards	2022-05-10	Tamer Özsu — 2006 SIGMOD Contributions Award	
+/sigmod-awards/people/umeshwar-dayal/	page	sigmod	awards	2022-05-13	Umeshwar Dayal — 2010 SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/people/won-kim/	page	sigmod	awards	2022-05-10	Won Kim — 1998 SIGMOD Contributions Award	
+/sigmod-awards/people/yahiko-kambayashi/	page	sigmod	awards	2022-05-10	Yahiko Kambayashi —1995 SIGMOD Contributions Award	
+/sigmod-awards/people/yannis-e-ioannidis-2017-sigmod-contributions-award/	page	sigmod	awards	2022-05-10	Yannis E. Ioannidis — 2017 SIGMOD Contributions Award	
+/sigmod-awards/people/z-meral-ozsoyoglu-2018-sigmod-contributions-award/	page	sigmod	awards	2022-05-10	Z. Meral Özsoyoğlu — 2018 SIGMOD Contributions Award	
+/sigmod-awards/sigmod-awards-acm-sigmod-official-website/	page	sigmod	awards	2024-07-06	SIGMOD Awards — ACM SIGMOD Official Website	
+/sigmod-awards/sigmod-best-artifact-award/	page	sigmod	awards	2026-02-17	ACM SIGMOD “Best Artifact” Award	
+/sigmod-awards/sigmod-best-demonstration-award/	page	sigmod	awards	2026-06-04	SIGMOD Best Demonstration Award	
+/sigmod-awards/sigmod-best-paper-award/	page	sigmod	awards	2026-04-30	SIGMOD Best Paper Award	
+/sigmod-awards/sigmod-contributions-award/	page	sigmod	awards	2026-04-01	SIGMOD Contributions Award	
+/sigmod-awards/sigmod-edgar-f-codd-innovations-award/	page	sigmod	awards	2026-04-01	SIGMOD Edgar F. Codd Innovations Award	
+/sigmod-awards/sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2026-04-24	SIGMOD Jim Gray Doctoral Dissertation Award	
+/sigmod-awards/sigmod-research-highlights/	page	sigmod	awards	2026-04-07	SIGMOD Research Highlight Awards	
+/sigmod-awards/sigmod-student-research-competition-winners/	page	sigmod	awards	2023-06-22	SIGMOD Student Research Competition Winners	
+/sigmod-awards/sigmod-systems-award/	page	sigmod	awards	2026-04-06	SIGMOD Systems Award	
+/sigmod-awards/sigmod-test-of-time-award/	page	sigmod	awards	2026-05-07	SIGMOD Test-of-Time Award	
+/sigmod-awards/sigmod-undergraduate-award/	page	sigmod	awards	2017-07-05	SIGMOD Undergraduate Award	
+/sigmod-awards/the-sigmod-jim-gray-doctoral-dissertation-award/	page	sigmod	awards	2015-07-17	The 2015 SIGMOD Jim Gray Doctoral Dissertation Award Process	
+/sigmod-distinguished-aes-and-pcs/	page	sigmod	conferences	2025-04-25	SIGMOD Distinguished AEs and PCs	
+/sigmod-elections-are-underway/	post	sigmod	news	2017-04-21	SIGMOD Elections are underway	
+/sigmod-executive-committee-position-on-racism/	page	sigmod	about	2024-11-18	SIGMOD Executive Committee Position on Racism	
+/sigmod-history/	page	sigmod	about	2022-02-09	SIGMOD History	
+/sigmod-history/program-chair/	page	sigmod	about	2025-07-22	SIGMOD Conference Program Chairs	
+/sigmod-history/sigmod-logo-history/	page	sigmod	about	2026-04-10	SIGMOD Logo History	
+/sigmod-history/sigmod-online/	page	sigmod	about	2022-02-12	SIGMOD Online	
+/sigmod-history/sigmods-mission/	page	sigmod	about	2015-08-16	SIGMOD’s Mission	
+/sigmod-pods-calls-for-proposals-2023-2024/	post	shared	news	2021-07-09	SIGMOD/PODS Calls for Proposals (2023/2024)	
+/sigmod-policies/	page	sigmod	about	2026-01-26	SIGMOD Policies	
+/sigmod-policies/dbcares-policy/	page	sigmod	about	2024-08-10	DBCares Policy	
+/sigmod-special-service-award/	page	sigmod	awards	2022-07-24	SIGMOD Special Service Award	
+/sigmodpods-2017-conference-to-be-moved-to-a-different-location/	post	shared	news	2017-01-17	SIGMOD/PODS 2017 Conference to be Moved to a Different Location	
+/sigmods-position-on-racism/	page	sigmod	about	2024-11-18	SIGMOD’s Position on Racism	
+/sihem-amer-yahia-2024-sigmod-contributions-award/	page	sigmod	awards	2024-06-10	Sihem Amer-Yahia — 2024 SIGMOD Contributions Award	
+/socc-2017-call-for-papers/	post	sigmod	news	2017-02-02	SoCC 2017 Call for Papers	
+/software/	page	sigmod	publications	2019-04-08	Software	
+/software/commerical/	page	sigmod	publications	2015-07-17	Publically Available Database Software from Commercial Organizations	
+/software/index-of-publically-available-database-software/	page	sigmod	publications	2025-11-25	Index of Publically Available Database Software (Outdated)	
+/software/nonprofit/	page	sigmod	publications	2015-07-17	Publically Available Database Software from Nonprofit Organizations	
+/software/pdf/	page	sigmod	publications	2015-08-13	pdf	
+/software/pdf/sigmod-freedb-letter-pdf/	page	sigmod	publications	2015-07-17	Sigmod-freedb-letter.pdf	
+/the-2016-sigmod-jim-gray-doctoral-dissertation-award-is-awarded-to-paris-koutris/	post	sigmod	news	2016-05-16	The 2016 SIGMOD Jim Gray Doctoral Dissertation Award is awarded to Paris Koutris	/sigmod-awards/citations/2016-sigmod-jim-gray-doctoral-dissertation-award/
+/the-2017-sigmod-jim-gray-doctoral-dissertation-award-is-awarded-to-peter-bailis/	post	sigmod	news	2017-04-10	The 2017 SIGMOD Jim Gray Doctoral Dissertation Award is awarded to Peter Bailis	/sigmod-awards/citations/2017-sigmod-jim-gray-doctoral-dissertation-award/
+/the-sigmod-blog-features-a-tribute-to-jose-alfredo-blakeley/	post	sigmod	news	2018-03-13	The SIGMOD Blog Features a Tribute to José Alfredo Blakeley	
+/videoseries/	page	shared	publications	2018-04-25	SIGMOD/PODS Video Series	
+/yannis-e-ioannidis-is-awarded-the-2017-sigmod-contributions-award/	post	sigmod	news	2017-04-28	Yannis E. Ioannidis is Awarded the 2017 SIGMOD Contributions Award	/sigmod-awards/people/yannis-e-ioannidis-2017-sigmod-contributions-award/
+/z-meral-ozsoyoglu-is-awarded-the-2018-sigmod-contributions-award/	post	sigmod	news	2018-05-20	Z. Meral Özsoyoğlu is Awarded the 2018 SIGMOD Contributions Award	/sigmod-awards/people/z-meral-ozsoyoglu-2018-sigmod-contributions-award/

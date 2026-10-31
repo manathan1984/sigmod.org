@@ -1,0 +1,5 @@
+<footer class="page-meta">
+  {%- if date and wp_type == "post" %}<span>Posted {{ date | date }}</span>{% endif %}
+  {%- if updated %}<span>Last updated {{ updated | date }}</span>{% endif %}
+  <a href="{{ site.editBase }}{{ page.inputPath | replace('./', '') }}">Suggest an edit on GitHub</a>
+</footer>

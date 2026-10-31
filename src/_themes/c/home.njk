@@ -1,0 +1,39 @@
+---
+layout: c/base.njk
+---
+{%- set next = conferences | first -%}
+<section class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <p class="kicker">ACM Special Interest Group on Management of Data</p>
+      <h1>The community for research and practice in data management.</h1>
+      <p class="hero-lead">Our members include software developers, academic and industrial researchers, practitioners, users and students. Together with PODS, SIGMOD runs the annual SIGMOD/PODS conference.</p>
+    </div>
+    <a class="conf" href="{{ next.links[0].url }}">
+      <span class="conf-k">Next conference</span>
+      <span class="conf-n">SIGMOD/PODS {{ next.year }}</span>
+      <span class="conf-l">{{ next.location }}</span>
+      <span class="conf-go">Conference website ↗</span>
+    </a>
+  </div>
+</section>
+
+<section class="wrap features">
+  <a class="feature" href="/sigmod-awards/"><h2>Awards</h2><p>Codd Innovations, Contributions, Systems, Test of Time, Jim Gray Dissertation and more.</p></a>
+  <a class="feature" href="/publications/publications/"><h2>Publications</h2><p>PACMMOD, SIGMOD Record, the SIGMOD Blog and our archives.</p></a>
+  <a class="feature feature-pods" href="/pods-home/"><h2>PODS</h2><p>The Symposium on Principles of Database Systems, the theory side of our joint conference.</p></a>
+</section>
+
+<section class="wrap home-grid">
+  <div>
+    <h2 class="h-section">News</h2>
+    {% set newsLimit = 8 %}{% include "shared/news-list.njk" %}
+    <p class="more"><a href="/news/">All news →</a></p>
+  </div>
+  <aside>
+    <h2 class="h-section">Resources</h2>
+    <ul class="links">{% for l in nav.quicklinks %}<li><a href="{{ l.url }}">{{ l.label }}{% if l.external %} <span class="ext">↗</span>{% endif %}</a></li>{% endfor %}</ul>
+    <h2 class="h-section">Recent conferences</h2>
+    <ul class="links">{% for c in conferences | limit(5) %}<li><a href="{{ c.links[0].url if c.links.length else '/conferences/' }}"><b>{{ c.year }}</b> {{ c.location }}</a></li>{% endfor %}</ul>
+  </aside>
+</section>

@@ -1,0 +1,36 @@
+---
+layout: d/base.njk
+---
+{%- set next = conferences | first -%}
+<section class="wrap hero">
+  <div class="hero-text">
+    <p class="pill">ACM Special Interest Group on Management of Data</p>
+    <h1>Advancing data management research and practice.</h1>
+    <p class="hero-lead">SIGMOD connects researchers, practitioners, developers and students working on databases and data systems, and runs the annual SIGMOD/PODS conference together with PODS.</p>
+    <p class="hero-cta"><a class="btn" href="/join/">Become a member</a> <a class="btn btn-light" href="/sigmod-awards/">SIGMOD awards</a></p>
+  </div>
+  <a class="conf" href="{{ next.links[0].url }}">
+    <span class="conf-k">Next conference</span>
+    <span class="conf-y">{{ next.year }}</span>
+    <span class="conf-n">SIGMOD/PODS {{ next.year }}</span>
+    <span class="conf-l">{{ next.location }}</span>
+    <span class="conf-go">Visit the conference site ↗</span>
+  </a>
+</section>
+
+<section class="wrap row3">
+  <a class="tile" href="/about-sigmod/"><span class="tile-k">SIGMOD</span><h2>About SIGMOD</h2><p>Officers, executive committee, mission, history and policies.</p></a>
+  <a class="tile tile-pods" href="/pods-home/"><span class="tile-k">PODS</span><h2>Principles of Database Systems</h2><p>The theory side of our joint conference, since 1982.</p></a>
+  <a class="tile" href="/sigmod-awards/"><span class="tile-k">Awards</span><h2>Recognising the field</h2><p>Codd Innovations, Contributions, Systems, Test of Time and more.</p></a>
+</section>
+
+<section class="wrap split">
+  <div class="panel">
+    <div class="panel-head"><h2>Latest news</h2><a href="/news/">All news →</a></div>
+    {% set newsLimit = 7 %}{% include "shared/news-list.njk" %}
+  </div>
+  <div class="panel">
+    <div class="panel-head"><h2>Quick links</h2></div>
+    <ul class="qlinks">{% for l in nav.quicklinks %}<li><a href="{{ l.url }}">{{ l.label }}<span>{{ "↗" if l.external else "→" }}</span></a></li>{% endfor %}</ul>
+  </div>
+</section>

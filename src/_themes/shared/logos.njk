@@ -1,0 +1,199 @@
+{#- Logo proposals as Nunjucks macros, so one drawing renders in any colour and for SIGMOD or PODS.
+    Wordmarks use live text (fonts are loaded on the proposals page); outline them before final delivery. -#}
+
+{#- Round 2 · Sigma: relational algebra. σ (selection) for SIGMOD, π (projection) for PODS, on a rounded tile -#}
+{% macro sigmaMark(c, letter="S", size=48, bg="#fff") -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">
+  <rect width="48" height="48" rx="12" fill="{{ c }}"/>
+  <g fill="none" stroke="{{ bg }}" stroke-width="5.5" stroke-linecap="round">
+  {%- if letter == "P" %}
+    <path d="M11 15 H37 M19 15 V36 M30 15 V32 Q30 36.5 34.5 36.5"/>
+  {%- else %}
+    <circle cx="21" cy="28" r="9.5"/><path d="M21 18.5 H37"/>
+  {%- endif %}
+  </g>
+</svg>
+{%- endmacro %}
+
+{#- Round 2 · Join: the bowtie ⋈. Two halves meet in the middle, as SIGMOD and PODS meet at the joint conference -#}
+{% macro joinMark(c, size=48, c2="") -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true" stroke-linejoin="round" stroke-width="4">
+  <path d="M7 10 L24 24 L7 38 Z" fill="{{ c }}" stroke="{{ c }}"/>
+  <path d="M41 10 L24 24 L41 38 Z" fill="{{ c2 or c }}" stroke="{{ c2 or c }}" {% if not c2 %}opacity=".45"{% endif %}/>
+</svg>
+{%- endmacro %}
+
+{#- Round 2 · Index: a B+-tree. Root, two inner nodes and the linked leaf level -#}
+{% macro indexMark(c, size=48) -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">
+  <path d="M24 14 V18 M12 18 H36 M12 18 V22 M36 18 V22 M12 30 V35 M36 30 V35" stroke="{{ c }}" stroke-width="2.5" fill="none" opacity=".55"/>
+  <rect x="16" y="5" width="16" height="9" rx="3" fill="{{ c }}"/>
+  <rect x="4" y="22" width="16" height="8" rx="3" fill="{{ c }}" opacity=".75"/>
+  <rect x="28" y="22" width="16" height="8" rx="3" fill="{{ c }}" opacity=".75"/>
+  <rect x="3" y="35" width="42" height="7" rx="3" fill="{{ c }}" opacity=".42"/>
+</svg>
+{%- endmacro %}
+
+{#- Round 2 · Levels: sorted runs of an LSM-tree, each level larger than the last -#}
+{% macro levelsMark(c, size=48) -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">
+  <rect x="18" y="6" width="12" height="6.5" rx="3.25" fill="{{ c }}"/>
+  <rect x="13" y="16" width="22" height="6.5" rx="3.25" fill="{{ c }}" opacity=".8"/>
+  <rect x="8" y="26" width="32" height="6.5" rx="3.25" fill="{{ c }}" opacity=".6"/>
+  <rect x="3" y="36" width="42" height="6.5" rx="3.25" fill="{{ c }}" opacity=".4"/>
+</svg>
+{%- endmacro %}
+
+{#- Round 2 · Histogram: the optimizer's statistics; sorted bars rising to the right -#}
+{% macro histMark(c, size=48) -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">
+  {%- for h in [12, 20, 28, 36, 44] %}
+  <rect x="{{ 3 + loop.index0 * 9 }}" y="{{ 46 - h }}" width="6.5" height="{{ h }}" rx="2" fill="{{ c }}" opacity="{{ [0.35, 0.5, 0.65, 0.82, 1][loop.index0] }}"/>
+  {%- endfor %}
+</svg>
+{%- endmacro %}
+
+{#- Round 1 · Stack: a flat, modern take on the database cylinder -#}
+{% macro stackMark(c, size=48) -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">
+  <ellipse cx="24" cy="12" rx="18" ry="6" fill="{{ c }}"/>
+  <path d="M6 17 A18 6 0 0 0 42 17 V24 A18 6 0 0 1 6 24 Z" fill="{{ c }}" opacity=".7"/>
+  <path d="M6 29 A18 6 0 0 0 42 29 V36 A18 6 0 0 1 6 36 Z" fill="{{ c }}" opacity=".42"/>
+</svg>
+{%- endmacro %}
+
+{#- Round 1 · Cells: the initial drawn as cells of a table; S for SIGMOD, P for PODS -#}
+{% macro cellsMark(c, letter="S", size=48) -%}
+{%- set rows = ["111","100","111","001","111"] if letter == "S" else ["111","101","111","100","100"] -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">
+  {%- for r in rows %}{% set y = loop.index0 * 9.2 + 1 %}
+  {%- for col in [0, 1, 2] %}
+  <rect x="{{ 10 + col * 9.6 }}" y="{{ y }}" width="8" height="8" rx="2" fill="{{ c }}" opacity="{{ '1' if r[col] == '1' else '.12' }}"/>
+  {%- endfor %}{% endfor %}
+</svg>
+{%- endmacro %}
+
+{#- Round 1 · Disc: heritage of the 1998 logo (disc + swoosh), simplified -#}
+{% macro discMark(c, size=48, bg="#fff") -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">
+  <circle cx="24" cy="24" r="22" fill="{{ c }}"/>
+  <circle cx="24" cy="24" r="15" fill="none" stroke="{{ bg }}" stroke-opacity=".35" stroke-width="1.5"/>
+  <circle cx="24" cy="24" r="8" fill="none" stroke="{{ bg }}" stroke-opacity=".35" stroke-width="1.5"/>
+  <path d="M8 34 C17 32 23 17 41 12" fill="none" stroke="{{ bg }}" stroke-width="5" stroke-linecap="round"/>
+</svg>
+{%- endmacro %}
+
+{#- Any mark by name; `name` picks the SIGMOD or PODS variant where the drawing differs -#}
+{% macro mark(kind, c, name="SIGMOD", size=48, bg="#fff") -%}
+  {%- if kind == "sigma" %}{{ sigmaMark(c, name[0], size, bg) }}
+  {%- elif kind == "join" %}{{ joinMark(c, size) }}
+  {%- elif kind == "index" %}{{ indexMark(c, size) }}
+  {%- elif kind == "levels" %}{{ levelsMark(c, size) }}
+  {%- elif kind == "hist" %}{{ histMark(c, size) }}
+  {%- elif kind == "stack" %}{{ stackMark(c, size) }}
+  {%- elif kind == "cells" %}{{ cellsMark(c, name[0], size) }}
+  {%- else %}{{ discMark(c, size, bg) }}{% endif %}
+{%- endmacro %}
+
+{#- Horizontal lockup: mark + "ACM" + name -#}
+{% macro lockup(kind, c, name="SIGMOD", ink="#111827", bg="#fff", size=44) -%}
+<span class="lk lk-{{ kind }}" style="--c: {{ c }}; --ink: {{ ink }}">
+  {{- mark(kind, c, name, size, bg) }}
+  <span class="lk-text"><small>ACM</small><b>{{ name }}</b></span>
+</span>
+{%- endmacro %}
+
+{#- Round 3 · Wordmarks: SIGMOD spelled out, with one letter or gap carrying the data idea.
+    Glyphs are inline SVG sized in em, so they follow the wordmark's font size and sit on the baseline. -#}
+{% macro wordmark(kind, c, ink="#111827", size=40) -%}
+<span class="wm wm-{{ kind }}" style="--c: {{ c }}; --ink: {{ ink }}; font-size: {{ size }}px">
+{%- if kind == "sigmao" -%}
+  SIGM<svg class="wm-g" viewBox="0 0 26 24" style="width: .79em" aria-hidden="true"><g fill="none" stroke="{{ c }}" stroke-width="4.4"><circle cx="12" cy="12" r="9.8"/><path d="M12 2.2 H26"/></g></svg>D
+{%- elif kind == "join" -%}
+  SIG<svg class="wm-g wm-gap" viewBox="0 0 28 24" style="width: .85em" aria-hidden="true" stroke-linejoin="round" stroke-width="3"><path d="M3 3 L14 12 L3 21 Z" fill="{{ c }}" stroke="{{ c }}"/><path d="M25 3 L14 12 L25 21 Z" fill="{{ c }}" stroke="{{ c }}" opacity=".5"/></svg>MOD
+{%- elif kind == "cyl" -%}
+  SIGM<svg class="wm-g" viewBox="0 0 22 24" style="width: .67em" aria-hidden="true"><ellipse cx="11" cy="4" rx="10" ry="3.8" fill="{{ c }}"/><path d="M1 8 A10 3.8 0 0 0 21 8 V12.5 A10 3.8 0 0 1 1 12.5 Z" fill="{{ c }}" opacity=".7"/><path d="M1 15.5 A10 3.8 0 0 0 21 15.5 V20 A10 3.8 0 0 1 1 20 Z" fill="{{ c }}" opacity=".42"/></svg>D
+{%- elif kind == "tuple" -%}
+  {%- for ch in "SIGMOD" %}<b{% if loop.first %} class="on"{% endif %}>{{ ch }}</b>{% endfor %}
+{%- else -%}
+  {{ sigmaMark(c, "S", size * 1.15, "#fff" if ink != "#ffffff" else "#0a0a0a") }}<span class="wm-word">SIGMOD</span>
+{%- endif -%}
+</span>
+{%- endmacro %}
+
+{#- Square icon for each wordmark (favicon, app icon, social avatar) -#}
+{% macro wordmarkIcon(kind, c, size=48) -%}
+  {%- if kind == "join" %}{{ joinMark(c, size) }}
+  {%- elif kind == "cyl" %}{{ stackMark(c, size) }}
+  {%- elif kind == "tuple" -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true"><rect width="48" height="48" rx="12" fill="{{ c }}"/><text x="24" y="34" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-weight="600" font-size="30" fill="#fff">S</text></svg>
+  {%- else %}{{ sigmaMark(c, "S", size) }}{% endif %}
+{%- endmacro %}
+
+{#- Round 4 · Light, tracked "ACM SIGMOD" with a small gradient symbol (in the spirit of SIGARCH and SIGCHI).
+    Gradients #g4l (light backgrounds) and #g4d (dark) are defined once per page by r4Defs(). -#}
+{% macro r4Defs() -%}
+<svg width="0" height="0" style="position: absolute" aria-hidden="true"><defs>
+  <linearGradient id="g4l" gradientUnits="userSpaceOnUse" x1="4" y1="44" x2="44" y2="4"><stop offset="0" stop-color="#1f4fa3"/><stop offset="1" stop-color="#0aa5b8"/></linearGradient>
+  <linearGradient id="g4d" gradientUnits="userSpaceOnUse" x1="4" y1="44" x2="44" y2="4"><stop offset="0" stop-color="#7aa2ff"/><stop offset="1" stop-color="#3fe0cf"/></linearGradient>
+</defs></svg>
+{%- endmacro %}
+
+{% macro r4Mark(kind, size=48, dark=false) -%}
+{%- set g = "url(#g4d)" if dark else "url(#g4l)" -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">
+{%- if kind == "stream" %}
+  <path d="M37 11 C31 3 11 4 12.5 15 C14 25 35.5 22 35.5 33.5 C35.5 44.5 15 45 10 36.5" fill="none" stroke="{{ g }}" stroke-width="5" stroke-linecap="round"/>
+{%- elif kind == "points" %}
+  {%- for i in range(5) %}{% for j in range(5) %}{% set d = (i + j - 4) | abs %}
+  <circle cx="{{ 8 + j * 8 }}" cy="{{ 8 + i * 8 }}" r="{{ [4.2, 2.8, 1.6, 1.1, 1.1][d] }}" fill="{{ g }}" opacity="{{ [1, 0.85, 0.6, 0.4, 0.4][d] }}"/>
+  {%- endfor %}{% endfor %}
+{%- elif kind == "strata" %}
+  <g fill="none" stroke="{{ g }}" stroke-width="3.4" stroke-linecap="round">
+    <ellipse cx="24" cy="12" rx="17" ry="6"/>
+    <path d="M7 23 A17 6 0 0 0 41 23"/><path d="M7 34 A17 6 0 0 0 41 34"/>
+    <path d="M7 12 V34 M41 12 V34" opacity=".35"/>
+  </g>
+{%- elif kind == "graph" %}
+  <path d="M35 9 L15 13 L24 24 L33 35 L13 39" fill="none" stroke="{{ g }}" stroke-width="2.6" stroke-linejoin="round" opacity=".55"/>
+  {%- for p in [[35, 9, 4.6], [15, 13, 3.8], [24, 24, 4.6], [33, 35, 3.8], [13, 39, 4.6]] %}
+  <circle cx="{{ p[0] }}" cy="{{ p[1] }}" r="{{ p[2] }}" fill="{{ g }}"/>
+  {%- endfor %}
+{%- else %}
+  <g fill="none" stroke="{{ g }}" stroke-width="5.2" stroke-linecap="round"><circle cx="21" cy="28" r="12"/><path d="M21 16 H41"/></g>
+{%- endif %}
+</svg>
+{%- endmacro %}
+
+{#- Horizontal (mark beside the name, like SIGCHI) or stacked (mark above, like SIGARCH) -#}
+{% macro r4Lockup(kind, layout="h", dark=false, size=40) -%}
+<span class="r4 r4-{{ layout }}{% if dark %} r4-dark{% endif %}" style="font-size: {{ size }}px">
+  {%- if kind == "sigmao" and layout == "h" -%}
+  <span class="r4-name"><span class="r4-acm">ACM</span> SIGM<svg class="r4-o" viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="{{ 'url(#g4d)' if dark else 'url(#g4l)' }}" stroke-width="5.6"><circle cx="20" cy="26" r="16.4"/><path d="M20 9.6 H46"/></g></svg>D</span>
+  {%- else -%}
+  {{ r4Mark(kind, size * (1.7 if layout == "v" else 1.4), dark) }}<span class="r4-name"><span class="r4-acm">ACM</span> SIGMOD</span>
+  {%- endif -%}
+</span>
+{%- endmacro %}
+
+{#- Round 5 · SIG⋈MOD: no "ACM", the join operator drawn airy with the round-4 gradient.
+    Three drawings of the same glyph; coordinates share the 48-unit space of #g4l/#g4d. -#}
+{% macro joinGlyph(style="ribbon", dark=false) -%}
+{%- set g = "url(#g4d)" if dark else "url(#g4l)" -%}
+{%- if style == "outline" %}
+  <path d="M8 11 L24 24 L8 37 Z M40 11 L24 24 L40 37 Z" fill="none" stroke="{{ g }}" stroke-width="3" stroke-linejoin="round"/>
+{%- elif style == "layered" %}
+  <path d="M7 11 L28 24 L7 37 Z" fill="{{ g }}" opacity=".55" stroke="{{ g }}" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M41 11 L20 24 L41 37 Z" fill="{{ g }}" opacity=".55" stroke="{{ g }}" stroke-width="2" stroke-linejoin="round"/>
+{%- else %}
+  <path d="M24 24 C18 17 13 11 9 11 C6.5 11 6.5 37 9 37 C13 37 18 31 24 24 C30 17 35 11 39 11 C41.5 11 41.5 37 39 37 C35 37 30 31 24 24 Z" fill="none" stroke="{{ g }}" stroke-width="3" stroke-linejoin="round"/>
+{%- endif %}
+{%- endmacro %}
+
+{% macro joinWordmark(style="ribbon", dark=false, size=40, weight=400) -%}
+<span class="r5{% if dark %} r4-dark{% endif %}" style="font-size: {{ size }}px; font-weight: {{ weight }}">SIG<svg class="r5-j" viewBox="3 7 42 34" aria-hidden="true">{{ joinGlyph(style, dark) }}</svg>MOD</span>
+{%- endmacro %}
+
+{% macro joinIcon(style="ribbon", size=48, dark=false) -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">{{ joinGlyph(style, dark) }}</svg>
+{%- endmacro %}

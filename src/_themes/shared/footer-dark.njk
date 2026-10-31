@@ -1,0 +1,42 @@
+{#- Partner logos and the black footer, shared by all designs. Styles: /assets/footer.css #}
+{%- from "shared/brand.njk" import brand -%}
+<section class="partners-band" aria-label="Partners">
+  <div class="partners-in">
+    <p>Partners</p>
+    {%- for p in site.partners %}
+    <a href="{{ p.url }}" title="{{ p.name }}"><img src="{{ p.logo }}" alt="{{ p.name }}" loading="lazy"></a>
+    {%- endfor %}
+  </div>
+</section>
+<footer class="xfoot">
+  <div class="xfoot-in">
+    <div class="xfoot-about">
+      <p class="xfoot-brand">{{ brand(true) }}</p>
+      <p>{{ site.longTitle }}, and sponsor of the Symposium on Principles of Database Systems.</p>
+      <p class="xfoot-volunteer"><strong>Run by volunteers.</strong> {{ site.volunteerNote }}
+        <a href="{{ site.repo }}/issues/new">Report a problem</a> or <a href="{{ site.editBase }}{{ page.inputPath | replace('./', '') }}">suggest an edit</a>.</p>
+      <a class="xfoot-acm" href="https://www.acm.org/" title="Association for Computing Machinery"><img src="/assets/logo/acm.png" alt="ACM, Association for Computing Machinery" width="160" height="56"></a>
+    </div>
+    <nav class="xfoot-col" aria-label="SIGMOD">
+      <h2>SIGMOD</h2>
+      <ul>{% for m in nav.sigmod.menus %}<li><a href="{{ m.url }}">{{ m.label }}</a></li>{% endfor %}<li><a href="/news/">News</a></li></ul>
+    </nav>
+    <nav class="xfoot-col" aria-label="PODS">
+      <h2>PODS</h2>
+      <ul>{% for m in nav.pods.menus %}<li><a href="{{ m.url }}">{{ m.label }}</a></li>{% endfor %}</ul>
+    </nav>
+    <nav class="xfoot-col" aria-label="Get involved">
+      <h2>Get involved</h2>
+      <ul>
+        <li><a href="{{ nav.join.url }}">{{ nav.join.label }}</a></li>
+        <li><a href="/membership/">Membership</a></li>
+        <li><a href="/membership/sigmod-chapters/">Chapters</a></li>
+        <li><a href="/feed.xml">News feed</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="xfoot-bottom">
+    <span>© {{ currentYear }} ACM, Inc. ACM SIGMOD is a Special Interest Group of the <a href="https://www.acm.org/">Association for Computing Machinery</a>.</span>
+    <span><a href="{{ site.repo }}">Source on GitHub</a></span>
+  </div>
+</footer>

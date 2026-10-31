@@ -1,0 +1,67 @@
+---
+layout: b/base.njk
+---
+{%- set next = conferences | first -%}
+{%- set prev = conferences[1] -%}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow light">ACM Special Interest Group on Management of Data</p>
+      <h1>Advancing the science and practice of data management.</h1>
+      <p class="hero-lead">SIGMOD brings together researchers, practitioners, developers and students working on databases and data systems — and, together with PODS, runs the field's flagship conference.</p>
+      <p class="hero-cta"><a class="btn" href="/join/">Become a member</a> <a class="btn btn-ghost" href="/sigmod-awards/">Explore the awards</a></p>
+    </div>
+    <a class="conf-card" href="{{ next.links[0].url }}">
+      <span class="conf-label">Next conference</span>
+      <span class="conf-year">{{ next.year }}</span>
+      <span class="conf-name">{{ next.name }}</span>
+      <span class="conf-loc">{{ next.location }}</span>
+      <span class="conf-go">Conference website →</span>
+    </a>
+  </div>
+</section>
+
+<section class="wrap twins">
+  <a class="twin twin-sigmod" href="/about-sigmod/">
+    <span class="twin-kicker">Systems · Applications · Practice</span>
+    <h2>SIGMOD</h2>
+    <p>The ACM SIGMOD Conference — data management systems, techniques and applications. Journal: PACMMOD. Newsletter: SIGMOD Record.</p>
+    <span class="twin-go">About SIGMOD →</span>
+  </a>
+  <a class="twin twin-pods" href="/pods-home/">
+    <span class="twin-kicker">Theory · Foundations · Principles</span>
+    <h2>PODS</h2>
+    <p>{{ site.pods.description }}</p>
+    <span class="twin-go">About PODS →</span>
+  </a>
+</section>
+
+<section class="wrap block">
+  <div class="block-head"><h2>Latest news</h2><a href="/news/">All news →</a></div>
+  <div class="cards">
+    {%- for item in collections.news | limit(6) %}
+    <a class="card" href="{{ item | href }}">
+      <span class="card-meta">{{ item.date | date('short') }}{% for c in item.data.categories %} · {{ c }}{% endfor %}{% if item.data.section == "pods" %} · PODS{% endif %}</span>
+      <h3>{{ item.data.title }}</h3>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="block-head"><h2>Quick links</h2></div>
+    <div class="tiles">
+      {%- for l in nav.quicklinks %}<a class="tile" href="{{ l.url }}">{{ l.label }}{% if l.external %} <span aria-hidden="true">↗</span>{% endif %}</a>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap block">
+  <div class="block-head"><h2>Recent conferences</h2><a href="/conferences/">All since 1975 →</a></div>
+  <ol class="conf-strip">
+    {%- for c in conferences | limit(6) %}
+    <li><a href="{{ c.links[0].url if c.links.length else '/conferences/' }}"><b>{{ c.year }}</b><span>{{ c.location }}</span></a></li>
+    {%- endfor %}
+  </ol>
+</section>

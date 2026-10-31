@@ -1,0 +1,40 @@
+/* Shared by all designs: partner logos, the black footer, the Join button and the SIG⋈MOD wordmark */
+.partners-band { background: #fff; border-top: 1px solid #e5e7eb; padding: 28px 0; }
+.partners-in { max-width: 1180px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: center; gap: 20px 48px; flex-wrap: wrap; }
+.partners-in p { margin: 0; font: 600 12px/1 var(--sans, system-ui, sans-serif); letter-spacing: .1em; text-transform: uppercase; color: #6b7280; }
+.partners-in a { display: block; opacity: .85; filter: grayscale(.2); transition: opacity .15s, filter .15s; }
+.partners-in a:hover { opacity: 1; filter: none; }
+.partners-in img { display: block; height: 52px; width: auto; }
+.xfoot-acm { display: inline-block; margin: 8px 0 0; }
+.xfoot-acm img { display: block; height: 56px; width: auto; }
+.btn-join { display: inline-block; flex: none; background: #1f4fa3; color: #fff !important; text-decoration: none !important; font: 600 14px/1 var(--sans, system-ui, sans-serif); padding: 10px 16px; border-radius: 999px; white-space: nowrap; }
+.btn-join:hover { background: #173d80; }
+.xfoot { background: #0a0a0a; color: #a3a3a3; font: 14.5px/1.6 var(--sans, system-ui, sans-serif); padding: 56px 0 0; }
+.xfoot a { color: #e5e5e5; text-decoration: none; }
+.xfoot a:hover { color: #fff; text-decoration: underline; }
+.xfoot-in, .xfoot-bottom { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.xfoot-in { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
+.xfoot-in > * { min-width: 0; }
+.xfoot-brand { color: #fff; font-weight: 700; font-size: 18px; margin: 0 0 10px; letter-spacing: .01em; }
+.xfoot-brand span { color: #737373; font-weight: 400; }
+.xfoot-about p { margin: 0 0 12px; max-width: 460px; }
+.xfoot-volunteer { border-left: 2px solid #404040; padding-left: 14px; color: #d4d4d4; }
+.xfoot-volunteer strong { color: #fff; }
+.xfoot-volunteer a { text-decoration: underline; text-underline-offset: 3px; }
+.xfoot h2 { color: #fff; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; margin: 2px 0 12px; }
+.xfoot ul { list-style: none; margin: 0; padding: 0; }
+.xfoot li { padding: 3px 0; }
+.xfoot-bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 44px; padding-top: 20px; padding-bottom: 28px; border-top: 1px solid #262626; font-size: 13.5px; color: #737373; }
+.xfoot-bottom a { color: #a3a3a3; }
+@media (max-width: 860px) { .xfoot-in { grid-template-columns: 1fr 1fr; } .xfoot-about { grid-column: 1 / -1; } }
+@media (max-width: 520px) { .xfoot-in { grid-template-columns: 1fr; padding: 0 16px; } .xfoot-bottom { padding-left: 16px; padding-right: 16px; } }
+
+/* SIG⋈MOD wordmark (shared/brand.njk) */
+.wm-sigmod { display: inline-flex; align-items: baseline; font: 400 24px/1 "Jost", sans-serif; letter-spacing: .1em; color: #1f2937; white-space: nowrap; }
+.wm-sigmod svg { width: 1.05em; height: .85em; margin: 0 .16em 0 .06em; align-self: center; position: relative; top: -.04em; overflow: visible; }
+.wm-sigmod-dark { color: #fff; }
+.xfoot-brand .wm-sigmod { font-size: 26px; }
+@media (max-width: 520px) {
+  .btn-join { padding: 8px 12px; font-size: 13px; }
+  .logo .wm-sigmod, .masthead-logo .wm-sigmod { font-size: 19px !important; }
+}

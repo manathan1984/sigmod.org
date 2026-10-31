@@ -1,0 +1,20 @@
+{#- One menu bar; menus with groups (PODS, History) open as a wide, grouped dropdown. #}
+<ul class="mnav">
+  {%- for m in nav.main %}
+  <li class="mnav-item{% if m | isActive(page.url) or (m.area == 'pods' and section == 'pods') %} active{% endif %}{% if m.area == 'pods' %} mnav-pods{% endif %}">
+    <a class="mnav-top" href="{{ m.url }}">{{ m.label }}</a>
+    <div class="drop{% if m.groups %} drop-wide{% endif %}">
+      {%- if m.groups %}
+      {%- for g in m.groups %}
+      <div class="drop-group">
+        <p>{{ g.label }}</p>
+        <ul>{% for c in g.children %}<li><a href="{{ c.url }}">{{ c.label }}</a></li>{% endfor %}</ul>
+      </div>
+      {%- endfor %}
+      {%- else %}
+      <ul>{% for c in m.children %}<li><a href="{{ c.url }}"{% if c.external %} rel="external"{% endif %}>{{ c.label }}{% if c.external %} <span class="ext" aria-hidden="true">↗</span>{% endif %}</a></li>{% endfor %}</ul>
+      {%- endif %}
+    </div>
+  </li>
+  {%- endfor %}
+</ul>

@@ -1,0 +1,51 @@
+{%- from "shared/brand.njk" import brand -%}
+{%- if redirect_to %}{% include "shared/redirect.njk" %}{% else -%}
+<!doctype html>
+<html lang="en">
+<head>
+{% include "shared/head.njk" %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+</head>
+<body class="space-{{ 'pods' if section == 'pods' else 'sigmod' }}">
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="wrap">
+    <span>ACM Special Interest Group on Management of Data</span>
+    <a href="/news/">News</a>
+  </div>
+</div>
+<header class="masthead">
+  <div class="wrap">
+    <a class="masthead-logo" href="/" aria-label="ACM SIGMOD home">{{ brand() }}</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
+    <nav id="mainnav" class="mainnav" aria-label="Main">
+      <ul>
+        {%- for m in nav.main %}
+        <li class="has-menu{% if m | isActive(page.url) or (m.area == 'pods' and section == 'pods') %} active{% endif %}">
+          <a href="{{ m.url }}">{{ m.label }}</a>
+          <ul>
+            {%- for c in m.children %}<li><a href="{{ c.url }}"{% if c.external %} rel="external"{% endif %}>{{ c.label }}</a></li>{% endfor %}
+          </ul>
+        </li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <a class="btn-join" href="{{ nav.join.url }}">{{ nav.join.label }}</a>
+  </div>
+</header>
+<main id="main">
+{{ content | safe }}
+</main>
+{% include "shared/footer-dark.njk" %}
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', e => {
+  const open = document.body.classList.toggle('nav-open');
+  e.currentTarget.setAttribute('aria-expanded', open);
+});
+</script>
+{% include "shared/devbar.njk" %}
+</body>
+</html>
+{%- endif %}

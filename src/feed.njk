@@ -1,0 +1,21 @@
+---
+permalink: /feed.xml
+layout: false
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ACM SIGMOD news</title>
+  <link href="https://sigmod.org/feed.xml" rel="self"/>
+  <link href="https://sigmod.org/news/"/>
+  <id>https://sigmod.org/news/</id>
+  <updated>{{ (collections.news | first).date.toISOString() }}</updated>
+  {%- for item in collections.news | limit(20) %}
+  <entry>
+    <title>{{ item.data.title | escape }}</title>
+    <link href="https://sigmod.org{{ item | href }}"/>
+    <id>https://sigmod.org{{ item.url or item.data.redirect_to }}</id>
+    <updated>{{ item.date.toISOString() }}</updated>
+  </entry>
+  {%- endfor %}
+</feed>

@@ -1,0 +1,9 @@
+<ul class="news-list">
+{%- for item in collections.news | limit(newsLimit or 8) %}
+  <li>
+    <time datetime="{{ item.date | date('iso') }}">{{ item.date | date('short') }}</time>
+    <a href="{{ item | href }}">{{ item.data.title }}</a>
+    {%- if item.data.section == "pods" %}<span class="tag tag-pods">PODS</span>{% endif %}
+  </li>
+{%- endfor %}
+</ul>
