@@ -197,7 +197,10 @@ for (const i of items) {
 }
 
 await fs.mkdir(path.join(ROOT, "src/_data"), { recursive: true });
-await fs.writeFile(path.join(ROOT, "src/_data/conferences.json"), JSON.stringify(conferences(), null, 2) + "\n");
+// conferences.json is maintained by hand after the switch; re-derive it from WordPress only on request
+const confFile = path.join(ROOT, "src/_data/conferences.json");
+if (process.argv.includes("--conferences") || !(await fs.stat(confFile).catch(() => null)))
+  await fs.writeFile(confFile, JSON.stringify(conferences(), null, 2) + "\n");
 
 // reports for the migration proposal
 const report = path.join(ROOT, "migration");

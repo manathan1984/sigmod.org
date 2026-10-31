@@ -8,4 +8,6 @@ npm run serve     # design alternatives on :8081 (A) … :8084 (D)
 npm run preview   # all designs in one site, as published on GitHub Pages
 ```
 
+**Updating the site** (news, conferences, awards): see [docs/UPDATING.md](docs/UPDATING.md).
+
 See [docs/MIGRATION.md](docs/MIGRATION.md) for the content audit, proposed structure and hosting plan, and [docs/CLEANUP.md](docs/CLEANUP.md) for the running list of pages to merge or retire.
