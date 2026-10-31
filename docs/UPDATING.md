@@ -104,13 +104,13 @@ PODS awards (Best Paper, Alberto O. Mendelzon Test-of-Time) live under
 A new award, or a retired one, also needs its menu entry in `src/_data/nav.js`:
 "Awards & Honors" for current awards, "History › Past awards" for retired ones.
 
-## Other things that change every year
+## Other things that change periodically
 
-| What | Where |
-|---|---|
-| Officers (after elections) | `src/content/pages/about-sigmod/index.md` |
-| Executive committee, boards, editors | `src/content/pages/about-sigmod/committees/index.md` |
-| Program chairs | `src/content/pages/sigmod-history/program-chair/index.md` |
-| PODS organisation and PCs | `src/content/pages/pods-home/pods-organization/index.md` |
-| Menus | `src/_data/nav.js` |
-| Volunteer note, partners | `src/_data/site.js` |
+| What | When | Where |
+|---|---|---|
+| Officers | Every four years, after the elections | `src/content/pages/about-sigmod/index.md` |
+| Executive committee, boards, editors | When members change | `src/content/pages/about-sigmod/committees/index.md` |
+| Program chairs | Each new conference | `src/content/pages/sigmod-history/program-chair/index.md` |
+| PODS organisation and PCs | When members change | `src/content/pages/pods-home/pods-organization/index.md` |
+| Menus | When a page is added or retired | `src/_data/nav.js` |
+| Volunteer note, partners | Rarely | `src/_data/site.js` |
