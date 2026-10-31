@@ -87,6 +87,9 @@ For each award given this year:
    for example `sigmod-systems-award`): add a new first row to the recipients
    table, copying the row below. If there is no award this year, add the year
    with "No award for <year>", as the page already does.
+   The Codd Innovations and Contributions pages show photos instead of a
+   table: copy the first `<figure>…</figure>` line and change the photo, year,
+   name and citation link.
 2. **Optional citation page** for the major awards (Innovations,
    Contributions, Systems, Test of Time). Add
    `src/content/pages/<year>-sigmod-<award>-award/index.md` with

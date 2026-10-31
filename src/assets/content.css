@@ -1,0 +1,23 @@
+/* Shared styles for imported content: people grids and year tables (all designs) */
+.prose .people { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 22px 18px; margin: 22px 0 28px; }
+.prose .people figure { margin: 0; display: flex; flex-direction: column; gap: 3px; font-size: 14px; line-height: 1.35; }
+.prose .people img { width: 100%; aspect-ratio: 1; object-fit: cover; object-position: 50% 25%; border-radius: 10px; background: #eef1f5; margin: 0 0 8px; max-width: none; height: auto; }
+.prose .people figcaption { display: flex; flex-direction: column; gap: 2px; }
+.prose .people figcaption span { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; opacity: .6; }
+.prose .people figcaption strong { font-size: 15px; }
+.prose .people figcaption em { font-style: normal; opacity: .75; }
+.prose .people figcaption a:not(strong a) { font-size: 13px; }
+
+.prose table.t-years td:first-child { width: 4.5em; white-space: nowrap; font-weight: 600; font-variant-numeric: tabular-nums; }
+.prose table.t-years { display: table; }
+.prose table.t-years td p:first-child { margin-top: 0; }
+.prose table.t-years td p:last-child { margin-bottom: 0; }
+.prose table.t-logos small { display: block; margin-top: 4px; font-size: 13px; line-height: 1.45; opacity: .75; }
+.prose table.t-logos td:last-child { width: 96px; }
+.prose table.t-logos img { width: 96px; height: auto; max-width: none; }
+.prose table img { height: auto; max-width: 160px; }
+@media (max-width: 600px) {
+  .prose .people { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 14px; }
+  .prose table.t-years { display: block; }
+  .prose table.t-logos td:last-child:not([colspan]) { display: none; }
+}

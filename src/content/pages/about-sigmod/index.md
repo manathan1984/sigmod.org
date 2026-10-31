@@ -17,7 +17,11 @@ It is easy to [join SIGMOD](/join/). You may become a SIGMOD member even if you 
 
 ### SIGMOD Officers
 
-<table><tbody><tr align="center"><td>CHAIRPERSON</td><td>VICE-CHAIR</td><td>SECRETARY/TREASURER</td></tr><tr align="center"><td><img src="https://sigmod.org/wp-content/uploads/2025/07/Angela-Bonifatihs-300x300.jpeg" alt="" width="140" height="140"></td><td><img src="https://sigmod.org/wp-content/uploads/2025/07/alexandra_meliou-263x300.jpg" alt="" width="128" height="140"></td><td><img src="https://sigmod.org/wp-content/uploads/2025/07/manos-athanassoulis-300x300.jpg" alt="" width="140" height="140"></td></tr><tr align="center"><td><a href="https://perso.liris.cnrs.fr/angela.bonifati/">Angela Bonifati</a></td><td><u><a href="https://people.cs.umass.edu/~ameli/">Alexandra Meliou</a></u></td><td><u><a href="https://cs-people.bu.edu/mathan/">Manos Athanassoulis</a></u></td></tr><tr align="center"><td></td><td></td><td></td></tr><tr><td>Lyon 1 University, France</td><td>University of Massachusetts Amherst, USA</td><td>Boston University, USA</td></tr></tbody></table>
+<div class="people">
+<figure><img src="https://sigmod.org/wp-content/uploads/2025/07/Angela-Bonifatihs-300x300.jpeg" alt="Angela Bonifati" loading="lazy"><figcaption><span>Chair</span><strong><a href="https://perso.liris.cnrs.fr/angela.bonifati/">Angela Bonifati</a></strong><em>Lyon 1 University, France</em></figcaption></figure>
+<figure><img src="https://sigmod.org/wp-content/uploads/2025/07/alexandra_meliou-263x300.jpg" alt="Alexandra Meliou" loading="lazy"><figcaption><span>Vice-Chair</span><strong><a href="https://people.cs.umass.edu/~ameli/">Alexandra Meliou</a></strong><em>University of Massachusetts Amherst, USA</em></figcaption></figure>
+<figure><img src="https://sigmod.org/wp-content/uploads/2025/07/manos-athanassoulis-300x300.jpg" alt="Manos Athanassoulis" loading="lazy"><figcaption><span>Secretary/Treasurer</span><strong><a href="https://cs-people.bu.edu/mathan/">Manos Athanassoulis</a></strong><em>Boston University, USA</em></figcaption></figure>
+</div>
 
 ### Committees and volunteers
 
