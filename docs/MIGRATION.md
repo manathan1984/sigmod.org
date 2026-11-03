@@ -113,6 +113,10 @@ API, and directory listings are blocked (HTTP 403). The counts are in
 Someone with server access needs to send a tarball of these folders. They
 cannot be crawled.
 
+Every link that still points at the old server, with a suggested fix for each, is in
+[OLD-SITE-LINKS.md](OLD-SITE-LINKS.md). Regenerate it with `npm run old-links`
+(add `-- --check` to re-check the old server).
+
 ## Proposed structure
 
 The rule is to **keep every existing URL**. Each page either stays where it is
@@ -194,5 +198,6 @@ src/_data/                      site, nav (IA), conferences
 src/_includes/                  layouts (base, home, page) and shared partials
 src/assets/                     site.css, content.css, footer.css
 scripts/import-wp.mjs           WordPress → Markdown importer
+scripts/old-links-report.mjs    links to the old server → docs/OLD-SITE-LINKS.md
 migration/                      url-inventory.tsv, duplicates.json, legacy-paths.json
 ```

@@ -6,7 +6,8 @@
   "scripts": {
     "build": "eleventy --quiet",
     "serve": "eleventy --serve --port=8080 --quiet",
-    "import": "node scripts/import-wp.mjs"
+    "import": "node scripts/import-wp.mjs",
+    "old-links": "eleventy --quiet && node scripts/old-links-report.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",
