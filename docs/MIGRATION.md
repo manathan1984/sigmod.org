@@ -16,8 +16,8 @@ Downloads are cached in `migration/cache/`; pass `--refresh` to re-download.
 The site uses the design that was called C (Refined) during the review: modern
 sans text with serif headlines, a light hero band, three feature tiles and a
 news list. The other alternatives (Classic, Bold, Light modern) were dropped.
-Logo candidates are discussed at `/proposals/logos/`, linked from the small
-"Review" bar at the bottom right of every page (`src/_includes/shared/devbar.njk`).
+Logo candidates are kept in a separate site and repository,
+[sigmod-org/sigmod-logo](https://github.com/sigmod-org/sigmod-logo).
 
 The menu bar (`src/_data/nav.js`):
 
@@ -193,7 +193,6 @@ src/content/news/*.md           WP posts
 src/_data/                      site, nav (IA), conferences
 src/_includes/                  layouts (base, home, page) and shared partials
 src/assets/                     site.css, content.css, footer.css
-src/proposals/logos.njk         logo proposals page
 scripts/import-wp.mjs           WordPress → Markdown importer
 migration/                      url-inventory.tsv, duplicates.json, legacy-paths.json
 ```

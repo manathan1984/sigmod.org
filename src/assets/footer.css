@@ -1,4 +1,4 @@
-/* Shared by all designs: partner logos, the black footer, the Join button and the SIG⋈MOD wordmark */
+/* Shared by all pages: partner logos, the black footer and the Join button */
 .partners-band { background: #fff; border-top: 1px solid #e5e7eb; padding: 28px 0; }
 .partners-in { max-width: 1180px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: center; gap: 20px 48px; flex-wrap: wrap; }
 .partners-in p { margin: 0; font: 600 12px/1 var(--sans, system-ui, sans-serif); letter-spacing: .1em; text-transform: uppercase; color: #6b7280; }
