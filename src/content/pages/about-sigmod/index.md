@@ -19,7 +19,7 @@ It is easy to [join SIGMOD](/join/). You may become a SIGMOD member even if you 
 
 <div class="people">
 <figure><img src="/assets/officers/angela-bonifati.jpg" alt="Angela Bonifati" loading="lazy"><figcaption><span>Chair</span><strong><a href="https://perso.liris.cnrs.fr/angela.bonifati/">Angela Bonifati</a></strong><em>Lyon 1 University, France</em></figcaption></figure>
-<figure><img src="/assets/officers/alexandra-meliou.jpg" alt="Alexandra Meliou" loading="lazy"><figcaption><span>Vice-Chair</span><strong><a href="https://people.cs.umass.edu/~ameli/">Alexandra Meliou</a></strong><em>University of Massachusetts Amherst, USA</em></figcaption></figure>
+<figure><img src="/assets/officers/alexandra-meliou.jpg" alt="Alexandra Meliou" loading="lazy"><figcaption><span>Vice-Chair</span><strong><a href="https://people.cs.umass.edu/~ameli/">Alexandra Meliou</a></strong><em>UMass Amherst, USA</em></figcaption></figure>
 <figure><img src="/assets/officers/manos-athanassoulis.jpg" alt="Manos Athanassoulis" loading="lazy"><figcaption><span>Secretary/Treasurer</span><strong><a href="https://cs-people.bu.edu/mathan/">Manos Athanassoulis</a></strong><em>Boston University, USA</em></figcaption></figure>
 </div>
 
