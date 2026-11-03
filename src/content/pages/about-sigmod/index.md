@@ -1,5 +1,5 @@
 ---
-title: "What is SIGMOD?"
+title: "About SIGMOD"
 permalink: "/about-sigmod/"
 section: "sigmod"
 area: "about"

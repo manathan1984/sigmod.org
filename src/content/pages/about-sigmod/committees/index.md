@@ -6,7 +6,7 @@ area: "about"
 edited: true
 ---
 
-SIGMOD and PODS are run by volunteers. These are the people currently serving on SIGMOD's committees and boards. The officers are listed on [What is SIGMOD?](/about-sigmod/).
+SIGMOD and PODS are run by volunteers. These are the people currently serving on SIGMOD's committees and boards. The officers are listed on [About SIGMOD](/about-sigmod/).
 
 ### SIGMOD Advisory Board
 

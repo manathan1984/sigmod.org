@@ -6,7 +6,7 @@ const grouped = (menu) => ({ ...menu, children: menu.groups.flatMap((g) => g.chi
 const about = {
   label: "About", area: "about", url: "/about-sigmod/",
   children: [
-    { label: "What is SIGMOD?", url: "/about-sigmod/" },
+    { label: "About SIGMOD", url: "/about-sigmod/" },
     { label: "Membership", url: "/membership/" },
     { label: "Committees", url: "/about-sigmod/committees/" },
     { label: "Chapters", url: "/membership/sigmod-chapters/" },
