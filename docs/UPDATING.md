@@ -111,7 +111,7 @@ A new award, or a retired one, also needs its menu entry in `src/_data/nav.js`:
 
 | What | When | Where |
 |---|---|---|
-| Officers | Every four years, after the elections | `src/content/pages/about-sigmod/index.md` |
+| Officers | Every four years, after the elections | `src/content/pages/about-sigmod/index.md`; photos in `src/static/assets/officers/` |
 | Executive committee, boards, editors | When members change | `src/content/pages/about-sigmod/committees/index.md` |
 | Program chairs | Each new conference | `src/content/pages/sigmod-history/program-chair/index.md` |
 | PODS organisation and PCs | When members change | `src/content/pages/pods-home/pods-organization/index.md` |
