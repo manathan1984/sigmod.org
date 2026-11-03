@@ -4,8 +4,8 @@ title: "2026 SIGMOD Awards"
 permalink: "/2026-sigmod-awards/"
 section: "sigmod"
 area: "news"
-date: "2026-11-03"
-updated: "2026-11-03"
+date: "2026-06-03"
+updated: "2026-06-03"
 categories: ["Awards","News"]
 tags: ["news"]
 ---
