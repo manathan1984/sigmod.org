@@ -24,7 +24,7 @@ The menu bar (`src/_data/nav.js`):
 | Menu | Contents |
 |---|---|
 | About | What is SIGMOD?, Membership, Committees, Chapters, Policies, ACM Open |
-| Conferences | SIGMOD/PODS conferences, co-sponsored conferences, sponsored meetings, Reproducibility |
+| Conferences | SIGMOD/PODS conferences, sponsored meetings, in-cooperation events, Reproducibility |
 | Awards | Current awards and Distinguished AEs & PCs |
 | PODS | Grouped: About, Awards, Program, Proceedings (unchanged from the old site) |
 | Publications | PACMMOD, SIGMOD Record, SIGMOD Blog |
