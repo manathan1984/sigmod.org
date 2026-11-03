@@ -3,10 +3,10 @@ export default {
   longTitle: "ACM Special Interest Group on Management of Data",
   description:
     "The ACM Special Interest Group on Management of Data is concerned with the principles, techniques and applications of database management systems and data management technology.",
-  repo: "https://github.com/sigmod/sigmod.org",
+  repo: "https://github.com/sigmod-org/www.sigmod.org",
   volunteerNote:
     "sigmod.org is maintained by volunteers from the SIGMOD and PODS communities. Information is provided as is and may be incomplete or out of date; official policies are those published by ACM.",
-  editBase: "https://github.com/sigmod/sigmod.org/edit/main/",
+  editBase: "https://github.com/sigmod-org/www.sigmod.org/edit/main/",
   pods: {
     title: "ACM PODS",
     longTitle: "Symposium on Principles of Database Systems",
