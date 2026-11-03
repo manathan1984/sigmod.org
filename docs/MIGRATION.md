@@ -166,9 +166,9 @@ existing URL.
 ### Current setup
 
 `.github/workflows/pages.yml` runs on every push to `main`. It builds the site
-with `PATH_PREFIX` set to the Pages base path (e.g. `/sigmod.org/`), so
+with `PATH_PREFIX` set to the Pages base path (`/www.sigmod.org/`), so
 Eleventy's base-path plugin rewrites every link, and publishes `_site/` at
-`https://<owner>.github.io/<repo>/`. When `sigmod.org` points to Pages, the
+https://sigmod-org.github.io/www.sigmod.org/ (repository `sigmod-org/www.sigmod.org`). When `sigmod.org` points to Pages, the
 prefix becomes `/` and nothing else changes.
 
 ### Production

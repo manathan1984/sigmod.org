@@ -1,6 +1,6 @@
 import { HtmlBasePlugin } from "@11ty/eleventy";
 
-// PATH_PREFIX serves the site from a subfolder, e.g. /sigmod.org/ on GitHub Pages.
+// PATH_PREFIX serves the site from a subfolder, e.g. /www.sigmod.org/ on GitHub Pages.
 const pathPrefix = process.env.PATH_PREFIX || "/";
 
 export default function (eleventyConfig) {
