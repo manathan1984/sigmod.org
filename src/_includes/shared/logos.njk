@@ -212,6 +212,46 @@
 <svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">{{ joinMGlyph(style, dark) }}</svg>
 {%- endmacro %}
 
+{#- Round 6 · relational-algebra spelling: SIG, then ⋈ (join), σ (selection) and a database -#}
+{% macro sigmaGlyph(dark=false) -%}
+{%- set g = "url(#g4d)" if dark else "url(#g4l)" -%}
+  <circle cx="21" cy="28" r="9.5" fill="none" stroke="{{ g }}" stroke-width="3.4"/>
+  <path d="M21 18.5 H41" fill="none" stroke="{{ g }}" stroke-width="3.4" stroke-linecap="round"/>
+{%- endmacro %}
+
+{% macro dbGlyph(dark=false) -%}
+{%- set g = "url(#g4d)" if dark else "url(#g4l)" -%}
+  <ellipse cx="24" cy="13" rx="14" ry="4.5" fill="none" stroke="{{ g }}" stroke-width="3.2"/>
+  <path d="M10 13 V35 A14 4.5 0 0 0 38 35 V13 M10 24 A14 4.5 0 0 0 38 24" fill="none" stroke="{{ g }}" stroke-width="3.2" stroke-linejoin="round"/>
+{%- endmacro %}
+
+{#- Letter-sized versions: the join, σ and database stand in for M, O and D, drawn at
+    capital height on the baseline (same 29-unit cap box as joinMGlyph) -#}
+{% macro sigmaCapGlyph(dark=false) -%}
+{%- set g = "url(#g4d)" if dark else "url(#g4l)" -%}
+  <circle cx="17" cy="24" r="12.8" fill="none" stroke="{{ g }}" stroke-width="3.4"/>
+  <path d="M17 11.2 H33" fill="none" stroke="{{ g }}" stroke-width="3.4" stroke-linecap="round"/>
+{%- endmacro %}
+
+{% macro dbCapGlyph(dark=false) -%}
+{%- set g = "url(#g4d)" if dark else "url(#g4l)" -%}
+  <ellipse cx="16" cy="15.1" rx="12" ry="4" fill="none" stroke="{{ g }}" stroke-width="3.2"/>
+  <path d="M4 15.1 V32.9 A12 4 0 0 0 28 32.9 V15.1 M4 24 A12 4 0 0 0 28 24" fill="none" stroke="{{ g }}" stroke-width="3.2" stroke-linejoin="round"/>
+{%- endmacro %}
+
+{% macro sigmaDbWordmark(dark=false, size=40, weight=400) -%}
+<span class="r5{% if dark %} r4-dark{% endif %}" style="font-size: {{ size }}px; font-weight: {{ weight }}" role="img" aria-label="SIGMOD">SIG<svg class="r7-g" style="width: 1.01em" viewBox="3 9.5 42 29" aria-hidden="true">{{ joinMGlyph("ribbon", dark) }}</svg><svg class="r7-g" style="width: .8em" viewBox="2.5 9.5 33 29" aria-hidden="true">{{ sigmaCapGlyph(dark) }}</svg><svg class="r7-g" style="width: .66em; margin-right: 0" viewBox="2.4 9.5 27.2 29" aria-hidden="true">{{ dbCapGlyph(dark) }}</svg></span>
+{%- endmacro %}
+
+{% macro dbIcon(size=48, dark=false) -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">{{ dbGlyph(dark) }}</svg>
+{%- endmacro %}
+
+{#- Round 6 · the join as a symbol in front of the full name -#}
+{% macro joinLeadWordmark(dark=false, size=40, weight=400) -%}
+<span class="r5 r6-lead{% if dark %} r4-dark{% endif %}" style="font-size: {{ size }}px; font-weight: {{ weight }}" role="img" aria-label="SIGMOD"><svg class="r6-i" viewBox="3 7 42 34" aria-hidden="true">{{ joinGlyph("ribbon", dark) }}</svg>SIGMOD</span>
+{%- endmacro %}
+
 {% macro joinIcon(style="ribbon", size=48, dark=false) -%}
 <svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">{{ joinGlyph(style, dark) }}</svg>
 {%- endmacro %}
