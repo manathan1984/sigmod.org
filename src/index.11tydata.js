@@ -1,1 +1,1 @@
-export default { layout: `${process.env.THEME || "a"}/home.njk` };
+export default { layout: "home.njk" };

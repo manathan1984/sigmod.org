@@ -2,4 +2,3 @@ node_modules/
 _site/
 migration/cache/
 .DS_Store
-_preview

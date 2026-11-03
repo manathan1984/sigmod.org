@@ -7,9 +7,9 @@ Short guide for volunteers. Covers the three recurring updates: **news**,
 
 1. Edit the files on GitHub (the pencil icon, then *Commit changes*) or locally.
 2. Every push to `main` rebuilds and publishes the site in about a minute
-   (*Actions* tab → "Preview on GitHub Pages").
-3. To check before pushing: `npm install` once, then `npm run serve:c` and
-   open http://localhost:8083.
+   (*Actions* tab → "Publish on GitHub Pages").
+3. To check before pushing: `npm install` once, then `npm run serve` and
+   open http://localhost:8080.
 
 Rules that apply everywhere:
 

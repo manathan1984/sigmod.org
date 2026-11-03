@@ -1,10 +1,6 @@
-{#- Design switcher: by port when serving locally, by folder in the preview build #}
-{%- if dev or preview %}
-<div class="devbar" role="navigation" aria-label="Design alternatives">
-  <span>Design</span>
-  {%- for t in site.themes %}
-  <a href="{% if preview %}{{ page.url | toThemesRoot }}{{ t.id }}{{ page.url }}{% else %}http://localhost:{{ t.port }}{{ page.url }}{% endif %}"{% if t.id == theme %} aria-current="true"{% endif %}>{{ t.id | upper }} · {{ t.name }}</a>
-  {%- endfor %}
+{#- Review bar: a shortcut to the logo proposals while the logo is being decided #}
+<div class="devbar" role="navigation" aria-label="Review">
+  <span>Review</span>
   <a href="/proposals/logos/"{% if page.url == "/proposals/logos/" %} aria-current="true"{% endif %}>Logos</a>
 </div>
 <style>
@@ -13,6 +9,4 @@
 .devbar a{color:#ddd;text-decoration:none;padding:7px 11px;border-radius:999px}
 .devbar a:hover{background:#333}
 .devbar a[aria-current]{background:#fff;color:#111}
-@media (max-width:600px){.devbar span{display:none}.devbar{left:16px;right:16px;justify-content:center}}
 </style>
-{%- endif %}

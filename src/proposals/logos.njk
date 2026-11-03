@@ -4,7 +4,7 @@ permalink: /proposals/logos/
 section: sigmod
 eleventyExcludeFromCollections: true
 ---
-{%- from "shared/logos.njk" import wordmark, wordmarkIcon, mark, r4Defs, r4Mark, r4Lockup, joinWordmark, joinIcon -%}
+{%- from "shared/logos.njk" import wordmark, wordmarkIcon, mark, r4Defs, r4Mark, r4Lockup, joinWordmark, joinIcon, joinOdWordmark, joinMIcon -%}
 {%- set blue = "#1f4fa3" %}{% set blueDark = "#8fb0ff" -%}
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Jost:wght@300;400;500&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
@@ -49,6 +49,7 @@ eleventyExcludeFromCollections: true
 .lp-dark .wm-tuple b.on { color: #0a0a0a; }
 /* round 5 */
 .r5 { display: inline-flex; align-items: baseline; flex: none; white-space: nowrap; font-family: "Jost", sans-serif; letter-spacing: .1em; color: #1f2937; line-height: 1; }
+.r6-m { width: 1.01em; height: .7em; margin: 0 .12em 0 .01em; flex: none; overflow: visible; }
 .r5-j { width: 1.05em; height: .85em; margin: 0 .16em 0 .06em; align-self: center; position: relative; top: -.04em; overflow: visible; }
 .lp-hero-mark { display: grid; place-items: center; gap: 14px; padding: 48px 20px; border-radius: 14px; background: #fff; border: 1px solid #e5e7eb; margin: 0 0 36px; text-align: center; }
 .lp-hero-mark small { font: 400 14px "Jost", sans-serif; letter-spacing: .14em; text-transform: uppercase; color: #6b7280; }
@@ -64,48 +65,63 @@ eleventyExcludeFromCollections: true
 </style>
 
 {{ r4Defs() }}
-<p class="lead">Round 5: SIG⋈MOD. The join operator sits between SIG and MOD, drawn as a light gradient line in the style of SIGARCH’s symbol, with no “ACM” in the logo itself. Three drawings of the same idea are below. The current logo stays in the navigation bar until a decision is made.</p>
+{%- macro logo(k, dark=false, size=26, weight=400) -%}
+{%- if k.m %}{{ joinOdWordmark(k.style, dark, size, weight) }}{% else %}{{ joinWordmark(k.style, dark, size, weight) }}{% endif -%}
+{%- endmacro %}
+{%- macro icon(k, size, dark=false) -%}
+{%- if k.m %}{{ joinMIcon(k.style, size, dark) }}{% else %}{{ joinIcon(k.style, size, dark) }}{% endif -%}
+{%- endmacro %}
+<p class="lead">Two candidates for the new logo, both without “ACM” in the logo itself. The first is the current proposal, SIG⋈MOD, already used in the navigation bar and footer of this site. The second keeps the same join drawing but lets it take the place of the M: SIG⋈OD, still read as “SIGMOD”.</p>
 
 <div class="lp-hero-mark">
-  {{ joinWordmark("ribbon", false, 64) }}
-  <small>Special Interest Group on Management of Data</small>
+  {{ joinWordmark("ribbon", false, 60) }}
+  <small>Current proposal · SIG⋈MOD</small>
+  <span style="height: 18px"></span>
+  {{ joinOdWordmark("ribbon", false, 60) }}
+  <small>New version · the join replaces the M</small>
 </div>
 
 {%- set concepts = [
-  { id: "ribbon", pick: true, name: "Ribbon", text: "The join drawn as one continuous, softly curved line, like a ribbon folded into ⋈. The airiest of the three and the closest to the SIGARCH symbol; the curves keep it from looking like a play button." },
-  { id: "outline", name: "Outline", text: "The exact ⋈ symbol as a thin gradient outline. The most faithful to the operator, so database people read it instantly; a little more rigid." },
-  { id: "layered", name: "Layered", text: "Two translucent halves that overlap in the middle, so the join shows up as the darker shared area: literally the part both sides have in common. Softer and more colourful, and the strongest at icon sizes." }
+  { id: "ribbon", style: "ribbon", pick: "Current proposal", name: "SIG⋈MOD · Ribbon", text: "The join between SIG and MOD, drawn as one continuous, softly curved line, like a ribbon folded into ⋈. It is the logo used on this site today." },
+  { id: "join-m", style: "ribbon", m: true, pick: "New", name: "SIG⋈OD · Ribbon", text: "The same ribbon join, drawn at the height of a capital letter and standing in for the M. The word is shorter and the join becomes part of the name rather than a symbol between two halves. People still read “SIGMOD”, so the accessible name stays SIGMOD." },
+  { id: "join-m-straight", style: "straight", m: true, pick: "New", name: "SIG⋈OD · Straight", text: "The join-as-M with straight lines: the exact ⋈ operator at capital height. Its vertical outer edges echo the uprights of an M, so it reads as a letter more readily than the ribbon; a little more technical in tone." }
 ] %}
 
 {%- for k in concepts %}
 <section class="lp-concept" id="{{ k.id }}">
-  <h2>{{ loop.index }} · {{ k.name }}{% if k.pick %}<span class="lp-pick">Recommended</span>{% endif %}</h2>
+  <h2>{{ loop.index }} · {{ k.name }}<span class="lp-pick">{{ k.pick }}</span></h2>
   <p>{{ k.text }}</p>
   <div class="lp-grid">
     <div class="lp-cell lp-light">
       <p class="lp-cell-label">In the navigation bar</p>
-      <div class="lp-navmock">{{ joinWordmark(k.id, false, 26) }}<i>About</i><i>Awards</i><i>PODS</i></div>
+      <div class="lp-navmock">{{ logo(k, false, 26) }}<i>About</i><i>Awards</i><i>PODS</i></div>
     </div>
     <div class="lp-cell lp-dark">
       <p class="lp-cell-label">On the black footer</p>
-      {{ joinWordmark(k.id, true, 26) }}
+      {{ logo(k, true, 26) }}
     </div>
     <div class="lp-cell lp-tint">
       <p class="lp-cell-label">Weights: light · regular · medium</p>
-      {{ joinWordmark(k.id, false, 22, 300) }}{{ joinWordmark(k.id, false, 22, 400) }}{{ joinWordmark(k.id, false, 22, 500) }}
+      {{ logo(k, false, 22, 300) }}{{ logo(k, false, 22, 400) }}{{ logo(k, false, 22, 500) }}
     </div>
     <div class="lp-cell lp-light">
       <p class="lp-cell-label">Icon (64 · 32 · 16 px)</p>
       <div class="lp-icons">
         {%- for s in [64, 32, 16] %}
-        <span style="width: {{ s + 16 }}px; height: {{ s + 16 }}px">{{ joinIcon(k.id, s) }}</span>
+        <span style="width: {{ s + 16 }}px; height: {{ s + 16 }}px">{{ icon(k, s) }}</span>
         {%- endfor %}
-        <span style="width: 80px; height: 80px; background: #0a0a0a; border-color: #0a0a0a">{{ joinIcon(k.id, 64, true) }}</span>
+        <span style="width: 80px; height: 80px; background: #0a0a0a; border-color: #0a0a0a">{{ icon(k, 64, true) }}</span>
       </div>
     </div>
   </div>
 </section>
 {%- endfor %}
+
+<h2 class="lp-round">Earlier explorations</h2>
+<p>Other drawings of the SIG⋈MOD join from round 5:</p>
+<div class="lp-strip" style="align-items: center; gap: 28px; margin-bottom: 28px">
+  {%- for id in ["outline", "layered"] %}{{ joinWordmark(id, false, 26) }}{% endfor %}
+</div>
 
 <section class="lp-concept">
   <h2>Current logo (1998)</h2>
@@ -115,12 +131,12 @@ eleventyExcludeFromCollections: true
   </div>
 </section>
 
-<h2 class="lp-round">Round 4</h2>
+<h3 class="lp-round">Round 4</h3>
 <div class="lp-strip" style="align-items: center; gap: 28px">
   {%- for id in ["points", "stream", "graph", "strata", "sigmao"] %}{{ r4Lockup(id, "h", false, 20) }}{% endfor %}
 </div>
 
-<h2 class="lp-round">Earlier rounds</h2>
+<h3 class="lp-round">Rounds 1–3</h3>
 <div class="lp-strip" style="align-items: center; gap: 28px">
   {%- for id in ["sigmao", "join", "tuple", "cyl", "tile"] %}{{ wordmark(id, blue, "#111827", 24) }}{% endfor %}
 </div>
@@ -130,7 +146,7 @@ eleventyExcludeFromCollections: true
 
 <h2>Next steps</h2>
 <ul class="lp-notes">
-  <li>Pick a direction. A designer then refines it, tunes the spacing around the custom letter, and outlines the text so the logo no longer depends on a web font.</li>
+  <li>Choose between SIG⋈MOD and SIG⋈OD. A designer then refines it, tunes the spacing around the custom letter, and outlines the text so the logo no longer depends on a web font.</li>
   <li>Publish SVG, PNG and EPS files on the logo renderings page and update its usage rules.</li>
   <li>The ACM brand guidelines apply to SIG logos, so check the final mark with ACM before switching.</li>
   <li>The blue-to-teal gradient is a placeholder. The join also works in a single flat colour for print and one-colour uses.</li>

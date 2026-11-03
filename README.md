@@ -4,8 +4,8 @@ Static site for ACM SIGMOD and ACM PODS, migrated from WordPress with all URLs p
 
 ```bash
 npm install
-npm run serve     # design alternatives on :8081 (A) … :8084 (D)
-npm run preview   # all designs in one site, as published on GitHub Pages
+npm run serve     # http://localhost:8080
+npm run build     # static site in _site/
 ```
 
 **Updating the site** (news, conferences, awards): see [docs/UPDATING.md](docs/UPDATING.md).

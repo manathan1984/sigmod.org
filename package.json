@@ -4,15 +4,9 @@
   "type": "module",
   "description": "Static site for ACM SIGMOD and PODS (migrated from WordPress)",
   "scripts": {
-    "build": "node scripts/build-all.mjs",
-    "build:preview": "node scripts/build-preview.mjs",
-    "import": "node scripts/import-wp.mjs",
-    "preview": "PREVIEW_BASE=/sigmod.org/ node scripts/build-preview.mjs && PREVIEW_BASE=/sigmod.org/ node scripts/serve-preview.mjs",
-    "serve": "node scripts/serve-all.mjs",
-    "serve:a": "THEME=a eleventy --serve --port=8081 --quiet",
-    "serve:b": "THEME=b eleventy --serve --port=8082 --quiet",
-    "serve:c": "THEME=c eleventy --serve --port=8083 --quiet",
-    "serve:d": "THEME=d eleventy --serve --port=8084 --quiet"
+    "build": "eleventy --quiet",
+    "serve": "eleventy --serve --port=8080 --quiet",
+    "import": "node scripts/import-wp.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.2",

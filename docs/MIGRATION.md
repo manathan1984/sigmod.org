@@ -1,28 +1,25 @@
 # sigmod.org: migration from WordPress to a static site
 
-Status: prototype. All content is imported, every old URL builds, and three
-design alternatives can be served locally.
+Status: prototype. All content is imported and every old URL builds.
 
 ## How to run it
 
 ```bash
 npm install
-npm run serve        # A → :8081, B → :8082, C → :8083, D → :8084
-npm run preview      # all four under one site, as on GitHub Pages: http://localhost:8090/sigmod.org/
+npm run serve        # http://localhost:8080
+npm run build        # static site in _site/
 ```
 
-A floating switcher (dev only) jumps to the same page in the other designs.
 `npm run import` re-generates `src/content/` from the WordPress REST API.
 Downloads are cached in `migration/cache/`; pass `--refresh` to re-download.
 
-| | Design | Idea |
-|---|---|---|
-| A | **Classic** | Text first, like sigops.org: serif headings, news list, sidebar. Lowest maintenance. |
-| B | **Bold** | Like sigchi.org: dark hero, SIGMOD and PODS as twin cards, news cards, mega menus. |
-| C | **Refined** | Between A and B, closer to A: modern sans text with serif headlines, a light hero band, three feature tiles, news list. |
-| D | **Light modern** | Between A and B, closer to B: light-grey page with white cards, the next conference as a coloured card, compact news. |
+The site uses the design that was called C (Refined) during the review: modern
+sans text with serif headlines, a light hero band, three feature tiles and a
+news list. The other alternatives (Classic, Bold, Light modern) were dropped.
+Logo candidates are discussed at `/proposals/logos/`, linked from the small
+"Review" bar at the bottom right of every page (`src/_includes/shared/devbar.njk`).
 
-All four designs share one menu bar (`src/_data/nav.js`):
+The menu bar (`src/_data/nav.js`):
 
 | Menu | Contents |
 |---|---|
@@ -35,13 +32,12 @@ All four designs share one menu bar (`src/_data/nav.js`):
 
 "Join SIGMOD" is a button at the right of the menu bar and leads to `/join/`.
 Partner logos sit above a shared black footer with the volunteer note and the
-ACM logo. A design called C (separate SIGMOD and PODS spaces) was dropped.
+ACM logo.
 
 Pages edited by hand after the import carry `edited: true` in their front
 matter, and `npm run import` leaves them alone.
 
-In all three, SIGMOD and PODS have separate menus and identities. The PODS
-pages (`/pods-home/…`) switch the brand, colour and navigation automatically
+PODS pages (`/pods-home/…`) switch to the PODS colour automatically
 (`section: pods` in the page front matter).
 
 ## What is on the current site
@@ -167,17 +163,13 @@ existing URL.
 
 ## Hosting on GitHub Pages
 
-### Preview of all designs
+### Current setup
 
-`.github/workflows/preview.yml` runs on every push to `main`. It builds the
-four designs into `/a/` … `/d/` of one GitHub Pages site
-(`https://<owner>.github.io/<repo>/`, opening on C) with
-`scripts/build-preview.mjs`. Eleventy's base-path plugin rewrites every link
-for its folder, and the bar at the bottom switches to the same page in another
-design. `npm run preview` builds and serves the same thing locally.
-
-When a design is chosen, the production build is that one design at the site
-root (`THEME=<x> npx @11ty/eleventy`), with no switcher bar.
+`.github/workflows/pages.yml` runs on every push to `main`. It builds the site
+with `PATH_PREFIX` set to the Pages base path (e.g. `/sigmod.org/`), so
+Eleventy's base-path plugin rewrites every link, and publishes `_site/` at
+`https://<owner>.github.io/<repo>/`. When `sigmod.org` points to Pages, the
+prefix becomes `/` and nothing else changes.
 
 ### Production
 
@@ -199,8 +191,9 @@ root (`THEME=<x> npx @11ty/eleventy`), with no switcher bar.
 src/content/pages/**/index.md   one file per WP page (permalink = old URL)
 src/content/news/*.md           WP posts
 src/_data/                      site, nav (IA), conferences
-src/_themes/{a,b,c,shared}/     layouts per design alternative
-src/assets/{a,b,c}.css
+src/_includes/                  layouts (base, home, page) and shared partials
+src/assets/                     site.css, content.css, footer.css
+src/proposals/logos.njk         logo proposals page
 scripts/import-wp.mjs           WordPress → Markdown importer
 migration/                      url-inventory.tsv, duplicates.json, legacy-paths.json
 ```

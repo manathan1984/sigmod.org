@@ -1,19 +1,12 @@
 import { HtmlBasePlugin } from "@11ty/eleventy";
 
-// One content tree, several themes. THEME=a|b|c|d picks the layouts in
-// src/_themes/<theme>/ and the stylesheet src/assets/<theme>.css.
-const theme = process.env.THEME || "a";
-// Preview build (GitHub Pages): every theme lives under <PREVIEW_BASE><theme>/,
-// e.g. /sigmod.org/c/, and the design switcher links between them.
-const previewBase = process.env.PREVIEW_BASE;
+// PATH_PREFIX serves the site from a subfolder, e.g. /sigmod.org/ on GitHub Pages.
+const pathPrefix = process.env.PATH_PREFIX || "/";
 
 export default function (eleventyConfig) {
-  if (previewBase) eleventyConfig.addPlugin(HtmlBasePlugin);
-  eleventyConfig.addGlobalData("theme", theme);
-  eleventyConfig.addGlobalData("layout", `${theme}/page.njk`);
+  if (pathPrefix !== "/") eleventyConfig.addPlugin(HtmlBasePlugin);
+  eleventyConfig.addGlobalData("layout", "page.njk");
   eleventyConfig.addGlobalData("currentYear", new Date().getFullYear());
-  eleventyConfig.addGlobalData("dev", process.env.ELEVENTY_RUN_MODE === "serve");
-  eleventyConfig.addGlobalData("preview", !!previewBase);
 
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
@@ -32,8 +25,6 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("limit", (arr, n) => (arr || []).slice(0, n));
   // URL a news item should link to (its canonical page when it is a duplicate)
   eleventyConfig.addFilter("href", (item) => item.data.redirect_to || item.url);
-  // relative path from a page back to the folder that holds all themes (preview build)
-  eleventyConfig.addFilter("toThemesRoot", (url) => "../".repeat(url.split("/").filter(Boolean).length + 1));
   // nav helpers
   eleventyConfig.addFilter("isActive", (link, url) =>
     !!url && (url === link.url || (link.children || []).some((c) => c.url === url)));
@@ -42,9 +33,9 @@ export default function (eleventyConfig) {
     menus.find((m) => m.area === area));
 
   return {
-    dir: { input: "src", includes: "_themes", data: "_data", output: `${process.env.OUTPUT_ROOT || "_site"}/${theme}` },
+    dir: { input: "src", includes: "_includes", data: "_data", output: "_site" },
     markdownTemplateEngine: false,
     htmlTemplateEngine: "njk",
-    pathPrefix: previewBase ? `${previewBase}${theme}/` : "/",
+    pathPrefix,
   };
 }

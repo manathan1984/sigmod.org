@@ -194,6 +194,24 @@
 <span class="r5{% if dark %} r4-dark{% endif %}" style="font-size: {{ size }}px; font-weight: {{ weight }}">SIG<svg class="r5-j" viewBox="3 7 42 34" aria-hidden="true">{{ joinGlyph(style, dark) }}</svg>MOD</span>
 {%- endmacro %}
 
+{#- Round 6: the join takes the place of the M, drawn at capital height on the baseline -#}
+{% macro joinMGlyph(style="ribbon", dark=false) -%}
+{%- set g = "url(#g4d)" if dark else "url(#g4l)" -%}
+{%- if style == "straight" %}
+  <path d="M5 11 L24 24 L5 37 Z M43 11 L24 24 L43 37 Z" fill="none" stroke="{{ g }}" stroke-width="3.4" stroke-linejoin="round"/>
+{%- else %}
+  <path d="M24 24 C18 17 12 11 7.5 11 C5.5 11 5.5 37 7.5 37 C12 37 18 31 24 24 C30 17 36 11 40.5 11 C42.5 11 42.5 37 40.5 37 C36 37 30 31 24 24 Z" fill="none" stroke="{{ g }}" stroke-width="3.4" stroke-linejoin="round"/>
+{%- endif %}
+{%- endmacro %}
+
+{% macro joinOdWordmark(style="ribbon", dark=false, size=40, weight=400) -%}
+<span class="r5{% if dark %} r4-dark{% endif %}" style="font-size: {{ size }}px; font-weight: {{ weight }}" role="img" aria-label="SIGMOD">SIG<svg class="r6-m" viewBox="3 9.5 42 29" aria-hidden="true">{{ joinMGlyph(style, dark) }}</svg>OD</span>
+{%- endmacro %}
+
+{% macro joinMIcon(style="ribbon", size=48, dark=false) -%}
+<svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">{{ joinMGlyph(style, dark) }}</svg>
+{%- endmacro %}
+
 {% macro joinIcon(style="ribbon", size=48, dark=false) -%}
 <svg viewBox="0 0 48 48" width="{{ size }}" height="{{ size }}" aria-hidden="true">{{ joinGlyph(style, dark) }}</svg>
 {%- endmacro %}

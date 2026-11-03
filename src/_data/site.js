@@ -19,11 +19,4 @@ export default {
     { name: "IEEE TCDE", url: "http://tab.computer.org/tcde/", logo: "/assets/partners/tcde.png" },
     { name: "EDBT Endowment", url: "http://edbt.org/", logo: "/assets/partners/edbt.png" },
   ],
-  // dev-only theme switcher
-  themes: [
-    { id: "a", name: "Classic", port: 8081 },
-    { id: "b", name: "Bold", port: 8082 },
-    { id: "c", name: "Refined", port: 8083 },
-    { id: "d", name: "Light modern", port: 8084 },
-  ],
 };
