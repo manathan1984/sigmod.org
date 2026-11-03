@@ -15,17 +15,28 @@ The recipients will receive the awards at the annual ACM SIGMOD/PODS Conference 
 
 **[Click here to see the call for nominations for the latest ACM SIGMOD Awards.](/wp-content/uploads/2025/12/2026-SIGMOD-AWARDS-%E2%80%93-Call-for-Nominations.docx.pdf)** Nominations and inputs for the awards should be submitted via e-mail to the SIGMOD 2026 Awards Committee Chair at *sharad AT ics.uci.edu*. Nominations must be received by **February 15th, 2026** to be considered for this year’s awards. Click on the link below to navigate to a specific award, its committee (if applicable), and its recipients.
 
--   [SIGMOD Best Paper Award](/sigmod-awards/sigmod-best-paper-award/ "SIGMOD Best Paper Award")
--   [SIGMOD Best Demonstration Award](/sigmod-awards/sigmod-best-demonstration-award/ "SIGMOD Best Demonstration Award")
--   [SIGMOD Best Artifact Award](/sigmod-awards/sigmod-best-artifact-award/ "SIGMOD Best Artifact Award")
+## SIG-level awards
+
 -   [SIGMOD Contributions Award](/sigmod-awards/sigmod-contributions-award/ "SIGMOD Contributions Award")
--   [SIGMOD Distinguished AEs and PCs](/sigmod-distinguished-aes-and-pcs/)
 -   [SIGMOD Hector Garcia-Molina Distinguished Mentorship Award](/hector-garcia-molina-2025-sigmod-distinguished-mentorship-award/)
 -   [SIGMOD Edgar F. Codd Innovations Award](/sigmod-awards/sigmod-edgar-f-codd-innovations-award/ "SIGMOD Innovations Award")
 -   [SIGMOD Jim Gray Doctoral Dissertation Award](/sigmod-awards/sigmod-jim-gray-doctoral-dissertation-award/ "SIGMOD Jim Gray Doctoral Dissertation Award")
--   [SIGMOD Research Highlight Award](/sigmod-awards/sigmod-research-highlights/)
--   [SIGMOD Special Service Award](/sigmod-special-service-award/ "SIGMOD Special Service Award")
--   [SIGMOD Student Research Competition Winners](/sigmod-awards/sigmod-student-research-competition-winners/ "SIGMOD Special Service Award")
 -   [SIGMOD Systems Award](/sigmod-awards/sigmod-systems-award/ "SIGMOD Systems Award")
 -   [SIGMOD Test of Time Award](/sigmod-awards/sigmod-test-of-time-award/)
+
+## Conference-level awards
+
+-   [SIGMOD Best Paper Award](/sigmod-awards/sigmod-best-paper-award/ "SIGMOD Best Paper Award")
+-   [SIGMOD Best Demonstration Award](/sigmod-awards/sigmod-best-demonstration-award/ "SIGMOD Best Demonstration Award")
+-   [SIGMOD Best Artifact Award](/sigmod-awards/sigmod-best-artifact-award/ "SIGMOD Best Artifact Award")
+-   [SIGMOD Distinguished AEs and PCs](/sigmod-distinguished-aes-and-pcs/)
+
+## Cross-conference awards
+
+-   [SIGMOD Research Highlight Award](/sigmod-awards/sigmod-research-highlights/)
+
+## Retired awards
+
+-   [SIGMOD Special Service Award](/sigmod-special-service-award/ "SIGMOD Special Service Award")
+-   [SIGMOD Student Research Competition Winners](/sigmod-awards/sigmod-student-research-competition-winners/ "SIGMOD Student Research Competition Winners")
 -   [SIGMOD Undergraduate Award](/sigmod-awards/sigmod-undergraduate-award/ "SIGMOD Undergraduate Award")
