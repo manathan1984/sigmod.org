@@ -1,0 +1,372 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '92- Proceedings of the eleventh ACM SIGACT-SIGMOD-SIGART symposium on Principles of database systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '92- Proceedings of the eleventh ACM SIGACT-SIGMOD-SIGART symposium on Principles of database systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=137097" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683735" title="Get the Full Text from the ACM Digital Library">New data models and languages&mdash;the challenge</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Catriel Beeri</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>New data models and languages have been the focus of attention in database research in the last decade. The object-oriented paradigm is a convenient vehicle for describing this research, its accomplishments, and for considering which directions are now interesting. This paper presents some concepts of object-oriented databases, and then considers recent interesting developments concerning query languages, object identities, views and meta-data.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683736" title="Get the Full Text from the ACM Digital Library">Tie-breaking semantics and structural totality</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Christos H. Papadimitriou</li>
+<li class="nameList Last">Mihalis Yannakakis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We address the question of when the structure of a Datalog program with negation guarantees the existence of a fixpoint. We propose a semantics of Datalog programs with negation, which we call the tie&ndash;breaking semantics. The tie&ndash;breaking semantics can be computed in polynomial time, and results in a fix-point whenever the rule&ndash;goal graph of the program has no cycle with an odd number of negative edges. We show that, in some well-defined sense, this is the most general fixpoint semantics of negation possible; in particular we show that if a cycle with an odd number of negative edges is present, then the logic program is not structurally total, that is, it has an alphabetic variant which has no fixpoint semantics whatsoever. Determining whether a program is (nonstructurally) total is undecidable.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683737" title="Get the Full Text from the ACM Digital Library">Queries are easier than you thought (probably)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Serge Abiteboul</li>
+<li class="nameList">Kevin Compton</li>
+<li class="nameList Last">Victor Vianu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>The optimization of a large class of queries is explored, using a powerful normal form recently proven. The queries include the <italic>fixpoint</italic> and <italic>while</italic> queries, and an extension of <italic>while</italic> with arithmetic. The optimization method is evaluated using a probabilistic analysis. In particular, the average complexity of <italic>fixpoint</italic> and <italic>while</italic> is considered and some surprising results are obtained. They suggest that the worst-case complexity is sometimes overly pessimistic for such queries, whose average complexity is often much more reasonable than the provably rare worst case. Some computational properties of queries are also investigated. A probabilistic notion of <italic>boundedness</italic> is defined, and it is shown that all programs in the class considered are bounded almost everywhere. An effective way of using this fact is provided.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683738" title="Get the Full Text from the ACM Digital Library">Learning efficient query processing strategies</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Russell Greiner</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A query processor QP uses the rules in a rule base to reduce a given query to a series of attempted retrievals from a database of facts. The Qp's <italic>expected cost</italic> is the average time it requires to find an answer, averaged over its anticipated set of queries. This cost depends on Qp's <italic>strategy</italic>, which specifies the order in which it considers the possible rules and retrievals. This paper provides two related learning algorithms, PIB and PAO, for improving the QP's strategy, i.e., for producing new strategies with lower expected costs. Each algorithm first monitors the Qp's operations over a set of queries, observing how often each path of rules leads to a sufficient set of successful retrievals, and then uses these statistics to suggest a new strategy. PIB hill-climbs to strategies that are, with high probability, successively better; and PAO produces a new strategy that probably is approximately optimal. We describe how to implement both learning systems unobtrusively, discuss their inherent time and space complexities, and use methods from mathematical statistics to prove their correctness. We also discuss additional applications of these approaches to several other database tasks.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683739" title="Get the Full Text from the ACM Digital Library">Analysis of disk arm movement for large sequential reads</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Doron Rotem</li>
+ </ul>
+<div class="DLabstract"><div style="display:inline"><par>The common model for analyzing seek distances on a magnetic disk uses a continuous approximation in which the range of motion of the disk arm is the interval [0,1]. In this model, both the current location of the disk arm and the location of the next request are assumed to be points uniformly distributed on the interval [0,1] and therefore the expected seek distance to service the next request is 1/3. In many types of databases including scientific, object oriented, and multimedia database systems, a disk service request may involve fetching very large objects which must be transferred from the disk without interruption. In this paper we show that the common model does not accurately reflect disk arm movement in such cases as both the assumption of uniformity and the range of motion of the disk arm may depend on the size of the objects. We propose a more accurate model that takes into consideration the distribution of the sizes of the objects fetched as well as the disk arm scheduling policy. We provide closed form expressions for the expected seek distance in this model under various assumptions on the distribution of object sizes and the capability of the disk arm to read in both directions and to correct its position before the next read is performed.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683730" title="Get the Full Text from the ACM Digital Library">On the equivalence of recursive and nonrecursive datalog programs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Surajit Chaudhuri</li>
+<li class="nameList Last">Moshe Y. Vardi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We study the problem of determining whether a given recursive Datalog program is equivalent to a given nonrecursive Datalog program. We prove triply exponential upper and lower time bounds.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683731" title="Get the Full Text from the ACM Digital Library">Constraints and redundancy in datalog</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alon Levy</li>
+<li class="nameList Last">Yehoshua Sagiv</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Two types of redundancies in datalog program are considered. Redundancy based on <italic>reachability</italic> eliminates rules and predicates that do not participate in any derivation tree of a fact for the query predicate. Redundancy based on <italic>irrelevance</italic> is similar, but considers only minimal derivation trees, that is, derivation trees having no pair of identical atoms, such that one is an ancestor of the other. Algorithms for detecting these redundancies are given, including the case of programs with constraint literals. These algorithms not only detect redundancies in the presence of constraints, but also push constraints from the given query and rules to the EDB predicates. Under certain assumptions discussed in the paper, the constraints are pushed to the EDB as tightly as possible.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683732" title="Get the Full Text from the ACM Digital Library">Datalog expressiveness of chain queries: grammar tools and characterizations</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Guozhu Dong</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A chain query seeks, for each input database (viewed as directed graph), all pairs of start and end nodes of paths whose labels spell words in an associated (possibly non context-free) language over some binary predicates. We study the expressive power of Datalog for chain queries. Extending context-free productions with labels, we introduce a new tool called &ldquo;indexed positive programmed grammarr&rdquo; (IPPG). Three variations of IPPG are introduced to characterize chain queries computable (i) by linear Datalog, (ii) by &ldquo;semi-linear Datalog&rdquo;, and (iii) by general Datalog, respectively, under a natural &ldquo;addressable&rdquo; condition.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683733" title="Get the Full Text from the ACM Digital Library">The valid model semantics for logic programs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Catriel Beeri</li>
+<li class="nameList">Raghu Ramakrishnan</li>
+<li class="nameList">Divesh Srivastava</li>
+<li class="nameList Last">S. Sudarshan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We present the valid model semantics, a new approach to providing semantics for logic programs with negation, set-terms and grouping. The valid model semantics is a three-valued semantics, and is defined in terms of a &lsquo;normal form&rsquo; computation. The valid model semantics also gives meaning to the generation and use of non-ground facts (i.e., facts with variables) in a computation.</par>
+<par>The formulation of the semantics in terms of a normal form computation offers important insight not only into the valid model semantics, but also into other semantics proposed earlier. We show that the valid model semantics extends the well-founded semantics in a natural manner, and has several advantages over it. The well-founded semantics can also be undertood using a variant of the normal form computations that we use; the normal form computations used for valid semantics seem more natural than those used for well-founded semantics.</par>
+<par>We also show that the valid model semantics has several other desirable properties: it is founded ([SZ90]), it is contained in every regular model ([YY90]), and it is contained in every two-valued stable model.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683734" title="Get the Full Text from the ACM Digital Library">Greedy by choice</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sergio Greco</li>
+<li class="nameList">Carlo Zaniolo</li>
+<li class="nameList Last">Sumit Ganguly</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>The greedy paradigm of algorithm design is a well known tool used for efficiently solving many classical computational problems within the framework of procedural languages. However, it is very difficult to express these algorithms within the declarative framework of logic-based languages. In this paper, we extend the framework of Datalog-like languages to provide simple and declarative formulations of such problems, with computational complexities comparable to those of procedural formulations. This is achieved through the use of constructs, such as least and choice, that have semantics reducible to that of negative programs under stable model semantics. Therefore, we show that the formulation of greedy algorithms using these constructs lead to a syntactic class of programs, called stage-stratified programs, that are easily recognized at compile time. The fixpoint-based implementation of these recursive programs is very efficient and, combined with suitable storage structures, yields asymptotic complexities comparable to those obtained using procedural languages.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683745" title="Get the Full Text from the ACM Digital Library">Monotonic aggregation in deductive databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Kenneth A. Ross</li>
+<li class="nameList Last">Yehoshua Sagiv</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We propose a semantics for aggregates in deductive databases based on a notion of minimality. Unlike some previous approaches, we form a minimal model of a program component including aggregate operators, rather than insisting that the aggregate apply to atoms that have been fully determined, or that aggregate functions are rewritten in terms of negation. In order to guarantee the existence of such a minimal model we need to insist that the domains over which we are aggregating are complete lattices, and that the program is in a sense monotonic. Our approach generalizes previous approaches based on the well-founded semantics and various forms of stratification. We are also able to handle a large variety of monotonic (or pseudo-monotonic) aggregate functions.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683746" title="Get the Full Text from the ACM Digital Library">The well-founded semantics of aggregation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Allen Van Gelder</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Common aggregation predicates have natural definitions in logic, either as first order sentences (<italic>min, max,</italic> etc.), or with elementary induction over a data structure that represents the relation (<italic>sum, count,</italic> etc.). The well-founded semantics for logic programs provides an interpretation of such definitions. The interpretation of first-order aggregates seems to be quite natural and intuitively satisfying, even in the presence of recursion through aggregation. Care is needed to get useful results on inductive aggregates, however. A basic building block is the &#8220;subset&#8221; predicate, which states that a data structure represents a subset of an IDB predicate, and which is definable in the well-founded semantics. The analogous &#8220;superset&#8221; is also definable, and their combination yields a &#8220;generic&#8221; form of <italic>findall</italic>. Surprisingly, <italic>findall</italic> must be used negatively to obtain useful approximations when the exact relation is not yet known.</p> <p>Extensions to the semantics, restrictions on the input, and other supplementary requirements proposed in earlier studies appear to be unnecessary for the purpose of <italic>attaching a meaning</italic> to a program that involves recursion through aggregation. For example, any reasonable definition of &#8220;shortest paths&#8221; tolerates negative weight edges, correctly computes shortest paths that exist, and leave tuples undefined where negative-weight cycles cause the shortest path not to exist. Other examples exhibit similarly robust behavior, when defined carefully. Connections with the generic model of computation are discussed briefly.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683747" title="Get the Full Text from the ACM Digital Library">A fault-tolerant commit protocol for replicated databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Rabinovich</li>
+<li class="nameList Last">Edward D. Lazowska</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>When failures occur during the execution of distributed commit protocols, the protocols may block in some partitions to avoid inconsistent termination of the transaction, thus making data items in these partitions unavailable for accesses. We present a protocol that incorporates two new ideas with the goal of improving data availability. First, a new two-level voting scheme is proposed for deciding in which partitions to terminate the transaction. In this scheme, a choice is made based on the number of data items available in the partition rather than on the number of individual nodes. Indeed, in replicated systems, a criterion based on the number of nodes may be misleading. Second, we propose a way to reduce blocking caused by accumulating network fragmentation. The idea employs the <italic>views</italic> mechanism previously used in replica management.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683748" title="Get the Full Text from the ACM Digital Library">Distributed algorithms for dynamic replication of data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ouri Wolfson</li>
+<li class="nameList Last">Sushil Jajodia</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We present two distributed algorithms for dynamic replication of a data-item in communication networks. The algorithms are adaptive in the sense that they change the replication scheme of the item (i.e. the set of processors at which the data-item is replicated), as the read-write pattern of the processors in the network changes. Each algorithm continuously moves the replication scheme towards an optimal one, where optimality is defined with respect to different objective functions. One algorithm optimizes the communication cost objective function, and the other optimizes the communication time. We also provide a lower bound on the performance of any dynamic replication algorithm.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683749" title="Get the Full Text from the ACM Digital Library">Ensuring transaction atomicity in multidatabase systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sharad Mehrotra</li>
+<li class="nameList">Rajeev Rastogi</li>
+<li class="nameList">Yuri Breitbart</li>
+<li class="nameList">Henry F. Korth</li>
+<li class="nameList Last">Avi Silberschatz</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683740" title="Get the Full Text from the ACM Digital Library">Functional and predictive programming in OODB's</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Catriel Beeri</li>
+<li class="nameList Last">Tova Milo</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683741" title="Get the Full Text from the ACM Digital Library">Semi-determinism (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jan Van den Bussche</li>
+<li class="nameList Last">Dirk Van Gucht</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We investigate under which conditions a non-deterministic query is <italic>semi-deterministic</italic>, meaning that two different results of the query to a database are isomorphic. We also consider <italic>uniform</italic> semi-determinism, meaning that all intermediate results of the computation are isomorphic. Semi-determinism is a concept bridging the new trends of non-determinism and object generation in database query languages. Our results concern decidability, both at compile time and at run time; expressibility of the infamous counting queries; and completeness, which is related to the issue of copy elimination raised by Abiteboul and Kannelakis.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683742" title="Get the Full Text from the ACM Digital Library">Containment and minimization of positive conjunctive queries in OODB's</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Edward P. F. Chan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>With the availability of high-level declarative query languages in an object-oriented database system (OODB), the burden of choosing an efficient execution plan for a query is transferred from the user to the database system. A natural first step is to use the typing constraints imposed by the schema to transform a query into an equivalent one that logically accesses a minimal set of objects. We propose a class of queries called conjunctive queries for OODB's. A conjunctive query can be expressed as an equivalent union of queries in a special form called terminal conjunctive queries. We first characterize the containment, and hence equivalence, conditions for the class of terminal conjunctive queries. We then study a subclass of conjunctive queries called positive conjunctive queries. We characterize the containment and equivalence conditions, as well as derive an algorithm for finding an exact minimization for the class of positive conjunctive queries. The equivalent minimized query is expressed as a union of terminal positive conjunctive queries with the property that the variable search space is minimal among all the unions of postivie conjunctive queries.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683743" title="Get the Full Text from the ACM Digital Library">Locking without blocking: making lock based concurrent data structure algorithms nonblocking</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">John Turek</li>
+<li class="nameList">Dennis Shasha</li>
+<li class="nameList Last">Sundeep Prakash</li>
+ </ul>
+<div class="DLabstract"><div style="display:inline"><par>Nonblocking algorithms for concurrent data structures guarantee that a data structure is always accessible. This is in contrast to blocking algorithms in which a slow or halted process can render part or all of the data structure inaccessible to other processes.</par>
+<par>This paper proposes a technique that can convert most existing lock-based blocking data structure algorithms into nonblocking algorithms with the same functionality. Our instruction-by-instruction transformation can be applied to any algorithm having the following properties:</par>
+<list><item><par>&bull;Interprocess synchronization is established solely through the use of locks.</par></item>
+<item><par>&bull;There is no possiblity of deadlock (e.g. because of a well-ordering among the lock requests).</par></item></list>
+<par>In contrast to a previous work, our transformation requires only a constant amount of overhead per operation and, in the absence of failures, it incurs no penalty in the amount of concurrency that was available in the original data structure.</par>
+<par>The techniques in this paper may obviate the need for a wholesale reinvention of techniques for nonblocking concurrent data structure algorithms.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683744" title="Get the Full Text from the ACM Digital Library">An approach to eliminate transaction blocking in locking protocols</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">D. Agrawal</li>
+<li class="nameList">A. El Abbadi</li>
+<li class="nameList Last">R. Jeffers</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683855" title="Get the Full Text from the ACM Digital Library">Tolerating bounded inconsistency for increasing concurrency in database systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">M. H. Wong</li>
+<li class="nameList Last">D. Agrawal</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Recently, the scope of databases has been extended to many non-standard applications, and serializability is found to be too restrictive for such applications. In general, two approaches are adopted to address this problem. The first approach considers placing more structure on data objects to exploit type specific properties while keeping serializability as the correctness criterion. The other approach uses explicit semantics of transactions and databases to permit interleaved executions of transactions that are non-serializable. In this paper, we attempt to bridge the gap between the two approaches by using the notion of serializability with bounded inconsistency. Users are free to specifiy the maximum level of inconsistency that can be allowed in the executions of operations dynamically. In particular, if no inconsistency is allowed in the execution of any operation, the protocol will be reduced to a standard strict two phase locking protocol based on type-specific semantics of data objects. Bounded inconsistency can be applied to many areas which do not require exact values of the data such as for gathering information for statistical purpose, for making high level decisions and reasoning in expert systems which can tolerate uncertainty in input data.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683856" title="Get the Full Text from the ACM Digital Library">Knowledgebase transformations</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">G&#246;sta Grahne</li>
+<li class="nameList">Alberto O. Mendelzon</li>
+<li class="nameList Last">Peter Z. Revesz</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We propose a language that expresses uniformly queries and updates on knowledgebases consisting of finite sets of relational structures. The language contains an operator that &ldquo;inserts&rdquo; arbitrary first-order sentences into knowledgebase. The semantics of the insertion is based on the notion of <italic>update</italic> formalized by Katsuno and Mendelzon in the context of belief revision theory. Our language can express, among other things, hypothetical queries and queries on recursively indefinite databases. The expressive power of our language lies between existential second-order and general second-order queries. The data complexity is in general within exponential time, although it can be lowered to co-NP and to polynomial time by restricting the form of queries and updates.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683857" title="Get the Full Text from the ACM Digital Library">On the complexity of propositional knowledge base revision, updates, and counterfactuals</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Thomas Eiter</li>
+<li class="nameList Last">Georg Gottlob</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We study the complexity of several recently proposed methods for updating or revising propositional knowledge bases. In particular, we derive complexity results for the following problem: given a knowledge base <italic>T</italic>, an update <italic>p</italic>, and a formula <italic>q</italic>, decide whether <italic>q</italic> is derivable from <italic>Top</italic>, the updated (or revised) knowledge base. This problem amounts to evaluating the counterfactual <italic>p</italic> &gt; <italic>q</italic> over <italic>T</italic>. Besides the general case, also subcases are considered, in particular where <italic>T</italic> is a conjunction of Horn clauses, or where the size of <italic>p</italic> is bounded by a constant.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683858" title="Get the Full Text from the ACM Digital Library">Real-time integrity constraints</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jan Chomicki</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We propose that Past Metric Temporal Logic (Temporal Logic with real-time operators referring to the past) be used as a language for specifying real-time integrity constraints. Building on our earlier work, we develop efficient, history-less methods of evaluating such constraints. We also argue that real-time constraints should be implemented as Condition-Action rules with temporal conditions.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683859" title="Get the Full Text from the ACM Digital Library">Implementing deductive databases by linear programming</a>
+</h3>
+<ul class="DLauthors">
+ <li class="nameList First">Colin Bell</li>
+<li class="nameList">Anil Nerode</li>
+<li class="nameList">Raymond T. Ng</li>
+<li class="nameList Last">V. S. Subrahmanian</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683850" title="Get the Full Text from the ACM Digital Library">Pattern matching by Rs-operations: towards a unified approach to querying sequenced data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Seymour Ginsburg</li>
+<li class="nameList Last">Xiaoyang Wang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A family of sequence operations (rs-operations), based on pattern matching and including most of the &ldquo;natural&rdquo; operations on sequences, is introduced. In order to apply rs-operations to calculus-like query languages, a logic about sequences (SL) is defined by converting rs-operations to special predicates. To illustrate the applicability of our concepts to database queries, rs-operations and SL are used in an algebra and a calculus, respectively, over an extended relational data model containing sequences.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683851" title="Get the Full Text from the ACM Digital Library">Pushing constraint selections</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Divesh Srivastava</li>
+<li class="nameList Last">Raghu Ramakrishnan</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683852" title="Get the Full Text from the ACM Digital Library">The complexity of reusing and modifying rulebases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Anthony J. Bonner</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>This paper develops a method for reusing and modifying deductive databases. Such methods are needed when new rulebased applications differ only slightly from existing ones or when an application is to be incrementally updated. In order to facilitate reuse, we extend deductive databases by the concept of <italic>predicate substitution</italic>. In this way, during query evaluation, not only variables, but also predicates can be substituted. This paper continues our earlier work on predicate substitution in two directions: (<italic>i</italic> We extend the concept to a wider class of rulebase modifications, and (<italic>ii</italic>) we estblish tight bounds on the data complexity of Datalog augmented with substitution, showing it to be EXPTIME-complete. Predicate substitution thus increases the power of Datalog to express database queries. The paper presents a proof theory and model theory for the language, including a fixpoint semantics.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683853" title="Get the Full Text from the ACM Digital Library">The complexity of querying indefinite data about linearly ordered domains</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">R. van der Meyden</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683854" title="Get the Full Text from the ACM Digital Library">Relations with relation names as arguments: algebra and calculus</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Kenneth A. Ross</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We consider a version of the relational model in which relation names may appear as arguments of other relations. Allowing relation names as arguments provides enhanced modelling capabilities, allowing some object-oriented features to be expressed within the relational model. We extend relational algebra with operators for accessing relations, and also define a relational calculus based on the logic HiLog. We prove two equivalence results between extensions of relational algebra provide higher expressive power than relational algebra on any given database. Finally, we argue that the extensions proposed here are relatively easy to provide in practice, and should be expressible within modern query languages.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683865" title="Get the Full Text from the ACM Digital Library">Magic-sets transformation in nonrecursive systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ashish Gupta</li>
+<li class="nameList Last">Inderpal Singh Mumick</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A nonrecursive system is any database system whose query language does not support recursive queries. Thus, many existing commerical SQL database systems are nonrecursive systems. Query optimization is an important issue for nonrecursive queries, and the magic-sets transformation has been shown to improve the performance of nonrecursive queries by many orders of magnitude [MFPR90]. It is thus important to use the magic-sets transformation in nonrecursive systems.</par>
+<par>However, there is a problem. The magic-sets optimization can transform a nonrecursive query into a recursive query. Since a recursive query cannot be executed by a nonrecursive system, such a transformation is fatal. The magic-sets transformation cannot therefore be used in nonrecursive systems.</par>
+<par>In this paper we present algorithms that achieve the optimization of the magic-sets transformation while guaranteeing that the transformed program will be nonrecursive whenever the original program is nonrecursive. The algorithms can be extended to the supplementary magic-sets transformation. We also define a new optimization technique for recursive and nonrecursive queries, <italic>covered subgoal elimination</italic>, that can eliminate subgoals from a rule, and can sometimes convert a recursive query into a nonrecursive one.</par>
+<par>The algorithms presented in this paper are of practical relevance since they make it possible to incorporate the magic-sets transformation into existing commercial database systems.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683866" title="Get the Full Text from the ACM Digital Library">Avoiding Cartesian products in programs for multiple joins (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Shinichi Morishita</li>
+
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Avoiding Cartesian products is a common heuristic to reduce the search space of join expressions (orderings) over some set of relations. However, this heuristic cannot guarantee optimal join expressions in its search space because the cheapest Cartesian-product-free (CPF, for short) join expression could be significantly worse than an optimal non-CPF join expression. In a recent PODS, Tay [9] gave some conditions on actual relations that ensure the existence of an optimal CPF join expression; however, the conditions turn out to be applicable only in special cases. In this paper, we do not put any restrictions on actual relations, and we introduce a novel technique that derives <italic>programs</italic> consisting of joins, semijoins, and projections from CPF join expressions. Our main result is that for every join expression, there exists an equivalent CPF join expression from which we can derive a program whose cost is within a constant factor of the cost of an optimal join expression.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683867" title="Get the Full Text from the ACM Digital Library">On tree-based techniques for query evaluation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">H&#229;kan Jakobsson</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We discuss a technique for query evaluation based on storing intermediary results as trees and study two applications. We first consider the problem of computing the transitive closure of a graph for a specific set of source nodes. Algorithms for this problem can be directly applied to many nonrecursive queries as well. We give a new algorithm and show that it is superior to several previous algorithms. We then consider Warshall's transitive closure algorithm. This algorithm is not <italic>O(n e)</italic>, but we show that by using trees instead flat representations of intermediary results, we can derive a new version of the algorithm with an <italic>O(n e></italic> upper bound.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

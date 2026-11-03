@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2024 SIGMOD Systems Award"
 permalink: "/2024-sigmod-systems-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2025-04-25"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-![](https://sigmod.org/wp-content/uploads/2024/06/singa-1024x368.png)
+![](/wp-content/uploads/2024/06/singa-1024x368.png)
 
 ## Apache Singa: A Distributed Deep Learning System
 

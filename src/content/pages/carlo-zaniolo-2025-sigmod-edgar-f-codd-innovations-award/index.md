@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Carlo Zaniolo — 2025 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/carlo-zaniolo-2025-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2025-04-25"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2023/05/image.png)
+![](/wp-content/uploads/2023/05/image.png)
 
-![](https://sigmod.org/wp-content/uploads/2025/04/carlo_zaniolo.jpeg)
+![](/wp-content/uploads/2025/04/carlo_zaniolo.jpeg)
 
 Carlo Zaniolo
 

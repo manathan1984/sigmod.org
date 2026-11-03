@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Sihem Amer-Yahia — 2024 SIGMOD Contributions Award"
 permalink: "/sihem-amer-yahia-2024-sigmod-contributions-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2024-06-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2023/05/image-2.png)
+![](/wp-content/uploads/2023/05/image-2.png)
 
-![](https://sigmod.org/wp-content/uploads/2024/06/sihem-1024x1024.jpg)
+![](/wp-content/uploads/2024/06/sihem-1024x1024.jpg)
 
 ****Sihem Amer-Yahia****
 

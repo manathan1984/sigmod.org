@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Laura Haas — 2015 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/laura-haas/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview31-e1444267064545.jpg" alt="Laura Haas3" width="125"></td><td><h2>Laura Haas</h2><h3>2015 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview31-e1444267064545.jpg" alt="Laura Haas3" width="125"></td><td><h2>Laura Haas</h2><h3>2015 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 **Dr. Laura Haas** is the recipient of the 2015 SIGMOD Edgar F. Codd Innovation Award for pioneering innovations in the integration of multiple, heterogeneous data sources.
 

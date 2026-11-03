@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "David Lomet — 2010 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/david-lomet/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)
+![](/wp-content/uploads/2022/05/image_large-300x9.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview12.jpg" alt="David_Lomet"></td><td><h2>David Lomet</h2><h3>2010 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview12.jpg" alt="David_Lomet"></td><td><h2>David Lomet</h2><h3>2010 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 Dr. David Lomet is the recipient of the 2010 SIGMOD Contribution Award for his outstanding leadership as the Editor-In-Chief of the IEEE Data Engineering Bulletin, a key forum for dissemination of emerging ideas in academia and industry.  Lomet has been a key figure in our field, holding many additional leadership roles and demonstrating in each his dedication to service and to our community.
 

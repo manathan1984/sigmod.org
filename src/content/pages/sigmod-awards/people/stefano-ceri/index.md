@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Stefano Ceri — 2013 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/stefano-ceri/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview3.jpg" alt="Stefano_Ceri" width="125"></td><td><h2>Stefano Ceri</h2><h3>2013 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview3.jpg" alt="Stefano_Ceri" width="125"></td><td><h2>Stefano Ceri</h2><h3>2013 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 **Professor Stefano Ceri** is the recipient of the 2013 SIGMOD Edgar F. Codd Innovation Award for a series of influential contributions to several areas of database management, including distributed databases, rule-based systems, web-based application design, and search computing.
 

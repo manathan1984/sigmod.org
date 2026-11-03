@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Joseph M. Hellerstein — 2023 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/joseph-m-hellerstein-2023-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2023-05-23"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2023/05/image.png)
+![](/wp-content/uploads/2023/05/image.png)
 
-![](https://sigmod.org/wp-content/uploads/2023/05/Joesephmhellerstein-1.png)
+![](/wp-content/uploads/2023/05/Joesephmhellerstein-1.png)
 
 ## Joseph M. Hellerstein
 

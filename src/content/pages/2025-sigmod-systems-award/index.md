@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2025 SIGMOD Systems Award"
 permalink: "/2025-sigmod-systems-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2025-04-25"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-![](https://sigmod.org/wp-content/uploads/2025/04/spanner.png)
+![](/wp-content/uploads/2025/04/spanner.png)
 
 **Spanner: Google’s Globally-Distributed Database**
 

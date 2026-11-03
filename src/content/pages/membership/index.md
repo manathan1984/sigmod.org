@@ -18,12 +18,12 @@ There are two categories of membership, namely SIGMOD Online and SIGMOD Print, i
 Online members receive:
 
 -   Information about SIGMOD
--   [SIGMOD Record electronically](https://sigmod.org/sigmodrecord) (4 issues per year)
+-   [SIGMOD Record electronically](https://sigmodrecord.org/) (4 issues per year)
 -   [SIGMOD/PODS conference proceedings online](http://dl.acm.org/event.cfm?id=RE227&CFID=682094599&CFTOKEN=61452254) (available before the conference)
 -   [SIGMOD Anthology](/publications/anthology/) and [DiSC](/publications/sigmod-digital-symposium-collection/) metadata, linking to physical media, as well as the ACM Digital Library
 -   A bundle of SIGMOD-related publications made available through the ACM Digital Library (previously provided on DVD as SIGMOD DiSC)
 -   [A blog on “hot topics” in databases](http://wp.sigmod.org/)
--   Database resources (e.g., [public domain software](https://sigmod.org/membership/resources/free-public-domain-software.html))
+-   Database resources (e.g., [public domain software](/software/))
 -   Access to content from SIG sponsored and co-sponsored events in the ACM Digital Library
 -   Discounted registration fees at events in-cooperation or sponsored by SIGMOD, including the SIGMOD/PODS conference
 -   A social networking presence to disseminate community news
@@ -55,6 +55,6 @@ SIGMOD supports the following activities that benefit the Community:
 -   Support for [DBLP](http://www.informatik.uni-trier.de/~ley/db/) – a bibliography of computer science publications
 -   Cooperation with ETH Zurich on the [PubZone](http://pubzone.org/) non-profit discussion forum for publications in the database community
 -   Sponsorship of the annual SIGMOD and PODS conferences; co-sponsorship of DEBS, SIGKDD, SOCC, WSDM, and other conferences/workshops on occasion; sponsorship of the workshops held at the annual SIGMOD/PODS conference
--   [The SIGMOD awards](https://sigmod.org/membership/sigmod-awards): SIGMOD Edgar F. Codd Innovation Award,  the SIGMOD Contributions Award, the SIGMOD Systems Award, the SIGMOD Best Paper, the Test-of-Time Best Paper award, and the SIGMOD Jim Gray Dissertation Award
+-   [The SIGMOD awards](/sigmod-awards/): SIGMOD Edgar F. Codd Innovation Award,  the SIGMOD Contributions Award, the SIGMOD Systems Award, the SIGMOD Best Paper, the Test-of-Time Best Paper award, and the SIGMOD Jim Gray Dissertation Award
 -   The SIGMOD Programming Contest
 -   Undergraduate and graduate scholarships to enable undergraduate and graduate students to attend the SIGMOD/PODS conferences and other events on occasion

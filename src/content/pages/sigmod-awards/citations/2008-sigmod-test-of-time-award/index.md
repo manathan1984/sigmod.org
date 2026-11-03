@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2008 SIGMOD Test of Time Award"
 permalink: "/sigmod-awards/citations/2008-sigmod-test-of-time-award/"
 section: "sigmod"
@@ -11,7 +12,7 @@ updated: "2022-05-13"
 
 ## Integration of Heterogeneous Databases Without Common Domains Using Queries Based on Textual Similarity
 
-### ![image_preview27.jpg (125×150)](https://sigmod.hosting2.acm.org/sigmodnewwp/wp-content/uploads/2015/07/image_preview27.jpg)     William W. Cohen (AT&T Labs-Research)
+### ![image_preview27.jpg (125×150)](/wp-content/uploads/2015/07/image_preview27.jpg)     William W. Cohen (AT&T Labs-Research)
 
 This landmark paper on data integration established the importance of data-driven (as opposed to schema-driven) methods, and opened up the important field of text-similarity joins. Prior to this paper, the literature on heterogeneous databases had focused on schema-centric approaches assuming a unified representation of individual entities. This work was the first database-research publication that addressed the entity-matching problem as a core issue of data integration. Its query-time approach to partial integration anticipated the modern notion of pay-as-you-go dataspaces.
 

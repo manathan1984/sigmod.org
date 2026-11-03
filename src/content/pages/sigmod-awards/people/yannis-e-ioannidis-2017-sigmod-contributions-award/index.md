@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Yannis E. Ioannidis — 2017 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/yannis-e-ioannidis-2017-sigmod-contributions-award/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)
+![](/wp-content/uploads/2022/05/image_large-300x9.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2017/04/yannispic_3.png" alt="" width="100" height="130"></td><td><h2>Yannis E. Ioannidis</h2><h3>2017 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2017/04/yannispic_3.png" alt="" width="100" height="130"></td><td><h2>Yannis E. Ioannidis</h2><h3>2017 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 **Professor Yannis E. Ioannidis** is the recipient of the 2017 ACM SIGMOD Contributions Award for his sustained leadership and dedicated service to the database community, especially as part of the SIGMOD Executive Committee and the VLDB Endowment.
 

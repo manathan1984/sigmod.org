@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Gems of PODS"
 permalink: "/pods-home/gems-of-pods/"
 section: "pods"
@@ -36,7 +37,7 @@ We present a variant of CRPQs with the extensions (1-4), aimed to provide resear
 **  
 2024**
 
-**Recent Increments in Incremental View Maintenance** [\[PDF\]](https://sigmod.org/wp-content/uploads/2024/09/GemsPODS24-Olteanu.pdf)  
+**Recent Increments in Incremental View Maintenance** [\[PDF\]](/wp-content/uploads/2024/09/GemsPODS24-Olteanu.pdf)  
 Dan Olteanu (University of Zurich)
 
 **Abstract**  
@@ -44,7 +45,7 @@ This talk overviews recent progress on the longstanding problem of incremental v
 
 **2023**
 
-**Applications of Sketching and Pathways to Impact** [\[PDF\]](https://sigmod.org/wp-content/uploads/2024/10/gems-sketches.pdf)  
+**Applications of Sketching and Pathways to Impact** [\[PDF\]](/wp-content/uploads/2024/10/gems-sketches.pdf)  
 Graham Cormode (Facebook and University of Warwick)
 
 **Abstract**  
@@ -52,14 +53,14 @@ Data summaries (a.k.a., sketches) are compact data structures that can be update
 
 **2022**
 
-**Document Spanners – A Brief Overview of Concepts, Results, and Recent Developments** [\[PDF\]](https://sigmod.org/wp-content/uploads/2024/10/GemsOfPODS22_DocumentSpanners_Schweikardt.pdf)  
+**Document Spanners – A Brief Overview of Concepts, Results, and Recent Developments** [\[PDF\]](/wp-content/uploads/2024/10/GemsOfPODS22_DocumentSpanners_Schweikardt.pdf)  
 Nicole Schweikardt (Humboldt-University Berlin)
 
 **Abstract**  
 The information extraction framework of document spanners was introduced by Fagin, Kimelfeld, Reiss, and Vansummeren (PODS 2013, J. ACM 2015) as a formalisation of the query language AQL, which is used in IBM’s information extraction engine SystemT. Since 2013, this framework has been investigated in depth by the principles of database management community and beyond. In this talk, we give a brief overview of concepts, results, and recent developments concerning document spanners.
 
 **  
-Algorithmic Techniques for Independent Query Sampling** [\[PDF\]](https://sigmod.org/wp-content/uploads/2024/10/iqs.pdf)  
+Algorithmic Techniques for Independent Query Sampling** [\[PDF\]](/wp-content/uploads/2024/10/iqs.pdf)  
 Yufei Tao (Chinese University of Hong Kong)
 
 **Abstract**  
@@ -97,7 +98,7 @@ In probabilistic databases the data is uncertain and is modeled by a probability
 
 **2019**
 
-**Latent Semantic Indexings** [\[PDF\]](https://sigmod.org/wp-content/uploads/2024/09/pods2019b.pdf)  
+**Latent Semantic Indexings** [\[PDF\]](/wp-content/uploads/2024/09/pods2019b.pdf)  
 Christos Papadimitriou (Columbia University NY)
 
 **Abstract**  
@@ -112,7 +113,7 @@ In this talk I will review the main concepts around database repairs and consist
 
 **2018**
 
-**Reflections on Schema Mappings, Data Exchange, and Metadata Managements** [\[PDF\]](https://sigmod.org/wp-content/uploads/2024/09/pods-2018-gems.pdf)  
+**Reflections on Schema Mappings, Data Exchange, and Metadata Managements** [\[PDF\]](/wp-content/uploads/2024/09/pods-2018-gems.pdf)  
 Phokion G. Kolaitis (UC Santa Cruz and IBM Almaden Research Center)
 
 **Abstract**  
@@ -134,7 +135,7 @@ Alon Y. Halevy (Recruit Institute of Technology)
 Twenty five years ago, data integration was a concern mainly for large enterprises with many autonomous data sources. Since then, while data integration became even more important to enterprises, the technology has ventured out into new areas, such as the Web and recently into voice-activated consumer devices that answer a plethora of questions in your home. At the core of these systems is a mechanism for describing the semantics and capabilities of individual data sources. Database theory has made important contributions to the area of modeling data sources and query answering in data integration systems. I this talk I will cover some of the main developments in the field of data integration since the mid-90’s, and discuss the challenges that lie ahead.
 
 **  
-The Semiring Framework for Database Provenance** [\[PDF\]](https://sigmod.org/wp-content/uploads/2024/09/15MayPODS.pdf)  
+The Semiring Framework for Database Provenance** [\[PDF\]](/wp-content/uploads/2024/09/15MayPODS.pdf)  
 Val Tannen (University of Pennsylvania)
 
 **Abstract**  
@@ -146,7 +147,7 @@ Here, we have selected several insights that we consider essential for the appre
 
 **2016**
 
-**Optimal Score Aggregation Algorithms** [\[PDF\]](https://sigmod.org/wp-content/uploads/2024/09/Gems-of-PODS-talk.pdf)  
+**Optimal Score Aggregation Algorithms** [\[PDF\]](/wp-content/uploads/2024/09/Gems-of-PODS-talk.pdf)  
 Ronald Fagin (IBM Research – Almaden)
 
 **Abstract**  

@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Jeffrey D. Ullman — 2006 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/jeffrey-d-ullman-2006/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2015-07-17"
 ---
 
-![sub_awards.gif](https://sigmod.hosting.acm.org/sigmodnewwp/wp-content/uploads/2015/07/image_large.png)
+![sub_awards.gif](/wp-content/uploads/2015/07/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.hosting.acm.org/sigmodnewwp/wp-content/uploads/2015/07/image_preview5.png" alt="Jeffrey_Ullman" width="125" height="150"></td><td><h2>&nbsp;&nbsp;&nbsp; Jeffrey D. Ullman</h2><h3>&nbsp;&nbsp;&nbsp;&nbsp; 2006 SIGMOD Edgar F. Codd Innovations Award</h3><p>&nbsp;</p></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview5.png" alt="Jeffrey_Ullman" width="125" height="150"></td><td><h2>&nbsp;&nbsp;&nbsp; Jeffrey D. Ullman</h2><h3>&nbsp;&nbsp;&nbsp;&nbsp; 2006 SIGMOD Edgar F. Codd Innovations Award</h3><p>&nbsp;</p></td></tr></tbody></table>
 
 Jeffrey D. Ullman is the recipient of the 2006 SIGMOD Edgar F. Codd Innovations Award for his profound impact and numerous research contributions to the database field.
 

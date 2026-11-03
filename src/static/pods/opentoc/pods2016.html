@@ -1,0 +1,526 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '16- Proceedings of the 35th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '16- Proceedings of the 35th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=2902251" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: PODS Keynote</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252633" title="Full Citation in the ACM Digital Library">Session details: PODS Keynote</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Tova Milo</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684568" title="Get the Full Text from the ACM Digital Library">A Theory of Regular Queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Moshe Y. Vardi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A major theme in relational database theory is navigating the tradeoff between expressiveness and tractability for query languages, where the query-containment problem is considered a benchmark of tractability. The query class UCQ, consisting off <i>unions of conjunctive queries</i>, is a fragment of first-order logic that has a decidable query containment problem, but its expressiveness is limited. Extending UCQ with recursion yields Datalog, an expressive query language that has been studied extensively and has recently become popular in application areas such as declarative networking. Unfortunately, Datalog has an undecidable query containment problem. Identifying a fragment of Datalog that is expressive enough for applications but has a decidable query-containment problem has been an open problem for several years.</p> <p>In the area of graph databases, there has been a similar search for a query language that combines expressiveness and tractability. Because of the need to navigate along graph paths of unspecified length, transitive closure has been considered a fundamental operation. Query classes of increasing complexity -- using the operations of disjunction, conjunction, projection, and transitive closure -- have been studied, but the classes lacked natural closure properties. The class RQ of <i>regular queries</i> has emerged only recently as a natural query class that is closed under all of its operations and has a decidable query-containment problem.</p> <p>RQ turned out to be a fragment of Datalog where recursion can be used only to express transitive closure. Furthermore, it turns out that applying this idea to Datalog, that is, restricting recursion to the expression of transitive closure, does yield the long-sought goal -- an expressive fragment of Datalog with a decidable query-optimization problem.</p></div> </div>
+<h2>SESSION: PODS Award talks + 1 regular paper</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252634" title="Full Citation in the ACM Digital Library">Session details: PODS Award talks + 1 regular paper</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jan Van den Bussche</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684569" title="Get the Full Text from the ACM Digital Library">2016 ACM PODS Alberto O. Mendelzon Test-of-Time Award</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marcelo Arenas</li>
+<li class="nameList">Peter Buneman</li>
+<li class="nameList Last">Jan Van den Bussche</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684560" title="Get the Full Text from the ACM Digital Library">FAQ: Questions Asked Frequently</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mahmoud Abo Khamis</li>
+<li class="nameList">Hung Q. Ngo</li>
+<li class="nameList Last">Atri Rudra</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We define and study the Functional Aggregate Query (FAQ) problem, which encompasses many frequently asked questions in constraint satisfaction, databases, matrix operations, probabilistic graphical models and logic. This is our main conceptual contribution. We then present a simple algorithm called "InsideOut" to solve this general problem. InsideOut is a variation of the traditional dynamic programming approach for constraint programming based on variable elimination. Our variation adds a couple of simple twists to basic variable elimination in order to deal with the generality of FAQ, to take full advantage of Grohe and Marx's fractional edge cover framework, and of the analysis of recent worst-case optimal relational join algorithms.</p> <p>As is the case with constraint programming and graphical model inference, to make InsideOut run efficiently we need to solve an optimization problem to compute an appropriate variable ordering. The main technical contribution of this work is a precise characterization of when a variable ordering is `semantically equivalent' to the variable ordering given by the input FAQ expression. Then, we design an approximation algorithm to find an equivalent variable ordering that has the best `fractional FAQ-width'. Our results imply a host of known and a few new results in graphical model inference, matrix operations, relational joins, and logic.</p> <p>We also briefly explain how recent algorithms on beyond worst-case analysis for joins and those for solving SAT and #SAT can be viewed as variable elimination to solve FAQ over compactly represented input functions.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684561" title="Get the Full Text from the ACM Digital Library">Shortest Paths and Distances with Differential Privacy</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Adam Sealfon</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We introduce a model for differentially private analysis of weighted graphs in which the graph topology (&#965;,&#949;) is assumed to be public and the private information consists only of the edge weights &#969; : &#949; &#8594; R<sup>+</sup>. This can express hiding congestion patterns in a known system of roads. Differential privacy requires that the output of an algorithm provides little advantage, measured by privacy parameters &#949; and &#948;, for distinguishing between neighboring inputs, which are thought of as inputs that differ on the contribution of one individual. In our model, two weight functions <i>w</i>,<i>w</i>' are considered to be neighboring if they have <i>l</i><sub>1</sub> distance at most one.</p> <p>We study the problems of privately releasing a short path between a pair of vertices and of privately releasing approximate distances between all pairs of vertices. We are concerned with the <i>approximation error</i>, the difference between the length of the released path or released distance and the length of the shortest path or actual distance.</p> <p>For the problem of privately releasing a short path between a pair of vertices, we prove a lower bound of &#937;(|&#965;|) on the additive approximation error for fixed privacy parameters &#949;,&#948;. We provide a differentially private algorithm that matches this error bound up to a logarithmic factor and releases paths between all pairs of vertices, not just a single pair. The approximation error achieved by our algorithm can be bounded by the number of edges on the shortest path, so we achieve better accuracy than the worst-case bound for pairs of vertices that are connected by a low-weight path consisting of <i>o</i>(|&#965;|) vertices.</p> <p>For the problem of privately releasing all-pairs distances, we show that for trees we can release all-pairs distances with approximation error $O(log<sup>2.5</sup>|&#965;|) for fixed privacy parameters. For arbitrary bounded-weight graphs with edge weights in [0,<i>M</i>] we can brelease all distances with approximation error &#213;(&#8730;&#62;(|&#965;|<i>M</i>).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684562" title="Get the Full Text from the ACM Digital Library">Minimization of Tree Pattern Queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Wojciech Czerwinski</li>
+<li class="nameList">Wim Martens</li>
+<li class="nameList">Matthias Niewerth</li>
+<li class="nameList Last">Pawel Parys</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We investigate minimization of tree pattern queries that use the child relation, descendant relation, node labels, and wildcards. We prove that minimization for such tree patterns is Sigma2P-complete and thus solve a problem first attacked by Flesca, Furfaro, and Masciari in 2003. We first provide an example that shows that tree patterns cannot be minimized by deleting nodes. This example shows that the M-NR conjecture, which states that minimality of tree patterns is equivalent to their nonredundancy, is false. We then show how the example can be turned into a gadget that allows us to prove Sigma2P-completeness.</p></div> </div>
+<h2>SESSION: Gems of PODS</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252635" title="Full Citation in the ACM Digital Library">Session details: Gems of PODS</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Wang-Chiew Tan</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684563" title="Get the Full Text from the ACM Digital Library">Optimal Score Aggregation Algorithms</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Ronald Fagin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Assume that there is a set of "voters" and a set of "candidates", where each voter assigns a numerical score to each candidate. There is a scoring function (such as the mean or the median), and a consensus ranking is obtained by applying the scoring function to each candidate's scores. The problem is to find the top k candidates, while minimizing the number of database accesses. The speaker will present an algorithm that is optimal in an extremely strong sense: not just in the worst case or the average case, but in every case! Even though the algorithm is only 10 lines long (!), the paper containing the algorithm won the 2014 G&#246;del Prize, the top prize for a paper in theoretical computer science.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684564" title="Get the Full Text from the ACM Digital Library">Hypertree Decompositions: Questions and Answers</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Georg Gottlob</li>
+<li class="nameList">Gianluigi Greco</li>
+<li class="nameList">Nicola Leone</li>
+<li class="nameList Last">Francesco Scarcello</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In the database context, the hypertree decomposition method is used for query optimization, whereby conjunctive queries having a low degree of cyclicity can be recognized and decomposed automatically, and efficiently evaluated. Hypertree decompositions were introduced at ACM PODS 1999. The present paper reviews' in form of questions and answers' the main relevant concepts and algorithms and surveys selected related work including applications and test results.</p></div> </div>
+<h2>SESSION: Session 1: Query rewriting, Views, and Join Algorithms</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252636" title="Full Citation in the ACM Digital Library">Session details: Session 1: Query rewriting, Views, and Join Algorithms</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Dan Suciu</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684575" title="Get the Full Text from the ACM Digital Library">Incremental View Maintenance For Collection Programming</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Christoph Koch</li>
+<li class="nameList">Daniel Lupei</li>
+<li class="nameList Last">Val Tannen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In the context of incremental view maintenance (IVM), <i>delta</i> query derivation is an essential technique for speeding up the processing of large, dynamic datasets. The goal is to generate delta queries that, given a small change in the input, can update the materialized view more efficiently than via recomputation.</p> <p>In this work we propose the first solution for the efficient incrementalization of positive nested relational calculus (NRC<sup>+</sup>) on bags (with integer multiplicities). More precisely, we model the cost of NRC<sup>+</sup> operators and classify queries as efficiently incrementalizable if their delta has a strictly lower cost than full re-evaluation. Then, we identify NRC<sup>+</sup>, a large fragment of NRC<sup>+</sup> that is efficiently incrementalizable and we provide a semantics-preserving translation that takes any NRC<sup>+</sup> query to a collection of IncNRC<sup>+</sup> queries. Furthermore, we prove that incremental maintenance for NRC<sup>+</sup> is within the complexity class NC<sub>0</sub> and we showcase how <i>recursive</i> IVM, a technique that has provided significant speedups over traditional IVM in the case of flat queries [25], can also be applied to IncNRC<sup>+</sup>.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684576" title="Get the Full Text from the ACM Digital Library">AJAR: Aggregations and Joins over Annotated Relations</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Manas R. Joglekar</li>
+<li class="nameList">Rohan Puttagunta</li>
+<li class="nameList Last">Christopher R&#233;</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study a class of aggregate-join queries with multiple aggregation operators evaluated over annotated relations. We show that straightforward extensions of standard multiway join algorithms and generalized hypertree decompositions (GHDs) provide best-known runtime guarantees. In contrast, prior work uses bespoke algorithms and data structures and does not match these guarantees. We extend the standard techniques by providing a complete characterization of (1) the set of orderings equivalent to a given ordering and (2) the set of GHDs valid with respect to the given ordering, i.e., GHDs that correctly answer a given aggregate-join query when provided to (simple variants of) standard join algorithms. We show by example that previous approaches are incomplete. The key technical consequence of our characterizations is a decomposition of a valid GHD into a set of (smaller) <i>unconstrained</i> GHDs, i.e., into a set of GHDs of sub-queries without aggregations. Since this decomposition is comprised of unconstrained GHDs, we are able to connect to the wide literature on GHDs for join query processing, thereby obtaining improved runtime bounds, MapReduce variants, and an efficient method to find approximately optimal GHDs.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684577" title="Get the Full Text from the ACM Digital Library">Bounded Query Rewriting Using Views</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yang Cao</li>
+<li class="nameList">Wenfei Fan</li>
+<li class="nameList">Floris Geerts</li>
+<li class="nameList Last">Ping Lu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A query Q has a bounded rewriting using a set of views if there exists a query Q' expressed in the same language as Q, such that given a dataset D, Q(D) can be computed by Q' that accesses only cached views and a small fraction D<sub>Q</sub> of D. We consider datasets D that satisfy a set of access constraints, a combination of cardinality constraints and associated indices, such that the size |D<sub>Q</sub>| of D<sub>Q</sub> and the time to identify D<sub>Q</sub> are independent of |D|, no matter how big D is.</p> <p>This paper studies the problem for deciding whether a query has a bounded rewriting given a set V of views and a set A of access constraints. We establish the complexity of the problem for various query languages, from &#931;<sub>3</sub><sup>p</sup>-complete for conjunctive queries (CQ), to undecidable for relational algebra (FO). We show that the intractability for CQ is rather robust even for acyclic CQ with fixed V and A, and characterize when the problem is in PTIME. To make practical use of bounded rewriting, we provide an effective syntax for FO queries that have a bounded rewriting. The syntax characterizes a core subclass of such queries without sacrificing the expressive power, and can be checked in PTIME.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684578" title="Get the Full Text from the ACM Digital Library">Red Spider Meets a Rainworm: Conjunctive Query Finite Determinacy Is Undecidable</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tomasz Gogacz</li>
+<li class="nameList Last">Jerzy Marcinkowski</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We solve a well known and long-standing open problem in database theory, proving that Conjunctive Query Finite Determinacy Problem is undecidable. The technique we use builds on the top of the Red Spider method invented in our paper [GM15] to show undecidability of the same problem in the "unrestricted case" -- when database instances are allowed to be infinite. We also show a specific instance <i>Q</i><sub>0</sub>, <i>Q</i>= \<i>Q</i><sub>1</sub>, <i>Q</i><sub>2</sub>, ... <i>Q</i><sub><i>k</i></sub>} such that the set <i>Q</i> of C<i>Q</i>s does not determine C<i>Q</i> <i>Q<sub>0</sub></i> but finitely determines it. Finally, we claim that while <i>Q</i><sub>0</sub> is finitely determined by <i>Q</i>, there is no FO-rewriting of <i>Q</i><sub>0</sub>, with respect to <i>Q</i></p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684579" title="Get the Full Text from the ACM Digital Library">Towards a Worst-Case I/O-Optimal Algorithm for Acyclic Joins</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Xiao Hu</li>
+<li class="nameList Last">Ke Yi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Nested-loop join is a worst-case I/O-optimal algorithm for 2 relations. Recently, a lot of efforts have been devoted to the "triangle query", for which an I/O-optimal algorithm is known. This paper extends these results to a fairly large class of acyclic joins. Acyclic joins can be computed optimally in internal memory using Yannakakis' algorithm from 1981, which simply performs a series of pairwise joins. However, no pairwise join algorithm can be I/O-optimal beyond 2 relations. To achieve I/O-optimality, the algorithm has to handle all the intermediate results carefully without writing them to disk. Unlike the optimal internal memory join algorithm which has a nice tight bound (the AGM bound), the I/O-complexity of joins turns out to be quite complex or even unknown. Yet, we are able to prove that our algorithm is I/O-optimal for certain classes of acyclic joins without deriving its bound explicitly.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684570" title="Get the Full Text from the ACM Digital Library">On the Complexity of Inner Product Similarity Join</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Thomas Dybdahl Ahle</li>
+<li class="nameList">Rasmus Pagh</li>
+<li class="nameList">Ilya Razenshteyn</li>
+<li class="nameList Last">Francesco Silvestri</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A number of tasks in classification, information retrieval, recommendation systems, and record linkage reduce to the core problem of <i>inner product similarity join</i> (IPS join): identifying pairs of vectors in a collection that have a sufficiently large inner product. IPS join is well understood when vectors are normalized and some <i>approximation</i> of inner products is allowed. However, the general case where vectors may have any length appears much more challenging. Recently, new upper bounds based on asymmetric locality-sensitive hashing (ALSH) and asymmetric embeddings have emerged, but little has been known on the lower bound side. In this paper we initiate a systematic study of inner product similarity join, showing new lower and upper bounds. Our main results are: Approximation hardness of IPS join in subquadratic time, assuming the strong exponential time hypothesis. New upper and lower bounds for (A)LSH-based algorithms. In particular, we show that asymmetry can be avoided by relaxing the LSH definition to only consider the collision probability of <i>distinct</i> elements. A new indexing method for IPS based on linear sketches, implying that our hardness results are not far from being tight.</p> <p>Our technical contributions include new asymmetric embeddings that may be of independent interest. At the conceptual level we strive to provide greater clarity, for example by distinguishing among signed and unsigned variants of IPS join and shedding new light on the effect of asymmetry.</p></div> </div>
+<h2>TUTORIAL SESSION: PODS Tutorial 1</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252637" title="Full Citation in the ACM Digital Library">Session details: PODS Tutorial 1</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Marcelo Arenas</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684571" title="Get the Full Text from the ACM Digital Library">Data Management for Social Networking</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Sara Cohen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Social networks are fascinating and valuable datasets, which can be leveraged to better understand society, and to make inter-personal choices. This tutorial explores the fundamental issues that arise when storing and querying social data. The discussion is divided into three main parts. First, we consider some of the key computational problems that arise over the social graph structure, such as node centrality, link prediction, community detection and information diffusion. Second, we consider algorithmic challenges that leverage both the textual content and the graph structure of a social network, e.g., social search and querying, and team formation. Finally, we consider critical aspects of implementing a social network database management system, and discuss existing systems. In this tutorial, we also point out gaps between the state-of-the-art and desired features of a data management system for social networking, and discuss open research challenges.</p></div> </div>
+<h2>SESSION: Session 2: Workflows and Incomplete Information</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252638" title="Full Citation in the ACM Digital Library">Session details: Session 2: Workflows and Incomplete Information</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Claire David</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684572" title="Get the Full Text from the ACM Digital Library">Verification of Hierarchical Artifact Systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alin Deutsch</li>
+<li class="nameList">Yuliang Li</li>
+<li class="nameList Last">Victor Vianu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Data-driven workflows, of which IBM's Business Artifacts are a prime exponent, have been successfully deployed in practice, adopted in industrial standards, and have spawned a rich body of research in academia, focused primarily on static analysis. The present work represents a significant advance on the problem of artifact verification, by considering a much richer and more realistic model than in previous work, incorporating core elements of IBM's successful Guard-Stage-Milestone model. In particular, the model features task hierarchy, concurrency, and richer artifact data. It also allows database key and foreign key dependencies, as well as arithmetic constraints. The results show decidability of verification and establish its complexity, making use of novel techniques including a hierarchy of Vector Addition Systems and a variant of quantifier elimination tailored to our context.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684573" title="Get the Full Text from the ACM Digital Library">Recency-Bounded Verification of Dynamic Database-Driven Systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Parosh Aziz Abdulla</li>
+<li class="nameList">C. Aiswarya</li>
+<li class="nameList">Mohamed Faouzi Atig</li>
+<li class="nameList">Marco Montali</li>
+<li class="nameList Last">Othmane Rezine</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We propose a formalism to model database-driven systems, called database manipulating systems (DMS). The actions of a (DMS) modify the current instance of a relational database by adding new elements into the database, deleting tuples from the relations and adding tuples to the relations. The elements which are modified by an action are chosen by (full) first-order queries. (DMS) is a highly expressive model and can be thought of as a succinct representation of an infinite state relational transition system, in line with similar models proposed in the literature. We propose monadic second order logic (MSO-FO) to reason about sequences of database instances appearing along a run. Unsurprisingly, the linear-time model checking problem of (DMS) against (MSO-FO) is undecidable. Towards decidability, we propose under-approximate model checking of (DMS), where the under-approximation parameter is the "bound on recency". In a <i>k</i>-recency-bounded run, only the most recent <i>k</i> elements in the current active domain may be modified by an action. More runs can be verified by increasing the bound on recency. Our main result shows that recency-bounded model checking of (DMS) against (MSO-FO) is decidable, by a reduction to the satisfiability problem of MSO over nested words.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684574" title="Get the Full Text from the ACM Digital Library">Making SQL Queries Correct on Incomplete Databases: A Feasibility Study</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Paolo Guagliardo</li>
+<li class="nameList Last">Leonid Libkin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Multiple issues with SQL's handling of nulls have been well documented. Having efficiency as its key goal, evaluation of SQL queries disregards the standard notion of correctness on incomplete databases - certain answers - due to its high complexity. As a result, it may produce answers that are just plain wrong. It was recently shown that SQL evaluation can be modified, at least for first-order queries, to return only correct answers. But while these modifications came with good theoretical complexity bounds, they have not been tested in practice. The goals of this proof-of-concept paper are to understand whether wrong answers can be produced by SQL queries in real-world scenarios, and whether proposed techniques for avoiding them can be made practically feasible.</p> <p>We use the TPC-H benchmark, and show that for some typical queries involving negation, wrong answers are very common. On the other hand, existing solutions for fixing the problem do not work in practice at all. By analyzing the reasons for this, we come up with a new modified way of rewriting SQL queries that restores correctness. We conduct experiments which show the feasibility of our solution: the small price tag it imposes can be often tolerated to ensure correct results, and we do not miss correct answers that the usual SQL evaluation produces. The overall conclusion is that correct evaluation can be realistically achieved in the presence of nulls, at least for the SQL fragment that corresponds to first-order queries.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684585" title="Get the Full Text from the ACM Digital Library">Designing a Query Language for RDF: Marrying Open and Closed Worlds</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marcelo Arenas</li>
+<li class="nameList Last">Mart&#237;n Ugarte</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>When querying an RDF graph, a prominent feature is the possibility of extending the answer to a query with optional information. However, the definition of this feature in SPARQL --the standard RDF query language-- has raised some important issues. Most notably, the use of this feature increases the complexity of the evaluation problem, and its closed-world semantics is in conflict with the underlying open-world semantics of RDF. Many approaches for fixing such problems have been proposed, being the most prominent the introduction of the semantic notion of weakly-monotone SPARQL query. Weakly-monotone SPARQL queries have shaped the class of queries that conform to the open-world semantics of RDF. Unfortunately, finding an effective way of restricting SPARQL to the fragment of weakly-monotone queries has proven to be an elusive problem. In practice, the most widely adopted fragment for writing SPARQL queries is based on the syntactic notion of well designedness. This notion has proven to be a good approach for writing SPARQL queries, but its expressive power has yet to be fully understood. The starting point of this paper is to understand the relation between well-designed queries and the semantic notion of weak monotonicity. It is known that every well-designed SPARQL query is weakly monotone; as our first contribution we prove that the converse does not hold, even if an extension of this notion based on the use of disjunction is considered. Given this negative result, we embark on the task of defining syntactic fragments that are weakly-monotone, and have higher expressive power than the fragment of well-designed queries. To this end, we move to a more general scenario where infinite RDF graphs are also allowed, so that interpolation techniques studied for first-order logic can be applied. With the use of these techniques, we are able to define a new operator for SPARQL that gives rise to a query language with the desired properties (over finite and infinite RDF graphs). It should be noticed that every query in this fragment is weakly monotone if we restrict to the case of finite RDF graphs. Moreover, we use this result to provide a simple characterization of the class of monotone CONSTRUCT queries, that is, the class of SPARQL queries that produce RDF graphs as output. Finally, we pinpoint the complexity of the evaluation problem for the query languages identified in the paper.</p></div> </div>
+<h2>SESSION: Session 3: Data Streams and Indexes</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252639" title="Full Citation in the ACM Digital Library">Session details: Session 3: Data Streams and Indexes</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Sudeepa Roy</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684586" title="Get the Full Text from the ACM Digital Library">Schema Validation via Streaming Circuits</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Filip Murlak</li>
+<li class="nameList">Charles Paperman</li>
+<li class="nameList Last">Micha&#322; Pilipczuk</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>XML schema validation can be performed in constant memory in the streaming model if and only if the schema admits only trees of bounded depth - an acceptable assumption from the practical view-point. In this paper we refine this analysis by taking into account that data can be streamed block-by-block, rather then letter-by-letter, which provides opportunities to speed up the computation by parallelizing the processing of each block.</p> <p>For this purpose we introduce the model of streaming circuits, which process words of arbitrary length in blocks of fixed size, passing constant amount of information between blocks.</p> <p>This model allows us to transfer fundamental results about the circuit complexity of regular languages to the setting of streaming schema validation, which leads to effective constructions of streaming circuits of depth logarithmic in the block size, or even constant under certain assumptions on the input schema.</p> <p>For nested-relational DTDs, a practically motivated class of bounded-depth XML schemas, we provide an efficient construction yielding constant-depth streaming circuits with particularly good parameters.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684587" title="Get the Full Text from the ACM Digital Library">Variability in Data Streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">David Felber</li>
+<li class="nameList Last">Rafail Ostrovsky</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the problem of tracking with small relative error an integer function <i>f</i>(<i>n</i>) defined by a distributed update stream <i>f</i>'(<i>n</i>) in the distributed monitoring model. In this model, there are <i>k</i> sites over which the updates <i>f</i>'(<i>n</i>) are distributed, and they must communicate with a central coordinator to maintain an estimate of <i>f</i>(<i>n</i>).</p> <p>Existing streaming algorithms with worst-case guarantees for this problem assume <i>f</i>(<i>n</i>) to be monotone; there are very large lower bounds on the space requirements for summarizing a distributed non-monotonic stream, often linear in the size <i>n</i> of the stream. However, the input streams obtaining these lower bounds are highly variable, making relatively large jumps from one timestep to the next; in practice, the impact on <i>f</i>(<i>n</i>) of any single update <i>f</i>'(<i>n</i>) is usually small. What has heretofore been lacking is a framework for non-monotonic streams that admits algorithms whose worst-case performance is as good as existing algorithms for monotone streams and degrades gracefully for non-monotonic streams as those streams vary more quickly.</p> <p>In this paper we propose such a framework. We introduce a stream parameter, the "variability" <i>v</i>, deriving its definition in a way that shows it to be a natural parameter to consider for non-monotonic streams. It is also a useful parameter. From a theoretical perspective, we can adapt existing algorithms for monotone streams to work for non-monotonic streams, with only minor modifications, in such a way that they reduce to the monotone case when the stream happens to be monotone, and in such a way that we can refine the worst-case communication bounds from &#952;(<i>n</i>) to &#213;<i>v</i>. From a practical perspective, we demonstrate that <i>v</i> can be small in practice by proving that <i>v</i> is <i>O</i>(log <i>f</i>(<i>n</i>)) for monotone streams and <i>o</i>(<i>n</i>) for streams that are "nearly" monotone or that are generated by random walks. We expect <i>v</i> to be <i>o</i>(<i>n</i>) for many other interesting input classes as well.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684588" title="Get the Full Text from the ACM Digital Library">Streaming Space Complexity of Nearly All Functions of One Variable on Frequency Vectors</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Vladimir Braverman</li>
+<li class="nameList">Stephen R. Chestnut</li>
+<li class="nameList">David P. Woodruff</li>
+<li class="nameList Last">Lin F. Yang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A central problem in the theory of algorithms for data streams is to determine which functions on a stream can be approximated in sublinear, and especially sub-polynomial or poly-logarithmic, space. Given a function g, we study the space complexity of approximating &#8721;<sub>i=1</sub><sup>n</sup> g(|f<sub>i</sub>|), where f &#8712; Z<sup>n</sup> is the frequency vector of a turnstile stream. This is a generalization of the well-known frequency moments problem, and previous results apply only when g is monotonic or has a special functional form. Our contribution is to give a condition such that, except for a narrow class of functions g, there is a space-efficient approximation algorithm for the sum if and only if g satisfies the condition. The functions g that we are able to characterize include all convex, concave, monotonic, polynomial, and trigonometric functions, among many others, and is the first such characterization for non-monotonic functions. Thus, for nearly all functions of one variable, we answer the open question from the celebrated paper of Alon, Matias and Szegedy (1996).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684589" title="Get the Full Text from the ACM Digital Library">Efficient Top-k Indexing via General Reductions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Saladi Rahul</li>
+<li class="nameList Last">Yufei Tao</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Let <i>D</i> be a set of <i>n</i> elements each associated with a real-valued weight, and <i><b>Q</b></i> be the set of all possible predicates allowed on those elements. Given a predicate in <i><b>Q</b></i> and integer <i>k</i>, a <i>top-k query</i> returns the <i>k</i> elements with the largest weights among the elements of <i>D</i> satisfying <i>q</i>. The corresponding data structure problem aims to store <i>D</i> in small space to allow every query to be answered efficiently. It is already known that, before settling the problem, one <i>must</i> be able to solve two degenerated accompanying problems: (i) <i>prioritized reporting</i>: given a predicate <i>q</i> &#8712; <i><b>Q</b></i> and a real value &#964;, return all the elements of <i>D</i> satisfying <i>q</i> and having weights at least &#964; (ii) <i>max reporting</i>: top-<i>k</i> queries with <i>k</i> fixed to 1.</p> <p>In this paper we prove general reductions in external memory that explore the opposite direction. Our first reduction shows that, (under mild conditions) any prioritized reporting structure yields a static top-$k$ structure with only a slow-down in query time by a factor of <i>O</i>(log<sub><i>B</i></sub> <i>n</i>), where <i>B</i> is the block size. Our second reduction shows that if one additionally has a max reporting structure, then combining the two structures yields a top-<i>k</i> structure with no performance slow down (in space, query, and update) in expectation. These reductions significantly simplify the design of top-<i>k</i> structures, as we showcase on numerous problems including halfspace reporting, circular reporting, interval stabbing, point enclosure, and 3d dominance. All the techniques proposed work directly in the RAM model as well.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684580" title="Get the Full Text from the ACM Digital Library">Anti-Persistence on Persistent Storage: History-Independent Sparse Tables and Dictionaries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael A. Bender</li>
+<li class="nameList">Jonathan W. Berry</li>
+<li class="nameList">Rob Johnson</li>
+<li class="nameList">Thomas M. Kroeger</li>
+<li class="nameList">Samuel McCauley</li>
+<li class="nameList">Cynthia A. Phillips</li>
+<li class="nameList">Bertrand Simon</li>
+<li class="nameList">Shikha Singh</li>
+<li class="nameList Last">David Zage</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We present history-independent alternatives to a B-tree, the primary indexing data structure used in databases. A data structure is history independent (HI) if it is impossible to deduce any information by examining the bit representation of the data structure that is not already available through the API. We show how to build a history-independent cache-oblivious B-tree and a history-independent external-memory skip list. One of the main contributions is a data structure we build on the way---a history-independent packed-memory array (PMA). The PMA supports efficient range queries, one of the most important operations for answering database queries.</p> <p>Our HI PMA matches the asymptotic bounds of prior non-HI packed-memory arrays and sparse tables. Specifically, a PMA maintains a dynamic set of elements in sorted order in a linear-sized array. Inserts and deletes take an amortized O(log<sup>2</sup> N) element moves with high probability. Simple experiments with our implementation of HI PMAs corroborate our theoretical analysis. Comparisons to regular PMAs give preliminary indications that the practical cost of adding history-independence is not too large.</p> <p>Our HI cache-oblivious B-tree bounds match those of prior non-HI cache-oblivious B-trees. Searches take O(log<sub>B</sub> N) I/Os; inserts and deletes take O((log<sup>2</sup> N)/B+ log<sub>B</sub> N) amortized I/Os with high probability; and range queries returning k elements take O(log<sub>B</sub> N + k/B) I/Os.</p> <p>Our HI external-memory skip list achieves optimal bounds with high probability, analogous to in-memory skip lists: O(log<sub>B</sub> N) I/Os for point queries and amortized O(log<sub>B</sub> N) I/Os for inserts/deletes. Range queries returning k elements run in O(log<sub>B</sub> N + k/B) I/Os. In contrast, the best possible high-probability bounds for inserting into the folklore B-skip list, which promotes elements with probability 1/B, is just Theta(log N) I/Os. This is no better than the bounds one gets from running an in-memory skip list in external memory.</p></div> </div>
+<h2>TUTORIAL SESSION: PODS Tutorial 2</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252640" title="Full Citation in the ACM Digital Library">Session details: PODS Tutorial 2</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Pierre Senellart</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684581" title="Get the Full Text from the ACM Digital Library">Logical Aspects of Massively Parallel and Distributed Systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Frank Neven</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Database research has witnessed a renewed interest for data processing in distributed and parallel settings. While distributed and parallel data management systems have been around for quite some time, it is the rise of cloud computing and the advent of Big Data that presents the community with new challenges. This paper highlights recent research concerning the logical foundations of massively parallel and distributed systems. The first part of the paper concerns massively parallel systems where computation proceeds in a number of synchronized rounds. Here, the focus is on evaluation algorithms for conjunctive queries as well as on reasoning about correctness and optimization of such algorithms. The second part of the paper addresses a distributed asynchronous setting where eventual consistency comes into play. Here, the focus is on coordination-free computation and its relationship to logical monotonicity and Datalog programs.</p></div> </div>
+<h2>SESSION: Session 4: Query Evaluation</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252641" title="Full Citation in the ACM Digital Library">Session details: Session 4: Query Evaluation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Paris Kourtris</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684582" title="Get the Full Text from the ACM Digital Library">Counting Answers to Existential Positive Queries: A Complexity Classification</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Hubie Chen</li>
+<li class="nameList Last">Stefan Mengel</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Existential positive formulas form a fragment of first-order logic that includes and is semantically equivalent to unions of conjunctive queries, one of the most important and well-studied classes of queries in database theory. We consider the complexity of counting the number of answers to existential positive formulas on finite structures and give a trichotomy theorem on query classes, in the setting of bounded arity. This theorem generalizes and unifies several known results on the complexity of conjunctive queries and unions of conjunctive queries. We prove this trichotomy theorem by establishing a result which we call the equivalence theorem, which shows that for each class of existential positive formulas, there exists a class of conjunctive queries having the same complexity (in a sense made precise).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684583" title="Get the Full Text from the ACM Digital Library">Computing Join Queries with Functional Dependencies</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mahmoud Abo Khamis</li>
+<li class="nameList">Hung Q. Ngo</li>
+<li class="nameList Last">Dan Suciu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Recently, Gottlob, Lee, Valiant, and Valiant (GLVV) presented an output size bound for join queries with functional dependencies (FD), based on a linear program on polymatroids. GLVV bound strictly generalizes the bound of Atserias, Grohe and Marx (AGM) for queries with no FD, in which case there are known algorithms running within the AGM-bound and thus are worst-case optimal. A main result of this paper is an algorithm for computing join queries with FDs, running within GLVV bound up to a poly-log factor. In particular, our algorithm is worst-case optimal for any query where the GLVV bound is tight. As an unexpected by-product, our algorithm manages to solve a harder problem, where (some) input relations may have prescribed maximum degree bounds, of which both functional dependencies and cardinality bounds are special cases.</p> <p>We extend Gottlob et al. framework by replacing all variable subsets with the lattice of closed sets (under the given FDs). This gives us new insights into the structure of the worst-case bound and worst-case instances. While it is still open whether GLVV bound is tight in general, we show that it is tight on distributive lattices and some other simple lattices. Distributive lattices capture a strict superset of queries with no FD and with simple FDs. We also present two simpler algorithms which are also worst-case optimal on distributive lattices within a single-log factor, but they do not match GLVV bound on a general lattice. Our algorithms are designed based on a novel principle: we turn a proof of a polymatroid-based output size bound into an algorithm.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684584" title="Get the Full Text from the ACM Digital Library">Semantic Acyclicity Under Constraints</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pablo Barcelo</li>
+<li class="nameList">Georg Gottlob</li>
+<li class="nameList Last">Andreas Pieris</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A conjunctive query (CQ) is semantically acyclic if it is equivalent to an acyclic one. Semantic acyclicity has been studied in the constraint-free case, and deciding whether a query enjoys this property is NP-complete. However, in case the database is subject to constraints such as tuple-generating dependencies (tgds) that can express, e.g., inclusion dependencies, or equality-generating dependencies (egds) that capture, e.g., functional dependencies, a CQ may turn out to be semantically acyclic under the constraints while not semantically acyclic in general. This opens avenues to new query optimization techniques. In this paper we initiate and develop the theory of semantic acyclicity under constraints. More precisely, we study the following natural problem: Given a CQ and a set of constraints, is the query semantically acyclic under the constraints, or, in other words, is the query equivalent to an acyclic one over all those databases that satisfy the set of constraints?</p> <p>We show that, contrary to what one might expect, decidability of CQ containment is a necessary but not sufficient condition for the decidability of semantic acyclicity. In particular, we show that semantic acyclicity is undecidable in the presence of full tgds (i.e., Datalog rules). In view of this fact, we focus on the main classes of tgds for which CQ containment is decidable, and do not capture the class of full tgds, namely guarded, non-recursive and sticky tgds. For these classes we show that semantic acyclicity is decidable, and its complexity coincides with the complexity of CQ containment. In the case of egds, we show that if we focus on keys over unary and binary predicates, then semantic acyclicity is decidable (NP-complete). We finally consider the problem of evaluating a semantically acyclic query over a database that satisfies a set of constraints. For guarded tgds and functional dependencies the evaluation problem is tractable.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684595" title="Get the Full Text from the ACM Digital Library">Tractable Lineages on Treelike Instances: Limits and Extensions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Antoine Amarilli</li>
+<li class="nameList">Pierre Bourhis</li>
+<li class="nameList Last">Pierre Senellart</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Query evaluation on probabilistic databases is generally intractable (#P-hard). Existing dichotomy results have identified which queries are tractable (or safe), and connected them to tractable lineages. In our previous work, using different tools, we showed that query evaluation is linear-time on probabilistic databases for arbitrary monadic second-order queries, if we bound the treewidth of the instance.</p> <p>In this paper, we study limitations and extensions of this result. First, for probabilistic query evaluation, we show that MSO tractability cannot extend beyond bounded treewidth: there are even FO queries that are hard on any efficiently constructible unbounded-treewidth class of graphs. This dichotomy relies on recent polynomial bounds on the extraction of planar graphs as minors, and implies lower bounds in non-probabilistic settings, for query evaluation and match counting in subinstance-closed families. Second, we show how to explain our tractability result in terms of lineage: the lineage of MSO queries on bounded-treewidth instances can be represented as bounded-treewidth circuits, polynomial-size OBDDs, and linear-size d-DNNFs. By contrast, we can strengthen the previous dichotomy to lineages, and show that there are even UCQs with disequalities that have superpolynomial OBDDs on all unbounded-treewidth graph classes; we give a characterization of such queries. Last, we show how bounded-treewidth tractability explains the tractability of the inversion-free safe queries: we can rewrite their input instances to have bounded-treewidth.</p></div> </div>
+<h2>SESSION: Session 5: Data Streams and Privacy</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252642" title="Full Citation in the ACM Digital Library">Session details: Session 5: Data Streams and Privacy</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Graham Comcorde</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684596" title="Get the Full Text from the ACM Digital Library">Towards Tight Bounds for the Streaming Set Cover Problem</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sariel Har-Peled</li>
+<li class="nameList">Piotr Indyk</li>
+<li class="nameList">Sepideh Mahabadi</li>
+<li class="nameList Last">Ali Vakilian</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the classic Set Cover problem in the data stream model. For n elements and m sets (m &#8805; n) we give a O(1/&#948;)-pass algorithm with a strongly sub-linear ~O(mn<sup>&#948;</sup>) space and logarithmic approximation factor. This yields a significant improvement over the earlier algorithm of Demaine et al. [10] that uses exponentially larger number of passes. We complement this result by showing that the tradeoff between the number of passes and space exhibited by our algorithm is tight, at least when the approximation factor is equal to 1. Specifically, we show that any algorithm that computes set cover exactly using ({1 over 2&#948;}-1) passes must use ~&#937;(mn<sup>&#948;</sup>) space in the regime of m=O(n). Furthermore, we consider the problem in the geometric setting where the elements are points in R<sup>2</sup> and sets are either discs, axis-parallel rectangles, or fat triangles in the plane, and show that our algorithm (with a slight modification) uses the optimal ~O(n) space to find a logarithmic approximation in O(1/&#948;) passes.</p> <p>Finally, we show that any randomized one-pass algorithm that distinguishes between covers of size 2 and 3 must use a linear (i.e., &#937;(mn)) amount of space. This is the first result showing that a randomized, approximate algorithm cannot achieve a space bound that is sublinear in the input size.</p> <p>This indicates that using multiple passes might be necessary in order to achieve sub-linear space bounds for this problem while guaranteeing small approximation factors.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684597" title="Get the Full Text from the ACM Digital Library">An Optimal Algorithm for l1-Heavy Hitters in Insertion Streams and Related Problems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Arnab Bhattacharyya</li>
+<li class="nameList">Palash Dey</li>
+<li class="nameList Last">David P. Woodruff</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We give the first optimal bounds for returning the l<sub>1</sub>-heavy hitters in a data stream of insertions, together with their approximate frequencies, closing a long line of work on this problem. For a stream of m items in {1, 2, ..., n} and parameters 0 < &#949; < &#966; &#8804; 1, let f<sub>i</sub> denote the frequency of item i, i.e., the number of times item i occurs in the stream. With arbitrarily large constant probability, our algorithm returns all items i for which f<sub>i</sub> &#8805; &#966; m, returns no items j for which f<sub>j</sub> &#8804; (&#966; -&#949;)m, and returns approximations ~f<sub>i</sub> with |~f<sub>i</sub> - f<sub>i</sub>| &#8804; &#949; m for each item i that it returns. Our algorithm uses O(&#949;<sup>-1</sup> log&#966;<sup>-1</sup> + &#966;<sup>-1</sup> log n + log log m) bits of space, processes each stream update in O(1) worst-case time, and can report its output in time linear in the output size. We also prove a lower bound, which implies that our algorithm is optimal up to a constant factor in its space complexity. A modification of our algorithm can be used to estimate the maximum frequency up to an additive &#949; m error in the above amount of space, resolving Question 3 in the IITK 2006 Workshop on Algorithms for Data Streams for the case of l<sub>1</sub>-heavy hitters. We also introduce several variants of the heavy hitters and maximum frequency problems, inspired by rank aggregation and voting schemes, and show how our techniques can be applied in such settings. Unlike the traditional heavy hitters problem, some of these variants look at comparisons between items rather than numerical values to determine the frequency of an item.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684598" title="Get the Full Text from the ACM Digital Library">Better Algorithms for Counting Triangles in Data Streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Andrew McGregor</li>
+<li class="nameList">Sofya Vorotnikova</li>
+<li class="nameList Last">Hoa T. Vu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We present space-efficient data stream algorithms for approximating the number of triangles in a graph up to a factor 1+&#949;. While it can be shown that determining whether a graph is triangle-free is not possible in sub-linear space, a large body of work has focused on minimizing the space required in terms of the number of triangles T (or a lower bound on this quantity) and other parameters including the number of nodes n and the number of edges m. Two models are important in the literature: the <i>arbitrary order</i> model in which the stream consists of the edges of the graph in arbitrary order and the <i>adjacency list order</i> model in which all edges incident to the same node appear consecutively. We improve over the state of the art results in both models. For the adjacency list order model, we show that ~O(&#949;<sup>-2</sup>m/&#8730;T) space is sufficient in one pass and ~O(&#949;<sup>-2</sup>m<sup>3/2</sup>/T) space is sufficient in two passes where the ~O(&#183;) notation suppresses log factors. For the arbitrary order model, we show that ~O(&#949;<sup>-2</sup>m/&#8730;T) space suffices given two passes and that ~O(&#949;<sup>-2</sup>m<sup>3/2</sup>/T) space suffices given three passes and oracle access to the degrees. Finally, we show how to efficiently implement the "wedge sampling" approach to triangle estimation in the arbitrary order model. To do this, we develop the first algorithm for l<sub>p</sub> sampling such that multiple independent samples can be generated with O(polylog n) update time; this primitive is widely applicable and this result may be of independent interest.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684599" title="Get the Full Text from the ACM Digital Library">Locating a Small Cluster Privately</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Kobbi Nissim</li>
+<li class="nameList">Uri Stemmer</li>
+<li class="nameList Last">Salil Vadhan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We present a new algorithm for locating a small cluster of points with differential privacy [Dwork, McSherry, Nissim, and Smith, 2006]. Our algorithm has implications to private data exploration, clustering, and removal of outliers. Furthermore, we use it to significantly relax the requirements of the sample and aggregate technique [Nissim, Raskhodnikova, and Smith, 2007], which allows compiling of "off the shelf" (non-private) analyses into analyses that preserve differential privacy.</p></div> </div>
+<h2>SESSION: Session 6: Algorithms and Data Structures</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3252643" title="Full Citation in the ACM Digital Library">Session details: Session 6: Algorithms and Data Structures</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Ke Yi</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684590" title="Get the Full Text from the ACM Digital Library">Parallel Algorithms for Constructing Range and Nearest-Neighbor Searching Data Structures</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pankaj K. Agarwal</li>
+<li class="nameList">Kyle Fox</li>
+<li class="nameList">Kamesh Munagala</li>
+<li class="nameList Last">Abhinandan Nath</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>With the massive amounts of data available today, it is common to store and process data using multiple machines. Parallel programming platforms such as MapReduce and its variants are popular frameworks for handling such large data. We present the first provably efficient algorithms to compute, store, and query data structures for range queries and approximate nearest neighbor queries in a popular parallel computing abstraction that captures the salient features of MapReduce and other massively parallel communication (MPC) models. In particular, we describe algorithms for $kd$-trees, range trees, and BBD-trees that only require O(1) rounds of communication for both preprocessing and querying while staying competitive in terms of running time and workload to their classical counterparts. Our algorithms are randomized, but they can be made deterministic at some increase in their running time and workload while keeping the number of rounds of communication to be constant.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684591" title="Get the Full Text from the ACM Digital Library">Space Lower Bounds for Itemset Frequency Sketches</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Edo Liberty</li>
+<li class="nameList">Michael Mitzenmacher</li>
+<li class="nameList">Justin Thaler</li>
+<li class="nameList Last">Jonathan Ullman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Given a database, computing the fraction of rows that contain a query itemset or determining whether this fraction is above some threshold are fundamental operations in data mining. A uniform sample of rows is a good sketch of the database in the sense that all sufficiently frequent itemsets and their approximate frequencies are recoverable from the sample, and the sketch size is independent of the number of rows in the original database. For many seemingly similar problems there are better sketching algorithms than uniform sampling. In this paper we show that for itemset frequency sketching this is not the case. That is, we prove that there exist classes of databases for which uniform sampling is a space optimal sketch for approximate itemset frequency analysis, up to constant or iterated-logarithmic factors.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684592" title="Get the Full Text from the ACM Digital Library">Are Few Bins Enough: Testing Histogram Distributions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Cl&#233;ment L. Canonne</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A probability distribution over an ordered universe [n]={1,...,n} is said to be a k-histogram if it can be represented as a piecewise-constant function over at most k contiguous intervals. We study the following question: given samples from an arbitrary distribution D over [n], one must decide whether D is a k-histogram, or is far in L_1 distance from any such succinct representation. We obtain a sample and time-efficient algorithm for this problem, complemented by a nearly-matching information-theoretic lower bound on the number of samples required for this task. Our results significantly improve on the previous state-of-the-art, due to Indyk, Levi, and Rubinfeld 2012) and Canonne, Diakonikolas, Gouleakis, and Rubinfeld (2016).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684593" title="Get the Full Text from the ACM Digital Library">Range-Max Queries on Uncertain Data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pankaj K. Agarwal</li>
+<li class="nameList">Nirman Kumar</li>
+<li class="nameList">Stavros Sintos</li>
+<li class="nameList Last">Subhash Suri</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Let P be a set of n uncertain points in Re<sup>d</sup>, where each point p<sub>i</sub> &#8712; P is associated with a real value v<sub>i</sub> and a probability &#945;<sub>i</sub> &#8712; (0,1] of existence, i.e., each p<sub>i</sub> exists with an independent probability &#945;<sub>i</sub>. We present algorithms for building an index on P so that for a d-dimensional query rectangle &#961;, the expected maximum value or the most-likely maximum value in &#961; can be computed quickly. The specific contributions of our paper include the following: (i) The first index of sub-quadratic size to achieve a sub-linear query time in any dimension d &#8805; 1. It also provides a trade-off between query time and size of the index. (ii) A conditional lower bound for the most-likely range-max queries, based on the conjectured hardness of the set-intersection problem, which suggests that in the worst case the product (query time)<sup>2</sup> x (index size) is &#937;((n<sup>2</sup>}/polylog(n)). (iii) A linear-size index for estimating the expected range-max value within approximation factor 1/2 in O(log<sup>c</sup> n) time, for some constant c &gt; 0; that is, if the expected maximum value is &#956; then the query procedure returns a value &#956;' with &#956;/2 &#8804; &#956;' &#8804; &#956;. (iv) Extensions of our algorithm to more general uncertainty models and for computing the top-k values of the range-max.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684594" title="Get the Full Text from the ACM Digital Library">Fast Algorithms for Parsing Sequences of Parentheses with Few Errors</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Arturs Backurs</li>
+<li class="nameList Last">Krzysztof Onak</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the problem of fixing sequences of unbalanced parentheses. A classic algorithm based on dynamic programming computes the optimum sequence of edits required to solve the problem in cubic time. We show the first algorithm that runs in linear time when the number of necessary edits is small. More precisely, our algorithm runs in O(n) + d<sup>O(1)</sup> time, where n is the length of the sequence to be fixed and d is the minimum number of edits. The problem of fixing parentheses sequences is related to the task of repairing semi-structured documents such as XML and JSON.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

@@ -101,21 +101,24 @@ Pages link to static folders on the same server. These folders are not in the
 API, and directory listings are blocked (HTTP 403). The counts are in
 `migration/legacy-paths.json`:
 
-| Path | Links | Suggestion |
+| Path | Links | Status |
 |---|---|---|
-| `/publications/dblp/db/…` | 478 | An old DBLP mirror. Redirect to dblp.org instead of hosting it. |
-| `/wp-content/uploads/…` | 414 | Images and PDFs. Copy them into the repo at the same paths. |
-| `/publications/interviews/{flv,mp3,pdf,photos}` | ~420 | Profile videos and audio. `.flv` does not play in browsers. Convert to mp4 or point to the ACM DL / YouTube. Large files should not go in the git repo. |
-| `/publications/anthology/…` | ~120 | Anthology CD images. |
-| `/pods/opentoc/podsYYYY.html` | — | PODS OpenTOC pages. Copy them as-is. |
-| `/sigmod-pods-conferences/*.doc,pdf` | 8 | Old PC manual files. |
+| `/publications/dblp/db/…` | 478 | **Done** for 441 venue and book pages: they now link to dblp.org. 37 links to the DVD mirror's own pages are left (no dblp.org copy). |
+| `/wp-content/uploads/…` | 459 | **Done** for 447: copied into `src/static/wp-content/` at the same paths. 12 are missing on the old server too. |
+| `/publications/interviews/{pdf,photos,images}` | 230 | **Done**: copied into `src/static/publications/interviews/`. |
+| `/publications/interviews/{flv,mp3}` | 195 | Open. About 8.4 GB; `.flv` does not play in browsers. Convert to MP4 and host outside git (ACM DL, YouTube or a bucket). |
+| `/pods/opentoc/podsYYYY.html` | 39 | **Done**: copied unchanged into `src/static/pods/opentoc/`. |
+| `/publications/anthology/…`, `/publications/discs/…`, `/publications/pastconf/…`, `/2012/`, `/2013/` | 199 | Open. Need a copy from the server (they link on to content that cannot be crawled) or links to web.archive.org. |
+| `/sigmod-pods-conferences/*.doc,pdf` | 0 | Removed from the Conferences page (the files were already gone). |
 
-Someone with server access needs to send a tarball of these folders. They
-cannot be crawled.
+Files in `src/static/` are copied to the site as they are and never rendered as
+templates, so pages like OpenTOC stay byte-for-byte the same.
 
 Every link that still points at the old server, with a suggested fix for each, is in
-[OLD-SITE-LINKS.md](OLD-SITE-LINKS.md). Regenerate it with `npm run old-links`
-(add `-- --check` to re-check the old server).
+[OLD-SITE-LINKS.md](OLD-SITE-LINKS.md), and every link already changed is in
+[old-site-links-fixed.csv](old-site-links-fixed.csv). Regenerate the report with
+`npm run old-links` (add `-- --check` to re-check the old server, or `-- --fix` to
+apply any new easy fixes).
 
 ## Proposed structure
 

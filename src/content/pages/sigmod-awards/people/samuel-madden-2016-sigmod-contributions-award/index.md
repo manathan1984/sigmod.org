@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Samuel Madden — 2016 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/samuel-madden-2016-sigmod-contributions-award/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)
+![](/wp-content/uploads/2022/05/image_large-300x9.png)
 
-<table align="center"><tbody><tr><td><a href="https://sigmod.hosting.acm.org/sigmodnewwp/wp-content/uploads/2016/05/samnew-e1464059038580.jpg"><img src="https://sigmod.org/wp-content/uploads/2016/05/samnew-e1464059038580-150x150.jpg" alt="samnew" width="150" height="150"></a></td><td><h2>Samuel Madden</h2><h3>2016 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><a href="/wp-content/uploads/2016/05/samnew-e1464059038580.jpg"><img src="/wp-content/uploads/2016/05/samnew-e1464059038580-150x150.jpg" alt="samnew" width="150" height="150"></a></td><td><h2>Samuel Madden</h2><h3>2016 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 **Professor Samuel Madden** is awarded the 2016 SIGMOD Contributions award for his work on conceptualizing, instigating and shepherding the ACM SIGMOD Programming Contest through its first years..
 

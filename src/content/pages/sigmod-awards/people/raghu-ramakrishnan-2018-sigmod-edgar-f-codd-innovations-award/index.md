@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Raghu Ramakrishnan — 2018 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/raghu-ramakrishnan-2018-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2018/05/raghu.jpg" alt="" width="184" height="186"></td><td><h2>Raghu Ramakrishnan</h2><h3>2018 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2018/05/raghu.jpg" alt="" width="184" height="186"></td><td><h2>Raghu Ramakrishnan</h2><h3>2018 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 **Raghu Ramakrishnan** is the recipient of the 2018 ACM SIGMOD Edgar F. Codd Innovations Award for his pioneering work in deductive databases and their application to relational databases in practice.
 

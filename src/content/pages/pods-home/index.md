@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "PODS"
 permalink: "/pods-home/"
 section: "pods"
@@ -19,7 +20,7 @@ PODS papers are distinguished by a rigorous approach to widely diverse problems 
     The PODS Hall of Fame.
 -   [PODS Organization](/pods-home/pods-organization/ "PODS Organization")  
     Here you find the history of PODS organization and all the Program Committees.
--   [ACM PODS Alberto O. Mendelzon Test-of-Time Award](https://sigmod.org/pods/acm-pods-alberto-o-mendelzon-test-of-time-award/)  
+-   [ACM PODS Alberto O. Mendelzon Test-of-Time Award](/pods-home/acm-pods-alberto-o-mendelzon-test-of-time-award/)  
     Since 2008, PODS gives an award to a paper or a small number of papers published in the PODS proceedings ten years prior that had the most impact over the intervening decade. More information here.
 -   [PODS Best Paper Awards](/pods-home/pods-best-paper-awards/ "PODS Best Paper Awards")  
     Since 1997, two awards are given annually to the best papers published in PODS. More information here.

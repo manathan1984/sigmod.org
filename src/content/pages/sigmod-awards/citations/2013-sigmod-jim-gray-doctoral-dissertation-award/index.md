@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2013 SIGMOD Jim Gray Doctoral Dissertation Award"
 permalink: "/sigmod-awards/citations/2013-sigmod-jim-gray-doctoral-dissertation-award/"
 section: "sigmod"
@@ -11,7 +12,7 @@ updated: "2025-01-27"
 
 ACM SIGMOD is pleased to present the 2013 SIGMOD Jim Gray Doctoral Dissertation Award to Sudipto Das. Das completed his dissertation titled “Scalable and Elastic Transactional Data Stores for Cloud Computing Platforms” at the University of California, Santa Barbara. Das’ dissertation lays foundations for scalable transactional database services in multi-tenant cloud infrastructures. The thesis develops techniques for scalability based on static as well as dynamic partitioning (sharding) and elasticity by live migration. In combination the techniques achieve elastic scalability without sacrificing transactional consistency. The work is remarkable for its breadth of scope, its comprehensive implementation and thorough performance evaluation.
 
-**![Sudipto_Das](https://sigmod.hosting.acm.org/sigmodnewwp/wp-content/uploads/2015/07/image_preview28.jpg)Sudipto Das** is a Researcher in the Data Management, Exploration, and Mining (DMX) group at Microsoft Research (MSR). He is part of the eXtreme Computing Group (XCG), one of MSR’s worldwide labs. He graduated from the Department of Computer Science, University of California Santa Barbara (UCSB) with a PhD in Fall 2011. He was advised by Professors Divy Agrawal and Amr El Abbadi during the course of my PhD as a member of the Distributed Systems Lab.
+**![Sudipto_Das](/wp-content/uploads/2015/07/image_preview28.jpg)Sudipto Das** is a Researcher in the Data Management, Exploration, and Mining (DMX) group at Microsoft Research (MSR). He is part of the eXtreme Computing Group (XCG), one of MSR’s worldwide labs. He graduated from the Department of Computer Science, University of California Santa Barbara (UCSB) with a PhD in Fall 2011. He was advised by Professors Divy Agrawal and Amr El Abbadi during the course of my PhD as a member of the Distributed Systems Lab.
 
 ACM SIGMOD is also pleased to recognize Herodotos Herodotou and Wenchao Zhou for Honorable Mention for the 2013 SIGMOD Jim Gray Doctoral Dissertation Award. Herodotou completed his dissertation titled “Automatic Tuning of Data-Intensive Analytical Workloads” at Duke University. Zhou’s thesis is titled “Secure Time-aware Provenance for Distributed Systems” and the PhD was awarded by the University of Pennsylvania.
 

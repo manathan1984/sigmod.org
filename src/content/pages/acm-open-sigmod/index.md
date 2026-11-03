@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "ACM Open"
 permalink: "/acm-open-sigmod/"
 section: "sigmod"
@@ -35,7 +36,7 @@ Babak Salimi, UCSD (USA)
   
 **How do Authors Request a FHW?**
 
-![](https://sigmod.org/wp-content/uploads/2026/01/Picture-1.png)
+![](/wp-content/uploads/2026/01/Picture-1.png)
 
 The figure above shows the overall workflow for APC costs and/or FHW requests. After a paper is accepted, the corresponding author receives an email to complete the **eRights Publishing Workflow**. This process includes the APC Settlement, which can either happen through an ACM Open membership or Author Payment.
 

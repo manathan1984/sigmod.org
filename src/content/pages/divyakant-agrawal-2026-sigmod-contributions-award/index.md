@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Divyakant Agrawal — 2026 SIGMOD Contributions Award"
 permalink: "/divyakant-agrawal-2026-sigmod-contributions-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2026-04-01"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2025/06/image.png)
+![](/wp-content/uploads/2025/06/image.png)
 
-![](https://sigmod.org/wp-content/uploads/2026/04/Divyakant.png)
+![](/wp-content/uploads/2026/04/Divyakant.png)
 
 Divyakant Agrawal
 

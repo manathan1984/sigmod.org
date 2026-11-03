@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "K. Selcuk Candan — 2023 SIGMOD Contributions Award"
 permalink: "/k-selcuk-candan-2023-sigmod-contributions-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2023-05-23"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2023/05/image-2.png)
+![](/wp-content/uploads/2023/05/image-2.png)
 
-![](https://sigmod.org/wp-content/uploads/2023/05/Y0-4-EGg-2.jpeg)
+![](/wp-content/uploads/2023/05/Y0-4-EGg-2.jpeg)
 
 **K. Selcuk Candan**
 

@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Beng Chin Ooi — 2020 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/beng-chin-ooi-2020-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2020/05/download.jpg" alt="" width="150" height="207"></td><td><h2>Beng Chin Ooi</h2><h3>2020 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2020/05/download.jpg" alt="" width="150" height="207"></td><td><h2>Beng Chin Ooi</h2><h3>2020 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 **Beng Chin Ooi** is the recipient of the 2020 ACM SIGMOD Edgar F. Codd Innovations Award for his innovative research and for devising and deploying innovative large-scale systems to manage and analyze data. The award recognizes both his groundbreaking research and his success in building end-to-end solutions, from data cleaning, through data curation with human-in-loop (crowdsourcing) and big data processing, all the way to complex (machine learning and deep learning based) data analytics.
 

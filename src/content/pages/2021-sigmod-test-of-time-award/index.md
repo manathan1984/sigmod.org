@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2021 SIGMOD Test of Time Award"
 permalink: "/2021-sigmod-test-of-time-award/"
 section: "sigmod"
@@ -8,7 +9,7 @@ wp_type: "page"
 updated: "2022-05-17"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
 No free lunch in data privacy
 

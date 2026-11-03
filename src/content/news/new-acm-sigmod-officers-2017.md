@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "New ACM SIGMOD Officers – Chair: Juliana Freire,  Vice-chair: Ihab Ilyas, Secretary/Treasurer: Fatma Ozcan"
 permalink: "/new-acm-sigmod-officers-2017/"
 section: "sigmod"
@@ -15,13 +16,13 @@ Dear SIGMOD members,
 
 As you may have seen already, as a result of the recent elections, our SIG has new officers:
 
-![](https://sigmod.org/wp-content/uploads/2015/08/juliana-150x150.png)  
+![](/wp-content/uploads/2015/08/juliana-150x150.png)  
 – Chair: Juliana Freire
 
-![](https://sigmod.org/wp-content/uploads/2015/08/IhabPrimal-150x150.jpg)  
+![](/wp-content/uploads/2015/08/IhabPrimal-150x150.jpg)  
 – Vice-chair: Ihab Ilyas
 
-![](https://sigmod.org/wp-content/uploads/2015/08/fatma.jpg)
+![](/wp-content/uploads/2015/08/fatma.jpg)
 
 – Secretary/Treasurer: Fatma Ozcan
 

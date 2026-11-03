@@ -1,0 +1,376 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '11- Proceedings of the thirtieth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '11- Proceedings of the thirtieth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=1989284" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683325" title="Get the Full Text from the ACM Digital Library">PODS 30th Anniversary Colloquium</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Maurizio Lenzerini</li>
+<li class="nameList">Moshe Y. Vardi</li>
+<li class="nameList">Ronald Fagin</li>
+<li class="nameList">Jeffrey D. Ullman</li>
+<li class="nameList">Serge Abiteboul</li>
+<li class="nameList">Victor Vianu</li>
+<li class="nameList Last">Frank Neven</li>
+</ul>
+<div class="DLabstract"> </div>
+<h2>SESSION: Keynote address</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683326" title="Get the Full Text from the ACM Digital Library">A quest for beauty and wealth (or, business processes for database researchers)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Daniel Deutch</li>
+<li class="nameList Last">Tova Milo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>While classic data management focuses on the data itself, research on Business Processes considers also the <i>context</i> in which this data is generated and manipulated, namely the processes, the users, and the goals that this data serves. This allows the analysts a better perspective of the organizational needs centered around the data. As such, this research is of fundamental importance.</p> <p>Much of the success of database systems in the last decade is due to the beauty and elegance of the relational model and its declarative query languages, combined with a rich spectrum of underlying evaluation and optimization techniques, and efficient implementations. This, in turn, has lead to an economic wealth for both the users and vendors of database systems. Similar beauty and wealth are sought for in the context of Business Processes. Much like the case for traditional database research, elegant modeling and rich underlying technology are likely to bring economic wealth for the Business Process owners and their users; both can benefit from easy formulation and analysis of the processes. While there have been many important advances in this research in recent years, there is still much to be desired: specifically, there have been many works that focus on the processes behavior (flow), and many that focus on its data, but only very few works have dealt with both. We will discuss here the important advantages of a holistic flow-and-data framework for Business Processes, the progress towards such a framework, and highlight the current gaps and research directions.</p></div> </div>
+<h2>SESSION: Streaming &#38; sampling</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683327" title="Get the Full Text from the ACM Digital Library">Get the most out of your sample: optimal unbiased estimators using partial information</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Edith Cohen</li>
+<li class="nameList Last">Haim Kaplan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Random sampling is an essential tool in the processing and transmission of data. It is used to summarize data too large to store or manipulate and meet resource constraints on bandwidth or battery power. Estimators that are applied to the sample facilitate fast approximate processing of queries posed over the original data and the value of the sample hinges on the quality of these estimators.</p> <p>Our work targets data sets such as request and traffic logs and sensor measurements, where data is repeatedly collected over multiple <i>instances</i>: time periods, locations, or snapshots. We are interested in operations, like quantiles and range, that span multiple instances. Subset-sums of these operations are used for applications ranging from planning to anomaly and change detection.</p> <p>Unbiased low-variance estimators are particularly effective as the relative error decreases with aggregation. The Horvitz-Thompson estimator, known to minimize variance for subset-sums over a sample of a single instance, is not optimal for multi-instance operations because it fails to exploit samples which provide partial information on the estimated quantity.</p> <p>We present a general principled methodology for the derivation of optimal unbiased estimators over sampled instances and aim to understand its potential. We demonstrate significant improvement in estimate accuracy of fundamental queries for common sampling schemes.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683328" title="Get the Full Text from the ACM Digital Library">Tight bounds for Lp samplers, finding duplicates in streams, and related problems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Hossein Jowhari</li>
+<li class="nameList">Mert Sa&#287;lam</li>
+<li class="nameList Last">G&#225;bor Tardos</li>
+</ul>
+
+<div class="DLabstract"><div style="display:inline"><p>In this paper, we present near-optimal space bounds for <i>L<sub>p</sub></i>-samplers. Given a stream of updates (additions and subtraction) to the coordinates of an underlying vector <i>x</i> in <i>R<sup>n</sup></i>, a perfect <i>L<sub>p</sub></i> sampler outputs the <i>i</i>-th coordinate with probability <i>x<sub>i</sub></i><i><sup>p</sup></i><i>x</i><i>pp</i>. In SODA 2010, Monemizadeh and Woodruff showed polylog space upper bounds for approximate <i>L<sub>p</sub></i>-samplers and demonstrated various applications of them. Very recently, Andoni, Krauthgamer and Onak improved the upper bounds and gave a <i>O</i>(&#949;<i><sup>-p</sup></i>log<sup>3</sup><i>n</i>) space &#949; relative error and constant failure rate <i>L<sub>p</sub></i>-sampler for <i>p</i> &#1108; [1,2]. In this work, we give another such algorithm requiring only O(&#949;<i><sup>-p</sup></i>log<sup>2</sup><i>n</i>) space for <i>p</i> &#1108; (1,2). For <i>p</i> &#1108; (0,1), our space bound is O(&#949;<sup>-1</sup>log<sup>2</sup><i>n</i>), while for the <i>p</i>=1 case we have an <i>O</i>(log(1/&#949;)&#949;<sup>-</sup>log<sup>2</sup><i>n</i>) space algorithm. We also give a <i>O</i>(log<sup>2</sup><i>n</i>) bits zero relative error <i>L</i><sub>0</sub>-sampler, improving the <i>O</i>(log<sup>3</sup><i>n</i>) bits algorithm due to Frahling, Indyk and Sohler.</p> <p>As an application of our samplers, we give better upper bounds for the problem of finding duplicates in data streams. In case the length of the stream is longer than the alphabet size, <i>L</i><sub>1</sub> sampling gives us an <i>O</i>(log<sup>2</sup><i>n</i>) space algorithm, thus improving the previous <i>O</i>(log<sup>3</sup><i>n</i>) bound due to Gopalan and Radhakrishnan.</p> <p>In the second part of our work, we prove an &#937; (log<sup>2</sup><i>n</i>) lower bound for sampling from 0, &#177; 1 vectors (in this special case, the parameter <i>p</i> is not relevant for <i>L<sub>p</sub></i> sampling). This matches the space of our sampling algorithms for constant &#949;&#62;0. We also prove tight space lower bounds for the finding duplicates and heavy hitters problems. We obtain these lower bounds using reductions from the communication complexity problem augmented indexing.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683329" title="Get the Full Text from the ACM Digital Library">Pan-private algorithms via statistics on sketches</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Darakhshan Mir</li>
+<li class="nameList">S. Muthukrishnan</li>
+<li class="nameList">Aleksandar Nikolov</li>
+<li class="nameList Last">Rebecca N. Wright</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Consider fully dynamic data, where we track data as it gets inserted and deleted. There are well developed notions of private data analyses with dynamic data, for example, using differential privacy. We want to go beyond privacy, and consider privacy together with security, formulated recently as pan-privacy by Dwork et al. (ICS 2010). Informally, pan-privacy preserves differential privacy while computing desired statistics on the data, <i>even if the internal memory of the algorithm is compromised</i> (say, by a malicious break-in or insider curiosity or by fiat by the government or law).</p> <p>We study pan-private algorithms for basic analyses, like estimating distinct count, moments, and heavy hitter count, with fully dynamic data. We present the first known pan-private algorithms for these problems in the fully dynamic model. Our algorithms rely on sketching techniques popular in streaming: in some cases, we add suitable noise to a previously known sketch, using a novel approach of calibrating noise to the underlying problem structure and the projection matrix of the sketch; in other cases, we maintain certain statistics on sketches; in yet others, we define novel sketches. We also present the first known lower bounds explicitly for pan privacy, showing our results to be nearly optimal for these problems. Our lower bounds are stronger than those implied by differential privacy or dynamic data streaming alone and hold even if unbounded memory and/or unbounded processing time are allowed. The lower bounds use a noisy decoding argument and exploit a connection between pan-private algorithms and data sanitization.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683320" title="Get the Full Text from the ACM Digital Library">FIFO indexes for decomposable problems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Cheng Sheng</li>
+<li class="nameList Last">Yufei Tao</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper studies <i>first-in-first-out</i> (FIFO) <i>indexes</i>, each of which manages a dataset where objects are deleted in the same order as their insertions. We give a technique that converts a static data structure to a FIFO index for all decomposable problems, provided that the static structure can be constructed efficiently. We present FIFO access methods to solve several problems including <i>half-plane search</i>, <i>nearest neighbor search</i>, and <i>extreme-point search</i>. All of our structures consume linear space, and have optimal or near-optimal query cost.</p></div> </div>
+<h2>SESSION: Incomplete information &#38; awards</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683321" title="Get the Full Text from the ACM Digital Library">Data exchange beyond complete data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marcelo Arenas</li>
+<li class="nameList">Jorge P&#233;rez</li>
+<li class="nameList Last">Juan Reutter</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In the traditional data exchange setting, source instances are restricted to be complete in the sense that every fact is either true or false in these instances. Although natural for a typical database translation scenario, this restriction is gradually becoming an impediment to the development of a wide range of applications that need to exchange objects that admit several interpretations. In particular, we are motivated by two specific applications that go beyond the usual data exchange scenario: exchanging incomplete information and exchanging knowledge bases.</p> <p>In this paper, we propose a general framework for data exchange that can deal with these two applications. More specifically, we address the problem of exchanging information given by representation systems, which are essentially finite descriptions of (possibly infinite) sets of complete instances. We make use of the classical semantics of mappings specified by sets of logical sentences to give a meaningful semantics to the notion of exchanging representatives, from which the standard notions of solution, space of solutions, and universal solution naturally arise. We also introduce the notion of strong representation system for a class of mappings, that resembles the concept of strong representation system for a query language. We show the robustness of our proposal by applying it to the two applications mentioned above: exchanging incomplete information and exchanging knowledge bases, which are both instantiations of the exchanging problem for representation systems. We study these two applications in detail, presenting results regarding expressiveness, query answering and complexity of computing solutions, and also algorithms to materialize solutions.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683322" title="Get the Full Text from the ACM Digital Library">Incomplete information and certain answers in general data models</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Leonid Libkin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>While incomplete information is ubiquitous in all data models - especially in applications involving data translation or integration - our understanding of it is still not completely satisfactory. For example, even such a basic notion as certain answers for XML queries was only introduced recently, and in a way seemingly rather different from relational certain answers.</p> <p>The goal of this paper is to introduce a general approach to handling incompleteness, and to test its applicability in known data models such as relations and documents. The approach is based on representing degrees of incompleteness via semantics-based orderings on database objects. We use it to both obtain new results on incompleteness and to explain some previously observed phenomena. Specifically we show that certain answers for relational and XML queries are two instances of the same general concept; we describe structural properties behind the naive evaluation of queries; answer open questions on the existence of certain answers in the XML setting; and show that previously studied ordering-based approaches were only adequate for SQL's primitive view of nulls. We define a general setting that subsumes relations and documents to help us explain in a uniform way how to compute certain answers, and when good solutions can be found in data exchange. We also look at the complexity of common problems related to incompleteness, and generalize several results from relational and XML contexts.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683323" title="Get the Full Text from the ACM Digital Library">Determining the currency of data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Wenfei Fan</li>
+<li class="nameList">Floris Geerts</li>
+<li class="nameList Last">Jef Wijsen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Data in real-life databases become obsolete rapidly. One often finds that multiple values of the same entity reside in a database. While all of these values were once correct, most of them may have become stale and inaccurate. Worse still, the values often do not carry reliable timestamps. With this comes the need for studying data currency, to identify the current value of an entity in a database and to answer queries with the current values, in the absence of timestamps.</p> <p>This paper investigates the currency of data. (1) We propose a model that specifies partial currency orders in terms of simple constraints. The model also allows us to express what values are copied from other data sources, bearing currency orders in those sources, in terms of copy functions defined on correlated attributes. (2) We study fundamental problems for data currency, to determine whether a specification is consistent, whether a value is more current than another, and whether a query answer is certain no matter how partial currency orders are completed. (3) Moreover, we identify several problems associated with copy functions, to decide whether a copy function imports sufficient current data to answer a query, whether such a function copies redundant data, whether a copy function can be extended to import necessary current data for a query while respecting the constraints, and whether it suffices to copy data of a bounded size. (4) We establish upper and lower bounds of these problems, all matching, for combined complexity and data complexity, and for a variety of query languages. We also identify special cases that warrant lower complexity.</p></div> </div>
+<h2>SESSION: Index structures &#38; external memory</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683324" title="Get the Full Text from the ACM Digital Library">New results on two-dimensional orthogonal range aggregation in external memory</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Cheng Sheng</li>
+<li class="nameList Last">Yufei Tao</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the <i>orthogonal range aggregation</i> problem. The dataset <i>S</i> consists of <i>N</i> axis-parallel rectangles in R<sup>2</sup>, each of which is associated with an integer <i>weight</i>. Given an axis-parallel rectangle <i>Q</i> and an aggregate function <i>F</i>, a query reports the aggregated result of the weights of the rectangles in <i>S</i> intersecting <i>Q</i>. The goal is to preprocess <i>S</i> into a structure such that all queries can be answered efficiently. We present indexing schemes to solve the problem in external memory when <i>F</i> = <i>max</i> (hence, <i>min</i>) and <i>F</i> = <i>sum</i> (hence, <i>count</i> and <i>average</i>), respectively. Our schemes have linear or near-linear space, and answer a query in <i>O</i>(log<i><sub>B</sub></i><i>N</i>) or <i>O</i>(log<i>B</i><sup>2</sup>/<i>B</i><i>N</i>) I/Os, where <i>B</i> is the disk block size.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683335" title="Get the Full Text from the ACM Digital Library">On finding skylines in external memory</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Cheng Sheng</li>
+<li class="nameList Last">Yufei Tao</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the <i>skyline problem</i> (a.k.a. the <i>maxima problem</i>), which has been extensively studied in the database community. The input is a set <i>P</i> of <i>d</i>-dimensional points. A point <i>dominates</i> another if the former has a lower coordinate than the latter on every dimension. The goal is to find the <i>skyline</i>, which is the set of points <i>p</i> &#8712; <i>P</i> such that <i>p</i> is not dominated by any other data point. In the external-memory model, the 2-d version of the problem is known to be solvable in <i>O</i>((<i>N</i>/<i>B</i>)log<i><sub>M/B</sub></i>(<i>N</i>/<i>B</i>)) I/Os, where <i>N</i> is the cardinality of <i>P</i>, <i>B</i> the size of a disk block, and <i>M</i> the capacity of main memory. For fixed <i>d</i> &#8805; 3, we present an algorithm with I/O-complexity <i>O</i>((<i>N</i>/<i>B</i>)log<i>d</i>-2/<i>M</i>/<i>B</i>(<i>N</i>/<i>B</i>)). Previously, the best solution was adapted from an in-memory algorithm, and requires <i>O</i>((<i>N</i>/<i>B</i>) log<i>d</i>-2/2(<i>N</i>/<i>M</i>)) I/Os.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683336" title="Get the Full Text from the ACM Digital Library">Beyond simple aggregates: indexing for summary queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Zhewei Wei</li>
+<li class="nameList Last">Ke Yi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Database queries can be broadly classified into two categories: reporting queries and aggregation queries. The former retrieves a collection of records from the database that match the query's conditions, while the latter returns an aggregate, such as count, sum, average, or max (min), of a particular attribute of these records. Aggregation queries are especially useful in business intelligence and data analysis applications where users are interested not in the actual records, but some statistics of them. They can also be executed much more efficiently than reporting queries, by embedding properly precomputed aggregates into an index.</p> <p>However, reporting and aggregation queries provide only two extremes for exploring the data. Data analysts often need more insight into the data distribution than what those simple aggregates provide, and yet certainly do not want the sheer volume of data returned by reporting queries. In this paper, we design indexing techniques that allow for extracting a statistical summary of all the records in the query. The summaries we support include frequent items, quantiles, various sketches, and wavelets, all of which are of central importance in massive data analysis. Our indexes require linear space and extract a summary with the optimal or near-optimal query cost.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683337" title="Get the Full Text from the ACM Digital Library">Space-efficient substring occurrence estimation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alessio Orlandi</li>
+<li class="nameList Last">Rossano Venturini</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study the problem of estimating the number of occurrences of substrings in textual data: A text <i>T</i> on some alphabet &#163; of size &#195; is preprocessed and an index <i>I</i> is built. The index is used in lieu of the text to answer queries of the form CountH(<i>P</i>), returning an approximated number of the occurrences of an arbitrary pattern <i>P</i> as a substring of <i>T</i>. The problem has its main application in selectivity estimation related to the <i>LIKE</i> predicate in textual databases [15, 14, 5]. Our focus is on obtaining an algorithmic solution with guaranteed error rates and small footprint. To achieve that, we first enrich previous work in the area of compressed text-indexing [8, 11, 6, 17] providing an optimal data structure that requires ?(|<i>T</i>|log&#195;/<i>l</i>) bits where <i>l</i> e 1 is the additive error on any answer. We also approach the issue of guaranteeing exact answers for sufficiently frequent patterns, providing a data structure whose size scales with the amount of such patterns. Our theoretical findings are sustained by experiments showing the practical impact of our data structures.</p></div> </div>
+<h2>SESSION: Provenance</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683338" title="Get the Full Text from the ACM Digital Library">Provenance for aggregate queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yael Amsterdamer</li>
+<li class="nameList">Daniel Deutch</li>
+<li class="nameList Last">Val Tannen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study in this paper provenance information for queries with <i>aggregation</i>. Provenance information was studied in the context of various query languages that do not allow for aggregation, and recent work has suggested to capture provenance by annotating the different database tuples with elements of a <i>commutative semiring</i> and propagating the annotations through query evaluation. We show that aggregate queries pose novel challenges rendering this approach inapplicable. Consequently, we propose a new approach, where we annotate with provenance information not just tuples but also the <i>individual values</i> within tuples, using provenance to describe the values computation. We realize this approach in a concrete construction, first for "simple" queries where the aggregation operator is the last one applied, and then for arbitrary (positive) relational algebra queries with aggregation; the latter queries are shown to be more challenging in this context. Finally, we use aggregation to encode queries with <i>difference</i>, and study the semantics obtained for such queries on provenance annotated databases.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683339" title="Get the Full Text from the ACM Digital Library">On provenance minimization</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yael Amsterdamer</li>
+<li class="nameList">Daniel Deutch</li>
+<li class="nameList">Tova Milo</li>
+<li class="nameList Last">Val Tannen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Provenance information has been proved to be very effective in capturing the computational process performed by queries, and has been used extensively as the input to many advanced data management tools (e.g. view maintenance, trust assessment, or query answering in probabilistic databases). We study here the core of provenance information, namely the part of provenance that appears in the computation of every query equivalent to the given one. This provenance core is informative as it describes the part of the computational process that is inherent to the query. It is also useful as a compact input to the above mentioned data management tools. We study algorithms that, given a query, compute an equivalent query that realizes the core provenance for all tuples in its result. We study these algorithms for queries of varying expressive power. Finally, we observe that, in general, one would not want to require database systems to evaluate a specific query that realizes the core provenance, but instead to be able to find, possibly off-line, the core provenance of a given tuple in the output (computed by an arbitrary equivalent query), without rewriting the query. We provide algorithms for such direct computation of the core provenance.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683330" title="Get the Full Text from the ACM Digital Library">On the complexity of privacy-preserving complex event processing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Yeye He</li>
+<li class="nameList">Siddharth Barman</li>
+<li class="nameList">Di Wang</li>
+<li class="nameList Last">Jeffrey F. Naughton</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Complex Event Processing (CEP) Systems are stream processing systems that monitor incoming event streams in search of userspecified event patterns. While CEP systems have been adopted in a variety of applications, the privacy implications of event pattern reporting mechanisms have yet to be studied - a stark contrast to the significant amount of attention that has been devoted to privacy for relational systems. In this paper we present a privacy problem that arises when the system must support desired patterns (those that should be reported if detected) and private patterns (those that should not be revealed). We formalize this problem, which we term privacy-preserving, utility maximizing CEP (PP-CEP), and analyze its complexity under various assumptions. Our results show that this is a rich problem to study and shed some light on the difficulty of developing algorithms that preserve utility without compromising privacy.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683331" title="Get the Full Text from the ACM Digital Library">Provenance views for module privacy</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Susan B. Davidson</li>
+<li class="nameList">Sanjeev Khanna</li>
+<li class="nameList">Tova Milo</li>
+<li class="nameList">Debmalya Panigrahi</li>
+<li class="nameList Last">Sudeepa Roy</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Scientific workflow systems increasingly store provenance information about the module executions used to produce a data item, as well as the parameter settings and intermediate data items passed between module executions. However, authors/owners of workflows may wish to keep some of this information confidential. In particular, a <i>module</i> may be proprietary, and users should not be able to infer its behavior by seeing mappings between all data inputs and outputs.</p> <p>The problem we address in this paper is the following: Given a workflow, abstractly modeled by a relation <i>R</i>, a privacy requirement ? and costs associated with data. The <i>owner</i> of the workflow decides which data (attributes) to hide, and provides the <i>user</i> with a view <i>R'</i> which is the projection of <i>R</i> over attributes which have <i>not</i> been hidden. <i>The goal is to minimize the cost of hidden data while guaranteeing that individual modules are ?-private.</i> We call this the <b>Secure-View</b> problem. We formally define the problem, study its complexity, and offer algorithmic solutions.</p></div> </div>
+<h2>SESSION: Queries &#38; views</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683332" title="Get the Full Text from the ACM Digital Library">Querying graph patterns</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pablo Barcel&#243;</li>
+<li class="nameList">Leonid Libkin</li>
+<li class="nameList Last">Juan L. Reutter</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Graph data appears in a variety of application domains, and many uses of it, such as querying, matching, and transforming data, naturally result in incompletely specified graph data, i.e., graph patterns. While queries need to be posed against such data, techniques for querying patterns are generally lacking, and properties of such queries are not well understood.</p> <p>Our goal is to study the basics of querying graph patterns. We first identify key features of patterns, such as node and label variables and edges specified by regular expressions, and define a classification of patterns based on them. We then study standard graph queries on graph patterns, and give precise characterizations of both data and combined complexity for each class of patterns. If complexity is high, we do further analysis of features that lead to intractability, as well as lower complexity restrictions. We introduce a new automata model for query answering with two modes of acceptance: one captures queries returning nodes, and the other queries returning paths. We study properties of such automata, and the key computational tasks associated with them. Finally, we provide additional restrictions for tractability, and show that some intractable cases can be naturally cast as instances of constraint satisfaction problem.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683333" title="Get the Full Text from the ACM Digital Library">Maximizing conjunctive views in deletion propagation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Benny Kimelfeld</li>
+<li class="nameList">Jan Vondr&#225;k</li>
+<li class="nameList Last">Ryan Williams</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In deletion propagation, tuples from the database are deleted in order to reflect the deletion of a tuple from the view. Such an operation may result in the (often necessary) deletion of additional tuples from the view, besides the intentionally deleted one. The complexity of deletion propagation is studied, where the view is defined by a conjunctive query (CQ), and the goal is to maximize the number of tuples that remain in the view. Buneman et al. showed that for some simple CQs, this problem can be solved by a trivial algorithm. This paper identifies additional cases of CQs where the trivial algorithm succeeds, and in contrast, it proves that for some other CQs the problem is NP-hard to approximate better than some constant ratio. In fact, this paper shows that among the CQs without self joins, the hard CQs are <i>exactly</i> the ones that the trivial algorithm fails on. In other words, for every CQ without self joins, deletion propagation is either APX-hard or solvable by the trivial algorithm.</p> <p>The paper then presents approximation algorithms for certain CQs where deletion propagation is APX-hard. Specifically, two constant-ratio (and polynomial-time) approximation algorithms are given for the class of star CQs without self joins. The first algorithm is a greedy algorithm, and the second is based on randomized rounding of a linear program. While the first algorithm is more efficient, the second one has a better approximation ratio. Furthermore, the second algorithm can be extended to a significant generalization of star CQs. Finally, the paper shows that self joins can have a major negative effect on the approximability of the problem.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683334" title="Get the Full Text from the ACM Digital Library">Determining relevance of accesses at runtime</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Benedikt</li>
+<li class="nameList">Georg Gottlob</li>
+<li class="nameList Last">Pierre Senellart</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Consider the situation where a query is to be answered using Web sources that restrict the accesses that can be made on backend relational data by requiring some attributes to be given as input of the service. The accesses provide lookups on the collection of attributes values that match the binding. They can differ in whether or not they require arguments to be generated from prior accesses. Prior work has focused on the question of whether a query can be answered using a set of data sources, and in developing static access plans (e.g., Datalog programs) that implement query answering. We are interested in dynamic aspects of the query answering problem: given partial information about the data, which accesses could provide relevant data for answering a given query? We consider immediate and long-term notions of "relevant accesses", and ascertain the complexity of query relevance, for both conjunctive queries and arbitrary positive queries. In the process, we relate dynamic relevance of an access to query containment under access limitations and characterize the complexity of this problem; we produce several complexity results about containment that are of interest by themselves.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683345" title="Get the Full Text from the ACM Digital Library">Parallel evaluation of conjunctive queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Paraschos Koutris</li>
+<li class="nameList Last">Dan Suciu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The availability of large data centers with tens of thousands of servers has led to the popular adoption of massive parallelism for data analysis on large datasets. Several query languages exist for running queries on massively parallel architectures, some based on the MapReduce infrastructure, others using proprietary implementations. Motivated by this trend, this paper analyzes the parallel complexity of conjunctive queries. We propose a very simple model of parallel computation that captures these architectures, in which the complexity parameter is the number of parallel steps requiring synchronization of all servers. We study the complexity of conjunctive queries and give a complete characterization of the queries which can be computed in one parallel step. These form a strict subset of hierarchical queries, and include <i>flat</i> queries like <i>R(x,y), S(x,z), T(x,v), U(x,w),</i> tall queries like <i>R(x), S(x,y), T(x,y,z), U(x,y,z,w),</i> and combinations thereof, which we call <i>tall-flat</i> queries. We describe an algorithm for computing in parallel any tall-flat query, and prove that any query that is not tall-flat cannot be computed in one step in this model. Finally, we present extensions of our results to queries that are not tall-flat.</p></div> </div>
+<h2>TUTORIAL SESSION: Tutorial 1</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683346" title="Get the Full Text from the ACM Digital Library">Querying semantic web data with SPARQL</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marcelo Arenas</li>
+<li class="nameList Last">Jorge P&#233;rez</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The Semantic Web is the initiative of the W3C to make information on the Web readable not only by humans but also by machines. RDF is the data model for Semantic Web data, and SPARQL is the standard query language for this data model. In the last ten years, we have witnessed a constant growth in the amount of RDF data available on the Web, which have motivated the theoretical study of some fundamental aspects of SPARQL and the development of efficient mechanisms for implementing this query language.</p> <p>Some of the distinctive features of RDF have made the study and implementation of SPARQL challenging. First, as opposed to usual database applications, the semantics of RDF is open world, making RDF databases inherently incomplete. Thus, one usually obtains partial answers when querying RDF with SPARQL, and the possibility of adding optional information if present is a crucial feature of SPARQL. Second, RDF databases have a graph structure and are interlinked, thus making graph navigational capabilities a necessary component of SPARQL. Last, but not least, SPARQL has to work at Web scale!</p> <p>RDF and SPARQL have attracted interest from the database community. However, we think that this community has much more to say about these technologies, and, in particular, about the fundamental database problems that need to be solved in order to provide solid foundations for the development of these technologies. In this paper, we survey some of the main results about the theory of RDF and SPARQL putting emphasis on some research opportunities for the database community.</p></div> </div>
+<h2>TUTORIAL SESSION: Tutorial 2</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683347" title="Get the Full Text from the ACM Digital Library">Theory of data stream computing: where to go</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">S. Muthukrishnan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Computing power has been growing steadily, just as communication rate and memory size. Simultaneously our ability to create data has been growing phenomenally and therefore the need to analyze it. We now have examples of massive data streams that are created in far higher rate than we can capture and store in memory economically, gathered in far more quantity than can be transported to central databases without overwhelming the communication infrastructure, and arrives far faster than we can compute with them in a sophisticated way.</p> <p>This phenomenon has challenged how we store, communicate and compute with data. Theories developed over past 50 years have relied on full capture, storage and communication of data. Instead, what we need for managing modern massive data streams are new methods built around working with less. The past 10 years have seen new theories emerge in computing (data stream algorithms), communication (compressed sensing), databases (data stream management systems) and other areas to address the challenges of massive data streams. Still, lot remains open and new applications of massive data streams have emerged recently. We present an overview of these challenges.</p></div> </div>
+<h2>SESSION: Semistructured data &#38; XML</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683348" title="Get the Full Text from the ACM Digital Library">The complexity of text-preserving XML transformations</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Timos Antonopoulos</li>
+<li class="nameList">Wim Martens</li>
+<li class="nameList Last">Frank Neven</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>While XML is nowadays adopted as the de facto standard for data exchange, historically, its predecessor SGML was invented for describing electronic documents, i.e., marked up text. Actually, today there are still large volumes of such XML texts. We consider simple transformations which can change the internal structure of documents, that is, the mark-up, and can filter out parts of the text but do not disrupt the ordering of the words. Specifically, we focus on XML transformations where the transformed document is a subsequence of the input document when ignoring mark-up. We call the latter <i>text-preserving</i> XML transformations. We characterize such transformations as copy- and rearrange-free transductions. Furthermore, we study the problem of deciding whether a given XML transducer is text-preserving over a given tree language. We consider top-down transducers as well as the abstraction of XSLT called DTL. We show that deciding whether a transformation is text-preserving over an unranked regular tree language is in PTime for top-down transducers, EXPTime-complete for DTL with XPath, and decidable for DTL with MSO patterns. Finally, we obtain that for every transducer in one of the above mentioned classes, the maximal subset of the input schema can be computed on which the transformation is text-preserving.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683349" title="Get the Full Text from the ACM Digital Library">Efficient evaluation for a temporal logic on changing XML documents</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mikolaj Bojanczyk</li>
+<li class="nameList Last">Diego Figueira</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider a sequence <i>t</i><sub>1</sub>,...,<i>t</i><sub><i>k</i></sub> of XML documents that is produced by a sequence of local edit operations. To describe properties of such a sequence, we use a temporal logic. The logic can navigate both in time and in the document, e.g. a formula can say that every node with label <i>a</i> eventually gets a descendant with label <i>b</i>. For every fixed formula, we provide an evaluation algorithm that works in time <i>O</i>(<i>k</i> &#8901; log(<i>n</i>)), where <i>k</i> is the number of edit operations and <i>n</i> is the maximal size of document that is produced. In the algorithm, we represent formulas of the logic by a kind of automaton, which works on sequences of documents. The algorithm works on XML documents of bounded depth.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683340" title="Get the Full Text from the ACM Digital Library">Finding a minimal tree pattern under neighborhood constraints</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Benny Kimelfeld</li>
+<li class="nameList Last">Yehoshua Sagiv</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Tools that automatically generate queries are useful when schemas are hard to understand due to size or complexity. Usually, these tools find minimal tree patterns that contain a given set (or bag) of labels. The labels could be, for example, XML tags or relation names. The only restriction is that, in a tree pattern, adjacent labels must be among some specified pairs. A more expressive framework is developed here, where a schema is a mapping of each label to a collection of bags of labels. A tree pattern conforms to the schema if for all nodes v, the bag comprising the labels of the neighbors is contained in one of the bags to which the label of v is mapped. The problem at hand is to find a minimal tree pattern that conforms to the schema and contains a given bag of labels. This problem is NP-hard even when using the simplest conceivable language for describing schemas. In practice, however, the set of labels is small, so efficiency is realized by means of an algorithm that is fixed-parameter tractable (FPT). Two languages for specifying schemas are discussed. In the first, one expresses pairwise mutual exclusions between labels. Though W[1]-hardness (hence, unlikeliness of an FPT algorithm) is shown, an FPT algorithm is described for the case where the mutual exclusions form a circular-arc graph (e.g., disjoint cliques). The second language is that of regular expressions, and for that another FPT algorithm is described.</p></div> </div>
+<h2>SESSION: Rule-based query languages</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683341" title="Get the Full Text from the ACM Digital Library">A rule-based language for web data management</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Serge Abiteboul</li>
+<li class="nameList">Meghyn Bienvenu</li>
+<li class="nameList">Alban Galland</li>
+<li class="nameList Last">&#201;milien Antoine</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>There is a new trend to use Datalog-style rule-based languages to specify modern distributed applications, notably on the Web. We introduce here such a language for a distributed data model where peers exchange messages (i.e. logical facts) as well as rules. The model is formally defined and its interest for distributed data management is illustrated through a variety of examples. A contribution of our work is a study of the impact on expressiveness of "delegations" (the installation of rules by a peer in some other peer) and explicit timestamps. We also validate the semantics of our model by showing that under certain natural conditions, our semantics converges to the same semantics as the centralized system with the same rules. Indeed, we show this is even true when updates are considered.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683342" title="Get the Full Text from the ACM Digital Library">Relational transducers for declarative networking</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tom J. Ameloot</li>
+<li class="nameList">Frank Neven</li>
+<li class="nameList Last">Jan Van den Bussche</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Motivated by a recent conjecture concerning the expressiveness of declarative networking, we propose a formal computation model for "eventually consistent" distributed querying, based on relational transducers. A tight link has been conjectured between coordination-freeness of computations, and monotonicity of the queries expressed by such computations. Indeed, we propose a formal definition of coordination-freeness and confirm that the class of monotone queries is captured by coordination-free transducer networks. Coordination-freeness is a semantic property, but the syntactic class of "oblivious" transducers we define also captures the same class of monotone queries. Transducer networks that are not coordination-free are much more powerful.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683343" title="Get the Full Text from the ACM Digital Library">Rewrite rules for search database systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ronald Fagin</li>
+<li class="nameList">Benny Kimelfeld</li>
+<li class="nameList">Yunyao Li</li>
+<li class="nameList">Sriram Raghavan</li>
+<li class="nameList Last">Shivakumar Vaithyanathan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The results of a search engine can be improved by consulting auxiliary data. In a search database system, the association between the user query and the auxiliary data is driven by rewrite rules that augment the user query with a set of alternative queries. This paper develops a framework that formalizes the notion of a rewrite program, which is essentially a collection of hedge-rewriting rules. When applied to a search query, the rewrite program produces a set of alternative queries that constitutes a least fixpoint (lfp). The main focus of the paper is on the lfp-convergence of a rewrite program, where a rewrite program is lfp-convergent if the least fixpoint of every search query is finite. Determining whether a given rewrite program is lfp-convergent is undecidable; to accommodate that, the paper proposes a safety condition, and shows that safety guarantees lfp-convergence, and that safety can be decided in polynomial time. The effectiveness of the safety condition in capturing lfp-convergence is illustrated by an application to a rewrite program in an implemented system that is intended for widespread use.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Alon Halevy — 2021 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/alon-halevy-2021-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2022-05-17"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-![](https://sigmod.org/wp-content/uploads/2022/05/Alon.jpg)
+![](/wp-content/uploads/2022/05/Alon.jpg)
 
 Alon Halevy
 

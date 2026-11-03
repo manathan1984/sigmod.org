@@ -1,0 +1,471 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '88- Proceedings of the seventh ACM SIGACT-SIGMOD-SIGART symposium on Principles of database systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '88- Proceedings of the seventh ACM SIGACT-SIGMOD-SIGART symposium on Principles of database systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=308386" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683625" title="Get the Full Text from the ACM Digital Library">Theory of database queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Ashok K. Chandra</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683626" title="Get the Full Text from the ACM Digital Library">On the expressive power of logic programming languages with sets</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Gabriel M. Kuper</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683627" title="Get the Full Text from the ACM Digital Library">Rewriting of rules containing set terms in a logic data language LDL</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Oded Shmueli</li>
+<li class="nameList">Shalom Tsur</li>
+<li class="nameList Last">Carlo Zaniolo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We propose compilation methods for supporting set terms in Horn clause programs, without using general-purpose set matching algorithms, which tend to run in times exponential in the size of the participating sets Instead, we take the approach of formulating specialized computation plans that, by taking advantage of information available in the given rules, limit the number of alternatives explored. Our strategy is to employ <italic>compile time</italic> rewriting techniques and to transform the problem into an &ldquo;ordinary&rdquo; Horn clause compilation problem, with minimal additional overhead. The execution cost of the rewritten rules is substantially lower than that of the original rules and the additional cost of compilation can thus be amortized over many executions</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683628" title="Get the Full Text from the ACM Digital Library">Possibilities and limitations of using flat operators in nested algebra expressions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jan Paredaens</li>
+<li class="nameList Last">Dirk Van Gucht</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683629" title="Get the Full Text from the ACM Digital Library">On the expressive power of database queries with intermediate types</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Richard Hull</li>
+<li class="nameList Last">Jianwen Su</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>The <italic>set-height</italic> of a complex object type is defined to be its level of nesting of the set construct. In a query of the complex object calculus which maps a database <italic>D</italic> to an output type <italic>T</italic>, an <italic>intermediate type</italic> is a type which is used by some variable of the query, but which is not present in <italic>D</italic> or <italic>T</italic>. For each <italic>k</italic>, <italic>i</italic> &ge; 0 we define CALC<subscrpt><italic>k,i</italic></subscrpt> to be the family of calculus queries mapping from and to types with set-height &le; <italic>k</italic> and using intermediate types with set-height &le; <italic>i</italic> In particular, CALC<subscrpt>0,0</subscrpt> is the relational calculus, and CALC<subscrpt>0,1</subscrpt> is equivalent to the family of second-order (relational) queries</par>
+<par>Several results concerning these families of languages are obtained. A primary focus is on the families CALC<subscrpt>0,i</subscrpt>, which map relations to relations Upper bounds on the complexity of these families are provided, and it is shown that CALC<subscrpt>0,3</subscrpt> has at least the complexity of exponential space. The CALC<subscrpt>0,i</subscrpt> hierarchy does not collapse, because for each <italic>i</italic>, CALC<subscrpt>0,i</subscrpt> is strictly less expressive than CALC<subscrpt>0,i+2</subscrpt>. The union &cup;<subscrpt>0&le;i</subscrpt>CALC<subscrpt>0,i</subscrpt> is strictly less expressive than the family of 'computable' database queries.</par>
+<par>The expressive power of queries from the complex object calculus interpreted using a semantics based on the use of arbitrarily large finite numbers of <italic>invented values</italic> is studied. Under this semantics, the expressive power of the relational calculus is not increased, and the CALC<subscrpt>0,i</subscrpt> hierarchy collapses at CALC<subscrpt>0,1</subscrpt>. We also consider queries which use a bounded number of invented values.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683620" title="Get the Full Text from the ACM Digital Library">An axiomatic approach to deciding query safety in deductive databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Kifer</li>
+<li class="nameList">Raghu Ramakrishnan</li>
+
+<li class="nameList Last">Avi Silberschatz</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A database query is <italic>safe</italic> if its result consists of a finite set of tuples. If a query is expressed using a set of pure Horn Clauses, the problem of determining query safety is, in general, undecidable. In this paper we consider a slightly stronger notion of safety, called <italic>supersafety</italic>, for Horn databases in which function symbols are replaced by the abstraction of infinite relations with <italic>finiteness constraints</italic> [Ramarkrishman et. al 87] We show that the supersafety problem is not only decidable, but also <italic>axiomatizable</italic>, and the axiomatization yields an effective decision procedure. Although there are safe queries which are not supersafe, we demonstrate that the latter represent quite a large and nontrivial portion of the safe of all safe queries</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683621" title="Get the Full Text from the ACM Digital Library">Temporal deductive databases and infinite objects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jan Chomicki</li>
+<li class="nameList Last">Tomasz Imieli&#324;ski</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We discuss deductive databases with one fixed occurrence of a monadic function symbol(<italic>successor</italic>) per predicate Databases of this kind can be used in a natural way to model simple patterns of events repeated in time, and this is why we term them <italic>temporal</italic>. Temporal deductive databases are also interesting from a theoretical point of view, because they give rise to <italic>infinite</italic> least fix-points and <italic>infinite</italic> query answers. We study complexity properties of finite query answers and define the notion of <italic>infinite objects</italic> which makes some infinite least fixpoints computable in finite time</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683622" title="Get the Full Text from the ACM Digital Library">The complexity of ordering subgoals</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jeffrey D. Ullman</li>
+<li class="nameList Last">Moshe Y. Vardi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Selection of an appropriate order for the evaluation of subgoals in a logical rule frequently is essential for efficiency. We formulate the problem as one of feasible subgoal orders and show that the question is inherently exponential in time. The proof is by reduction from linear-space alternating Turing machine recognition, which appears to be far easier, in this case, than the more obvious reduction from exponential-time (ordinary) Turing machines</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683623" title="Get the Full Text from the ACM Digital Library">An algorithm for ordering subgoals in NAIL?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Katherine A. Morris</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Rule-goal graphs are the central data structures used in the NAIL&prime; system, a knowledge-base system being developed at Stanford University They are constructed while testing the applicability of <italic>capture rules</italic>, and traversed while generating ICODE to evaluate queries. Generating rule-goal graphs may be reduced to the problem of ordering subgoals. This paper gives an algorithm for generating rule-goal graphs efficiently, in time polynomial in the size of the rules if the arity of recursive predicates is bounded. The graphs generated may be suboptimal for some purposes, but the algorithm will always find a rule-goal graph if one exists. The algorithm has been implemented in Cprolog, and is currently being used to generate rule-goal graphs for the NAIL&prime; system</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683624" title="Get the Full Text from the ACM Digital Library">Optimizing existential datalog queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Raghu Ramakrishnan</li>
+<li class="nameList">Catriel Beeri</li>
+<li class="nameList Last">Ravi Krishnamurthy</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>The problem of pushing projections in recursive rules has received little attention. The objective of this paper is to motivate this problem and present some (partial) solutions. We consider programs with function-free rules, also known as <italic>Datalog</italic> programs. After formally defining existential subqueries, we present a syntactic criterion for detecting them and then consider optimization in three areas 1) We identify the existential subqueries and make them explicit by rewriting the rules. This, in effect, automatically captures some aspects of Prolog's <italic>cut</italic> operator that are appropriate to the bottom-up model of computation 2) We eliminate argument positions in recursive rules by &ldquo;pushing projections&rdquo; 3) We observe that &ldquo;pushing projections&rdquo; in rules also has the effect of making some rules (even recursive rules) redundant and try to (identify and) discard them</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683635" title="Get the Full Text from the ACM Digital Library">Explicit control of logic programs through rule algebra</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tomasz Imielinski</li>
+<li class="nameList Last">Shamim Naqvi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par><italic>In this paper we argue with a basic premise in logic programming research that the meaning of a program can be inferred from its syntax alone. We show that users may have a variety of intended models for programs and that a single program may give different intended models under different assumptions of semantics. Our conclusion is that it is impossible to infer the intended model from the syntax of the program and no single semantics will capture all the intended models. We propose as a solution an explicit specification of control. Towards this purpose we define a rule algebra. The user formulates a program as an algebraic specification that directs the execution towards the intended model. The interesting question at that point is how to efficiently implement such programs. We show a natural and easy transformation such that it takes as input an algebraic specification and produces as output a program belonging to a subclass of locally stratified programs. Moreover, there is a homomorphic correspondence between the algebraic expressions and their translations.</italic></par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683636" title="Get the Full Text from the ACM Digital Library">Analysis of bounded disorder file organization</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">M. V. Ramakrishna</li>
+<li class="nameList Last">P. Mukhopadhyay</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Recently Litwin and Lomet proposed the Bounded Disorder (BD) file organization which uses a combination of hashing and tree indexing Lomet provided an approximate analysis with a mention of the difficulty involved in exact modeling and analysis. The performance analysis of the method involves solving a classical sequential occupancy problem. We encountered this problem in our attempt to obtain a general model for single access and almost single access retrieval methods developed in the recent years. In this paper, we develop a probability model and present some preliminary results of the exact analysis.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683637" title="Get the Full Text from the ACM Digital Library">Analytical modeling of materialized view maintenance</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jaideep Srivastava</li>
+<li class="nameList Last">Doron Rotem</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683638" title="Get the Full Text from the ACM Digital Library">Serialization graph algorithms for multiversion concurrency control</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Thanasis Hadzilacos</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par><italic>We propose a new algorithmic framework for database concurrency control using multiple versions of data items and a serialization graph of the transactions as a synchronization technique, which generalizes all concurrency control methods known so far. This class of algorithms, called MVSGA for Multi Version Serialization Graph set of Algorithms, works by monitoring the acyclicity of the serialization graph which has nodes corresponding to transactions and arcs corresponding to read-from and other transaction positioning decisions made by the scheduler. For each of the major known schedulers we give examples of MVSGA schedulers that cover them.</italic></par>
+<par><italic>We propose a criterion for optimality among MVSGA schedulers Choice of versions to read from and relative positioning of transactions in the serialization graph should be done in a way that leaves the largest flexibility possible for future choices. This flexibility is measured as the number of pairs of nodes in the serialization graph that remain incomparable. Unfortunately, enforcing this criterion turns out to be NP-complete, so we describe an MVSGA scheduler based on a heuristic that approximates the optimal.</italic></par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683639" title="Get the Full Text from the ACM Digital Library">The queue protocol: a deadlock-free, homogeneous, non-two-phase locking protocol</a>
+</h3>
+<ul class="DLauthors">
+ <li class="nameList Last">Udo Kelter</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>The M-pitfall protocol (MPP) is the most general homogeneous non-two-phase locking protocol which supports shared and exclusive locks. It has two major disadvantages: it is not deadlock-free and it has the paradoxical property that concurrency is often reduced if shared locks are used instead of exclusive locks. This paper presents a new protocol, the Queue Protocol (QP), which removes these deficiencies. Although the QP can be regarded an enhancement of the MPP, pitfalls are no more used in the QP; thus, the QP has the further advantage that processing overhead due to pitfalls is avoided.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683630" title="Get the Full Text from the ACM Digital Library">Object-oriented database systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Fran&#231;ois Banciihon</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>This paper describes my vision of the current state of object-oriented database research. I first briefly define this field by its objectives, and relate it to other database subfields. I describe what I consider to be the main characteristics of an object oriented system, i.e. those which are important to integrate in a database system: encapsulation, object identity, classes or types, inheritance, overriding and late binding. I point out the differences between an object oriented system and an object oriented database system. I also point out the advantages and drawbacks of an object oriented database system with respect to a relational system. Finally, I list some research issues.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683631" title="Get the Full Text from the ACM Digital Library">Independence-reducible database schemes</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Edward P. F. Chan</li>
+<li class="nameList Last">Hector J. Hernandez</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A class of cover embedding database schemes, called independence-reducible, is proposed and is proven to be bounded and algebraic-maintainable, and therefore is highly desirable with respect to query answering and constraint enforcement. This class of schemes is shown to properly contain a superset of all previously known classes of cover embedding BCNF database schemes which are bounded (and constant-time-maintainable). An efficient algorithm is found which recognizes exactly this class of database schemes. Independence-reducible database schemes properly contain a class of constant-time-maintainable database schemes and a condition which characterizes this class of schemes is found, this condition can be tested efficiently. Throughout, it is assumed that a cover of the functional dependencies is embedded in the database scheme in the form of key dependencies.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683632" title="Get the Full Text from the ACM Digital Library">Decomposition of relational schemata into components defined by both projection and restriction</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Stephen J. Hegner</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A generalized approach to the decomposition of relational schemata is developed in which the component views may be defined using both restriction and projection operators, thus admitting both horizontal and vertical decompositions. The realization of restrictions is enabled through the use of a Boolean algebra of types, while true independence of projections is modelled by permitting null values in the base schema. The flavor of the approach is algebraic, with the collection of all candidate views of a decomposition modelled within a lattice-like framework, and the actual decompositions arising as Boolean subalgebrac. Central to the framework is the notion of <italic>sidimensional join dependency</italic>, which generalizes the classical notion of join dependency by allowing the components of the join to be selected horizontally as well as vertically. Several properties of such dependencies are presented, including a generalization of many of the classical results known to be equivalent to schema acyclicity. Finally, a characterization of the nature of dependencies which participate in decompositions is presented. It is shown that there are two major types, the bidimensional join dependencies, which are tuple generating and allow tuple removal by implicit encoding of knowledge, and splitting dependencies, which simply partition the database into two components.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683633" title="Get the Full Text from the ACM Digital Library">Concepts for a database system compiler</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">D. S. Batory</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We propose a very simple formalism based on parameterized types and a rule-based algebra to explain the storage structures and algorithms of database management systems. Implementations of DBMSs are expressed as equations If all functions referenced in the equations have been implemented the software for a DBMS can be synthesized in minutes at little cost, in contrast to current methods where man-years of effort and hundreds of thousands of dollars are required. Our research aims to develop a DBMS counterpart to today's compiler-complier technologies</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683634" title="Get the Full Text from the ACM Digital Library">Transaction synchronisation in object bases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Thanasis Hadzilacos</li>
+<li class="nameList Last">Vassos Hadzilacos</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>In this paper we investigate the problem of synchronising transactions in an object base. An object base is a collection of objects, much the way a database is a collection of data. An object, for our purposes, consists of a collection of variables (whose values at any point in time comprise the state of that object) and a set of operations, called methods, that are the only means of accessing (sensing or modifying) the object's variables</par>
+<par>There is a certain sense in which a traditional database is an object base. It consists of &ldquo;objects&rdquo; (records, tuples or what have you) each of which has a state that can be accessed only through the operations Read and Write. The main difference is that in an object base, each object supplies its own methods and these are arbitrary. In particular, a method for a certain object may call methods of other objects to carry out its task. In contrast to certain models in which objects correspond to &ldquo;levels of abstraction&rdquo;, our model is completely general in this respect for example, it is permissible for a method of object <italic>A</italic> to call a method of object <italic>B</italic> which, in turn, may call some other method of object <italic>A</italic> again</par>
+<par>One implication of this difference between data and object bases is that in the latter the assumption, commonly made in the former, that the operations which manipulate the state of the objects are short enough to be implemented serially (one at a time) is no longer valid. A related implication is that in object bases we are faced with the necessity of dealing with nested transactions, since the invocation of one method may result in further method invocations</par>
+<par>Another, less fundamental, difference between data and object bases is that, in addition to being of uniform type, the &ldquo;objects&rdquo; of a database are usually assumed to be of uniform size as well. In an object base one can imagine objects of widely differing sizes. A clock and the New York City telephone directory could be objects differing in size by orders of magnitude, yet co-existing in the same object base</par>
+<par>In spite of these differences it is possible to approach concurrency control in an object base in the following way. Each object is viewed as a database item. Further, each method invocation is treated as a group of Read or Write operations on those data items that were accessed as a result of that method invocation. With these analogies, any conventional database concurrency control method (two-phase locking, timestamp ordering, certification, and the whole lot) can be employed to synchronise concurrent transactions in the object base. This approach has the virtue of simplicity and may be well-suited to certain environments. It is, for example, the approach taken in the GemStone project and product (cf Maier and Stein [1987], Purdy <italic>et al</italic> [1987])</par>
+<par>We are interested in exploring approaches to concurrency control in object bases which take into account their special features and differences from databases. The hope is that this will lead to more efficient techniques. More specifically, we would like to consider mechanisms that
+<list>
+<item><par>Take into account the nested nature of transactions</par></item>
+<item><par>Allow methods accessing an object to execute concurrently (but correctly) This seems especially important as multiprocessors become available, since forcing serial access to an object's methods restricts parallelism (bear in mind that each method could be a lengthy procedure)</par></item>
+<item><par>Are modular, in that each object is responsible for synchronizing the invocations of its own methods as it sees fit</par></item>
+</list></par>
+<par>The first two of these points have been considered by others as well. For example, Argus (cf Liskov and Scheifler [1983]) uses a synchronisation algorithm which is an adaptation of strict two-phase locking in a nested transaction environment. In addition, Argus allows multiple concurrent invocations of an object's methods<supscrpt>1</supscrpt></par>
+<par>We believe that the third point is a novel idea, so we elaborate on it a bit. In accordance with (b), multiple invocations of an object's methods may be active simultaneously As these methods may operate on common data (the object's variables), they must be synchronised. That is, if we view the object's variables as a database, and the simultaneous method invocations as concurrent transactions, we have to solve the serialisability problem <italic>within</italic> a single object. We call this <italic>intra-object</italic> synchronisation</par>
+<par>It is not difficult to see that simply ensuring serialisability within each object is not, in itself, enough to guarantee serialisability of the overall computation. For instance, then may be two transactions <italic>T</italic><subscrpt>1</subscrpt> and <italic>T</italic><subscrpt>2</subscrpt> each accessing objects <italic>A</italic> and <italic>B</italic>, so that in object <italic>A</italic> the concurrent computation of the two transactions' method executions serialises <italic>T</italic><subscrpt>1</subscrpt> before <italic>T</italic><subscrpt>2</subscrpt>, while the reverse holds in object <italic>B</italic>.The effect of such an execution is not the same as running the two transactions serially in either order and the overall computation is therefore not serial, sable, even though the computation at each object is Thus, in addition to intra-object synchronisation, it is also necessary to exercise some <italic>inter-object</italic> synchronisation, whose goal will be to ensure the compatibility of the independent decisions made at each object</par>
+<par>The potential advantage of separating intra- from inter-object synchronisation is seen if one recalls our previous observation regarding the non-uniformity of objects in an object base. Accordingly, we may be able to allow each object use, for intra-object synchronisation, the most suitable algorithm depending on its semantics, the implementation of its methods and so on. For example, an object representing and Delete) might be implemented as a B-tree. Thus, one of the many special B-tree algorithms could be used for intra-object synchronisation by this object (cf Bayer and Schkolnick [1977], Ellis [1980], Kung and Lehman [1980], Kwong and Wood [1982], Lehman and Yao [1981], Manber and Ladner [1982], Samadi [1976]) That object would enjoy the efficiency of the special algorithm, even though that algorithm is not applicable to other types of objects. Of course, the viability of such a scheme depends on the existence of efficient inter-object synchronisation schemes that can be used with disparate intra-object synchronisation algorithms. Even though we have no definitive answer for this question, our work so far leaves us hopeful that this may indeed be possible</par>
+<par>The remainder of this paper is organised as follows. In Section 2 we present a formal model for representing executions in object bases, we also define what serialisable (i e correct) executions are in this context. In Section 3 we present an extension of the Serialisability Theorem of &ldquo;classical&rdquo; concurrency control, which relates the serialisability of an execution to the acyclicity of a graph. We exhibit the utility of this theorem by using it to derive simple proofs of the correctness of Nested Two-Phase Locking (a slight generalisation of the algorithm used in Argus) and Nested Timestamp Ordering (an algorithm proposed by Reed [1978]). We also present a corollary to this theorem that we feel justifies our hopes for modular synchronisation mechanisms. We conclude with a description of further work in Section 4</par>
+<par>This work draws on three main sources &ldquo;classical&rdquo; serialisability theory (e.g. Bernstein <italic>et al</italic> [1987], Papadimitriou [1986]), the theory of nested transactions (e.g. Beeri <italic>et al</italic> [1980], Lynch and Merritt [1986]), and object-oriented systems (e.g. Stefik and Bobrow [1986])</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683645" title="Get the Full Text from the ACM Digital Library">Hybrid concurrency control for abstract data types</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Maurice P. Herlihy</li>
+<li class="nameList Last">William E. Weihl</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We define a new locking protocol that permits more concurrency than existing commutativity-based protocols. The protocol uses timestamps generated when transactions commit to provide more information about the serialization order of transactions, and hence to weaken the constraints on conflicts. In addition, the protocol permits operations to be both partial and non-deterministic, and it permits results of operations to be used in choosing locks. The protocol exploits type-specific properties of objects, necessary and sufficient constraints on lock conflicts are defined directly from a data type specification. We give a complete formal description of the protocol, encompassing both concurrency control and recovery, and prove that the protocol satisfies <italic>hybrid atomicity</italic>, a local atomicity property that combines aspects of static and dynamic atomic protocols. We also show that the protocol is optimal in the sense that no hybrid atomic locking scheme can permit more concurrency.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683646" title="Get the Full Text from the ACM Digital Library">Concurrent set manipulation without locking</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Vladimir Lanin</li>
+<li class="nameList Last">Dennis Shasha</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Set manipulation consists of the actions <italic>insert, delete</italic>, and <italic>member</italic> on keys. We propose a concurrent set manipulation algorithm that uses no locking at all and requires no aborts, relying instead on atomic read-modify-write operations on single (data) locations. The algorithm satisfies order-preserving serializability through conditions that are strictly looser than existing algorithms</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683647" title="Get the Full Text from the ACM Digital Library">Unfounded sets and well-founded semantics for general logic programs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Allen Van Gelder</li>
+<li class="nameList">Kenneth Ross</li>
+<li class="nameList Last">John S. Schlipf</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A general logic program (abbreviated to &ldquo;program&rdquo; hereafter) is a set of rules that have both positive and negative subgoals. It is common to view a deductive database as a general logic program consisting of rules (IDB) sitting above elementary relations (EDB, facts). It is desirable to associate one Herbrand model with a program and think of that model as the &ldquo;meaning of the program,&rdquo; or its &ldquo;declarative semantics.&rdquo; Ideally, queries directed to the program would be answered in accordance with this model. We introduce <italic>unfounded sets</italic> and <italic>well-founded partial models</italic>, and define the well-founded semantics of a program to be its well-founded partial model. If the well-founded partial model is in fact a model, we call it the <italic>well-founded</italic> model, and say the program is &ldquo;well-behaved&rdquo;. We show that the class of well-behaved programs properly includes previously studied classes of &ldquo;stratified&rdquo; and &ldquo;locally stratified&rdquo; programs Gelfand and Lifschits have proposed a definition of &ldquo;unique stable model&rdquo; for general logic programs. We show that a program has a unique stable model if it has a well-founded model, in which case they are the same. We discuss why the converse is not true.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683648" title="Get the Full Text from the ACM Digital Library">Why not negation by fixpoint?</a>
+ </h3>
+<ul class="DLauthors">
+<li class="nameList First">Phokion G. Kolaitis</li>
+<li class="nameList Last">Christos H. Papadimitriou</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par><italic>There is a fixpoint semantics for DATALOG programs with negation that is a natural generalization of the standard semantics for DATALOG programs without negation. We show that, unfortunately, several compelling complexity-theoretic obstacles rule out its efficient implementation. As an alternative, we propose Inflationary DATALOG, an efficiently implementable semantics for negation, based on inflationary fixpoints</italic></par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683649" title="Get the Full Text from the ACM Digital Library">Procedural and declarative database update languages</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Serge Abiteboul</li>
+<li class="nameList Last">Victor Vianu</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683640" title="Get the Full Text from the ACM Digital Library">Database updates in logic programming</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Shamim Naqvi</li>
+<li class="nameList Last">Ravi Krishnamurthy</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par><italic>The need for control in logic programs is now being recognized. This is particularly evident when one focuses on allowing updates in logic programs. In this paper we propose a language DatalogA which is an extension of Datalog with updates to base relations. We define some procedural constructs to allow update programs to be written in an easy manner. The (W,p) scheme of Dynamic Logic fits nicely into the semantics of DatalogA programs in which W is taken to be the set of all possible states of the program and p is the accessibility relation between states. We give declarative semantics and equivalent constructed model semantics for DatalogA programs. We show that in the absence of updates our semantics reduce to the classical semantics of Datalog. Finally, we show some examples of non-stratified programs expressed in DatalogA</italic>.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683641" title="Get the Full Text from the ACM Digital Library">Optimization of multiple-relation multiple-disjunct queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">M. Muralikrishna</li>
+<li class="nameList Last">David J. DeWitt</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>In this paper we discuss the optimization of multiple-relation multiple-disjunct queries in a relational database system. Since optimization techniques for conjunctive (single disjunct) queries in relational databases are well known [Smith75, Wong76, Selinger79, Yao79, Youssefi79], the natural way to evaluate a multiple-disjunct query was to execute each disjunct independently [Bernstein81, Kerschberg82] However, evaluating each disjunct independently may be very inefficient. In this paper, we develop methods that merge two or more disjuncts to form a term. The advantage of merging disjuncts to form terms lies in the fact that each term can be evaluated with a single scan of each relation that is present in the term. In addition, the number of times a join is performed will also be reduced when two or more disjuncts are merged. The criteria for merging a set of disjuncts will be presented. As we will see, the number of times each relation in the query is scanned will be equal to the number of terms. Thus, minimizing the number of terms will minimize the number of scans for each relation. We will formulate the problem of minimizing the number of scans as one of covering a merge graph by a minimum number of complete merge graphs which are a restricted class of Cartesian product graphs. In general, the problem of minimizing the number of scans is NP-complete. We present polynomial time algorithms for special classes of merge graphs. We also present a heuristic for general merge graphs.</par>
+<par>Throughout this paper, we will assume that no relations have any indices on them and that we are only concerned with reducing the number of scans for each relation present in the query. What about relations that have indices on them? It turns out that our performance metric of reducing the number of scans is beneficial even in the case that there are indices. In [Muralikrishna88] we demonstrate that when optimizing single-relation multiple-disjunct queries, the cost (measured in terms of disk accesses) may be reduced if all the disjuncts are optimized together rather than individually. Thus, our algorithm for minimizing the number of terms is also very beneficial in cases where indices exist</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683642" title="Get the Full Text from the ACM Digital Library">Statistical estimators for relational algebra expressions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Wen-Chi Hou</li>
+<li class="nameList">Gultekin Ozsoyoglu</li>
+<li class="nameList Last">Baldeo K. Taneja</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Present database systems process all the data related to a query before giving out responses. As a result, the size of the data to be processed becomes excessive for real-time/time-constrained environments. A new methodology is needed to cut down systematically the time to process the data involved in processing the query. To this end, we propose to use data samples and construct an approximate synthetic response to a given query.</par>
+<par>In this paper, we consider only COUNT(E) type queries, where E is an arbitrary relational algebra expression. We make no assumptions about the distribution of attribute values and ordering of tuples in the input relations, and propose consistent and unbiased estimators for arbitrary COUNT(E) type queries. We design a sampling plan based on the cluster sampling method to improve the utilization of sampled data and to reduce the cost of sampling. We also evaluate the performance of the proposed estimators.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683643" title="Get the Full Text from the ACM Digital Library">Stable set and multiset operations in optimal time and space</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Bing-Chao Huang</li>
+<li class="nameList Last">Michael A. Langston</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>The focus of this paper is on demonstrating the existence of methods for stably performing set and multiset operations on sorted files of data in both optimal time and optimal extra space. It is already known that stable merging and stable duplicate-key extraction permit such methods. The major new results reported herein are these
+<list>
+<item><par>an asymptotically optimal time and space algorithm is devised for stably selecting matched records from a sorted file,</par></item>
+<item><par>this selection strategy is employed, along with other algorithmic tools, to prove that all of the elementary binary set operations can be stably performed in optimal time and space on sorted files, and</par></item>
+<item><par>after generalizing these operations to multisets in a natural way for file processing, it is proved that each can be stably performed in optimal time and space on sorted files</par></item>
+</list></par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683644" title="Get the Full Text from the ACM Digital Library">Minimizing time-space cost for database version control</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Lin Yu</li>
+<li class="nameList Last">Daniel J. Rosenkrantz</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We introduce the concept of a version graph to model the problem of minimising the space and version regeneration cost for database version control. We show that, in general, this problem and several of its variations are NP-complete. Motivated by the practical importance of these problems, we develop several heuristics and obtain worst-case guarantees on their performance. We also present linear time algorithms for problems characterized by special classes of version graphs.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683755" title="Get the Full Text from the ACM Digital Library">What should a database know?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Raymond Reiter</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>The by now conventional perspective on databases, especially deductive databases, is that they are sets of first order sentences. As such, they can be said to be claims about the truths of some <italic>external</italic> world, the database is a symbolic representation of that world.</par>
+<par>While agreeing with this account of what a database is, I disagree with how, both in theory and practice, a database is <italic>used</italic>, specifically how it is queried and how its integrity is enforced.</par>
+<par>Virtually all approaches to database query evaluation treat queries as first order formulas, usually with free variables whose bindings resulting from the evaluation phase define the answers to the query. The sole exception to this is the work of Levesque (1981, 1984), who argues that queries should be formulas in an epistemic modal logic. Queries, in other words, should be permitted to address aspects of the external world as represented in the database, as well as aspects of the database itself i e aspects of what the database <italic>knows</italic>. To take a simple example, suppose <italic>DB = p <supscrpt>y</supscrpt> q</italic></par>
+<par>Query <italic>p</italic> (i e is <italic>p</italic> true in the external world?)</par>
+<par>Answer unknown</par>
+<par>Query <italic>Kp</italic> (i e. do you know whether <italic>p</italic> is true in the external world?)</par>
+<par>Answer no</par>
+<par>Levesque's modal logic (called KFOPCE) distinguishes between known and unknown individuals in the database and thus accounts for &ldquo;regular&rdquo; database values as well as null values. For example, if <italic>KB</italic> is</par>
+<par>{Teach (John, Math100), (&exist; <italic>x</italic>) Teach (<italic>x</italic>, CS100), Teach (Mary, Psych100) <supscrpt>y</supscrpt> Teach (Sue, Psych100)},</par>
+<par>then</par>
+<par>Query (&exist; <italic>x</italic>)<italic>K</italic> Teach (John, <italic>x</italic>) i e is there a known course which John teaches?</par>
+<par>Answer yes-Math100</par>
+<par>Query (&exist; <italic>x</italic>)<italic>K</italic> Teach (<italic>x</italic>, CS100) i e is there a known teacher for CS100?</par>
+<par>Answer No</par>
+<par>Query (&exist; <italic>x</italic>) Teach (<italic>x</italic>, Psych100) i e does anyone teach Psych 100?</par>
+<par>Answer: Yes - Mary or Sue</par>
+<par>Query (&exist; <italic>x</italic>)<italic>K</italic> Teach (<italic>x</italic>, Psych100) i e is there a known teacher of Psych100?</par>
+<par>Answer No</par>
+<par>Levesque (1981, 1984) provides a semantics for his language KFOPCE FOPCE, is the first order language KFOPCE without the modal K Levesque proposes that a database is best viewed as a set of FOPCE sentences, and that it be queried by sentences of KFOPCE. He further provides a (noneffective) way of answering database queries.</par>
+<par>Recently I have considered the concept of a static integrity constraint in the context of Levesque's KFOPCE (Reiter 1988). The conventional view of integrity constraints is that, like the database itself, they too are first order formulas (e g Lloyd &amp; Topor (1985), Nicolas &amp; Yazdanian (1978), Reiter (1984)). There are two definitions in the literature of a deductive database <italic>KB</italic> satisfying an integrity constraint <italic>IC</italic>.</par>
+<par><italic>Definition 1</italic> Consistency (e.g. Kowalski (1978), Sadri and Kowalski (1987)) <italic>KB satisfies IC if f KB + IC is satisfiable</italic></par>
+<par><italic>Definition 2</italic> Entailment (e g Lloyd and Topor (1985), Reiter (1984)) <italic>KB satisfies IC if f KB @@@@ IC</italic></par>
+<par>Alas, neither definition seems correct. Consider a constraint requiring that employees have social security numbers (V<italic>x</italic>) <italic>emp</italic> (<italic>x</italic>) &sup; (&exist; <italic>y</italic>) <italic>ss#</italic> (<italic>x y</italic>) (1)</par>
+<par>1 Suppose <italic>KB</italic> = {emp (Mary)} Then <italic>KB + IC</italic> is satisfiable. But intuitively, we want the constraint to require <italic>KB</italic> to contain a ss# entry for Mary, so we want <italic>IC</italic> to be violated. Thus Definition 1 does not capture our intuitions.</par>
+<par>2 Suppose <italic>KB</italic> = { } Intuitively, this should satisfy <italic>IC</italic>, but <italic>KB @@@@ IC</italic>. So Definition 2 is inappropriate.</par>
+<par>An alternative definition comes to mind when one sees that constraints like (1) intuitively are interpreted as statements not about the world but about the <italic>contents</italic> of the database, or about what it <italic>knows</italic>. Thus, using the modal <italic>K</italic> for &ldquo;knows&rdquo;, (1) should be rendered by (V<italic>x K emp</italic> (<italic>x</italic>) &sup; (&exist; <italic>y</italic>) <italic>K ss#</italic> (<italic>x y</italic>)</par>
+<par><italic>Other Examples</italic></par>
+<par>1 To prevent a database from simultaneously assigning the properties <italic>male</italic> and <italic>female</italic> to the same individual, use the constraint (V<italic>x</italic>) &dlcrop; <italic>K</italic> (<italic>male</italic> (<italic>x</italic>) &and;<italic>female</italic> (<italic>x</italic>))</par>
+<par>2 To force a database to assign one of the properties <italic>male</italic> and <italic>female</italic> to each individual, use the constraint (V<italic>x</italic>) <italic>K person</italic> (<italic>x</italic>) &sup;<italic>K male</italic> (<italic>x</italic>) &or; <italic>K female</italic> (<italic>x</italic>)</par>
+<par>3 To require that known instances of the relation <italic>mother</italic>(,) have first argument a <italic>female person</italic> and a second argument a <italic>person</italic>, use the constraint (V<italic>x, y</italic>) <italic>K mother</italic> (<italic>x,y</italic>) &sup; <italic>K</italic> (<italic>person</italic> (<italic>x</italic>) &and;<italic>female</italic> (<italic>x</italic>) &and;<italic>person</italic> (<italic>y</italic>))</par>
+<par>4 To require that every known employee have a social security number, without necessarily knowing what that number is (so that a null value is permitted), use (V<italic>x</italic>) <italic>K emp (x)</italic> &sup; <italic>K</italic> (&exist; <italic>y</italic>) <italic>ss# (x y)</italic></par>
+<par>My account of integrity constraints therefore, is that rather than being first order sentences, they are sentences of Levesque's KFOPCE. Constraints are not statements about the world, but about the contents of the database. The natural definition of when a database <italic>KB</italic> satisfies a constraint <italic>IC</italic> is the following <italic>KB satisfies IC</italic> iff the answer to <italic>IC</italic> when viewed as a query to <italic>KB</italic> is &ldquo;yes&rdquo;.</par>
+<par>In effect, therefore, my proposal is to understand integrity constraints as formally indistinguishable from KFOPCE queries, with the proviso that for any database state the answer to these queries must be &ldquo;yes&rdquo;.</par>
+<par>My talk will elaborate on the above notion of deductive databases. Specifically, it will provide Levesque's semantics for the <italic>K</italic> operator, discuss query evaluation under the closed world assumption, characterize integrity checking for a natural class of integrity constraints and databases, and conclude with some open research topics.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683756" title="Get the Full Text from the ACM Digital Library">A semantics for complex objects and approximate queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Peter Buneman</li>
+<li class="nameList">Susan Davidson</li>
+<li class="nameList Last">Aaron Watters</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A new definition of complex objects is introduced which provides a denotation for incomplete tuples as well as partially described sets. Set values are &ldquo;sandwiched&rdquo; between &ldquo;complete&rdquo; and &ldquo;consistent&rdquo; descriptions (representing the Smyth and Hoare powerdomains respectively), allowing the maximal values to be arbitrary subsets of maximal elements in the domain of the set. We also examine the use of rules in defining queries over such objects.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683757" title="Get the Full Text from the ACM Digital Library">A framework for comparison of update semantics</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Marianne Winslett</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Scattered across the scientific literature of three or more disciplines appears a profusion of proposals for semantics of updates to logical theories. Because no previous work has compared these proposals with one another, the merits and demerits of the various approaches are not well known. Since the semantics differ from one another in systematic ways, it is possible to generalize from existing proposals and speak of the properties of <italic>classes</italic> of update semantics. In this paper we suggest a two-dimensional taxonomy for characterizing semantics, and describe the properties inherent to the classes implicit therein. Our discussion includes measurement of the computational complexity of the different classes.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683758" title="Get the Full Text from the ACM Digital Library">A generalized transitive closure for relational queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Seppo Sippu</li>
+<li class="nameList Last">Eljas Soisalon-Soininen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We augment relational algebra with a generalized transitive closure operator that allows for the efficient evaluation of a subclass of recursive queries. The operator is based on a composition operator which is as general as possible when the operator is required to be associative and when only relational algebra operators are used in its definition. The closure of such a composition can be computed using the well-known efficient algorithms designed for the computation of the usual transitive closure. Besides the case in which complete materialization of recursive relations are required, our strategy also yields an efficient solution in the case in which a selection is applied to the closure.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683759" title="Get the Full Text from the ACM Digital Library">Counting methods for cyclic relations</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ramsey W. Haddad</li>
+<li class="nameList Last">Jeffrey F. Naughton</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>In this paper we consider selections of the form &ldquo;column = constant&rdquo; on relations defined by linear recursive, two rule datalog programs. In general, counting methods perform well on such queries. However, counting methods fail in the presence of cycles in the database. We present an algorithm in the spirit of counting methods that correctly deals with cyclic data and has the same asymptotic running time as counting methods. The algorithm, which is based on reducing a query on a database to a question about intersections of semi-linear sets, works by using efficient methods to construct the appropriate semi-linear sets from the database and query constant.</par>
+</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683750" title="Get the Full Text from the ACM Digital Library">Decidability and undecidability results for boundedness of linear recursive queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Moshe Y. Vardi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>If it is possible to eliminate recursion from a Datalog program <italic>P</italic>, then <italic>P</italic> is said to be <italic>bounded</italic>. It was shown by Gaifman et al that the problem of deciding whether a given Datalog program is bounded is undecidable, even for linear programs that has one <italic>4-ary</italic> intensional predicate. We sharpen that result by showing that the problem of deciding whether a given Datalog program is bounded is undecidable, even for linear programs that has one <italic>binary</italic> intensional predicate. We then consider linear programs with a single recursive rule. We show that if the intensional predicate is binary, then the boundedness problem for such program is decidable, in fact, it is NP-complete.</par>
+</div> </div>
+</div>
+</div>
+</body>
+</html>

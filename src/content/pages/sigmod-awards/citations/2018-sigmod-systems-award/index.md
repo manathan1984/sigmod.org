@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2018 SIGMOD Systems Award"
 permalink: "/sigmod-awards/citations/2018-sigmod-systems-award/"
 section: "sigmod"
@@ -11,9 +12,9 @@ updated: "2022-05-13"
 
 # The Hive and PIG Database Systems — 2018 SIGMOD Systems Award
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2018/10/hivepig-e1539226884888.jpg" alt="" width="197" height="210"></td><td><h1>The Hive and PIG Database Systems</h1><h2>&nbsp;</h2><h3>2018 SIGMOD Systems Award</h3></td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2018/10/hivepig-e1539226884888.jpg" alt="" width="197" height="210"></td><td><h1>The Hive and PIG Database Systems</h1><h2>&nbsp;</h2><h3>2018 SIGMOD Systems Award</h3></td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
 
 The developers of the Hive and Pig database systems are the recipients of the 2018 SIGMOD Systems Award for developing seminal software systems that served to bring relational-style declarative programming to the Hadoop ecosystem
 

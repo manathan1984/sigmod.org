@@ -1,0 +1,455 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '12- Proceedings of the 31st ACM SIGMOD-SIGACT-SIGAI symposium on Principles of Database Systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '12- Proceedings of the 31st ACM SIGMOD-SIGACT-SIGAI symposium on Principles of Database Systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=2213556" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Opening and keynote address</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256442" title="Full Citation in the ACM Digital Library">Session details: Opening and keynote address</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Maurizio Lenzerini</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683344" title="Get the Full Text from the ACM Digital Library">What next?: a half-dozen data management research goals for big data and the cloud</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Surajit Chaudhuri</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In this short paper, I describe six data management research challenges relevant for Big Data and the Cloud. Although some of these problems are not new, their importance is amplified by Big Data and Cloud Computing.</p></div> </div>
+<h2>SESSION: Streaming</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256443" title="Full Citation in the ACM Digital Library">Session details: Streaming</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Milan Vojnovic</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683455" title="Get the Full Text from the ACM Digital Library">Graph sketches: sparsification, spanners, and subgraphs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Kook Jin Ahn</li>
+<li class="nameList">Sudipto Guha</li>
+<li class="nameList Last">Andrew McGregor</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>When processing massive data sets, a core task is to construct <i>synopses</i> of the data. To be useful, a synopsis data structure should be easy to construct while also yielding good approximations of the relevant properties of the data set. A particularly useful class of synopses are <i>sketches</i>, i.e., those based on linear projections of the data. These are applicable in many models including various parallel, stream, and compressed sensing settings. A rich body of analytic and empirical work exists for sketching numerical data such as the frequencies of a set of entities. Our work investigates <i>graph sketching</i> where the graphs of interest encode the relationships between these entities. The main challenge is to capture this richer structure and build the necessary synopses with only linear measurements.</p> <p>In this paper we consider properties of graphs including the size of the cuts, the distances between nodes, and the prevalence of dense sub-graphs. Our main result is a sketch-based sparsifier construction: we show that &#213;(<i>n</i>&#949;<sup>-2</sup>) random linear projections of a graph on <i>n</i> nodes suffice to (1+&#949;) approximate <i>all</i> cut values. Similarly, we show that &#213;(&#949;<sup>-2</sup>) linear projections suffice for (additively) approximating the fraction of induced sub-graphs that match a given pattern such as a small clique. Finally, for distance estimation we present sketch-based spanner constructions. In this last result the sketches are adaptive, i.e., the linear projections are performed in a small number of batches where each projection may be chosen dependent on the outcome of earlier sketches. All of the above results immediately give rise to data stream algorithms that also apply to dynamic graph streams where edges are both inserted and deleted. The non-adaptive sketches, such as those for sparsification and subgraphs, give us single-pass algorithms for distributed data streams with insertion and deletions. The adaptive sketches can be used to analyze MapReduce algorithms that use a small number of rounds.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683456" title="Get the Full Text from the ACM Digital Library">Approximating and testing k-histogram distributions in sub-linear time</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Piotr Indyk</li>
+<li class="nameList">Reut Levi</li>
+<li class="nameList Last">Ronitt Rubinfeld</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A discrete distribution <i>p</i>, over <i>[n]</i>, is a <i>k</i> histogram if its probability distribution function can be represented as a piece-wise constant function with <i>k</i> pieces. Such a function is represented by a list of <i>k</i> intervals and <i>k</i> corresponding values. We consider the following problem: given a collection of samples from a distribution <i>p</i>, find a <i>k</i>-histogram that (approximately) minimizes the l <sub>2</sub> distance to the distribution <i>p</i>. We give time and sample efficient algorithms for this problem.</p> <p>We further provide algorithms that distinguish distributions that have the property of being a <i>k</i>-histogram from distributions that are &#949;-far from any <i>k</i>-histogram in the l <sub>1</sub> distance and l <sub>2</sub> distance respectively.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683457" title="Get the Full Text from the ACM Digital Library">Mergeable summaries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pankaj K. Agarwal</li>
+<li class="nameList">Graham Cormode</li>
+<li class="nameList">Zengfeng Huang</li>
+<li class="nameList">Jeff Phillips</li>
+<li class="nameList">Zhewei Wei</li>
+<li class="nameList Last">Ke Yi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study the <i>mergeability</i> of data summaries. Informally speaking, mergeability requires that, given two summaries on two data sets, there is a way to merge the two summaries into a single summary on the union of the two data sets, while preserving the error and size guarantees. This property means that the summaries can be merged in a way like other algebraic operators such as sum and max, which is especially useful for computing summaries on massive distributed data. Several data summaries are trivially mergeable by construction, most notably all the <i>sketches</i> that are linear functions of the data sets. But some other fundamental ones like those for heavy hitters and quantiles, are not (known to be) mergeable. In this paper, we demonstrate that these summaries are indeed mergeable or can be made mergeable after appropriate modifications. Specifically, we show that for &#949;-approximate heavy hitters, there is a deterministic mergeable summary of size <i>O</i>(1/&#949;) for &#949;-approximate quantiles, there is a deterministic summary of size <i>O</i>(1 over &#949; log(&#949;<i>n</i>))that has a restricted form of mergeability, and a randomized one of size <i>O</i>(1 over &#949; log <sup>3/2</sup>1 over &#949;) with full mergeability. We also extend our results to geometric summaries such as &#949;-approximations and &#949;kernels.</p> <p>We also achieve two results of independent interest: (1) we provide the best known randomized streaming bound for &#949;-approximate quantiles that depends only on &#949;, of size <i>O</i>(1 over &#949; log <sup>3/2</sup>1 over &#949;, and (2) we demonstrate that the MG and the SpaceSaving summaries for heavy hitters are isomorphic.</p></div> </div>
+<h2>SESSION: Awards session</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256444" title="Full Citation in the ACM Digital Library">Session details: Awards session</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Rick Hull</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683458" title="Get the Full Text from the ACM Digital Library">The ACM PODS Alberto O. Mendelzon test-of-time award 2012</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Richard Hull</li>
+<li class="nameList">Phokion G. Kolaitis</li>
+<li class="nameList Last">Dirk Van Gucht</li>
+</ul>
+<div class="DLabstract"> </div>
+ <h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683459" title="Get the Full Text from the ACM Digital Library">Worst-case optimal join algorithms: [extended abstract]</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Hung Q. Ngo</li>
+<li class="nameList">Ely Porat</li>
+<li class="nameList">Christopher R&#233;</li>
+<li class="nameList Last">Atri Rudra</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Efficient join processing is one of the most fundamental and well-studied tasks in database research. In this work, we examine algorithms for natural join queries over many relations and describe a novel algorithm to process these queries optimally in terms of worst-case data complexity. Our result builds on recent work by Atserias, Grohe, and Marx, who gave bounds on the size of a full conjunctive query in terms of the sizes of the individual relations in the body of the query. These bounds, however, are not constructive: they rely on Shearer's entropy inequality which is information-theoretic. Thus, the previous results leave open the question of whether there exist algorithms whose running time achieve these optimal bounds. An answer to this question may be interesting to database practice, as we show in this paper that any project-join plan is polynomially slower than the optimal bound for some queries. We construct an algorithm whose running time is worst-case optimal for all natural join queries. Our result may be of independent interest, as our algorithm also yields a constructive proof of the general fractional cover bound by Atserias, Grohe, and Marx without using Shearer's inequality. In addition, we show that this bound is equivalent to a geometric inequality by Bollob&#225;s and Thomason, one of whose special cases is the famous Loomis-Whitney inequality. Hence, our results algorithmically prove these inequalities as well. Finally, we discuss how our algorithm can be used to compute a relaxed notion of joins.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683450" title="Get the Full Text from the ACM Digital Library">Deterministic regular expressions in linear time</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Benot&#238;t Groz</li>
+<li class="nameList">Sebastian Maneth</li>
+<li class="nameList Last">Slawek Staworko</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Deterministic regular expressions are widely used in XML processing. For instance, all regular expressions in DTDs and XML Schemas are required to be deterministic. In this paper we show that determinism of a regular expression <i>e</i> can be tested in linear time. The best known algorithms, based on the Glushkov automaton, require <i>O</i>(&#963;|<i>e</i>|) time, where &#963; is the number of distinct symbols in <i>e</i>. We further show that matching a word <i>w</i> against an expression <i>e</i> can be achieved in combined linear time <i>O</i>(|<i>e</i>|+|<i>w</i>|), for a wide range of deterministic regular expressions: (i) star-free (for multiple input words), (ii) bounded-occurrence, i.e., expressions in which each symbol appears a bounded number of times, and (iii) bounded plus-depth, i.e., expressions in which the nesting depth of alternating plus (union) and concatenation symbols is bounded. Our algorithms use a new structural decomposition of the parse tree of <i>e</i>. For matching arbitrary deterministic regular expressions we present an <i>O</i>(|<i>e</i>| + |<i>w</i>|log log|<i>e</i>|) time algorithm.</p></div> </div>
+<h2>TUTORIAL SESSION: Tutorial Session</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256445" title="Full Citation in the ACM Digital Library">Session details: Tutorial Session</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Phokion Kolaitis</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683451" title="Get the Full Text from the ACM Digital Library">Linguistic foundations for bidirectional transformations: invited tutorial</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Benjamin C. Pierce</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Computing is full of situations where two different structures must be "connected" in such a way that updates to each can be propagated to the other. This is a generalization of the classical <i>view update problem</i>, which has been studied for decades in the database community [11, 2, 22]; more recently, related problems have attracted considerable interest in other areas, including programming languages [42, 28, 34, 39, 4, 7, 33, 16, 1, 37, 35, 47, 49] software model transformation [43, 50, 44, 45, 12, 13, 14, 24, 25, 10, 51], user interfaces [38] and system configuration [36]. See [18, 17, 10, 30] for recent surveys.</p> <p>Among the fruits of this cross-pollination has been the development of a <i>linguistic</i> perspective on the problem. Rather than taking some view definition language as fixed (e.g., choosing some subset of relational algebra) and looking for tractable ways of "inverting" view definitions to propagate updates from view to source [9], we can directly design new <i>bidirectional programming languages</i> in which every expression defines a <i>pair</i> of functions mapping updates on one structure to updates on the other. Such structures are often called <i>lenses</i> [18].</p> <p>The foundational theory of lenses has been studied extensively [20, 47, 26, 32, 48, 40, 15, 31, 46, 41, 21, 27], and lens-based language designs have been developed in several domains, including strings [5, 19, 3, 36], trees [18, 28, 39, 35, 29], relations [6], graphs [23], and software models [43, 50, 44, 12, 13, 14, 24, 25, 8]. These languages share some common elements with modern functional languages---in particular, they come with very expressive type systems. In other respects, they are rather novel and surprising.</p> <p>This tutorial surveys recent developments in the theory of lenses and the practice of bidirectional programming languages.</p></div> </div>
+<h2>SESSION: Privacy and semantic web</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256446" title="Full Citation in the ACM Digital Library">Session details: Privacy and semantic web</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Pierre Senellart</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683452" title="Get the Full Text from the ACM Digital Library">The power of the dinur-nissim algorithm: breaking privacy of statistical and graph databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Krzysztof Choromanski</li>
+<li class="nameList Last">Tal Malkin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A few years ago, Dinur and Nissim (PODS, 2003) proposed an algorithm for breaking database privacy when statistical queries are answered with a perturbation error of magnitude <i>o</i>(&#8730;<i>n</i>) for a database of size <i>n</i>. This negative result is very strong in the sense that it completely reconstructs &#937;(<i>n</i>) data bits with an algorithm that is simple, uses random queries, and does not put any restriction on the perturbation other than its magnitude. Their algorithm works for a model where the database consists of <i>bits</i>, and the statistical queries asked by the adversary are <i>sum queries</i> for a subset of locations.</p> <p>In this paper we extend the attack to work for much more general settings in terms of the type of statistical query allowed, the database domain, and the general tradeoff between perturbation and privacy. Specifically, we prove: <ul><li>For queries of the type &#8721;<i><sub>i</sub><sup>n</sup></i>=1 &#966;<i><sub>i</sub>x<sub>i</sub>;</i> where &#966;_{i} are i.i.d. and with a finite third moment and positive variance (this includes as a special case the sum queries of Dinur-Nissim and several subsequent extensions), we prove that the quadratic relation between the perturbation and what the adversary can reconstruct holds even for smaller perturbations, and even for a larger data domain. If &#966;<i><sub>i</sub></i> is Gaussian, Poissonian, or bounded and of positive variance, this holds for arbitrary data domains and perturbation; for other &#966;<i><sub>i</sub></i> this holds as long as the domain is not too large and the perturbation is not too small.</li> <li>A positive result showing that for a sum query the negative result mentioned above is tight. Specifically, we build a distribution on bit databases and an answering algorithm such that any adversary who wants to recover a little more than the negative result above allows, will not succeed except with negligible probability.</li> <li>We consider a richer class of summation queries, focusing on databases representing graphs, where each entry is an edge, and the query is a structural function of a subgraph. We show an attack that recovers a big portion of the graph edges, as long as the graph and the function satisfy certain properties.</li></ul></p> <p>The attacking algorithms in both our negative results are straight-forward extensions of the Dinur-Nissim attack, based on asking &#966;-weighted queries or queries choosing a subgraph uniformly at random. The novelty of our work is in the analysis, showing that this simple attack is much more powerful than was previously known, as well as pointing to possible limits of this approach and putting forth new application domains such as graph problems (which may occur in social networks, Internet graphs, etc). These results may find applications not only for breaking privacy, but also in the positive direction, for recovering complicated structure information using inaccurate estimates about its substructures.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683453" title="Get the Full Text from the ACM Digital Library">A rigorous and customizable framework for privacy</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Daniel Kifer</li>
+<li class="nameList Last">Ashwin Machanavajjhala</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In this paper we introduce a new and general privacy framework called Pufferfish. The Pufferfish framework can be used to create new privacy definitions that are customized to the needs of a given application. The goal of Pufferfish is to allow experts in an application domain, who frequently do not have expertise in privacy, to develop rigorous privacy definitions for their data sharing needs. In addition to this, the Pufferfish framework can also be used to study existing privacy definitions.</p> <p>We illustrate the benefits with several applications of this privacy framework: we use it to formalize and prove the statement that differential privacy assumes independence between records, we use it to define and study the notion of <i>composition</i> in a broader context than before, we show how to apply it to protect unbounded continuous attributes and aggregate information, and we show how to use it to rigorously account for prior data releases.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683454" title="Get the Full Text from the ACM Digital Library">Static analysis and optimization of semantic web queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Andr&#233;s Letelier</li>
+<li class="nameList">Jorge P&#233;rez</li>
+<li class="nameList">Reinhard Pichler</li>
+<li class="nameList Last">Sebastian Skritek</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Static analysis is a fundamental task in query optimization. In this paper we study static analysis and optimization techniques for SPARQL, which is the standard language for querying Semantic Web data. Of particular interest for us is the optionality feature in SPARQL. It is crucial in Semantic Web data management, where data sources are inherently incomplete and the user is usually interested in partial answers to queries. This feature is one of the most complicated constructors in SPARQL and also the one that makes this language depart from classical query languages such as relational conjunctive queries. We focus on the class of well-designed SPARQL queries, which has been proposed in the literature as a fragment of the language with good properties regarding query evaluation. We first propose a tree representation for SPARQL queries, called pattern trees, which captures the class of well-designed SPARQL graph patterns and which can be considered as a query execution plan. Among other results, we propose several transformation rules for pattern trees, a simple normal form, and study equivalence and containment. We also study the enumeration and counting problems for this class of queries.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683465" title="Get the Full Text from the ACM Digital Library">The complexity of evaluating path expressions in SPARQL</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Katja Losemann</li>
+<li class="nameList Last">Wim Martens</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The World Wide Web Consortium (W3C) recently introduced property paths in SPARQL 1.1, a query language for RDF data. Property paths allow SPARQL queries to evaluate regular expressions over graph data. However, they differ from standard regular expressions in several notable aspects. For example, they have a limited form of negation, they have numerical occurrence indicators as syntactic sugar, and their semantics on graphs is defined in a non-standard manner. We formalize the W3C semantics of property paths and investigate various query evaluation problems on graphs. More specifically, let x and y be two nodes in an edge-labeled graph and r be an expression. We study the complexities of (1) deciding whether there exists a path from x to y that matches r and (2) counting how many paths from x to y match r. Our main results show that, compared to an alternative semantics of regular expressions on graphs, the complexity of (1) and (2) under W3C semantics is significantly higher. Whereas the alternative semantics remains in polynomial time for large fragments of expressions, the W3C semantics makes problems (1) and (2) intractable almost immediately.</p> <p>As a side-result, we prove that the membership problem for regular expressions with numerical occurrence indicators and negation is in polynomial time.</p></div> </div>
+<h2>SESSION: Range queries</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256447" title="Full Citation in the ACM Digital Library">Session details: Range queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Srikanta Tirthapura</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683466" title="Get the Full Text from the ACM Digital Library">Space-efficient range reporting for categorical data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Yakov Nekrich</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In the colored (or categorical) range reporting problem the set of input points is partitioned into categories and stored in a data structure; a query asks for categories of points that belong to the query range. In this paper we study two-dimensional colored range reporting in the external memory model and present I/O-efficient data structures for this problem.</p> <p>In particular, we describe data structures that answer three-sided colored reporting queries in <i>O</i>(<i>K/B</i>) I/Os and two-dimensional colored reporting queries in(log<sub>2</sub>log<i><sub>B</sub> N</i> + <i>K/B</i>) I/Os when points lie on an <i>N</i> x <i>N</i> grid, <i>K</i> is the number of reported colors, and <i>B</i> is the block size. The space usage of both data structures is close to optimal.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683467" title="Get the Full Text from the ACM Digital Library">Dynamic top-k range reporting in external memory</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Cheng Sheng</li>
+<li class="nameList Last">Yufei Tao</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In the <i>top-K range reporting</i> problem, the dataset contains <i>N</i> points in the real domain &#8476;, each of which is associated with a real-valued <i>score</i>. Given an interval <i>x</i><sub>1</sub>,<i>x</i><sub>2</sub> in &#8476; and an integer <i>K</i>&#8804; <i>N</i>, a query returns the <i>K</i> points in <i>x</i><sub>1</sub>,<i>x</i><sub>2</sub> having the smallest scores. We want to store the dataset in a structure so that queries can be answered efficiently. In the external memory model, the state of the art is a static structure that consumes <i>O</i>(<i>N/B</i>) space, answers a query in <i>O</i>(log<i><sub>B</sub> N</i> + <i>K/B</i>) time, and can be constructed in <i>O</i>(<i>N</i> + (<i>N</i> log <i>N / B</i>) log <i><sub>M/B</sub></i> (<i>N/B</i>)) time, where <i>B</i> is the size of a disk block, and <i>M</i> the size of memory. We present a fully-dynamic structure that retains the same space and query bounds, and can be updated in <i>O</i>(log<i><sup>2</sup><sub>B</sub> N</i>) amortized time per insertion and deletion. Our structure can be constructed in <i>O</i>((<i>N/B</i>) log <i><sub>M/B</sub></i> (N/B)) time.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683468" title="Get the Full Text from the ACM Digital Library">Indexability of 2D range search revisited: constant redundancy and weak indivisibility</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Yufei Tao</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In the 2D <i>orthogonal range search</i> problem, we want to preprocess a set of 2D points so that, given any axis-parallel query rectangle, we can report all the data points in the rectangle efficiently. This paper presents a lower bound on the query time that can be achieved by any external memory structure that stores a point at most <i>r</i> times, where <i>r</i> is a constant integer. Previous research has resolved the bound at two extremes: <i>r</i> = 1, and <i>r</i> being arbitrarily large. We, on the other hand, derive the explicit tradeoff at every specific <i>r</i>. A premise that lingers in existing studies is the so-called <i>indivisibility assumption</i>: all the information bits of a point are treated as an atom, i.e., they are always stored together in the same block. We partially remove this assumption by allowing a data structure to freely divide a point into individual bits stored in different blocks. The only assumption is that, those bits must be <i>retrieved</i> for reporting, as opposed to being <i>computed</i> -- we refer to this requirement as the <i>weak indivisibility assumption</i>. We also describe structures to show that our lower bound is tight up to only a small factor.</p></div> </div>
+<h2>TUTORIAL SESSION: Tutorial session 2</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256448" title="Full Citation in the ACM Digital Library">Session details: Tutorial session 2</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">David Woodruff</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683469" title="Get the Full Text from the ACM Digital Library">Approximate computation and implicit regularization for very large-scale data analysis</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Michael W. Mahoney</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Database theory and database practice are typically the domain of computer scientists who adopt what may be termed an algorithmic perspective on their data. This perspective is very different than the more statistical perspective adopted by statisticians, scientific computers, machine learners, and other who work on what may be broadly termed statistical data analysis. In this article, I will address fundamental aspects of this algorithmic-statistical disconnect, with an eye to bridging the gap between these two very different approaches. A concept that lies at the heart of this disconnect is that of statistical regularization, a notion that has to do with how robust is the output of an algorithm to the noise properties of the input data. Although it is nearly completely absent from computer science, which historically has taken the input data as given and modeled algorithms discretely, regularization in one form or another is central to nearly every application domain that applies algorithms to noisy data. By using several case studies, I will illustrate, both theoretically and empirically, the nonobvious fact that approximate computation, in and of itself, can implicitly lead to statistical regularization. This and other recent work suggests that, by exploiting in a more principled way the statistical properties implicit in worst-case algorithms, one can in many cases satisfy the bicriteria of having algorithms that are scalable to very large-scale databases and that also have good inferential or predictive properties.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683460" title="Get the Full Text from the ACM Digital Library">Max-Sum diversification, monotone submodular functions and dynamic updates</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Allan Borodin</li>
+<li class="nameList">Hyun Chul Lee</li>
+<li class="nameList Last">Yuli Ye</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Result diversification has many important applications in databases, operations research, information retrieval, and finance. In this paper, we study and extend a particular version of result diversification, known as max-sum diversification. More specifically, we consider the setting where we are given a set of elements in a metric space and a set valuation function <i>f</i> defined on every subset. For any given subset <i>S</i>, the overall objective is a linear combination of <i>f</i>(<i>S</i>) and the sum of the distances induced by <i>S</i>. The goal is to find a subset <i>S</i> satisfying some constraints that maximizes the overall objective.</p> <p>This problem is first studied by Gollapudi and Sharma in [17] for modular set functions and for sets satisfying a cardinality constraint (uniform matroids). In their paper, they give a 2-approximation algorithm by reducing to an earlier result in [20]. The first part of this paper considers an extension of the modular case to the monotone submodular case, for which the algorithm in [17] no longer applies. Interestingly, we are able to maintain the same 2-approximation using a natural, but different greedy algorithm. We then further extend the problem by considering any matroid constraint and show that a natural single swap local search algorithm provides a 2-approximation in this more general setting. This extends the Nemhauser, Wolsey and Fisher approximation result [20] for the problem of submodular function maximization subject to a matroid constraint (without the distance function component).</p> <p>The second part of the paper focuses on dynamic updates for the modular case. Suppose we have a good initial approximate solution and then there is a single weight-perturbation either on the valuation of an element or on the distance between two elements. Given that users expect some stability in the results they see, we ask how easy is it to maintain a good approximation without significantly changing the initial set. We measure this by the number of updates, where each update is a swap of a single element in the current solution with a single element outside the current solution. We show that we can maintain an approximation ratio of 3 by just a single update if the perturbation is not too large.</p></div> </div>
+<h2>SESSION: Views and data exchange</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256449" title="Full Citation in the ACM Digital Library">Session details: Views and data exchange</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jan Paredaens</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683461" title="Get the Full Text from the ACM Digital Library">Query-based data pricing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Paraschos Koutris</li>
+<li class="nameList">Prasang Upadhyaya</li>
+<li class="nameList">Magdalena Balazinska</li>
+<li class="nameList">Bill Howe</li>
+<li class="nameList Last">Dan Suciu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Data is increasingly being bought and sold online, and Web-based marketplace services have emerged to facilitate these activities. However, current mechanisms for pricing data are very simple: buyers can choose only from a set of explicit views, each with a specific price. In this paper, we propose a framework for pricing data on the Internet that, given the price of a few views, allows the price of any query to be derived automatically. We call this capability "query-based pricing." We first identify two important properties that the pricing function must satisfy, called <i>arbitrage-free</i> and <i>discount-free</i>. Then, we prove that there exists a unique function that satisfies these properties and extends the seller's explicit prices to all queries. When both the views and the query are Unions of Conjunctive Queries, the complexity of computing the price is high. To ensure tractability, we restrict the explicit prices to be defined only on selection views (which is the common practice today). We give an algorithm with polynomial time data complexity for computing the price of any chain query by reducing the problem to network flow. Furthermore, we completely characterize the class of Conjunctive Queries without self-joins that have PTIME data complexity (this class is slightly larger than chain queries), and prove that pricing all other queries is NP-complete, thus establishing a dichotomy on the complexity of the pricing problem when all views are selection queries.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683462" title="Get the Full Text from the ACM Digital Library">Local transformations and conjunctive-query equivalence</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ronald Fagin</li>
+<li class="nameList Last">Phokion G. Kolaitis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Over the past several decades, the study of conjunctive queries has occupied a central place in the theory and practice of database systems. In recent years, conjunctive queries have played a prominent role in the design and use of schema mappings for data integration and data exchange tasks. In this paper, we investigate several different aspects of conjunctive-query equivalence in the context of schema mappings and data exchange.</p> <p>In the first part of the paper, we introduce and study a notion of a local transformation between database instances that is based on conjunctive-query equivalence. We show that the chase procedure for GLAV mappings (that is, schema mappings specified by source-to-target tuple-generating dependencies) is a local transformation with respect to conjunctive-query equivalence. This means that the chase procedure preserves bounded conjunctive-query equivalence, that is, if two source instances are indistinguishable using conjunctive queries of a sufficiently large size, then the target instances obtained by chasing these two source instances are also indistinguishable using conjunctive queries of a given size. Moreover, we obtain polynomial bounds on the level of indistinguishability between source instances needed to guarantee indistinguishability between the target instances produced by the chase. The locality of the chase extends to schema mappings specified by a second-order tuple-generating dependency (SO tgd), but does not hold for schema mappings whose specification includes target constraints.</p> <p>In the second part of the paper, we take a closer look at the composition of two GLAV mappings. In particular, we break GLAV mappings into a small number of well-studied classes (including LAV and GAV), and complete the picture as to when the composition of schema mappings from these various classes can be guaranteed to be a GLAV mapping, and when they can be guaranteed to be conjunctive-query equivalent to a GLAV mapping.</p> <p>We also show that the following problem is decidable: given a schema mapping specified by an SO tgd and a GLAV mapping, are they conjunctive-query equivalent? In contrast, the following problem is known to be undecidable: given a schema mapping specified by an SO tgd and a GLAV mapping, are they logically equivalent?</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683463" title="Get the Full Text from the ACM Digital Library">A dichotomy in the complexity of deletion propagation with functional dependencies</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Benny Kimelfeld</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A classical variant of the view-update problem is deletion propagation, where tuples from the database are deleted in order to realize a desired deletion of a tuple from the view. This operation may cause a (sometimes necessary) side effect---deletion of additional tuples from the view, besides the intentionally deleted one. The goal is to propagate deletion so as to maximize the number of tuples that remain in the view. In this paper, a view is defined by a self-join-free conjunctive query (sjf-CQ) over a schema with functional dependencies. A condition is formulated on the schema and view definition at hand, and the following dichotomy in complexity is established. If the condition is met, then deletion propagation is solvable in polynomial time by an extremely simple algorithm (very similar to the one observed by Buneman et al.). If the condition is violated, then the problem is NP-hard, and it is even hard to realize an approximation ratio that is better than some constant; moreover, deciding whether there is a side-effect-free solution is NP-complete. This result generalizes a recent result by Kimelfeld et al., who ignore functional dependencies. For the class of sjf-CQs, it also generalizes a result by Cong et al., stating that deletion propagation is in polynomial time if keys are preserved by the view.</p></div> </div>
+<h2>SESSION: Indexing</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256450" title="Full Citation in the ACM Digital Library">Session details: Indexing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Yakov Nekrich</li>
+</ul>
+<div class="DLabstract"> </div>
+ <h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683464" title="Get the Full Text from the ACM Digital Library">The wavelet trie: maintaining an indexed sequence of strings in compressed space</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Roberto Grossi</li>
+<li class="nameList Last">Giuseppe Ottaviano</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>An <i>indexed sequence of strings</i> is a data structure for storing a string sequence that supports random access, searching, range counting and analytics operations, both for exact matches and prefix search. String sequences lie at the core of column-oriented databases, log processing, and other storage and query tasks. In these applications each string can appear several times and the order of the strings in the sequence is relevant. The prefix structure of the strings is relevant as well: common prefixes are sought in strings to extract interesting features from the sequence. Moreover, space-efficiency is highly desirable as it translates directly into higher performance, since more data can fit in fast memory.</p> <p>We introduce and study the problem of <i>compressed indexed sequence of strings</i>, representing indexed sequences of strings in nearly-optimal compressed space, both in the static and dynamic settings, while preserving provably good performance for the supported operations.</p> <p>We present a new data structure for this problem, the <i>Wavelet Trie</i>, which combines the classical Patricia Trie with the Wavelet Tree, a succinct data structure for storing a compressed sequence. The resulting Wavelet Trie smoothly adapts to a sequence of strings that changes over time. It improves on the state-of-the-art compressed data structures by supporting a dynamic alphabet (i.e. the set of distinct strings) and prefix queries, both crucial requirements in the aforementioned applications, and on traditional indexes by reducing space occupancy to close to the entropy of the sequence.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683475" title="Get the Full Text from the ACM Digital Library">On the optimality of clustering properties of space filling curves</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pan Xu</li>
+<li class="nameList Last">Srikanta Tirthapura</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Space filling curves have for long been used in the design of data structures for multidimensional data. A fundamental quality metric of a space filling curve is its "clustering number" with respect to a class of queries, which is the average number of contiguous segments on the space filling curve that a query region can be partitioned into. We present a characterization of the clustering number of a general class of space filling curves, as well as the first non-trivial lower bounds on the clustering number for any space filling curve. Our results also answer an open problem that was posed by Jagadish in 1997.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683476" title="Get the Full Text from the ACM Digital Library">Nearest-neighbor searching under uncertainty</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pankaj K. Agarwal</li>
+<li class="nameList">Alon Efrat</li>
+ <li class="nameList">Swaminathan Sankararaman</li>
+<li class="nameList Last">Wuzhou Zhang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Nearest-neighbor queries, which ask for returning the nearest neighbor of a query point in a set of points, are important and widely studied in many fields because of a wide range of applications. In many of these applications, such as sensor databases, location based services, face recognition, and mobile data, the location of data is imprecise. We therefore study nearest neighbor queries in a probabilistic framework in which the location of each input point and/or query point is specified as a probability density function and the goal is to return the point that minimizes the expected distance, which we refer to as the expected nearest neighbor (ENN). We present methods for computing an exact ENN or an &#949;-approximate ENN, for a given error parameter 0 < &#949; 0 < 1, under different distance functions. These methods build an index of near-linear size and answer ENN queries in polylogarithmic or sublinear time, depending on the underlying function. As far as we know, these are the first nontrivial methods for answering exact or &#949;-approximate ENN queries with provable performance guarantees.</p></div> </div>
+<h2>SESSION: Query languages</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256451" title="Full Citation in the ACM Digital Library">Session details: Query languages</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Daniel Kifer</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683477" title="Get the Full Text from the ACM Digital Library">Classification of annotation semirings over query containment</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Egor V. Kostylev</li>
+<li class="nameList">Juan L. Reutter</li>
+<li class="nameList Last">Andr&#225;s Z. Salamon</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study the problem of query containment of (unions of) conjunctive queries over annotated databases. Annotations are typically attached to tuples and represent metadata such as probability, multiplicity, comments, or provenance. It is usually assumed that annotations are drawn from a commutative semiring. Such databases pose new challenges in query optimization, since many related fundamental tasks, such as query containment, have to be reconsidered in the presence of propagation of annotations.</p> <p>We axiomatize several classes of semirings for each of which containment of conjunctive queries is equivalent to existence of a particular type of homomorphism. For each of these types we also specify all semirings for which existence of a corresponding homomorphism is a sufficient (or necessary) condition for the containment. We exploit these techniques to develop new decision procedures for containment of unions of conjunctive queries and axiomatize corresponding classes of semirings. This generalizes previous approaches and allows us to improve known complexity bounds.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683478" title="Get the Full Text from the ACM Digital Library">Efficient approximations of conjunctive queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pablo Barcel&#243;</li>
+<li class="nameList">Leonid Libkin</li>
+<li class="nameList Last">Miguel Romero</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>When finding exact answers to a query over a large database is infeasible, it is natural to approximate the query by a more efficient one that comes from a class with good bounds on the complexity of query evaluation. In this paper we study such approximations for conjunctive queries. These queries are of special importance in databases, and we have a very good understanding of the classes that admit fast query evaluation, such as acyclic, or bounded (hyper)treewidth queries.</p> <p>We define approximations of a given query <i>Q</i> as queries from one of those classes that disagree with <i>Q</i> as little as possible. We mostly concentrate on approximations that are guaranteed to return correct answers. We prove that for the above classes of tractable conjunctive queries, approximations always exist, and are at most polynomial in the size of the original query. This follows from general results we establish that relate closure properties of classes of conjunctive queries to the existence of approximations. We also show that in many cases, the size of approximations is bounded by the size of the query they approximate. We establish a number of results showing how combinatorial properties of queries affect properties of their approximations, study bounds on the number of approximations, as well as the complexity of finding and identifying approximations. We also look at approximations that return all correct answers and study their properties.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683479" title="Get the Full Text from the ACM Digital Library">On the complexity of package recommendation problems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ting Deng</li>
+<li class="nameList">Wenfei Fan</li>
+<li class="nameList Last">Floris Geerts</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Recommendation systems aim to recommend items that are likely to be of interest to users. This paper investigates several issues fundamental to such systems.</p> <p><ol><li>We model recommendation systems for packages of items. We use queries to specify multi-criteria for item selections and express compatibility constraints on items in a package, and use functions to compute the cost and usefulness of items to a user.</li> <li>We study recommendations of points of interest, to suggest top-<i>k</i> packages. We also investigate recommendations of top-<i>k</i> items, as a special case. In addition, when sensible suggestions cannot be found, we propose query relaxation recommendations to help users revise their selection criteria, or adjustment recommendations to guide vendors to modify their item collections.</li> <li>We identify several problems, to decide whether a set of packages makes a top-<i>k</i> recommendation, whether a rating bound is maximum for selecting top-<i>k</i> packages, whether we can relax the selection query to find packages that users want, and whether we can update a bounded number of items such that the users' requirements can be satisfied. We also study function problems for computing top-<i>k</i> packages, and counting problems to find how many packages meet the user's criteria.</li> <li>We establish the upper and lower bounds of these problems, all matching, for combined and data complexity. These results reveal the impact of variable sizes of packages, the presence of compatibility constraints, as well as a variety of query languages for specifying selection criteria and compatibility constraints, on the analyses of these problems.</li></ol></p></div> </div>
+<h2>SESSION: Streaming and aggregation</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3256452" title="Full Citation in the ACM Digital Library">Session details: Streaming and aggregation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Yufei Tao</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683470" title="Get the Full Text from the ACM Digital Library">Space-efficient estimation of statistics over sub-sampled streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Andrew McGregor</li>
+<li class="nameList">A. Pavan</li>
+<li class="nameList">Srikanta Tirthapura</li>
+<li class="nameList Last">David Woodruff</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In many stream monitoring situations, the data arrival rate is so high that it is not even possible to observe each element of the stream. The most common solution is to sample a small fraction of the data stream and use the sample to infer properties and estimate aggregates of the original stream. However, the quantities that need to be computed on the sampled stream are often different from the original quantities of interest and their estimation requires new algorithms. We present upper and lower bounds (often matching) for estimating frequency moments, support size, entropy, and heavy hitters of the original stream from the data observed in the sampled stream.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683471" title="Get the Full Text from the ACM Digital Library">Rectangle-efficient aggregation in spatial data streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Srikanta Tirthapura</li>
+<li class="nameList Last">David Woodruff</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the estimation of aggregates over a data stream of multidimensional axis-aligned rectangles. Rectangles are a basic primitive object in spatial databases, and efficient aggregation of rectangles is a fundamental task. The data stream model has emerged as a de facto model for processing massive databases in which the data resides in external memory or the cloud and is streamed through main memory. For a point <i>p</i>, let <i>n(p)</i> denote the sum of the weights of all rectangles in the stream that contain <i>p</i>. We give near-optimal solutions for basic problems, including (1) the <i>k</i>-th frequency moment <i>F<sub>k</sub></i> = &#8721; <sub>points <i>p</i></sub>|<i>n(p)</i>|<sup><i>k</i></sup>, (2)~the counting version of stabbing queries, which seeks an estimate of <i>n(p)</i> given <i>p</i>, and (3) identification of heavy-hitters, i.e., points <i>p</i> for which <i>n(p)</i> is large. An important special case of <i>F<sub>k</sub></i> is <i>F<sub>0</sub></i>, which corresponds to the volume of the union of the rectangles. This is a celebrated problem in computational geometry known as "Klee's measure problem", and our work yields the first solution in the streaming model for dimensions greater than one.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683472" title="Get the Full Text from the ACM Digital Library">Randomized algorithms for tracking distributed count, frequencies, and ranks</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Zengfeng Huang</li>
+<li class="nameList">Ke Yi</li>
+<li class="nameList Last">Qin Zhang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We show that randomization can lead to significant improvements for a few fundamental problems in distributed tracking. Our basis is the <i>count-tracking</i> problem, where there are <i>k</i> players, each holding a counter <i>n<sub>i</sub></i> that gets incremented over time, and the goal is to track an &#8721;-approximation of their sum <i>n</i>=&#8721;<i><sub>i</sub>n<sub>i</sub></i> continuously at all times, using minimum communication. While the deterministic communication complexity of the problem is &#952;(<i>k</i>/&#949; &#8226; log <i>N</i>), where <i>N</i> is the final value of <i>n</i> when the tracking finishes, we show that with randomization, the communication cost can be reduced to &#952;(&#8730;<i>k</i>/&#949; &#8226; log <i>N</i>). Our algorithm is simple and uses only <i>O</i>(1) space at each player, while the lower bound holds even assuming each player has infinite computing power. Then, we extend our techniques to two related distributed tracking problems: <i>frequency-tracking</i> and <i>rank-tracking</i>, and obtain similar improvements over previous deterministic algorithms. Both problems are of central importance in large data monitoring and analysis, and have been extensively studied in the literature.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683473" title="Get the Full Text from the ACM Digital Library">Continuous distributed counting for non-monotonic streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Zhenming Liu</li>
+<li class="nameList">Bozidar Radunovi&#263;</li>
+<li class="nameList Last">Milan Vojnovi&#263;</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the continual count tracking problem in a distributed environment where the input is an aggregate stream that originates from <i>k</i> distinct sites and the updates are allowed to be non-monotonic, i.e. both increments and decrements are allowed. The goal is to continually track the count within a prescribed relative accuracy &#949; at the lowest possible communication cost. Specifically, we consider an adversarial setting where the input values are selected and assigned to sites by an adversary but the order is according to a random permutation or is a random i.i.d process. The input stream of values is allowed to be non-monotonic with an unknown drift -1&#8804;&#956;=1 where the case &#956; = 1 corresponds to the special case of a monotonic stream of only non-negative updates. We show that a randomized algorithm guarantees to track the count accurately with high probability and has the expected communication cost &#213;(min&#8730;<i>k</i>/(|#956;|&#949;), &#8730;<i>k n</i>/&#949;, <i>n</i>}), for an input stream of length <i>n</i>, and establish matching lower bounds. This improves upon previously best known algorithm whose expected communication cost is &#920;(min&#8730;<i>k</i>/&#949;,<i>n</i>]) that applies only to an important but more restrictive class of monotonic input streams, and our results are substantially more positive than the communication complexity of &#937;(<i>n</i>) under fully adversarial input. We also show how our framework can also accommodate other types of random input streams, including fractional Brownian motion that has been widely used to model temporal long-range dependencies observed in many natural phenomena. Last but not least, we show how our non-monotonic counter can be applied to track the second frequency moment and to a Bayesian linear regression problem.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2022 SIGMOD Systems Award"
 permalink: "/2022-sigmod-systems-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-![](https://sigmod.org/wp-content/uploads/2022/05/Apache_Spark_logo.svg_.png)
+![](/wp-content/uploads/2022/05/Apache_Spark_logo.svg_.png)
 
 Apache Spark
 

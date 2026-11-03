@@ -1,0 +1,473 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '06- Proceedings of the twenty-fifth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '06- Proceedings of the twenty-fifth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=1142351" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683258" title="Get the Full Text from the ACM Digital Library">Principles of dataspace systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alon Halevy</li>
+<li class="nameList">Michael Franklin</li>
+<li class="nameList Last">David Maier</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">The most acute information management challenges today stem from organizations relying on a large number of diverse, interrelated data sources, but having no means of managing them in a convenient, integrated, or principled fashion. These challenges arise in enterprise and government data management, digital libraries, "smart" homes and personal information management. We have proposed <i>dataspaces</i> as a data management abstraction for these diverse applications and DataSpace Support Platforms (DSSPs) as systems that should be built to provide the required services over dataspaces. Unlike data integration systems, DSSPs do not require full semantic integration of the sources in order to provide useful services. This paper lays out specific technical challenges to realizing DSSPs and ties them to existing work in our field. We focus on query answering in DSSPs, the DSSP's ability to introspect on its content, and the use of human attention to enhance the semantic relationships in a dataspace.</div> </div>
+<h2>SESSION: PODS award papers</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683259" title="Get the Full Text from the ACM Digital Library">Two-variable logic on data trees and XML reasoning</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mikolaj Boja&#324;czyk</li>
+
+<li class="nameList">Claire David</li>
+<li class="nameList">Anca Muscholl</li>
+<li class="nameList">Thomas Schwentick</li>
+<li class="nameList Last">Luc Segoufin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Motivated by reasoning tasks in the context of XML languages, the satisfiability problem of logics on <i>data trees</i> is investigated. The nodes of a data tree have a label from a finite set and a data value from a possibly infinite set. It is shown that satisfiability for two-variable first-order logic is decidable if the tree structure can be accessed only through the <i>child</i> and the <i>next sibling</i> predicates and the access to data values is restricted to equality tests. From this main result decidability of satisfiability and containment for a data-aware fragment of XPath and of the implication problem for unary key and inclusion constraints is concluded.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683250" title="Get the Full Text from the ACM Digital Library">An adaptive packed-memory array</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael A. Bender</li>
+<li class="nameList Last">Haodong Hu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">The <i>packed-memory array (PMA)</i> is a data structure that maintains a dynamic set of <i>N</i> elements in sorted order in a &#920;<i>(N)</i>-sized array. The idea is to intersperse &#920;<i>(N)</i> empty spaces or <i>gaps</i> among the elements so that only a small number of elements need to be shifted around on an insert or delete. Because the elements are stored physically in sorted order in memory or on disk, the PMA can be used to support extremely efficient range queries. Specifically, the cost to scan <i>L</i> consecutive elements is <i>O(1+L/B)</i> memory transfers.This paper gives the first <i>adaptive packed-memory array (APMA)</i>, which automatically adjusts to the input pattern. Like the original PMA, any pattern of updates costs only <i>O</i>(log<sup>2</sup> <i>N</i>) amortized element moves and <i>O</i>(1+(log<sup>2</sup> <i>N)/B)</i> amortized memory transfers per update. However, the APMA performs even better on many common input distributions achieving only <i>O</i>(log<i>N</i>) amortized element moves and <i>O</i>(1+(log<i>N)/B)</i> amortized memory transfers. The paper analyzes <i>sequential</i> inserts, where the insertions are to the front of the APMA, <i>hammer</i> inserts, where the insertions "hammer" on one part of the APMA, <i>random</i> inserts, where the insertions are after random elements in the APMA, and <i>bulk</i> inserts, where for constant &#945;&#8712;[0,1], <i>N</i><sup>&#945;</sup> elements are inserted after random elements in the APMA. The paper then gives simulation results that are consistent with the asymptotic bounds. For sequential insertions of roughly 1.4 million elements, the APMA has four times fewer element moves per insertion than the traditional PMA and running times that are more than seven times faster.</div> </div>
+<h2>SESSION: Data exchange</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683251" title="Get the Full Text from the ACM Digital Library">The complexity of data exchange</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Phokion G. Kolaitis</li>
+
+<li class="nameList">Jonathan Panttaja</li>
+<li class="nameList Last">Wang-Chiew Tan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Data exchange is the problem of transforming data structured under a source schema into data structured under a target schema in such a way that all constraints of a schema mapping are satisfied. At the heart of data exchange, lies a basic decision problem, called the existence-of-solutions problem: given a source instance, is there a target instance that satisfies the constraints of the schema mapping at hand? Earlier work showed that for schema mappings specified by embedded implicational dependencies, this problem is solvable in polynomial time, assuming that (1) the schema mapping is kept fixed and (2) the constraints of the schema mapping satisfy a certain structural condition, called weak acyclicity.We investigate the effect of these assumptions on the complexity of the existence-of-solutions problem, and show that each one is indispensable in deriving polynomial-time algorithms for this problem. Specifically, using machinery from universal algebra, we show that if the weak acyclicity assumption is relaxed even in a minimal way, then the existence-of-solutions problem becomes undecidable. We also show that if, in addition to the source instance, the schema mapping is part of the input, then the existence-of-solutions problem becomes EXPTIME-complete. Thus, there is a provable exponential gap between the data complexity and the combined complexity of data exchange. Finally, we study restricted classes of schema mappings and develop a comprehensive picture for the combined complexity of the existence-of-solutions problem for these restrictions. In particular, depending on the restriction considered, the combined complexity of this problem turns out to be either EXPTIME-complete or coNP-complete.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683252" title="Get the Full Text from the ACM Digital Library">Data exchange: computing cores in polynomial time</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Georg Gottlob</li>
+<li class="nameList Last">Alan Nash</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Data exchange deals with inserting data from one database into another database having a different schema. We study and solve a central computational problem of data exchange, namely, computing the core of a universal solution to a data exchange problem. Fagin, Kolaitis, and Popa [9], have shown that among the universal solutions of a solvable data exchange problem, there exists a most compact one (up to isomorphism), "the core" (of any universal solution), and have convincingly argued that this core should be the solution of choice. They stated as an important open problem whether the core of a universal solution can be computed in polynomial time in the general setting where the source-to-target constraints are arbitrary tuple generating dependencies (TGDs) and the target constraints consist of equation generating dependencies (EGDs) and weakly-acyclic TGDs. In this paper we solve this problem by developing new efficient methods for computing the core of a universal solution. This positive result shows that the core approach of Fagin, Kolaitis, and Popa is feasible and applicable in a very general setting and thus provides a further momentum to the use of cores in data exchange.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683253" title="Get the Full Text from the ACM Digital Library">Inverting schema mappings</a>
+
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Ronald Fagin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">A schema mapping is a specification that describes how data structured under one schema (the source schema) is to be transformed into data structured under a different schema (the target schema). Although the notion of an inverse of a schema mapping is important, the exact definition of an inverse mapping is somewhat elusive. This is because a schema mapping may associate many target instances with each source instance, and many source instances with each target instance. Based on the notion that the composition of a mapping and its inverse is the identity, we give a formal definition for what it means for a schema mapping <i>M</i>&#8242; to be an inverse of a schema mapping <i>M</i> for a class <i>S</i> of source instances. We call such an inverse an <i>S-inverse</i>. A particular case of interest arises when <i>S</i> is the class of all instances, in which case an <i>S</i>-inverse is a global inverse. We focus on the important and practical case of schema mappings defined by source-to-target tuple-generating dependencies, and uncover a rich theory. When <i>S</i> is defined by a set of dependencies with a finite chase, we show how to construct an <i>S</i>-inverse when one exists. In particular, we show how to construct a global inverse when one exists. Given <i>M</i> and <i>M</i>&#8242;, we show how to define the largest class <i>S</i> such that <i>M</i>&#8242; is an <i>S</i>-inverse of <i>M</i>.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683254" title="Get the Full Text from the ACM Digital Library">Data exchange and incomplete information</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Leonid Libkin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Data exchange is the problem of finding an instance of a target schema, given an instance of a source schema and a specification of the relationship between the source and the target, and answering queries over target instances in a way that is semantically consistent with the information in the source. Theoretical foundations of data exchange have been actively explored recently. It was also noticed that the standard certain answers semantics may behave in very odd ways.In this paper I explain that this behavior is due to the fact that the presence of incomplete information in target instances has been ignored; in particular, proper query evaluation techniques for databases with nulls have not been used, and the distinction between closed and open world semantics has not been made. I present a concept of target solutions based on the closed world assumption, and show that the space of all solutions has two extreme points: the canonical universal solution and the core, well studied in data exchange. I show how to define semantics of query answering taking into account incomplete information, and show that the well-known anomalies go away with the new semantics. The paper also contains results on the complexity of query answering, upper approximations to queries (maybe-answers), and various extensions.</div> </div>
+<h2>SESSION: Analysis of queries and workflows</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683265" title="Get the Full Text from the ACM Digital Library">Equivalence of queries combining set and bag-set semantics</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Sara Cohen</li>
+
+</ul>
+<div class="DLabstract"><div style="display:inline">The query equivalence problem has been studied extensively for set-semantics and, more recently, for bag-set semantics. However, SQL queries often combine set and bag-set semantics. For example, an SQL query that returns a multiset of elements may call a subquery or view that returns a set of elements. As another example, in SQL one can compute a multiset-union of queries, each of which returns a set of answers. This paper presents <i>combined semantics</i>, which formally models query evaluation combining set and bag-set semantics. The equivalence problem for queries evaluated under combined semantics is studied. A sufficient condition for equivalence is presented. For several important common classes of queries necessary and sufficient conditions for equivalence are presented.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683266" title="Get the Full Text from the ACM Digital Library">The containment problem for &lt;bi&gt;Real&lt;/bi&gt; conjunctive queries with inequalities</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">T. S. Jayram</li>
+<li class="nameList">Phokion G. Kolaitis</li>
+<li class="nameList Last">Erik Vee</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Query containment is a fundamental algorithmic problem in database query processing and optimization. Under set semantics, the query-containment problem for conjunctive queries has long been known to be NP-complete. In real database systems, however, queries are usually evaluated under bag semantics, not set semantics. In particular, SQL queries are evaluated under bag semantics and return multisets as answers, since duplicates are not eliminated unless explicitly requested. The exact complexity of the query-containment problem for conjunctive queries under bag semantics has been an open problem for more than a decade; in fact, it is not even known whether this problem is decidable.Here, we investigate, under bag semantics, the query-containment problem for conjunctive queries with inequalities. It has been previously shown that, under set semantics, this problem is complete for the second level of the polynomial hierarchy. Our main result asserts that, under bag semantics, the query-containment problem for conjunctive queries with inequalities is undecidable. Actually, we establish the stronger result that this problem is undecidable even if the following two restrictions hold at the same time: (1) the queries use just a single binary relation; and (2) the total number of inequalities is bounded by a certain fixed value. Moreover, the same undecidability results hold under bag-set semantics.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683267" title="Get the Full Text from the ACM Digital Library">Verification of communicating data-driven web services</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alin Deutsch</li>
+<li class="nameList">Liying Sui</li>
+<li class="nameList">Victor Vianu</li>
+<li class="nameList Last">Dayou Zhou</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We study the verification of compositions of Web Service peers which interact asynchronously by exchanging messages. Each peer has access to a local database and reacts to user input and incoming messages by performing various actions and sending messages. The reaction is described by queries over the database, internal state, user input and received messages. We consider two formalisms for specification of correctness properties of compositions, namely Linear Temporal First-Order Logic and Conversation Protocols. For both formalisms, we map the boundaries of verification decidability, showing that they include expressive classes of compositions and properties. We also address modular verification, in which the correctness of a composition is predicated on the properties of its environment.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683268" title="Get the Full Text from the ACM Digital Library">Analyzing workflows implied by instance-dependent access rules</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Toon Calders</li>
+<li class="nameList">Stijn Dekeyser</li>
+<li class="nameList">Jan Hidders</li>
+<li class="nameList Last">Jan Paredaens</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Recently proposed form-based web information systems liberate the capture and reuse of data in organizations by substituting the development of technical implementations of electronic forms for the conceptual modelling of forms' tree-structured schemas and their data access rules. Significantly, these instance-dependent rules also imply a workflow process associated to a form, eliminating the need for a costly workflow design phase. Instead, the workflows thus created in an ad hoc manner by unsophisticated end-users can be automatically analyzed, and incorrect forms rejected.This paper examines fundamental correctness properties of workflows that are implied by instance-dependent access rules. Specifically, we study the decidability of the form completability property and the <i>semi-soundness</i> of a form's workflow. These problems are affected by a choice of constraints on the path language used to express access rules and completion formulas, and on the depth of the form's schema tree. Hence, we study these problems by examining them in the context of several different fragments determined by such constraints.</div> </div>
+<h2>TUTORIAL SESSION: Invited tutorial 1</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683269" title="Get the Full Text from the ACM Digital Library">From statistical knowledge bases to degrees of belief: an overview</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Joseph Y. Halpern</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">An intelligent agent will often be uncertain about various properties of its environment, and when acting in that environment it will frequently need to quantify its uncertainty. For example, if the agent wishes to employ the expected-utility paradigm of decision theory to guide its actions, she will need to assign degrees of belief (subjective probabilities) to various assertions. Of course, these degrees of belief should not be arbitrary, but rather should be based on the information available to the agent. This paper provides a brief overview of one approach for inducing degrees of belief from very rich knowledge bases that can include information about particular individuals, statistical correlations, physical laws, and default rules. The approach is called the <i>random-worlds</i> method. The method is based on the <i>principle of indifference</i>: it treats all of the worlds the agent considers possible as being equally likely. It is able to integrate qualitative default reasoning with quantitative probabilistic reasoning by providing a language in which both types of information can be easily expressed. A number of desiderata that arise in direct inference (reasoning from statistical information to conclusions about individuals) and default reasoning follow directly from the semantics of random worlds. For example, random worlds captures important patterns of reasoning such as specificity, inheritance, indifference to irrelevant information, and default assumptions of independence. Furthermore, the expressive power of the language used and the intuitive semantics of random worlds allow the method to deal with problems that are beyond the scope of many other non-deductive reasoning systems. The relevance of the random-worlds method to database systems is also discussed.</div> </div>
+<h2>SESSION: Database design</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683260" title="Get the Full Text from the ACM Digital Library">On redundancy vs dependency preservation in normalization: an information-theoretic study of 3NF</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Solmaz Kolahi</li>
+<li class="nameList Last">Leonid Libkin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">A recently introduced information-theoretic approach to analyzing redundancies in database design was used to justify normal forms like BCNF that completely eliminate redundancies. The main notion is that of an information content of each datum in an instance (which is a number in [0,1]): the closer to 1, the less redundancy it carries. In practice, however, one usually settles for 3NF which, unlike BCNF, may not eliminate all redundancies but always guarantees dependency preservation.In this paper we use the information-theoretic approach to prove that 3NF is the best normal form if one needs to achieve dependency preservation. For each dependency-preserving normal form, we define the <i>price of dependency preservation</i> as an information-theoretic measure of redundancy that gets introduced to compensate for dependency preservation. This is a number in the [0,1] range: the smaller it is, the less redundancy a normal form guarantees. We prove that for every dependency-preserving normal form, the price of dependency preservation is at least 1/2, and it is precisely 1/2 for 3NF. Hence, 3NF has the least amount of redundancy among all dependency-preserving normal forms. We also show that, information-theoretically, unnormalized schemas have at least twice the amount of redundancy than schemas in 3NF.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683261" title="Get the Full Text from the ACM Digital Library">Tractable database design through bounded treewidth</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Georg Gottlob</li>
+<li class="nameList">Reinhard Pichler</li>
+<li class="nameList Last">Fang Wei</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Given that most elementary problems in database design are NP-hard, the currently used database design algorithms produce suboptimal results. For example, the current 3NF decomposition algorithms may continue further decomposing a relation even though it is already in 3NF. In this paper we study database design problems whose sets of functional dependencies have bounded treewidth. For such sets, which frequently occur in practice, we develop polynomial-time and highly parallelizable algorithms for a number of central database design problems such as: &#8226; primality of an attribute &#8226; 3NF-test for a relational schema or subschema &#8226; BCNF-test for a subschema.For establishing these results, we propose a new characterization for keys and for the primality of a single attribute.In order to define the treewidth of a relational schema, we shall associate a hypergraph with it. Note that there are two main possibilities of defining the treewidth of a hypergraph <i>H</i>: One is via the primal graph of <i>H</i> and one is via the incidence graph of <i>H</i>. Our algorithms apply to the case where the primal graph is considered. However, we also show that the tractability results still hold when the incidence graph is considered instead.</div> </div>
+<h2>SESSION: Popularity and privacy</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683262" title="Get the Full Text from the ACM Digital Library">Evolution of page popularity under random web graph models</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rajeev Motwani</li>
+<li class="nameList Last">Ying Xu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">The link structure of the Web can be viewed as a massive graph. The preferential attachment model and its variants are well-known random graph models that help explain the evolution of the web graph. However, those models assign more links to older pages without reference to the quality of web pages, which does not capture the real-world evolution of the web graph and renders the models inappropriate for studying the popularity evolution of new pages.We extend the preferential attachment model with page quality, where the probability of a page getting new links depends not only on its current degree but also on its quality. We study the distribution of degrees among different quality values, and prove that under discrete quality distributions, the degree sequence still follows a power law distribution. Then we use the model to study the evolution of page popularity. We show that for pages with the same quality, the older pages are more popular; if a younger page is better than an older page, then eventually the younger-and-better page will become more popular. We also use the model to study a randomized ranking scheme proposed earlier [18] and show that it accelerates popularity evolution of new pages.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683263" title="Get the Full Text from the ACM Digital Library">Privacy via pseudorandom sketches</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Nina Mishra</li>
+<li class="nameList Last">Mark Sandler</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Imagine a collection of individuals who each possess private data that they do not wish to share with a third party. This paper considers how individuals may represent and publish their own data so as to simultaneously preserve their privacy and to ensure that it is possible to extract large-scale statistical behavior from the original unperturbed data. Existing techniques for perturbing data are limited by the number of users required to obtain approximate answers to queries, the richness of preserved statistical behavior, the privacy guarantees given and/or the amount of data that each individual must publish.This paper introduces a new technique to describe parts of an individual's data that is based on pseudorandom sketches. The sketches guarantee that each individual's privacy is provably maintained assuming one of the strongest definitions of privacy that we are aware of: given unlimited computational power and arbitrary partial knowledge, the attacker can not learn any additional private information from the published sketches. However, sketches from multiple users that describe a subset of attributes can be used to estimate the fraction of users that satisfy any conjunction over the full set of negated or unnegated attributes provided that there are enough users. We show that the error of approximation is independent of the number of attributes involved and only depends on the number of users available. An additional benefit is that the size of the sketch is minuscule: [log log <i>O(M)</i>] bits, where <i>M</i> is the number of users. Finally, we show how sketches can be combined to answer more complex queries. An interesting property of our approach is that despite using cryptographic primitives, our privacy guarantees do not rely on any unproven cryptographic conjectures.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683264" title="Get the Full Text from the ACM Digital Library">Achieving anonymity via clustering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gagan Aggarwal</li>
+<li class="nameList">Tom&#225;s Feder</li>
+<li class="nameList">Krishnaram Kenthapadi</li>
+<li class="nameList">Samir Khuller</li>
+<li class="nameList">Rina Panigrahy</li>
+<li class="nameList">Dilys Thomas</li>
+<li class="nameList Last">An Zhu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Publishing data for analysis from a table containing personal records, while maintaining individual privacy, is a problem of increasing importance today. The traditional approach of de-identifying records is to remove identifying fields such as social security number, name etc. However, recent research has shown that a large fraction of the US population can be identified using non-key attributes (called quasi-identifiers) such as date of birth, gender, and zip code [15]. Sweeney [16] proposed the <i>k</i>-anonymity model for privacy where non-key attributes that leak information are suppressed or generalized so that, for every record in the modified table, there are at least <i>k</i>&#8722;1 other records having exactly the same values for quasi-identifiers. We propose a new method for anonymizing data records, where quasi-identifiers of data records are first clustered and then cluster centers are published. To ensure privacy of the data records, we impose the constraint that each cluster must contain no fewer than a pre-specified number of data records. This technique is more general since we have a much larger choice for cluster centers than <i>k</i>-Anonymity. In many cases, it lets us release a lot more information without compromising privacy. We also provide constant-factor approximation algorithms to come up with such a clustering. This is the first set of algorithms for the anonymization problem where the performance is independent of the anonymity parameter <i>k</i>. We further observe that a few outlier points can significantly increase the cost of anonymization. Hence, we extend our algorithms to allow an &#949; fraction of points to remain unclustered, i.e., deleted from the anonymized publication. Thus, by not releasing a small fraction of the database records, we can ensure that the data published for analysis has less distortion and hence is more useful. Our approximation algorithms for new clustering objectives are of independent interest and could be applicable in other clustering scenarios as well.</div> </div>
+<h3>
+
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683275" title="Get the Full Text from the ACM Digital Library">On the efficiency of checking perfect privacy</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ashwin Machanavajjhala</li>
+<li class="nameList Last">Johannes Gehrke</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Privacy-preserving query-answering systems answer queries while provably guaranteeing that sensitive information is kept secret. One very attractive notion of privacy is perfect privacy&#8212;a secret is expressed through a query <i>Q<sub>S</sub></i>, and a query <i>Q<sub>V</sub></i> is answered only if it discloses no information about the secret query <i>Q<sub>S</sub></i>. However, if <i>Q<sub>S</sub></i> and <i>Q<sub>V</sub></i> are arbitrary conjunctive queries, the problem of checking whether <i>Q<sub>V</sub></i> discloses any information about <i>Q<sub>S</sub></i> is known to be &#928;<i><sup>p</sup></i><sub>2</sub>-complete.In this paper, we show that for large interesting subclasses of conjunctive queries enforcing perfect privacy is tractable. Instead of giving different arguments for query classes of varying complexity, we make a connection between perfect privacy and the problem of checking query containment. We then use this connection to relate the complexity of enforcing perfect privacy to the complexity of query containment.</div> </div>
+<h2>SESSION: Query optimization</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683276" title="Get the Full Text from the ACM Digital Library">Finding and approximating top-k answers in keyword proximity search</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Benny Kimelfeld</li>
+<li class="nameList Last">Yehoshua Sagiv</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Various approaches for keyword proximity search have been implemented in relational databases, XML and the Web. Yet, in all of them, an answer is a <i>Q</i>-fragment, namely, a subtree <i>T</i> of the given data graph <i>G</i>, such that <i>T</i> contains all the keywords of the query <i>Q</i> and has no proper subtree with this property. The rank of an answer is inversely proportional to its weight. Three problems are of interest: finding an optimal (i.e., top-ranked) answer, computing the top-<i>k</i> answers and enumerating all the answers in ranked order. It is shown that, under data complexity, an efficient algorithm for solving the first problem is sufficient for solving the other two problems with polynomial delay. Similarly, an efficient algorithm for finding a &#952;-approximation of the optimal answer suffices for carrying out the following two tasks with polynomial delay, under query-and-data complexity. First, enumerating in a (&#952;+1)-approximate order. Second, computing a (&#952;+1)-approximation of the top-<i>k</i> answers. As a corollary, this paper gives the first efficient algorithms, under data complexity, for enumerating all the answers in ranked order and for computing the top-<i>k</i> answers. It also gives the first efficient algorithms, under query-and-data complexity, for enumerating in a provably approximate order and for computing an approximation of the top-<i>k</i> answers.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683277" title="Get the Full Text from the ACM Digital Library">Efficiently ordering subgoals with access constraints</a>
+
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Guizhen Yang</li>
+<li class="nameList">Michael Kifer</li>
+<li class="nameList Last">Vinay K. Chaudhri</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">In this paper, we study the problem of ordering subgoals under binding pattern restrictions for queries posed as nonrecursive Datalog programs. We prove that despite their limited expressive power, the problem is computationally hard&#8212;PSPACE-complete in the size of the nonrecursive Datalog program even for fairly restricted cases. As a practical solution to this problem, we develop an asymptotically optimal algorithm that runs in time linear in the size of the query plan. We also study extensions of our algorithm that efficiently solve other query planning problems under binding pattern restrictions. These problems include conjunctive queries with nested grouping constraints, distributed conjunctive queries, and first-order queries.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683278" title="Get the Full Text from the ACM Digital Library">Flow algorithms for two pipelined filter ordering problems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Anne Condon</li>
+<li class="nameList">Amol Deshpande</li>
+<li class="nameList">Lisa Hellerstein</li>
+<li class="nameList Last">Ning Wu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Pipelined filter ordering is a central problem in database query optimization, and has received renewed attention recently in the context of environments such as the web, continuous high-speed data streams and sensor networks. We present algorithms for two natural extensions of the classical pipelined filter ordering problem: (1) a <i>distributional type</i> problem where the filters run in parallel and the goal is to maximize throughput, and (2) an <i>adversarial type</i> problem where the goal is to minimize the expected value of <i>multiplicative regret</i>. We show that both problems can be solved using similar flow algorithms, which find an optimal ordering scheme in time <i>O(n</i><sup>2</sup>), where <i>n</i> is the number of filters. Our algorithm for (1) improves on an earlier <i>O(n</i><sup>3</sup> log <i>n</i>) algorithm of Kodialam.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683279" title="Get the Full Text from the ACM Digital Library">Asking the right questions: model-driven optimization using probes</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ashish Goel</li>
+<li class="nameList">Sudipto Guha</li>
+<li class="nameList Last">Kamesh Munagala</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">In several database applications, parameters like selectivities and load are known only with some associated uncertainty, which is specified, or modeled, as a distribution over values. The performance of query optimizers and monitoring schemes can be improved by spending resources like time or bandwidth in <i>observing</i> or <i>resolving</i> these parameters, so that better query plans can be generated. In a resource-constrained situation, deciding which parameters to observe in order to best optimize the expected quality of the plan generated (or in general, optimize the expected value of a certain objective function) itself becomes an interesting optimization problem.We present a framework for studying such problems, and present several scenarios arising in anomaly detection in complex systems, monitoring extreme values in sensor networks, load shedding in data stream systems, and estimating rates in wireless channels and minimum latency routes in networks, which can be modeled in this framework with the appropriate objective functions.Even for several simple objective functions, we show the problems are N<sc>p</sc>-H<sc>ard</sc>. We present greedy algorithms with good performance bounds. The proof of the performance bounds are via novel sub-modularity arguments.</div> </div>
+<h2>TUTORIAL SESSION: Invited tutorial 2</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683270" title="Get the Full Text from the ACM Digital Library">Processing queries on tree-structured data efficiently</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Christoph Koch</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">This is a survey of algorithms, complexity results, and general solution techniques for efficiently processing queries on tree-structured data. I focus on query languages that compute nodes or tuples of nodes&#8212;conjunctive queries, first-order queries, datalog, and XPath. I also point out a number of connections among previous results that have not been observed before.</div> </div>
+<h2>SESSION: Query processing</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683271" title="Get the Full Text from the ACM Digital Library">Scalable computation of acyclic joins</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Anna Pagh</li>
+<li class="nameList Last">Rasmus Pagh</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">The <i>join</i> operation of relational algebra is a cornerstone of relational database systems. Computing the join of several relations is NP-hard in general, whereas special (and typical) cases are tractable. This paper considers joins having an <i>acyclic join graph</i>, for which current methods initially apply a <i>full reducer</i> to efficiently eliminate tuples that will not contribute to the result of the join. From a worst-case perspective, previous algorithms for computing an acyclic join of <i>k</i> fully reduced relations, occupying a total of <i>n&#8805;k</i> blocks on disk, use &#937;<i>((n+z)k)</i> I/Os, where <i>z</i> is the size of the join result in blocks.In this paper we show how to compute the join in a time bound that is within a constant factor of the cost of running a full reducer plus sorting the output. For a broad class of acyclic join graphs this is <i>O</i>(sort<i>(n+z)</i>) I/Os, removing the dependence on <i>k</i> from previous bounds. Traditional methods decompose the join into a number of binary joins, which are then carried out one by one. Departing from this approach, our technique is based on computing the size of certain subsets of the result, and using these sizes to compute the location(s) of each data item in the result.Finally, as an initial study of cyclic joins in the I/O model, we show how to compute a join whose join graph is a 3-cycle, in <i>O(n</i><sup>2</sup>/<i>m</i>+sort<i>(n+z)</i>) I/Os, where <i>m</i> is the number of blocks in internal memory.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683272" title="Get the Full Text from the ACM Digital Library">Cache-oblivious string B-trees</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael A. Bender</li>
+<li class="nameList">Martin Farach-Colton</li>
+<li class="nameList Last">Bradley C. Kuszmaul</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">B-trees are the data structure of choice for maintaining searchable data on disk. However, B-trees perform suboptimally <ul><li>when keys are long or of variable length,</li><li>when keys are compressed, even when using <i>front compression</i>, the standard B-tree compression scheme,</li><li>for range queries, and</li><li>with respect to memory effects such as disk prefetching.</li></ul>This paper presents a <i>cache-oblivious string B-tree</i> (COSB-tree) data structure that is efficient in all these ways: <ul><li>The COSB-tree searches asymptotically optimally and inserts and deletes nearly optimally.</li><li>It maintains an index whose size is proportional to the front-compressed size of the dictionary. Furthermore, unlike standard front-compressed strings, keys can be decompressed in a memory-efficient manner.</li><li>It performs range queries with no extra disk seeks; in contrast, B-trees incur disk seeks when skipping from leaf block to leaf block.</li><li>It utilizes all levels of a memory hierarchy efficiently and makes good use of disk locality by using cache-oblivious layout strategies.</li></ul></div> </div>
+<h2>SESSION: Stream algorithms and complexity</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683273" title="Get the Full Text from the ACM Digital Library">Randomized computations on large data sets: tight lower bounds</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Martin Grohe</li>
+<li class="nameList">Andr&#233; Hernich</li>
+<li class="nameList Last">Nicole Schweikardt</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We study the randomized version of a computation model (introduced in [9, 10]) that restricts random access to external memory and internal memory space. Essentially, this model can be viewed as a powerful version of a data stream model that puts no cost on sequential scans of external memory (as other models for data streams) and, in addition, (like other external memory models, but unlike streaming models), admits several large external memory devices that can be read and written to in parallel.We obtain tight lower bounds for the decision problems set equality, multiset equality, and checksort. More precisely, we show that any randomized one-sided-error bounded Monte Carlo algorithm for these problems must perform &#937;(log<i>N</i>) random accesses to external memory devices, provided that the internal memory size is at most <i>O</i>(<sup>4</sup>&#8730;<i>N</i>/log<i>N</i>), where <i>N</i> denotes the size of the input data.From the lower bound on the set equality problem we can infer lower bounds on the worst case data complexity of query evaluation for the languages XQuery, XPath, and relational algebra on streaming data. More precisely, we show that there exist queries in XQuery, XPath, and relational algebra, such that any (randomized) Las Vegas algorithm that evaluates these queries must perform &#937;(log<i>N</i>) random accesses to external memory devices, provided that the internal memory size is at most <i>O</i>(<sup>4</sup>&#8730;<i>N</i>/log<i>N</i>).</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683274" title="Get the Full Text from the ACM Digital Library">Counting triangles in data streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Luciana S. Buriol</li>
+<li class="nameList">Gereon Frahling</li>
+<li class="nameList">Stefano Leonardi</li>
+<li class="nameList">Alberto Marchetti-Spaccamela</li>
+<li class="nameList Last">Christian Sohler</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We present two <i>space bounded</i> random sampling algorithms that compute an approximation of the number of triangles in an undirected graph given as a stream of edges. Our first algorithm does not make any assumptions on the order of edges in the stream. It uses space that is inversely related to the ratio between the number of triangles and the number of triples with at least one edge in the induced subgraph, and constant expected update time per edge. Our second algorithm is designed for incidence streams (all edges incident to the same vertex appear consecutively). It uses space that is inversely related to the ratio between the number of triangles and length 2 paths in the graph and expected update time <i>O</i>(log|<i>V</i>|&#8901;(1+<i>s</i>&#8901;|<i>V</i>|/|<i>E</i>|)), where <i>s</i> is the space requirement of the algorithm. These results significantly improve over previous work [20, 8]. Since the space complexity depends only on the structure of the input graph and not on the number of nodes, our algorithms scale very well with increasing graph size and so they provide a basic tool to analyze the structure of large graphs. They have many applications, for example, in the discovery of Web communities, the computation of clustering and transitivity coefficient, and discovery of frequent patterns in large graphs.We have implemented both algorithms and evaluated their performance on networks from different application domains. The sizes of the considered graphs varied from about 8,000 nodes and 40,000 edges to 135 million nodes and more than 1 billion edges. For both algorithms we run experiments with parameter <i>s</i>=1,000, 10,000, 100,000, 1,000,000 to evaluate running time and approximation guarantee. Both algorithms appear to be time efficient for these sample sizes. The approximation quality of the first algorithm was varying significantly and even for <i>s</i>=1,000,000 we had more than 10% deviation for more than half of the instances. The second algorithm performed much better and even for <i>s</i>=10,000 we had an average deviation of less than 6% (taken over all but the largest instance for which we could not compute the number of triangles exactly).</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683285" title="Get the Full Text from the ACM Digital Library">Space- and time-efficient deterministic algorithms for biased quantiles over data streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Graham Cormode</li>
+<li class="nameList">Flip Korn</li>
+<li class="nameList">S. Muthukrishnan</li>
+<li class="nameList Last">Divesh Srivastava</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Skew is prevalent in data streams, and should be taken into account by algorithms that analyze the data. The problem of finding "biased quantiles"&#8212;that is, approximate quantiles which must be more accurate for more extreme values&#8212;is a framework for summarizing such skewed data on data streams. We present the first deterministic algorithms for answering biased quantiles queries accurately with small&#8212;sublinear in the input size&#8212;space and time bounds in one pass. The space bound is near-optimal, and the amortized update cost is close to constant, making it practical for handling high speed network data streams. We not only demonstrate theoretical properties of the algorithm, but also show it uses less space than existing methods in many practical settings, and is fast to maintain.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683286" title="Get the Full Text from the ACM Digital Library">Approximate quantiles and the order of the stream</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sudipto Guha</li>
+<li class="nameList Last">Andrew McGregor</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Recently, there has been an increased focus on modeling uncertainty by distributions. Suppose we wish to compute a function of a stream whose elements are samples drawn independently from some distribution. The distribution is unknown, but the order in which the samples are presented to us will not be completely adversarial. In this paper, we investigate the importance of the ordering of a data stream, without making any assumptions about the actual distribution of the data. Using quantiles as an example application, we show that we can design provably better algorithms, and settle several open questions on the impact of order on streams. With the recent impetus in the investigation of models for sensor networks, we believe that our approach will allow the construction of novel and significantly improved algorithms.</div> </div>
+<h2>SESSION: Frequency counting and aggregation</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683287" title="Get the Full Text from the ACM Digital Library">Deterministic k-set structure</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sumit Ganguly</li>
+<li class="nameList Last">Anirban Majumder</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">A <i>k</i>-set structure over data streams is a bounded-space data structure that supports stream insertion and deletion operations and returns the set of (item, frequency) pairs in the stream, provided, the number of distinct items in the stream does not exceed <i>k</i>; and returns <sc>nil</sc> otherwise. This is a fundamental problem with applications in data streaming [14], data reconciliation in distributed systems [12] and mobile computing [16], etc. In this paper, we present a deterministic algorithm for the <i>k</i>-set problem that matches the space lower bound to within a logarithmic factor.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683288" title="Get the Full Text from the ACM Digital Library">A simpler and more efficient deterministic scheme for finding frequent items over sliding windows</a>
+</h3>
+<ul class="DLauthors">
+
+<li class="nameList First">L. K. Lee</li>
+<li class="nameList Last">H. F. Ting</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">In this paper, we give a simple scheme for identifying &#949;-approximate frequent items over a sliding window of size <i>n</i>. Our scheme is deterministic and does not make any assumption on the distribution of the item frequencies. It supports <i>O</i>(1/&#949;) update and query time, and uses <i>O</i>(1/&#949;) space. It is very simple; its main data structures are just a few short queues whose entries store the position of some items in the sliding window. We also extend our scheme for variable-size window. This extended scheme uses <i>O</i>(1/&#949; log(&#949;<i>n</i>)) space.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683289" title="Get the Full Text from the ACM Digital Library">Finding global icebergs over distributed data sets</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Qi (George) Zhao</li>
+<li class="nameList">Mitsunori Ogihara</li>
+<li class="nameList">Haixun Wang</li>
+<li class="nameList Last">Jun (Jim) Xu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Finding icebergs&#8211;items whose frequency of occurrence is above a certain threshold&#8211;is an important problem with a wide range of applications. Most of the existing work focuses on iceberg queries at a single node. However, in many real-life applications, data sets are distributed across a large number of nodes. Two na&#239;ve approaches might be considered. In the first, each node ships its entire data set to a central server, and the central server uses single-node algorithms to find icebergs. But it may incur prohibitive communication overhead. In the second, each node submits local icebergs, and the central server combines local icebergs to find global icebergs. But it may fail because in many important applications, globally frequent items may not be frequent at any node. In this work, we propose two novel schemes that provide accurate and efficient solutions to this problem: a sampling-based scheme and a counting-sketch-based scheme. In particular, the latter scheme incurs a communication cost at least an order of magnitude smaller than the na&#239;ve scheme of shipping all data, yet is able to achieve very high accuracy. Through rigorous theoretical and experimental analysis we establish the statistical properties of our proposed algorithms, including their accuracy bounds.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683280" title="Get the Full Text from the ACM Digital Library">Efficient gossip-based aggregate computation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Srinivas Kashyap</li>
+<li class="nameList">Supratim Deb</li>
+<li class="nameList">K. V. M. Naidu</li>
+<li class="nameList">Rajeev Rastogi</li>
+<li class="nameList Last">Anand Srinivasan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Recently, there has been a growing interest in gossip-based protocols that employ randomized communication to ensure robust information dissemination. In this paper, we present a novel gossip-based scheme using which all the nodes in an <i>n</i>-node overlay network can compute the common aggregates of MIN, MAX, SUM, AVERAGE, and RANK of their values using <i>O(n</i> log log <i>n</i>) messages within <i>O</i>(log <i>n</i> log log <i>n</i>) rounds of communication. To the best of our knowledge, ours is the first result that shows how to compute these aggregates with high probability using only <i>O(n</i> log log <i>n</i>) messages. In contrast, the best known gossip-based algorithm for computing these aggregates requires <i>O(n</i>log <i>n)</i> messages and <i>O</i>(log <i>n</i>) rounds. Thus, our algorithm allows system designers to trade off a small increase in round complexity with a significant reduction in message complexity. This can lead to dramatically lower network congestion and longer node lifetimes in wireless and sensor networks, where channel bandwidth and battery life are severely constrained.</div> </div>
+<h2>SESSION: Query, update, and mining languages</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683281" title="Get the Full Text from the ACM Digital Library">Structural characterizations of the semantics of XPath as navigation tool on a document</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marc Gyssens</li>
+<li class="nameList">Jan Paredaens</li>
+<li class="nameList">Dirk Van Gucht</li>
+<li class="nameList Last">George H. L. Fletcher</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Given a document <i>D</i> in the form of an unordered labeled tree, we study the expressibility on <i>D</i> of various fragments of XPath, the core navigational language on XML documents. We give characterizations, in terms of the structure of <i>D</i>, for when a binary relation on its nodes is definable by an XPath expression in these fragments. Since each pair of nodes in such a relation represents a unique path in <i>D</i>, our results therefore capture the sets of paths in <i>D</i> definable in XPath. We refer to this perspective on the semantics of XPath as the "global view." In contrast with this global view, there is also a "local view" where one is interested in the nodes to which one can navigate starting from a particular node in the document. In this view, we characterize when a set of nodes in <i>D</i> can be defined as the result of applying an XPath expression to a given node of <i>D</i>. All these definability results, both in the global and the local view, are obtained by using a robust two-step methodology, which consists of first characterizing when two nodes cannot be distinguished by an expression in the respective fragments of XPath, and then bootstrapping these characterizations to the desired results.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683282" title="Get the Full Text from the ACM Digital Library">The expressivity of XPath with transitive closure</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Balder ten Cate</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We extend Core XPath, the navigational fragment of XPath 1.0, with transitive closure and path equalities. The resulting language, Regular XPATH<sup>&#8776;</sup>, is expressively complete for FO* (first-order logic extended with a transitive closure operator that can be applied to formulas with exactly two free variables). As a corollary, we obtain that Regular XPATH<sup>&#8776;</sup> is closed under path intersection and complementation. We also provide characterizations for the *-positive fragment of Regular XPATH<sup>&#8776;</sup>, and for &#956;Regular XPATH (the extension of Regular XPATH<sup>&#8776;</sup> with least fixed points).</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683283" title="Get the Full Text from the ACM Digital Library">Relational lenses: a language for updatable views</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Aaron Bohannon</li>
+<li class="nameList">Benjamin C. Pierce</li>
+<li class="nameList Last">Jeffrey A. Vaughan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We propose a novel approach to the classical <i>view update problem</i>. The view update problem arises from the fact that modifications to a database view may not correspond uniquely to modifications on the underlying database; we need a means of determining an "update policy" that guides how view updates are reflected in the database. Our approach is to define a <i>bi-directional</i> query language, in which every expression can be read bot(from left to right) as a view definition and (from right to left) as an update policy. The primitives of this language are based on standard relational operators. Its type system, which includes record-level predicates and functional dependencies, plays a crucial role in guaranteeing that update policies are <i>well-behaved</i>, in a precise sense, and that they are <i>total</i>&#8212;i.e., able to handle arbitrary changes to the view.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683284" title="Get the Full Text from the ACM Digital Library">Programmable clustering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sreenivas Gollapudi</li>
+<li class="nameList">Ravi Kumar</li>
+<li class="nameList Last">D. Sivakumar</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We initiate a novel study of clustering problems. Rather than specifying an explicit objective function to optimize, our framework allows the user of clustering algorithm to specify, via a first-order formula, what constitutes an acceptable clustering to them. While the resulting genre of problems includes, in general, NP-complete problems, we highlight three specific first-order formulae, and provide efficient algorithms for the resulting clustering problems.</div> </div>
+<h2>TUTORIAL SESSION: Invited tutorial 3</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683295" title="Get the Full Text from the ACM Digital Library">The logic of RDF and SPARQL: a tutorial</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Enrico Franconi</li>
+<li class="nameList Last">Sergio Tessaris</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">The Resource Description Framework (RDF [Hayes, 2004]) is a W3C standard language for representing information about resources in the World Wide Web; RDF provides a common framework for expressing this information so it can be exchanged between applications without loss of meaning. In this tutorial, RDF will be presented as a data model in the database sense. Its motivations will be analysed, and its current formal status revised. The data model can be understood both from a graph theoretical perspective and from a logical perspective. While the former has been the focus of most theoretical (see, e.g., [Gutierrez <i>et al.</i>, 2004]) and practical approaches to RDF, the logical view of RDF has been mostly neglected by the community so far. Two provably correct (w.r.t. the normative W3C definitions of RDF [Hayes, 2004]) logical reconstructions of RDF will be presented, by reducing (a fragment of) it to a classical first-order framework suitable for knowledge representation (first developed in [de Bruijn <i>et al.</i>, 2005]), and by encoding the full RDF data model in the HiLog logic introduced by Kifer et al. several years ago [Chen <i>et al.</i>, 1993]. An emphasis will be given to three main characteristics of RDF: the presence of anonymous <i>bnodes</i>, the non-well-foundedness of the basic <i>rdf:type</i> relation, and the presence of the RDF vocabulary in the mode itself.In the second part of the tutorial, the relation of the logical reconstructions of RDF with a database perspective will be introduced. An RDF database is seen as a model of a suitable theory in first order logic or in HiLog. While in the pure RDF sense the two approaches are equivalent, it will be shown how the difference becomes relevant whenever additional constraints (e.g., in the form of ontologies or database dependencies) are introduced in the framework. In order to allow for additional constraints (e.g., in the standard W3C OWL-DL ontology language [Patel-Schneider <i>et al.</i>, 2004]) while keeping the framework first order, only a fragment of RDF can be considered; this restriction is not needed if the framework is in HiLog (see, e.g., [Motik, 2005]). Various complexity and decidability results will be summarised. In the last part of the tutorial, the W3C standard query language for RDF (SPARQL [Prud'hommeaux and Seaborne, 2006]) will be presented. SPARQL is currently a <i>candidate recommendation</i>. The core of SPARQL is a conjunctive query language, with the added complication that the data model includes existential information in the form of <i>bnodes</i>, and that <i>bnodes</i> may be returned by the query. The formal semantics of the core query language will be given. The problem of the canonical representation of the answer set will be introduced, since <i>bnodes</i> introduce a behaviour similar to the null values in SQL. Complexity results for query answering will be given for different cases. Finally, the possible extensions of SPARQL with various classes of constraints will be discussed.</div> </div>
+<h2>SESSION: Incomplete information</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683296" title="Get the Full Text from the ACM Digital Library">On the decidability and finite controllability of query processing in databases with incomplete information</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Riccardo Rosati</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">In this paper we study queries over relational databases with integrity constraints (ICs). The main problem we analyze is <i>OWA query answering</i>, i.e., query answering over a database with ICs under open-world assumption. The kinds of ICs that we consider are functional dependencies (in particular key dependencies) and inclusion dependencies; the query languages we consider are conjunctive queries (CQs), union of conjunctive queries (UCQs), CQs and UCQs with negation and/or inequality. We present a set of results about the decidability and finite controllability of OWA query answering under ICs. In particular: (i) we identify the decidability/undecidability frontier for OWA query answering under different combinations of the ICs allowed and the query language allowed; (ii) we study OWA query answering both over finite databases and over unrestricted databases, and identify the cases in which such a problem is <i>finitely controllable</i>, i.e., when OWA query answering over finite databases coincides with OWA query answering over unrestricted databases. Moreover, we are able to easily turn the above results into new results about implication of ICs and query containment under ICs, due to the deep relationship between OWA query answering and these two classical problems in database theory. In particular, we close two long-standing open problems in query containment, since we prove finite controllability of containment of conjunctive queries both under arbitrary inclusion dependencies and under key and foreign key dependencies. Besides their theoretical interest, we believe that the results of our investigation are very relevant in many research areas which have recently dealt with databases under an incomplete information assumption: e.g., view-based information access, ontology-based information systems, data integration, data exchange, and peer-to-peer information systems.</div> </div>
+</div>
+</div>
+</body>
+</html>

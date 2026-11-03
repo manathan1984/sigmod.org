@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2023 SIGMOD Systems Award"
 permalink: "/2023-sigmod-systems-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2023-06-27"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-![](https://sigmod.org/wp-content/uploads/2023/05/Apache_Flink_logo.svg_.png)
+![](/wp-content/uploads/2023/05/Apache_Flink_logo.svg_.png)
 
 ## Apache Flink
 

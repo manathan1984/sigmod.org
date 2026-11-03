@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Divesh Srivastava — 2021 Contributions Award"
 permalink: "/divesh-srivastava-2021-contributions-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2022-05-17"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-![](https://sigmod.org/wp-content/uploads/2022/05/divesh.jpg)
+![](/wp-content/uploads/2022/05/divesh.jpg)
 
 Divesh Srivastava
 

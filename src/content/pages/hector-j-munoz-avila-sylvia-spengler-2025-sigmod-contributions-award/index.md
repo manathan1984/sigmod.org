@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Hector Munoz-Avila & Sylvia Spengler — 2025 SIGMOD Contributions Award"
 permalink: "/hector-j-munoz-avila-sylvia-spengler-2025-sigmod-contributions-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2025-07-04"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2023/05/image-2.png)
+![](/wp-content/uploads/2023/05/image-2.png)
 
-![](https://sigmod.org/wp-content/uploads/2025/04/service.png)
+![](/wp-content/uploads/2025/04/service.png)
 
 Hector Munoz-Avila &
 

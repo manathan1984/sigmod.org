@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2015 SIGMOD Jim Gray Doctoral Dissertation Award"
 permalink: "/sigmod-awards/citations/2015-sigmod-jim-gray-doctoral-dissertation-award/"
 section: "sigmod"
@@ -11,7 +12,7 @@ updated: "2015-07-17"
 
 ACM SIGMOD is pleased to present the 2015 SIGMOD Jim Gray Doctoral Dissertation Award to Alexander Thomson. Thomson completed his dissertation titled “Deterministic Transaction Execution in Distributed Database Systems” at Yale University under the supervision of Daniel Abadi. The thesis provides a novel system architecture to address a challenging problem in distributed database systems, namely providing scalable support for transactions. The thesis proposes an interesting and surprisingly simple idea: choose the serialization order of transactions up front, and execute the transactions deterministically according to this order. Deterministic execution reduces the amount of coordination required for distributed transactions, which significantly improves scalability. Thomson develops this idea into a complete system and shows that it is remarkably effective for distributed databases and also for file systems. The work is innovative and combines sound principles with solid design and implementation, resulting in a thesis that has already made its mark on the database community.
 
-![Alexander Thomson](https://sigmod.hosting.acm.org/sigmodnewwp/wp-content/uploads/2015/07/image_thumb14.jpg)**Alexander Thomson** is a software engineer at Google, where he works on storage systems.
+![Alexander Thomson](/wp-content/uploads/2015/07/image_thumb14.jpg)**Alexander Thomson** is a software engineer at Google, where he works on storage systems.
 
 ACM SIGMOD is also pleased to recognize Marina Drosou and Karthik Ramachandra for Honorable Mention for the 2015 SIGMOD Jim Gray Doctoral Dissertation Award. Marina completed her dissertation titled “Relevance and Diversity-based Ranking in Network-Centric Information Management Systems” at University of Ioannina under the supervision of Evaggelia Pitoura. Karthik’s thesis is titled “Holistic Optimization of Database Applications” and the PhD was awarded by the IIT Bombay under the supervision of S. Sudarshan.
 

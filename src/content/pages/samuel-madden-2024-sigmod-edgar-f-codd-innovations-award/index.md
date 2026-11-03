@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Samuel Madden — 2024 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/samuel-madden-2024-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2024-06-11"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2023/05/image.png)
+![](/wp-content/uploads/2023/05/image.png)
 
-![](https://sigmod.org/wp-content/uploads/2024/06/headshot-small.jpg)
+![](/wp-content/uploads/2024/06/headshot-small.jpg)
 
 ## Samuel Madden
 

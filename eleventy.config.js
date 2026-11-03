@@ -10,6 +10,8 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+  // Files in src/static are copied as they are, never rendered (e.g. the PODS OpenTOC pages)
+  eleventyConfig.ignores.add("src/static/**");
 
   eleventyConfig.addCollection("news", (api) =>
     api.getFilteredByTag("news").sort((a, b) => b.date - a.date));

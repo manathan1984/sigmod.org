@@ -1,0 +1,416 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '18- Proceedings of the 37th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '18- Proceedings of the 37th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=3196959" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Keynote Talk</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684530" title="Get the Full Text from the ACM Digital Library">How Can Reasoners Simplify Database Querying (And Why Haven't They Done It Yet)?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Michael Benedikt</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The last few decades have seen vast progress in computational reasoning. This has included significant developments in theory, increasing maturity of tools both in performance and usability, and the evolution of standards and benchmarks. The purpose of this article is to reflect on the use of reasoning for rewriting and simplifying relational database queries. We undertake a review of some of the results and reasoning algorithms that have been developed with a motivation from query evaluation, and add to this a look at open problems in the area as well as a critique of prior work from the point of view of practice.</p></div> </div>
+<h2>SESSION: Graphs and Hypergraphs Techniques on Databases</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684531" title="Get the Full Text from the ACM Digital Library">General and Fractional Hypertree Decompositions: Hard and Easy Cases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Wolfgang Fischl</li>
+<li class="nameList">Georg Gottlob</li>
+<li class="nameList Last">Reinhard Pichler</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Hypertree decompositions, as well as the more powerful generalized hypertree decompositions (GHDs), and the yet more general fractional hypertree decompositions (FHD) are hypergraph decomposition methods successfully used for answering conjunctive queries and for the solution of constraint satisfaction problems. Every hypergraph <i>H</i> has a width relative to each of these methods: its hypertree width hw(H), its generalized hypertree width ghw(H), and its fractional hypertree width fhw(H), respectively. It is known that hw(H) &#8804; k can be checked in polynomial time for fixed k, while checking ghw(H) &#8804; k is NP-complete for k &#62;= 3. The complexity of checking fhw(H) &#8804; k for a fixed k has been open for over a decade. We settle this open problem by showing that checking fhw(H) &#8804; k is NP-complete, even for k=2. The same construction allows us to prove also the NP-completeness of checking ghw(H) &#8804; k for k=2. After proving these results, we identify meaningful restrictions, for which checking for bounded ghw or fhw becomes tractable.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684532" title="Get the Full Text from the ACM Digital Library">Reconciling Graphs and Sets of Sets</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Mitzenmacher</li>
+<li class="nameList Last">Tom Morgan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We explore a generalization of set reconciliation, where the goal is to reconcile sets of sets. Alice and Bob each have a parent set consisting of s child sets, each containing at most h elements from a universe of size u. They want to reconcile their sets of sets in a scenario where the total number of differences between all of their child sets (under the minimum difference matching between their child sets) is d. We give several algorithms for this problem, and discuss applications to reconciliation problems on graphs, databases, and collections of documents. We specifically focus on graph reconciliation, providing protocols based on sets of sets reconciliation for random graphs from G(n,p) and for forests of rooted trees.</p></div> </div>
+<h2>SESSION: Best Paper Award, Similarity Search and Clustering</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684533" title="Get the Full Text from the ACM Digital Library">Entity Matching with Active Monotone Classification</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Yufei Tao</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Given two sets of entities <i>X</i> and <i>Y</i>, <i>entity matching</i> aims to decide whether <i>x</i> and <i>y</i> represent the same entity for each pair (x, y) &#305;n X x Y. As the last resort, human experts can be called upon to inspect every (x, y), but this is expensive because the correct verdict could not be determined without investigation efforts dedicated specifically to the two entities <i>x</i> and <i>y</i> involved. It is therefore important to design an algorithm that asks humans to look at only some pairs, and renders the verdicts on the other pairs automatically with good accuracy. At the core of most (if not all) existing approaches is the following classification problem. The input is a set <i>P</i> of points in R<sup>d</sup>, each of which carries a binary label: 0 or 1. A <i>classifier</i> F is a function from R<sup>d</sup> to (0, 1). The objective is to find a classifier that captures the labels of a large number of points in <i>P</i>. In this paper, we cast the problem as an instance of active learning where the goal is to learn a <i>monotone</i> classifier F, namely, F(p) &#8805; F(q) holds whenever the coordinate of <i>p</i> is at least that of <i>q</i> on all dimensions. In our formulation, the labels of all points in <i>P</i> are hidden at the beginning. An algorithm <i>A</i> can invoke an <i>oracle,</i> which discloses the label of a point p &#305;n P chosen by <i>A</i>. The algorithm may do so repetitively, until it has garnered enough information to produce F. The cost of <i>A</i> is the number of times that the oracle is called. The challenge is to strike a good balance between the <i>cost</i> and the <i>accuracy</i> of the classifier produced. We describe algorithms with non-trivial guarantees on the cost and accuracy simultaneously. We also prove lower bounds that establish the asymptotic optimality of our solutions for a wide range of parameters.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684534" title="Get the Full Text from the ACM Digital Library">Set Similarity Search for Skewed Data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Samuel McCauley</li>
+<li class="nameList">Jesper W. Mikkelsen</li>
+<li class="nameList Last">Rasmus Pagh</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Set similarity join, as well as the corresponding indexing problem set similarity search, are fundamental primitives for managing noisy or uncertain data. For example, these primitives can be used in data cleaning to identify different representations of the same object. In many cases one can represent an object as a sparse 0-1 vector, or equivalently as the set of nonzero entries in such a vector. A set similarity join can then be used to identify those pairs that have an exceptionally large dot product (or intersection, when viewed as sets). We choose to focus on identifying vectors with large Pearson correlation, but results extend to other similarity measures. In particular, we consider the indexing problem of identifying correlated vectors in a set S of vectors sampled from 0,1<sup>d</sup>. Given a query vector y and a parameter alpha in (0,1), we need to search for an alpha-correlated vector x in a data structure representing the vectors of S. This kind of similarity search has been intensely studied in worst-case (non-random data) settings. Existing theoretically well-founded methods for set similarity search are often inferior to heuristics that take advantage of skew in the data distribution, i.e., widely differing frequencies of 1s across the d dimensions. The main contribution of this paper is to analyze the set similarity problem under a random data model that reflects the kind of skewed data distributions seen in practice, allowing theoretical results much stronger than what is possible in worst-case settings. Our indexing data structure is a recursive, data-dependent partitioning of vectors inspired by recent advances in set similarity search. Previous data-dependent methods do not seem to allow us to exploit skew in item frequencies, so we believe that our work sheds further light on the power of data dependence.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684545" title="Get the Full Text from the ACM Digital Library">Subtrajectory Clustering: Models and Algorithms</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pankaj K. Agarwal</li>
+<li class="nameList">Kyle Fox</li>
+<li class="nameList">Kamesh Munagala</li>
+ <li class="nameList">Abhinandan Nath</li>
+<li class="nameList">Jiangwei Pan</li>
+<li class="nameList Last">Erin Taylor</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We propose a model for <i>subtrajectory clustering</i> ---the clustering of subsequences of trajectories; each cluster of subtrajectories is represented as a <i>pathlet,</i> a sequence of points that is not necessarily a subsequence of an input trajectory. Given a set of trajectories, our clustering model attempts to capture the shared portions between them by assuming each trajectory is a concatenation of a small set of pathlets, with possible gaps in between. We present a single objective function for finding the optimal collection of pathlets that best represents the trajectories taking into account noise and other artifacts of the data. We show that the subtrajectory clustering problem is NP-Hard and present fast approximation algorithms for subtrajectory clustering. We further improve the running time of our algorithm if the input trajectories are "well-behaved." Finally, we present experimental results on both real and synthetic data sets. We show via visualization and quantitative analysis that the algorithm indeed handles the desiderata of being robust to variations, being efficient and accurate, and being data-driven.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684546" title="Get the Full Text from the ACM Digital Library">Distance-Sensitive Hashing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Martin Aum&#252;ller</li>
+<li class="nameList">Tobias Christiani</li>
+<li class="nameList">Rasmus Pagh</li>
+<li class="nameList Last">Francesco Silvestri</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Locality-sensitive hashing (LSH) is an important tool for managing high-dimensional noisy or uncertain data, for example in connection with data cleaning (similarity join) and noise-robust search (similarity search). However, for a number of problems the LSH framework is not known to yield good solutions, and instead ad hoc solutions have been designed for particular similarity and distance measures. For example, this is true for output-sensitive similarity search/join, and for indexes supporting <i>annulus queries</i> that aim to report a point close to a certain given distance from the query point. In this paper we initiate the study of <i>distance-sensitive hashing</i> (DSH), a generalization of LSH that seeks a family of hash functions such that the probability of two points having the same hash value is a given function of the distance between them. More precisely, given a distance space (X, dist ) and a "collision probability function" (CPF) f: R -&#62; [0,1] we seek a distribution over pairs of functions (h,g) such that for every pair of points x, y &#305;n X the collision probability is &#182;r[h(x)=g(y)] = f(dist(x,y)). Locality-sensitive hashing is the study of how fast a CPF can <i>decrease</i> as the distance grows. For many spaces, <i>f</i> can be made exponentially decreasing even if we restrict attention to the symmetric case where g=h. We show that the <i>asymmetry</i> achieved by having a pair of functions makes it possible to achieve CPFs that are, for example, increasing or unimodal, and show how this leads to principled solutions to problems not addressed by the LSH framework. This includes a novel application to privacy-preserving distance estimation. We believe that the DSH framework will find further applications in high-dimensional data management. To put the running time bounds of the proposed constructions into perspective, we show lower bounds for the performance of DSH constructions with increasing and decreasing CPFs under angular distance. Essentially, this shows that our constructions are tight up to lower order terms. In particular, we extend existing LSH lower bounds, showing that they also hold in the asymmetric setting.</p></div> </div>
+<h2>SESSION: Test-of-Time Award and Gems of pods</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684547" title="Get the Full Text from the ACM Digital Library">2018 ACM PODS Alberto O. Mendelzon Test-of-Time Award</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Maurizio Lenzerini</li>
+<li class="nameList">Wim Martens</li>
+<li class="nameList Last">Nicole Schweikardt</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684548" title="Get the Full Text from the ACM Digital Library">Reflections on Schema Mappings, Data Exchange, and Metadata Management</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Phokion G. Kolaitis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A schema mapping is a high-level specification of the relationship between two database schemas. For the past fifteen years, schema mappings have played an essential role in the modeling and analysis of data exchange, data integration, and related data inter-operability tasks. The aim of this talk is to critically reflect on the body of work carried out to date, describe some of the persisting challenges, and suggest directions for future work. The first part of the talk will focus on schema-mapping languages, especially on the language of GLAV (global-and-local as view) mappings and its two main sublanguages, the language of GAV (global-as-view) mappings and the language of LAV (local-as-view) mappings. After highlighting the fundamental structural properties of these languages, we will discuss how structural properties can actually characterize schema-mapping languages. The second part of the talk will focus on metadata management by considering operators on schema mappings, such as the composition operator and the inverse operator. We will discuss why richer languages are needed to express these operators, and will illustrate some of their uses in schema-mapping evolution. The third and final part of the talk will focus on the derivation of schema mappings from semantic information. In particular, we will discuss a variety of approaches for deriving schema mappings from data examples, including casting the derivation of schema mappings as an optimization problem and as a learning problem.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684549" title="Get the Full Text from the ACM Digital Library">Worst-Case Optimal Join Algorithms: Techniques, Results, and Open Problems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Hung Q. Ngo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Worst-case optimal join algorithms are the class of join algorithms whose runtime match the worst-case output size of a given join query. While the first provably worse-case optimal join algorithm was discovered relatively recently, the techniques and results surrounding these algorithms grow out of decades of research from a wide range of areas, intimately connecting graph theory, algorithms, information theory, constraint satisfaction, database theory, and geometric inequalities. These ideas are not just paperware: in addition to academic project implementations, two variations of such algorithms are the work-horse join algorithms of commercial database and data analytics engines. This paper aims to be a brief introduction to the design and analysis of worst-case optimal join algorithms. We discuss the key techniques for proving runtime and output size bounds. We particularly focus on the fascinating connection between join algorithms and information theoretic inequalities, and the idea of how one can turn a proof into an algorithm. Finally, we conclude with a representative list of fundamental open problems in this area.</p></div> </div>
+<h2>SESSION: Information Extraction and Efficient Enumeration of Answers</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684540" title="Get the Full Text from the ACM Digital Library">Document Spanners for Extracting Incomplete Information: Expressiveness and Complexity</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Francisco Maturana</li>
+<li class="nameList">Cristian Riveros</li>
+<li class="nameList Last">Domagoj Vrgoc</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Rule-based information extraction has lately received a fair amount of attention from the database community, with several languages appearing in the last few years. Although information extraction systems are intended to deal with semistructured data, all language proposals introduced so far are designed to output relations, thus making them incapable of handling incomplete information. To remedy the situation, we propose to extend information extraction languages with the ability to use mappings, thus allowing us to work with documents which have missing or optional parts. Using this approach, we simplify the semantics of regex formulas and extraction rules, two previously defined methods for extracting information. We extend them with the ability to handle incomplete data, and study how they compare in terms of expressive power. We also study computational properties of these languages, focusing on the query enumeration problem, as well as satisfiability and containment.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684541" title="Get the Full Text from the ACM Digital Library">Joining Extractions of Regular Expressions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Dominik D. Freydenberger</li>
+<li class="nameList">Benny Kimelfeld</li>
+<li class="nameList Last">Liat Peterfreund</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Regular expressions with capture variables, also known as "regex formulas,'' extract relations of spans (interval positions) from text. These relations can be further manipulated via the relational Algebra as studied in the context of "document spanners," Fagin et al.'s formal framework for information extraction. We investigate the complexity of querying text by Conjunctive Queries (CQs) and Unions of CQs (UCQs) on top of regex formulas. Such queries have been investigated in prior work on document spanners, but little is known about the (combined) complexity of their evaluation. We show that the lower bounds (NP-completeness and W[1]-hardness) from the relational world also hold in our setting; in particular, hardness hits already single-character text. Yet, the upper bounds from the relational world do not carry over. Unlike the relational world, acyclic CQs, and even gamma-acyclic CQs, are hard to compute. The source of hardness is that it may be intractable to instantiate the relation defined by a regex formula, simply because it has an exponential number of tuples. Yet, we are able to establish general upper bounds. In particular, UCQs can be evaluated with polynomial delay, provided that every CQ has a bounded number of atoms (while unions and projection can be arbitrary). Furthermore, UCQ evaluation is solvable with FPT (Fixed-Parameter Tractable) delay when the parameter is the size of the UCQ.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684542" title="Get the Full Text from the ACM Digital Library">Enumeration for FO Queries over Nowhere Dense Graphs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Nicole Schweikardt</li>
+<li class="nameList">Luc Segoufin</li>
+<li class="nameList Last">Alexandre Vigny</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the evaluation of first-order queries over classes of databases that are <i>nowhere dense.</i> The notion of nowhere dense classes was introduced by Nesetril and Ossona de Mendez as a formalization of classes of "sparse" graphs and generalizes many well-known classes of graphs, such as classes of bound&#173;ed degree, bounded tree-width, or bounded expansion. It has recently been shown by Grohe, Kreutzer, and Siebertz that over nowhere dense classes of databases, first-order sentences can be evaluated in pseudo-linear time (pseudo-linear time means that for all &#949; there exists an algorithm working in time O(n<sup>1</sup>+&#949;), where <i>n</i> is the size of the database). For first-order queries of higher arities, we show that over any nowhere dense class of databases, the set of their solutions can be enumerated with constant delay after a pseudo-linear time preprocessing. In the same context, we also show that after a pseudo-linear time preprocessing we can, on input of a tuple, test in constant time whether it is a solution to the query.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684543" title="Get the Full Text from the ACM Digital Library">Constant Delay Algorithms for Regular Document Spanners</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Fernando Florenzano</li>
+<li class="nameList">Cristian Riveros</li>
+<li class="nameList">Martin Ugarte</li>
+<li class="nameList">Stijn Vansummeren</li>
+<li class="nameList Last">Domagoj Vrgoc</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Regular expressions and automata models with capture variables are core tools in rule-based information extraction. These formalisms, also called regular document spanners, use regular languages in order to locate the data that a user wants to extract from a text document, and then store this data into variables. Since document spanners can easily generate large outputs, it is important to have good evaluation algorithms that can generate the extracted data in a quick succession, and with relatively little precomputation time. Towards this goal, we present a practical evaluation algorithm that allows constant delay enumeration of a spanner's output after a precomputation phase that is linear in the document. While the algorithm assumes that the spanner is specified in a syntactic variant of variable set automata, we also study how it can be applied when the spanner is specified by general variable set automata, regex formulas, or spanner algebras. Finally, we study the related problem of counting the number of outputs of a document spanner, providing a fine grained analysis of the classes of document spanners that support efficient enumeration of their results.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684544" title="Get the Full Text from the ACM Digital Library">Enumeration of MSO Queries on Strings with Constant Delay and Logarithmic Updates</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Matthias Niewerth</li>
+<li class="nameList Last">Luc Segoufin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the enumeration of MSO queries over strings under updates. For each MSO query we build an index structure enjoying the following properties: The index structure can be constructed in linear time, it can be updated in logarithmic time and it allows for constant delay time enumeration. This improves from the previous known index structures allowing for constant delay enumeration that would need to be reconstructed from scratch, hence in linear time, in the presence of updates. We allow relabeling updates, insertion of individual labels and removal of individual labels.</p></div> </div>
+<h2>SESSION: Invited Tutorial 1</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684655" title="Get the Full Text from the ACM Digital Library">Blockchains: Past, Present, and Future</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Arvind Narayanan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Blockchain technology is assembled from pieces that have long pedigrees in the academic literature, such as linked timestamping, consensus, and proof of work. In this tutorial, I'll begin by summarizing these components and how they fit together in Bitcoin's blockchain design. Then I'll present abstract models of blockchains; such abstractions help us understand and reason about the similarities and differences between the numerous proposed blockchain designs in a succinct way. Here is one such abstraction. Blockchains can be understood in terms of (1) a <i>log</i> of messages: for example, a ledger of financial transactions; (2) the <i>state</i> that summarizes the result of processing the log: for example, a set of account balances; (3) a set of <i>validity rules</i> for messages/state updates: for example, transactions must spend no more than the available balances, must have verifiable signatures, etc; (4) <i>consistency rules</i> that determine whether two views of the log by different participants on the network are consistent with each other. In the second half of the tutorial I'll describe several research directions, focusing on those likely to be of interest to the PODS community. Here are a few examples. <i>Efficient verification of state.</i> A participant might want to verify a statement about a small part of the global state, such as the inclusion of a particular transaction in the blockchain. While the basics have been worked out, and involve techniques such as hash pointers, Merkle trees, and other "authenticated data structures", many interesting questions remain. <i>Reconciling different views of consensus.</i> In the game theory view of blockchains, all players are rational and follow their incentives; there are no honest, faulty, or malicious players. When does this view lead to similar or different predictions compared to the traditional consensus literature? Can we come up with hybrid models that reconcile these assumptions? <i>Scaling and sharding.</i> In traditional designs, the blockchain is fully replicated by every node, leading to massive inefficiency and severely limiting transaction throughput. What are the fundamental limits to scaling, and how can we improve scalability without weakening security? In particular, is it possible to shard the blockchain, that is, partition it among subsets of nodes, given the Byzantine setting?</p></div> </div>
+<h2>SESSION: Consistent Query Answering, Certain Answers and Repairs</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684656" title="Get the Full Text from the ACM Digital Library">Certain Answers Meet Zero-One Laws</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Leonid Libkin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Query answering over incomplete data invariably relies on the standard notion of certain answers which gives a very coarse classification of query answers into those that are certain and those that are not. Here we propose to refine it by measuring how close an answer is certainty. This measure is defined as the probability that the query is true under a random interpretation of missing information in a database. Since there are infinitely many such interpretations, to pick one at random we adopt the approach used in the study of asymptotic properties and 0-1 laws for logical sentences, and define the measure as the limit of a sequence. We show that in the standard model of missing data, the 0-1 law is observed: this limit always exists and can be only 0 or 1 for a very large class of queries. Thus, query answers are either almost certainly true, or almost certainly false. We prove that almost certainly true answers are precisely those returned by the naive evaluation of the query. When databases satisfy constraints, the measure is defined as the conditional probability of the query being true if the constraints are true. This too is defined as a limit, and we prove that it always exists, can be an arbitrary rational number, and is computable. For some constraints, such as functional dependencies, the 0-1 law continues to hold. As another refinement of the notion of certainty, we introduce a comparison of query answers: an answer with a larger set of interpretations that make it true is better. We identify the precise complexity of such comparisons, and of finding sets of best answers, for first-order queries.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684657" title="Get the Full Text from the ACM Digital Library">Consistent Query Answering for Primary Keys and Conjunctive Queries with Negated Atoms</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Paraschos Koutris</li>
+<li class="nameList Last">Jef Wijsen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper studies query answering on databases that may be inconsistent with respect to primary key constraints. A repair is any consistent database that is obtained by deleting a minimal set of tuples. Given a Boolean query q, the problem CERTAINTY(q) takes a database as input and asks whether q is true in every repair of the database. A significant complexity classification task is to determine, given q, whether CERTAINTY(q) is first-order definable (and thus solvable by a single SQL query). This problem has been extensively studied for self-join-free conjunctive queries. An important extension of this class of queries is to allow negated atoms. It turns out that if negated atoms are allowed, CERTAINTY(q) can express some classical matching problems. This paper studies the existence and construction of first-order definitions for CERTAINTY(q) for q in the class of self-join-free conjunctive queries with negated atoms.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684658" title="Get the Full Text from the ACM Digital Library">Computing Optimal Repairs for Functional Dependencies</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ester Livshits</li>
+<li class="nameList">Benny Kimelfeld</li>
+<li class="nameList Last">Sudeepa Roy</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We investigate the complexity of computing an optimal repair of an inconsistent database, in the case where integrity constraints are Functional Dependencies (FDs). We focus on two types of repairs: an optimal subset repair (optimal S-repair) that is obtained by a minimum number of tuple deletions, and an optimal update repair (optimal U-repair) that is obtained by a minimum number of value (cell) updates. For computing an optimal S-repair, we present a polynomial-time algorithm that succeeds on certain sets of FDs and fails on others. We prove the following about the algorithm. When it succeeds, it can also incorporate weighted tuples and duplicate tuples. When it fails, the problem is NP-hard, and in fact, APX-complete (hence, cannot be approximated better than some constant). Thus, we establish a dichotomy in the complexity of computing an optimal S-repair. We present general analysis techniques for the complexity of computing an optimal U-repair, some based on the dichotomy for S-repairs. We also draw a connection to a past dichotomy in the complexity of finding a "most probable database" that satisfies a set of FDs with a single attribute on the left hand side; the case of general FDs was left open, and we show how our dichotomy provides the missing generalization and thereby settles the open problem.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684659" title="Get the Full Text from the ACM Digital Library">An Operational Approach to Consistent Query Answering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marco Calautti</li>
+<li class="nameList">Leonid Libkin</li>
+<li class="nameList Last">Andreas Pieris</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Consistent query answering (CQA) aims to find meaningful answers to queries when databases are inconsistent, i.e., do not conform to their specifications. Such answers must be certainly true in all repairs, which are consistent databases whose difference from the inconsistent one is minimal, according to some measure. This task is often computationally intractable, and much of CQA research concentrated on finding islands of tractability. Nevertheless, there are many relevant queries for which no efficient solutions exist, which is reflected by the limited practical applicability of the CQA approach. To remedy this, one needs to devise a new CQA framework that provides explicit guarantees on the quality of query answers. However, the standard notions of repair and certain answers are too coarse to permit more elaborate schemes of query answering. Our goal is to provide a new framework for CQA based on revised definitions of repairs and query answering that opens up the possibility of efficient approximate query answering with explicit guarantees. The key idea is to replace the current declarative definition of a repair with an operational one, which explains how a repair is constructed, and how likely it is that a consistent instance is a repair. This allows us to define how certain we are that a tuple should be in the answer. Using this approach, we study the complexity of both exact and approximate CQA. Even though some of the problems remain hard, for many common classes of constraints we can provide meaningful answers in reasonable time, for queries going far beyond the standard CQA approach.</p></div> </div>
+<h2>SESSION: Query Evaluation and Containment</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684650" title="Get the Full Text from the ACM Digital Library">First-Order Query Evaluation with Cardinality Conditions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Martin Grohe</li>
+<li class="nameList Last">Nicole Schweikardt</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study an extension of first-order logic FO that allows to express cardinality conditions in a similar way as SQL's COUNT operator. The corresponding logic FOC(P) was introduced by Kuske and Schweikardt, who showed that query evaluation for this logic is fixed-parameter tractable on classes of databases of bounded degree. In this paper, we first show that the fixed-parameter tractability of FOC(P) cannot even be generalised to very simple classes of databases of unbounded degree such as unranked trees or strings with a linear order relation. Then, we identify a fragment FOC1(P) of FOCP which is still extends FO and is sufficiently strong to express standard applications of SQL's COUNT operator. Our main result shows that query evaluation for FOC1(P) is fixed-parameter tractable on nowhere dense classes of databases. This, in particular, implies that the counting problem for first-order queries on nowhere dense classes is fixed-parameter tractable.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684651" title="Get the Full Text from the ACM Digital Library">Containment for Rule-Based Ontology-Mediated Queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pablo Barcelo</li>
+<li class="nameList">Gerald Berger</li>
+<li class="nameList Last">Andreas Pieris</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Many efforts have been dedicated to identifying restrictions on ontologies expressed as tuple-generating dependencies (tgds), a.k.a. existential rules, that lead to the decidability of answering ontology-mediated queries (OMQs). This has given rise to three families of formalisms: guarded, non-recursive, and sticky sets of tgds. We study the containment problem for OMQs expressed in such formalisms, which is a key ingredient for solving static analysis tasks associated with them. Our main contribution is the development of specially tailored techniques for OMQ containment under the classes of tgds stated above. This enables us to obtain sharp complexity bounds for the problems at hand.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684652" title="Get the Full Text from the ACM Digital Library">When Can We Answer Queries Using Result-Bounded Data Interfaces?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Antoine Amarilli</li>
+<li class="nameList Last">Michael Benedikt</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider answering queries on data available through access methods, that provide lookup access to the tuples matching a given binding. Such interfaces are common on the Web; further, they often have bounds on how many results they can return, e.g., because of pagination or rate limits. We thus study result-bounded methods, which may return only a limited number of tuples. We study how to decide if a query is answerable using result-bounded methods, i.e., how to compute a plan that returns all answers to the query using the methods, assuming that the underlying data satisfies some integrity constraints. We first show how to reduce answerability to a query containment problem with constraints. Second, we show "schema simplification'' theorems describing when and how result bounded services can be used. Finally, we use these theorems to give decidability and complexity results about answerability for common constraint classes.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684653" title="Get the Full Text from the ACM Digital Library">The Tractability Frontier of Well-designed SPARQL Queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Miguel Romero</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study the complexity of query evaluation of SPARQL queries. We focus on the fundamental fragment of well-designed SPARQL restricted to the AND, OPTIONAL and UNION operators. Our main result is a structural characterisation of the classes of well-designed queries that can be evaluated in polynomial time. In particular, we introduce a new notion of width called domination width, which relies on the well-known notion of treewidth. We show that, under some complexity theoretic assumptions, the classes of well-designed queries that can be evaluated in polynomial time are precisely those of bounded domination width.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684654" title="Get the Full Text from the ACM Digital Library">Compressed Representations of Conjunctive Query Results</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Shaleen Deep</li>
+<li class="nameList Last">Paraschos Koutris</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Relational queries, and in particular join queries, often generate large output results when executed over a huge dataset. In such cases, it is often infeasible to store the whole materialized output if we plan to reuse it further down a data processing pipeline. Motivated by this problem, we study the construction of space-efficient <i>compressed representations</i> of the output of conjunctive queries, with the goal of supporting the efficient access of the intermediate compressed result for a given access pattern. In particular, we initiate the study of an important tradeoff: minimizing the <i>space</i> necessary to store the compressed result, versus minimizing the <i>answer time</i> and <i>delay</i> for an access request over the result. Our main contribution is a novel parameterized data structure, which can be tuned to trade off space for answer time. The tradeoff allows us to control the space requirement of the data structure precisely, and depends both on the structure of the query and the access pattern. We show how we can use the data structure in conjunction with query decomposition techniques in order to efficiently represent the outputs for several classes of conjunctive queries.</p></div> </div>
+<h2>SESSION: Invited Tutorial 2</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684665" title="Get the Full Text from the ACM Digital Library">In-memory Representations of Databases via Succinct Data Structures: Tutorial Abstract</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Rajeev Raman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In recent years, the field of <i>succinct</i> data structures (SDS) has grown rapidly. SDS store data in main memory space that approaches an information-theoretic minimum, and support operations on the data with little or no slow-down compared to their conventional counterparts. In practice, an SDS uses one to two orders of magnitude less main memory than a conventional data structure. For this reason, SDS are becoming a popular approach for storing data that is only somewhat bigger than main memory. This tutorial explores the fundamentals of SDS and their applications to a variety of database problems.</p></div> </div>
+<h2>SESSION: Learning and Streaming</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684666" title="Get the Full Text from the ACM Digital Library">In-Database Learning with Sparse Tensors</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mahmoud Abo Khamis</li>
+<li class="nameList">Hung Q. Ngo</li>
+<li class="nameList">XuanLong Nguyen</li>
+<li class="nameList">Dan Olteanu</li>
+<li class="nameList Last">Maximilian Schleich</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In-database analytics is of great practical importance as it avoids the costly repeated loop data scientists have to deal with on a daily basis: select features, export the data, convert data format, train models using an external tool, reimport the parameters. It is also a fertile ground of theoretically fundamental and challenging problems at the intersection of relational and statistical data models. This paper introduces a unified framework for training and evaluating a class of statistical learning models inside a relational database. This class includes ridge linear regression, polynomial regression, factorization machines, and principal component analysis. We show that, by synergizing key tools from relational database theory such as schema information, query structure, recent advances in query evaluation algorithms, and from linear algebra such as various tensor and matrix operations, one can formulate in-database learning problems and design efficient algorithms to solve them. The algorithms and models proposed in the paper have already been implemented and deployed in retail-planning and forecasting applications, with significant performance benefits over out-of-database solutions that require the costly data-export loop.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684667" title="Get the Full Text from the ACM Digital Library">Data Streams with Bounded Deletions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rajesh Jayaram</li>
+<li class="nameList Last">David P. Woodruff</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Two prevalent models in the data stream literature are the insertion-only and turnstile models. Unfortunately, many important streaming problems require a &#920;(log(n)) multiplicative factor more space for turnstile streams than for insertion-only streams. This complexity gap often arises because the underlying frequency vector <i>f</i> is very close to $0$, after accounting for all insertions and deletions to items. Signal detection in such streams is difficult, given the large number of deletions. In this work, we propose an intermediate model which, given a parameter &#945; &#8805; 1, lower bounds the norm |f|<sub>p</sub> by a 1/&#945;-fraction of the L<sub>p</sub> mass of the stream had all updates been positive. Here, for a vector <i>f</i>, |f|<sub>p</sub> = (&#8721;<sub>i</sub>=1<sup>n</sup> |f<sub>i</sub>|<sup>p</sup>)<sup>1/p</sup>, and the value of <i>p</i> we choose depends on the application. This gives a fluid medium between insertion only streams (with &#945; = 1), and turnstile streams (with &#945; = poly(n)), and allows for analysis in terms of &#945;. We show that for streams with this &#945;-property, for many fundamental streaming problems we can replace a O(log(n)) factor in the space usage for algorithms in the turnstile model with a O(log(&#945;)) factor. This is true for identifying heavy hitters, inner product estimation, L<sub>0</sub> estimation, L<sub>1</sub> estimation, L<sub>1</sub> sampling, and support sampling. For each problem, we give matching or nearly matching lower bounds for &#945;-property streams. We note that in practice, many important turnstile data streams are in fact &#945;-property streams for small values of &#945;. For such applications, our results represent significant improvements in efficiency for all the aforementioned problems.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684668" title="Get the Full Text from the ACM Digital Library">Active Learning of GAV Schema Mappings</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Balder ten Cate</li>
+<li class="nameList">Phokion G. Kolaitis</li>
+<li class="nameList">Kun Qian</li>
+<li class="nameList Last">Wang-Chiew Tan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Schema mappings are syntactic specifications of the relationship between two database schemas, typically called the source schema and the target schema. They have been used extensively in formalizing and analyzing data inter-operability tasks, especially data exchange and data integration. There is a growing body of research on deriving schema mappings from data examples, that is, pairs of source and target instances that depict the behavior of the unknown schema mapping. One of the approaches used in this endeavor casts the derivation of a schema mapping from data examples as a learning problem. Earlier work has shown that GAV mappings (global-as-view schema mappings) are learnable in Angluin's model of exact learning with membership queries and equivalence queries. Here, we validate the practical applicability of this theoretical result by designing and implementing an active learning algorithm, called GAV-Learn that derives a syntactic specification of a GAV mapping from a given set of data examples and from a "black-box" implementation. We analyze the properties of GAV-Learn and, among other results, we show that it produces a GAV mapping that has minimal size and is a good approximation of the unknown GAV mapping. Furthermore, we carry out a detailed experimental evaluation that demonstrates the effectiveness of GAV-Learn along different metrics. In particular, we compare GAV-Learn with two earlier approaches for deriving GAV mappings from data examples, and establish that it performs significantly better than the two baselines.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684669" title="Get the Full Text from the ACM Digital Library">Distinct Sampling on Streaming Data with Near-Duplicates</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jiecao Chen</li>
+<li class="nameList Last">Qin Zhang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In this paper we study how to perform distinct sampling in the streaming model where data contain near-duplicates. The goal of distinct sampling is to return a distinct element uniformly at random from the universe of elements, given that all the near-duplicates are treated as the same element. We also extend the result to the sliding window cases in which we are only interested in the most recent items. We present algorithms with provable theoretical guarantees for datasets in the Euclidean space, and also verify their effectiveness via an extensive set of experiments.</p></div> </div>
+<h2>SESSION: Algorithms, Privacy and Workflows</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684660" title="Get the Full Text from the ACM Digital Library">Distributed Statistical Estimation of Matrix Products with Applications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">David P. Woodruff</li>
+<li class="nameList Last">Qin Zhang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider statistical estimations of a matrix product over the integers in a distributed setting, where we have two parties Alice and Bob; Alice holds a matrix <i>A</i> and Bob holds a matrix <i>B</i>, and they want to estimate statistics of $A \cdot B$. We focus on the well-studied $\ell_p$-norm, distinct elements ($p = 0$), $\ell_0$-sampling, and heavy hitter problems. The goal is to minimize both the communication cost and the number of rounds of communication. This problem is closely related to the fundamental set-intersection join problem in databases: when $p = 0$ the problem corresponds to the size of the set-intersection join. When $p = &#305;nfty$ the output is simply the pair of sets with the maximum intersection size. When $p = 1$ the problem corresponds to the size of the corresponding natural join. We also consider the heavy hitters problem which corresponds to finding the pairs of sets with intersection size above a certain threshold, and the problem of sampling an intersecting pair of sets uniformly at random.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684661" title="Get the Full Text from the ACM Digital Library">Optimal Differentially Private Algorithms for k-Means Clustering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Zhiyi Huang</li>
+<li class="nameList Last">Jinyan Liu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider privacy-preserving <i>k</i>-means clustering. For the objective of minimizing the Wasserstein distance between the output and the optimal solution, we show that there is a polynomial-time (&#949;,&#948;)-differentially private algorithm which, for any sufficiently large &#934;<sup>2</sup> well-separated datasets, outputs <i>k</i> centers that are within Wasserstein distance &#216;(&#934;<sup>2</sup>) from the optimal. This result improves the previous bounds by removing the dependence on &#949;, number of centers <i>k</i>, and dimension <i>d</i>. Further, we prove a matching lower bound that no (&#949;, &#948;)-differentially private algorithm can guarantee Wasserstein distance less than &#216;mega (&#934;<sup>2</sup>) and, thus, our positive result is optimal up to a constant factor. For minimizing the <i>k</i>-means objective when the dimension <i>d</i> is bounded, we propose a polynomial-time private local search algorithm that outputs an &#945;n-additive approximation when the size of the dataset is at least ~&#216; (k<sup>3</sup>/2 &#183; d &#183; &#949;<sup>-1</sup> &#183; poly(&#945;<sup>-1</sup>)).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684662" title="Get the Full Text from the ACM Digital Library">Explanations and Transparency in Collaborative Workflows</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Serge Abiteboul</li>
+<li class="nameList">Pierre Bourhis</li>
+<li class="nameList Last">Victor Vianu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We pursue an investigation of data-driven collaborative workflows. In the model, peers can access and update local data, causing side-effects on other peers' data. In this paper, we study means of explaining to a peer her local view of a global run, both at runtime and statically. We consider the notion of "scenario for a given peer" that is a subrun observationally equivalent to the original run for that peer. Because such a scenario can sometimes differ significantly from what happens in the actual run, thus providing a misleading explanation, we introduce and study a faithfulness requirement that ensures closer adherence to the global run. We show that there is a unique minimal faithful scenario, that explains what is happening in the global run by extracting only the portion relevant to the peer. With regard to static explanations, we consider the problem of synthesizing, for each peer, a "view program" whose runs generate exactly the peer's observations of the global runs. Assuming some conditions desirable in their own right, namely transparency and boundedness, we show that such a view program exists and can be synthesized. As an added benefit, the view program rules provide provenance information for the updates observed by the peer.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684663" title="Get the Full Text from the ACM Digital Library">Improvements on the k-center Problem for Uncertain Data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sharareh Alipour</li>
+<li class="nameList Last">Amir Jafari</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In real applications, there are situations where we need to model some problems based on uncertain data. This leads us to define an uncertain model for some classical geometric optimization problems and propose algorithms to solve them. The assigned version of the k-center problem for <i>n</i> uncertain points in a metric space is studied in this paper. The main approach is to replace each uncertain point with a clever choice of a certain point. We argue that the <i>k</i>-center solution for these certain replacements of our uncertain points, is a good constant approximation factor for the original uncertain k-center problem. This approach enables us to present fast and simple algorithms that give 10-approximation solution for the k-center problem in any metric space and when the ambient space is Euclidean, it can be improved to (3+&#949;)-approximation for any &#949;&#62;0. These algorithms improve both the approximation factor and the running time of the previously known algorithms. Also, our algorithms are suitable for applying in the case of streaming and big data.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N684664" title="Get the Full Text from the ACM Digital Library">Heavy Hitters and the Structure of Local Privacy</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mark Bun</li>
+<li class="nameList">Jelani Nelson</li>
+<li class="nameList Last">Uri Stemmer</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We present a new locally differentially private algorithm for the heavy hitters problem which achieves optimal worst-case error as a function of all standardly considered parameters. Prior work obtained error rates which depend optimally on the number of users, the size of the domain, and the privacy parameter, but depend sub-optimally on the failure probability. We strengthen existing lower bounds on the error to incorporate the failure probability, and show that our new upper bound is tight with respect to this parameter as well. Our lower bound is based on a new understanding of the structure of locally private protocols. We further develop these ideas to obtain the following general results beyond heavy hitters. (1) Advanced Grouposition: In the local model, group privacy for k users degrades proportionally to root k, instead of linearly in k as in the central model. Stronger group privacy yields improved max-information guarantees, as well as stronger lower bounds (via "packing arguments"), over the central model. (2) Building on a transformation of Bassily and Smith (STOC 2015), we give a generic transformation from any non-interactive approximate-private local protocol into a pure-private local protocol. Again in contrast with the central model, this shows that we cannot obtain more accurate algorithms by moving from pure to approximate local privacy.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

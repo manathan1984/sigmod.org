@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "SIGMOD Online"
 permalink: "/sigmod-history/sigmod-online/"
 section: "sigmod"
@@ -15,7 +16,7 @@ SIGMOD Online, under the name ACM SIGMOD Information Server, came on-line in the
 
 ### Design of SIGMOD Online
 
-Marianne Winslett did the initial design when she set up the site. The site was redesigned in the spring of 2000 by Traffx Design,  directed by Alberto Mendelzon (University of Toronto). On April 7, 2010, a new design of SIGMOD Online using the [Plone](http://www.plone.org/) content management system was released. The redesign was coordinated by Jeffrey Xu Yu and mainly done by two postgraduate students Qi Pan and Zheng Liu (Chinese University of Hong Kong). In 2016 Curtis Dyreson redesigned the site in WordPress.  The [SIGMOD logo](https://sigmod.org/sigmod-history/sigmod-online/sigmod-logo-history "SIGMOD Logo") was designed in 1998 by Jun Yang, a SIGMOD member and then a graduate student at Stanford University.
+Marianne Winslett did the initial design when she set up the site. The site was redesigned in the spring of 2000 by Traffx Design,  directed by Alberto Mendelzon (University of Toronto). On April 7, 2010, a new design of SIGMOD Online using the [Plone](http://www.plone.org/) content management system was released. The redesign was coordinated by Jeffrey Xu Yu and mainly done by two postgraduate students Qi Pan and Zheng Liu (Chinese University of Hong Kong). In 2016 Curtis Dyreson redesigned the site in WordPress.  The [SIGMOD logo](/sigmod-history/sigmod-logo-history/ "SIGMOD Logo") was designed in 1998 by Jun Yang, a SIGMOD member and then a graduate student at Stanford University.
 
 ### SIGMOD Record Web Edition
 

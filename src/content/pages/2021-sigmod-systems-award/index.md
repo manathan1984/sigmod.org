@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2021 SIGMOD Systems Award"
 permalink: "/2021-sigmod-systems-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2022-05-17"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-![](https://sigmod.org/wp-content/uploads/2022/02/sdss2.jpg)
+![](/wp-content/uploads/2022/02/sdss2.jpg)
 
 **Sloan Digital Sky Survey**
 

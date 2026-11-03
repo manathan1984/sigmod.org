@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Gerhard Weikum — 2016 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/gerhard-weikum-2016-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2016/05/gerhardweikum.jpg" alt="gerhardweikum" width="123" height="161"></td><td><h2>Gerhard Weikum</h2><h3>2016 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2016/05/gerhardweikum.jpg" alt="gerhardweikum" width="123" height="161"></td><td><h2>Gerhard Weikum</h2><h3>2016 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 **Professor Gerhard Weikum** is the recipient of the 2016 SIGMOD Edgar F. Codd Innovation Award for pioneering work on the automatic construction of large knowledge bases.
 

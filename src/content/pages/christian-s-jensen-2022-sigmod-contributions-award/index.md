@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Christian S. Jensen — 2022 SIGMOD Contributions Award"
 permalink: "/christian-s-jensen-2022-sigmod-contributions-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-![](https://sigmod.org/wp-content/uploads/2022/05/jensen-photo.jpg)
+![](/wp-content/uploads/2022/05/jensen-photo.jpg)
 
 Christian S. Jensen
 

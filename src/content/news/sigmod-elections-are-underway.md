@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "SIGMOD Elections are underway"
 permalink: "/sigmod-elections-are-underway/"
 section: "sigmod"
@@ -11,7 +12,7 @@ categories: ["News"]
 tags: ["news"]
 ---
 
-![](https://sigmod.org/wp-content/uploads/2015/07/image_thumb.jpg)Elections for new SIGMOD officers have started. If you have received an Email from ACM’s Election Services Corp, please, follow the link in that Email and vote as soon as possible, but no later than June 9. If you have not received an Email, then you are probably not a SIGMOD member. Please, become a SIGMOD (www.acm.org) and help us get more weight within the ACM.
+![](/wp-content/uploads/2015/07/image_thumb.jpg)Elections for new SIGMOD officers have started. If you have received an Email from ACM’s Election Services Corp, please, follow the link in that Email and vote as soon as possible, but no later than June 9. If you have not received an Email, then you are probably not a SIGMOD member. Please, become a SIGMOD (www.acm.org) and help us get more weight within the ACM.
 
 We would like to thank all the candidates who have graciously accepted to run for this election: Juliana Freire, Zack Ives, Yanlei Diao, Ihab Ilyas, Fatma Ozcan, and Julia Stoyanovich. Thanks so much. It is fantastic to see that SIGMOD has such a deep set of volunteers.
 

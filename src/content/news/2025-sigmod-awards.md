@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2025 SIGMOD Awards"
 permalink: "/2025-sigmod-awards/"
 section: "sigmod"
@@ -11,7 +12,7 @@ categories: ["Awards","News"]
 tags: ["news"]
 ---
 
-![](https://sigmod.org/wp-content/uploads/2023/05/image-2.png)
+![](/wp-content/uploads/2023/05/image-2.png)
 
 The 2025 SIGMOD Awards Committee comprising Sourav S. Bhowmick, Angela Bonifati, V. Jagadish, David Maier, Sharad Mehrotra (Chair), Rachel Pottinger, Sayan Ranu, Cyrus Shahabi, Wang-Chiew Tanis happy to announce the following recipients of the 2025 ACM SIGMOD awards.
 

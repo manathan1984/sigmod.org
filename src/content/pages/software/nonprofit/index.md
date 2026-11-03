@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Publically Available Database Software from Nonprofit Organizations"
 permalink: "/software/nonprofit/"
 section: "sigmod"
@@ -13,7 +14,7 @@ A list of database-related software packages available from non-profit organizat
 
 The packages listed below were announced to be free of charge at least for academic or personal use. License terms are matter of the supplier of the package. The date behind the package name (if present) indicates the issue date of the last release of the package. When available, contact email address and a link to the license terms are provided.
 
-See [here](https://sigmod.org/software/free-public-domain-software.html "Free/public domain software") for the home page of this service and for instructions on how to report new packages or change requests to existing entries.
+See [here](/software/ "Free/public domain software") for the home page of this service and for instructions on how to report new packages or change requests to existing entries.
 
 * * *
 

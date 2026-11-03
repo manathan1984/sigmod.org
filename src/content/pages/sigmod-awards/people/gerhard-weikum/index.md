@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Gerhard Weikum — 2011 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/gerhard-weikum/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)  
+![](/wp-content/uploads/2022/05/image_large-300x9.png)  
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview.jpg" alt="Gerhard_Weikum"></td><td><h2>Gerhard Weikum</h2><h3>2011 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview.jpg" alt="Gerhard_Weikum"></td><td><h2>Gerhard Weikum</h2><h3>2011 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 Gerhard Weikum receives the 2011 SIGMOD Contributions Award for his significant service to the database community, through research leadership and academic mentoring as well as through his advocacy for change in several of our key institutions. In particular, Weikum has been  a long term leader and influential organizer in innovating our collaboration and publication culture to deal with the tremendous growth and broadening of our field while maintaining high standards of quality.
 

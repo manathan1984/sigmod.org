@@ -1,0 +1,467 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '10- Proceedings of the twenty-ninth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '10- Proceedings of the twenty-ninth ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=1807085" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Opening and keynote</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254306" title="Full Citation in the ACM Digital Library">Session details: Opening and keynote</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jan Paredaens</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683384" title="Get the Full Text from the ACM Digital Library">Datalog redux: experience and conjecture</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Joseph M. Hellerstein</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>There is growing urgency in computer science circles regarding an impending crisis in parallel programming. Emerging computing platforms, from multicore processors to cloud computing, predicate their performance growth on the development of software to harness parallelism. For the first time in the history of computing, the progress of Moore's Law depends on the productivity of software engineers. Unfortunately, parallel and distributed programming today is challenging even for the best programmers, and simply unworkable for the majority. There has never been a more urgent need for breakthroughs in programming models and languages.</p> <p>While parallel programming in general is considered very difficult, data parallelism has been very successful. The relational algebra parallelizes easily over large datasets, and SQL programmers have long reaped the benefits of parallelism without modifications to their code. This point has been rediscovered and amplified via recent enthusiasm for MapReduce programming and "Big Data", which have turned data parallelism into common culture across computing.</p> <p>As a result, it is increasingly attractive to tackle the challenge of parallel programming on the firm common ground of data parallelism: start with an easy-to-parallelize kernel-relational algebra-and extend it to general-purpose computation. This approach has clear precedents in database theory, where it has long been known that classical relational languages have natural Turing-complete extensions.</p> <p>At the same time that this crisis has been evolving, variants of Datalog have been seen cropping up in a wide range of practical settings, from security to robotics to compiler analysis. Over the past seven years, we have been exploring the use of Datalog-inspired languages in a variety of systems projects, with a focus on inherently parallel tasks in networking and distributed systems. The experience has been largely positive: we have demonstrated full-featured Datalog-based system implementations that are orders of magnitude more compact than equivalent imperatively-implemented systems, with competitive performance and significantly accelerated software evolution. Evidence is mounting that Datalog can serve as the basis of a much simpler family of languages for programming serious parallel and distributed software.</p> <p>This raises many questions that should warm the heart of a database theoretician. How does the complexity hierarchy of logic languages relate to parallel models of computation? Is there a suitable Coordination Complexity model that captures the realities of modern parallel hardware, where computation is cheap and coordination is expensive? Can the lens of logic provide better focus on what is "hard" to parallelize, what is "embarrassingly parallel", and points in between? Does our understanding of non-monotonic reasoning shed light on the ability of loosely-coupled distributed systems to guarantee eventual consistency? And finally, a question close to the heart of the PODS conference: if Datalog has been The Answer all these years, is parallel and distributed programming The Question it has been waiting for?</p> <p>In this talk and the paper that accompanies it, I present design patterns that arose in our experience building distributed and parallel software in the style of Datalog, and use them to motivate some initial conjectures relating to the questions above.</p> <p>The full paper was not available at the time these proceedings were printed, but can be found online by searching for the phrase "Springtime for Datalog".</p></div> </div>
+<h2>SESSION: Query languages</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254307" title="Full Citation in the ACM Digital Library">Session details: Query languages</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Tova Milo</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683395" title="Get the Full Text from the ACM Digital Library">Expressive languages for path queries over graph-structured data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pablo Barcelo</li>
+<li class="nameList">Carlos Hurtado</li>
+<li class="nameList">Leonid Libkin</li>
+<li class="nameList Last">Peter Wood</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>For many problems arising in the setting of graph querying (such as finding semantic associations in RDF graphs, exact and approximate pattern matching, sequence alignment, etc.), the power of standard languages such as the widely studied conjunctive regular path queries (CRPQs) is insufficient in at least two ways. First, they cannot output paths and second, more crucially, they cannot express <i>relations</i> among paths.</p> <p>We thus propose a class of <i>extended</i> CRPQs, called ECRPQs, which add regular relations on tuples of paths, and allow path variables in the heads of queries. We provide several examples of their usefulness in querying graph structured data, and study their properties. We analyze query evaluation and representation of tuples of paths in the output by means of automata. We present a detailed analysis of data and combined complexity of queries, and consider restrictions that lower the complexity of ECRPQs to that of relational conjunctive queries. We study the containment problem, and look at further extensions with first-order features, and with non-regular relations that express arithmetic properties of paths, based on the lengths and numbers of occurrences of labels.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683396" title="Get the Full Text from the ACM Digital Library">Transducing Markov sequences</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Benny Kimelfeld</li>
+<li class="nameList Last">Christopher R&#233;</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A Markov sequence is a basic statistical model representing uncertain sequential data, and it is used within a plethora of applications, including speech recognition, image processing, computational biology, radio-frequency identification (RFID), and information extraction. The problem of querying a Markov sequence is studied under the conventional semantics of querying a probabilistic database, where queries are formulated as finite-state transducers. Specifically, the complexity of two main problems is analyzed. The first problem is that of computing the confidence (probability) of an answer. The second is the enumeration of the answers in the order of decreasing confidence (with the generation of the top-<i>k</i> answers as a special case), or in an approximate order thereof. In particular, it is shown that enumeration in any sub-exponential-approximate order is generally intractable (even for some fixed transducers), and a matching upper bound is obtained through a proposed heuristic. Due to this hardness, a special consideration is given to restricted (yet common) classes of transducers that extract matches of a regular expression (subject to prefix and suffix constraints), and it is shown that these classes are, indeed, significantly more tractable.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683397" title="Get the Full Text from the ACM Digital Library">Positive higher-order queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Benedikt</li>
+<li class="nameList">Gabriele Puppis</li>
+<li class="nameList Last">Huy Vu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We investigate a higher-order query language that embeds operators of the positive relational algebra within the simply-typed &#955;-calculus. Our language allows one to succinctly define ordinary positive relational algebra queries (conjunctive queries and unions of conjunctive queries) and, in addition, <i>second-order query functionals</i>, which allow the transformation of CQs and UCQs in a generic (i.e., syntax-independent) way. We investigate the equivalence and containment problems for this calculus, which subsumes traditional CQ/UCQ containment. Query functionals are said to be equivalent if the output queries are equivalent, for each possible input query, and similarly for containment. These notions of containment and equivalence depend on the class of (ordinary relational algebra) queries considered. We show that containment and equivalence are decidable when query variables are restricted to positive relational algebra and we identify the precise complexity of the problem. We also identify classes of functionals where containment is tractable. Finally, we provide upper bounds to the complexity of the containment problem when functionals act over other classes.</p></div> </div>
+<h2>SESSION: Awards</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254308" title="Full Citation in the ACM Digital Library">Session details: Awards</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jianwen Su</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683398" title="Get the Full Text from the ACM Digital Library">The ACM PODS Alberto O. Mendelzon test-of-time-award 2010</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jianwen Su</li>
+<li class="nameList Last">Phokion G. Kolaitis</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683399" title="Get the Full Text from the ACM Digital Library">An optimal algorithm for the distinct elements problem</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Daniel M. Kane</li>
+<li class="nameList">Jelani Nelson</li>
+<li class="nameList Last">David P. Woodruff</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We give the first optimal algorithm for estimating the number of distinct elements in a data stream, closing a long line of theoretical research on this problem begun by Flajolet and Martin in their seminal paper in FOCS 1983. This problem has applications to query optimization, Internet routing, network topology, and data mining. For a stream of indices in {1,...,<i>n</i>}, our algorithm computes a (1 &#177; &#949;)-approximation using an optimal <i>O</i>(1/&#949;<sup>-2</sup> + log(<i>n</i>)) bits of space with 2/3 success probability, where 0&lt;&#949;&lt;1 is given. This probability can be amplified by independent repetition. Furthermore, our algorithm processes each stream update in <i>O</i>(1) worst-case time, and can report an estimate at any point midstream in <i>O</i>(1) worst-case time, thus settling both the space and time complexities simultaneously.</p> <p>We also give an algorithm to estimate the Hamming norm of a stream, a generalization of the number of distinct elements, which is useful in data cleaning, packet tracing, and database auditing. Our algorithm uses nearly optimal space, and has optimal <i>O</i>(1) update and reporting times.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683390" title="Get the Full Text from the ACM Digital Library">Understanding cardinality estimation using entropy maximization</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Christopher R&#233;</li>
+<li class="nameList Last">Dan Suciu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Cardinality estimation is the problem of estimating the number of tuples returned by a query; it is a fundamentally important task in data management, used in query optimization, progress estimation, and resource provisioning. We study cardinality estimation in a principled framework: given a set of statistical assertions about the number of tuples returned by a fixed set of queries, predict the number of tuples returned by a new query. We model this problem using the probability space, over possible worlds, that satisfies all provided statistical assertions and maximizes entropy. We call this the Entropy Maximization model for statistics (MaxEnt). In this paper we develop the mathematical techniques needed to use the MaxEnt model for predicting the cardinality of conjunctive queries.</p></div> </div>
+<h2>TUTORIAL SESSION: Tutorial 1</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254309" title="Full Citation in the ACM Digital Library">Session details: Tutorial 1</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Marcelo Arenas</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683391" title="Get the Full Text from the ACM Digital Library">From information to knowledge: harvesting entities and relationships from web sources</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gerhard Weikum</li>
+<li class="nameList Last">Martin Theobald</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>There are major trends to advance the functionality of search engines to a more expressive semantic level. This is enabled by the advent of knowledge-sharing communities such as Wikipedia and the progress in automatically extracting entities and relationships from semistructured as well as natural-language Web sources. Recent endeavors of this kind include DBpedia, EntityCube, KnowItAll, ReadTheWeb, and our own YAGO-NAGA project (and others). The goal is to automatically construct and maintain a comprehensive knowledge base of facts about named entities, their semantic classes, and their mutual relations as well as temporal contexts, with high precision and high recall. This tutorial discusses state-of-the-art methods, research opportunities, and open challenges along this avenue of knowledge harvesting.</p></div> </div>
+<h2>SESSION: Streams and query processing</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254310" title="Full Citation in the ACM Digital Library">Session details: Streams and query processing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Mikhail Atallah</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683392" title="Get the Full Text from the ACM Digital Library">Optimal sampling from distributed streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Graham Cormode</li>
+<li class="nameList">S. Muthukrishnan</li>
+<li class="nameList">Ke Yi</li>
+<li class="nameList Last">Qin Zhang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A fundamental problem in data management is to draw a sample of a large data set, for approximate query answering, selectivity estimation, and query planning. With large, streaming data sets, this problem becomes particularly difficult when the data is shared across multiple distributed sites. The challenge is to ensure that a sample is drawn uniformly across the union of the data while minimizing the communication needed to run the protocol and track parameters of the evolving data. At the same time, it is also necessary to make the protocol lightweight, by keeping the space and time costs low for each participant. In this paper, we present communication-efficient protocols for sampling (both with and without replacement) from <i>k</i> distributed streams. These apply to the case when we want a sample from the full streams, and to the sliding window cases of only the <i>W</i> most recent items, or arrivals within the last <i>w</i> time units. We show that our protocols are optimal, not just in terms of the communication used, but also that they use minimal or near minimal (up to logarithmic factors) time to process each new item, and space to operate.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683393" title="Get the Full Text from the ACM Digital Library">Incremental query evaluation in a ring of databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Christoph Koch</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>This paper approaches the incremental view maintenance problem from an algebraic perspective. We construct the algebraic structure of a ring of databases and use it as the foundation of the design of a query calculus that allows to express powerful aggregate queries. The query calculus inherits key properties of the ring, such as having a normal form of polynomials and being closed under computing inverses and delta queries. The <i>k</i>-th delta of a polynomial query of degree <i>k</i> without nesting is purely a function of the update, not of the database. This gives rise to a method of eliminating expensive query operators such as joins from programs that perform incremental view maintenance. The main result is that, for non-nested queries, each individual aggregate value can be incrementally maintained using a constant amount of work. This is not possible for nonincremental evaluation.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683394" title="Get the Full Text from the ACM Digital Library">Fast Manhattan sketches in data streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jelani Nelson</li>
+<li class="nameList Last">David P. Woodruff</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The L1-distance, also known as the Manhattan or taxicab distance, between two vectors <i>x, y</i> in R<sup><i>n</i></sup> is &#8721;_{i=1}over<i>n</i> |<i>x<sub>i</sub>-y_<sub>i</sub></i>|. Approximating this distance is a fundamental primitive on massive databases, with applications to clustering, nearest neighbor search, network monitoring, regression, sampling, and support vector machines. We give the first 1-pass streaming algorithm for this problem in the turnstile model with <i>O</i>*(1/&#949;<sup>2</sup>) space and <i>O</i>*(1) update time. The <i>O</i>* notation hides polylogarithmic factors in &#949;, <i>n</i>, and the precision required to store vector entries. All previous algorithms either required &#937;(1/&#949;<sup>3</sup>) space or &#937;(1/&#949;<sup>2</sup>) update time and/or could not work in the turnstile model (i.e., support an arbitrary number of updates to each coordinate). Our bounds are optimal up to <i>O</i>*(1) factors.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683305" title="Get the Full Text from the ACM Digital Library">Semantic query optimization in the presence of types</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Meier</li>
+<li class="nameList">Michael Schmidt</li>
+<li class="nameList">Fang Wei</li>
+<li class="nameList Last">Georg Lausen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Both semantic and type-based query optimization rely on the idea that queries often exhibit non-trivial rewritings if the state space of the database is restricted. Despite their close connection, these two problems to date have always been studied separately. We present a unifying, logic-based framework for query optimization in the presence of data dependencies and type information. It builds upon the classical chase algorithm and extends existing query minimization techniques to considerably larger classes of queries and dependencies. In particular, our setting requires chasing conjunctive queries (possibly with union and negation) in the presence of dependencies containing negation and disjunction. We study the applicability of the chase in this setting, develop novel conditions that guarantee its termination, identify fragments for which minimal query computation is always possible (w.r.t. a generic cost function), and investigate the complexity of related decision problems.</p></div> </div>
+<h2>SESSION: Privacy</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254311" title="Full Citation in the ACM Digital Library">Session details: Privacy</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Graham Cormode</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683306" title="Get the Full Text from the ACM Digital Library">Optimizing linear counting queries under differential privacy</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Chao Li</li>
+<li class="nameList">Michael Hay</li>
+<li class="nameList">Vibhor Rastogi</li>
+<li class="nameList">Gerome Miklau</li>
+<li class="nameList Last">Andrew McGregor</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Differential privacy is a robust privacy standard that has been successfully applied to a range of data analysis tasks. But despite much recent work, optimal strategies for answering a collection of related queries are not known.</p> <p>We propose the matrix mechanism, a new algorithm for answering a workload of predicate counting queries. Given a workload, the mechanism requests answers to a different set of queries, called a query strategy, which are answered using the standard Laplace mechanism. Noisy answers to the workload queries are then derived from the noisy answers to the strategy queries. This two stage process can result in a more complex correlated noise distribution that preserves differential privacy but increases accuracy.</p> <p>We provide a formal analysis of the error of query answers produced by the mechanism and investigate the problem of computing the optimal query strategy in support of a given workload. We show this problem can be formulated as a rank-constrained semidefinite program. Finally, we analyze two seemingly distinct techniques, whose similar behavior is explained by viewing them as instances of the matrix mechanism.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683307" title="Get the Full Text from the ACM Digital Library">Universally optimal privacy mechanisms for minimax agents</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Mangesh Gupte</li>
+<li class="nameList Last">Mukund Sundararajan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A scheme that publishes aggregate information about sensitive data must resolve the trade-off between utility to information consumers and privacy of the database participants. Differential privacy [5] is a well-established definition of privacy--this is a universal guarantee against all attackers, whatever their side-information or intent. Can we have a similar universal guarantee for utility?</p> <p>There are two standard models of utility considered in decision theory: Bayesian and minimax [13]. Ghosh et. al. [8] show that a certain "geometric mechanism" gives optimal utility to all Bayesian information consumers. In this paper, we prove a similar result for minimax information consumers. Our result also works for a wider class of information consumers which includes Bayesian information consumers and subsumes the result from [8].</p> <p>We model information consumers as minimax (risk-averse) agents, each endowed with a loss-function which models their tolerance to inaccuracies and each possessing some side-information about the query. Further, information consumers are rational in the sense that they actively combine information from the mechanism with their side-information in a way that minimizes their loss. Under this assumption of rational behavior, we show that for every fixed count query, the geometric mechanism is universally optimal for all minimax information consumers.</p> <p>Additionally, our solution makes it possible to release query results, when information consumers are at different levels of privacy, in a collusion-resistant manner.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683308" title="Get the Full Text from the ACM Digital Library">Towards an axiomatization of statistical privacy and utility</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Daniel Kifer</li>
+<li class="nameList Last">Bing-Rong Lin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>"Privacy" and "utility" are words that frequently appear in the literature on statistical privacy. But what do these words really mean? In recent years, many problems with intuitive notions of privacy and utility have been uncovered. Thus more formal notions of privacy and utility, which are amenable to mathematical analysis, are needed. In this paper we present our initial work on an axiomatization of privacy and utility. In particular, we study how these concepts are affected by randomized algorithms. Our analysis yields new insights into the construction of both privacy definitions and mechanisms that generate data according to such definitions. In particular, it characterizes a class of relaxations of differential privacy and shows that desirable outputs of a differentially private mechanism are best interpreted as certain graphs rather than query answers or synthetic data.</p></div> </div>
+<h2>TUTORIAL SESSION: Tutorial 2</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254312" title="Full Citation in the ACM Digital Library">Session details: Tutorial 2</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jeffrey Naughton</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683309" title="Get the Full Text from the ACM Digital Library">Information complexity: a tutorial</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">T. S. Jayram</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The recent years have witnessed the overwhelming success of algorithms that operate on massive data. Several computing paradigms have been proposed for massive data set algorithms such as data streams, sketching, sampling etc. and understanding their limitations is a fundamental theoretical challenge. In this survey, we describe the information complexity paradigm that has proved successful in obtaining tight lower bounds for several well-known problems. Information complexity quantifies the amount of information about the inputs that must be necessarily propagated by any algorithm in solving a problem. We describe the key ideas of this paradigm, and highlight the beautiful interplay of techniques arising from diverse areas such as information theory, statistics and geometry.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683300" title="Get the Full Text from the ACM Digital Library">Capturing missing tuples and missing values</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Wenfei Fan</li>
+<li class="nameList Last">Floris Geerts</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Databases in real life are often neither entirely closed-world nor entirely open-world. Indeed, databases in an enterprise are typically <i>partially closed</i>, in which a part of the data is constrained by master data that contains complete information about the enterprise in certain aspects [21]. It has been shown that despite missing tuples, such a database may turn out to have complete information for answering a query [9].</p> <p>This paper studies partially closed databases from which <i>both tuples and values</i> may be missing. We specify such a database in terms of conditional tables constrained by master data, referred to as <i>c</i>-instances. We first propose three models to characterize whether a <i>c</i>-instance <i>T</i> is <i>complete</i> for a query <i>Q relative to</i> master data. That is, depending on how missing values in <i>T</i> are instantiated, the answer to <i>Q</i> in <i>T</i> remains unchanged when new tuples are added. We then investigate four problems, to determine (a) whether a given c-instance is complete for a query <i>Q</i>, (b) whether there exists a <i>c</i>-instance that is complete for <i>Q</i> relative to master data available, (c) whether a <i>c</i>-instance is a minimal-size database that is complete for <i>Q</i>, and (d) whether there exists a <i>c</i>-instance of a bounded size that is complete for <i>Q</i>. We establish matching lower and upper bounds on these problems for queries expressed in a variety of languages, in each of the three models for specifying relative completeness.</p></div> </div>
+<h2>SESSION: Uncertainty in databases</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254313" title="Full Citation in the ACM Digital Library">Session details: Uncertainty in databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Benny Kimelfeld</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683301" title="Get the Full Text from the ACM Digital Library">On the first-order expressibility of computing certain answers to conjunctive queries over uncertain databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jef Wijsen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A natural way for capturing uncertainty in the relational data model is by having relations that violate their primary key constraint, that is, relations in which distinct tuples agree on the primary key. A repair (or possible world) of a database is then obtained by selecting a maximal number of tuples without ever selecting two distinct tuples that have the same primary key value. For a Boolean query <i>q</i>, CERTAINTY(<i>q</i>) is the problem that takes as input a database db and asks whether <i>q</i> evaluates to true on every repair of db. We are interested in determining queries <i>q</i> for which CERTAINTY(<i>q</i>) is first-order expressible (and hence in the low complexity class AC<sup>0</sup>).</p> <p>For queries <i>q</i> in the class of conjunctive queries without self-join, we provide a necessary syntactic condition for first-order expressibility of CERTAINTY(<i>q</i>). For acyclic queries, this necessary condition is also a sufficient condition. So we obtain a decision procedure for first-order expressibility of CERTAINTY(<i>q</i>) when <i>q</i> is acyclic and without self-join. We also show that if CERTAINTY(<i>q</i>) is first-order expressible, its first-order definition, commonly called (certain) first-order rewriting, can be constructed in a rather straightforward way.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683302" title="Get the Full Text from the ACM Digital Library">Certain answers for XML queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Claire David</li>
+<li class="nameList">Leonid Libkin</li>
+<li class="nameList Last">Filip Murlak</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The notion of certain answers arises when one queries incompletely specified databases, e.g., in data integration and exchange scenarios, or databases with missing information. While in the relational case this notion is well understood, there is no natural analog of it for XML queries that return documents.</p> <p>We develop an approach to defining certain answers for such XML queries, and apply it in the settings of incomplete information and XML data exchange. We first revisit the relational case, and show how to present the key concepts related to certain answers in a new model-theoretic language. This new approach naturally extends to XML. We prove a number of generic, application-independent results about computability and complexity of certain answers produced by it. We then turn our attention to a pattern-based XML query language with trees as outputs, and present a technique for computing certain answers that relies on the notion of a basis of a set of trees. We show how to compute such bases for documents with nulls and for documents arising in data exchange scenarios, and provide complexity bounds. While in general complexity of query answering in XML data exchange could be high, we exhibit a natural class of XML schema mappings for which not only query answering, but also many static analysis problems can be solved efficiently.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683303" title="Get the Full Text from the ACM Digital Library">Computing query probability with incidence algebras</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Nilesh Dalvi</li>
+<li class="nameList">Karl Schnaitter</li>
+<li class="nameList Last">Dan Suciu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We describe an algorithm that evaluates queries over probabilistic databases using Mobius' inversion formula in incidence algebras. The queries we consider are unions of conjunctive queries (equivalently: existential, positive First Order sentences), and the probabilistic databases are tuple-independent structures. Our algorithm runs in PTIME on a subset of queries called "safe" queries, and is complete, in the sense that every unsafe query is hard for the class <i>FP</i><sup><i>#P</i></sup>. The algorithm is very simple and easy to implement in practice, yet it is non-obvious. Mobius' inversion formula, which is in essence inclusion-exclusion, plays a key role for completeness, by allowing the algorithm to compute the probability of some safe queries even when they have some subqueries that are unsafe. We also apply the same lattice-theoretic techniques to analyze an algorithm based on lifted conditioning, and prove that it is incomplete.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683304" title="Get the Full Text from the ACM Digital Library">On probabilistic fixpoint and Markov chain query languages</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Daniel Deutch</li>
+<li class="nameList">Christoph Koch</li>
+<li class="nameList Last">Tova Milo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study highly expressive query languages such as datalog, fixpoint, and while-languages on probabilistic databases. We generalize these languages such that computation steps (e.g. datalog rules) can fire probabilistically. We define two possible semantics for such query languages, namely inflationary semantics where the results of each computation step are added to the current database and noninflationary queries that induce a random walk in-between database instances. We then study the complexity of exact and approximate query evaluation under these semantics.</p></div> </div>
+<h2>SESSION: Schema mappings and design</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254314" title="Full Citation in the ACM Digital Library">Session details: Schema mappings and design</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jan Van den Bussche</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683315" title="Get the Full Text from the ACM Digital Library">Foundations of schema mapping management</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marcelo Arenas</li>
+<li class="nameList">Jorge P&#233;rez</li>
+<li class="nameList">Juan L. Reutter</li>
+<li class="nameList Last">Cristian Riveros</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In the last few years, a lot of attention has been paid to the specification and subsequent manipulation of schema mappings, a problem which is of fundamental importance in metadata management. There have been many achievements in this area, and semantics have been defined for operators on schema mappings such as composition and inverse. However, little research has been pursued towards providing formal tools to compare schema mappings, in terms of their ability to transfer data and avoid storing redundant information, which has hampered the development of foundations for more complex operators as many of them involve these notions.</p> <p>In this paper, we address the problem of providing foundations for metadata management by developing an order to compare the amount of information transferred by schema mappings. From this order we derive several other criteria to compare mappings, we provide tools to deal with these criteria, and we show their usefulness in defining and studying schema mapping operators. More precisely, we show how the machinery developed can be used to study the <i>extract</i> and <i>merge</i> operators, that have been identified as fundamental for the development of a metadata management framework. We also use our machinery to provide simpler proofs for some fundamental results regarding the inverse operator, and we give an effective characterization for the decidability of the well-known schema evolution problem.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683316" title="Get the Full Text from the ACM Digital Library">Schema design for XML repositories: complexity and tractability</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Wim Martens</li>
+<li class="nameList">Matthias Niewerth</li>
+<li class="nameList Last">Thomas Schwentick</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Abiteboul et al. initiated the systematic study of distributed XML documents consisting of several logical parts, possibly located on different machines. The physical distribution of such documents immediately raises the following question: how can a global schema for the distributed document be broken up into local schemas for the different logical parts? The desired set of local schemas should guarantee that, if each logical part satisfies its local schema, then the distributed document satisfies the global schema.</p> <p>Abiteboul et al. proposed three levels of desirability for local schemas: local typing, maximal local typing, and perfect local typing. Immediate algorithmic questions are: (i) given a typing, determine whether it is local, maximal local, or perfect, and (ii) given a document and a schema, establish whether a (maximal) local or perfect typing exists. This paper improves the open complexity results in their work and initiates the study of (i) and (ii) for schema restrictions arising from the current standards: DTDs and XML Schemas with deterministic content models. The most striking result is that these restrictions yield tractable complexities for the perfect typing problem.</p> <p>Furthermore, an open problem in Formal Language Theory is settled: deciding language primality for deterministic finite automata is pspace-complete.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683317" title="Get the Full Text from the ACM Digital Library">Simplifying XML schema: single-type approximations of regular tree languages</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Wouter Gelade</li>
+<li class="nameList">Tomasz Idziaszek</li>
+<li class="nameList">Wim Martens</li>
+<li class="nameList Last">Frank Neven</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>XML Schema Definitions (XSDs) can be adequately abstracted by the single-type regular tree languages. It is well-known, that these form a strict subclass of the robust class of regular unranked tree languages. Sadly, in this respect, XSDs are not closed under the basic operations of union and set difference, complicating important tasks in schema integration and evolution. The purpose of this paper is to investigate how the union and difference of two XSDs can be approximated within the framework of single-type regular tree languages. We consider both optimal lower and upper approximations. We also address the more general question of how to approximate an arbitrary regular tree language by an XSD and consider the complexity of associated decision problems.</p></div> </div>
+<h2>SESSION: Query learning</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254315" title="Full Citation in the ACM Digital Library">Session details: Query learning</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Dan Suciu</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683318" title="Get the Full Text from the ACM Digital Library">Characterizing schema mappings via data examples</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Bogdan Alexe</li>
+<li class="nameList">Phokion G. Kolaitis</li>
+<li class="nameList Last">Wang-Chiew Tan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Schema mappings are high-level specifications that describe the relationship between two database schemas; they are considered to be the essential building blocks in data exchange and data integration, and have been the object of extensive research investigations. Since in real-life applications schema mappings can be quite complex, it is important to develop methods and tools for understanding, explaining, and refining schema mappings. A promising approach to this effect is to use "good" data examples that illustrate the schema mapping at hand.</p> <p>We develop a foundation for the systematic investigation of data examples and obtain a number of results on both the capabilities and the limitations of data examples in explaining and understanding schema mappings. We focus on schema mappings specified by source-to-target tuple generating dependencies (s-t tgds) and investigate the following problem: which classes of s-t tgds can be "uniquely characterized" by a finite set of data examples? Our investigation begins by considering finite sets of positive and negative examples, which are arguably the most natural choice of data examples. However, we show that they are not powerful enough to yield interesting unique characterizations. We then consider finite sets of universal examples, where a universal example is a pair consisting of a source instance and a universal solution for that source instance. We unveil a tight connection between unique characterizations via universal examples and the existence of Armstrong bases (a relaxation of the classical notion of Armstrong databases). On the positive side, we show that every schema mapping specified by LAV s-t tgds is uniquely characterized by a finite set of universal examples with respect to the class of LAV s-t tgds. Moreover, this positive result extends to the much broader classes of <i>n</i>-modular schema mappings, <i>n</i> a positive integer. Finally, we show that, on the negative side, there are schema mappings specified by GAV s-t tgds that are not uniquely characterized by any finite set of universal examples and negative examples with respect to the class of GAV s-t tgds (hence also with respect to the class of all s-t tgds).</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683319" title="Get the Full Text from the ACM Digital Library">Understanding queries in a search database system</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ronald Fagin</li>
+ <li class="nameList">Benny Kimelfeld</li>
+<li class="nameList">Yunyao Li</li>
+<li class="nameList">Sriram Raghavan</li>
+<li class="nameList Last">Shivakumar Vaithyanathan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>It is well known that a search engine can significantly benefit from an auxiliary database, which can suggest interpretations of the search query by means of the involved concepts and their interrelationship. The difficulty is to translate abstract notions like <i>concept</i> and <i>interpretation</i> into a concrete search algorithm that operates over the auxiliary database. To surpass existing heuristics, there is a need for a formal basis, which is realized in this paper through the framework of a <i>search database system</i>, where an interpretation is identified as a <i>parse</i>. It is shown that the parses of a query can be generated in polynomial time in the combined size of the input and the output, even if parses are restricted to those having a nonempty evaluation. Identifying that one parse is more specific than another is important for ranking answers, and this framework captures the precise semantics of being <i>more specific</i>; moreover, performing this comparison between parses is tractable. Lastly, the paper studies the problem of finding the most specific parses. Unfortunately, this problem turns out to be intractable in the general case. However, under reasonable assumptions, the parses can be enumerated in an order of decreasing specificity, with polynomial delay and polynomial space.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683310" title="Get the Full Text from the ACM Digital Library">A learning algorithm for top-down XML transformations</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Aurelien Lemay</li>
+<li class="nameList">Sebastian Maneth</li>
+<li class="nameList Last">Joachim Niehren</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A generalization from string to trees and from languages to translations is given of the classical result that any regular language can be learned from examples: it is shown that for any deterministic top-down tree transformation there exists a sample set of polynomial size (with respect to the minimal transducer) which allows to infer the translation. Until now, only for string transducers and for simple relabeling tree transducers, similar results had been known. Learning of deterministic top-down tree transducers (dtops) is far more involved because a dtop can copy, delete, and permute its input subtrees. Thus, complex dependencies of labeled input to output paths need to be maintained by the algorithm. First, a Myhill-Nerode theorem is presented for dtops, which is interesting on its own. This theorem is then used to construct a learning algorithm for dtops. Finally, it is shown how our result can be applied to xml transformations (e.g. xslt programs). For this, a new dtd-based encoding of unranked trees by ranked ones is presented. Over such encodings, dtops can realize many practically interesting xml transformations which cannot be realized on firstchild/next-sibling encodings.</p></div> </div>
+<h2>SESSION: Constraints &#38; indexing</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3254316" title="Full Citation in the ACM Digital Library">Session details: Constraints &#38; indexing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jan Hidders</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683311" title="Get the Full Text from the ACM Digital Library">Cache-oblivious hashing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rasmus Pagh</li>
+<li class="nameList">Zhewei Wei</li>
+<li class="nameList">Ke Yi</li>
+<li class="nameList Last">Qin Zhang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The hash table, especially its external memory version, is one of the most important index structures in large databases. Assuming a truly random hash function, it is known that in a standard external hash table with block size <i>b</i>, searching for a particular key only takes expected average <i>t</i>_<i>q</i>=1+1/2<sup>&#937;(<i>b</i>)</sup> disk accesses for any load factor &#945; bounded away from $1$. However, such near-perfect performance is achieved only when <i>b</i> is known and the hash table is particularly tuned for working with such a blocking. In this paper we study if it is possible to build a cache-oblivious hash table that works well with any blocking. Such a hash table will automatically perform well across all levels of the memory hierarchy and does not need any hardware-specific tuning, an important feature in autonomous databases.</p> <p>We first show that linear probing, a classical collision resolution strategy for hash tables, can be easily made cache-oblivious but it only achieves <i>t</i>_<i>q</i> = 1 + O(&#945;<i>b</i>). Then we demonstrate that it is possible to obtain <i>t</i>_<i>q</i> = 1 + 1/2<sup>&#937;(<i>b</i>)</sup>, thus matching the cache-aware bound, if the following two conditions hold: (a) <i>b</i> is a power of 2; and (b) every block starts at a memory address divisible by <i>b</i>. Both conditions hold on a real machine, although they are not stated in the cache-oblivious model. Interestingly, we also show that neither condition is dispensable: if either of them is removed, the best obtainable bound is <i>t</i>_<i>q</i>=1+O(&#945;<i>b</i>), which is exactly what linear probing achieves.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683312" title="Get the Full Text from the ACM Digital Library">Performance guarantees for B-trees with different-sized atomic keys</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael A. Bender</li>
+<li class="nameList">Haodong Hu</li>
+<li class="nameList Last">Bradley C. Kuszmaul</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Most B-tree papers assume that all <i>N</i> keys have the same size <i>K</i>, that <i>F</i> = <i>B/K</i> keys fit in a disk block, and therefore that the search cost is O(log<sub><i>f</i></sub>+1 <i>N</i>) block transfers. When keys have variable size, however, B-tree operations have no nontrivial performance guarantees.</p> <p>This paper provides B-tree-like performance guarantees on dictionaries that contain keys of different sizes in a model in which keys must be stored and compared as opaque objects. The resulting <b>atomic-key dictionaries</b> exhibit performance bounds in terms of the average key size and match the bounds when all keys are the same size. Atomic key dictionaries can be built with minimal modification to the B-tree structure, simply by choosing the pivot keys properly.</p> <p>This paper describes both static and dynamic atomic-key dictionaries. In the static case, if there are <i>N</i> keys with average size <i>K</i>, the search cost is <i>O</i>(&#8968;<i>K/B</i>&#8969; log<sub>1+&#8968;<i>K/B</i>&#8969;</sub> <i>N</i>) expected transfers. The paper proves that it is not possible to transform these expected bounds into worst-case bounds. The cost to build the tree is <i>O</i>(<i>NK</i>) operations and <i>O</i>(<i>NK/B</i>) transfers if all keys are presented in sorted order. If not, the cost is the sorting cost.</p> <p>For the dynamic dictionaries, the amortized cost to insert a key &#954; of arbitrary length at an arbitrary rank is dominated by the cost to search for &#954;. Specifically the amortized cost to insert a key &#954; of arbitrary length and random rank is <i>O</i>(&#8968;<i>K/B</i>&#8969; log<sub>1+&#8968;<i>K/B</i>&#8969;</sub> <i>N</i> + |&#954;| /<i>B</i>) transfers. A dynamic-programming algorithm is shown for constructing a search tree with minimal expected cost.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683313" title="Get the Full Text from the ACM Digital Library">When data dependencies over SQL tables meet the logics of paradox and S-3</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sven Hartmann</li>
+<li class="nameList Last">Sebastian Link</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study functional and multivalued dependencies over SQL tables with NOT NULL constraints. Under a no-information interpretation of null values we develop tools for reasoning. We further show that in the absence of NOT NULL constraints the associated implication problem is equivalent to that in propositional fragments of Priest's paraconsistent Logic of Paradox. Subsequently, we extend the equivalence to Boolean dependencies and to the presence of NOT NULL constraints using Schaerf and Cadoli's S-3 logics where S corresponds to the set of attributes declared NOT NULL. The findings also apply to Codd's interpretation "value at present unknown" utilizing a weak possible world semantics. Our results establish NOT NULL constraints as an effective mechanism to balance the expressiveness and tractability of consequence relations, and to control the degree by which the existing classical theory of data dependencies can be soundly approximated in practice.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683314" title="Get the Full Text from the ACM Digital Library">The power of tree projections: local consistency, greedy algorithms, and larger islands of tractability</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gianluigi Greco</li>
+<li class="nameList Last">Francesco Scarcello</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Enforcing local consistency is a well-known technique to simplify the evaluation of conjunctive queries. It consists of repeatedly taking the semijion between every pair of (relations associated with) query atoms, until the procedure stabilizes. If some relation becomes empty, then the query has an empty answer. Otherwise, we cannot say anything in general, unless we have some information on the structure of the given query. In fact, a fundamental result in database theory states that the class of queries for which---on every database---local consistency entails global consistency is precisely the class of acyclic queries. In the last few years, several efforts have been made to define structural decomposition methods isolating larger classes of nearly-acyclic queries, yet retaining the same nice properties as acyclic ones. In particular, it is known that queries having bounded (generalized) hypertree-width can be evaluated in polynomial time, and that this structural property is also sufficient to guarantee that local consistency solves the problem, as for acyclic queries. However, the precise power of such an approach was an open problem: Is it the case that bounded generalized hypertree-width is also a necessary condition to guarantee that local consistency entails global consistency?</p> <p>In this paper, we positively answer this question, and go beyond. Firstly, we precisely characterize the power of local consistency procedures in the more general framework of tree projections, where a query <i>Q</i> and a set <i>V</i> of views (i.e., resources that can be used to answer <i>Q</i>) are given, and where one looks for an acyclic hypergraph covering <i>Q</i> and covered by <i>Q</i>---all known structural decomposition methods are just special cases of this framework, defining their specific set of resources. We show that the existence of tree projections of certain subqueries is a necessary and sufficient condition to guarantee that local consistency entails global consistency. In particular, tight characterizations are given not only for the decision problem, but also when answers restricted to variables covered by some view have to be computed. Secondly, we consider greedy tree-projections that are easy to compute, and we study how far they can be from arbitrary tree-projections, which are intractable in general. Finally, we investigate classes of instances not included in those having tree projections, and which can be easily recognized and define either new islands of tractability, or islands of quasi-tractability.</p></div> </div>
+</div>
+</div>
+</body>
+</html>

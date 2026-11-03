@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Won Kim — 1998 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/won-kim/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)  
+![](/wp-content/uploads/2022/05/image_large-300x9.png)  
 
-<table align="center"><tbody><tr><td><a href="https://sigmod.org/wp-content/uploads/2015/07/image_preview25.jpg"><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview25.jpg" alt="image_preview" width="125" height="150"></a></td><td><h2>Won Kim</h2><h3>1998 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><a href="/wp-content/uploads/2015/07/image_preview25.jpg"><img src="/wp-content/uploads/2015/07/image_preview25.jpg" alt="image_preview" width="125" height="150"></a></td><td><h2>Won Kim</h2><h3>1998 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 Dr. Won Kim is the founder and CEO of Cyber Database Solutions. In 1990 he founded UniSQL, Inc., and successfully managed the company as CEO and Chairman for six years. He ushered in the era of object-relational database technology by conceiving and architecting the first commercial object-relational database server and the first commercial object-relational multidatabase server.
 

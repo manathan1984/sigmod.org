@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Conferences, Symposia, and Workshops held in Cooperation with SIGMOD"
 permalink: "/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/"
 section: "sigmod"
@@ -9,7 +10,7 @@ wp_parent: 218
 updated: "2024-06-04"
 ---
 
-Conferences, symposia, and workshops on data management can be *[sponsored or co-sponsored](https://sigmod.org/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/sponsorship-of-conferences.html "Sponsorship of Conferences")* by SIGMOD, or held *in cooperation* with SIGMOD. This document describes the [benefits](https://sigmod.org/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/in-cooperation-support-for-conferences.html#benefits "In-Cooperation / Support for Conferences") and [requirements](https://sigmod.org/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/in-cooperation-support-for-conferences.html#requirements "In-Cooperation / Support for Conferences") for meetings held in cooperation with SIGMOD, directions for [applying](https://sigmod.org/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/in-cooperation-support-for-conferences.html#application "In-Cooperation / Support for Conferences") for in-cooperation status. Note that meetings held in conjunction with the ACM SIGMOD/PODS joint conference must satisfy [additional requirements](https://sigmod.org/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/sigmod-pods-workshops.html "SIGMOD/PODS Workshops").
+Conferences, symposia, and workshops on data management can be *[sponsored or co-sponsored](/about-sigmod/sponsorship/sponsorship-of-meetings/ "Sponsorship of Conferences")* by SIGMOD, or held *in cooperation* with SIGMOD. This document describes the [benefits](/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/ "In-Cooperation / Support for Conferences") and [requirements](/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/ "In-Cooperation / Support for Conferences") for meetings held in cooperation with SIGMOD, directions for [applying](/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/ "In-Cooperation / Support for Conferences") for in-cooperation status. Note that meetings held in conjunction with the ACM SIGMOD/PODS joint conference must satisfy [additional requirements](https://sigmod.org/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/sigmod-pods-workshops.html "SIGMOD/PODS Workshops").
 
 The motivation for SIGMOD in-cooperation support is to provide high quality outlets for timely dissemination of research results relevant to management of data, beyond the ACM SIGMOD/PODS joint conference. ACM SIGMOD in-cooperation status is also given to workshops to encourage work in new areas and on tightly-focused topics relevant to management of data, and to database conferences in developing countries as an outreach effort. SIGMOD is not financially responsible for a meeting held in cooperation with SIGMOD.
 
@@ -17,8 +18,8 @@ The motivation for SIGMOD in-cooperation support is to provide high quality outl
 
 Holding a meeting in cooperation with SIGMOD provides a number of benefits:
 
--   The meeting organizers can use the ACM SIGMOD name and [SIGMOD logos](https://sigmod.org/about-sigmod/sponsorship/sigmod-logo.html "SIGMOD Logo") on any publicity about the meeting.
--   The meeting organizers receive one page in the *[SIGMOD Record](https://sigmod.org/publications/sigmodrecord "SIGMOD Record")* to announce the meeting, free of charge.
+-   The meeting organizers can use the ACM SIGMOD name and [SIGMOD logos](/about-sigmod/sigmod-logo-renderings/ "SIGMOD Logo") on any publicity about the meeting.
+-   The meeting organizers receive one page in the *[SIGMOD Record](https://sigmodrecord.org/ "SIGMOD Record")* to announce the meeting, free of charge.
 -   The meeting will be publicized in the Call for Papers and Professional Calendar sections of *Communications of the ACM*, free of charge.
 -   The meeting organizers can purchase an advertisement in *Communications of the ACM* at a special rate. (Ad placement should be arranged through ACM Headquarters, and *CACM* can advise as to the lead time required.) Discounted access to ACM mailing lists is also available.
 -   The *SIGMOD Record* will publish a final report that summarizes the meeting.

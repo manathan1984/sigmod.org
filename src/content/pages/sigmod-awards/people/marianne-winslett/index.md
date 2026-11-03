@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Marianne Winslett — 2012 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/marianne-winslett/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)  
+![](/wp-content/uploads/2022/05/image_large-300x9.png)  
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_thumb5.jpg" alt="Marianne Winslett" width="125" height="150"></td><td><h2>Marianne Winslett</h2><h3>2012 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_thumb5.jpg" alt="Marianne Winslett" width="125" height="150"></td><td><h2>Marianne Winslett</h2><h3>2012 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 **Dr. Marianne Winslett**  is the recipient of the 2012 SIGMOD Contribution Award for strengthening and humanizing the database community by originating and developing the ‘Distinguished Profile in Database Research’ series.
 

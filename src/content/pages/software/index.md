@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Software"
 permalink: "/software/"
 section: "sigmod"
@@ -12,11 +13,11 @@ T*he SIGMOD Software page was retired in 2019.*
 
 ACM SIGMOD maintains a list of publicly available software as a service for the database community. To allow easier orientation about the nature of the software, we have subdivided the lists into
 
-[*Packages from non-profit organizations*](https://sigmod.org/software/free-public-domain-software-1/publicly-available-database-software-from.html "Publicly Available Database Software from Nonprofit Organizations")
+[*Packages from non-profit organizations*](/software/nonprofit/ "Publicly Available Database Software from Nonprofit Organizations")
 
 Non-profit organizations are for example universities or government research labs or open-source development communities.
 
-[*Packages from commercial organizations*](https://sigmod.org/software/free-public-domain-software-1/publicly-available-database-software-from-1.html "Publicly Available Database Software from Commercial Organizations")
+[*Packages from commercial organizations*](/software/commerical/ "Publicly Available Database Software from Commercial Organizations")
 
 Commercial companies (incl. their research departments) which make certain packages publicly available.
 
@@ -35,6 +36,6 @@ You can announce new packages to the lists by mail to the [list maintainer](mail
 
 More complete instructions are found here.
 
-For reference purposes, we keep the [list as of 20-Mar-2003](https://sigmod.org/software/free-public-domain-software-1/index-of-publicty-available-database-software.html "Index of Publicty Available Database Software") available for some time.
+For reference purposes, we keep the [list as of 20-Mar-2003](/software/index-of-publically-available-database-software/ "Index of Publicty Available Database Software") available for some time.
 
 Note that ACM SIGMOD is not responsible for the correctness of the information supplied here.

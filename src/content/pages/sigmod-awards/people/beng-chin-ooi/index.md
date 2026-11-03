@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Beng Chin Ooi — 2009 SIGMOD Contribution Award Winner"
 permalink: "/sigmod-awards/people/beng-chin-ooi/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2025-01-11"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)  
+![](/wp-content/uploads/2022/05/image_large-300x9.png)  
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview7.jpg" alt="Beng" width="125" height="150"></td><td><h2>Beng Chin Ooi</h2><h3>2009 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview7.jpg" alt="Beng" width="125" height="150"></td><td><h2>Beng Chin Ooi</h2><h3>2009 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 Beng Chin Ooi is the recipient of the 2009 SIGMOD Contributions Award for his sustained and selfless contributions to the database community in promoting and pursuing high standards of database research at both the international and regional level.
 

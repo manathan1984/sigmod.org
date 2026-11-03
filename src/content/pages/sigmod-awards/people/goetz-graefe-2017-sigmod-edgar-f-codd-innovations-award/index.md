@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Goetz Graefe — 2017 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/goetz-graefe-2017-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2017/04/Goetz-150x150.jpg" alt="" width="150" height="150"></td><td><h2>Goetz Graefe</h2><h3>2017 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2017/04/Goetz-150x150.jpg" alt="" width="150" height="150"></td><td><h2>Goetz Graefe</h2><h3>2017 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 **Professor Goetz Graefe** is the recipient of the 2017 ACM SIGMOD Edgar F. Codd Innovations Award for his foundational contributions to the architecture and implementation of database query optimizers.
 

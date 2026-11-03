@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Tamer Özsu — 2006 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/tamer-ozsu/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)
+![](/wp-content/uploads/2022/05/image_large-300x9.png)
 
-<table align="center"><tbody><tr><td><a href="https://sigmod.org/wp-content/uploads/2015/07/image_preview16.png"><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview16.png" alt="image_preview" width="125" height="150"></a></td><td><h2>Tamer Özsu</h2><h3>2006 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><a href="/wp-content/uploads/2015/07/image_preview16.png"><img src="/wp-content/uploads/2015/07/image_preview16.png" alt="image_preview" width="125" height="150"></a></td><td><h2>Tamer Özsu</h2><h3>2006 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 Tamer Özsu is the recipient of the 2006 SIGMOD Contributions Award for long-standing dedicated service to the database research community, including leadership roles in the SIGMOD and VLDB organizations, and innovations in the publication process.
 

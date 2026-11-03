@@ -1,0 +1,360 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '94- Proceedings of the thirteenth ACM SIGACT-SIGMOD-SIGART symposium on Principles of database systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '94- Proceedings of the thirteenth ACM SIGACT-SIGMOD-SIGART symposium on Principles of database systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=182591" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683895" title="Get the Full Text from the ACM Digital Library">Will I be pretty, will I be rich?: some thoughts on theory vs. practice in systems engineering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">David Harel</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683896" title="Get the Full Text from the ACM Digital Library">Beyond uniformity and independence: analysis of R-trees using the concept of fractal dimension</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Christos Faloutsos</li>
+<li class="nameList Last">Ibrahim Kamel</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We propose the concept of fractal dimension of a set of points, in order to quantify the deviation from the uniformity distribution. Using measurements on real data sets (road intersections of U.S. counties, star coordinates from NASA's Infrared-Ultraviolet Explorer etc.) we provide evidence that real data indeed are skewed, and, moreover, we show that they behave as mathematical fractals, with a measurable, non-integer fractal dimension.</par><par>Armed with this tool, we then show its practical use in predicting the performance of spatial access methods, and specifically of the R-trees. We provide the <italic>first</italic> analysis of R-trees for skewed distributions of points: We develop a formula that estimates the number of disk accesses for range queries, given only the fractal dimension of the point set, and its count. Experiments on real data sets show that the formula is very accurate: the relative error is usually below 5%, and it rarely exceeds 10%.</par><par>We believe that the fractal dimension will help replace the uniformity and independence assumptions, allowing more accurate analysis for <italic>any</italic> spatial access method, as well as better estimates for query optimization on multi-attribute queries.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683897" title="Get the Full Text from the ACM Digital Library">On the relative cost of sampling for join selectivity estimation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Peter J. Haas</li>
+<li class="nameList">Jeffrey F. Naughton</li>
+<li class="nameList Last">Arun N. Swami</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We compare the cost of estimating the selectivity of a &ldquo;star join&rdquo; using sampling procedure <italic>t-cross</italic> to the cost of simply computing the join and obtaining the exact answer. Our bounds and approximations for the relative cost of sampling show how this cost depends on the size of the input relations, the number of input relations, and the precision criterion used by the estimation procedure. We also demonstrate the deleterious effect of dangling tuples and the mixed effect of data skew on the relative cost of sampling. These results provide insight into when sampling should or should not be used for join selectivity estimation.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683898" title="Get the Full Text from the ACM Digital Library">Path caching (extended abstract): a technique for optimal external searching</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sridhar Ramaswamy</li>
+<li class="nameList Last">Sairam Subramanian</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>External 2-dimensional searching is a fundamental problem with many applications in relational, object-oriented, spatial, and temporal databases. For example, interval intersection can be reduced to 2-sided, 2-dimensional searching and indexing class hierarchies of objects to 3-sided, 2-dimensional searching. <italic>Path caching</italic> is a new technique that can be used to transform a number of time/space efficient data structures for internal 2-dimensional searching (such as segment trees, interval trees, and priority search trees) into I/O efficient external ones. Let <italic>n</italic> be the size of the database, <italic>B</italic> the page size, and <italic>t</italic> the output size of a query. Using path caching, we provide the first data structure with optimal I/O query time <italic>O</italic>(log<subscrpt><italic>B</italic></subscrpt><italic>n</italic>+<italic>t/B</italic>) for 2-sided, 2-dimensional searching. Furthermore, we show that path caching requires a small space overhead <italic>O</italic>(<italic>n&divide;B</italic>log<subscrpt>2</subscrpt>log<subscrpt>2</subscrpt><italic>B</italic>) and is simple enough to admit dynamic updates in optimal <italic>O</italic>(log<subscrpt><italic>B</italic></subscrpt><italic>n</italic>) amortized time. We also extend this data structure to handle 3-sided, 2-dimensional searching with optimal I/O query-time, at the expense of slightly higher storage and update overheads.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683899" title="Get the Full Text from the ACM Digital Library">Optimal response time retrieval of replicated data (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ling Tony Chen</li>
+<li class="nameList Last">Doron Rotem</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>This work deals with the problem of finding efficient access plans for retrieving a set of pages from a multi-disk system with replicated data. This paper contains two results related to this problem: (a) We solve the problem of finding an optimal access path by transforming it into a network flow problem. We also indicate how our method may be employed in dynamic environments where some (or all) of the disks have a preexisting load, are heterogeneous, and reside on different servers. (b) We present a lower bound for the worst case response time of a request under all replication schemes, and also discuss the replication scheme that results in this lower bound. We then use simulation to show how this replication scheme can also greatly reduce the average case response time.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683890" title="Get the Full Text from the ACM Digital Library">Constraint checking with partial information</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ashish Gupta</li>
+<li class="nameList">Yehoshua Sagiv</li>
+<li class="nameList">Jeffrey D. Ullman</li>
+<li class="nameList Last">Jennifer Widom</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Constraints are a valuable tool for managing information across multiple databases, as well as for general purposes of assuring data integrity. However, efficient implementation of constraint checking is difficult. In this paper we explore techniques for assuring constraint satisfaction without performing a complete evaluation of the constraints. We consider methods that use only constraint definitions, methods that use constraints and updates, and methods that use constraints, updates, and &ldquo;local&rdquo; data.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683891" title="Get the Full Text from the ACM Digital Library">Compiling query constraints (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Peter J. Stuckey</li>
+<li class="nameList Last">S. Sudarshan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We present a general technique to push query constraints (such as <italic>length</italic>&le;1000) into database views and (constraint) logic programs. We introduce the notion of parametrized constraints, which help us push constraints with argument values that are known only at run time, and develop techniques for pushing parametrized constraints into predicate/view definitions. Our technique provides a way of compiling programs with constraint queries into programs with parametrized constraints compiled in, and which can be executed on systems, such as database query evaluation systems, that do not handle full constraint solving. Thereby our technique can push constraint selections that earlier constraint query rewriting techniques could not. Our technique is independent of the actual constraint domain, and we illustrate its use with equality constraints on structures (which are useful in object-oriented query languages) and linear arithmetic constraints.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683892" title="Get the Full Text from the ACM Digital Library">Constraints among argument sizes in logic programs (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Kirack Sohn</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>In logic programs the argument sizes of derivable facts w.r.t. an <italic>n</italic>-ary predicate are viewed as a set of points in <italic>R<supscrpt>n</supscrpt></italic>, which are approximated by their convex hull. <italic>Interargument constraint</italic> w.r.t. a predicate is essentially a set of constraints that every derivable fact of the predicate satisfies. We formalize such constraints by a fixpoint of <italic>recursive transformation</italic> similar to immediate consequence operator. However, the transformation does not necessarily converge finitely. Approximating polycones to their affine hulls provides useful interargument constraints in many practical programs, guaranteeing finite convergence. For a class of linear recursive logic programs satisfying <italic>translativeness</italic> property, precise interargument constraints can be obtained by an analysis of structures of recursive transformations.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683893" title="Get the Full Text from the ACM Digital Library">Tutorial database mining</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Rakesh Agrawal</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We view database mining as the efficient construction and verification of models of patterns embedded in large databases. Many of the database mining problems have been motivated by the practical decision support problems faced by most large retail organizations. In the Quest project at the IBM Almaden Research center, we have focussed on three classes of database mining problems involving classification, associations, and sequences. In this tutorial, I will draw upon my Quest experience to present my perspective of database mining, describe current work, and present some open problems.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683894" title="Get the Full Text from the ACM Digital Library">The power of sampling in knowledge discovery</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jyrki Kivinen</li>
+<li class="nameList Last">Heikki Mannila</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We consider the problem of approximately verifying the truth of sentences of tuple relational calculus in a given relation <italic>M</italic> by considering only a random sample of <italic>M</italic>. We define two different measures for the error of a universal sentence in a relation. For a set of <italic>n</italic> universal sentences each with at most <italic>k</italic> universal quantifiers, we give upper and lower bounds for the sample sizes required for having a high probability that all the sentences with error at least &egr; can be detected as false by considering the sample. The sample sizes are <italic>O</italic>((log <italic>n</italic>)/&egr;) or <italic>O</italic>((|M|<supscrpt>1&ndash;1/<italic>k</italic></supscrpt>)log <italic>n</italic>/&egr;), depending on the error measure used. We also consider universal-existential sentences.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683805" title="Get the Full Text from the ACM Digital Library">Can Datalog be approximated?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Surajit Chaudhuri</li>
+<li class="nameList Last">Phokion G. Kolaitis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>In this paper, we investigate whether recursive Datalog predicates can be approximated by finite unions of conjunctive queries. We introduce a quantitative notion of error and examine two types of approximation, namely, <italic>absolute approximation</italic> and <italic>relative approximation</italic>. We also stipulate that the approximations obey certain qualitative criteria, namely we require them to be <italic>upper envelopes</italic> or <italic>lower envelopes</italic> of the Datalog predicate they approximate. We establish that <italic>absolute approximation</italic> by finite unions of conjunctive queries is not possible, which means that no unbounded Datalog predicate can be approximated by a finite union of conjunctive queries in such a way that the error is bounded uniformly by the same constant on all finite databases. After this, we examine <italic>relative approximations</italic>, i.e., approximations that guarantee bounds for the error relative to the size of the Datalog predicate under consideration. Although such approximations exist in some cases, we show that for several large and well-studied classes of unbounded Datalog predicates it is not possible to find finite unions of conjunctive queries that satisfy the aforementioned qualitative criteria and have the property that the relative error of the approximation is bounded by a constant. Finally, we consider first-order approximations and obtain sharp negative results for the approximability of the <italic>transitive closure</italic> query and the <italic>cycle</italic> query by first-order queries.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683806" title="Get the Full Text from the ACM Digital Library">Bonded arity Datalog (&#8800;) queries on graphs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Foto N. Afrati</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We show that there are Datalog( &#8800; ) queries on graphs (i.e., the extensional database contains a single binary relation) that require recursively defined predicates of arbitrarily large width. More specifically, we prove that fixed subgraph homeomorphism queries require width of recursively defined predicates which is at least equal to the number of arcs in the pattern graph.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683807" title="Get the Full Text from the ACM Digital Library">On the complexity of equivalence between recursive and nonrecursive Datalog programs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Surajit Chaudhuri</li>
+<li class="nameList Last">Moshe Y. Vardi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>In a previous paper, we have proved tight complexity bounds for the equivalence of recursive and nonrecursive Datalog programs: triply exponential time in general and doubly-exponential space for linear programs. In this paper, we show that under realistic restrictions on the classes programs under consideration, equivalence of recursive and nonrecursive programs can be less intractable; for the classes of programs we consider the complexity of equivalence ranges from NP to co-NEXPTIME.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683808" title="Get the Full Text from the ACM Digital Library">A decomposition-based simulated annealing technique for data clustering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Kien A. Hua</li>
+<li class="nameList">S. D. Lang</li>
+<li class="nameList Last">Wen K. Lee</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>It has been demonstrated that <italic>simulated annealing</italic> provides high-quality results for the data clustering problem. However, existing simulated annealing schemes are memory-based algorithms; they are not suited for solving large problems such as data clustering which typically are too big to fit in the memory space in its entirety. Various buffer replacement policies, assuming either temporal or spatial locality, are not useful in this case since simulated annealing is based on a randomized search process. Poor locality of references will cause the memory to thrash because too many replacements are required. This phenomenon will incur excessive disk accesses and force the machine to run at the speed of the I/O subsystem. In this paper, we formulate the data clustering problem as a <italic>graph partition problem</italic> (GPP), and propose a decomposition-based approach to address the issue of excessive disk accesses during annealing. We apply the statistical sampling technique to randomly select subgraphs of the GPP into memory for annealing. Both the analytical and experimental studies indicate that the decomposition-based approach can dramatically reduce the costly disk I/O activities while obtaining excellent optimized results.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683809" title="Get the Full Text from the ACM Digital Library">Reducing recovery constraints on locking based protocols</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">G. Alonso</li>
+<li class="nameList">D. Agrawal</li>
+<li class="nameList Last">A. El Abbadi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Serializability is the standard correctness criterion for concurrency control. To ensure correctness in the presence of failures, recoverability is also imposed. Pragmatic considerations result in further constraints, for instance, the existing log-based recovery implementations that use before-images warrant that transaction executions be strict. Strict executions are restrictive, thus sacrificing concurrency and throughput. In this paper we identify the relation between the recovery mechanism and the restrictions imposed by concurrency control protocols. In particular, we propose a new inverse operation that can be integrated with the underlying recovery mechanism. In order to establish the viability of our approach, we demonstrate the new implementation by making minor modifications to the conventional recovery architecture. This inverse operation is also designed to avoid the undesirable phenomenon of cascading aborts when transactions execute conflicting write operations.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683800" title="Get the Full Text from the ACM Digital Library">Relative serializability (extended abstract): an approach for relaxing the atomicity of transactions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">D. Agrawal</li>
+<li class="nameList">J. L. Bruno</li>
+<li class="nameList">A. El Abbadi</li>
+<li class="nameList Last">V. Krishnaswamy</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>In the presence of semantic information, serializability is too strong a correctness criterion and unnecessarily restricts concurrency. We use the semantic information of a transaction to provide different atomicity views of the transaction to other transactions. The proposed approach improves concurrency and allows interleavings among transactions which are non-serializable, but which nonetheless preserve the consistency of the database and are acceptable to other users. We develop a graph-based tool whose acyclicity is both a necessary and sufficient condition for the correctness of an execution. Our theory encompasses earlier proposals that incorporate semantic information of transactions. Furthermore it is the first approach that provides an efficient graph based tool for recognizing correct schedules without imposing any restrictions on the application domain. Our approach is widely applicable to many advanced database applications such as systems with long-lived transactions and collaborative environments.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683801" title="Get the Full Text from the ACM Digital Library">Tutorial: languages for collection types</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Val Tannen</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683802" title="Get the Full Text from the ACM Digital Library">New techniques for studying set languages, bag languages and aggregate functions</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Leonid Libkin</li>
+<li class="nameList Last">Limsoon Wong</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We provide new techniques for the analysis of the expressive power of query languages for nested collections. These languages may use set or bag semantics and may be further complicated by the presence of aggregate functions. We exhibit certain classes of graphs and prove that the properties of these graphs that can be tested in such languages are either finite or cofinite. This result settles the conjectures of Grumbach, Milo, and Paredaens that parity test, transitive closure, and balanced binary tree test are not expressible in bag languages like the PTIME fragment of BALG of Grumbach and Milo and BQL of Libkin and Wong. Moreover, it implies that many recursive queries, including simple ones like the test for a chain, cannot be expressed in a nested relational language even when aggregate functions are available. In an attempt to generalize the finite-cofiniteness result, we study the bounded degree property which says that the number of distinct in- and out-degrees in the output of a graph query does not depend on the size of the input if the input is &#8220;simple&#8221;. We show that such a property implies a number of inexpressibility results in a uniform fashion. We then prove the bounded degree property for the nested relational language.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683803" title="Get the Full Text from the ACM Digital Library">A query language for NC</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Dan Suciu</li>
+<li class="nameList Last">Val Breazu-Tannen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We show that a form of divide and conquer recursion on sets together with the relational algebra expresses exactly the queries over ordered relational databases which are <italic>NC</italic>-computable. At a finer level, we relate <italic>k</italic> nested uses of recursion exactly to <italic>AC<supscrpt>k</supscrpt>, k</italic>&ge;1. We also give corresponding results for complex objects.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683804" title="Get the Full Text from the ACM Digital Library">A query language for list-based complex objects</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Latha S. Colby</li>
+<li class="nameList">Edward L. Robertson</li>
+<li class="nameList">Lawrence V. Saxton</li>
+<li class="nameList Last">Dirk Van Gucht</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We present a language for querying list-based complex objects. The language is shown to express precisely the polynomial-time generic list-object functions. The iteration mechanism of the language is based on a new approach wherein, in addition to the list over which the iteration is performed, a second list is used to control the number of iteration steps. During the iteration, the intermediate results can be moved to the output list as well as reinserted into the list being iterated over. A simple syntactic constraint allows the growth rate of the intermediate results to be tightly controlled which, in turn, restricts the expressiveness of the language to PTIME.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683815" title="Get the Full Text from the ACM Digital Library">Universal finiteness and satisfiability (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Inderpal Singh Mumick</li>
+<li class="nameList Last">Oded Shmueli</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>The problem of determining whether, for every extensional database, a given predicate in a given program has a finite number of derivations is called the universal finiteness problem. The problem of determining whether a given predicate in a given program has a non-empty extension for some extensional database is called the satisfiability problem. We show that the universal finiteness problem can be reduced to the satisfiability problem. Thus all decidability results for satisfiability can be applied to universal finiteness&mdash;for example, we can infer that the universal finiteness problem is decidable for Datalog extended with negation on base predicates. The satisfiability problem can be easily reduced to the universal finiteness problem, so that all undecidability results for satisfiability can be applied to universal finiteness. For example we can infer that the universal finiteness problem is undecidable for Datalog extended with stratified negation.</par><par>Many recursive programs have infinite number of derivations only when ed b relations have data cycles. It is thus of particular interest to study universal finiteness in the presence of acyclicity constraints on the ed b relations. We define acyclicity constraints in terms of non-satisfiability of a specific recursive program. We show that both the problems of universal finiteness and satisfiability of Datalog in the presence of acyclicity constraints (on one or more ed b relations) remain decidable for a language <italic>L</italic> whenever the problems are decidable for language <italic>L</italic> in absence of such constraints. We also show that the problems are undecidable for arbitrary constraints expressed in terms of non-satisfiability of a recursive program.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683816" title="Get the Full Text from the ACM Digital Library">Any algorithm in the complex object algebra with powerset needs exponential space to compute transitive closure</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Dan Suciu</li>
+<li class="nameList Last">Jan Paredaens</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>The Abiteboul and Beeri algebra for complex objects can express a query whose meaning is transitive closure, but the algorithm is naturally associated to this query needs exponential space. We show that any other query in the algebra which expresses transitive closure needs exponential space. This proves that in general the powerset is an intractable operator for implementing fixpoint queries.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683817" title="Get the Full Text from the ACM Digital Library">Dyn-FO (preliminary version): a parallel, dynamic complexity class</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sushant Patnaik</li>
+<li class="nameList Last">Neil Immerman</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Traditionally, computational complexity has considered only static problems. Classical Complexity Classes such as NC, P, NP, and PSPACE are defined in terms of the complexity of checking&mdash;upon presentation of an entire input&mdash;whether the input satisfies a certain property.</par><par>For many, if not most, applications of computers including: databases, text editors, program development, it is more appropriate to model the process as a dynamic one. There is a fairly large object being worked on over a period of time. The object is repeatedly modified by users and computations are performed.</par><par>Thus a dynamic algorithm for a certain class of queries is one that can maintain an input object, e.g. a database, and process changes to the database as well as answering queries about the current database.</par><par>Here, we introduce the complexity class, Dynamic First-Order Logic (Dyn-FO). This is the class of properties S, for which there is an algorithm that can perform inserts, deletes and queries from S, such that each unit insert, delete, or query is first-order computable. This corresponds to the sets of properties that can be maintained and queried in first-order logic, i.e. relational calculus, on a relational database.</par><par>We investigate the complexity class Dyn-FO. We show that many interesting properties are in Dyn-FO including, among others, graph connectivity, k-edge connectivity, and the computation of minimum spanning trees. Furthermore, we show that several NP complete optimization problems admit approximation algorithms in Dyn-FO. Note that none of these problems is in static FO, and this fact has been used to justify increasing the power of query languages beyond first-order. It is thus striking that these problems are indeed dynamic first-order, and thus, were computable in first-order database languages all along.</par><par>We also define &ldquo;bounded expansion reductions&rdquo; which honor dynamic complexity classes. We prove that certain standard complete problems for static complexity classes, such as AGAP for P remain complete via these new reductions. On the other hand, we prove that other such problems including GAP for NL and 1GAP for L are no longer complete via bounded expansion reductions. Furthermore, we show that a version of AGAP called AGAP+ is not in Dyn-FO unless all of P is contained in parallel linear time.</par><par>Our results shed light on some of the interesting differences between static and dynamic complexity.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683818" title="Get the Full Text from the ACM Digital Library">Functional database query languages as typed lambda calculi of fixed order (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gerd G. Hillebrand</li>
+<li class="nameList Last">Paris C. Kanellakis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We present a functional framework for database query languages, which is analogous to the conventional logical framework of first-order and fixpoint formulas over finite structures. We use atomic constants of order 0, equality among these constants, variables, application, lambda abstraction, and <i>let</i> abstraction; all typed using fixed order (&#8804; 5) functionalities. In this framework, proposed in [21] for arbitrary order functionalities, queries and databases are both typed lambda terms, evaluation is by reduction, and the main programming technique is list iteration. We define two families of languages: TLI<sup>=<sub>i</sub></sup> or simply-typed list iteration of order <i>i</i>+3 with equality, and MLI<sup>=<sub>i</sub></sup> or ML-typed list iteration of order <i>i</i>+3 with equality; we use <i>i</i>+3 since our list representation of databases requires at least order 3. We show that: FO-queries &#8838;TLI<sup>=<sub>0</sub></sup> &#8838;MLI<sup>=<sub>0</sub></sup> &#8838;LOGSPACE-queries &#8838;TLI<sup>=<sub>1</sub></sup> =MLI<sup>=<sub>1</sub></sup> = PTIME-queries &#8838; TLI<sup>2</sup>, where equality is no longer a primitive in TLI<sup>2</sup>. We also show that ML type inference, restricted to fixed order, is polynomial in the size of the program typed. Since programming by using low order functionalities and type inference is common in functional languages, our results indicate that such programs suffice for expressing efficient computations and that their ML-types can be efficiently inferred.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683819" title="Get the Full Text from the ACM Digital Library">Object migration</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Alberto O. Mendelzon</li>
+<li class="nameList">Tova Milo</li>
+<li class="nameList Last">Emmanuel Waller</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We study a mechanism that supports the migration of objects from one class of an OODB to another, thereby enabling us to model the same object playing different roles throughout its lifetime. Object migration may introduce typing conflicts due to the different typing constraints imposed by the classes. We present a coercion-like adaptation process that automatically resolves these conflicts. The process combines re-classification of objects and modification of attributes. We study the computational complexity of the problem, and show that the adaptation process can be performed efficiently in databases with covariant schemas.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683810" title="Get the Full Text from the ACM Digital Library">Making object-oriented schemas more expressive</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Diego Calvanese</li>
+<li class="nameList Last">Maurizio Lenzerini</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>Current object-oriented data models lack several important features that would allow one to express relevant knowledge about the classes of schema. In particular, there is no data model supporting simultaneously the inverse of the functions represented by attributes, the union, the intersection and the complement of classes, the possibility of using nonbinary relations, and the possibility of expressing cardinality constraints on attributes and relations. In this paper we define a new data model, called <italic>CAR</italic>, which extends the basic core of current object-oriented data models with all the above mentioned features. A technique is then presented both for checking the consistency of class definitions, and for computing the logical sequences of the knowledge represented in the schema. Finally, the inherent complexity of reasoning in <italic>CAR</italic> is investigated, and the complexity of our inferencing technique is studied, depending on various assumptions on the schema.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683811" title="Get the Full Text from the ACM Digital Library">A polymorphic calculus for views and object sharing (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Atsushi Ohori</li>
+<li class="nameList Last">Keishi Tajima</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We present a typed polymorphic calculus that supports a general mechanism for view definition and object sharing among classes. In this calculus, a class can contain inclusion specifications of objects from other classes. Each such specification consists of a <italic>predicate</italic> determining the subset of objects to be included and a <italic>viewing function</italic> under which those included objects are manipulated. Both predicates and viewing functions can be any type consistent programs definable in the polymorphic calculus. Inclusion specifications among classes can be cyclic, allowing mutually recursive class definitions. These features achieve flexible view definitions and wide range of class organizations in a compact and elegant way. Moreover, the calculus provides a suitable set of operations for views and classes so that the programmer can manipulate views and classes just the same way as one deals with ordinary records and sets.</par><par>The proposed calculus uniformly integrates views and classes in a polymorphic type system of a database programming language similar to Machiavelli. The calculus has a <italic>type inference algorithm</italic> that relieves the programmer from complicated type declarations of views and classes. The polymorphic type system of the calculus is also shown to be sound, which guarantees complete static check of type consistency of programs involving classes and views. Through these properties, the programmer can enjoy full advantages of polymorphism and type inference when writing object-oriented database programs.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683812" title="Get the Full Text from the ACM Digital Library">Adding disjunction to datalog (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Thomas Eiter</li>
+<li class="nameList">Georg Gottlob</li>
+<li class="nameList Last">Heikki Mannila</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We study the expressive power and complexity of disjunctive datalog, i.e., datalog with disjunctive rule heads, under three different semantics: the minimal model semantics, the perfect models semantics, and the stable model semantics. We show that the brave variants of these semantics express the same set of queries. In fact, they precisely capture the complexity of class &Sgr;P/2. The combined complexity of disjunctive datalog is shown to be NEXPTIME<supscrpt>NP</supscrpt>-complete.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683813" title="Get the Full Text from the ACM Digital Library">Towards a theory of spatial database queries (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jan Paredaens</li>
+<li class="nameList">Jan Van den Bussche</li>
+<li class="nameList Last">Dirk Van Gucht</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>A general model for spatial databases is considered, which extends the relational model by allowing as tuple components not only atomic values but also geometrical figures. The model, which is inspired by the work of Kanellakis, Kuper and Revesz on constraint query languages, includes a calculus and an algebra which are equivalent. Given this framework, the concept of spatial database query is investigated. Thereto, Chandra and Harel's well-known consistency criterion for classical relational queries is adapted. Various adaptations are proposed, depending on the kinds of geometry in which the spatial information in the database is to be interpreted. The consistency problem for calculus queries is studied. Expressiveness issues are examined. The main purpose of the paper is to open up new grounds for theoretical research in the area of spatial database systems. Consequently, many open problems are indicated.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683814" title="Get the Full Text from the ACM Digital Library">Finitely representable databases (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">St&#233;phane Grumbach</li>
+<li class="nameList Last">Jianwen Su</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>We study classes of infinite but finitely representable databases based on constraints, motivated by new database applications such as geographical databases. The mathematical framework is based on classical decidable first-order theories. We investigate the theory of finitely representable models and prove that it differs strongly from both classical model theory and finite model theory. In particular, we show that most of the well known theorems of either one fail (compactness, completeness, locality, 0/1 laws, etc.). An immediate consequence is the lack of tools to consider the definability of queries in the relational calculus over finitely representable databases. We illustrate this very challenging problem through some classical examples.</par></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683825" title="Get the Full Text from the ACM Digital Library">Text dominated databases, theory practice and experience (abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Gaston H. Gonnet</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683826" title="Get the Full Text from the ACM Digital Library">Reasoning about strings in databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">G&#246;sta Grahne</li>
+<li class="nameList">Matti Nyk&#228;nen</li>
+<li class="nameList Last">Esko Ukkonen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><par>In order to enable the database programmer to reason about relations over strings of arbitrary length we introduce alignment logic, a modal extension of relational calculus. In addition to relations, a state in the model consists of a two-dimensional array where the strings are aligned on top of each other. The basic modality in the language (a transpose, or &ldquo;slide&rdquo;) allows for a rearrangement of the alignment, and more complex formulas can be formed using a syntax reminiscent of regular expressions, in addition to the usual connectives and quantifiers. It turns out that the computational counterpart of the string-based portion of the logic is the class of multitape two-way finite state automata, which are devices particularly well suited for the implementation of string matching. A computational counterpart of the full logic is obtained from relational algebra by extending the selection operator into filters based on these multitape machines. Safety of formulas in alignment logic implies that new strings generated from old ones have to be of bounded length. While an undecidable property in general, this boundedness is decidable for an important subclass of formulas. As far as expressive power is concerned, alignment logic includes previous proposals for querying string databases, and gives full Turing computability. The language can be restricted to define exactly regular sets and sets in the polynomial hierarchy.</par></div> </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Publications"
 permalink: "/publications/publications/"
 section: "sigmod"
@@ -14,7 +15,7 @@ The ACM SIGMOD publication mechanism has had a major update recently. In contras
 In addition, the SIGMOD community will find the following links useful.
 
 -   [ACM TODS](http://tods.acm.org/)
--   [SIGMOD Record](https://sigmod.org/sigmodrecord "SIGMOD Record")
+-   [SIGMOD Record](https://sigmodrecord.org/ "SIGMOD Record")
 -   [SIGMOD Blog](https://wp.sigmod.org/)
 
 Some previous resources that have ended their support or are no longer updated can be found in [the archive page](/archive/).

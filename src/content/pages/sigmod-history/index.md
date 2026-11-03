@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "SIGMOD History"
 permalink: "/sigmod-history/"
 section: "sigmod"
@@ -12,7 +13,7 @@ SIGMOD was founded in 1976, evolving out of SIGFIDET. In January, 1969, FIDET wa
 
 In 1974 the SIG decided to rename itself SIGMOD (Special Interest Group on Management of Data) and the Chair of SIGFIDET, Bernard Plagman, became the Chair of SIGMOD. The newsletter was renamed SIGMOD Record and its first volume was numbered volume 9, appearing in [1977](http://dl.acm.org/citation.cfm?id=J689 "9 (1977)").
 
-The [SIGMOD Conference](/conferences/ "About SIGMOD") started in [1975](/conferences/sigmod-1975/ "1974") in San Jose; Frank King was the first [program chair](http://dblp.uni-trier.de/db/conf/sigmod/PC.html "Program Chair"). The [PODS Conference](https://sigmod.org/pods "The PODS Pages") started in 1982 in Los Angeles; Alfred V. Aho was the first [PODS program chair](https://sigmod.org/pods/pods-organization/ "PODS Organization").  The two conferences became co-convened in 1991 in Denver, in a successful attempt to encourage interactions between the theory and systems cadres within the overall database community.
+The [SIGMOD Conference](/conferences/ "About SIGMOD") started in [1975](/conferences/sigmod-1975/ "1974") in San Jose; Frank King was the first [program chair](http://dblp.uni-trier.de/db/conf/sigmod/PC.html "Program Chair"). The [PODS Conference](/pods-home/ "The PODS Pages") started in 1982 in Los Angeles; Alfred V. Aho was the first [PODS program chair](/pods-home/pods-organization/ "PODS Organization").  The two conferences became co-convened in 1991 in Denver, in a successful attempt to encourage interactions between the theory and systems cadres within the overall database community.
 
 -   [History of SIGMOD’s Mission](/sigmod-history/sigmods-mission/ "History of SIGMOD's Mission")
 -   [ACM Oral History: Interview with Charles W. Bachman](http://portal.acm.org/citation.cfm?id=1141880.1141882)
@@ -24,7 +25,7 @@ The [SIGMOD Conference](/conferences/ "About SIGMOD") started in [1975](/confere
 
 -   [Distinguished Profiles](/publications/interview/ "Interview Page")
 -   [PC Chairs of previous SIGMOD Conferences](/sigmod-history/program-chair/)
--   [PC Chairs of previous PODS Conferences](https://sigmod.org/pods/pods-organization "PODS Organization")
+-   [PC Chairs of previous PODS Conferences](/pods-home/pods-organization/ "PODS Organization")
 -   [Previous SIGMOD/PODS Conferences](/conferences/ "Conferences")
 -   [Snapshots of a SIGMOD/PODS Confenerce (2006)](http://www.flickr.com/photos/sigmod/)
 -   [SIGMOD Online](/sigmod-history/sigmod-online/ "Acknowledgement")

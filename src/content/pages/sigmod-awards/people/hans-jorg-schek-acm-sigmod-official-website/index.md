@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Hans-Jörg Schek — 2007 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/hans-jorg-schek-acm-sigmod-official-website/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2015-07-17"
 ---
 
-![sub_awards.gif](https://sigmod.hosting.acm.org/sigmodnewwp/wp-content/uploads/2015/07/image_large.png)
+![sub_awards.gif](/wp-content/uploads/2015/07/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.hosting.acm.org/sigmodnewwp/wp-content/uploads/2015/07/image_preview13.jpg" alt="Hans_Jorg_Schek" width="125" height="150"></td><td><h2>Hans-Jörg Schek</h2><h3>2007 SIGMOD Contributions Award</h3><p>&nbsp;</p></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview13.jpg" alt="Hans_Jorg_Schek" width="125" height="150"></td><td><h2>Hans-Jörg Schek</h2><h3>2007 SIGMOD Contributions Award</h3><p>&nbsp;</p></td></tr></tbody></table>
 
 Professor Hans-Jörg Schek is the recipient of the 2007 SIGMOD Contributions Award for his significant service to the database research community, as well as the broader scientific community, as a scholar, an educator, a supervisor, a referee of and advisor for large collaborative research projects in Europe, and as an organizer of conferences, journals, and other community activities. He has also served the community through his pioneering research efforts in nested relational data management and database support for advanced applications such as office automation, engineering information management, and digital libraries.
 

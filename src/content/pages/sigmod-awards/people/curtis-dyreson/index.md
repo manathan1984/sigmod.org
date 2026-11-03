@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Curtis Dyreson — 2015 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/curtis-dyreson/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)  
+![](/wp-content/uploads/2022/05/image_large-300x9.png)  
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview.png" alt="Curtis Dyreson" width="125"></td><td><h2>Curtis Dyreson</h2><h3>2015 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview.png" alt="Curtis Dyreson" width="125"></td><td><h2>Curtis Dyreson</h2><h3>2015 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 **Dr. Curtis Dyreson** is awarded the 2015 SIGMOD Contributions award for extensive and outstanding service to the database community as ACM TODS and ACM SIGMOD Information Director and ACM SIGMOD Anthology and DiSC Editor.
 

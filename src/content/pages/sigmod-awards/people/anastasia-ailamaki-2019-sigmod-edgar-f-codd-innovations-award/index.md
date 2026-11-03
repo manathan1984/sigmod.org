@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Anastasia Ailamaki — 2019 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/anastasia-ailamaki-2019-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2019/06/177957.jpg" alt="" width="242" height="296"></td><td><h2>Anastasia Ailamaki</h2><h3>2019 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2019/06/177957.jpg" alt="" width="242" height="296"></td><td><h2>Anastasia Ailamaki</h2><h3>2019 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 **Anastasia Ailamaki** is the recipient of the 2019 ACM SIGMOD Edgar F. Codd Innovations Award for her pioneering work on the architecture of database systems, its interaction with computer architecture, and scientific data management.
 

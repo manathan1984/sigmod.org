@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2019 SIGMOD Systems Award"
 permalink: "/sigmod-awards/citations/2019-sigmod-systems-award/"
 section: "sigmod"
@@ -11,9 +12,9 @@ updated: "2022-05-13"
 
 # The Aurora Database System — 2019 SIGMOD Systems Award
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2019/08/aurora-262x300.png" alt="" width="262" height="300"></td><td><h1>The Aurora Database System</h1><h2></h2><h3>2019 SIGMOD Systems Award</h3></td><td></td><td></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2019/08/aurora-262x300.png" alt="" width="262" height="300"></td><td><h1>The Aurora Database System</h1><h2></h2><h3>2019 SIGMOD Systems Award</h3></td><td></td><td></td></tr></tbody></table>
 
 The developers of the Aurora database system are the recipients of the 2019 SIGMOD Systems Award for fundamentally redesigning relational database storage for cloud environments. **Award Recipients:**
 

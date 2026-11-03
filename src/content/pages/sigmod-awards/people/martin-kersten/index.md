@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Martin Kersten — 2014 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/martin-kersten/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2024-09-16"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_mini1.jpg" alt="Martin Kersten" width="125"></td><td><h2>Martin Kersten</h2><h3>2014 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_mini1.jpg" alt="Martin Kersten" width="125"></td><td><h2>Martin Kersten</h2><h3>2014 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 **Professor Dr. Martin Kersten** is the recipient of the 2014 SIGMOD Edgar F. Codd Innovation Award for influential contributions to database architectures, most notably for pioneering work on columnar, in-memory, and hardware-conscious database technology.
 

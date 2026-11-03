@@ -1,0 +1,352 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '02- Proceedings of the twenty-first ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '02- Proceedings of the twenty-first ACM SIGMOD-SIGACT-SIGART symposium on Principles of database systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=543613" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: PODS invited talk</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683024" title="Get the Full Text from the ACM Digital Library">Models and issues in data stream systems</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Brian Babcock</li>
+<li class="nameList">Shivnath Babu</li>
+<li class="nameList">Mayur Datar</li>
+<li class="nameList">Rajeev Motwani</li>
+<li class="nameList Last">Jennifer Widom</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">In this overview paper we motivate the need for and research issues arising from a new model of data processing. In this model, data does not take the form of persistent relations, but rather arrives in multiple, continuous, rapid, time-varying <i>data streams.</i> In addition to reviewing past work relevant to data stream systems and current projects in the area, the paper explores topics in stream query languages, new requirements and challenges in query processing, and algorithmic issues.</div> </div>
+<h2>SESSION: Research session 1: award winning papers</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683035" title="Get the Full Text from the ACM Digital Library">Monadic datalog and the expressive power of languages for web information extraction</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Georg Gottlob</li>
+<li class="nameList Last">Christoph Koch</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Research on information extraction from Web pages (wrapping) has seen much activity in recent times (particularly systems implementations), but little work has been done on formally studying the expressiveness of the formalisms proposed or on the theoretical foundations of wrapping.In this paper, we first study monadic datalog as a wrapping language (over ranked or unranked tree structures). Using previous work by Neven and Schwentick, we show that this simple language is equivalent to full monadic second order logic (MSO) in its ability to specify wrappers. We believe that MSO has the right expressiveness required for Web information extraction and thus propose MSO as a yardstick for evaluating and comparing wrappers.Using the above result, we study the kernel fragment Elog<sup>-</sup> of the Elog wrapping language used in the Lixto system (a visual wrapper generator). The striking fact here is that Elog<sup>-</sup> exactly captures MSO, yet is easier to use. Indeed, programs in this language can be entirely visually specified. We also formally compare Elog to other wrapping languages proposed in the literature.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683036" title="Get the Full Text from the ACM Digital Library">From discrepancy to declustering: near-optimal multidimensional declustering strategies for range queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Chung-Min Chen</li>
+<li class="nameList Last">Christine T. Cheng</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Declustering schemes allocate data blocks among multiple disks to enable parallel retrieval. Given a declustering scheme <i>D,</i> its <i>response time</i> with respect to a query <i>Q,</i> <i>rt</i>(<i>Q</i>), is defined to be the maximum number of disk blocks of the query stored by the scheme in any one of the disks. If &verbar;<i>Q</i>&verbar; is the number of data blocks in <i>Q</i> and <i>M</i> is the number of disks then <i>rt</i>(<i>Q</i>) is at least &verbar;<i>Q</i>&verbar;/<i>M.</i> One way to evaluate the performance of <i>D</i> with respect to a set of queries &#119876; is to measure its <i>additive error</i> - the maximum difference between <i>rt</i>(<i>Q</i>) from &verbar;<i>Q</i>&verbar;/<i>M</i> over all range queries <i>Q</i> &epsilon; &#119876;.In this paper, we consider the problem of designing declustering schemes for uniform multidimensional data arranged in a <i>d</i>-dimensional grid so that their additive errors with respect to range queries are as small as possible. It has been shown that such declustering schemes will have an additive error of &Omega;(log <i>M</i>) when <i>d</i> = 2 and &Omega;(log d-1/2 <i>M</i>) when <i>d</i> &gt; 2 with respect to range queries.Asymptotically optimal declustering schemes exist for 2-dimensional data. For data in larger dimensions, however, the best bound for additive errors is <i>O</i>(<i>M<sup>d-1</sup></i>), which is extremely large. In this paper, we propose the two declustering schemes based on low discrepancy points in <i>d</i>-dimensions. When <i>d</i> is fixed, both schemes have an additive error of <i>O</i>(log<i><sup>d-1</sup> M</i>) with respect to range queries provided certain conditions are satisfied: the first scheme requires <i>d</i> &ge; 3 and <i>M</i> to be a power of a prime where the prime is at least <i>d</i> while the second scheme requires the size of the data to grow within some polynomial of <i>M,</i> with no restriction on <i>M.</i> These are the first known multidimensional declustering schemes with additive errors near optimal.</div> </div>
+<h2>SESSION: Invited tutorial 1</h2>
+<div class="DLabstract"> </div>
+<h3>
+ <a class="DLtitleLink" href="https://dl.acm.org/authorize?N683037" title="Get the Full Text from the ACM Digital Library">Algorithmics and applications of tree and graph searching</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Dennis Shasha</li>
+<li class="nameList">Jason T. L. Wang</li>
+<li class="nameList Last">Rosalba Giugno</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Modern search engines answer keyword-based queries extremely efficiently. The impressive speed is due to clever inverted index structures, caching, a domain-independent knowledge of strings, and thousands of machines. Several research efforts have attempted to generalize keyword search to keytree and keygraph searching, because trees and graphs have many applications in next-generation database systems. This paper surveys both algorithms and applications, giving some emphasis to our own work.</div> </div>
+<h2>SESSION: Research sessions 2 and 3: information processing on WWW and XML</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683038" title="Get the Full Text from the ACM Digital Library">Validating streaming XML documents</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Luc Segoufin</li>
+<li class="nameList Last">Victor Vianu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">This paper investigates the on-line validation of streaming XML documents with respect to a DTD, under memory constraints. We first consider validation using constant memory, formalized by a finite-state automaton (<sc>FSA</sc>). We examine two flavors of the problem, depending on whether or not the XML document is assumed to be well-formed. The main results of the paper provide conditions on the DTDs under which validation of either flavor can be done using an <sc>FSA</sc>. For DTDs that cannot be validated by an <sc>FSA</sc>, we investigate two alternatives. The first relaxes the constant memory requirement by allowing a stack bounded in the depth of the XML document, while maintaining the deterministic, one-pass requirement. The second approach consists in refining the DTD to provide additional information that allows validation by an <sc>FSA</sc>.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683039" title="Get the Full Text from the ACM Digital Library">Containment and equivalence for an XPath fragment</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Gerome Miklau</li>
+<li class="nameList Last">Dan Suciu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">XPath is a simple language for navigating an XML document and selecting a set of element nodes. XPath expressions are used to query XML data, describe key constraints, express transformations, and reference elements in remote documents. This paper studies the containment and equivalence problems for a fragment of the XPath query language, with applications in all these contexts.In particular, we study a class of XPath queries that contain branching, label wildcards and can express descendant relationships between nodes. Prior work has shown that languages which combine any two of these three features have efficient containment algorithms. However, we show that for the combination of features, containment is coNP-complete. We provide a sound and complete EXPTIME algorithm for containment, and study parameterized PTIME special cases. While we identify two parameterized classes of queries for which containment can be decided efficiently, we also show that even with some bounded parameters, containment is coNP-complete. In response to these negative results, we describe a sound algorithm which is efficient for all queries, but may return false negatives in some cases.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683030" title="Get the Full Text from the ACM Digital Library">On the power of walking for querying tree-structured data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Frank Neven</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">XSLT is the prime example of an XML query language based on tree-walking. Indeed, stripped down, XSLT is just a tree-walking tree-transducer equipped with registers and look-ahead. Motivated by this connection, we want to pinpoint the computational power of devices based on tree-walking. We show that in the absence of unique identifiers even very powerful extensions of the tree-walking paradigm are not relationally complete. That is, these extensions do not capture all of first-order logic. In contrast, when unique identifiers are available, we show that various restrictions allow to capture <sc>LOGSPACE, PTIME, PSPACE,</sc> and <sc>EXPTIME</sc>. These complexity classes are defined w.r.t. a Turing machine model working directly on (attributed) trees. When no attributes are present, relational storage does not add power; whether look-ahead adds power is related to the open question whether tree-walking captures the regular tree languages.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683031" title="Get the Full Text from the ACM Digital Library">A normal form for XML documents</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marcelo Arenas</li>
+<li class="nameList Last">Leonid Libkin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">This paper takes a first step towards the design and normalization theory for XML documents. We show that, like relational databases, XML documents may contain redundant information, and may be prone to update anomalies. Furthermore, such problems are caused by certain functional dependencies among paths in the document. Our goal is to find a way of converting an arbitrary DTD into a well-designed one, that avoids these problems. We first introduce the concept of a functional dependency for XML, and define its semantics via a relational representation of XML. We then define an XML normal form, XNF, that avoids update anomalies and redundancies. We study its properties and show that it generalizes BCNF and a normal form for nested relations when those are appropriately coded as XML documents. Finally, we present a lossless algorithm for converting any DTD into one in XNF.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683032" title="Get the Full Text from the ACM Digital Library">Distributed computation of web queries using automata</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marc Spielmann</li>
+<li class="nameList">Jerzy Tyszkiewicz</li>
+ <li class="nameList Last">Jan Van den Bussche</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We introduce and investigate a distributed computation model for querying the Web. Web queries are computed by interacting automata running at different nodes in the Web. The automata which we are concerned with can be viewed as register automata equipped with an additional communication component. We identify conditions necessary and sufficient for systems of automata to compute Web queries, and investigate the computational power of such systems.</div> </div>
+<h2>SESSION: Research session 4: query processing and optimization I</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683033" title="Get the Full Text from the ACM Digital Library">Conjunctive selection conditions in main memory</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Kenneth A. Ross</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We consider the fundamental operation of applying a conjunction of selection conditions to a set of records. With large main memories available cheaply, systems may choose to keep the data entirely in main memory, in order to improve query and/or update performance.The design of a data-intensive algorithm in main memory needs to take into account the architectural characteristics of modern processors, just as a disk-based method needs to consider the physical characteristics of disk devices. An important architectural feature that influences the performance of main memory algorithms is the branch misprediction penalty. We demonstrate that branch misprediction has a substantial impact on the performance of an algorithm for applying selection conditions.We describe a space of "query plans" that are logically equivalent, but differ in terms of performance due to variations in their branch prediction behavior. We propose a cost model that takes branch prediction into account, and develop a query optimization algorithm that chooses a plan with optimal estimated cost. We also develop an efficient heuristic optimization algorithm.We provide experimental results for a case study based on an event notification system. Our results show the effectiveness of the proposed optimization techniques. Our results also demonstrate that significant improvements in performance can be obtained by applying a methodology that takes branch misprediction latency into account.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683034" title="Get the Full Text from the ACM Digital Library">Efficient aggregation over objects with extent</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Donghui Zhang</li>
+<li class="nameList">Vassilis J. Tsotras</li>
+<li class="nameList Last">Dimitrios Gunopulos</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We examine the problem of efficiently computing sum/count/avg aggregates over objects with non-zero extent. Recent work on computing multi-dimensional aggregates has concentrated on objects with zero extent (points) on a multi-dimensional grid, or one-dimensional intervals. However, in many spatial and/or spatio-temporal applications objects have extent in various dimensions, while they can be located anywhere in the application space. The aggregation predicate is typically described by a multi-dimensional box (<i>box-sum</i> aggregation). We examine two variations of the problem. In the simple case an object's value contributes to the aggregation result as a whole as long as the object intersects the query box. More complex is the <i>functional box-sum</i> aggregation introduced in this paper, where objects participate in the aggregation proportionally to the size of their intersection with the query box. We first show that both problems can he reduced to <i>dominance-sum</i> queries. Traditionally dominance-sum queries are addressed in main memory by a static structure, the ECDF-tree. We then propose two extensions, namely the ECDF-B-trees, that make this structure disk-based and dynamic. Finally, we introduce the DA-tree that combines the advantages from each ECDF-B-tree. We run experiments comparing the performance of the ECDF-B-trees, the BA-tree and a traditional R*-tree (which has been augmented to include aggregation information on its index nodes) over spatial datasets. Our evaluation reaffirms that the BA-tree has more robust performance. Compared against the augmented R*-tree, the BA-tree offers drastic improvement in query performance at the expense of some limited extra space.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683045" title="Get the Full Text from the ACM Digital Library">How to evaluate multiple range-sum queries progressively</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Rolfe R. Schmidt</li>
+<li class="nameList Last">Cyrus Shahabi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Users of decision support system typically submit batches of range-sum queries simultaneously rather than issuing individual, unrelated queries. We propose a wavelet based technique that exploits T/O sharing across a query batch to evaluate the set of queries progressively and efficiently. The challenge is that now controlling the structure of errors across query results becomes more critical than minimizing error per individual query. Consequently, we define a class of structural error penalty functions and show how they are controlled by our technique Experiments demonstrate that our technique is efficient as an exact algorithm, and the progressive estimates are accurate, even after less than one I/O per query.</div> </div>
+<h2>SESSION: Research session 5: views and warehousing</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683046" title="Get the Full Text from the ACM Digital Library">On the computation of relational view complements</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Jens Lechtenb&#246;rger</li>
+<li class="nameList Last">Gottfried Vossen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Views as a means to describe parts of a given data collection play an important role in many database applications. In dynamic environments, where data is updated, not only information provided by views, but also information provided by data sources but <i>missing</i> from views turns out to be relevant: Previously, this missing information was characterized in terms of <i>view complements;</i> recently, it was shown that view complements can be exploited in the context of data warehouses to guarantee desirable warehouse properties such as independence and self-maintainability. As the complete source information is a trivial complement for any given view, a natural interest for "small" or even "minimal" complements arises. However, the computation of minimal complements is still not too well understood. In this paper, we show how to compute reasonably small (and in special cases even minimal) complements for <i>monotonic</i> relational views, where the complexity of constructing complements is <i>polynomial</i> in the size of schema information.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683047" title="Get the Full Text from the ACM Digital Library">On propagation of deletions and annotations through views</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Peter Buneman</li>
+<li class="nameList">Sanjeev Khanna</li>
+<li class="nameList Last">Wang-Chiew Tan</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We study two classes of view update problems in relational databases. We are given a source database <i>S</i>, a monotone query <i>Q</i>, and the view <i>Q</i>(<i>S</i>) generated by the query. The first problem that we consider is the classical view deletion problem where we wish to identify a minimal set <i>T</i> of tuples in <i>S</i> whose deletion will eliminate a given tuple <i>t</i> from the view. We study the complexity of optimizing two natural objectives in this setting, namely, find <i>T</i> to minimize the side-effects on the view, and the source, respectively. For both objective functions, we show a dichotomy in the complexity. Interestingly, the problem is either in P or is NP-hard, for queries in the same class in either objective function.The second problem in our study is the annotation placement problem. Suppose we annotate an attribute of a tuple in <i>S</i>. The rules for carrying the annotation forward through a query are easily stated. On the other hand, suppose we annotate an attribute of a tuple in the view <i>Q</i>(<i>S</i>), what annotation(<i>s</i>) in <i>S</i> will cause this annotation to appear in the view, minimizing the propagation to other attributes in <i>Q</i>(<i>S</i>)? View annotation is becoming an increasingly useful method of communicating meta-data among users of shared scientific data sets, and to our knowledge, there has been no formal study of this problem.Our study of these problems gives us important insights into computational issues involved in data provenance or lineage --- the process by which data moves through databases. We show that the two problems correspond to two fundamentally distinct notions of provenance, <i>why</i> and <i>where-provenance.</i></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683048" title="Get the Full Text from the ACM Digital Library">The view-selection problem has an exponential-time lower bound for conjunctive queries and views</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Rada Chirkova</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">The view-selection problem is to design and materialize a set of views over a database schema, such that the choice of views minimizes the cost of evaluating the selected workload of queries, and the combined size of the materialized views does not exceed a prespecified storage limit. Important applications of the view-selection problem include query optimization, data warehouse design, and information integration.We consider the view-selection problem in relational databases, for conjunctive queries and views. Suppose somebody wants to design a view-selection algorithm that outputs a polynomial number of views for all query workloads and storage limits and produces optimal selections of views independently of actual database contents. In previous work it was shown that it is impossible to design such an algorithm when the <i>product</i> (as for nested-loop joins) cost model is used. That is, there exist databases for which the number of views in an optima] viewset is exponential in the size of the database schema and query workload. As a consequence, under the product-cost model the view-selection problem has an exponential-time lower bound.Efficient join algorithms have a cost that is proportional to the <i>sum</i> of the sizes of the input and output relations. In this paper we prove that under the more practical sum-cost model, the view-selection problem also has an exponential time lower bound. As a consequence, under the sum-cost model it is also impossible to come up with a view-selection algorithm that outputs a polynomial number of views for all query workloads and databases, yet produces optimal selections of views.</div> </div>
+<h2>SESSION: Research session 6: OLAP and constraints</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683049" title="Get the Full Text from the ACM Digital Library">OLAP dimension constraints</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Carlos A. Hurtado</li>
+<li class="nameList Last">Alberto O. Mendelzon</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">In multidimensional data models intended for online analytic processing (OLAP), data are viewed as points in a multidimensional space. Each dimension has structure, described by a directed graph of categories, a set of members for each category, and a child/parent relation between members. An important application of this structure is to use it to infer summarizability, that is, whether an aggregate view defined for some category can be correctly derived from a set of precomputed views defined for other categories. A dimension is called heterogeneous if two members in a given category are allowed to have ancestors in different categories. In previous work, we studied the problem of inferring summarizability in a particular class of heterogeneous dimensions. In this paper, we propose a class of integrity constraints and schemas that allow us to reason about summarizability in general heterogeneous dimensions. We introduce the notion of frozen dimensions, which are minimal homogeneous dimension instances representing the different structures that are implicitly combined in a heterogeneous dimension. Frozen dimensions provide the basis for efficiently testing implication of dimension constraints, and are useful aid to understanding heterogeneous dimensions. We give a sound and complete algorithm for solving the implication of dimension constraints, that uses heuristics based on the structure of the dimension and the constraints to speed up its execution. We study the intrinsic complexity of the implication problem, and the running time of our algorithm.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683040" title="Get the Full Text from the ACM Digital Library">Fast algorithms for hierarchical range histogram construction</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sudipto Guha</li>
+<li class="nameList">Nick Koudas</li>
+<li class="nameList Last">Divesh Srivastava</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Data Warehousing and OLAP applications typically view data an having multiple logical dimensions (e.g., product, location) with natural hierarchies defined on each dimension. OLAP queries usually involve hierarchical selections on some of the dimensions, and often aggregate measure attributes (e.g., sales, volume). Accurately estimating the distribution of measure attributes, under hierarchical selections, is important in a variety of scenarios, including approximate query evaluation and cost-based optimization of queries.In this paper, we propose fast (near linear time) algorithms for the problem of approximating the distribution of measure attributes with hierarchies defined on them, using histograms. Our algorithms are based on dynamic programming and a novel notion of sparse intervals that we introduce, and are the first <i>practical</i> algorithms for this problem. They effectively trade space for construction time without compromising histogram accuracy. We complement our analytical contributions with an experimental evaluation using real data sets, demonstrating the superiority of our approach.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683041" title="Get the Full Text from the ACM Digital Library">On moving object queries: (extended abstract)</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Hoda Mokhtar</li>
+<li class="nameList">Jianwen Su</li>
+<li class="nameList Last">Oscar Ibarra</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">Database applications for moving objects pose new challenges in modeling, querying, and maintenance of objects whose locations are rapidly changing over time. Previous work on modeling and querying spatio-temporal databases and constraint databases focus primarily on snapshots of changing databases. In this paper we study query evaluation techniques for moving object databases where moving objects are being updated frequently. We consider a constraint database approach to moving objects and queries. We classify moving object queries into: "past", "continuing", and "future" queries. We argue that while traditional constraint query evaluation techniques are suitable for past queries, new techniques are needed for continuing and future queries. Motivated by nearest-neighbor queries, we define a query language based on a single "generalized distance" function f mapping from objects to continuous functions from time to &#8477;. Queries in this language may be past, continuing, or future. We show that if f maps to polynomials, queries can be evaluated efficiently using the plane sweeping technique from computational geometry. Consequently, many known distance based queries can be evaluated efficiently.</div> </div>
+<h2>SESSION: Research session 7: queries and views</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683042" title="Get the Full Text from the ACM Digital Library">Knowledge compilation = query rewriting + view synthesis</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marco Cadoli</li>
+<li class="nameList Last">Toni Mancini</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">In Knowledge Compilation (KC) an intractable deduction problem <i>KB</i> &#8872; <i>f</i> is split into two phases: 1) <i>KB</i> is preprocessed, thus obtaining a data structure <i>D<inf>KB</inf></i>; 2) the problem is efficiently solved using <i>D<inf>KB</inf></i> and <i>f.</i> Our goal is to study KC in the context of relational databases: Both <i>KB</i> and <i>f</i> are represented as databases, and '&#8872;' is represented as a query <i>Q</i> in second-order logic. <i>D<inf>KB</inf></i> is a database, to be <i>synthesized</i> from <i>KB</i> by means of an appropriate <i>view.</i> <i>Q</i> is <i>rewritten,</i> thus obtaining <i>Q<inf>r</inf></i>. We show syntactic restrictions on <i>Q</i> implying that a polynomial-size <i>D<inf>KB</inf></i> and a first-order <i>Q<inf>r</inf></i> exist, which imply that phase 2 can be done in polynomial time. We also present classes of queries (in some sense complementary to the former ones) for which either no polynomial-size <i>D<inf>KB</inf></i> or no first-order <i>Q<inf>r</inf></i> exist (unless the PH collapses). Compilation to other complexity classes is also addressed.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683043" title="Get the Full Text from the ACM Digital Library">Answering queries using views with arithmetic comparisons</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Foto Afrati</li>
+<li class="nameList">Chen Li</li>
+<li class="nameList Last">Prasenjit Mitra</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We consider the problem of answering queries using views, where queries and views are conjunctive queries with arithmetic comparisons (CQACs) over dense orders. Previous work only considered limited variants of this problem, without giving a complete solution. We have developed a novel algorithm to obtain maximally-contained rewritings (MCRs) for queries having left (or right) semi-interval-comparison predicates. For semi-interval queries, we show that the language of finite unions of CQAC rewritings is not sufficient to find a maximally-contained solution, and identify cases where datalog is sufficient. Finally, we show that it is decidable to obtain equivalent rewritings for CQAC queries.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683044" title="Get the Full Text from the ACM Digital Library">Characterizing memory requirements for queries over continuous data streams</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Arvind Arasu</li>
+<li class="nameList">Brian Babcock</li>
+<li class="nameList">Shivnath Babu</li>
+<li class="nameList">Jon McAlister</li>
+<li class="nameList Last">Jennifer Widom</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We consider conjunctive queries with arithmetic comparisons over multiple continuous data streams. We specify an algorithm for determining whether or not a query can be evaluated using a bounded amount of memory for all possible instances of the data streams. When a query can be evaluated using bounded memory, we produce an execution strategy based on constant-sized synopses of the data streams.</div> </div>
+<h2>SESSION: Invited tutorial 2</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683155" title="Get the Full Text from the ACM Digital Library">Data integration: a theoretical perspective</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Maurizio Lenzerini</li>
+</ul>
+
+<div class="DLabstract"><div style="display:inline">Data integration is the problem of combining data residing at different sources, and providing the user with a unified view of these data. The problem of designing data integration systems is important in current real world applications, and is characterized by a number of issues that are interesting from a theoretical point of view. This document presents on overview of the material to be presented in a tutorial on data integration. The tutorial is focused on some of the theoretical issues that are relevant for data integration. Special attention will be devoted to the following aspects: modeling a data integration application, processing queries in data integration, dealing with inconsistent data sources, and reasoning on queries.</div> </div>
+<h2>SESSION: Research session 8: semistructured data and XML</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683156" title="Get the Full Text from the ACM Digital Library">Lossless regular views</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Diego Calvanese</li>
+<li class="nameList">Giuseppe De Giacomo</li>
+<li class="nameList">Maurizio Lenzerini</li>
+<li class="nameList Last">Moshe Y. Vardi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">If the only information we have on a certain database is through a set of views, the question arises of whether this is sufficient to answer completely a given query. We say that the set of views is lossless with respect to the query, if, no matter what the database is, we can answer the query by solely relying on the content of the views. The question of losslessness has various applications, for example in query optimization, mobile computing, data warehousing, and data integration. We study this problem in a context where the database is semistructured, and both the query and the views are expressed as regular path queries. The form of recursion present in this class prevents us from applying known results to our case.We first address the problem of checking losslessness in the case where the views are materialized. The fact that we have the view extensions available makes this case solvable by extending known techniques. We then study a more complex version of the problem, namely the one where we abstract from the specific view extension. More precisely, we address the problem of checking whether, for every database, the answer to the query over such a database can be obtained by relying only on the view extensions. We show that the problem is solvable by utilizing, via automata-theoretic techniques, the known connection between view-based query answering and constraint satisfaction. We also investigate the computational complexity of both versions of the problem.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683157" title="Get the Full Text from the ACM Digital Library">On verifying consistency of XML specifications</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Marcelo Arenas</li>
+<li class="nameList">Wenfei Fan</li>
+<li class="nameList Last">Leonid Libkin</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">XML specifications often consist of a type definition (typically, a DTD) and a set of integrity constraints. It has been shown previously that such specifications can be inconsistent, and thus it is often desirable to check consistency at compile-time. It is known that for general keys and foreign keys, and DTDs, the consistency problem is undecidable; however, it becomes NP-complete when all keys are one-attribute (unary), and tractable, if no foreign keys are used.In this paper, we consider a variety of constraints for XML data, and study the complexity of the consistency problem. Our main conclusion is that in the presence of foreign keys, compile-time verification of consistency is usually infeasible. We look at two types of constraints: absolute (that hold in the entire document), and relative (that only hold in a part of the document). For absolute constraints, we extend earlier decidability results to the case of multi-attribute keys and unary foreign keys, and to the case of constraints involving regular expressions, providing lower and upper bounds in both cases. For relative constraints, we show that even for unary constraints, the consistency problem is undecidable. We also establish a number of restricted decidable cases.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683158" title="Get the Full Text from the ACM Digital Library">Labeling dynamic XML trees</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Edith Cohen</li>
+<li class="nameList">Haim Kaplan</li>
+<li class="nameList Last">Tova Milo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">We present algorithms to label the nodes of an XML tree which is subject to insertions and deletions of nodes. The labeling is done such that (1) we label each node immediately when it is inserted and this label remains unchanged, and (2) from a pair of labels alone, we can decide whether one node is an ancestor of the other. This problem arises in the context of XML databases that support queries on the structure of the documents as well us on the changes made to the documents over time. We prove that our algorithms assign the shortest possible labels (up to a constant factor) which satisfy these requirements.We also consider the same problem when "clues" that provide guarantees on possible future insertions are given together with newly inserted nodes. Such clues can be derived from the DTD or from statistics on similar XML trees. We present algorithms that use the clues to assign shorter labels. We also prove that the length of our labels is close to the minimum possible.</div> </div>
+<h2>SESSION: Research session 9: query processing and optimization II</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683159" title="Get the Full Text from the ACM Digital Library">On the complexity of approximate query optimization</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">S. Chatterji</li>
+<li class="nameList">S. S. K. Evani</li>
+<li class="nameList">S. Ganguly</li>
+<li class="nameList Last">M. D. Yemmanuru</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">In this work, we study the complexity of the problem of approximate query optimization. We show that, for any &delta; &gt; 0, the problem of finding a join order sequence whose cost is within a factor 2<sup>&Theta;(<i>log</i><sup>1-&delta;</sup>(<i>K</i>))</sup> of <i>K,</i> where <i>K</i> is the cost of the optimal join order sequence is NP-Hard. The complexity gap remains if the number of edges in the query graph is constrained to be a given function <i>e</i>(<i>n</i>) of the number of vertices <i>n</i> of the query graph, where <i>n</i>(<i>n</i> - 1)/2 - &Theta;(<i>n</i><sup>&tau;</sup>) &ge; <i>e</i>(<i>n</i>) &ge; <i>n</i> + &Theta;(<i>n</i><sup>&tau;</sup>) and &tau; is any constant between 0 and 1. These results show that, unless P=NP, the query optimization problem cannot be approximately solved by an algorithm that runs in polynomial time and has a competitive ratio that is within some polylogarithmic factor of the optimal cost.</div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683150" title="Get the Full Text from the ACM Digital Library">Least expected cost query optimization: what can we expect?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Francis Chu</li>
+<li class="nameList">Joseph Halpern</li>
+<li class="nameList Last">Johannes Gehrke</li>
+</ul>
+<div class="DLabstract"><div style="display:inline">A standard assumption in the database query optimization literature is that it suffices to optimize for the "typical" case---that is, the case in which various parameters (e.g., the amount of available memory, the selectivities of predicates, etc.) take on their "typical" values. It was claimed in [CHS99] that we could do better by choosing plans based on their <i>expected cost.</i> Here we investigate this issue more thoroughly. We show that in many circumstances of interest, a "typical" value of the parameter often does give acceptable answers, provided that it is chosen carefully and we are interested only in minimizing expected running time. However, by minimizing the expected running time, we are effectively assuming that if plan <i>p</i><sup>1</sup> runs three times as long as plan <i>p</i><sup>2</sup>, then <i>p</i><sup>1</sup> is exactly three times as bad as <i>p</i><sup>2</sup>. An assumption like this is not always appropriate. We show that focusing on least expected cost can lead to significant improvement for a number of cost functions of interest.</div> </div>
+</div>
+</div>
+</body>
+</html>

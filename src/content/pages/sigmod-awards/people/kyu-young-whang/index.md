@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Kyu-Young Whang — 2014 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/kyu-young-whang/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)
+![](/wp-content/uploads/2022/05/image_large-300x9.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview4.jpg" alt="Kyu-Young Whang" width="125"></td><td><h2>&nbsp;&nbsp;&nbsp; Kyu-Young Whang</h2><h3>&nbsp;&nbsp;&nbsp;&nbsp; 2014 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview4.jpg" alt="Kyu-Young Whang" width="125"></td><td><h2>&nbsp;&nbsp;&nbsp; Kyu-Young Whang</h2><h3>&nbsp;&nbsp;&nbsp;&nbsp; 2014 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 **Professor Kyu-Young Whang** is awarded the 2014 SIGMOD Contributions award for sustained dedication, leadership, and service to the database community in promoting database research at both worldwide and regional levels, including many years of service to the VLDB Journal, the VLDB Endowment, the IEEE TC on Data Engineering, and the DASFAA Steering Committee.
 

@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Dan Suciu  — 2022 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/dan-suciu-2022-sigmod-edgar-f-codd-innovations-award/"
 section: "sigmod"
@@ -8,9 +9,9 @@ wp_type: "page"
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-![](https://sigmod.org/wp-content/uploads/2022/05/suciu-photo.png)
+![](/wp-content/uploads/2022/05/suciu-photo.png)
 
 ## Dan Suciu
 

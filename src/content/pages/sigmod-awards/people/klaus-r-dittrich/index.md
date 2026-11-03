@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Klaus R. Dittrich — 2008 SIGMOD Contributions Award"
 permalink: "/sigmod-awards/people/klaus-r-dittrich/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-10"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large-300x9.png)
+![](/wp-content/uploads/2022/05/image_large-300x9.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2018/02/dittrich-150x150.jpg" alt="" width="150" height="150"></td><td><h2>Klaus R. Dittrich</h2><h3>2008 SIGMOD Contributions Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2018/02/dittrich-150x150.jpg" alt="" width="150" height="150"></td><td><h2>Klaus R. Dittrich</h2><h3>2008 SIGMOD Contributions Award</h3></td></tr></tbody></table>
 
 Klaus R. Dittrich is the recipient of the 2008 SIGMOD Contributions Award for his lifetime dedication and service to the database community, most notably, sustained and excellent work in the VLDB Endowment, leadership for the VLDB Journal, and promotion of interaction between the database and software engineering communities.
 

@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Martin Kersten — 2016 SIGMOD Systems Award"
 permalink: "/sigmod-awards/people/martin-kersten-2016-sigmod-systems-award/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2016/05/fotoSep2014-e1464196430422-130x150.jpg" alt="" width="130" height="150"></td><td><h2>Martin Kersten</h2><h2>&nbsp;</h2><h3>2016 SIGMOD Systems Award</h3></td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2016/05/fotoSep2014-e1464196430422-130x150.jpg" alt="" width="130" height="150"></td><td><h2>Martin Kersten</h2><h2>&nbsp;</h2><h3>2016 SIGMOD Systems Award</h3></td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
 
 **Professor Martin Kersten** is the recipient of the 2016 SIGMOD Systems Award for the design and implementation of MonetDB, a pioneering main-memory database system based on a columnar data organization.
 

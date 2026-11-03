@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Michael Stonebraker and Lawrence Rowe — 2015 SIGMOD Systems Award"
 permalink: "/sigmod-awards/people/2015-sigmod-systems-award/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.hosting2.acm.org/sigmodnewwp/wp-content/uploads/2015/07/image_thumb3.jpg" alt="image_thumb3.jpg (107×128)"></td><td><h2>Michael Stonebraker</h2><h2>and</h2><h2>Lawrence Rowe</h2><h3>2015 SIGMOD Systems Award</h3></td><td><img src="https://sigmod.org/wp-content/uploads/2017/07/rowe_l_web.jpg-360-150x150.jpg" alt="" width="123" height="123"></td><td></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_thumb3.jpg" alt="image_thumb3.jpg (107×128)"></td><td><h2>Michael Stonebraker</h2><h2>and</h2><h2>Lawrence Rowe</h2><h3>2015 SIGMOD Systems Award</h3></td><td><img src="/wp-content/uploads/2017/07/rowe_l_web.jpg-360-150x150.jpg" alt="" width="123" height="123"></td><td></td></tr></tbody></table>
 
 **Dr. Michael Stonebraker** and **Dr. Lawrence A. Rowe** are the recipients of the 2015 SIGMOD Systems Award for fundamental contributions to the design and implementation of modern, object-relational database systems as embodied by the Postgres DBMS.
 

@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Umeshwar Dayal — 2010 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/umeshwar-dayal/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview24.jpg" alt="Umeshwar_Dayal"></td><td><h2>Umeshwar Dayal</h2><h3>2010 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview24.jpg" alt="Umeshwar_Dayal"></td><td><h2>Umeshwar Dayal</h2><h3>2010 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 Dr. Umeshwar Dayal is the recipient of the 2010 SIGMOD Edgar F. Codd Innovation Award for a succession of pioneering, influential contributions in distributed heterogeneous databases, high-performance active databases, generalized transitive closure, transaction models for long-running activities, and business process discovery, among other topics.
 

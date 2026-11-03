@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "Surajit Chaudhuri — 2011 SIGMOD Edgar F. Codd Innovations Award"
 permalink: "/sigmod-awards/people/surajit-chaudhuri-innovations/"
 section: "sigmod"
@@ -9,9 +10,9 @@ wp_parent: 297
 updated: "2022-05-13"
 ---
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2015/07/image_preview1.jpg" alt="Surajit_Chaudhuri"></td><td><h2>Surajit Chaudhuri</h2><h3>2011 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2015/07/image_preview1.jpg" alt="Surajit_Chaudhuri"></td><td><h2>Surajit Chaudhuri</h2><h3>2011 SIGMOD Edgar F. Codd Innovations Award</h3></td></tr></tbody></table>
 
 Surajit Chaudhuri is the recipient of the 2011 SIGMOD Edgar F. Codd Innovations Award for his seminal contributions to research that led to practical tools for automated physical database design.
 

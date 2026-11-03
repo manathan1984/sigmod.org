@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "2020 SIGMOD Systems Award"
 permalink: "/sigmod-awards/citations/2020-sigmod-systems-award/"
 section: "sigmod"
@@ -11,9 +12,9 @@ updated: "2022-05-13"
 
 # BerkeleyDB — 2020 SIGMOD Systems Award
 
-![](https://sigmod.org/wp-content/uploads/2022/05/image_large.png)
+![](/wp-content/uploads/2022/05/image_large.png)
 
-<table align="center"><tbody><tr><td><img src="https://sigmod.org/wp-content/uploads/2020/05/berkeleydb-logo.png" alt="" width="169" height="81"></td><td><h1>BerkeleyDB</h1><h3>2020 SIGMOD Systems Award</h3></td><td></td><td></td></tr></tbody></table>
+<table align="center"><tbody><tr><td><img src="/wp-content/uploads/2020/05/berkeleydb-logo.png" alt="" width="169" height="81"></td><td><h1>BerkeleyDB</h1><h3>2020 SIGMOD Systems Award</h3></td><td></td><td></td></tr></tbody></table>
 
 The creators of BerkeleyDB are the recipients of the 2020 SIGMOD Systems Award for their seminal work in embodying simplicity, quality, and elegance in a high-performance key-value store that has impacted many systems and applications over the last 25 years. BerkeleyDB contributors are (in alphabetical order): Don Anderson, Keith Bostic, Alan Bram, Greg Burd, Michael Cahill, Ron Cohen, Alex Gorrod, George Feinberg, Mark Hayes, Charles Lamb, Linda Lee, Susan LoVerso, John Merrells, Mike Olson, Carol Sandstrom, Steve Sarette, David Schacter, David Segleau, Margo Seltzer, Mike Ubell.
 

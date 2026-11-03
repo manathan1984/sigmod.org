@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "SIGMOD 2023 Test-of-Time Award"
 permalink: "/sigmod-2023-test-of-time-award/"
 section: "sigmod"
@@ -14,18 +15,18 @@ Raul Castro Fernandez, Matteo Migliavacca, Evangelia Kalyvianaki, and Peter Piet
 
 This is the first paper that presents an abstraction for exposing internal operator state through a set of well-defined state management primitives, enabling an integrated and generic approach for dynamic scale out and recovery of stateful operators in stream processing systems. The work has led to a large body of follow-up work on scalable stream processing. Similar concepts and abstractions have been used by widely used stream processing platforms, making this paper a seminal paper in its field.
 
-![](https://sigmod.org/wp-content/uploads/2023/05/paul_castro_ferrnandez.jpg)
+![](/wp-content/uploads/2023/05/paul_castro_ferrnandez.jpg)
 
 Raul Castro Fernandez
 
-![](https://sigmod.org/wp-content/uploads/2023/05/matteo_migliavacca.png)
+![](/wp-content/uploads/2023/05/matteo_migliavacca.png)
 
 Matteo Migliavacca
 
-![](https://sigmod.org/wp-content/uploads/2023/05/evangelia_kalyvianaki.png)
+![](/wp-content/uploads/2023/05/evangelia_kalyvianaki.png)
 
 Evangelia Kalyvianaki
 
-![](https://sigmod.org/wp-content/uploads/2023/05/peter-pietzuch.png)
+![](/wp-content/uploads/2023/05/peter-pietzuch.png)
 
 Peter Pietzuch

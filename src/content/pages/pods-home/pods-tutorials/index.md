@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "PODS Tutorials"
 permalink: "/pods-home/pods-tutorials/"
 section: "pods"
@@ -157,7 +158,7 @@ F. T. Leighton: [The Challenges of Delivering Content on the Internet](http://d
 2000
 
 Ashish Gupta: [Entrepreneurship for Information Systems Researchers](http://doi.acm.org/10.1145/335168.335222)  
-Moshe Y. Vardi: [Constraint Satisfaction and Database Theory](https://sigmod.org/www.cs.rice.edu/_vardi/papers/pods00tk.ps.gz)
+Moshe Y. Vardi: [Constraint Satisfaction and Database Theory](http://www.cs.rice.edu/~vardi/papers/pods00tk.ps.gz)
 
 1999
 

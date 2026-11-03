@@ -1,4 +1,5 @@
 ---
+edited: true
 title: "PODS 30th Anniversary Statistics"
 permalink: "/pods-home/pods-30th-anniversary-statistics/"
 section: "pods"
@@ -11,7 +12,7 @@ updated: "2015-07-17"
 
 This page contains pointers to the raw data that was gathered for the analysis performed in “30 Years of PODS in Facts and Figures”.
 
-Download the code and data [here](https://sigmod.hosting.acm.org/sigmodnewwp/wp-content/uploads/2015/07/30_years_of_pods.tar_.gz "PODS30 - 30 years of pods code and data").
+Download the code and data [here](/wp-content/uploads/2015/07/30_years_of_pods.tar_.gz "PODS30 - 30 years of pods code and data").
 
 ## Required Python packages
 

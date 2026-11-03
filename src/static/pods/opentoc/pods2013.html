@@ -1,0 +1,434 @@
+
+<!doctype html>
+<head>
+<META http-equiv="Content-Style-Type" content="text/css">
+<title>PODS '13- Proceedings of the 32nd ACM SIGMOD-SIGACT-SIGAI symposium on Principles of database systems</title>
+<STYLE type="text/css">
+#DLtoc {
+	font: normal 12px/1.5em Arial, Helvetica, sans-serif;
+	}
+
+#DLheader {
+	}
+#DLheader h1 {
+	font-size:16px;	
+}
+	
+#DLcontent {
+	 font-size:12px;
+	}
+#DLcontent h2 {
+	 font-size:14px;
+	 margin-bottom:5px;
+	}
+#DLcontent h3 {
+	 font-size:12px;
+	 padding-left:20px;
+	 margin-bottom:0px;
+	}
+
+#DLcontent ul{
+	margin-top:0px;
+	margin-bottom:0px;
+	}
+		
+.DLauthors li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLauthors li:after{
+	content:",";
+	}
+.DLauthors li.nameList.Last:after{
+	content:"";
+	}		
+
+.DLabstract {
+	 padding-left:40px;
+	 padding-right:20px;
+	 display:block;
+	}
+
+.DLformats li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 5px;
+	}
+	
+.DLformats li:after{
+	content:",";
+	}
+.DLformats li.formatList.Last:after{
+	content:"";
+	}		
+
+.DLlogo {
+	vertical-align:middle; 
+	padding-right:5px;
+	border:none;
+	}
+	
+.DLcitLink {
+	margin-left:20px;
+	}	
+
+.DLtitleLink {
+	margin-left:20px;
+	}	
+
+.DLotherLink {
+	margin-left:0px;
+	}		
+   
+</STYLE>
+</head>
+<body>
+<div id="DLtoc">
+<div id="DLheader">
+<h1>PODS '13- Proceedings of the 32nd ACM SIGMOD-SIGACT-SIGAI symposium on Principles of database systems</h1>
+<a class="DLcitLink" href="https://dl.acm.org/citation.cfm?id=2463664" title="Go to the ACM Digital Library for additional information about this proceeding"><img class="DLlogo" src="https://dl.acm.org/img/dllogo.png" alt="Digital Library logo" height="30" width="30">Full Citation in the ACM Digital Library</a>
+</div>
+<div id="DLcontent">
+<h2>SESSION: Welcome and keynote address</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245196" title="Full Citation in the ACM Digital Library">Session details: Welcome and keynote address</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Richard Hull</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683474" title="Get the Full Text from the ACM Digital Library">Foundations of data-aware process analysis: a database theory perspective</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Diego Calvanese</li>
+<li class="nameList">Giuseppe De Giacomo</li>
+<li class="nameList Last">Marco Montali</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>In this work we survey the research on foundations of data-aware (business) processes that has been carried out in the database theory community. We show that this community has indeed developed over the years a multi-faceted culture of merging data and processes. We argue that it is this community that should lay the foundations to solve, at least from the point of view of formal analysis, the dichotomy between data and processes still persisting in business process management.</p></div> </div>
+<h2>SESSION: Data mining/information retrieval</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245197" title="Full Citation in the ACM Digital Library">Session details: Data mining/information retrieval</a>
+</h3>
+
+<ul class="DLauthors">
+<li class="nameList Last">Frank Neven</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683485" title="Get the Full Text from the ACM Digital Library">The complexity of mining maximal frequent subgraphs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Benny Kimelfeld</li>
+<li class="nameList Last">Phokion G. Kolaitis</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>A <i>frequent subgraph</i> of a given collection of graphs is a graph that is isomorphic to a subgraph of at least as many graphs in the collection as a given threshold. Frequent subgraphs generalize frequent itemsets and arise in various contexts, from bioinformatics to the Web. Since the space of frequent subgraphs is typically extremely large, research in graph mining has focused on special types of frequent subgraphs that can be orders of magnitude smaller in number, yet encapsulate the space of all frequent subgraphs. <i>Maximal</i> frequent subgraphs (i.e., the ones not properly contained in any frequent subgraph) constitute the most useful such type.</p> <p>In this paper, we embark on a comprehensive investigation of the computational complexity of mining maximal frequent subgraphs. Our study is carried out by considering the effect of three different parameters: possible restrictions on the class of graphs; a fixed bound on the threshold; and a fixed bound on the number of desired answers. We focus on specific classes of connected graphs: general graphs, planar graphs, graphs of bounded degree, and graphs of bounded tree-width (trees being a special case). Moreover, each class has two variants: the one in which the nodes are unlabeled, and the one in which they are uniquely labeled. We delineate the complexity of the enumeration problem for each of these variants by determining when it is solvable in (total or incremental) polynomial time and when it is NP-hard. Specifically, for the labeled classes, we show that bounding the threshold yields tractability but, in most cases, bounding the number of answers does not, unless P=NP; an exception is the case of labeled trees, where bounding either of these two parameters yields tractability. The state of affairs turns out to be quite different for the unlabeled classes. The main (and most challenging to prove) result concerns unlabeled trees: we show NP-hardness, even if the input consists of two trees, and both the threshold and the number of desired answers are equal to just two. In other words, we establish that the following problem is NP-complete: given two unlabeled trees, do they have more than one maximal subtree in common?</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683486" title="Get the Full Text from the ACM Digital Library">Deciding monotone duality and identifying frequent itemsets in quadratic logspace</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Georg Gottlob</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The monotone duality problem is defined as follows: Given two monotone formulas f and g in irredundant DNF, decide whether <i>f</i> and <i>g</i> are dual. This problem is the same as duality testing for hypergraphs, that is, checking whether a hypergraph <i>H</i> consists of precisely all minimal transversals of a hypergraph <i>G</i>. By exploiting a recent problem-decomposition method by Boros and Makino (ICALP 2009), we show that duality testing for hypergraphs, and thus for monotone DNFs, is feasible in DSPACE(log<sup>2</sup> <i>n</i>), i.e., in quadratic logspace. As the monotone duality problem is equivalent to a number of problems in the areas of databases, data mining, and knowledge discovery, the results presented here yield new complexity results for those problems, too. For example, it follows from our results that whenever, for a Boolean-valued relation (whose attributes represent items), a number of maximal frequent itemsets and a number of minimal infrequent itemsets are known, then it can be decided in quadratic logspace whether there exist additional frequent or infrequent itemsets.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683487" title="Get the Full Text from the ACM Digital Library">Spanners: a formal framework for information extraction</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Ronald Fagin</li>
+<li class="nameList">Benny Kimelfeld</li>
+<li class="nameList">Frederick Reiss</li>
+<li class="nameList Last">Stijn Vansummeren</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>An intrinsic part of information extraction is the creation and manipulation of relations extracted from text. In this paper, we develop a foundational framework where the central construct is what we call a <i>spanner</i>. A spanner maps an input string into relations over the spans (intervals specified by bounding indices) of the string. The focus of this paper is on the representation of spanners. Conceptually, there are two kinds of such representations. Spanners defined in a <i>primitive</i> representation extract relations directly from the input string; those defined in an <i>algebra</i> apply algebraic operations to the primitively represented spanners. This framework is driven by SystemT, an IBM commercial product for text analysis, where the primitive representation is that of regular expressions with capture variables.</p> <p>We define additional types of primitive spanner representations by means of two kinds of automata that assign spans to variables. We prove that the first kind has the same expressive power as regular expressions with capture variables; the second kind expresses precisely the algebra of the <i>regular</i> spanners---the closure of the first kind under standard relational operators. The <i>core</i> spanners extend the regular ones by string-equality selection (an extension used in SystemT). We give some fundamental results on the expressiveness of regular and core spanners. As an example, we prove that regular spanners are closed under difference (and complement), but core spanners are not. Finally, we establish connections with related notions in the literature.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683488" title="Get the Full Text from the ACM Digital Library">Learning and verifying quantified boolean queries by example</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Azza Abouzied</li>
+<li class="nameList">Dana Angluin</li>
+<li class="nameList">Christos Papadimitriou</li>
+<li class="nameList">Joseph M. Hellerstein</li>
+<li class="nameList Last">Avi Silberschatz</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>To help a user specify and verify quantified queries --- a class of database queries known to be very challenging for all but the most expert users --- one can question the user on whether certain data objects are <i>answers</i> or <i>non-answers</i> to her intended query. In this paper, we analyze the number of questions needed to learn or verify <i>qhorn</i> queries, a special class of Boolean quantified queries whose underlying form is <i>conjunctions of quantified Horn expressions</i>. We provide optimal <i>polynomial-question</i> and <i>polynomial-time</i> learning and verification algorithms for two subclasses of the class qhorn with upper constant limits on a query's <i>causal density</i>.</p></div> </div>
+<h2>SESSION: Awards session</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245198" title="Full Citation in the ACM Digital Library">Session details: Awards session</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Dirk Van Gucht</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683489" title="Get the Full Text from the ACM Digital Library">The ACM PODS Alberto O. Mendelzon test-of-time award 2013</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Michael Benedikt</li>
+<li class="nameList">Tova Milo</li>
+<li class="nameList Last">Dirk Van Gucht</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683480" title="Get the Full Text from the ACM Digital Library">Verification of database-driven systems via amalgamation</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Miko&#322;aj Boja&#324;czyk</li>
+<li class="nameList">Luc Segoufin</li>
+<li class="nameList Last">Szymon Toru&#324;czyk</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We describe a general framework for static verification of systems that base their decisions upon queries to databases. The database is specified using constraints, typically a schema, and is not modified during a run of the system. The system is equipped with a finite number of registers for storing intermediate information from the database and the specification consists of a transition table described using quantifier-free formulas that can query either the database or the registers.</p> <p>Our main result concerns systems querying XML databases -- modeled as data trees -- using quantifier-free formulas with predicates such as the descendant axis or comparison of data values. In this scenario we show an ExpSpace algorithm for deciding reachability.</p> <p>Our technique is based on the notion of amalgamation and is quite general. For instance it also applies to relational databases (with an optimal PSpace algorithm). We also show that minor extensions of the model lead to undecidability.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683481" title="Get the Full Text from the ACM Digital Library">When is naive evaluation possible?</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Am&#233;lie Gheerbrant</li>
+<li class="nameList">Leonid Libkin</li>
+<li class="nameList Last">Cristina Sirangelo</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The term naive evaluation refers to evaluating queries over incomplete databases as if nulls were usual data values, i.e., to using the standard database query evaluation engine. Since the semantics of query answering over incomplete databases is that of certain answers, we would like to know when naive evaluation computes them: i.e., when certain answers can be found without inventing new specialized algorithms. For relational databases it is well known that unions of conjunctive queries possess this desirable property, and results on preservation of formulae under homomorphisms tell us that within relational calculus, this class cannot be extended under the open-world assumption.</p> <p>Our goal here is twofold. First, we develop a general framework that allows us to determine, for a given semantics of incompleteness, classes of queries for which naive evaluation computes certain answers. Second, we apply this approach to a variety of semantics, showing that for many classes of queries beyond unions of conjunctive queries, naive evaluation makes perfect sense under assumptions different from open-world. Our key observations are: (1) naive evaluation is equivalent to monotonicity of queries with respect to a semantics-induced ordering, and (2) for most reasonable semantics, such monotonicity is captured by preservation under various types of homomorphisms. Using these results we find classes of queries for which naive evaluation works, e.g., positive first-order formulae for the closed-world semantics. Even more, we introduce a general relation-based framework for defining semantics of incompleteness, show how it can be used to capture many known semantics and to introduce new ones, and describe classes of first-order queries for which naive evaluation works under such semantics.</p></div> </div>
+<h2>TUTORIAL SESSION: Tutorial 1</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245199" title="Full Citation in the ACM Digital Library">Session details: Tutorial 1</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Reinhard Pichler</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683482" title="Get the Full Text from the ACM Digital Library">Sketching via hashing: from heavy hitters to compressed sensing to sparse fourier transform</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Piotr Indyk</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683483" title="Get the Full Text from the ACM Digital Library">Collaborative data-driven workflows: think global, act local</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Serge Abiteboul</li>
+<li class="nameList Last">Victor Vianu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We introduce and study a model of <i>collaborative data-driven workflows</i>. In a local-as-view style, each peer has a partial view of a global instance that remains purely virtual. Local updates have side effects on other peers' data, defined via the global instance. We also assume that the peers provide (an abstraction of) their specifications, so that each peer can actually see and reason on the specification of the entire system.</p> <p>We study the ability of a peer to carry out runtime reasoning about the global run of the system, and in particular about actions of other peers, based on its own local observations. A main contribution is to show that, under a reasonable restriction (namely, <i>key-visibility</i>), one can construct a finite symbolic representation of the infinite set of global runs consistent with given local observations. Using the symbolic representation, we show that we can evaluate in PSPACE a large class of properties over global runs, expressed in an extension of first-order logic with past linear-time temporal operators, PLTL-FO. We also provide a variant of the algorithm allowing to <i>incrementally</i> monitor a statically defined property, and then develop an extension allowing to monitor an infinite class of properties sharing the same temporal structure, defined dynamically as the run unfolds. Finally, we consider an extension of the language, that permits workflow control with PLTL-FO formulas. We prove that this does not increase the power of the workflow specification language, thereby showing that the language is closed under such introspective reasoning.</p></div> </div>
+<h2>SESSION: Indexing/query answering</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245200" title="Full Citation in the ACM Digital Library">Session details: Indexing/query answering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Benny Kimelfeld</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683484" title="Get the Full Text from the ACM Digital Library">I/O-efficient planar range skyline and attrition priority queues</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Casper Kejlberg-Rasmussen</li>
+<li class="nameList">Yufei Tao</li>
+<li class="nameList">Konstantinos Tsakalidis</li>
+<li class="nameList">Kostas Tsichlas</li>
+<li class="nameList Last">Jeonghun Yoon</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study the static and dynamic <i>planar range skyline reporting problem</i> in the external memory model with block size <i>B</i>, under a linear space budget. The problem asks for an <i>O</i>(<i>n/B</i>) space data structure that stores <i>n</i> points in the plane, and supports reporting the <i>k</i> maximal input points (a.k.a.<i>skyline</i>) among the points that lie within a given query rectangle Q = [&#945;<sub>1</sub>[&#945;<sub>2</sub>] &#215; [&#946;<sub>1</sub>&#946;<sub>2</sub>. When <i>Q</i> is <i>3-sided</i>, i.e. one of its edges is grounded, two variants arise: <i>top-open</i> for &#946;<sub>2</sub> = &#8734; and <i>left-open</i> for &#945;<sub>1</sub> = - &#8734; (symmetrically <i>bottom-open</i> and <i>right-open</i>) queries.</p> <p>We present optimal static data structures for <i>top-open</i> queries, for the cases where the universe is R<sup>2</sup>, a <i>U</i> &#215; <i>U</i> grid, and rank space [<i>O</i>(<i>n</i>)]<sup>2</sup>. We also show that <i>left-open</i> queries are harder, as they require &#937;((<i>n</i>/<i>B</i>)<sup>&#949;</sup> + <i>k</i>/<i>B</i>) I/Os for &#949; &#62; 0, when only linear space is allowed. We show that the lower bound is tight, by a structure that supports 4-sided queries in matching complexities. Interestingly, these lower and upper bounds coincide with those of the <i>planar orthogonal range reporting problem</i>, i.e., the skyline requirement does not alter the problem difficulty at all!</p> <p>Finally, we present the first dynamic linear space data structure that supports top-open queries in O(log<sub>2B<sub>&#949;</sub></sub> <i>n</i> + <i>k</i>/<i>B</i><sup>1 &#949;</sup> &#62; and updates in <i>O</i>(log<sub>2B<sub>&#949;</sub></sub> <i>n</i>) worst case I/Os, for &#949; &#8712; [0, 1]. This also yields a linear space data structure for 4-sided queries with optimal query I/Os and <i>O</i>(log(<i>n</i>/<i>B</i>)) amortized update I/Os. We consider of independent interest the main component of our dynamic structures, a new real-time I/O-efficient and catenable variant of the fundamental structure <i>priority queue with attrition</i> by Sundar.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683495" title="Get the Full Text from the ACM Digital Library">Nearest neighbor searching under uncertainty II</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pankaj K. Agarwal</li>
+<li class="nameList">Boris Aronov</li>
+<li class="nameList">Sariel Har-Peled</li>
+<li class="nameList">Jeff M. Phillips</li>
+<li class="nameList">Ke Yi</li>
+<li class="nameList Last">Wuzhou Zhang</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Nearest-neighbor (<b>NN</b>) search, which returns the nearest neighbor of a query point in a set of points, is an important and widely studied problem in many fields, and it has wide range of applications. In many of them, such as sensor databases, location-based services, face recognition, and mobile data, the location of data is imprecise. We therefore study nearest neighbor queries in a probabilistic framework in which the location of each input point is specified as a probability distribution function. We present efficient algorithms for (i) computing all points that are nearest neighbors of a query point with nonzero probability; (ii) estimating, within a specified additive error, the probability of a point being the nearest neighbor of a query point; (iii) using it to return the point that maximizes the probability being the nearest neighbor, or all the points with probabilities greater than some threshold to be the <b>NN</b>. We also present some experimental results to demonstrate the effectiveness of our approach.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683496" title="Get the Full Text from the ACM Digital Library">On the BDD/FC conjecture</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tomasz Gogacz</li>
+<li class="nameList Last">Jerzy Marcinkowski</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Bounded Derivation Depth property (BDD) and Finite Controllability (FC) are two properties of sets of datalog rules and tuple generating dependencies (known as Datalog<sup>3</sup> programs), which recently attracted some attention. We conjecture that the first of these properties implies the second, and support this conjecture by some evidence proving, among other results, that it holds true for all theories over binary signature.</p></div> </div>
+<h2>SESSION: Query processing/verification</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245201" title="Full Citation in the ACM Digital Library">Session details: Query processing/verification</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Daniel Deutch</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683497" title="Get the Full Text from the ACM Digital Library">On the expressive power of update primitives</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Tom J. Ameloot</li>
+<li class="nameList">Jan Van den Bussche</li>
+<li class="nameList Last">Emmanuel Waller</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The SQL standard offers three primitive operations (insert, delete, and update which is here called modify) to update a relation based on a generic query. This paper compares the expressiveness of programs composed of these three operations, with the general notion of update that simply replaces the content of the relation by the result of a query. It turns out that replacing cannot be expressed in terms of insertions, deletions, and modifications, and neither can modifications be expressed in terms of insertions and deletions. The expressive power gained by if-then-else control flow in programs is investigated as well. Different ways to perform replacing are discussed: using a temporary variable; using the new SQL merge operation; using SQL's data change delta tables; or using queries involving object creation or arithmetic. Finally the paper investigates the power of alternating the different primitives. For example, an insertion followed by a modification cannot always be expressed as a modification followed by an insertion.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683498" title="Get the Full Text from the ACM Digital Library">Flag &#38; check: data access with monadically defined queries</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Sebastian Rudolph</li>
+<li class="nameList Last">Markus Kr&#246;tzsch</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We introduce <i>monadically defined queries</i> (MODEQs) and <i>nested monadically defined queries</i> (NEMODEQs), two querying formalisms that extend conjunctive queries, conjunctive two-way regular path queries, and monadic Datalog queries. Both can be expressed as Datalog queries and in monadic second-order logic, yet they have a decidable query containment problem and favorable query answering complexities: a data complexity of P, and a combined complexity of NP (MODEQs) and PSpace (NEMODEQs).</p> <p>We show that (NE)MODEQ answering remains decidable in the presence of a well-known generic class of tuple-generating dependencies. In addition, techniques to rewrite queries under dependencies into (NE)MODEQs are introduced. Rewriting can be applied partially, and (NE)MODEQ answering is still decidable if the non-rewritable part of the TGDs permits decidable (NE)MODEQ answering on other grounds.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683499" title="Get the Full Text from the ACM Digital Library">Verification of relational data-centric dynamic systems with external services</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Babak Bagheri Hariri</li>
+<li class="nameList">Diego Calvanese</li>
+<li class="nameList">Giuseppe De Giacomo</li>
+<li class="nameList">Alin Deutsch</li>
+<li class="nameList Last">Marco Montali</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Data-centric dynamic systems are systems where both the process controlling the dynamics and the manipulation of data are equally central. We study verification of (first-order) mu-calculus variants over <i>relational data-centric dynamic systems</i>, where data are maintained in a relational database, and the process is described in terms of atomic actions that evolve the database. Action execution may involve calls to external services, thus inserting fresh data into the system. As a result such systems are infinite-state. We show that verification is undecidable in general, and we isolate notable cases where decidability is achieved. Specifically we start by considering service calls that return values deterministically (depending only on passed parameters). We show that in a mu-calculus variant that preserves knowledge of objects appeared along a run we get decidability under the assumption that the fresh data introduced along a run are bounded, though they might not be bounded in the overall system. In fact we tie such a result to a notion related to weak acyclicity studied in data exchange. Then, we move to nondeterministic services and we investigate decidability under the assumption that knowledge of objects is preserved only if they are continuously present. We show that if infinitely many values occur in a run but do not accumulate in the same state, then we get again decidability. We give syntactic conditions to avoid this accumulation through the novel notion of "generate-recall acyclicity", which ensures that every service call activation generates new values that cannot be accumulated indefinitely.</p></div> </div>
+<h2>TUTORIAL SESSION: Tutorial 2</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245202" title="Full Citation in the ACM Digital Library">Session details: Tutorial 2</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Wenfei Fan</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683490" title="Get the Full Text from the ACM Digital Library">Querying graph databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Pablo Barcel&#243; Baeza</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Graph databases have gained renewed interest in the last years, due to its applications in areas such as the Semantic Web and Social Networks Analysis. We study the problem of querying graph databases, and, in particular, the expressiveness and complexity of evaluation for several general-purpose query languages, such as the regular path queries and its extensions with conjunctions and inverses. We distinguish between two semantics for these languages. The first one, based on simple paths, easily leads to intractability, while the second one, based on arbitrary paths, allows tractable evaluation for an expressive family of languages.</p> <p>We also study two recent extensions of these languages that have been motivated by modern applications of graph databases. The first one allows to treat paths as first-class citizens, while the second one permits to express queries that combine the topology of the graph with its underlying data.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683491" title="Get the Full Text from the ACM Digital Library">Charting the tractability frontier of certain conjunctive query answering</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Jef Wijsen</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>An uncertain database is defined as a relational database in which primary keys need not be satisfied. A repair (or possible world) of such database is obtained by selecting a maximal number of tuples without ever selecting two distinct tuples with the same primary key value. For a Boolean query q, the decision problem <b>CERTAINTY</b>(<i>q</i>) takes as input an uncertain database db and asks whether q is satisfied by every repair of db. Our main focus is on acyclic Boolean conjunctive queries without self-join. Previous work has introduced the notion of (directed) attack graph of such queries, and has proved that <b>CERTAINTY</b>(<i>q</i>) is first-order expressible if and only if the attack graph of q is acyclic. The current paper investigates the boundary between tractability and intractability of <b>CERTAINTY</b>(<i>q</i>). We first classify cycles in attack graphs as either weak or strong, and then prove among others the following. If the attack graph of a query q contains a strong cycle, then <b>CERTAINTY</b>(<i>q</i>) is coNP-complete. If the attack graph of q contains no strong cycle and every weak cycle is terminal (i.e., no edge leads from a vertex in the cycle to a vertex outside the cycle), then <b>CERTAINTY</b>(<i>q</i>) is in <b>P</b>. We then partially address the only remaining open case, i.e., when the attack graph contains some nonterminal cycle and no strong cycle. Finally, we establish a relationship between the complexities of <b>CERTAINTY</b>(<i>q</i>) and evaluating q on probabilistic databases.</p></div> </div>
+<h2>SESSION: RDF and ontologies</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245203" title="Full Citation in the ACM Digital Library">Session details: RDF and ontologies</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Diego Calvanese</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683492" title="Get the Full Text from the ACM Digital Library">Trial for RDF: adapting graph query languages for RDF data</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Leonid Libkin</li>
+<li class="nameList">Juan Reutter</li>
+<li class="nameList Last">Domagoj Vrgo&#269;</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Querying RDF data is viewed as one of the main applications of graph query languages, and yet the standard model of graph databases -- essentially labeled graphs -- is different from the triples-based model of RDF. While encodings of RDF databases into graph data exist, we show that even the most natural ones are bound to lose some functionality when used in conjunction with graph query languages. The solution is to work directly with triples, but then many properties taken for granted in the graph database context (e.g., reachability) lose their natural meaning.</p> <p>Our goal is to introduce languages that work directly over triples and are closed, i.e., they produce sets of triples, rather than graphs. Our basic language is called TriAL, or Triple Algebra: it guarantees closure properties by replacing the product with a family of join operations. We extend TriAL with recursion, and explain why such an extension is more intricate for triples than for graphs. We present a declarative language, namely a fragment of datalog, capturing the recursive algebra. For both languages, the combined complexity of query evaluation is given by low-degree polynomials. We compare our languages with relational languages, such as finite-variable logics, and previously studied graph query languages such as adaptations of XPath, regular path queries, and nested regular expressions; many of these languages are subsumed by the recursive triple algebra. We also provide examples of the usefulness of TriAL in querying graph and RDF data.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683493" title="Get the Full Text from the ACM Digital Library">Ontology-based data access: a study through disjunctive datalog, CSP, and MMSNP</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Meghyn Bienvenu</li>
+<li class="nameList">Balder ten Cate</li>
+<li class="nameList">Carsten Lutz</li> 
+<li class="nameList Last">Frank Wolter</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p><i>Ontology-based data access</i> is concerned with querying incomplete data sources in the presence of domain-specific knowledge provided by an ontology. A central notion in this setting is that of an <i>ontology-mediated query</i>, which is a database query coupled with an ontology. In this paper, we study several classes of ontology-mediated queries, where the database queries are given as some form of conjunctive query and the ontologies are formulated in description logics or other relevant fragments of first-order logic, such as the guarded fragment and the unary-negation fragment. The contributions of the paper are three-fold. First, we characterize the expressive power of ontology-mediated queries in terms of fragments of disjunctive datalog. Second, we establish intimate connections between ontology-mediated queries and constraint satisfaction problems (CSPs) and their logical generalization, MMSNP formulas. Third, we exploit these connections to obtain new results regarding (i) first-order rewritability and datalog-rewritability of ontology-mediated queries, (ii) P/NP dichotomies for ontology-mediated queries, and (iii) the query containment problem for ontology-mediated queries.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683494" title="Get the Full Text from the ACM Digital Library">Well-founded semantics for extended datalog and ontological reasoning</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Andr&#233; Hernich</li>
+<li class="nameList">Clemens Kupke</li>
+<li class="nameList">Thomas Lukasiewicz</li>
+<li class="nameList Last">Georg Gottlob</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The Datalog&#177; family of expressive extensions of Datalog has recently been introduced as a new paradigm for query answering over ontologies, which captures and extends several common description logics. It extends plain Datalog by features such as existentially quantified rule heads and, at the same time, restricts the rule syntax so as to achieve decidability and tractability. In this paper, we continue the research on Datalog&#177;. More precisely, we generalize the well-founded semantics (WFS), as the standard semantics for nonmonotonic normal programs in the database context, to Datalog&#177; programs with negation under the unique name assumption (UNA). We prove that for guarded Datalog&#177; with negation under the standard WFS, answering normal Boolean conjunctive queries is decidable, and we provide precise complexity results for this problem, namely, in particular, completeness for PTIME (resp., 2-EXPTIME) in the data (resp., combined) complexity.</p></div> </div>
+<h2>SESSION: Graph and XML querying</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245204" title="Full Citation in the ACM Digital Library">Session details: Graph and XML querying</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Wim Martens</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683405" title="Get the Full Text from the ACM Digital Library">Semantic acyclicity on graph databases</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Pablo Barcel&#243; Baeza</li>
+<li class="nameList">Miguel Romero</li>
+<li class="nameList Last">Moshe Y. Vardi</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>It is known that unions of acyclic conjunctive queries (CQs) can be evaluated in linear time, as opposed to arbitrary CQs, for which the evaluation problem is NP-complete. It follows from techniques in the area of constraint-satisfaction problems that <i>"semantically acyclic"</i> unions of CQs -- i.e., unions of CQs that are equivalent to a union of acyclic ones -- can be evaluated in polynomial time, though testing membership in the class of semantically acyclic CQs is NP-complete.</p> <p>We study here the fundamental notion of semantic acyclicity in the context of graph databases and unions of conjunctive regular path queries with inverse (UC2RPQs). It is known that unions of acyclic C2RPQs can be evaluated efficiently, but it is by no means obvious whether the same holds for the class of UC2RPQs that are semantically acyclic. We prove that checking whether a UC2RPQ is semantically acyclic is decidable in 2EXPSPACE, and that it is EXPSPACE-hard even in the absence of inverses. Furthermore, we show that evaluation of semantically acyclic UC2RPQs is fixed-parameter tractable. In addition, our tools yield a strong theory of approximations for UC2RPQs when no equivalent acyclic UC2RPQ exists.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683406" title="Get the Full Text from the ACM Digital Library">On XPath with transitive axes and data tests</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Diego Figueira</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We study the satisfiability problem for XPath with data equality tests. XPath is a node selecting language for XML documents whose satisfiability problem is known to be undecidable, even for very simple fragments. However, we show that the satisfiability for XPath with the rightward, leftward and downward reflexive-transitive axes (namely <b>following-sibling-or-self, preceding-sibling-or-self, descendant-or-self</b>) is decidable. Our algorithm yields a complexity of 3EXPSPACE, and we also identify an expressive-equivalent normal form for the logic for which the satisfiability problem is in 2EXPSPACE. These results are in contrast with the undecidability of the satisfiability problem as soon as we replace the reflexive-transitive axes with just transitive (non-reflexive) ones.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683407" title="Get the Full Text from the ACM Digital Library">A trichotomy for regular simple path queries on graphs</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Guillaume Bagan</li>
+<li class="nameList">Angela Bonifati</li>
+<li class="nameList Last">Benoit Groz</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>Regular path queries (RPQs) select vertices connected by some path in a graph. The edge labels of such a path have to form a word that matches a given regular expression. We investigate the evaluation of RPQs with an additional constraint that prevents multiple traversals of the same vertices. Those regular simple path queries (RSPQs) quickly become intractable, even for basic languages such as <i>(aa)</i>* or <i>a*ba*</i>.</p> <p>In this paper, we establish a comprehensive classification of regular languages with respect to the complexity of the corresponding regular simple path query problem. More precisely, we identify for which languages RSPQs can be evaluated in polynomial time, and show that evaluation is NP-complete for languages outside this fragment. We thus fully characterize the frontier between tractability and intractability for RSPQs, and we refine our results to show the following trichotomy: evaluation of RSPQs is either AC0 , NL-complete or NP-complete in data complexity, depending on the language <i>L</i>. The fragment identified also admits a simple characterization in terms of regular expressions.</p> <p>Finally, we also discuss the complexity of deciding whether a language <i>L</i> belongs to the fragment above. We consider several alternative representations of <i>L</i>: DFAs, NFAs or regular expressions, and prove that this problem is NL-complete for the first representation and PSPACE-complete for the other two. As a conclusion we extend our results from edge-labeled graphs to vertex-labeled graphs.</p></div> </div>
+<h2>SESSION: Query languages</h2>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/citation.cfm?id=3245205" title="Full Citation in the ACM Digital Library">Session details: Query languages</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Marcelo Arenas</li>
+</ul>
+<div class="DLabstract"> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683408" title="Get the Full Text from the ACM Digital Library">Communication steps for parallel query processing</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Paul Beame</li>
+<li class="nameList">Paraschos Koutris</li>
+ <li class="nameList Last">Dan Suciu</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the problem of computing a relational query <i>q</i> on a large input database of size <i>n</i>, using a large number <i>p</i> of servers. The computation is performed in <i>rounds</i>, and each server can receive only <i>O</i>(<i>n/p</i><sup>1-&#949;</sup>) bits of data, where &#949; &#8712;[0,1] is a parameter that controls replication. We examine how many global communication steps are needed to compute <i>q</i>. We establish both lower and upper bounds, in two settings. For a single round of communication, we give lower bounds in the strongest possible model, where arbitrary bits may be exchanged; we show that any algorithm requires &#949; &#8805; 1--1/&#964;*, where &#964;* is the fractional vertex cover of the hypergraph of <i>q</i>. We also give an algorithm that matches the lower bound for a specific class of databases. For multiple rounds of communication, we present lower bounds in a model where routing decisions for a tuple are tuple-based. We show that for the class of <i>tree-like</i> queries there exists a tradeoff between the number of rounds and the space exponent &#949;. The lower bounds for multiple rounds are the first of their kind. Our results also imply that transitive closure cannot be computed in <i>O</i>(1) rounds of communication.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683409" title="Get the Full Text from the ACM Digital Library">A dichotomy in the intensional expressive power of nested relational calculi augmented with aggregate functions and a powerset operator</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList Last">Limsoon Wong</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>The extensional aspect of expressive power---i.e., what queries can or cannot be expressed---has been the subject of many studies of query languages. Paradoxically, although efficiency is of primary concern in computer science, the intensional aspect of expressive power---i.e., what queries can or cannot be implemented efficiently---has been much neglected. Here, we discuss the intensional expressive power of <i>NRC</i>(<i>Q</i>, +, &#183;, &#8207;, &#247;, &#931;, <i>powerset</i>), a nested relational calculus augmented with aggregate functions and a powerset operation. We show that queries on structures such as long chains, deep trees, etc. have a dichotomous behaviour: Either they are already expressible in the calculus without using the powerset operation or they require at least exponential space. This result generalizes in three significant ways several old dichotomy-like results, such as that of Suciu and Paredaens that the complex object algebra of Abiteboul and Beeri needs exponential space to implement the transitive closure of a long chain. Firstly, a more expressive query language---in particular, one that captures SQL---is considered here. Secondly, queries on a more general class of structures than a long chain are considered here. Lastly, our proof is more general and holds for all query languages exhibiting a certain normal form and possessing a locality property.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683400" title="Get the Full Text from the ACM Digital Library">Enumeration of first-order queries on classes of structures with bounded expansion</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Wojciech Kazana</li>
+<li class="nameList Last">Luc Segoufin</li>
+ </ul>
+<div class="DLabstract"><div style="display:inline"><p>We consider the evaluation of first-order queries over classes of databases with <i>bounded expansion</i>. The notion of bounded expansion is fairly broad and generalizes bounded degree, bounded treewidth and exclusion of at least one minor. It was known that over a class of databases with bounded expansion, first-order sentences could be evaluated in time linear in the size of the database. We first give a different proof of this result. Moreover, we show that answers to first-order queries can be enumerated with constant delay after a linear time preprocessing. We also show that counting the number of answers to a query can be done in time linear in the size of the database.</p></div> </div>
+<h3>
+<a class="DLtitleLink" href="https://dl.acm.org/authorize?N683401" title="Get the Full Text from the ACM Digital Library">The fine classification of conjunctive queries and parameterized logarithmic space complexity</a>
+</h3>
+<ul class="DLauthors">
+<li class="nameList First">Hubie Chen</li>
+<li class="nameList Last">Moritz M&#252;ller</li>
+</ul>
+<div class="DLabstract"><div style="display:inline"><p>We perform a fundamental investigation of the complexity of conjunctive query evaluation from the perspective of parameterized complexity. We classify sets of boolean conjunctive queries according to the complexity of this problem. Previous work showed that a set of conjunctive queries is fixed-parameter tractable precisely when the set is equivalent to a set of queries having bounded treewidth. We present a fine classification of query sets up to parameterized logarithmic space reduction. We show that, in the bounded treewidth regime, there are three complexity degrees and that the properties that determine the degree of a query set are bounded pathwidth and bounded tree depth. We also engage in a study of the two higher degrees via logarithmic space machine characterizations and complete problems. Our work yields a significantly richer perspective on the complexity of conjunctive queries and, at the same time, suggests new avenues of research in parameterized complexity.</p></div> </div>
+</div>
+</div>
+</body>
+</html>
