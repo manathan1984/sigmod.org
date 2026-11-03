@@ -14,7 +14,7 @@ export default {
       "PODS is the premier international conference on the theoretical aspects of database systems. It started in 1982 and, since 1991, has been held jointly with the SIGMOD conference.",
   },
   partners: [
-    { name: "VLDB Endowment", url: "https://vldb.org/", logo: "https://www.vldb.org/images/logo.gif" },
+    { name: "VLDB Endowment", url: "https://vldb.org/", logo: "/assets/partners/vldb.gif" },
     { name: "SIGKDD", url: "https://kdd.org/", logo: "/assets/partners/kdd.png" },
     { name: "IEEE TCDE", url: "http://tab.computer.org/tcde/", logo: "/assets/partners/tcde.png" },
     { name: "EDBT Endowment", url: "http://edbt.org/", logo: "/assets/partners/edbt.png" },
