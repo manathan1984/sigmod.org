@@ -25,7 +25,7 @@ The menu bar (`src/_data/nav.js`):
 |---|---|
 | About | What is SIGMOD?, Membership, Committees, Chapters, Policies, ACM Open |
 | Conferences | SIGMOD/PODS conferences, sponsored meetings, in-cooperation events, Reproducibility |
-| Awards & Honors | Current awards and Distinguished AEs & PCs |
+| Awards | Current awards and Distinguished AEs & PCs |
 | PODS | Grouped: About, Awards, Program, Proceedings (unchanged from the old site) |
 | Publications | PACMMOD, SIGMOD Record, SIGMOD Blog |
 | History | History, Mission, Logo history, Program chairs, SIGMOD Online, Archive; Past awards: Special Service, Student Research Competition & Undergraduate Scholarship |

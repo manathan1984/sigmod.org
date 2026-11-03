@@ -30,7 +30,7 @@ SIGMOD is run by volunteers. The executive committee, advisory boards, editors a
 ### More about SIGMOD
 
 -   [Join SIGMOD](/join/) and [membership benefits](/membership/)
--   [SIGMOD Awards & Honors](/sigmod-awards/)
+-   [SIGMOD Awards](/sigmod-awards/)
 -   [ACM SIGMOD Chapters](/membership/sigmod-chapters/)
 -   [Policies](/sigmod-policies/)
 -   [Sponsorship of conferences](/about-sigmod/sponsorship/sponsorship-of-meetings/) and [events held in cooperation with SIGMOD](/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/)

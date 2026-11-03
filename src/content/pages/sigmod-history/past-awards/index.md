@@ -6,7 +6,7 @@ area: "history"
 edited: true
 ---
 
-SIGMOD has given several awards and student programs that are no longer active. Their recipients are kept here as part of SIGMOD's history. For the awards given today, see [Awards & Honors](/sigmod-awards/).
+SIGMOD has given several awards and student programs that are no longer active. Their recipients are kept here as part of SIGMOD's history. For the awards given today, see [Awards](/sigmod-awards/).
 
 | Award | Years | Recognised |
 |---|---|---|

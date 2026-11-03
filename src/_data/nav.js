@@ -27,7 +27,7 @@ const conferences = {
 };
 
 const awards = {
-  label: "Awards & Honors", area: "awards", url: "/sigmod-awards/",
+  label: "Awards", area: "awards", url: "/sigmod-awards/",
   children: [
     { label: "All awards", url: "/sigmod-awards/" },
     { label: "Edgar F. Codd Innovations", url: "/sigmod-awards/sigmod-edgar-f-codd-innovations-award/" },

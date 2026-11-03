@@ -6,7 +6,7 @@ area: "history"
 edited: true
 ---
 
-Two SIGMOD programs for students that are no longer running: the Student Research Competition (last held in 2023) and the Undergraduate Scholarship (2000–2015). Their records are kept here together. Current student awards are listed under [Awards & Honors](/sigmod-awards/); student travel grants are announced on each year's [conference website](/conferences/).
+Two SIGMOD programs for students that are no longer running: the Student Research Competition (last held in 2023) and the Undergraduate Scholarship (2000–2015). Their records are kept here together. Current student awards are listed under [Awards](/sigmod-awards/); student travel grants are announced on each year's [conference website](/conferences/).
 
 <h2 id="student-research-competition">Student Research Competition</h2>
 
