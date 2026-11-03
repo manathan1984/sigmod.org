@@ -1,8 +1,9 @@
 ---
+edited: true
 title: "Conferences, Symposia, and Workshops held in Cooperation with SIGMOD"
 permalink: "/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/"
 section: "sigmod"
-area: "conferences"
+area: "history"
 wp_id: 219
 wp_type: "page"
 wp_parent: 218

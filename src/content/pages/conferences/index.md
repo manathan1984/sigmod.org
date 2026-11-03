@@ -16,12 +16,4 @@ updated: "2025-07-04"
 
 ## Conference Planning
 
--   [Requesting Sponsorship for Workshop or Conference](https://sigmod.org/about-sigmod/sigmod-sponsorship/sponsorship-of-conferences.html "Sponsorship of Conferences")
--   [Requesting “In-cooperation” Status for Workshop or Conference](https://sigmod.org/about-sigmod/sigmod-sponsorship/sponsorship-of-conferences.html "Sponsorship of Conferences")
--   [Gantt Chart for Conference Tasks (2007) (EXCEL)](https://sigmod.org/sigmod-pods-conferences/SIGMODTaskSchedule-Feb-2009.xls "SIGMODTaskSchedule-Feb-2009.xls")
--   [SIGMOD General Chair Manual Draft v1 (2003) (PDF)](https://sigmod.org/sigmod-pods-conferences/SIGMOD-GC-Manual-draft-v1.pdf "SIGMOD-GC-Manual-draft-v1.pdf")
--   [SIGMOD Program Chair Manual Draft v1 (2005)](https://sigmod.org/sigmod-pods-conferences/SIGMOD-PC-Manual-draft-v1.pdf "SIGMOD-PC-Manual-draft-v1.pdf") ([PDF](https://sigmod.org/sigmod-pods-conferences/SIGMOD-PC-Manual-draft-v1.pdf "SIGMOD-PC-Manual-draft-v1.pdf") and [DOC](https://sigmod.org/sigmod-pods-conferences/SIGMOD-PC-Manual-draft-v1.doc "SIGMOD-PC-Manual-draft-v1.doc"))
--   [Sample TMRF Part I (General Meeting Information 2008) (DOC)](https://sigmod.org/sigmod-pods-conferences/SIGMOD-tmrfparti-1.doc "SIGMOD-tmrfparti-1.doc")
--   [Meeting/Room Requirements (2009) (DOC)](https://sigmod.org/sigmod-pods-conferences/MODS-PODS-09-Meeting-Requirements-Revised-2.doc "MODS_PODS_09_Meeting_Requirements_Revised_2.doc")
--   [Invoice for Corporate Donations (2007) (DOC)](https://sigmod.org/sigmod-pods-conferences/Invoice%20Request.doc "Invoice Request.doc")
 -   [Overall ACM Conference Committee Job Descriptions](http://www.acm.org/sigs/volunteer_resources/conference_manual/2-1-2job)

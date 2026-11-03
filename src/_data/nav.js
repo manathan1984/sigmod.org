@@ -21,7 +21,6 @@ const conferences = {
     { label: "SIGMOD/PODS conferences", url: "/conferences/" },
     { label: "Co-sponsored conferences", url: "/conferences/co-sponsored-conferences/" },
     { label: "Sponsored meetings", url: "/about-sigmod/sponsorship/sponsorship-of-meetings/" },
-    { label: "In-cooperation events", url: "/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/" },
     ext("Reproducibility", "https://reproducibility.sigmod.org/"),
   ],
 };

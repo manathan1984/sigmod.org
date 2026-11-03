@@ -1,8 +1,9 @@
 ---
+edited: true
 title: "Archive"
 permalink: "/archive/"
 section: "sigmod"
-area: "about"
+area: "history"
 wp_id: 5022
 wp_type: "page"
 updated: "2025-01-11"
@@ -14,3 +15,7 @@ the *Anthology*, and a look back to past publications (and publications not in 
 -   [SIGMOD Digital Symposium Collection (DiSC)](/publications/sigmod-digital-symposium-collection/) (ended in 2011)
 -   [Anthology](/publications/anthologyhome/) (ended in 2007)
 -   [Distinguished Profiles](/publications/interview/) (ended 2010)
+
+## Archived pages
+
+-   [Conferences, Symposia, and Workshops held in Cooperation with SIGMOD](/about-sigmod/sponsorship/conferences-symposia-and-workshops-held-in-cooperation-with-sigmod/)
