@@ -1,10 +1,4 @@
-{#- The SIG⋈MOD wordmark (round-5 "Ribbon" proposal, see /proposals/logos/). Styles: /assets/footer.css -#}
-{% macro brand(dark=false) -%}
-{%- set gid = "brand-g-dark" if dark else "brand-g" -%}
-<span class="wm-sigmod{% if dark %} wm-sigmod-dark{% endif %}" role="img" aria-label="SIGMOD">SIG<svg viewBox="3 7 42 34" aria-hidden="true">
-  <defs><linearGradient id="{{ gid }}" gradientUnits="userSpaceOnUse" x1="4" y1="44" x2="44" y2="4">
-    <stop offset="0" stop-color="{{ '#7aa2ff' if dark else '#1f4fa3' }}"/><stop offset="1" stop-color="{{ '#3fe0cf' if dark else '#0aa5b8' }}"/>
-  </linearGradient></defs>
-  <path d="M24 24 C18 17 13 11 9 11 C6.5 11 6.5 37 9 37 C13 37 18 31 24 24 C30 17 35 11 39 11 C41.5 11 41.5 37 39 37 C35 37 30 31 24 24 Z" fill="none" stroke="url(#{{ gid }})" stroke-width="3.4" stroke-linejoin="round"/>
-</svg>MOD</span>
+{#- The ACM SIGMOD logo (1998). New logo candidates are on /proposals/logos/. Styles: /assets/footer.css -#}
+{% macro brand() -%}
+<img class="brand-logo" src="/assets/logo/sigmod-current.png" alt="ACM SIGMOD" width="200" height="64">
 {%- endmacro %}

@@ -1,5 +1,4 @@
 {#- Partner logos and the black footer, shared by all designs. Styles: /assets/footer.css #}
-{%- from "shared/brand.njk" import brand -%}
 <section class="partners-band" aria-label="Partners">
   <div class="partners-in">
     <p>Partners</p>
@@ -11,7 +10,6 @@
 <footer class="xfoot">
   <div class="xfoot-in">
     <div class="xfoot-about">
-      <p class="xfoot-brand">{{ brand(true) }}</p>
       <p>{{ site.longTitle }}, and sponsor of the Symposium on Principles of Database Systems.</p>
       <p class="xfoot-volunteer"><strong>Run by volunteers.</strong> {{ site.volunteerNote }}
         <a href="{{ site.repo }}/issues/new">Report a problem</a> or <a href="{{ site.editBase }}{{ page.inputPath | replace('./', '') }}">suggest an edit</a>.</p>

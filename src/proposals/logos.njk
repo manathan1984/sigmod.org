@@ -80,11 +80,11 @@ eleventyExcludeFromCollections: true
 {%- elif k.kind == "sigma" %}{{ dbIcon(size, dark) }}
 {%- else %}{{ joinIcon(k.style, size, dark) }}{% endif -%}
 {%- endmacro %}
-<p class="lead">Four candidates for the new logo, all built on the same ribbon-drawn join (⋈) and none with “ACM” in the logo itself. They differ in where the join sits and how much of the name it replaces. SIG⋈MOD is the one used in the navigation bar and footer of this site today. Earlier ideas are listed under “Prior approaches” below.</p>
+<p class="lead">Four candidates for the new logo, all built on the same ribbon-drawn join (⋈) and none with “ACM” in the logo itself. They differ in where the join sits and how much of the name it replaces. Until one is chosen, the site keeps the current 1998 logo. Earlier ideas are listed under “Prior approaches” below.</p>
 
 {%- set concepts = [
   { id: "join-sigmod", kind: "lead", style: "ribbon", name: "⋈ SIGMOD", text: "The join as a symbol in front of the full name, the way SIGARCH and SIGCHI pair a mark with a wordmark. The name stays fully readable, and the symbol works on its own as the icon, avatar or favicon." },
-  { id: "ribbon", kind: "mid", style: "ribbon", pick: "In use", name: "SIG⋈MOD", text: "The join between SIG and MOD, drawn as one continuous, softly curved line, like a ribbon folded into ⋈. It joins the two halves of the name, which is what the operator does." },
+  { id: "ribbon", kind: "mid", style: "ribbon", name: "SIG⋈MOD", text: "The join between SIG and MOD, drawn as one continuous, softly curved line, like a ribbon folded into ⋈. It joins the two halves of the name, which is what the operator does." },
   { id: "join-m", kind: "m", style: "ribbon", name: "SIG⋈OD", text: "The same join, drawn at the height of a capital letter and standing in for the M. The join becomes part of the name rather than a symbol between two halves. People still read “SIGMOD”, so the accessible name stays SIGMOD." },
   { id: "sigma-db", kind: "sigma", style: "ribbon", name: "SIG⋈σ + database", text: "SIG followed by relational algebra and a database: the join (⋈), the selection operator (σ) and a database cylinder. It spells out what the community works on, at the cost of being read as symbols rather than as “SIGMOD”." }
 ] %}

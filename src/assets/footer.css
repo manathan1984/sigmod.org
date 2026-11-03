@@ -15,8 +15,6 @@
 .xfoot-in, .xfoot-bottom { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
 .xfoot-in { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
 .xfoot-in > * { min-width: 0; }
-.xfoot-brand { color: #fff; font-weight: 700; font-size: 18px; margin: 0 0 10px; letter-spacing: .01em; }
-.xfoot-brand span { color: #737373; font-weight: 400; }
 .xfoot-about p { margin: 0 0 12px; max-width: 460px; }
 .xfoot-volunteer { border-left: 2px solid #404040; padding-left: 14px; color: #d4d4d4; }
 .xfoot-volunteer strong { color: #fff; }
@@ -29,12 +27,9 @@
 @media (max-width: 860px) { .xfoot-in { grid-template-columns: 1fr 1fr; } .xfoot-about { grid-column: 1 / -1; } }
 @media (max-width: 520px) { .xfoot-in { grid-template-columns: 1fr; padding: 0 16px; } .xfoot-bottom { padding-left: 16px; padding-right: 16px; } }
 
-/* SIG⋈MOD wordmark (shared/brand.njk) */
-.wm-sigmod { display: inline-flex; align-items: baseline; font: 400 24px/1 "Jost", sans-serif; letter-spacing: .1em; color: #1f2937; white-space: nowrap; }
-.wm-sigmod svg { width: 1.05em; height: .85em; margin: 0 .16em 0 .06em; align-self: center; position: relative; top: -.04em; overflow: visible; }
-.wm-sigmod-dark { color: #fff; }
-.xfoot-brand .wm-sigmod { font-size: 26px; }
+/* ACM SIGMOD logo (shared/brand.njk) */
+.brand-logo { display: block; height: 44px; width: auto; }
 @media (max-width: 520px) {
   .btn-join { padding: 8px 12px; font-size: 13px; }
-  .logo .wm-sigmod, .masthead-logo .wm-sigmod { font-size: 19px !important; }
+  .logo .brand-logo { height: 36px; }
 }
