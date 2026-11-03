@@ -6,6 +6,7 @@ const pathPrefix = process.env.PATH_PREFIX || "/";
 export default function (eleventyConfig) {
   if (pathPrefix !== "/") eleventyConfig.addPlugin(HtmlBasePlugin);
   eleventyConfig.addGlobalData("layout", "page.njk");
+  eleventyConfig.addGlobalData("currentYear", new Date().getFullYear());
 
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
