@@ -159,8 +159,8 @@
     "location": "New York, New York, USA",
     "links": [
       {
-        "label": "Conference Website",
-        "url": "https://sigmod.org/2013/"
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2013/index.html"
       }
     ]
   },
@@ -170,12 +170,8 @@
     "location": "Scottsdale, Arizona, USA",
     "links": [
       {
-        "label": "Conference Website",
-        "url": "https://sigmod.org/2012/"
-      },
-      {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2012/index.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2012/index.html"
       }
     ]
   },
@@ -187,6 +183,10 @@
       {
         "label": "Conference Website",
         "url": "http://www.sigmod2011.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2011/index.shtml"
       }
     ]
   },
@@ -201,7 +201,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2010/index.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2010/index.html"
       }
     ]
   },
@@ -216,7 +216,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2009/index.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2009/index.html"
       }
     ]
   },
@@ -231,7 +231,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2008/index.shtml.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2008/index.shtml.html"
       }
     ]
   },
@@ -246,7 +246,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2007/index.shtml.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2007/index.shtml.html"
       }
     ]
   },
@@ -261,7 +261,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2006/sigmod-pods06.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2006/sigmod-pods06.html"
       }
     ]
   },
@@ -276,7 +276,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2005/~sigmod05.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2005/~sigmod05.html"
       }
     ]
   },
@@ -290,8 +290,8 @@
         "url": "http://www.sciences.univ-nantes.fr/lina/SIGMODPODS04/"
       },
       {
-        "label": "[Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2004/index.html"
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2004/index.html"
       }
     ]
   },
@@ -306,7 +306,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2003/index.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2003/index.html"
       }
     ]
   },
@@ -321,7 +321,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2002/sigmodpods2002.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2002/sigmodpods2002.html"
       }
     ]
   },
@@ -337,6 +337,10 @@
       {
         "label": "PODS OC & PC",
         "url": "/pods-home/pods-organization/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2001/index.html"
       }
     ]
   },
@@ -351,7 +355,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod.org/publications/pastconf/sigmod2000/index.html"
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2000/index.html"
       }
     ]
   },

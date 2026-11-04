@@ -109,7 +109,8 @@ API, and directory listings are blocked (HTTP 403). The counts are in
 | `/publications/interviews/{pdf,photos,images}` | 230 | **Done**: copied into `src/static/publications/interviews/`. |
 | `/publications/interviews/{flv,mp3}` | 195 | Open. About 8.4 GB; `.flv` does not play in browsers. Convert to MP4 and host outside git (ACM DL, YouTube or a bucket). |
 | `/pods/opentoc/podsYYYY.html` | 39 | **Done**: copied unchanged into `src/static/pods/opentoc/`. |
-| `/publications/anthology/…`, `/publications/discs/…`, `/publications/pastconf/…`, `/2012/`, `/2013/` | 199 | Open. Need a copy from the server (they link on to content that cannot be crawled) or links to web.archive.org. |
+| `/publications/pastconf/…`, `/2012/`, `/2013/` | 26 | **Done**: copied, with 2001 and 2011 from the Wayback Machine, to [sigmod-org/sigmod-past-conf](https://github.com/sigmod-org/sigmod-past-conf) (GitHub Pages); the Conferences page links there as "Local Mirror". |
+| `/publications/anthology/…`, `/publications/discs/…` | 173 | Open. Need a copy from the server (they link on to content that cannot be crawled) or links to web.archive.org. |
 | `/sigmod-pods-conferences/*.doc,pdf` | 0 | Removed from the Conferences page (the files were already gone). |
 
 Files in `src/static/` are copied to the site as they are and never rendered as
