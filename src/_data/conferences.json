@@ -187,6 +187,10 @@
     "location": "New York, New York, USA",
     "links": [
       {
+        "label": "Conference Website",
+        "url": "https://sigmod.org/2013/"
+      },
+      {
         "label": "Local Mirror",
         "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2013/index.html"
       }
@@ -197,6 +201,10 @@
     "year": 2012,
     "location": "Scottsdale, Arizona, USA",
     "links": [
+      {
+        "label": "Conference Website",
+        "url": "https://sigmod.org/2012/"
+      },
       {
         "label": "Local Mirror",
         "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2012/index.html"
