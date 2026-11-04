@@ -2,7 +2,7 @@
 title: "Student Research Competition & Undergraduate Scholarship"
 permalink: "/sigmod-history/past-awards/student-research-and-undergraduate/"
 section: "sigmod"
-area: "history"
+area: "awards"
 edited: true
 ---
 

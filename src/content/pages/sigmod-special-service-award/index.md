@@ -2,7 +2,7 @@
 title: "SIGMOD Special Service Award"
 permalink: "/sigmod-special-service-award/"
 section: "sigmod"
-area: "history"
+area: "awards"
 edited: true
 wp_id: 2278
 wp_type: "page"

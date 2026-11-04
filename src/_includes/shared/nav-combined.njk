@@ -1,10 +1,25 @@
-{#- One menu bar; menus with groups (PODS, History) open as a wide, grouped dropdown. #}
+{#- One menu bar; menus with groups (Awards, PODS) open as a wide, grouped dropdown. #}
 <ul class="mnav">
   {%- for m in nav.main %}
   <li class="mnav-item{% if m | isActive(page.url) or (m.area == 'pods' and section == 'pods') %} active{% endif %}{% if m.area == 'pods' %} mnav-pods{% endif %}">
     <a class="mnav-top" href="{{ m.url }}">{{ m.label }}</a>
-    <div class="drop{% if m.groups %} drop-wide{% endif %}">
-      {%- if m.groups %}
+    <div class="drop{% if m.groups %} drop-wide{% endif %}{% if m.align == 'left' %} drop-left{% endif %}">
+      {%- if m.all %}
+      <ul class="drop-all"><li><a href="{{ m.all.url }}">{{ m.all.label }}</a></li></ul>
+      {%- endif %}
+      {%- if m.stack %}
+      {#- groups fill two independent columns (1st, 3rd… left; 2nd, 4th… right); `order` keeps the reading order on mobile #}
+      {%- for col in [0, 1] %}
+      <div class="drop-col">
+        {%- for g in m.groups %}{% if loop.index0 % 2 == col %}
+        <div class="drop-group" style="order: {{ loop.index }}">
+          <p>{{ g.label }}</p>
+          <ul>{% for c in g.children %}<li><a href="{{ c.url }}">{{ c.label }}</a></li>{% endfor %}</ul>
+        </div>
+        {%- endif %}{% endfor %}
+      </div>
+      {%- endfor %}
+      {%- elif m.groups %}
       {%- for g in m.groups %}
       <div class="drop-group">
         <p>{{ g.label }}</p>

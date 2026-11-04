@@ -2,6 +2,9 @@
 {%- if menu %}
 <nav class="side-nav" aria-label="{{ menu.label }}">
   <a class="side-title" href="{{ menu.url }}">{{ menu.label }}</a>
+  {%- if menu.all %}
+  <ul class="side-all"><li><a href="{{ menu.all.url }}"{% if menu.all.url == page.url %} aria-current="page"{% endif %}>{{ menu.all.label }}</a></li></ul>
+  {%- endif %}
   {%- if menu.groups %}
   {%- for g in menu.groups %}
   <p class="side-group">{{ g.label }}</p>

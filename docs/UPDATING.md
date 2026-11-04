@@ -104,8 +104,9 @@ For each award given this year:
 PODS awards (Best Paper, Alberto O. Mendelzon Test-of-Time) live under
 `src/content/pages/pods-home/`. Update them the same way.
 
-A new award, or a retired one, also needs its menu entry in `src/_data/nav.js`:
-"Awards" for current awards, "History › Past awards" for retired ones.
+A new award, or a retired one, also needs its menu entry in `src/_data/nav.js`
+and a link on the Awards page (`src/content/pages/sigmod-awards/index.md`), in the
+matching group: SIG-level, Conference-level, Cross-conference or Retired.
 
 ## Other things that change periodically
 

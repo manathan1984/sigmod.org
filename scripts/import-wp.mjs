@@ -14,6 +14,7 @@ import { gfm } from "turndown-plugin-gfm";
 
 const ORIGIN = "https://sigmod.org";
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const removed = JSON.parse(await fs.readFile(path.join(ROOT, "migration/removed.json"), "utf8").catch(() => "[]"));
 const CACHE = path.join(ROOT, "migration/cache");
 const OUT = path.join(ROOT, "src/content");
 const refresh = process.argv.includes("--refresh");
@@ -189,6 +190,8 @@ for (const i of items) {
   const slug = i.path.replace(/\/$/, "").replace(/[\s\u2028\u2029]/g, "");
   const rel = i.kind === "post" ? path.join("news", slug + ".md") : path.join("pages", i.path === "/" ? "home" : i.path, "index.md");
   const file = path.join(OUT, rel);
+  // pages removed on purpose (migration/removed.json) are never re-created
+  if (removed.includes(i.path)) continue;
   await fs.mkdir(path.dirname(file), { recursive: true });
   // pages edited by hand after the import carry `edited: true` and are never overwritten
   if (/^edited: true$/m.test(await fs.readFile(file, "utf8").catch(() => ""))) continue;

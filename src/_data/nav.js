@@ -1,5 +1,8 @@
-// Site navigation: one menu bar for SIGMOD, with PODS as one (grouped) menu.
+// Site navigation: one menu bar for SIGMOD; Awards and PODS are grouped menus.
 // A menu with `groups` shows them as labelled columns; `children` is always the flat list.
+// `align: "left"` opens a grouped dropdown from the menu's left edge (for menus near the left).
+// `stack: true` lets each column flow on its own (one empty row between groups in the right column).
+// `all` is a link shown above the groups, in the dropdown and the side menu.
 const ext = (label, url) => ({ label, url, external: true });
 const grouped = (menu) => ({ ...menu, children: menu.groups.flatMap((g) => g.children) });
 
@@ -26,23 +29,45 @@ const conferences = {
   ],
 };
 
-const awards = {
-  label: "Awards", area: "awards", url: "/sigmod-awards/",
-  children: [
-    { label: "All awards", url: "/sigmod-awards/" },
-    { label: "Edgar F. Codd Innovations", url: "/sigmod-awards/sigmod-edgar-f-codd-innovations-award/" },
-    { label: "Contributions", url: "/sigmod-awards/sigmod-contributions-award/" },
-    { label: "Systems", url: "/sigmod-awards/sigmod-systems-award/" },
-    { label: "Test of Time", url: "/sigmod-awards/sigmod-test-of-time-award/" },
-    { label: "Jim Gray Dissertation", url: "/sigmod-awards/sigmod-jim-gray-doctoral-dissertation-award/" },
-    { label: "Distinguished Mentorship", url: "/hector-garcia-molina-2025-sigmod-distinguished-mentorship-award/" },
-    { label: "Best Paper", url: "/sigmod-awards/sigmod-best-paper-award/" },
-    { label: "Best Demonstration", url: "/sigmod-awards/sigmod-best-demonstration-award/" },
-    { label: "Reproducibility (Best Artifact)", url: "/sigmod-awards/sigmod-best-artifact-award/" },
-    { label: "Research Highlights", url: "/sigmod-awards/sigmod-research-highlights/" },
-    { label: "Distinguished AEs & PCs", url: "/sigmod-distinguished-aes-and-pcs/" },
+const awards = grouped({
+  label: "Awards", area: "awards", url: "/sigmod-awards/", align: "left", stack: true,
+  all: { label: "All awards", url: "/sigmod-awards/" },
+  groups: [
+    {
+      label: "SIG-level",
+      children: [
+        { label: "Contributions", url: "/sigmod-awards/sigmod-contributions-award/" },
+        { label: "Distinguished Mentorship", url: "/hector-garcia-molina-2025-sigmod-distinguished-mentorship-award/" },
+        { label: "Edgar F. Codd Innovations", url: "/sigmod-awards/sigmod-edgar-f-codd-innovations-award/" },
+        { label: "Jim Gray Dissertation", url: "/sigmod-awards/sigmod-jim-gray-doctoral-dissertation-award/" },
+        { label: "Systems", url: "/sigmod-awards/sigmod-systems-award/" },
+        { label: "Test of Time", url: "/sigmod-awards/sigmod-test-of-time-award/" },
+      ],
+    },
+    {
+      label: "Conference-level",
+      children: [
+        { label: "Best Paper", url: "/sigmod-awards/sigmod-best-paper-award/" },
+        { label: "Best Demonstration", url: "/sigmod-awards/sigmod-best-demonstration-award/" },
+        { label: "Best Artifact", url: "/sigmod-awards/sigmod-best-artifact-award/" },
+        { label: "Distinguished AEs & PCs", url: "/sigmod-distinguished-aes-and-pcs/" },
+      ],
+    },
+    {
+      label: "Cross-conference",
+      children: [
+        { label: "Research Highlights", url: "/sigmod-awards/sigmod-research-highlights/" },
+      ],
+    },
+    {
+      label: "Retired",
+      children: [
+        { label: "Special Service", url: "/sigmod-special-service-award/" },
+        { label: "Student Research", url: "/sigmod-history/past-awards/student-research-and-undergraduate/" },
+      ],
+    },
   ],
-};
+});
 
 const pods = grouped({
   label: "PODS", area: "pods", url: "/pods-home/",
@@ -91,30 +116,17 @@ const publications = {
   ],
 };
 
-const history = grouped({
+const history = {
   label: "History", area: "history", url: "/sigmod-history/",
-  groups: [
-    {
-      label: "History",
-      children: [
-        { label: "History", url: "/sigmod-history/" },
-        { label: "Mission", url: "/sigmod-history/sigmods-mission/" },
-        { label: "Logo history", url: "/sigmod-history/sigmod-logo-history/" },
-        { label: "Conference program chairs", url: "/sigmod-history/program-chair/" },
-        { label: "SIGMOD Online", url: "/sigmod-history/sigmod-online/" },
-        { label: "Archive", url: "/archive/" },
-      ],
-    },
-    {
-      label: "Past awards",
-      children: [
-        { label: "Retired awards", url: "/sigmod-history/past-awards/" },
-        { label: "Special Service", url: "/sigmod-special-service-award/" },
-        { label: "Student Research & Undergraduate", url: "/sigmod-history/past-awards/student-research-and-undergraduate/" },
-      ],
-    },
+  children: [
+    { label: "History", url: "/sigmod-history/" },
+    { label: "Mission", url: "/sigmod-history/sigmods-mission/" },
+    { label: "Logo history", url: "/sigmod-history/sigmod-logo-history/" },
+    { label: "Conference program chairs", url: "/sigmod-history/program-chair/" },
+    { label: "SIGMOD Online", url: "/sigmod-history/sigmod-online/" },
+    { label: "Archive", url: "/archive/" },
   ],
-});
+};
 
 const nav = {
   main: [about, conferences, awards, pods, publications, history],

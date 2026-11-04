@@ -25,10 +25,10 @@ The menu bar (`src/_data/nav.js`):
 |---|---|
 | About | About SIGMOD, Membership, Committees, Chapters, Policies, ACM Open |
 | Conferences | SIGMOD/PODS conferences, sponsored meetings, in-cooperation events, Reproducibility |
-| Awards | Current awards and Distinguished AEs & PCs |
+| Awards | Grouped: SIG-level, Conference-level, Cross-conference, Retired (the same groups as the Awards page) |
 | PODS | Grouped: About, Awards, Program, Proceedings (unchanged from the old site) |
 | Publications | PACMMOD, SIGMOD Record, SIGMOD Blog |
-| History | History, Mission, Logo history, Program chairs, SIGMOD Online, Archive; Past awards: Special Service, Student Research Competition & Undergraduate Scholarship |
+| History | History, Mission, Logo history, Program chairs, SIGMOD Online, Archive |
 
 "Join SIGMOD" is a button at the right of the menu bar and leads to `/join/`.
 Partner logos sit above a shared black footer with the volunteer note and the
@@ -76,7 +76,8 @@ The running list of what to merge, redirect or retire is in
    - `/publications/anthology/` and `/publications/anthologyhome/` are 89% the same.
    - `/publications/`, `/publications/publications/` and `/publication-list/` overlap.
    - `/sigmod-awards/sigmod-awards-acm-sigmod-official-website/` (a 20 KB old
-     overview) overlaps `/sigmod-awards/` and the per-award pages.
+     overview) overlaps `/sigmod-awards/` and the per-award pages. It has been
+     removed; pages removed on purpose are listed in `migration/removed.json`.
    - There are two dissertation-process pages (`2017-doctoral-dissertation-award`
      and `the-sigmod-jim-gray-doctoral-dissertation-award`) plus a separate
      call page.
