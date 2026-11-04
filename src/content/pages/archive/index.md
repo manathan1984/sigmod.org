@@ -12,5 +12,5 @@ Historically, SIGMOD published *DiSC*, a yearly collection of database-related 
 the *Anthology*, and a look back to past publications (and publications not in DiSC).
 
 -   [SIGMOD Digital Symposium Collection (DiSC)](/publications/sigmod-digital-symposium-collection/) (ended in 2011)
--   [Anthology](/publications/anthologyhome/) (ended in 2007)
+-   [Anthology](/publications/anthology/) (ended in 2007)
 -   [Distinguished Profiles](/publications/interview/) (ended 2010)

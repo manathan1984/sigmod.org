@@ -51,7 +51,7 @@ SIGMOD also provides these benefits to the community:
 
 SIGMOD supports the following activities that benefit the Community:
 
--   Support for [DBLP](http://www.informatik.uni-trier.de/~ley/db/) – a bibliography of computer science publications
+-   Support for [DBLP](https://dblp.org/) – a bibliography of computer science publications
 -   Cooperation with ETH Zurich on the [PubZone](http://pubzone.org/) non-profit discussion forum for publications in the database community
 -   Sponsorship of the annual SIGMOD and PODS conferences; co-sponsorship of DEBS, SIGKDD, SOCC, WSDM, and other conferences/workshops on occasion; sponsorship of the workshops held at the annual SIGMOD/PODS conference
 -   [The SIGMOD awards](/sigmod-awards/): SIGMOD Edgar F. Codd Innovation Award,  the SIGMOD Contributions Award, the SIGMOD Systems Award, the SIGMOD Best Paper, the Test-of-Time Best Paper award, and the SIGMOD Jim Gray Dissertation Award

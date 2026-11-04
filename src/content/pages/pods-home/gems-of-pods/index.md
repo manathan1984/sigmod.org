@@ -68,7 +68,7 @@ Unlike a reporting query that returns all the elements satisfying a predicate, q
 
 **2021**
 
-**Datalog Unchained** [\[Video\]](https://www.youtube.com/watchv=v5hgpkEhTnU&list=PL3xUNnH4TdbtfsayZBft1QXOAnWluxz9G)  
+**Datalog Unchained** [\[Video\]](https://www.youtube.com/watch?v=v5hgpkEhTnU&list=PL3xUNnH4TdbtfsayZBft1QXOAnWluxz9G)  
 Victor Vianu (UC San Diego & INRIA)
 
 **Abstract**  

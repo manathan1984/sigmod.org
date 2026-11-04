@@ -17,6 +17,6 @@ export default {
     { name: "VLDB Endowment", url: "https://vldb.org/", logo: "/assets/partners/vldb.gif" },
     { name: "SIGKDD", url: "https://kdd.org/", logo: "/assets/partners/kdd.png" },
     { name: "IEEE TCDE", url: "http://tab.computer.org/tcde/", logo: "/assets/partners/tcde.png" },
-    { name: "EDBT Endowment", url: "http://edbt.org/", logo: "/assets/partners/edbt.png" },
+    { name: "EDBT Endowment", url: "https://www.edbt.org/", logo: "/assets/partners/edbt.png" },
   ],
 };

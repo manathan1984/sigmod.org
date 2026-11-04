@@ -30,7 +30,7 @@ To get access to those articles on-line, which include reports on the PODS Confe
 Links:
 
 -   [ICDT: the International Conference on Database Theory.](http://icdt.tu-dortmund.de/)
--   [EDBT: Extending Database Technology.](http://www.edbt.org/)
+-   [EDBT: Extending Database Technology.](https://www.edbt.org/)
 -   [Very Large Data Base Endowment Inc. (VLDB Endowment).](http://www.vldb.org/)
 
 **Conferences**  
