@@ -65,7 +65,7 @@ Raghu Ramakhrishnan (SIGKDD), Yannis Ioannidis (EDBT Endowment), Christian Jense
 
 ### SIGMOD Awards Committee
 
-Ailamaki Anastasia, Sourav S. Bhowmick, Georgia Koutrika, Sharad Mehrotra (Chair), C. Mohan, Ooi Beng Chin, Rachel Pottinger, Sayan Ranu, Cyrus Shahabi, Wang-Chiew Tan
+Laura Haas, Sharad Mehrotra (Chair), C. Mohan, M. Tamer Özsu, Raghu Ramakrishnan, S. Sudarshan, Carlo Zaniolo
 
 ### Jim Gray Doctoral Dissertation Award Committee
 
