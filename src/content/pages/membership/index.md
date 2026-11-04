@@ -23,7 +23,6 @@ Online members receive:
 -   [SIGMOD Anthology](/publications/anthology/) and [DiSC](/publications/sigmod-digital-symposium-collection/) metadata, linking to physical media, as well as the ACM Digital Library
 -   A bundle of SIGMOD-related publications made available through the ACM Digital Library (previously provided on DVD as SIGMOD DiSC)
 -   [A blog on “hot topics” in databases](http://wp.sigmod.org/)
--   Database resources (e.g., [public domain software](/software/))
 -   Access to content from SIG sponsored and co-sponsored events in the ACM Digital Library
 -   Discounted registration fees at events in-cooperation or sponsored by SIGMOD, including the SIGMOD/PODS conference
 -   A social networking presence to disseminate community news

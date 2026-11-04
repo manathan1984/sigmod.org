@@ -19,14 +19,13 @@ choose (hosting, keep or drop, or the content is already gone).
 
 ## Summary
 
-422 links on 79 pages, 240 distinct targets.
+421 links on 78 pages, 239 distinct targets.
 
 | Group | Links | Pages | Distinct targets | On the old server today | Size | Fix | Class |
 |---|--:|--:|--:|---|--:|---|---|
 | [Feed identifiers](#feed) | 2 | 1 | 2 | n/a |  | Keep | Easy |
 | [Old addresses of pages the new site has](#rewrite) | 1 | 1 | 1 | n/a |  | Link to the new page | Easy |
 | [External links broken by the import](#mangled) | 4 | 1 | 4 | n/a |  | Drop, or find a copy | Decide |
-| [SIGMOD Record](#record) | 1 | 1 | 1 | n/a |  | Copy from server, or drop | Decide |
 | [DBLP mirror](#dblp) | 37 | 1 | 33 | n/a |  | Link dblp.org's home, or drop | Decide |
 | [WordPress uploads (images, PDFs)](#uploads) | 7 | 4 | 6 | all broken |  | Find a copy, or drop | Decide |
 | [Distinguished Profiles: video (.flv) and audio (.mp3)](#interviews-media) | 195 | 66 | 130 | 129 live, 1 broken | 8.4 GB | Host outside git | Decide |
@@ -34,7 +33,7 @@ choose (hosting, keep or drop, or the content is already gone).
 | [DiSC (Digital Symposium Collection)](#discs) | 24 | 1 | 16 | all live | 74 KB | Copy from server, or drop | Decide |
 | [Other old pages](#other) | 2 | 2 | 2 | all broken |  | Find a page, or drop | Decide |
 
-**419 links need a decision.** 1 more have a known fix: run `npm run old-links -- --fix`. The 2 feed identifiers stay as they are.
+**418 links need a decision.** 1 more have a known fix: run `npm run old-links -- --fix`. The 2 feed identifiers stay as they are.
 
 ## Fixed so far
 
@@ -59,7 +58,7 @@ Every change (file, line, old link, new link) is in [old-site-links-fixed.csv](o
 1. **Distinguished Profiles media** (195 links, 8.4 GB): where to host the videos and audio. The .flv files need converting to MP4 to play in browsers at all.
 2. **Server copies**: someone with access to the old server sends a copy of `/publications/anthology/` and `/publications/discs/` (the past conference sites are already copied to [sigmod-org/sigmod-past-conf](https://github.com/sigmod-org/sigmod-past-conf)). The linked pages are small, but they link on to content that cannot be crawled (directory listings return 403). Alternatively, link to web.archive.org copies.
 3. **Retired pages**: the old awards overview page (113 dead links) was removed (see migration/removed.json), and the logo renderings page (44 dead links) now redirects to the logo usage guidelines on /sigmod-history/sigmod-logo-history/.
-4. **Small leftovers** (51 links): DBLP DVD mirror pages with no dblp.org copy, PODS tutorial files that are gone from their hosts and from web.archive.org, uploads missing on the old server too, one SIGMOD Record text file, and the lost SIGMOD/PODS workshops page. Each is listed below; most can simply be dropped.
+4. **Small leftovers** (50 links): DBLP DVD mirror pages with no dblp.org copy, PODS tutorial files that are gone from their hosts and from web.archive.org, uploads missing on the old server too, one SIGMOD Record text file, and the lost SIGMOD/PODS workshops page. Each is listed below; most can simply be dropped.
 
 Everything still open is listed below, group by group. For each broken link the table names the source
 file and links the page on the current site and on the new site (https://sigmod-org.github.io/www.sigmod.org), so you can compare them.
@@ -93,14 +92,6 @@ file and links the page on the current site and on the new site (https://sigmod-
 | `/db.cis.upenn.edu/DL/97/Tutorial-Peter/tutorial-semi-pods.ps.gz` | [pages/pods-home/pods-tutorials](../src/content/pages/pods-home/pods-tutorials/index.md#L176) · [current](https://sigmod.org/pods-home/pods-tutorials/) · [new](https://sigmod-org.github.io/www.sigmod.org/pods-home/pods-tutorials/) | n/a | The old page had a relative link to another site. The file is gone from http://db.cis.upenn.edu/DL/97/Tutorial-Peter/tutorial-semi-pods.ps.gz and web.archive.org has no copy. Drop the link. | Decide |
 | `/db.cis.upenn.edu/DL/94/Tutorial-Val/tutorial-coll-pods.ps.gz` | [pages/pods-home/pods-tutorials](../src/content/pages/pods-home/pods-tutorials/index.md#L195) · [current](https://sigmod.org/pods-home/pods-tutorials/) · [new](https://sigmod-org.github.io/www.sigmod.org/pods-home/pods-tutorials/) | n/a | The old page had a relative link to another site. The file is gone from http://db.cis.upenn.edu/DL/94/Tutorial-Val/tutorial-coll-pods.ps.gz and web.archive.org has no copy. Drop the link. | Decide |
 | `/ftp.db.toronto.edu/pub/papers/pods93.ps.gz` | [pages/pods-home/pods-tutorials](../src/content/pages/pods-home/pods-tutorials/index.md#L200) · [current](https://sigmod.org/pods-home/pods-tutorials/) · [new](https://sigmod-org.github.io/www.sigmod.org/pods-home/pods-tutorials/) | n/a | The old page had a relative link to another site. The file is gone from http://ftp.db.toronto.edu/pub/papers/pods93.ps.gz and web.archive.org has no copy. Drop the link. | Decide |
-
-### <a id="record"></a>SIGMOD Record
-
-1 links, 1 distinct, on 1 page. Class: **Decide**.
-
-| Old link | Found in (source · current page · new page) | Old server | Suggested fix | Class |
-|---|---|---|---|---|
-| `/publications/sigmod-record/databaseSoftware/chronolog.txt` | [pages/software/index-of-publically-available-database-software](../src/content/pages/software/index-of-publically-available-database-software/index.md#L56) · [current](https://sigmod.org/software/index-of-publically-available-database-software/) · [new](https://sigmod-org.github.io/www.sigmod.org/software/index-of-publically-available-database-software/) | n/a | Not on sigmodrecord.org. Copy the file from the old server into the repo at the same path, or drop the link. | Decide |
 
 ### <a id="dblp"></a>DBLP mirror
 

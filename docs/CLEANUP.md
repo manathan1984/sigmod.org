@@ -87,7 +87,7 @@ into the kept page by hand, then redirect the other one.
 | `/sigmod-awards/people/` | Empty parent page. | Redirect to `/sigmod-awards/`. | proposed |
 | `/sigmod-awards/citations/` | Empty parent page. | Redirect to `/sigmod-awards/`. | proposed |
 | `/sigmod-awards/committees/` | Empty parent page. | Redirect to `/sigmod-awards/committees/sigmod-awards-committee/`. | proposed |
-| `/software/pdf/` · `/software/pdf/sigmod-freedb-letter-pdf/` | Empty parent page, and an attachment page for a 6 KB PDF. | Redirect both to `/software/`. | proposed |
+| `/software/pdf/` · `/software/pdf/sigmod-freedb-letter-pdf/` | Empty parent page, and an attachment page for a 6 KB PDF. | Removed with the rest of `/software/`. | done |
 | `/sigmod-awards/people/michael-carey-contributions/` | "Information missing!" | Fill in the citation or redirect it (see §2). | decide |
 | `/sigmod-history/sigmod-logo-history/` | One image and one sentence. | Merge into `/about-sigmod/sigmod-logo-renderings/` as a "History" section, then redirect. | proposed |
 | `/sigmod-awards/committees/systems-awards-committee/` | Last edited in 2019. The Systems Award is now chosen by the SIGMOD Awards Committee, as the award page says. | Redirect to the SIGMOD Awards Committee page. | decide |
@@ -119,7 +119,7 @@ Proposal (**decide**):
 |---|---|---|---|
 | `/publications/interview/*` (66 stubs) + `/publications/interview/` | Each stub has one link to a Flash video (`.flv`) on the old server. Browsers no longer play these. | One gallery page with photo, name, year, and links to the transcript PDF and audio. Each old URL redirects to its anchor on that page. Convert the videos to mp4 or link to ACM DL copies. | decide |
 | `/conferences/sigmod-1974/` … `/sigmod-2001/` (26) | Per-year proceedings pages. Mostly links to the DBLP mirror. | Keep them for now, linked from `/conferences/`. Later, point their links to dblp.org instead of the local mirror. | keep |
-| `/software/`, `/software/commerical/`, `/software/nonprofit/`, `/software/index-of-publically-available-database-software/`, `/freepublic-domain-software/` | Software lists from 2015, one already labelled "Outdated". The `commerical` typo is in the URL. | Move them under "Archive" with a banner saying they are no longer maintained. `/freepublic-domain-software/` redirects to `/software/`. | proposed |
+| `/software/`, `/software/commerical/`, `/software/nonprofit/`, `/software/index-of-publically-available-database-software/` | Software lists from 2015, no longer maintained. | Removed entirely (listed in `migration/removed.json`). `/freepublic-domain-software/` now only links the freedb letter. | done |
 | `/publications/sigmod-digital-symposium-collection/` | DiSC, ended 2011. | Archive section. | keep |
 | `/sigmod-history/sigmod-online/` | History of the website. | Keep under History. | keep |
 | `/pods-home/pods-30th-anniversary-statistics/` | Last edited 2015. | Merge into `/pods-home/pods-30th-anniversary/`, then redirect. Ask the PODS EC. | decide |
