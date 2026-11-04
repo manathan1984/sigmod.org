@@ -39,7 +39,7 @@ choose (hosting, keep or drop, or the content is already gone).
 
 1264 links on 149 source files were fixed by `npm run old-links -- --fix` (2026-11-03).
 Every change (file, line, old link, new link) is in [old-site-links-fixed.csv](old-site-links-fixed.csv).
-406 files were copied from sigmod.org into `src/static/` at their old paths, so the old addresses keep working after the switch.
+405 files were copied from sigmod.org into `src/static/` at their old paths, so the old addresses keep working after the switch.
 
 | Group | Links fixed | What was done |
 |---|--:|---|

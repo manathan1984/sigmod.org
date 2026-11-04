@@ -119,7 +119,7 @@ Proposal (**decide**):
 |---|---|---|---|
 | `/publications/interview/*` (66 stubs) + `/publications/interview/` | Each stub has one link to a Flash video (`.flv`) on the old server. Browsers no longer play these. | One gallery page with photo, name, year, and links to the transcript PDF and audio. Each old URL redirects to its anchor on that page. Convert the videos to mp4 or link to ACM DL copies. | decide |
 | `/conferences/sigmod-1974/` … `/sigmod-2001/` (26) | Per-year proceedings pages. Mostly links to the DBLP mirror. | Keep them for now, linked from `/conferences/`. Later, point their links to dblp.org instead of the local mirror. | keep |
-| `/software/`, `/software/commerical/`, `/software/nonprofit/`, `/software/index-of-publically-available-database-software/` | Software lists from 2015, no longer maintained. | Removed entirely (listed in `migration/removed.json`). `/freepublic-domain-software/` now only links the freedb letter. | done |
+| `/software/`, `/software/commerical/`, `/software/nonprofit/`, `/software/index-of-publically-available-database-software/` | Software lists from 2015, no longer maintained. | Removed entirely (listed in `migration/removed.json`). `/freepublic-domain-software/` and the freedb letter PDF were removed too. | done |
 | `/publications/sigmod-digital-symposium-collection/` | DiSC, ended 2011. | Archive section. | keep |
 | `/sigmod-history/sigmod-online/` | History of the website. | Keep under History. | keep |
 | `/pods-home/pods-30th-anniversary-statistics/` | Last edited 2015. | Merge into `/pods-home/pods-30th-anniversary/`, then redirect. Ask the PODS EC. | decide |
