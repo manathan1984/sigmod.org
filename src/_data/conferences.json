@@ -84,6 +84,10 @@
       {
         "label": "Conference Website",
         "url": "https://sigmod2020.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2020/index.html"
       }
     ]
   },
@@ -95,6 +99,10 @@
       {
         "label": "Conference Website",
         "url": "https://sigmod2019.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2019/index.html"
       }
     ]
   },
@@ -106,6 +114,10 @@
       {
         "label": "Conference Website",
         "url": "https://sigmod2018.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2018/index.html"
       }
     ]
   },
@@ -116,7 +128,11 @@
     "links": [
       {
         "label": "Conference Website",
-        "url": "http://www.sigmod2017.org/"
+        "url": "http://sigmod2017.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2017/index.html"
       }
     ]
   },
@@ -128,6 +144,10 @@
       {
         "label": "Conference Website",
         "url": "http://www.sigmod2016.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2016/index.html"
       }
     ]
   },
@@ -139,6 +159,10 @@
       {
         "label": "Conference Website",
         "url": "http://www.sigmod2015.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2015/index.html"
       }
     ]
   },
@@ -150,6 +174,10 @@
       {
         "label": "Conference Website",
         "url": "http://www.sigmod2014.org"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://sigmod-org.github.io/sigmod-past-conf/sigmod2014/index.html"
       }
     ]
   },
