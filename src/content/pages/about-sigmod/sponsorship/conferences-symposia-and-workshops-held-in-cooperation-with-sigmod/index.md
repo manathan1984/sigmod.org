@@ -18,7 +18,7 @@ The motivation for SIGMOD in-cooperation support is to provide high quality outl
 
 Holding a meeting in cooperation with SIGMOD provides a number of benefits:
 
--   The meeting organizers can use the ACM SIGMOD name and [SIGMOD logos](/about-sigmod/sigmod-logo-renderings/ "SIGMOD Logo") on any publicity about the meeting.
+-   The meeting organizers can use the ACM SIGMOD name and [SIGMOD logo](/sigmod-history/sigmod-logo-history/#using-the-logo "Using the SIGMOD logo") on any publicity about the meeting.
 -   The meeting organizers receive one page in the *[SIGMOD Record](https://sigmodrecord.org/ "SIGMOD Record")* to announce the meeting, free of charge.
 -   The meeting will be publicized in the Call for Papers and Professional Calendar sections of *Communications of the ACM*, free of charge.
 -   The meeting organizers can purchase an advertisement in *Communications of the ACM* at a special rate. (Ad placement should be arranged through ACM Headquarters, and *CACM* can advise as to the lead time required.) Discounted access to ACM mailing lists is also available.

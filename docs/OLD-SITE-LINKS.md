@@ -19,11 +19,12 @@ choose (hosting, keep or drop, or the content is already gone).
 
 ## Summary
 
-491 links on 81 pages, 296 distinct targets.
+448 links on 81 pages, 253 distinct targets.
 
 | Group | Links | Pages | Distinct targets | On the old server today | Size | Fix | Class |
 |---|--:|--:|--:|---|--:|---|---|
 | [Feed identifiers](#feed) | 2 | 1 | 2 | n/a |  | Keep | Easy |
+| [Old addresses of pages the new site has](#rewrite) | 1 | 1 | 1 | n/a |  | Link to the new page | Easy |
 | [External links broken by the import](#mangled) | 4 | 1 | 4 | n/a |  | Drop, or find a copy | Decide |
 | [SIGMOD Record](#record) | 1 | 1 | 1 | n/a |  | Copy from server, or drop | Decide |
 | [DBLP mirror](#dblp) | 37 | 1 | 33 | n/a |  | Link dblp.org's home, or drop | Decide |
@@ -32,16 +33,15 @@ choose (hosting, keep or drop, or the content is already gone).
 | [SIGMOD Anthology](#anthology) | 149 | 2 | 45 | 41 live, 4 broken | 785 KB | Copy from server, or drop | Decide |
 | [DiSC (Digital Symposium Collection)](#discs) | 24 | 1 | 16 | all live | 74 KB | Copy from server, or drop | Decide |
 | [Local mirrors of past conference websites](#pastconf) | 26 | 2 | 13 | all live | 146 KB | Copy from server, or link web.archive.org | Decide |
-| [Logo renderings (already broken)](#logo) | 44 | 1 | 44 | all broken |  | Replace with current files | Decide |
 | [Other old pages](#other) | 2 | 2 | 2 | all broken |  | Find a page, or drop | Decide |
 
-**489 links need a decision.** The 2 feed identifiers stay as they are.
+**445 links need a decision.** 1 more have a known fix: run `npm run old-links -- --fix`. The 2 feed identifiers stay as they are.
 
 ## Fixed so far
 
 1264 links on 149 source files were fixed by `npm run old-links -- --fix` (2026-11-03).
 Every change (file, line, old link, new link) is in [old-site-links-fixed.csv](old-site-links-fixed.csv).
-406 files were copied from sigmod.org into `src/static/` at their old paths, so the old addresses keep working after the switch.
+401 files were copied from sigmod.org into `src/static/` at their old paths, so the old addresses keep working after the switch.
 
 | Group | Links fixed | What was done |
 |---|--:|---|
@@ -59,7 +59,7 @@ Every change (file, line, old link, new link) is in [old-site-links-fixed.csv](o
 
 1. **Distinguished Profiles media** (195 links, 8.4 GB): where to host the videos and audio. The .flv files need converting to MP4 to play in browsers at all.
 2. **Server copies**: someone with access to the old server sends a copy of `/publications/anthology/`, `/publications/discs/`, `/publications/pastconf/`, `/2012/` and `/2013/`. The linked pages are small, but they link on to content that cannot be crawled (directory listings return 403). Alternatively, link to web.archive.org copies.
-3. **Already broken today**: the logo renderings (44 links) were already gone on the old site. Offer the 1998 logo until a new one is chosen. (The old awards overview page, with 113 such links, was removed; see migration/removed.json.)
+3. **Retired pages**: the old awards overview page (113 dead links) was removed (see migration/removed.json), and the logo renderings page (44 dead links) now redirects to the logo usage guidelines on /sigmod-history/sigmod-logo-history/.
 4. **Small leftovers** (51 links): DBLP DVD mirror pages with no dblp.org copy, PODS tutorial files that are gone from their hosts and from web.archive.org, uploads missing on the old server too, one SIGMOD Record text file, and the lost SIGMOD/PODS workshops page. Each is listed below; most can simply be dropped.
 
 Everything still open is listed below, group by group. For each broken link the table names the source
@@ -75,6 +75,14 @@ file and links the page on the current site and on the new site (https://sigmod-
 |---|---|---|---|---|
 | `/feed.xml` | [src/feed.njk](../src/feed.njk#L9) · [current](https://sigmod.org/feed.xml) · [new](https://sigmod-org.github.io/www.sigmod.org/feed.xml) | n/a | Keep as is. Atom feed IDs must stay the same forever and already point to the new site's URLs. | Easy |
 | `/news/` | [src/feed.njk](../src/feed.njk#L10) · [current](https://sigmod.org/feed.xml) · [new](https://sigmod-org.github.io/www.sigmod.org/feed.xml) | n/a | Keep as is. Atom feed IDs must stay the same forever and already point to the new site's URLs. | Easy |
+
+### <a id="rewrite"></a>Old addresses of pages the new site has
+
+1 links, 1 distinct, on 1 page. Class: **Easy**.
+
+| Old link | Found in (source · current page · new page) | Old server | Suggested fix | Class |
+|---|---|---|---|---|
+| `/` | [pages/sigmod-history/sigmod-logo-history](../src/content/pages/sigmod-history/sigmod-logo-history/index.md#L27) · [current](https://sigmod.org/sigmod-history/sigmod-logo-history/) · [new](https://sigmod-org.github.io/www.sigmod.org/sigmod-history/sigmod-logo-history/) | n/a | Link to / (the page's address on the new site). | Easy |
 
 ### <a id="mangled"></a>External links broken by the import
 
@@ -262,16 +270,6 @@ Suggested fix: Too large for git (7.3 GB of Flash video, which browsers no longe
 | `/publications/pastconf/sigmod2003/index.html` | [src/_data/conferences.json](../src/_data/conferences.json#L309) · [current](https://sigmod.org/) · [new](https://sigmod-org.github.io/www.sigmod.org/)<br>[pages/conferences](../src/content/pages/conferences/index.md#L12) · [current](https://sigmod.org/conferences/) · [new](https://sigmod-org.github.io/www.sigmod.org/conferences/) | live | Old conference sites hosted on sigmod.org. Either get a full copy from the server and keep it at the same path, or link to a web.archive.org copy instead. | Decide |
 | `/publications/pastconf/sigmod2002/sigmodpods2002.html` | [src/_data/conferences.json](../src/_data/conferences.json#L324) · [current](https://sigmod.org/) · [new](https://sigmod-org.github.io/www.sigmod.org/)<br>[pages/conferences](../src/content/pages/conferences/index.md#L12) · [current](https://sigmod.org/conferences/) · [new](https://sigmod-org.github.io/www.sigmod.org/conferences/) | live | Old conference sites hosted on sigmod.org. Either get a full copy from the server and keep it at the same path, or link to a web.archive.org copy instead. | Decide |
 | `/publications/pastconf/sigmod2000/index.html` | [src/_data/conferences.json](../src/_data/conferences.json#L354) · [current](https://sigmod.org/) · [new](https://sigmod-org.github.io/www.sigmod.org/)<br>[pages/conferences](../src/content/pages/conferences/index.md#L12) · [current](https://sigmod.org/conferences/) · [new](https://sigmod-org.github.io/www.sigmod.org/conferences/) | live | Old conference sites hosted on sigmod.org. Either get a full copy from the server and keep it at the same path, or link to a web.archive.org copy instead. | Decide |
-
-### <a id="logo"></a>Logo renderings (already broken)
-
-44 links, 44 distinct, on 1 page. Class: **Decide**.
-
-Suggested fix: Already broken on the old site: the logo files are gone. Offer the 1998 logo (/assets/logo/sigmod-current.png) now, and the new files once a new logo is chosen.
-
-| Source file | Page (current · new site) | Links |
-|---|---|--:|
-| [pages/about-sigmod/sigmod-logo-renderings](../src/content/pages/about-sigmod/sigmod-logo-renderings/index.md) | [current](https://sigmod.org/about-sigmod/sigmod-logo-renderings/) · [new](https://sigmod-org.github.io/www.sigmod.org/about-sigmod/sigmod-logo-renderings/) | 44 |
 
 ### <a id="other"></a>Other old pages
 

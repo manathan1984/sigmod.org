@@ -376,7 +376,7 @@ ${fixedSection()}
 
 1. **Distinguished Profiles media** (${links.filter((l) => l.group === "interviews-media").length} links, ${mb(mediaSize(/./))}): where to host the videos and audio. The .flv files need converting to MP4 to play in browsers at all.
 2. **Server copies**: someone with access to the old server sends a copy of \`/publications/anthology/\`, \`/publications/discs/\`, \`/publications/pastconf/\`, \`/2012/\` and \`/2013/\`. The linked pages are small, but they link on to content that cannot be crawled (directory listings return 403). Alternatively, link to web.archive.org copies.
-3. **Already broken today**: the logo renderings (${count("logo")} links) were already gone on the old site. Offer the 1998 logo until a new one is chosen. (The old awards overview page, with 113 such links, was removed; see migration/removed.json.)
+3. **Retired pages**: the old awards overview page (113 dead links) was removed (see migration/removed.json), and the logo renderings page (44 dead links) now redirects to the logo usage guidelines on /sigmod-history/sigmod-logo-history/.
 4. **Small leftovers** (${count("dblp") + count("mangled") + count("uploads") + count("record") + count("other")} links): DBLP DVD mirror pages with no dblp.org copy, PODS tutorial files that are gone from their hosts and from web.archive.org, uploads missing on the old server too, one SIGMOD Record text file, and the lost SIGMOD/PODS workshops page. Each is listed below; most can simply be dropped.
 
 Everything still open is listed below, group by group. For each broken link the table names the source
