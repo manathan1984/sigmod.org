@@ -169,7 +169,7 @@ J. D. Tygar: Open Problems in Electronic Commerce
 
 Surajit Chaudhuri: [An Overview of Query Optimization in Relational Systems](ftp://ftp.research.microsoft.com/users/surajitc/pods98_slides.pdf)  
 Judith Klavans: Data Bases in Digital Libraries: Where Computer Science and Information Management Meet  
-Jeffrey Scott Vitter: [External Memory Algorithms](https://www.ittc.ku.edu/~jsv/Papers/Vit.IO_surveyfoils.pdf)
+Jeffrey Scott Vitter: [External Memory Algorithms](/pods-home/pods-tutorials/Vit.IO_surveyfoils.pdf)
 
 1997
 
