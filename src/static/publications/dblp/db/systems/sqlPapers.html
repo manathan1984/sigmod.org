@@ -1,0 +1,142 @@
+<html><head><title>SQL</title><link href="../../dblp.css" rel="stylesheet" type="text/css" /></head><body>
+<table width="100%"><tr><td align="left"><a href="https://dblp.org/db/anthology.html"><img alt="ACM SIGMOD Anthology" src="../AnLogo.gif" border=0 height=60 width=233></a></td>
+<td align="center"><a href="http://www.acm.org/sigmod/"><img border=0 alt="ACM SIGMOD" src="../sigmod.gif" height=64 width=200></a></td>
+<td align="right"><a href="../index.html"><img alt="dblp.uni-trier.de" src="../Logo.gif" border=0 height=60 width=170></a></td></tr></table>
+
+<h1>SQL</h1>
+
+by <a href="https://dblp.org/db/indices/a-tree/m/Melton:Jim.html">Jim Melton</a> (<a href="http://www.oracle.com/">Oracle Corporation</a>)
+
+<h3>Introduction</h3>
+
+<p>In 1999, the third generation of the SQL standard was published after a 
+lengthy development period. The first two generations had appeared in 1986 
+and 1992 (with an intervening minor revision in 1989).  The project known 
+as SQL3 was thus not completed until seven years after the publication of 
+the 1992 version of the standard. In fact, development of some features was 
+started more than a year before SQL-92 was published.</p>
+<p>Development of SQL:1999 was aided significantly by several people:
+<a href="https://dblp.org/db/indices/a-tree/d/Deutsch:Donald_R=.html">Donald R. Deutsch</a>, chair of NCITS H2 ("Database"), and
+Michael Gorman, H2 Secretary 
+(whom we thank for finding in his vast archives a copy of the Shaw paper in 
+this collection),
+<a href="https://dblp.org/db/indices/a-tree/g/Gallagher:Leonard.html">Leonard Gallagher</a>, early chair ("Rapporteur") of the Database 
+Languages Rapporteur Group in ISO, and Stephen Cannan, current chair 
+("Convenor") of ISO/IEC JTC1/SC32/WG3 ("Database languages").</p>
+<p>SQL:1999 is a significant extension of SQL-92, containing a number of new 
+features and enhancements, many readily fitting into the traditional 
+relational underpinnings of SQL. However, one aspect of the new SQL 
+standard, arguably the most widely anticipated feature, is the addition of 
+object technology to the language. Numerous articles, conference papers, 
+and presentations (and even a couple of books) documented SQL:1999's 
+object-oriented features, including the later stages of its development.</p>
+<p>Here, we present a partial survey of this important aspect of SQL, covering 
+only the earlier stages of its development, showing how the main ideas were 
+introduced almost a decade before the revision was completed. The papers 
+included in this collection are provided complete, in their original form. 
+They thus include motivation and discussion of the capabilities being 
+proposed, but they also include detailed changes to drafts of the SQL 
+specification that are no longer accessible. However, we felt that it was 
+useful to retain those change instructions because of the supporting 
+details that can be found in them.</p>
+
+<h2>Summary of the Papers</h2>
+
+The first paper of which we are aware that discussed topics related to 
+object technology in SQL was submitted in November, 1989 by
+<a href="https://dblp.org/db/indices/a-tree/k/Kerridge:Jon_M=.html">Jon M. Kerridge</a>.
+This paper, entitled "A proposal to add user-defined data types to SQL"
+(numbered ISO/IEC JTC1/SC21/WG3 DBL FIR-37R and X3H2-89-319REV) is not included in 
+this collection only because we have been unsuccessful in locating the 
+author and getting his permission to include it.  The specific details 
+proposed by Kerridge are not found in SQL:1999, because they were overtaken 
+by later events, but we think it worth noting that this paper appeared 
+approximately at the same time as the publication of SQL-89!
+<ul>
+<li><a name="X3H2-90-292" href="https://dblp.org/db/indices/a-tree/s/Shaw:Phil.html">Phil Shaw</a>:
+<br><b>Modification of User Defined Types.
+</b><br><a href="https://dblp.org/db/systems/X3H2-90-292.html"><i>Electronic Edition</i></a> <font size="-3"><a href="http://dblp.uni-trier.de/rec/bibtex/tr/sql/X3H2-90-292">BibTeX</a></font>
+
+</ul>
+A few months later, <a href="https://dblp.org/db/indices/a-tree/s/Shaw:Phil.html">Phil Shaw</a>
+(then with IBM) submitted ISO/IEC JTC1/SC32/WG3 DBL LON-171 and X3H2-90-292,
+named "Modification of User Defined Types",
+which is the first paper in this collection.  This paper 
+was largely a response to Kerridge's, supporting the ability to define 
+"complex values" in SQL.  The facility proposed by Kerridge and by Shaw's 
+response was characterized by some participants as "C structs expressed in 
+SQL".  As you will see in the paper, the focus was on structure and not 
+behavior; therefore, it is not fully "object oriented", but is a 
+significant step in that direction.
+<ul>
+<li><a name="X3H2-90-412" href="https://dblp.org/db/indices/a-tree/b/Beech:David.html">David Beech</a>, <a href="https://dblp.org/db/indices/a-tree/o/Ozbutun:Cetin.html">Cetin Ozbutun</a>:
+<br><b>Object Oriented DBMS as a Generalization of Relational DBMS.
+</b><br><a href="https://dblp.org/db/systems/X3H2-90-412.html"><i>Electronic Edition</i></a> <font size="-3"><a href="http://dblp.uni-trier.de/rec/bibtex/tr/sql/X3H2-90-412">BibTeX</a></font>
+
+</ul>
+Shaw's paper received its own response, a paper numbered X3H2-90-412 and 
+titled "Object Oriented DBMS as a Generalization  of Relational DBMS", by 
+David Beech and Cetin Ozbutun.  In this paper, Beech and Ozbutun described 
+an approach to augmenting relational database systems with true object 
+capabilities (particularly the notion of object identity, at the time quite 
+alien to the value-oriented world of SQL) and might be viewed as an 
+introductory vision to what has become known as object-relational database.
+<ul>
+<li><a name="X3H2-91-083rev1" href="https://dblp.org/db/indices/a-tree/m/Melton:Jim.html">Jim Melton</a>, <a href="https://dblp.org/db/indices/a-tree/b/Bauer:Jonathan.html">Jonathan Bauer</a>, <a href="https://dblp.org/db/indices/a-tree/k/Kulkarni:Krishna_G=.html">Krishna G. Kulkarni</a>:
+<br><b>Object ADTs (with improvements for Value ADTs).
+</b><br><a href="https://dblp.org/db/systems/X3H2-91-083rev1.html"><i>Electronic Edition</i></a> <font size="-3"><a href="http://dblp.uni-trier.de/rec/bibtex/tr/sql/X3H2-91-083rev1">BibTeX</a></font>
+
+</ul>
+Inspired by the interest generated by the papers from Kerridge, Shaw, and 
+Beech and Ozbutun, as well as the famous
+"<a href="https://dblp.org/db/conf/dood/dood89.html#AtkinsonBDDMZ89">Object-Oriented Database System Manifesto</a>", Jim Melton, Jonathan Bauer, Krishna Kulkarni (all with Digital 
+Equipment Corporation at the time) wrote the paper numbered ISO/IEC 
+JTC1/SC32/WG3 DBL ARL-029 and X3H2-91-083rev1, titled "Object ADTs (with 
+improvements for Value ADTs)", and submitted it to the SQL standards 
+bodies.  This paper provided the first features of SQL that provided both 
+structure for stored data and behavior provided by a functional 
+interface.  The abstract data types that it proposed were highly 
+controversial, but the paper also resulted in enormous interest in SQL 
+standards development.
+<ul>
+<li><a name="X3H2-91-133rev1" href="https://dblp.org/db/indices/a-tree/k/Kulkarni:Krishna_G=.html">Krishna G. Kulkarni</a>, <a href="https://dblp.org/db/indices/a-tree/m/Melton:Jim.html">Jim Melton</a>, <a href="https://dblp.org/db/indices/a-tree/b/Bauer:Jonathan.html">Jonathan Bauer</a>, <a href="https://dblp.org/db/indices/a-tree/k/Kelley:Mike.html">Mike Kelley</a>:
+<br><b>Inheritance for ADTs (revised).
+</b><br><a href="https://dblp.org/db/systems/X3H2-91-133rev1.html"><i>Electronic Edition</i></a> <font size="-3"><a href="http://dblp.uni-trier.de/rec/bibtex/tr/sql/X3H2-91-133rev1">BibTeX</a></font>
+
+</ul>
+Only a few months later, the same authors, with one addition (Mike Kelley, 
+also of Digital) added significantly both to the object facilities being 
+developed and the controversy. The paper numbered ISO/IEC JTC1/SC32/WG3 DBL 
+KAW-006 and X3H2-91-133rev1 was named "Inheritance for ADTs" and introduced 
+the notion of a type hierarchy to SQL.
+<ul>
+<li><a name="X3H2-92-062" href="https://dblp.org/db/indices/a-tree/b/Beech:David.html">David Beech</a>:
+Unification of Value and Object ADTs.
+ <font size="-3"><a href="http://dblp.uni-trier.de/rec/bibtex/tr/sql/X3H2-92-062">BibTeX</a></font>
+ (in progress)
+</ul>
+<p>Unfortunately, as development proceeded, it became clear that the 
+complexities of having two sorts of user-defined types - value types and 
+object types - were threatening to overwhelm the resources of SQL's 
+developers.  Paper ISO/IEC JTC1/SC32/WG3 DBL KAW-047 and X3H2-92-062, 
+"Unification of Value and Object ADTs", was written by David Beech and 
+submitted as a proposal to reduce the complexity by unifying concepts that 
+were obviously related but that were being maintained and debated separately.</p>
+<p>These papers provided the foundation for SQL's object capabilities.  Of 
+course, over the following years, significant enhancements and 
+modifications were made, even changes that fundamentally altered SQL's 
+object model.  That evolution was inspired by better understanding of 
+object-relational's customer needs, by vendor experience in implementing 
+the technology, and the wildfire success of Java in the marketplace.  The 
+later stages of SQL3's development have been widely discussed and 
+documented, but the papers in this collection have previously been 
+inaccessible, and may be of interest in showing how some of the concepts 
+emerged.</p>
+
+<hr><b><a href="https://dblp.org/db/anthology.html">ACM SIGMOD Anthology</a> - DBLP: 
+[<a href="../index.html">Home</a> | Search: <a href="https://dblp.org/db/indices/a-tree/index.html">Author</a>, <a href="https://dblp.org/db/indices/t-form.html">Title</a> | <a href="https://dblp.org/db/conf/indexa.html">Conferences</a> | <a href="https://dblp.org/db/journals/index.html">Journals</a>]</b>
+<hr><small>ACM SIGMOD Anthology: <a href="https://dblp.org/db/copyright.html">Copyright &#169;</a> by <a href="http://www.acm.org/">ACM</a> (<a href="mailto:info@acm.org">info@acm.org</a>), Corrections: <a href="mailto:anthology@acm.org">anthology@acm.org</a><br>
+DBLP: <a href="https://dblp.org/db/copyright.html">Copyright &#169;</a> by <a href="http://www.informatik.uni-trier.de/~ley/addr.html">Michael Ley</a> (<a href="mailto:ley@uni-trier.de">ley@uni-trier.de</a>), last change: Sat May 16 22:55:23 2009
+</body></html>
+
+

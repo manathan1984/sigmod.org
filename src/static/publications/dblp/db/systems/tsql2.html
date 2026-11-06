@@ -1,0 +1,119 @@
+<html><head><title>TSQL2 Temporal Query Language</title><link href="../../dblp.css" rel="stylesheet" type="text/css" /></head><body>
+<table width="100%"><tr><td align="left"><a href="https://dblp.org/db/anthology.html"><img alt="ACM SIGMOD Anthology" src="../AnLogo.gif" border=0 height=60 width=233></a></td>
+<td align="center"><a href="http://www.acm.org/sigmod/"><img border=0 alt="ACM SIGMOD" src="../sigmod.gif" height=64 width=200></a></td>
+<td align="right"><a href="../index.html"><img alt="dblp.uni-trier.de" src="../Logo.gif" border=0 height=60 width=170></a></td></tr></table>
+
+<h1>TSQL2 Temporal Query Language</h1>
+
+<a href="https://dblp.org/db/indices/a-tree/s/Snodgrass:Richard_T=.html">Richard T. Snodgrass</a>
+
+<p>
+republished from the <a href="http://www.cs.arizona.edu/people/rts/tsql2.html">http://www.cs.arizona.edu/people/rts/tsql2.html</a>
+</p>
+
+<ul>
+<li><a name="TSQL2" href="https://dblp.org/db/indices/a-tree/s/Snodgrass:Richard_T=.html">Richard T. Snodgrass</a>:
+<br><b>TSQL2 Temporal Query Language / TSQL2 and SQL3 Interactions: Copy of ftp://ftp.cs.arizona.edu/tsql/tsql2/.
+</b><br><a href="https://dblp.org/db/systems/tsql2-mirror.html"><i>Electronic Edition</i></a> <font size="-3"><a href="http://dblp.uni-trier.de/rec/bibtex/journals/anthology/TSQL2">BibTeX</a></font>
+
+</ul>
+<hr>
+
+TSQL2 is a temporal extension to the SQL-92 language standard.  The TSQL2
+committee was formed in July, 1993 after a general invitation sent to the
+community. This committee consisted of
+<a href="https://dblp.org/db/indices/a-tree/s/Snodgrass:Richard_T=.html">Richard T. Snodgrass</a>,
+<a href="https://dblp.org/db/indices/a-tree/a/Ahn:Ilsoo.html">Ilsoo Ahn</a>,
+<a href="https://dblp.org/db/indices/a-tree/a/Ariav:Gad.html">Gad Ariav</a>,
+<a href="https://dblp.org/db/indices/a-tree/b/Batory:Don_S=.html">Don S. Batory</a>,
+<a href="https://dblp.org/db/indices/a-tree/c/Clifford:James.html">James Clifford</a>,
+<a href="https://dblp.org/db/indices/a-tree/d/Dyreson:Curtis_E=.html">Curtis E. Dyreson</a>,
+<a href="https://dblp.org/db/indices/a-tree/j/Jensen:Christian_S=.html">Christian S. Jensen</a>,
+<a href="https://dblp.org/db/indices/a-tree/e/Elmasri:Ramez.html">Ramez Elmasri</a>,
+<a href="https://dblp.org/db/indices/a-tree/g/Grandi:Fabio.html">Fabio Grandi</a>,
+<a href="https://dblp.org/db/indices/a-tree/k/K=auml=fer:Wolfgang.html">Wolfgang K&auml;fer</a>,
+<a href="https://dblp.org/db/indices/a-tree/k/Kline:Nick.html">Nick Kline</a>,
+<a href="https://dblp.org/db/indices/a-tree/k/Kulkarni:Krishna_G=.html">Krishna G. Kulkarni</a>,
+<a href="https://dblp.org/db/indices/a-tree/l/Leung:T=_Y=_Cliff.html">T. Y. Cliff Leung</a>,
+<a href="https://dblp.org/db/indices/a-tree/l/Lorentzos:Nikos_A=.html">Nikos A. Lorentzos</a>,
+<a href="https://dblp.org/db/indices/a-tree/r/Roddick:John_F=.html">John F. Roddick</a>,
+<a href="https://dblp.org/db/indices/a-tree/s/Segev:Arie.html">Arie Segev</a>,
+<a href="https://dblp.org/db/indices/a-tree/s/Soo:Michael_D=.html">Michael D. Soo</a>, and
+<a href="https://dblp.org/db/indices/a-tree/s/Sripada:Suryanarayana_M=.html">Suryanarayana M. Sripada</a>.
+The committee produced a
+preliminary language specification the following January, which appeared in
+the March 1994 <i>ACM SIGMOD Record</i>:
+<ul>
+<li><a name="SnodgrassAABCDEGJKKKLLRSSS94" href="https://dblp.org/db/indices/a-tree/s/Snodgrass:Richard_T=.html">Richard T. Snodgrass</a>, <a href="https://dblp.org/db/indices/a-tree/a/Ahn:Ilsoo.html">Ilsoo Ahn</a>, <a href="https://dblp.org/db/indices/a-tree/a/Ariav:Gad.html">Gad Ariav</a>, <a href="https://dblp.org/db/indices/a-tree/b/Batory:Don_S=.html">Don S. Batory</a>, <a href="https://dblp.org/db/indices/a-tree/c/Clifford:James.html">James Clifford</a>, <a href="https://dblp.org/db/indices/a-tree/d/Dyreson:Curtis_E=.html">Curtis E. Dyreson</a>, <a href="https://dblp.org/db/indices/a-tree/e/Elmasri:Ramez.html">Ramez Elmasri</a>, <a href="https://dblp.org/db/indices/a-tree/g/Grandi:Fabio.html">Fabio Grandi</a>, <a href="https://dblp.org/db/indices/a-tree/j/Jensen:Christian_S=.html">Christian S. Jensen</a>, <a href="https://dblp.org/db/indices/a-tree/k/K=auml=fer:Wolfgang.html">Wolfgang K&auml;fer</a>, <a href="https://dblp.org/db/indices/a-tree/k/Kline:Nick.html">Nick Kline</a>, <a href="https://dblp.org/db/indices/a-tree/k/Kulkarni:Krishna_G=.html">Krishna G. Kulkarni</a>, <a href="https://dblp.org/db/indices/a-tree/l/Leung:T=_Y=_Cliff.html">T. Y. Cliff Leung</a>, <a href="https://dblp.org/db/indices/a-tree/l/Lorentzos:Nikos_A=.html">Nikos A. Lorentzos</a>, <a href="https://dblp.org/db/indices/a-tree/r/Roddick:John_F=.html">John F. Roddick</a>, <a href="https://dblp.org/db/indices/a-tree/s/Segev:Arie.html">Arie Segev</a>, <a href="https://dblp.org/db/indices/a-tree/s/Soo:Michael_D=.html">Michael D. Soo</a>, <a href="https://dblp.org/db/indices/a-tree/s/Sripada:Suryanarayana_M=.html">Suryanarayana M. Sripada</a>:
+<br><b>TSQL2 Language Specification.
+</b><a href="https://dblp.org/db/journals/sigmod/sigmod23.html#SnodgrassAABCDEGJKKKLLRSSS94">SIGMOD Record 23(1)</a>: 65-86(1994)<br><a href="http://doi.acm.org/10.1145/181550.181562"><i>Electronic Edition</i></a> (<a href="http://www.acm.org/dl/">ACM DL</a>) <font size="-3"><a href="http://dblp.uni-trier.de/rec/bibtex/journals/sigmod/SnodgrassAABCDEGJKKKLLRSSS94">BibTeX</a></font>
+
+</ul>
+Based on responses to that specification,
+changes were made to the language, and the definitive version of the TSQL2
+Language Specification was published in September, 1994 [<a href="ftp://ftp.cs.arizona.edu/tsql/tsql2/spec.dvi">dvi</a>, <a href="ftp://ftp.cs.arizona.edu/tsql/tsql2/spec.ps">ps</a>, <a href="ftp://ftp.cs.arizona.edu/tsql/tsql2/spec.pdf">pdf</a>].
+The affiliations and e-mail addresses of the
+TSQL2 Language Design Committee members may be found in a separate
+section at the end of the language specification.
+A tutorial of this language appeared in the September 1994 <i>ACM
+SIGMOD Record</i>:
+<ul>
+<li><a name="SnodgrassAABCDEGJKKKLLRSSS94a" href="https://dblp.org/db/indices/a-tree/s/Snodgrass:Richard_T=.html">Richard T. Snodgrass</a>, <a href="https://dblp.org/db/indices/a-tree/a/Ahn:Ilsoo.html">Ilsoo Ahn</a>, <a href="https://dblp.org/db/indices/a-tree/a/Ariav:Gad.html">Gad Ariav</a>, <a href="https://dblp.org/db/indices/a-tree/b/Batory:Don_S=.html">Don S. Batory</a>, <a href="https://dblp.org/db/indices/a-tree/c/Clifford:James.html">James Clifford</a>, <a href="https://dblp.org/db/indices/a-tree/d/Dyreson:Curtis_E=.html">Curtis E. Dyreson</a>, <a href="https://dblp.org/db/indices/a-tree/e/Elmasri:Ramez.html">Ramez Elmasri</a>, <a href="https://dblp.org/db/indices/a-tree/g/Grandi:Fabio.html">Fabio Grandi</a>, <a href="https://dblp.org/db/indices/a-tree/j/Jensen:Christian_S=.html">Christian S. Jensen</a>, <a href="https://dblp.org/db/indices/a-tree/k/K=auml=fer:Wolfgang.html">Wolfgang K&auml;fer</a>, <a href="https://dblp.org/db/indices/a-tree/k/Kline:Nick.html">Nick Kline</a>, <a href="https://dblp.org/db/indices/a-tree/k/Kulkarni:Krishna_G=.html">Krishna G. Kulkarni</a>, <a href="https://dblp.org/db/indices/a-tree/l/Leung:T=_Y=_Cliff.html">T. Y. Cliff Leung</a>, <a href="https://dblp.org/db/indices/a-tree/l/Lorentzos:Nikos_A=.html">Nikos A. Lorentzos</a>, <a href="https://dblp.org/db/indices/a-tree/r/Roddick:John_F=.html">John F. Roddick</a>, <a href="https://dblp.org/db/indices/a-tree/s/Segev:Arie.html">Arie Segev</a>, <a href="https://dblp.org/db/indices/a-tree/s/Soo:Michael_D=.html">Michael D. Soo</a>, <a href="https://dblp.org/db/indices/a-tree/s/Sripada:Suryanarayana_M=.html">Suryanarayana M. Sripada</a>:
+<br><b>A TSQL2 Tutorial.
+</b><a href="https://dblp.org/db/journals/sigmod/sigmod23.html#SnodgrassAABCDEGJKKKLLRSSS94a">SIGMOD Record 23(3)</a>: 27-33(1994)<br><a href="http://doi.acm.org/10.1145/187436.187449"><i>Electronic Edition</i></a> (<a href="http://www.acm.org/dl/">ACM DL</a>) <font size="-3"><a href="http://dblp.uni-trier.de/rec/bibtex/journals/sigmod/SnodgrassAABCDEGJKKKLLRSSS94a">BibTeX</a></font>
+
+</ul>
+<p>Associated with the language specification is a collection of commentaries
+which discuss design decisions, provide examples, and consider how the
+language may be implemented. These commentaries were originally proposals to
+the TSQL2 Language Design Committee. They now serve a different purpose: to
+provide examples of the constructs, motivate the many decisions made during
+the language design, and compare TSQL2 with the many other language
+proposals that have been made over the last fifteen years. It should be
+emphasized that these commentaries are not part of the TSQL2 language
+specification per se, but rather supplement and elaborate upon it. The
+language specification proper is the final word on TSQL2.</p>
+<p>
+The commentaries, along with the language specification, several
+indexes, and other supporting material, has been published as a book:</p>
+<ul>
+<li><a name="Snodgrass95" href="https://dblp.org/db/indices/a-tree/s/Snodgrass:Richard_T=.html">Richard T. Snodgrass</a> (Ed.):
+The TSQL2 Temporal Query Language.
+ Kluwer 1995, ISBN 0-7923-9614-6<br>
+<a href="https://dblp.org/db/books/collections/snodgrass95.html">Contents</a> <font size="-3"><a href="http://dblp.uni-trier.de/rec/bibtex/books/kl/Snodgrass95">BibTeX</a></font>
+
+</ul>
+<p>The TSQL2 Language Specification as it appears in the TSQL2 book is
+also available
+[<a href="ftp://ftp.cs.arizona.edu/tsql/tsql2/bookspec.ps">ps</a>,
+<a href="ftp://ftp.cs.arizona.edu/tsql/tsql2/bookspec.pdf">pdf</a>].
+The .pdf files are Adobe PDF; they can be read via the 3.0 reader,
+accessible at <a href="http://www.adobe.com/prodindex/acrobat/readstep.html">http://www.adobe.com/prodindex/acrobat/readstep.html</a>.
+The .ps files are postscript files.</p>
+<p>The evaluation commentary appears in the book in an abbreviated form; the
+full commentary is available here [<a href="ftp://ftp.cs.arizona.edu/tsql/tsql2/eval.ps">ps</a>,
+<a href="ftp://ftp.cs.arizona.edu/tsql/tsql2/eval.pdf">pdf</a>].</p>
+
+<p>The file <a href="ftp://ftp.cs.arizona.edu/tsql/tsql2/tl2tsql2.pl">tl2tsql2.pl</a> is a Prolog program that translates allowed temporal
+logic to TSQL2. This program was written by Michael Boehlen
+&lt;<a href="mailto:boehlen@cs.auc.dk">boehlen@cs.auc.dk</a>&gt;. He may be
+contacted for a paper that describes this 
+translation. This is a rather dated version of that program. Newer versions
+are available at the <a
+href="http://www.cs.auc.dk/general/DBS/tdb/TimeCenter/Software"> TimeCenter
+software page</a> (specifically the TimeDB and Tiger systems).</p>
+<p>
+The constructs and insights of TSQL2 are being incorporated into the
+<b><a href="https://dblp.org/db/systems/sql3.html">SQL3</a></b> language.</p>
+<p>Correspondence may be directed to the chair of the TSQL2 Language
+Design Committee, <a href="http://www.cs.arizona.edu/people/rts/">Richard T.Snodgrass</a>, Department of Computer
+Science, University of Arizona, Tucson, AZ 85721,
+<a href="mailto:rts@cs.arizona.edu">rts@cs.arizona.edu</a>.</p>
+
+<hr><b><a href="https://dblp.org/db/anthology.html">ACM SIGMOD Anthology</a> - DBLP: 
+[<a href="../index.html">Home</a> | Search: <a href="https://dblp.org/db/indices/a-tree/index.html">Author</a>, <a href="https://dblp.org/db/indices/t-form.html">Title</a> | <a href="https://dblp.org/db/conf/indexa.html">Conferences</a> | <a href="https://dblp.org/db/journals/index.html">Journals</a>]</b>
+<hr><small>TSQL2 Web Page: Copyright © by Richard T. Snodgrass, ACM SIGMOD Anthology: <a href="https://dblp.org/db/copyright.html">Copyright &#169;</a> by <a href="http://www.acm.org/">ACM</a> (<a href="mailto:info@acm.org">info@acm.org</a>), Corrections: <a href="mailto:anthology@acm.org">anthology@acm.org</a><br>
+DBLP: <a href="https://dblp.org/db/copyright.html">Copyright &#169;</a> by <a href="http://www.informatik.uni-trier.de/~ley/addr.html">Michael Ley</a> (<a href="mailto:ley@uni-trier.de">ley@uni-trier.de</a>), last change: Sat May 16 22:55:23 2009
+</body></html>
+
+
