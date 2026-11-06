@@ -181,9 +181,9 @@ with `PATH_PREFIX` set to `/` and publishes `_site/` at https://www.sigmod.org/
 https://mirror.sigmod.org/ (repository `sigmod-org/mirror.sigmod.org`).
 
 The old WordPress server no longer answers on `sigmod.org`. Old addresses of
-the conference copies (`/publications/pastconf/sigmodYYYY/…`, `/2012/…`,
-`/2013/…`) are sent on to the same file on mirror.sigmod.org by the 404 page;
-`/2012/` and `/2013/` redirect to https://2012.sigmod.org/ and https://2013.sigmod.org/.
+the conference copies (`/publications/pastconf/sigmodYYYY/…`) are sent on to
+the same file on mirror.sigmod.org by the 404 page. SIGMOD/PODS 2012 and 2013
+are at https://2012.sigmod.org/ and https://2013.sigmod.org/.
 
 ### Production
 

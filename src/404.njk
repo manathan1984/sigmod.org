@@ -6,7 +6,7 @@ eleventyExcludeFromCollections: true
 ---
 <p class="lead">This page does not exist, or it has moved.</p>
 <p>Try the <a href="/">home page</a>, the <a href="/news/">news</a>, or the menus above.</p>
-{#- Old addresses of the past conference copies (/publications/pastconf/sigmodYYYY/…, /2012/…, /2013/…)
+{#- Old addresses of the past conference copies (/publications/pastconf/sigmodYYYY/…)
     now live on mirror.sigmod.org: send the reader to the same file there, or to the copy's start page. -#}
 <p id="mirror-note" hidden>This is an archived conference website. It is now at <a id="mirror-link" href="https://mirror.sigmod.org/">mirror.sigmod.org</a>.</p>
 <script>
@@ -17,7 +17,6 @@ eleventyExcludeFromCollections: true
   });
   var p = location.pathname, m, folder, rest;
   if ((m = p.match(/^\/publications\/pastconf\/(sigmod\d{4})(\/.*)?$/i))) { folder = m[1].toLowerCase(); rest = m[2] || ""; }
-  else if ((m = p.match(/^\/(2012|2013)(\/.*)?$/))) { folder = "sigmod" + m[1]; rest = m[2] || ""; }
   if (!folder) return;
   var to = (rest === "" || rest === "/") ? (starts[folder] || "https://mirror.sigmod.org/" + folder + "/")
                                          : "https://mirror.sigmod.org/" + folder + rest + location.hash;
