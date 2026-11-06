@@ -169,11 +169,11 @@ J. D. Tygar: Open Problems in Electronic Commerce
 
 Surajit Chaudhuri: [An Overview of Query Optimization in Relational Systems](ftp://ftp.research.microsoft.com/users/surajitc/pods98_slides.pdf)  
 Judith Klavans: Data Bases in Digital Libraries: Where Computer Science and Information Management Meet  
-Jeffrey Scott Vitter: [External Memory Algorithms](https://sigmod.org/provost.ku.edu/jsv/Papers/Vit.IO_surveyfoils.ps.html)
+Jeffrey Scott Vitter: [External Memory Algorithms](https://www.ittc.ku.edu/~jsv/Papers/Vit.IO_surveyfoils.pdf)
 
 1997
 
-Peter Buneman: [Semistructured Data](https://sigmod.org/db.cis.upenn.edu/DL/97/Tutorial-Peter/tutorial-semi-pods.ps.gz)  
+Peter Buneman: [Semistructured Data](/pods-home/pods-tutorials/tutorial-semi-pods.ps.gz)  
 Richard Hull: [Managing Semantic Heterogeneity in Databases: A Theoretical Perspective](http://www-db.research.bell-labs.com/user/hull/pods97-tutorial.html)  
 Arie Shoshani: OLAP and Statistical Databases: Similarities and Differences
 
@@ -192,9 +192,9 @@ Phokion G. Kolaitis: [Combinatorial Games In Database Theory](http://www.acm.or
 
 Rakesh Agrawal: Database Mining  
 Gaston H. Gonnet: Text Dominated Databases, Theory, Practice and Experience  
-Val Tannen: [Languages for Collection Types](https://sigmod.org/db.cis.upenn.edu/DL/94/Tutorial-Val/tutorial-coll-pods.ps.gz)
+Val Tannen: [Languages for Collection Types](/pods-home/pods-tutorials/tutorial-coll-pods.ps.gz)
 
 1993
 
 Jan Chomicki: Temporal Query Languages: a Survey  
-Alberto Mendelzon: [Belief Revision Theory and Knowledge Base Updates](https://sigmod.org/ftp.db.toronto.edu/pub/papers/pods93.ps.gz)
+Alberto Mendelzon: Belief Revision Theory and Knowledge Base Updates
