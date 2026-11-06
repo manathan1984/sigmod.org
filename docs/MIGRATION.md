@@ -109,7 +109,7 @@ API, and directory listings are blocked (HTTP 403). The counts are in
 | `/publications/interviews/{pdf,photos,images}` | 230 | **Done**: copied into `src/static/publications/interviews/`. |
 | `/publications/interviews/{flv,mp3}` | 195 | Open. About 8.4 GB; `.flv` does not play in browsers. Convert to MP4 and host outside git (ACM DL, YouTube or a bucket). |
 | `/pods/opentoc/podsYYYY.html` | 39 | **Done**: copied unchanged into `src/static/pods/opentoc/`. |
-| `/publications/pastconf/…`, `/2012/`, `/2013/` | 26 | **Done**: copied, with 2001 and 2011 from the Wayback Machine, to [sigmod-org/sigmod-past-conf](https://github.com/sigmod-org/sigmod-past-conf) (GitHub Pages); the Conferences page links there as "Local Mirror". |
+| `/publications/pastconf/…`, `/2012/`, `/2013/` | 26 | **Done**: copied, with 2001 and 2011 from the Wayback Machine, to [sigmod-org/mirror.sigmod.org](https://github.com/sigmod-org/mirror.sigmod.org) (GitHub Pages); the Conferences page links there as "Local Mirror". |
 | `/publications/anthology/…`, `/publications/discs/…` | 173 | Open. Need a copy from the server (they link on to content that cannot be crawled) or links to web.archive.org. |
 | `/sigmod-pods-conferences/*.doc,pdf` | 0 | Removed from the Conferences page (the files were already gone). |
 
@@ -175,10 +175,15 @@ existing URL.
 ### Current setup
 
 `.github/workflows/pages.yml` runs on every push to `main`. It builds the site
-with `PATH_PREFIX` set to the Pages base path (`/www.sigmod.org/`), so
-Eleventy's base-path plugin rewrites every link, and publishes `_site/` at
-https://sigmod-org.github.io/www.sigmod.org/ (repository `sigmod-org/www.sigmod.org`). When `sigmod.org` points to Pages, the
-prefix becomes `/` and nothing else changes.
+with `PATH_PREFIX` set to `/` and publishes `_site/` at https://www.sigmod.org/
+(repository `sigmod-org/www.sigmod.org`, custom domain, HTTPS enforced).
+`sigmod.org` redirects to `www.sigmod.org`. The past conference copies are at
+https://mirror.sigmod.org/ (repository `sigmod-org/mirror.sigmod.org`).
+
+The old WordPress server no longer answers on `sigmod.org`. Old addresses of
+the conference copies (`/publications/pastconf/sigmodYYYY/…`, `/2012/…`,
+`/2013/…`) are sent on to the same file on mirror.sigmod.org by the 404 page;
+`/2012/` and `/2013/` redirect to https://2012.sigmod.org/ and https://2013.sigmod.org/.
 
 ### Production
 

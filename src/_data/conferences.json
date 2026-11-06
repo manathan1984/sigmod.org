@@ -87,7 +87,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2020/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2020/index.html"
       }
     ]
   },
@@ -102,7 +102,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2019/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2019/index.html"
       }
     ]
   },
@@ -117,7 +117,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2018/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2018/index.html"
       }
     ]
   },
@@ -132,7 +132,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2017/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2017/index.html"
       }
     ]
   },
@@ -147,7 +147,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2016/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2016/index.html"
       }
     ]
   },
@@ -162,7 +162,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2015/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2015/index.html"
       }
     ]
   },
@@ -177,7 +177,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2014/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2014/index.html"
       }
     ]
   },
@@ -188,11 +188,11 @@
     "links": [
       {
         "label": "Conference Website",
-        "url": "https://sigmod.org/2013/"
+        "url": "https://2013.sigmod.org/"
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2013/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2013/index.html"
       }
     ]
   },
@@ -203,11 +203,11 @@
     "links": [
       {
         "label": "Conference Website",
-        "url": "https://sigmod.org/2012/"
+        "url": "https://2012.sigmod.org/"
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2012/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2012/index.html"
       }
     ]
   },
@@ -222,7 +222,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2011/index.shtml"
+        "url": "https://mirror.sigmod.org/sigmod2011/index.shtml"
       }
     ]
   },
@@ -237,7 +237,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2010/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2010/index.html"
       }
     ]
   },
@@ -252,7 +252,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2009/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2009/index.html"
       }
     ]
   },
@@ -267,7 +267,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2008/index.shtml.html"
+        "url": "https://mirror.sigmod.org/sigmod2008/index.shtml.html"
       }
     ]
   },
@@ -282,7 +282,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2007/index.shtml.html"
+        "url": "https://mirror.sigmod.org/sigmod2007/index.shtml.html"
       }
     ]
   },
@@ -297,7 +297,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2006/sigmod-pods06.html"
+        "url": "https://mirror.sigmod.org/sigmod2006/sigmod-pods06.html"
       }
     ]
   },
@@ -312,7 +312,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2005/~sigmod05.html"
+        "url": "https://mirror.sigmod.org/sigmod2005/~sigmod05.html"
       }
     ]
   },
@@ -327,7 +327,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2004/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2004/index.html"
       }
     ]
   },
@@ -342,7 +342,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2003/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2003/index.html"
       }
     ]
   },
@@ -357,7 +357,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2002/sigmodpods2002.html"
+        "url": "https://mirror.sigmod.org/sigmod2002/sigmodpods2002.html"
       }
     ]
   },
@@ -376,7 +376,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2001/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2001/index.html"
       }
     ]
   },
@@ -391,7 +391,7 @@
       },
       {
         "label": "Local Mirror",
-        "url": "https://sigmod-org.github.io/mirror.sigmod.org/sigmod2000/index.html"
+        "url": "https://mirror.sigmod.org/sigmod2000/index.html"
       }
     ]
   },

@@ -6,3 +6,23 @@ eleventyExcludeFromCollections: true
 ---
 <p class="lead">This page does not exist, or it has moved.</p>
 <p>Try the <a href="/">home page</a>, the <a href="/news/">news</a>, or the menus above.</p>
+{#- Old addresses of the past conference copies (/publications/pastconf/sigmodYYYY/…, /2012/…, /2013/…)
+    now live on mirror.sigmod.org: send the reader to the same file there, or to the copy's start page. -#}
+<p id="mirror-note" hidden>This is an archived conference website. It is now at <a id="mirror-link" href="https://mirror.sigmod.org/">mirror.sigmod.org</a>.</p>
+<script>
+(function () {
+  var starts = {};  // copy folder -> its start page, from the Local Mirror links on the Conferences page
+  {{ conferences | dump | safe }}.forEach(function (c) {
+    (c.links || []).forEach(function (l) { if (l.label === "Local Mirror") starts["sigmod" + c.year] = l.url; });
+  });
+  var p = location.pathname, m, folder, rest;
+  if ((m = p.match(/^\/publications\/pastconf\/(sigmod\d{4})(\/.*)?$/i))) { folder = m[1].toLowerCase(); rest = m[2] || ""; }
+  else if ((m = p.match(/^\/(2012|2013)(\/.*)?$/))) { folder = "sigmod" + m[1]; rest = m[2] || ""; }
+  if (!folder) return;
+  var to = (rest === "" || rest === "/") ? (starts[folder] || "https://mirror.sigmod.org/" + folder + "/")
+                                         : "https://mirror.sigmod.org/" + folder + rest + location.hash;
+  document.getElementById("mirror-link").href = to;
+  document.getElementById("mirror-note").hidden = false;
+  location.replace(to);
+})();
+</script>

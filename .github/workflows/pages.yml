@@ -1,4 +1,5 @@
-# Builds the site and publishes it on GitHub Pages: https://<owner>.github.io/<repo>/
+# Builds the site and publishes it on GitHub Pages at https://www.sigmod.org/ (custom domain, HTTPS enforced).
+# PATH_PREFIX stays "/": the site is served from the domain root. Set it to "/<repo>/" only to serve from <owner>.github.io/<repo>/.
 name: Publish on GitHub Pages
 
 on:
@@ -30,7 +31,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          PATH_PREFIX: ${{ steps.pages.outputs.base_path }}/
+          PATH_PREFIX: /
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

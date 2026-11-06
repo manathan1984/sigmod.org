@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>{{ title }} – moved</title>
-<link rel="canonical" href="https://sigmod.org{{ redirect_to }}">
+<link rel="canonical" href="{% if redirect_to.indexOf('http') == 0 %}{{ redirect_to }}{% else %}https://www.sigmod.org{{ redirect_to }}{% endif %}">
 <meta http-equiv="refresh" content="0; url={{ redirect_to }}">
 <meta name="robots" content="noindex">
 </head>
