@@ -4,6 +4,9 @@
 <title>{% if title and page.url != "/" %}{{ title }} – {% endif %}{{ site.pods.title if isPods else site.title }}</title>
 <meta name="description" content="{{ (site.pods.description if isPods else site.description) | escape }}">
 <link rel="canonical" href="https://www.sigmod.org{{ redirect_to or page.url }}">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="alternate" type="application/atom+xml" title="SIGMOD news" href="/feed.xml">
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="stylesheet" href="/assets/footer.css">
