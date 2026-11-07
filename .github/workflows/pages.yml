@@ -45,5 +45,5 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          timeout: 1800000 # ms; GitHub's file sync sometimes takes longer than the 10-minute default
+        # GitHub caps the deploy wait at 10 minutes. If its file sync is slow and the step times out,
+        # re-run the failed job (gh run rerun <id> --failed); the build does not need to run again.
