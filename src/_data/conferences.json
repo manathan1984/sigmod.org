@@ -73,6 +73,10 @@
       {
         "label": "Conference Website",
         "url": "https://2021.sigmod.org/"
+      },
+      {
+        "label": "Local Mirror",
+        "url": "https://mirror.sigmod.org/sigmod2021/index.html"
       }
     ]
   },
