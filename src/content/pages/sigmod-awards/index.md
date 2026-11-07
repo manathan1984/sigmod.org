@@ -6,14 +6,14 @@ section: "sigmod"
 area: "awards"
 wp_id: 296
 wp_type: "page"
-updated: "2026-05-11"
+updated: "2026-11-07"
 ---
 
 In 1992, ACM SIGMOD started the Annual SIGMOD Innovations Award and SIGMOD Contributions Award as part of its Awards Program. In 1999, a test-of-time award was introduced to honor a paper from ten years prior.  In 2004, SIGMOD, with the unanimous approval of ACM Council, renamed the Innovations Award in honor of Dr. Edgar F. (Ted) Codd (1923 – 2003), who invented the relational data model that led to the significant development of the database field as a scientific discipline.  In 2015, the System award was devised to recognize impactful systems (as opposed to papers).  Finally, in 2025, ACM SIGMOD announced a new mentorship award, which was named after Hector Garcia-Molina. More details about each award are below.
 
 The recipients will receive the awards at the annual ACM SIGMOD/PODS Conference in all cases.  If the award is shared among multiple recipients, each will receive a plaque (up to 10 plaques per award), but the monetary prize will be shared.
 
-**[Click here to see the call for nominations for the latest ACM SIGMOD Awards.](/wp-content/uploads/2025/12/2026-SIGMOD-AWARDS-%E2%80%93-Call-for-Nominations.docx.pdf)** Nominations and inputs for the awards should be submitted via e-mail to the SIGMOD 2026 Awards Committee Chair at *sharad AT ics.uci.edu*. Nominations must be received by **February 15th, 2026** to be considered for this year’s awards. Click on the link below to navigate to a specific award, its committee (if applicable), and its recipients.
+**Nominations are open all year.** SIGMOD accepts award nominations on a continuous basis, with an annual cut-off date of February 15. See the [Ongoing Call for SIGMOD Award Nominations](/sigmod-awards/ongoing-awards-call/) for what to submit and how. (The [2026 call for nominations](/wp-content/uploads/2025/12/2026-SIGMOD-AWARDS-%E2%80%93-Call-for-Nominations.docx.pdf) is kept for reference.) Click on the links below to navigate to a specific award, its committee (if applicable), and its recipients.
 
 ## SIG-level awards
 

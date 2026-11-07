@@ -5,7 +5,7 @@
     <a class="mnav-top" href="{{ m.url }}">{{ m.label }}</a>
     <div class="drop{% if m.groups %} drop-wide{% endif %}{% if m.align == 'left' %} drop-left{% endif %}">
       {%- if m.all %}
-      <ul class="drop-all"><li><a href="{{ m.all.url }}">{{ m.all.label }}</a></li></ul>
+      <ul class="drop-all">{% for a in m.all %}<li><a href="{{ a.url }}">{{ a.label }}</a></li>{% endfor %}</ul>
       {%- endif %}
       {%- if m.stack %}
       {#- groups fill two independent columns (1st, 3rd… left; 2nd, 4th… right); `order` keeps the reading order on mobile #}

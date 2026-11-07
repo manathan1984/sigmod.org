@@ -4,7 +4,8 @@
 // `stack: true` lets each column flow on its own (one empty row between groups in the right column).
 // `all` is a link shown above the groups, in the dropdown and the side menu.
 const ext = (label, url) => ({ label, url, external: true });
-const grouped = (menu) => ({ ...menu, children: menu.groups.flatMap((g) => g.children) });
+// `all` lists the links shown above the groups (e.g. All awards); they count as part of the menu too
+const grouped = (menu) => ({ ...menu, children: [...(menu.all || []), ...menu.groups.flatMap((g) => g.children)] });
 
 const about = {
   label: "About", area: "about", url: "/about-sigmod/",
@@ -31,7 +32,10 @@ const conferences = {
 
 const awards = grouped({
   label: "Awards", area: "awards", url: "/sigmod-awards/", align: "left", stack: true,
-  all: { label: "All awards", url: "/sigmod-awards/" },
+  all: [
+    { label: "All awards", url: "/sigmod-awards/" },
+    { label: "Ongoing Call-for-Awards", url: "/sigmod-awards/ongoing-awards-call/" },
+  ],
   groups: [
     {
       label: "SIG-level",
