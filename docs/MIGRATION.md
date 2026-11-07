@@ -104,23 +104,44 @@ API, and directory listings are blocked (HTTP 403). The counts are in
 
 | Path | Links | Status |
 |---|---|---|
-| `/publications/dblp/db/…` | 478 | **Done** for 441 venue and book pages: they now link to dblp.org. 37 links to the DVD mirror's own pages are left (no dblp.org copy). |
-| `/wp-content/uploads/…` | 459 | **Done** for 447: copied into `src/static/wp-content/` at the same paths. 12 are missing on the old server too. |
-| `/publications/interviews/{pdf,photos,images}` | 230 | **Done**: copied into `src/static/publications/interviews/`. |
-| `/publications/interviews/{flv,mp3}` | 195 | Open. About 8.4 GB; `.flv` does not play in browsers. Convert to MP4 and host outside git (ACM DL, YouTube or a bucket). |
+| `/publications/dblp/db/…` | 478 | **Done**: 441 venue and book pages link to dblp.org; the DVD mirror's own 33 pages are copied (from the Wayback Machine) to the SIGMOD Archive, [sigmod-org/archive](https://github.com/sigmod-org/archive) (https://sigmod-org.github.io/archive/). |
+| `/wp-content/uploads/…` | 459 | **Done** for 447: copied into `src/static/wp-content/` at the same paths. 7 links (6 files) are still broken: they were missing on the old server too. |
+| `/publications/interviews/{pdf,photos,images}` | 230 | **Done**: moved, with the 66 Distinguished Profiles pages, to the SIGMOD Archive, [sigmod-org/archive](https://github.com/sigmod-org/archive). |
+| `/publications/interviews/{flv,mp3}` | 195 | Open, **broken** since the switch (the links are now on the archive's Profiles pages). About 8.4 GB; `.flv` does not play in browsers. Convert to MP4 and host outside git (ACM DL, YouTube or a bucket), or drop. |
 | `/pods/opentoc/podsYYYY.html` | 39 | **Done**: copied unchanged into `src/static/pods/opentoc/`. |
 | `/publications/pastconf/…`, `/2012/`, `/2013/` | 26 | **Done**: copied, with 2001 and 2011 from the Wayback Machine, to [sigmod-org/mirror.sigmod.org](https://github.com/sigmod-org/mirror.sigmod.org) (GitHub Pages); the Conferences page links there as "Local Mirror". |
-| `/publications/anthology/…`, `/publications/discs/…` | 173 | Open. Need a copy from the server (they link on to content that cannot be crawled) or links to web.archive.org. |
+| `/publications/anthology/…` | 75 | **Done**: the contents page, images and volume 6 moved to the SIGMOD Archive, [sigmod-org/archive](https://github.com/sigmod-org/archive) (https://sigmod-org.github.io/archive/). |
+| `/publications/discs/…` | 24 | **Done**: all 13 DiSC volumes (about 42,000 files, 632 MB) copied from www-old.sigmod.org to the SIGMOD Archive, [sigmod-org/archive](https://github.com/sigmod-org/archive) (https://sigmod-org.github.io/archive/). About 1,400 files they link to were already missing on the old server. |
 | `/sigmod-pods-conferences/*.doc,pdf` | 0 | Removed from the Conferences page (the files were already gone). |
 
 Files in `src/static/` are copied to the site as they are and never rendered as
 templates, so pages like OpenTOC stay byte-for-byte the same.
 
-Every link that still points at the old server, with a suggested fix for each, is in
-[OLD-SITE-LINKS.md](OLD-SITE-LINKS.md), and every link already changed is in
-[old-site-links-fixed.csv](old-site-links-fixed.csv). Regenerate the report with
-`npm run old-links` (add `-- --check` to re-check the old server, or `-- --fix` to
-apply any new easy fixes).
+Since the switch, sigmod.org serves the new site and the old WordPress site is at
+www-old.sigmod.org. That copy is not kept, so no fix may depend on it; the reports
+link to it only to compare old and new pages.
+
+Every link to a sigmod.org address the new site does not serve, with a suggested fix
+for each, is in [OLD-SITE-LINKS.md](OLD-SITE-LINKS.md), and every link already
+changed is in [old-site-links-fixed.csv](old-site-links-fixed.csv). Regenerate it
+with `npm run old-links` (add `-- --check` to re-check each target on
+www.sigmod.org, or `-- --fix` to apply any new link rewrites).
+
+To check every link on every page, including external ones, run:
+
+```
+npm run build && node scripts/scan-site-links.mjs && python3 -I scripts/check-external-links.py
+npm run old-links -- --check && python3 scripts/old-links-page.py
+```
+
+`scan-site-links.mjs` reads the built pages (`_site/`, including the `.htm` copies) and writes `docs/site-links.json`;
+`check-external-links.py` checks the external links and writes `docs/external-links.json`;
+`old-links-page.py` combines both reports into the checklist `docs/old-site-links.html`. Old pages still copied
+as-is in `src/static` are listed in their own groups.
+
+DiSC, the Anthology and the DBLP DVD pages are in the separate SIGMOD Archive repository. Their old
+addresses here (`/publications/discs/…`, `/publications/anthology/…`, `/publications/dblp/…`) are forwarded
+to the same path there by the 404 page, and the DiSC and Anthology pages redirect there.
 
 ## Proposed structure
 
@@ -194,7 +215,7 @@ are at https://2012.sigmod.org/ and https://2013.sigmod.org/.
 - GitHub Pages cannot do server-side 301s. Meta-refresh stubs with canonical
   links are the standard workaround. If true 301s matter, put Cloudflare in
   front.
-- Subdomains (`2027.sigmod.org`, `wp.sigmod.org`, `reproducibility.sigmod.org`)
+- Subdomains (`2027.sigmod.org`, `blog.sigmod.org`, `reproducibility.sigmod.org`)
   are separate DNS records and are not affected.
 - Keep large media (interviews, video) out of git: use Git LFS or an external
   host.
@@ -208,6 +229,7 @@ src/_data/                      site, nav (IA), conferences
 src/_includes/                  layouts (base, home, page) and shared partials
 src/assets/                     site.css, content.css, footer.css
 scripts/import-wp.mjs           WordPress → Markdown importer
-scripts/old-links-report.mjs    links to the old server → docs/OLD-SITE-LINKS.md
+scripts/old-links-report.mjs    broken links to sigmod.org → docs/OLD-SITE-LINKS.md
+scripts/scan-site-links.mjs     every link on the built site → docs/site-links.json
 migration/                      url-inventory.tsv, duplicates.json, legacy-paths.json
 ```
