@@ -102,6 +102,7 @@ aside .h-section + .links { margin-bottom: 32px; }
 .prose { max-width: 820px; font-size: 16.5px; }
 .prose h2 { font: 600 26px var(--serif); margin: 36px 0 10px; }
 .prose h3 { font-size: 18px; margin: 28px 0 8px; }
+.prose [id] { scroll-margin-top: 96px; } /* anchors (#benefits) land below the sticky header */
 .prose table { border-collapse: collapse; width: 100%; font-size: 14.5px; margin: 22px 0; display: block; overflow-x: auto; }
 .prose td, .prose th { padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
 .prose th { background: var(--tint); color: var(--ink); font-weight: 600; }

@@ -16,4 +16,4 @@ updated: "2025-07-04"
 
 ## Conference Planning
 
--   [Overall ACM Conference Committee Job Descriptions](http://www.acm.org/sigs/volunteer_resources/conference_manual/2-1-2job)
+-   [Overall ACM Conference Committee Job Descriptions](https://www.acm.org/special-interest-groups/volunteer-resources/conference-planning/table-of-contents2-1-2job)
