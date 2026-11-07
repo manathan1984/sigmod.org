@@ -8,7 +8,7 @@ wp_type: "page"
 updated: "2026-11-07"
 ---
 
-SIGMOD accepts nominations for its awards all year round, with an annual cut-off date. Nominations received by **February 15** are considered for the awards presented at that year’s SIGMOD/PODS conference; later nominations are considered the following year.
+SIGMOD accepts nominations for its awards all year round, with an annual cut-off date. Nominations received by **February 1** are considered for the awards presented at that year’s SIGMOD/PODS conference; later nominations are considered the following year.
 
 **Nominate early.** Preparing a nomination and evaluating nominations both take time and care. They also matter to our community: awards recognize excellence, celebrate dedication, and highlight role models who inspire the next generation. Strong nominations often benefit from reflection and from the input of several colleagues, so please submit whenever a deserving candidate comes to mind, not only as the cut-off approaches. You can update a nomination at any time.
 

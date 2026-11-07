@@ -63,7 +63,7 @@ Tips:
 **When to post:**
 
 - Award recipients (one item per year, covering all awards).
-- A reminder of the awards cut-off, a few weeks before February 15.
+- A reminder of the awards cut-off, a few weeks before February 1.
 - Election results and new officers.
 - A new SIGMOD/PODS venue, or a change of venue.
 - ACM honors for community members (Fellows, Distinguished Members).
@@ -137,7 +137,7 @@ only when a sponsorship agreement changes.
 
 ### Ongoing awards call
 
-Nominations are accepted all year with an annual cut-off of **February 15**
+Nominations are accepted all year with an annual cut-off of **February 1**
 (`/sigmod-awards/ongoing-awards-call/`, in the Awards menu as "Ongoing
 Call-for-Awards"). There is no longer a separate call each year. Edit that page
 only when:

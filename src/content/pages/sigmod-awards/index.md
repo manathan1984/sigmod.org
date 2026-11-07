@@ -13,7 +13,7 @@ In 1992, ACM SIGMOD started the Annual SIGMOD Innovations Award and SIGMOD Contr
 
 The recipients will receive the awards at the annual ACM SIGMOD/PODS Conference in all cases.  If the award is shared among multiple recipients, each will receive a plaque (up to 10 plaques per award), but the monetary prize will be shared.
 
-**Nominations are open all year.** SIGMOD accepts award nominations on a continuous basis, with an annual cut-off date of February 15. See the [Ongoing Call for SIGMOD Award Nominations](/sigmod-awards/ongoing-awards-call/) for what to submit and how. (The [2026 call for nominations](/wp-content/uploads/2025/12/2026-SIGMOD-AWARDS-%E2%80%93-Call-for-Nominations.docx.pdf) is kept for reference.) Click on the links below to navigate to a specific award, its committee (if applicable), and its recipients.
+**Nominations are open all year.** SIGMOD accepts award nominations on a continuous basis, with an annual cut-off date of February 1. See the [Ongoing Call for SIGMOD Award Nominations](/sigmod-awards/ongoing-awards-call/) for what to submit and how. (The [2026 call for nominations](/wp-content/uploads/2025/12/2026-SIGMOD-AWARDS-%E2%80%93-Call-for-Nominations.docx.pdf) is kept for reference.) Click on the links below to navigate to a specific award, its committee (if applicable), and its recipients.
 
 ## SIG-level awards
 
