@@ -8,11 +8,12 @@ wp_type: "post"
 date: "2017-01-19"
 updated: "2017-01-19"
 tags: ["news"]
+edited: true
 ---
 
-![Donald Kossmann](http://wp.sigmod.org/wp-content/uploads/2012/07/Kossmann_Donald_colA5-112x150.jpg)
+![Donald Kossmann](/wp-content/uploads/2012/07/Kossmann_Donald_colA5-112x150.jpg)
 
-##### [Donald Kossmann](http://wp.sigmod.org/?author=10)
+##### [Donald Kossmann](https://blog.sigmod.org/author/donaldk/)
 
 JANUARY 19, 2017
 
@@ -24,4 +25,4 @@ On January 16 (Martin-Luther-King Day in the USA), the SIGMOD Executive Committe
 
 The SIGMOD/PODS community is open and inclusive. It embraces all forms of diversity, including diversity of gender identity. Our commitment to these fundamental principles would have been in question if we held the SIGMOD/PODS 2017 conference in North Carolina, hence the decision to move.
 
-This is a fragment of the longer blog posting,  read more and join the discussion at the [SIGMOD Blog](http://wp.sigmod.org/?p=2079).
+This is a fragment of the longer blog posting,  read more and join the discussion at the [SIGMOD Blog](https://blog.sigmod.org/2017/01/19/sigmod-2017-announcement/).

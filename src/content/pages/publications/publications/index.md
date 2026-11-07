@@ -16,6 +16,6 @@ In addition, the SIGMOD community will find the following links useful.
 
 -   [ACM TODS](http://tods.acm.org/)
 -   [SIGMOD Record](https://sigmodrecord.org/ "SIGMOD Record")
--   [SIGMOD Blog](https://wp.sigmod.org/)
+-   [SIGMOD Blog](https://blog.sigmod.org/)
 
 Some previous resources that have ended their support or are no longer updated can be found in [the archive page](/archive/).

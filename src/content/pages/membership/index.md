@@ -20,9 +20,9 @@ Online members receive:
 -   Information about SIGMOD
 -   [SIGMOD Record electronically](https://sigmodrecord.org/) (4 issues per year)
 -   [SIGMOD/PODS conference proceedings online](http://dl.acm.org/event.cfm?id=RE227&CFID=682094599&CFTOKEN=61452254) (available before the conference)
--   [SIGMOD Anthology](/publications/anthology/) and [DiSC](/publications/sigmod-digital-symposium-collection/) metadata, linking to physical media, as well as the ACM Digital Library
+-   [SIGMOD Anthology](https://sigmod-org.github.io/archive/publications/anthology/) and [DiSC](https://sigmod-org.github.io/archive/publications/discs/) metadata, linking to physical media, as well as the ACM Digital Library
 -   A bundle of SIGMOD-related publications made available through the ACM Digital Library (previously provided on DVD as SIGMOD DiSC)
--   [A blog on “hot topics” in databases](http://wp.sigmod.org/)
+-   [A blog on “hot topics” in databases](https://blog.sigmod.org/)
 -   Access to content from SIG sponsored and co-sponsored events in the ACM Digital Library
 -   Discounted registration fees at events in-cooperation or sponsored by SIGMOD, including the SIGMOD/PODS conference
 -   A social networking presence to disseminate community news

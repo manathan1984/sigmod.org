@@ -111,7 +111,7 @@ const publications = {
   children: [
     ext("PACMMOD", "https://dl.acm.org/journal/pacmmod"),
     ext("SIGMOD Record", "https://sigmodrecord.org/"),
-    ext("SIGMOD Blog", "https://wp.sigmod.org/"),
+    ext("SIGMOD Blog", "https://blog.sigmod.org/"),
     ext("Conference Proceedings", "https://dl.acm.org/conference/mod/proceedings"),
   ],
 };
@@ -134,7 +134,7 @@ const nav = {
   quicklinks: [
     ext("SIGMOD Record", "https://sigmodrecord.org/"),
     ext("PACMMOD", "https://dl.acm.org/journal/pacmmod"),
-    ext("SIGMOD Blog", "https://wp.sigmod.org/"),
+    ext("SIGMOD Blog", "https://blog.sigmod.org/"),
     ext("Reproducibility", "https://reproducibility.sigmod.org/"),
     { label: "Video series", url: "/videoseries/" },
     { label: "DBCares", url: "/sigmod-policies/dbcares-policy/" },

@@ -129,7 +129,7 @@ aside .h-section + .links { margin-bottom: 32px; }
   .drop-wide:has(.drop-col) { display: flex !important; flex-direction: column; gap: 6px; }
   .drop-col { display: contents; }
   .drop-col .drop-group + .drop-group { margin-top: 0; }
-  .hero-in, .home-grid, .page-grid { grid-template-columns: 1fr; gap: 32px; }
+  .hero-in, .home-grid, .page-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .side { position: static; }
 }
 @media (max-width: 680px) {
