@@ -1,6 +1,14 @@
-# sigmod.org: migration from WordPress to a static site
+# www.sigmod.org: migration from WordPress, current state and next steps
 
-Status: prototype. All content is imported and every old URL builds.
+**Status (November 2026):** the migration is done. www.sigmod.org is a static
+Eleventy site on GitHub Pages; the WordPress site is no longer served on
+sigmod.org. Every old URL either still works, redirects, or is forwarded (see
+[Old addresses](#old-addresses)). What is left is cleanup and improvement:
+[CLEANUP.md](CLEANUP.md) lists page-level decisions, and
+[Next steps](#next-steps) below lists the larger work.
+
+For day-to-day edits (news, conferences, awards, people) see
+[UPDATING.md](UPDATING.md).
 
 ## How to run it
 
@@ -10,226 +18,171 @@ npm run serve        # http://localhost:8080
 npm run build        # static site in _site/
 ```
 
-`npm run import` re-generates `src/content/` from the WordPress REST API.
-Downloads are cached in `migration/cache/`; pass `--refresh` to re-download.
+## The sites and repositories
 
-The site uses the design that was called C (Refined) during the review: modern
-sans text with serif headlines, a light hero band, three feature tiles and a
-news list. The other alternatives (Classic, Bold, Light modern) were dropped.
-Logo candidates are kept in a separate site and repository,
-[sigmod-org/sigmod-logo](https://github.com/sigmod-org/sigmod-logo).
+| Site | Repository | What it holds | How it is published |
+|---|---|---|---|
+| https://www.sigmod.org/ (`sigmod.org` redirects here) | [sigmod-org/www.sigmod.org](https://github.com/sigmod-org/www.sigmod.org) | The SIGMOD and PODS site (this repository) | GitHub Actions workflow, custom domain, HTTPS |
+| https://sigmod-org.github.io/archive/ | [sigmod-org/archive](https://github.com/sigmod-org/archive) | The SIGMOD Archive: DiSC (1999–2011), the SIGMOD Anthology, the DBLP DVD pages, Distinguished Profiles in Databases | GitHub Actions workflow, served under `/archive/` until it has its own domain |
+| https://mirror.sigmod.org/ | [sigmod-org/mirror.sigmod.org](https://github.com/sigmod-org/mirror.sigmod.org) | Copies of past SIGMOD/PODS conference websites | GitHub Pages from the `main` branch, custom domain |
+| https://blog.sigmod.org/ | separate | The SIGMOD Blog | separate |
+| — | [sigmod-org/sigmod-logo](https://github.com/sigmod-org/sigmod-logo) | Logo candidates | — |
 
-The menu bar (`src/_data/nav.js`):
+The old WordPress site was moved to www-old.sigmod.org for comparison during the
+migration. It is not kept: nothing on the new sites may depend on it.
+
+## The site today
+
+The site uses the design called C (Refined) during the review: a modern sans
+for text, serif headlines, a light hero band, three feature tiles and a news
+list. "Join SIGMOD" is a button at the right of the menu bar; partner logos sit
+above a shared black footer with the volunteer note and the ACM logo. PODS
+pages (`/pods-home/…`) switch to the PODS colour (`section: pods`).
+
+Menus (`src/_data/nav.js`):
 
 | Menu | Contents |
 |---|---|
 | About | About SIGMOD, Membership, Committees, Chapters, Policies, ACM Open |
-| Conferences | SIGMOD/PODS conferences, sponsored meetings, in-cooperation events, Reproducibility |
-| Awards | Grouped: SIG-level, Conference-level, Cross-conference, Retired (the same groups as the Awards page) |
-| PODS | Grouped: About, Awards, Program, Proceedings (unchanged from the old site) |
-| Publications | PACMMOD, SIGMOD Record, SIGMOD Blog |
-| History | History, Mission, Logo history, Program chairs, SIGMOD Online, Archive |
+| Conferences | SIGMOD/PODS conferences, Co-sponsored conferences, Sponsored meetings, In-cooperation events, Reproducibility |
+| Awards | All awards, Ongoing Call-for-Awards, then grouped: SIG-level, Conference-level, Cross-conference, Retired |
+| PODS | Grouped: About, Awards, Program, Proceedings |
+| Publications | PACMMOD, SIGMOD Record, SIGMOD Blog, Conference Proceedings |
+| History | History, Mission, Logo history, Conference program chairs, SIGMOD Online, Archive |
 
-"Join SIGMOD" is a button at the right of the menu bar and leads to `/join/`.
-Partner logos sit above a shared black footer with the volunteer note and the
-ACM logo.
+Size: 222 page files and 68 news items (298 built pages, 34 of them redirect
+stubs), about 60 MB.
 
-Pages edited by hand after the import carry `edited: true` in their front
-matter, and `npm run import` leaves them alone.
+Content changes since the import (all by hand, marked `edited: true`):
 
-PODS pages (`/pods-home/…`) switch to the PODS colour automatically
-(`section: pods` in the page front matter).
+- Award nominations are continuous with a February 1 cut-off, on
+  `/sigmod-awards/ongoing-awards-call/` (replacing the yearly calls).
+- The Membership, SIGMOD Online, sponsorship and in-cooperation pages were
+  rewritten or brought up to date; the sponsorship page now builds on the
+  in-cooperation page instead of repeating it.
+- SIGMOD Blog links go to https://blog.sigmod.org/.
+- The Anthology, DiSC, DBLP DVD and Distinguished Profiles pages moved to the
+  SIGMOD Archive; the pages here redirect there.
 
-## What is on the current site
+## Old addresses
 
-The WordPress REST API exposes 291 pages and 66 posts. The theme also serves
-category and author archives. The main areas are:
+Rules: **never change a permalink**; a page that moves becomes a redirect stub
+(`redirect_to:` in its front matter, rendered as a meta refresh plus a
+canonical link, which works on GitHub Pages).
 
-| Area | Pages | Notes |
-|---|---|---|
-| Awards | 147 | Spread over 3 places, see below |
-| Publications | 80 | 66 are "Distinguished Profiles" stubs that only link to a `.flv` video |
-| Conferences | 31 | 26 are per-year pages for 1974–2001 |
-| About / policies / history | 17 | |
-| PODS | 13 | Already well organised under `/pods-home/` |
-| Membership | 3 | |
-| News posts | 66 | Last 5 years: ~1–3 per year |
+| Old address | Now |
+|---|---|
+| WordPress pages and posts | Same URL on www.sigmod.org (`permalink` = old URL). 27 duplicate award posts redirect to their canonical page (`migration/duplicates.json`). |
+| `/feed/` | Redirects to `/feed.xml` |
+| `/wp-content/uploads/…` | Copied into `src/static/wp-content/` at the same paths (250 files, all linked from pages). 6 files were already missing on the old server. |
+| `/pods/opentoc/podsYYYY.html` | Copied unchanged into `src/static/pods/opentoc/` |
+| `/publications/discs/…`, `/publications/anthology/…`, `/publications/dblp/…`, `/publications/interview(s)/…` | In the SIGMOD Archive at the same path. The DiSC, Anthology and Profiles pages here redirect there; any other address under these paths is forwarded by the 404 page (`src/404.njk`). |
+| `/publications/pastconf/sigmodYYYY/…` | Forwarded by the 404 page to the same file on mirror.sigmod.org |
+| `/2012/`, `/2013/` | Gone; the conferences are at https://2012.sigmod.org/ and https://2013.sigmod.org/ |
+| `/publications/interviews/{flv,mp3}/…` (195 links, about 8.4 GB) | **Not online.** The links are kept on the archive's Profiles pages. See [Next steps](#next-steps). |
 
-142 of the 357 items have not been edited since 2016.
+Files in `src/static/` are copied to the site byte for byte and never rendered
+as templates.
 
-### Duplication
+## Link health
 
-The running list of what to merge, redirect or retire is in
-[CLEANUP.md](CLEANUP.md). A summary:
+Current state (after the November 2026 moves): no broken links within
+www.sigmod.org; 7 links to old upload images that were already missing; 39
+external links broken or not answering, mostly old conference websites,
+moved personal pages and the old ACM-hosted WordPress images. About 1,800
+external links (dblp.org, the ACM DL, DOIs) cannot be checked by a script
+because those sites block automated requests.
 
-1. **Award announcements exist up to three times**: as a news post, as a page in
-   `/sigmod-awards/people/` or `/sigmod-awards/citations/`, and as a row in
-   the award's overview table. 27 posts and pages are word-for-word copies. The
-   importer turns those into redirects to one canonical page; the list is in
-   `migration/duplicates.json`.
-2. **No consistent home for award pages.** There are 61 under
-   `/sigmod-awards/people/`, 38 under `/sigmod-awards/citations/`, and 29 at
-   the site root (everything since 2021, e.g. `/2025-sigmod-systems-award/`).
-   One recipient has the same page in two places
-   (`/jeffrey-d-ullman-2006-…` and `/sigmod-awards/people/jeffrey-d-ullman-2006/`).
-3. **Several pages exist twice.**
-   - `/publications/anthology/` and `/publications/anthologyhome/` are 89% the same.
-   - `/publications/`, `/publications/publications/` and `/publication-list/` overlap.
-   - `/sigmod-awards/sigmod-awards-acm-sigmod-official-website/` (a 20 KB old
-     overview) overlaps `/sigmod-awards/` and the per-award pages. It has been
-     removed; pages removed on purpose are listed in `migration/removed.json`.
-   - There are two dissertation-process pages (`2017-doctoral-dissertation-award`
-     and `the-sigmod-jim-gray-doctoral-dissertation-award`) plus a separate
-     call page.
-   - Two position-on-racism pages. These turned out to be different
-     statements, so both stay and are grouped under Policies.
-   - `-2` slugs: `2004-…-test-of-time-award-2` and `2006-…-test-of-time-award-2`.
-     These are two different winning papers in the same year, not duplicates.
-4. **Calls for nominations are copied every year.** The 2016–2022 calls are
-   74–92% the same text. A single standing "How to nominate" section on each
-   award page would replace them.
-5. **Empty or placeholder pages**: `/about-sigmod/sponsorship/`,
-   `/sigmod-awards/people/`, `/sigmod-awards/citations/`,
-   `/sigmod-awards/committees/`, `/software/pdf/`, `/2061-2/` (untitled), and
-   `/sigmod-awards/people/michael-carey-contributions/` ("Information missing!").
-6. **PODS information is split** between `/pods-home/…` and SIGMOD news posts
-   (`/pods-2020-best-paper-award/`, `/2020-pods-alberto-mendelzon-…`). The
-   officer lists for both communities are on `/about-sigmod/`.
-
-### Content outside WordPress (must not be lost)
-
-Pages link to static folders on the same server. These folders are not in the
-API, and directory listings are blocked (HTTP 403). The counts are in
-`migration/legacy-paths.json`:
-
-| Path | Links | Status |
-|---|---|---|
-| `/publications/dblp/db/…` | 478 | **Done**: 441 venue and book pages link to dblp.org; the DVD mirror's own 33 pages are copied (from the Wayback Machine) to the SIGMOD Archive, [sigmod-org/archive](https://github.com/sigmod-org/archive) (https://sigmod-org.github.io/archive/). |
-| `/wp-content/uploads/…` | 459 | **Done** for 447: copied into `src/static/wp-content/` at the same paths. 7 links (6 files) are still broken: they were missing on the old server too. |
-| `/publications/interviews/{pdf,photos,images}` | 230 | **Done**: moved, with the 66 Distinguished Profiles pages, to the SIGMOD Archive, [sigmod-org/archive](https://github.com/sigmod-org/archive). |
-| `/publications/interviews/{flv,mp3}` | 195 | Open, **broken** since the switch (the links are now on the archive's Profiles pages). About 8.4 GB; `.flv` does not play in browsers. Convert to MP4 and host outside git (ACM DL, YouTube or a bucket), or drop. |
-| `/pods/opentoc/podsYYYY.html` | 39 | **Done**: copied unchanged into `src/static/pods/opentoc/`. |
-| `/publications/pastconf/…`, `/2012/`, `/2013/` | 26 | **Done**: copied, with 2001 and 2011 from the Wayback Machine, to [sigmod-org/mirror.sigmod.org](https://github.com/sigmod-org/mirror.sigmod.org) (GitHub Pages); the Conferences page links there as "Local Mirror". |
-| `/publications/anthology/…` | 75 | **Done**: the contents page, images and volume 6 moved to the SIGMOD Archive, [sigmod-org/archive](https://github.com/sigmod-org/archive) (https://sigmod-org.github.io/archive/). |
-| `/publications/discs/…` | 24 | **Done**: all 13 DiSC volumes (about 42,000 files, 632 MB) copied from www-old.sigmod.org to the SIGMOD Archive, [sigmod-org/archive](https://github.com/sigmod-org/archive) (https://sigmod-org.github.io/archive/). About 1,400 files they link to were already missing on the old server. |
-| `/sigmod-pods-conferences/*.doc,pdf` | 0 | Removed from the Conferences page (the files were already gone). |
-
-Files in `src/static/` are copied to the site as they are and never rendered as
-templates, so pages like OpenTOC stay byte-for-byte the same.
-
-Since the switch, sigmod.org serves the new site and the old WordPress site is at
-www-old.sigmod.org. That copy is not kept, so no fix may depend on it; the reports
-link to it only to compare old and new pages.
-
-Every link to a sigmod.org address the new site does not serve, with a suggested fix
-for each, is in [OLD-SITE-LINKS.md](OLD-SITE-LINKS.md), and every link already
-changed is in [old-site-links-fixed.csv](old-site-links-fixed.csv). Regenerate it
-with `npm run old-links` (add `-- --check` to re-check each target on
-www.sigmod.org, or `-- --fix` to apply any new link rewrites).
-
-To check every link on every page, including external ones, run:
+To check every link, including external ones:
 
 ```
 npm run build && node scripts/scan-site-links.mjs && python3 -I scripts/check-external-links.py
 npm run old-links -- --check && python3 scripts/old-links-page.py
 ```
 
-`scan-site-links.mjs` reads the built pages (`_site/`, including the `.htm` copies) and writes `docs/site-links.json`;
-`check-external-links.py` checks the external links and writes `docs/external-links.json`;
-`old-links-page.py` combines both reports into the checklist `docs/old-site-links.html`. Old pages still copied
-as-is in `src/static` are listed in their own groups.
+| Script | Writes |
+|---|---|
+| `scan-site-links.mjs`: every link, image and script on the built site (including `.htm` copies), checked against `_site/` | `docs/site-links.json` |
+| `check-external-links.py`: checks the external links (about a minute) | `docs/external-links.json` |
+| `old-links-report.mjs` (`npm run old-links`): links to sigmod.org addresses the site does not serve, with a suggested fix; `-- --fix` applies known rewrites | `docs/OLD-SITE-LINKS.md`, `docs/old-site-links.csv` |
+| `old-links-page.py`: combines the above into a browsable checklist | `docs/old-site-links.html` |
 
-DiSC, the Anthology and the DBLP DVD pages are in the separate SIGMOD Archive repository. Their old
-addresses here (`/publications/discs/…`, `/publications/anthology/…`, `/publications/dblp/…`) are forwarded
-to the same path there by the 404 page, and the DiSC and Anthology pages redirect there.
+Links already rewritten during the migration are listed in
+`docs/old-site-links-fixed.csv`.
 
-## Proposed structure
+## Hosting
 
-The rule is to **keep every existing URL**. Each page either stays where it is
-or becomes a redirect stub (meta refresh plus `rel=canonical`, which works on
-GitHub Pages). The site is reorganised through navigation and data, not by
-renaming paths.
-
-```
-/                      Umbrella home: SIGMOD | PODS | next joint conference | news
-├─ SIGMOD space        (blue)
-│  ├─ About            /about-sigmod/ (officers, EC), mission, history, logo, policies, DBCares, ACM Open
-│  ├─ Conferences      /conferences/ (generated from data), program chairs, sponsored + in-cooperation, distinguished AEs/PCs
-│  ├─ Awards           /sigmod-awards/<award>/  ← one page per award, generated from data
-│  │                   recipient citation pages stay at their current URLs
-│  ├─ Publications     PACMMOD, Record, Blog (external), profiles, video series, anthology, software archive
-│  └─ Community        membership, students, chapters, news
-├─ PODS space          (own colour + menu), everything under /pods-home/
-│  ├─ About            home, hall of fame, organization & PCs, technical section
-│  ├─ Awards           best paper, Mendelzon test-of-time
-│  ├─ Program          keynotes, tutorials, gems
-│  └─ Proceedings      OpenTOC, corrigenda, 30th anniversary
-└─ Shared              /conferences/, /news/, /feed.xml
-```
-
-The navigation is defined in `src/_data/nav.js`. Every link in it points to an
-existing URL.
-
-### Recommended consolidations (next phase)
-
-1. **Awards as data.** Add `src/_data/awards/<award>.yml` with rows of
-   `{year, recipients, title, citation_url, image}`. The award overview
-   tables, the home-page highlights and the yearly "SIGMOD Awards" news post
-   are all generated from it, so editors update one file. Recipient citation
-   pages stay at their current URLs.
-2. **Conferences as data.** Done in the prototype: `src/_data/conferences.json`
-   is parsed from the old table, and the homepages read from it.
-   Next, render `/conferences/` from it too. Fold the 26 year pages
-   (1974–2001) into it as anchors and turn the pages into redirects.
-3. **Officers as data** (`people.yml`). `/about-sigmod/`, the PODS
-   organization page and the footer read from it, so there is one place to
-   update after elections.
-4. **Profiles.** Replace the 66 one-line stubs with one generated gallery
-   page. Keep each old URL as a redirect to its anchor.
-5. **Merge the duplicate pages listed above.** In each pair, one page keeps
-   its URL and the other becomes a redirect.
-6. **News stays as posts** at their old root URLs. Keep short announcements
-   only. Award details live on the award pages.
-
-## Hosting on GitHub Pages
-
-### Current setup
-
-`.github/workflows/pages.yml` runs on every push to `main`. It builds the site
-with `PATH_PREFIX` set to `/` and publishes `_site/` at https://www.sigmod.org/
-(repository `sigmod-org/www.sigmod.org`, custom domain, HTTPS enforced).
-`sigmod.org` redirects to `www.sigmod.org`. The past conference copies are at
-https://mirror.sigmod.org/ (repository `sigmod-org/mirror.sigmod.org`).
-
-The old WordPress server no longer answers on `sigmod.org`. Old addresses of
-the conference copies (`/publications/pastconf/sigmodYYYY/…`) are sent on to
-the same file on mirror.sigmod.org by the 404 page. SIGMOD/PODS 2012 and 2013
-are at https://2012.sigmod.org/ and https://2013.sigmod.org/.
-
-### Production
-
-- Build with Eleventy in a GitHub Action and deploy to Pages. Point
-  `sigmod.org` to it with a `CNAME`.
-- WordPress-generated URLs that need stubs or redirects: `/feed/` (done),
-  `/category/…`, `/author/…`, `/page/N/`, and `/wp-sitemap*.xml`.
-- GitHub Pages cannot do server-side 301s. Meta-refresh stubs with canonical
-  links are the standard workaround. If true 301s matter, put Cloudflare in
+- Each push to `main` builds the site (`.github/workflows/pages.yml`,
+  `PATH_PREFIX=/`) and deploys `_site/` to GitHub Pages.
+- GitHub caps the deploy step at 10 minutes. If GitHub's file sync is slow and
+  the step times out, re-run the failed job (`gh run rerun <id> --failed`); the
+  build does not need to run again. Avoid pushing to www and the archive at the
+  same time.
+- A published Pages site may be at most 1 GB. www.sigmod.org is about 60 MB,
+  the archive about 720 MB, the mirror about 600 MB. Large media must stay out
+  of git.
+- GitHub Pages cannot send server-side 301 redirects; the redirect stubs use a
+  meta refresh with a canonical link. If true 301s matter, put Cloudflare in
   front.
-- Subdomains (`2027.sigmod.org`, `blog.sigmod.org`, `reproducibility.sigmod.org`)
-  are separate DNS records and are not affected.
-- Keep large media (interviews, video) out of git: use Git LFS or an external
-  host.
+
+## The WordPress importer (retired)
+
+`scripts/import-wp.mjs` (`npm run import`) generated `src/content/` from the
+WordPress REST API, caching downloads in `migration/cache/`. It reads from
+`https://sigmod.org`, which now serves this site, so it no longer works as is,
+and every page edited since has `edited: true`, which the importer skips.
+Treat `src/content/` as the source of truth. The import records stay in
+`migration/` (`url-inventory.tsv`, `duplicates.json`, `legacy-paths.json`,
+`removed.json`).
+
+## Next steps
+
+Roughly in order of value.
+
+1. **Profiles media.** The 66 Distinguished Profiles videos and audio files
+   (about 8.4 GB, `.flv` and `.mp3`) are not online. Convert the videos to MP4
+   and host them outside git (ACM Digital Library, YouTube, or a storage
+   bucket), then update the links on the archive's Profiles pages; or drop the
+   links and keep the transcripts.
+2. **Content cleanup.** Work through [CLEANUP.md](CLEANUP.md): merge the three
+   Publications pages and the Jim Gray dissertation pages, redirect the empty
+   parent pages, fill in or redirect the "Information missing!" page.
+3. **Broken external links.** Decide case by case (see `docs/old-site-links.html`):
+   replace old conference websites with their mirror.sigmod.org copies or
+   Wayback copies, update moved personal pages, drop dead ones (pubzone.org).
+4. **Awards as data.** Add `src/_data/awards/<award>.yml` with rows of
+   `{year, recipients, title, citation_url, image}` and generate the award
+   tables, the yearly news summary and the home-page highlights from it, so a
+   new award year is one edit. New recipient pages would go under
+   `/sigmod-awards/<award>/<year>/`; existing URLs stay.
+5. **People as data.** A `src/_data/people.yml` for officers, the executive
+   committee and award committees, read by `/about-sigmod/`, the Committees
+   page and the PODS organization page, so elections are one edit.
+6. **Conferences page from data.** Render `/conferences/` from
+   `src/_data/conferences.json` (the home page already reads it) and fold the
+   26 year pages (1974–2001) into it as anchors.
+7. **A link check in CI.** Run `scan-site-links.mjs` on every push and fail
+   the build on broken internal links; run the external check monthly.
+8. **The SIGMOD Archive's own domain.** Once DNS is set, serve the archive at
+   `archive.sigmod.org` (steps in its README) and update the forwarding in
+   `src/404.njk`.
+9. **Search.** A static search index (for example Pagefind) over the main site.
+10. **Retire www-old.sigmod.org** once the remaining comparisons are done.
+
+Community items tracked in the [README](../README.md): a competition for a new
+SIGMOD logo, and a fresh look at the mission statement.
 
 ## Repository layout
 
 ```
-src/content/pages/**/index.md   one file per WP page (permalink = old URL)
-src/content/news/*.md           WP posts
-src/_data/                      site, nav (IA), conferences
+src/content/pages/**/index.md   one file per page (permalink = URL)
+src/content/news/*.md           news items (tags: ["news"])
+src/_data/                      site.js (title, partners), nav.js (menus), conferences.json
 src/_includes/                  layouts (base, home, page) and shared partials
 src/assets/                     site.css, content.css, footer.css
-scripts/import-wp.mjs           WordPress → Markdown importer
-scripts/old-links-report.mjs    broken links to sigmod.org → docs/OLD-SITE-LINKS.md
-scripts/scan-site-links.mjs     every link on the built site → docs/site-links.json
-migration/                      url-inventory.tsv, duplicates.json, legacy-paths.json
+src/static/                     files copied as-is (uploads, OpenTOC, logos, favicon)
+src/404.njk                     not-found page that forwards moved addresses
+scripts/                        link checks and reports (see Link health), the retired importer
+migration/                      records from the WordPress import
+docs/                           this file, UPDATING.md, CLEANUP.md, link reports
 ```

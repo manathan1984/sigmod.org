@@ -1,17 +1,21 @@
-// Lists every link that still points at the old sigmod.org server and suggests a fix.
+// Lists every link to a sigmod.org address that www.sigmod.org no longer serves, and suggests a fix.
 //
 //   npm run old-links                  # build, then report (uses cached checks)
-//   npm run old-links -- --check       # also (re)checks the old server
-//   npm run old-links -- --fix         # applies every "easy" fix, then reports again
+//   npm run old-links -- --check       # also (re)checks each target on www.sigmod.org
+//   npm run old-links -- --fix         # applies every "easy" fix (link rewrites), then reports again
+//
+// sigmod.org now serves the new site (it redirects to www.sigmod.org); the old WordPress site
+// moved to www-old.sigmod.org. The report links each page's old version there only so the two
+// can be compared. Fixes must not depend on www-old.sigmod.org: it is not kept.
 //
 // A link counts as "old" when it is absolute to sigmod.org, www.sigmod.org or the
 // WordPress hosts behind it (sigmod.hosting.acm.org, sigmod.hosting2.acm.org), or
-// root-relative to a path the new site does not build. Once sigmod.org points at the
-// new site, https://sigmod.org/X only works if the new site serves X.
+// root-relative to a path the new site does not build: https://sigmod.org/X only works if
+// the new site serves X.
 //
 // Writes docs/OLD-SITE-LINKS.md (by group) and docs/old-site-links.csv (every link).
-// --fix downloads files from sigmod.org into src/static/ at the same path, rewrites the
-// links, and appends each change to docs/old-site-links-fixed.csv.
+// --fix rewrites the links that have a known new target and appends each change to
+// docs/old-site-links-fixed.csv. (It used to copy files from the old server; it no longer does.)
 // Results of --check are cached in migration/cache/old-links-status.json.
 
 import fs from "node:fs";
@@ -23,7 +27,7 @@ const SRC = path.join(ROOT, "src");
 const SITE = path.join(ROOT, "_site");
 const CACHE = path.join(ROOT, "migration/cache/old-links-status.json");
 const FIXED = path.join(ROOT, "docs/old-site-links-fixed.csv");
-const OLD_SITE = "https://sigmod.org";
+const OLD_SITE = "https://www-old.sigmod.org"; // the old WordPress site, for comparing pages only
 const NEW_SITE = process.env.NEW_SITE || "https://www.sigmod.org";
 const check = process.argv.includes("--check");
 const fix = process.argv.includes("--fix");
@@ -125,14 +129,12 @@ const NEW = {
   "/freepublic-domain-software/free-public-domain-software-1/sigmod-freedb-letter.pdf": "/wp-content/uploads/2015/07/sigmod-freedb-letter.pdf",
 };
 
-// ---------- check the old server (status and size) ----------
+// ---------- check each target on www.sigmod.org ----------
 
 const cache = fs.existsSync(CACHE) ? JSON.parse(fs.readFileSync(CACHE, "utf8")) : {};
-// The WordPress hosts no longer resolve; their uploads are checked where sigmod.org serves them.
-const oldUrl = (l) => {
-  const p = (NEW[l.clean]?.startsWith("/wp-content/") ? NEW[l.clean] : l.path).split("#")[0];
-  return (l.host === "sigmod.org" || p.startsWith("/wp-content/") ? "https://sigmod.org" : `https://${l.host}`) + encodeURI(safeDecode(p));
-};
+// Links to sigmod.org are checked where they land today, on www.sigmod.org. The WordPress hosts
+// (sigmod.hosting*.acm.org) no longer resolve.
+const oldUrl = (l) => (l.host === "sigmod.org" ? NEW_SITE : `https://${l.host}`) + encodeURI(safeDecode(l.path.split("#")[0]));
 
 async function probe(url) {
   try {
@@ -161,7 +163,7 @@ async function pool(items, fn) {
 }
 if (check) {
   const todo = [...new Set(links.map(oldUrl))].filter((u) => !cache[u]);
-  console.log(`checking ${todo.length} URLs on the old server…`);
+  console.log(`checking ${todo.length} URLs on www.sigmod.org…`);
   await pool(todo, async (u) => { cache[u] = await probe(u); });
   for (const u of [...new Set(links.filter((l) => MANGLED.test(l.clean)).map(external))]) {
     cache[u] = await probe(u);
@@ -170,8 +172,9 @@ if (check) {
   fs.mkdirSync(path.dirname(CACHE), { recursive: true });
   fs.writeFileSync(CACHE, JSON.stringify(cache, null, 1));
 }
-const live = (l) => { const c = cache[oldUrl(l)]; return c ? (c.status >= 200 && c.status < 300 ? "live" : `dead (${c.status || c.error})`) : "not checked"; };
-const sizeOf = (l) => cache[oldUrl(l)]?.size || 0;
+const live = (l) => { const c = cache[oldUrl(l)]; return c ? (c.status >= 200 && c.status < 300 ? "live" : `broken (${c.status || c.error})`) : "not checked"; };
+// Sizes were measured on the old server before the switch; those entries stay in the cache.
+const sizeOf = (l) => cache[oldUrl(l)]?.size || cache["https://sigmod.org" + encodeURI(safeDecode(l.path.split("#")[0]))]?.size || 0;
 
 const mediaSize = (re) => [...new Map(links.filter((l) => /^\/publications\/interviews\//.test(l.clean) && re.test(l.clean)).map((l) => [l.clean, l])).values()].reduce((s, l) => s + sizeOf(l), 0);
 const mb = (b) => b >= 1e9 ? `${(b / 1073741824).toFixed(1)} GB` : b >= 1e6 ? `${(b / 1048576).toFixed(1)} MB` : b ? `${Math.max(1, Math.round(b / 1024))} KB` : "";
@@ -193,7 +196,7 @@ const GROUPS = [
     fix: (l) => {
       if (NEW[l.clean]) return [`Link to ${NEW[l.clean]}.`, NEW[l.clean], "easy"];
       const rest = l.clean.replace(/^\/publications\/sigmod-?record\//i, "").replace(/^issues\//, "");
-      if (rest === "databaseSoftware/chronolog.txt") return ["Not on sigmodrecord.org. Copy the file from the old server into the repo at the same path, or drop the link.", "", "decide"];
+      if (rest === "databaseSoftware/chronolog.txt") return ["Not on sigmodrecord.org. Find another copy (e.g. web.archive.org) or drop the link.", "", "decide"];
       const to = "https://sigmodrecord.org/publications/sigmodRecord/" + rest;
       return [`The same file is on the SIGMOD Record site: ${to}`, to, "easy"];
     } },
@@ -208,23 +211,21 @@ const GROUPS = [
       return ["Page of the old DBLP DVD mirror (about, systems or the mirror's index); dblp.org has no copy. Link https://dblp.org/ instead, or drop the link.", "https://dblp.org/", "decide"];
     } },
   { id: "uploads", title: "WordPress uploads (images, PDFs)", test: (l) => /^\/wp-content\//.test(l.clean) || NEW[l.clean]?.startsWith("/wp-content/"),
-    fix: (l) => { const to = NEW[l.clean] || l.clean; return live(l) === "live" || NEW[l.clean]
-      ? [`Copy the file into src/static${to} and link ${to}.${l.host === "sigmod.org" ? " The old address keeps working." : " (This link is to a WordPress host that no longer exists, so it is broken today; the file is still on sigmod.org.)"}`, to, "easy"]
-      : ["Missing on the old server too. Find the file elsewhere (e.g. web.archive.org) or remove the link.", "", "decide"]; } },
+    fix: (l) => ["The file is not on www.sigmod.org" + (l.host === "sigmod.org" ? "" : ", and the WordPress host in the link no longer exists") + ". Find a copy (e.g. web.archive.org) and add it to the repo, or remove the link.", "", "decide"] },
   { id: "opentoc", title: "PODS OpenTOC pages", test: (l) => /^\/pods\/opentoc\//.test(l.clean),
-    fix: (l) => [`Copy the page into src/static${l.clean} unchanged (OpenTOC pages carry ACM's free-access links) and link ${l.clean}.`, l.clean, "easy"] },
+    fix: (l) => ["OpenTOC page not on www.sigmod.org. Link the proceedings' OpenTOC page on ACM's site instead, or drop the link.", "", "decide"] },
   { id: "interviews-small", title: "Distinguished Profiles: photos and PDF transcripts", test: (l) => /^\/publications\/interviews\/(pdf|photos|images)\//.test(l.clean),
-    fix: (l) => [`Copy the file into src/static${l.clean} and link ${l.clean}.`, l.clean, "easy"] },
+    fix: (l) => ["File not on www.sigmod.org. Find a copy and add it to the repo, or drop the link.", "", "decide"] },
   { id: "interviews-media", title: "Distinguished Profiles: video (.flv) and audio (.mp3)", test: (l) => /^\/publications\/interviews\//.test(l.clean),
     fix: (l) => [/\.flv$/i.test(l.clean)
-      ? `Too large for git (${mb(mediaSize(/\.flv$/i))} of Flash video, which browsers no longer play). Convert to MP4 and host outside the repo (YouTube, ACM DL, or a storage bucket), then link there.`
-      : `Too large for git together (${mb(mediaSize(/\.mp3$/i))} of audio). Host outside the repo with the videos, or with Git LFS, then link there.`, "", "decide"] },
+      ? `Not on www.sigmod.org. ${mb(mediaSize(/\.flv$/i))} of Flash video in all, which browsers no longer play and which is too large for git: convert to MP4 and host it outside the repo (YouTube, ACM DL or a storage bucket), or drop the link.`
+      : `Not on www.sigmod.org. ${mb(mediaSize(/\.mp3$/i))} of audio in all: host it with the videos, or with Git LFS, or drop the link.`, "", "decide"] },
   { id: "anthology", title: "SIGMOD Anthology", test: (l) => /^\/publications\/(anthologyhome\/publications\/)?anthology\//.test(l.clean),
-    fix: (l) => { const p = l.clean.replace(/^\/publications\/anthologyhome\/publications\//, "/publications/"); return [`Small static pages (under 1 MB), but they link on to CD images that are not listed here. Ask for a full copy of /publications/anthology/ from the server and add it as src/static${p}, or drop the Anthology.`, p, "decide"]; } },
+    fix: (l) => { const p = l.clean.replace(/^\/publications\/anthologyhome\/publications\//, "/publications/"); return [`Not on www.sigmod.org. Small static pages (under 1 MB) that link on to CD images. Add a copy to the repo as src/static${p} (from a copy of the Anthology, or web.archive.org), link a web.archive.org copy, or drop the link.`, "", "decide"]; } },
   { id: "discs", title: "DiSC (Digital Symposium Collection)", test: (l) => /^\/publications\/discs/.test(l.clean),
-    fix: (l) => [`Static pages under 0.1 MB that link on to the collections. Get a full copy of /publications/discs/ from the server and add it as src/static${l.clean}, or point to the ACM DL proceedings instead.`, l.clean, "decide"] },
+    fix: (l) => [`Not on www.sigmod.org. Static pages under 0.1 MB that link on to the collections. Add a copy to the repo as src/static${l.clean}, point to the ACM DL proceedings, or drop the link.`, "", "decide"] },
   { id: "pastconf", title: "Local mirrors of past conference websites", test: (l) => /^\/publications\/pastconf\//.test(l.clean) || /^\/201[23]\/$/.test(l.clean),
-    fix: (l) => ["Old conference sites hosted on sigmod.org. Either get a full copy from the server and keep it at the same path, or link to a web.archive.org copy instead.", "", "decide"] },
+    fix: (l) => ["Old conference copy: link its copy on https://mirror.sigmod.org/ instead.", "", "decide"] },
   { id: "old-awards", title: "Old awards website (already broken)", test: (l) => /^\/sigmod-awards\/sigmod-awards-acm-sigmod-official-website\//.test(l.clean),
     fix: () => ["Already broken on the old site. This page duplicates /sigmod-awards/ and the award pages; retire it as a redirect to /sigmod-awards/ (see CLEANUP.md).", "/sigmod-awards/", "decide"] },
   { id: "logo", title: "Logo renderings (already broken)", test: (l) => /^\/about-sigmod\/sigmod-logo-renderings\//.test(l.clean),
@@ -243,7 +244,7 @@ for (const l of links) {
 
 // ---------- apply the easy fixes (--fix) ----------
 
-const COPY = ["uploads", "opentoc", "interviews-small"];
+const COPY = []; // groups whose files --fix used to copy from the old server; none any more
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const csv = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
 if (fix) {
@@ -293,9 +294,9 @@ function today() { return new Date().toISOString().slice(0, 10); }
 
 // ---------- write the report ----------
 
-// groups fixed by one rule, and groups where the old server's status does not matter
+// groups fixed by one rule, and groups where the status on www.sigmod.org does not matter
 // What is left to do in a group once its easy links are fixed
-const LEFT = { mangled: "Drop, or find a copy", record: "Copy from server, or drop", dblp: "Link dblp.org's home, or drop", uploads: "Find a copy, or drop" };
+const LEFT = { mangled: "Drop, or find a copy", record: "Find a copy, or drop", dblp: "Link dblp.org's home, or drop", uploads: "Find a copy, or drop" };
 const DONE = {
   rewrite: "Pointed at the page's address on the new site.",
   mangled: "Restored the external address, or its web.archive.org copy where the file is gone.",
@@ -303,10 +304,10 @@ const DONE = {
   dblp: "Pointed at the same venue or book page on dblp.org.",
   uploads: "Copied the file from sigmod.org into src/static/wp-content/ and linked it there.",
   opentoc: "Copied the OpenTOC page into src/static/pods/opentoc/ unchanged and linked it there.",
-  "interviews-small": "Copied the photo or PDF into src/static/publications/interviews/ and linked it there.",
+  "interviews-small": "Copied the photo or PDF into the repo; since November 2026 they are in the SIGMOD Archive with the Profiles pages.",
 };
 const RULE = ["dblp", "uploads", "opentoc", "interviews-small", "interviews-media", "old-awards", "logo"];
-const NA = ["feed", "rewrite", "mangled", "dblp", "record"];
+const NA = ["feed"];
 
 const esc = (s) => String(s).replace(/\|/g, "\\|");
 const pagesOf = (ls) => [...new Set(ls.map((l) => l.file))];
@@ -315,22 +316,24 @@ const SHOWN_ON = { "src/_data/conferences.json": "/" };
 const permalinkOf = (file) => links.find((l) => l.file === file && l.page)?.page || SHOWN_ON[file] || "";
 const short = (file) => file.replace("src/content/", "").replace(/\/index\.md$/, "");
 const sourceLink = (file, line) => `[${short(file)}](../${file}${line ? `#L${line}` : ""})`;
-const siteLinks = (file) => { const p = permalinkOf(file); return p ? `[current](${OLD_SITE}${p}) · [new](${NEW_SITE}${p})` : "—"; };
+const siteLinks = (file) => { const p = permalinkOf(file); return p ? `[old](${OLD_SITE}${p}) · [new](${NEW_SITE}${p})` : "—"; };
 const uniq = (ls) => [...new Map(ls.map((l) => [l.clean, l])).values()];
 const checkedAt = fs.existsSync(CACHE) ? fs.statSync(CACHE).mtime.toISOString().slice(0, 10) : "never";
 
 const rows = GROUPS.map((g) => ({ g, ls: links.filter((l) => l.group === g.id) })).filter((r) => r.ls.length);
 const out = [];
-out.push(`# Links to the old sigmod.org
+out.push(`# Broken links to sigmod.org
 
-Generated by \`node scripts/old-links-report.mjs\` on ${today()} (old server last checked ${checkedAt}).
+Generated by \`node scripts/old-links-report.mjs\` on ${today()} (targets last checked on www.sigmod.org ${checkedAt}).
 Do not edit by hand: fix the pages, then run the script again. Every single link, with its
 file, line and suggested new target, is in [old-site-links.csv](old-site-links.csv).
 
-**Why this matters.** When sigmod.org is switched to the new site, \`https://sigmod.org/X\` keeps
-working only if the new site serves \`X\`. Each old link therefore needs one of two fixes:
-bring the file into the new site **at the same path** (best: links from other websites keep
-working too), or point the link somewhere else.
+**Why these are broken.** sigmod.org now serves the new site (it redirects to www.sigmod.org),
+so \`https://sigmod.org/X\` works only if the new site serves \`X\`. The old WordPress site moved
+to www-old.sigmod.org; the report links each page's old version there (*old*) only so the two can
+be compared. Fixes must not depend on www-old.sigmod.org. Each broken link needs one of: add the
+file to the new site **at the same path** (links from other websites then work too), point the
+link somewhere else, or drop it.
 
 **Scope.** Links in \`src/\` that are absolute to \`sigmod.org\`, \`www.sigmod.org\`,
 \`sigmod.hosting.acm.org\` or \`sigmod.hosting2.acm.org\` (the WordPress servers behind it), or
@@ -344,7 +347,7 @@ choose (hosting, keep or drop, or the content is already gone).
 
 ${links.length} links on ${pagesOf(links).length} pages, ${uniq(links).length} distinct targets.
 
-| Group | Links | Pages | Distinct targets | On the old server today | Size | Fix | Class |
+| Group | Links | Pages | Distinct targets | On www.sigmod.org today | Size | Fix | Class |
 |---|--:|--:|--:|---|--:|---|---|`);
 for (const { g, ls } of rows) {
   const u = uniq(ls);
@@ -359,8 +362,8 @@ function summaryFix(g, ls) {
   return {
     feed: "Keep", rewrite: "Link to the new page", mangled: "Restore the external URL", record: "Link to sigmodrecord.org",
     dblp: "Link to dblp.org", uploads: "Copy files into the repo", opentoc: "Copy pages into the repo",
-    "interviews-small": "Copy files into the repo", "interviews-media": "Host outside git", anthology: "Copy from server, or drop",
-    discs: "Copy from server, or drop", pastconf: "Copy from server, or link web.archive.org", "old-awards": "Retire the page",
+    "interviews-small": "Copy files into the repo", "interviews-media": "Host outside git", anthology: "Add a copy, link web.archive.org, or drop",
+    discs: "Add a copy, link the ACM DL, or drop", pastconf: "Link mirror.sigmod.org", "old-awards": "Retire the page",
     logo: "Replace with current files", other: "Find a page, or drop",
   }[g.id];
 }
@@ -374,13 +377,13 @@ out.push(`
 ${fixedSection()}
 ## Remaining work: decisions needed
 
-1. **Distinguished Profiles media** (${links.filter((l) => l.group === "interviews-media").length} links, ${mb(mediaSize(/./))}): where to host the videos and audio. The .flv files need converting to MP4 to play in browsers at all.
-2. **Server copies**: someone with access to the old server sends a copy of \`/publications/anthology/\` and \`/publications/discs/\` (the past conference sites are already copied to [sigmod-org/mirror.sigmod.org](https://github.com/sigmod-org/mirror.sigmod.org)). The linked pages are small, but they link on to content that cannot be crawled (directory listings return 403). Alternatively, link to web.archive.org copies.
+1. **Distinguished Profiles media** (195 links, about 8.4 GB): the Profiles pages moved to the [SIGMOD Archive](https://sigmod-org.github.io/archive/publications/interview/), and their video and audio links went with them. Decide where to host the files (the .flv videos need converting to MP4), or drop the links.
+2. **Anthology, DiSC and DBLP DVD pages**: done. Copies are in the [SIGMOD Archive](https://sigmod-org.github.io/archive/) at the same paths, and the 404 page forwards their old addresses there. (The past conference sites are at [mirror.sigmod.org](https://mirror.sigmod.org/).)
 3. **Retired pages**: the old awards overview page (113 dead links) was removed (see migration/removed.json), and the logo renderings page (44 dead links) now redirects to the logo usage guidelines on /sigmod-history/sigmod-logo-history/.
-4. **Small leftovers** (${count("dblp") + count("mangled") + count("uploads") + count("record") + count("other")} links): DBLP DVD mirror pages with no dblp.org copy, PODS tutorial files that are gone from their hosts and from web.archive.org, uploads missing on the old server too, one SIGMOD Record text file, and the lost SIGMOD/PODS workshops page. Each is listed below; most can simply be dropped.
+4. **Small leftovers** (${count("dblp") + count("mangled") + count("uploads") + count("record") + count("other")} links): DBLP DVD mirror pages with no dblp.org copy, PODS tutorial files that are gone from their hosts and from web.archive.org, uploads that are not in the repo, one SIGMOD Record text file, and the lost SIGMOD/PODS workshops page. Each is listed below; most can simply be dropped.
 
 Everything still open is listed below, group by group. For each broken link the table names the source
-file and links the page on the current site and on the new site (${NEW_SITE}), so you can compare them.
+file and links the page on the old site (www-old.sigmod.org, for comparison only) and on the new site (${NEW_SITE}).
 
 ## Groups
 `);
@@ -395,13 +398,13 @@ function fixedSection() {
 
 ${rows.length} links on ${new Set(rows.map((r) => r[1])).size} source files were fixed by \`npm run old-links -- --fix\` (${[...new Set(rows.map((r) => r[0]))].join(", ")}).
 Every change (file, line, old link, new link) is in [old-site-links-fixed.csv](old-site-links-fixed.csv).
-${copied} files were copied from sigmod.org into \`src/static/\` at their old paths, so the old addresses keep working after the switch.
+${copied} files were copied from sigmod.org into \`src/static/\` at their old paths, so those old addresses still work on www.sigmod.org. (The Anthology, DiSC, DBLP DVD and Distinguished Profiles copies are in the SIGMOD Archive.)
 
 | Group | Links fixed | What was done |
 |---|--:|---|
 ${Object.entries(by).map(([g, rs]) => `| ${title[g] || g} | ${rs.length} | ${DONE[g] || ""} |`).join("\n")}
 
-**Check by hand:** dblp.org answers scripts with a bot check, so the ${(by.dblp || []).length} DBLP links could not be verified automatically. Open a few from the [Anthology page](${NEW_SITE}/publications/anthologyhome/).
+**Check by hand:** dblp.org answers scripts with a bot check, so the ${(by.dblp || []).length} DBLP links could not be verified automatically. Open a few from the [Anthology page](https://sigmod-org.github.io/archive/publications/anthology/) in the SIGMOD Archive.
 `;
 }
 function walkIf(d) { return fs.existsSync(d) ? walk(d) : []; }
@@ -413,13 +416,13 @@ for (const { g, ls } of rows) {
   out.push(`${ls.length} links, ${u.length} distinct, on ${pagesOf(ls).length} page${pagesOf(ls).length > 1 ? "s" : ""}. Class: **${[...new Set(ls.map((l) => l.difficulty))].map((d) => d === "easy" ? "Easy" : "Decide").join(" / ")}**.\n`);
   if (RULE.includes(g.id) && u.length > 25) {
     out.push(`Suggested fix: ${sample.fix}\n`);
-    out.push("| Source file | Page (current · new site) | Links |\n|---|---|--:|");
+    out.push("| Source file | Page (old · new site) | Links |\n|---|---|--:|");
     const byFile = Object.entries(Object.groupBy(ls, (l) => l.file)).sort((a, b) => b[1].length - a[1].length);
     for (const [f, fl] of byFile.slice(0, 40)) out.push(`| ${sourceLink(f)} | ${siteLinks(f)} | ${fl.length} |`);
     if (byFile.length > 40) out.push(`| …and ${byFile.length - 40} more pages (see the CSV) | | ${byFile.slice(40).reduce((s, [, fl]) => s + fl.length, 0)} |`);
     out.push("");
   } else {
-    out.push("| Old link | Found in (source · current page · new page) | Old server | Suggested fix | Class |\n|---|---|---|---|---|");
+    out.push("| Link | Found in (source · old page · new page) | On www.sigmod.org | Suggested fix | Class |\n|---|---|---|---|---|");
     for (const l of u) {
       const where = pagesOf(ls.filter((x) => x.clean === l.clean)).map((f) => `${sourceLink(f, ls.find((x) => x.file === f && x.clean === l.clean).line)} · ${siteLinks(f)}`);
       out.push(`| \`${esc(l.clean)}\` | ${where.slice(0, 3).join("<br>")}${where.length > 3 ? `<br>+${where.length - 3} more` : ""} | ${NA.includes(g.id) ? "n/a" : l.old} | ${esc(l.fix)} | ${l.difficulty === "easy" ? "Easy" : "Decide"} |`);
@@ -430,6 +433,6 @@ for (const { g, ls } of rows) {
 fs.writeFileSync(path.join(ROOT, "docs/OLD-SITE-LINKS.md"), out.join("\n"));
 
 fs.writeFileSync(path.join(ROOT, "docs/old-site-links.csv"),
-  ["file,line,page,old_link,group,old_server,class,suggested_new_link,suggested_fix",
+  ["file,line,page,old_link,group,on_www,class,suggested_new_link,suggested_fix",
     ...links.map((l) => [l.file, l.line, l.page, l.url, l.group, l.old, l.difficulty, l.to, l.fix].map(csv).join(","))].join("\n") + "\n");
 console.log(`${links.length} links → docs/OLD-SITE-LINKS.md, docs/old-site-links.csv`);

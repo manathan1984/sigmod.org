@@ -3,6 +3,14 @@
 This is the running list of pages that are duplicated, overlapping, empty or
 outdated. Update the **Status** column as decisions are made.
 
+**Where things stand (November 2026):** the exact duplicates (§1) are handled; the
+Anthology, DiSC and Distinguished Profiles pages moved to the
+[SIGMOD Archive](https://sigmod-org.github.io/archive/) (§2, §5); the yearly calls for nominations were replaced
+by the Ongoing Call-for-Awards page (§2); the Membership page was reviewed (§5).
+Still open, in suggested order: the three Publications pages and the
+dissertation pages (§2), the empty parent pages (§3), and the award data files
+(§4, §6). Larger plans are in [MIGRATION.md](MIGRATION.md#next-steps).
+
 Rules:
 
 - **Never break a URL.** "Remove" means the page becomes a redirect stub
@@ -65,9 +73,9 @@ into the kept page by hand, then redirect the other one.
 
 | Pages | What's going on | Proposal | Status |
 |---|---|---|---|
-| `/publications/anthology/` · `/publications/anthologyhome/` | 89% the same text. `anthologyhome` was edited later (2019). | Keep `/publications/anthology/` and fold in the 2019 edits. Redirect `anthologyhome`. | proposed |
-| `/publications/` · `/publications/publications/` · `/publication-list/` | Three "Publications" pages. `/publications/` has dead `portal.acm.org` links. `/publication-list/` is the current short list. `/publications/publications/` is what the menu links to. | Keep `/publications/publications/` as the hub and merge the `/publication-list/` items into it. Redirect the other two. | proposed |
-| `/publications/` · `/archive/` | Both list the old archives (DiSC, Anthology, software). | Make `/archive/` an "Archive" section on the publications hub, then redirect it. | decide |
+| `/publications/anthology/` · `/publications/anthologyhome/` | 89% the same text. `anthologyhome` was edited later (2019). | The Anthology moved to the SIGMOD Archive with the `anthologyhome` tables (the better version); both URLs redirect to https://sigmod-org.github.io/archive/publications/anthology/. | done |
+| `/publications/` · `/publications/publications/` · `/publication-list/` | Three "Publications" pages. `/publications/` has dead links (`portal.acm.org`, pubzone.org, the Michigan digital review). `/publication-list/` is the current short list. `/publications/publications/` is what the menu links to. | Keep `/publications/publications/` as the hub and merge the `/publication-list/` items into it. Redirect the other two. | proposed |
+| `/publications/` · `/archive/` | Both list the old archives (DiSC, Anthology, Profiles). | `/archive/` (History › Archive) now links to the SIGMOD Archive. Keep it; drop the archive list from `/publications/` when the Publications pages are merged. | proposed |
 | `/sigmod-awards/` · `/sigmod-awards/sigmod-awards-acm-sigmod-official-website/` | The second page is a 20 KB old all-awards overview, copied from the pre-2015 site. Its relative links are broken. | Removed entirely (no redirect). Listed in `migration/removed.json` so the importer does not bring it back. | done |
 | `/sigmod-awards/sigmod-jim-gray-doctoral-dissertation-award/` · `/sigmod-awards/doctoral-dissertation-award/` · `/sigmod-awards/2017-doctoral-dissertation-award/` · `/sigmod-awards/the-sigmod-jim-gray-doctoral-dissertation-award/` | 4 pages: the award page, the current call, and process descriptions from 2015 and 2017 (59–75% the same). | One award page with sections for "How to nominate" and "Process". Redirect the 2015 and 2017 process pages. Keep the call as a section or a stub. | proposed |
 | `/sigmod-awards/sigmod-undergraduate-award/` | 82% of its text is also in the old overview page above. Last edited 2017. | Merged with the Student Research Competition into `/sigmod-history/past-awards/student-research-and-undergraduate/` under History › Past awards; both old URLs redirect there. | done |
@@ -75,7 +83,7 @@ into the kept page by hand, then redirect the other one.
 | `/sigmod-awards/people/laura-haas/` · `/laura-haas-contributions/` · `/michael-carey/` · `/michael-carey-contributions/` · `/surajit-chaudhuri/` · `/surajit-chaudhuri-innovations/` | Recipients of two awards each. Slugs are inconsistent. | Keep. Future pages follow one slug pattern (§4). `/michael-carey-contributions/` says "Information missing!", so fill it in or redirect it to the Contributions award page. | decide |
 | `/sigmod-awards/citations/2004-…-test-of-time-award` · `…-2` (also 2006 and `…-2`) | Two different winning papers in the same year. Not duplicates, but the `-2` slugs are WordPress artifacts. | Keep the URLs. On the Test-of-Time page, list both papers under the year. | keep |
 | `/sigmods-position-on-racism/` · `/sigmod-executive-committee-position-on-racism/` | Two different statements (the 2020 joint statement, and the EC position with DBCares). | Keep both, but group them under Policies with a short intro. | proposed |
-| `/call-for-nominations-2022-acm-sigmod-awards/` (page) and calls 2016–2021 (posts) | 74–92% the same text every year. | One standing "Nominate" section on each award page. Keep the old calls as news, but make the page a redirect to `/sigmod-awards/`. | proposed |
+| `/call-for-nominations-2022-acm-sigmod-awards/` (page) and calls 2016–2021 (posts) | 74–92% the same text every year. | Replaced by the standing [Ongoing Call-for-Awards](/sigmod-awards/ongoing-awards-call/) page (continuous nominations, February 1 cut-off). Keep the old calls as news; redirect the 2022 page to the ongoing call. | proposed (redirect) |
 | `/2025-sigmod-awards/`, `/2024-…`, `/2023-…`, `/2022-sigmod-awards/` (posts) vs the per-award tables | Each yearly post repeats rows that are also in every award table. | Generate the yearly summary from award data. Keep the posts as short news items that link to the award pages. | decide |
 
 ## 3. Empty, placeholder or broken pages
@@ -89,7 +97,7 @@ into the kept page by hand, then redirect the other one.
 | `/sigmod-awards/committees/` | Empty parent page. | Redirect to `/sigmod-awards/committees/sigmod-awards-committee/`. | proposed |
 | `/software/pdf/` · `/software/pdf/sigmod-freedb-letter-pdf/` | Empty parent page, and an attachment page for a 6 KB PDF. | Removed with the rest of `/software/`. | done |
 | `/sigmod-awards/people/michael-carey-contributions/` | "Information missing!" | Fill in the citation or redirect it (see §2). | decide |
-| `/sigmod-history/sigmod-logo-history/` | One image and one sentence. | Merge into `/about-sigmod/sigmod-logo-renderings/` as a "History" section, then redirect. | proposed |
+| `/sigmod-history/sigmod-logo-history/` · `/about-sigmod/sigmod-logo-renderings/` | History, renderings and usage of the logo. | Merged the other way: the logo history page holds everything, and the renderings page redirects to its `#using-the-logo` section. | done |
 | `/sigmod-awards/committees/systems-awards-committee/` | Last edited in 2019. The Systems Award is now chosen by the SIGMOD Awards Committee, as the award page says. | Redirect to the SIGMOD Awards Committee page. | decide |
 
 ## 4. Award pages with no consistent home
@@ -117,13 +125,13 @@ Proposal (**decide**):
 
 | Pages | Notes | Proposal | Status |
 |---|---|---|---|
-| `/publications/interview/*` (66 stubs) + `/publications/interview/` | Each stub has one link to a Flash video (`.flv`) on the old server. Browsers no longer play these. | One gallery page with photo, name, year, and links to the transcript PDF and audio. Each old URL redirects to its anchor on that page. Convert the videos to mp4 or link to ACM DL copies. | decide |
-| `/conferences/sigmod-1974/` … `/sigmod-2001/` (26) | Per-year proceedings pages. Mostly links to the DBLP mirror. | Keep them for now, linked from `/conferences/`. Later, point their links to dblp.org instead of the local mirror. | keep |
+| `/publications/interview/*` (66 pages) + `/publications/interview/` | Each page has one link to a Flash video (`.flv`); the video and audio files (8.4 GB) are not online. | Moved to the [SIGMOD Archive](https://sigmod-org.github.io/archive/publications/interview/) at the same paths; old URLs redirect or are forwarded. Still to decide: host the media as MP4 (ACM DL, YouTube, bucket) or drop the links. A single gallery page is optional. | done (media: decide) |
+| `/conferences/sigmod-1974/` … `/sigmod-2001/` (26) | Per-year proceedings pages. | Keep for now, linked from `/conferences/`. Later, fold them into the Conferences page as anchors (MIGRATION.md, next steps). | keep |
 | `/software/`, `/software/commerical/`, `/software/nonprofit/`, `/software/index-of-publically-available-database-software/` | Software lists from 2015, no longer maintained. | Removed entirely (listed in `migration/removed.json`). `/freepublic-domain-software/` and the freedb letter PDF were removed too. | done |
-| `/publications/sigmod-digital-symposium-collection/` | DiSC, ended 2011. | Archive section. | keep |
+| `/publications/sigmod-digital-symposium-collection/` | DiSC, ended 2011. | Moved to the [SIGMOD Archive](https://sigmod-org.github.io/archive/publications/discs/); this URL redirects there. | done |
 | `/sigmod-history/sigmod-online/` | History of the website. | Keep under History. | keep |
 | `/pods-home/pods-30th-anniversary-statistics/` | Last edited 2015. | Merge into `/pods-home/pods-30th-anniversary/`, then redirect. Ask the PODS EC. | decide |
-| `/membership/` | Last edited 2018. Fees and links may be stale. | Review with ACM. | decide |
+| `/membership/` | Last edited 2018. | Reviewed November 2026: 2025 membership numbers, ACM's SIGMOD statistics link, current proceedings and PACMMOD links, student travel grants, all awards; outdated items removed. Re-check the numbers yearly. | done |
 
 ## 6. Content kept in two places (risk of inconsistency)
 
@@ -136,3 +144,15 @@ places. Move each into one data file.
 | Conference list | `/conferences/`, home page, PODS organization table | `src/_data/conferences.json` (exists) |
 | Award winners | per-award tables, recipient pages, yearly award posts, home page | `src/_data/awards/*.yml` |
 | PODS awards | `/pods-home/pods-best-paper-awards/`, `/pods-home/acm-pods-alberto-o-mendelzon-test-of-time-award/`, SIGMOD news posts (`/pods-2020-best-paper-award/`, `/2020-pods-alberto-mendelzon-test-of-time-award/`) | `src/_data/awards/pods-*.yml` |
+
+## 7. Link health
+
+Broken links are tracked by the link reports (MIGRATION.md, *Link health*).
+Open items as of November 2026:
+
+| What | Where | Proposal | Status |
+|---|---|---|---|
+| 7 links to upload images missing since the old site (Jim Gray dissertation honorable mentions 2013–2015, Jennifer Widom's 2015 portrait) | award citation pages, Widom news item | Find a copy (Wayback, the people themselves) or drop the images | decide |
+| Old conference websites that no longer exist (2000, 2002–2005, 2007, 2009, 2011, 2021) | `/conferences/`, Best Paper page | Link the mirror.sigmod.org copy or a Wayback copy instead | proposed |
+| Moved personal and tutorial pages (Miller, Freire, Milo, Arenas, Tick, Hull, Egenhofer, Martens) | dissertation award, PODS pages | Update to current addresses or drop | proposed |
+| Dead services (pubzone.org, the Michigan digital review) | `/publications/` | Drop with the Publications merge | proposed |

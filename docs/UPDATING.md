@@ -39,6 +39,11 @@ Tips:
   was fine and GitHub's file sync was slow. Re-run only the failed job
   (*Re-run failed jobs* on the run page, or `gh run rerun <id> --failed`), or
   simply push the next change.
+- **Check links** after larger edits:
+  `npm run build && node scripts/scan-site-links.mjs` reports any broken link
+  within the site (it should say "0 broken targets"). The full check, including
+  external links and the browsable report `docs/old-site-links.html`, is in
+  [MIGRATION.md](MIGRATION.md#link-health).
 
 ## Rules that apply everywhere
 

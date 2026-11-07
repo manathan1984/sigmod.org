@@ -1,0 +1,90 @@
+{
+  "note": "Pages whose text overlaps heavily (5-word shingles; similarity = shared / all, contained = shared / smaller page), reviewed by hand. Redirect stubs are left out.",
+  "groups": [
+    {
+      "verdict": "Merge candidate",
+      "title": "Jim Gray Doctoral Dissertation Award: process pages",
+      "why": "Three pages describe the same nomination process (2015 and 2017 versions, 65–79% the same text), next to the award page itself.",
+      "suggestion": "Keep /sigmod-awards/sigmod-jim-gray-doctoral-dissertation-award/ with a 'Process' section and the current call. Redirect the 2015 and 2017 process pages to it.",
+      "pages": [
+        "/sigmod-awards/sigmod-jim-gray-doctoral-dissertation-award/",
+        "/sigmod-awards/doctoral-dissertation-award/",
+        "/sigmod-awards/2017-doctoral-dissertation-award/",
+        "/sigmod-awards/the-sigmod-jim-gray-doctoral-dissertation-award/"
+      ],
+      "pairs": [
+        ["/sigmod-awards/the-sigmod-jim-gray-doctoral-dissertation-award/", "/sigmod-awards/2017-doctoral-dissertation-award/", 0.65, 0.79],
+        ["/sigmod-awards/2017-doctoral-dissertation-award/", "/sigmod-awards/doctoral-dissertation-award/", 0.51, 0.73]
+      ]
+    },
+    {
+      "verdict": "Merge candidate",
+      "title": "Calls for nominations, copied every year",
+      "why": "The 2016–2022 calls repeat 60–94% of the same text. They are dated announcements, so they are not wrong, but a reader can land on an old call.",
+      "suggestion": "Keep them as dated news, and add a line at the top of each pointing to the current call on /sigmod-awards/. Or redirect the older ones to /sigmod-awards/.",
+      "pages": [
+        "/call-for-nominations-2022-acm-sigmod-awards/",
+        "/call-for-nominations-2021-acm-sigmod-awards/",
+        "/call-for-nominations-2020-acm-sigmod-awards/",
+        "/call-for-nominations-2019-acm-sigmod-innovations-and-contributions-award/",
+        "/call-for-nominations-2018-acm-sigmod-innovations-contributions-test-of-time-awards/",
+        "/2017-acm-sigmod-awards-call-for-nominations/",
+        "/call-for-nominations-2016-acm-sigmod-innovations-and-contributions-awards/"
+      ],
+      "pairs": [
+        ["/call-for-nominations-2021-acm-sigmod-awards/", "/call-for-nominations-2020-acm-sigmod-awards/", 0.85, 0.94],
+        ["/call-for-nominations-2019-acm-sigmod-innovations-and-contributions-award/", "/call-for-nominations-2018-acm-sigmod-innovations-contributions-test-of-time-awards/", 0.84, 0.92],
+        ["/call-for-nominations-2021-acm-sigmod-awards/", "/call-for-nominations-2022-acm-sigmod-awards/", 0.83, 0.91],
+        ["/call-for-nominations-2020-acm-sigmod-awards/", "/call-for-nominations-2022-acm-sigmod-awards/", 0.79, 0.90],
+        ["/call-for-nominations-2016-acm-sigmod-innovations-and-contributions-awards/", "/call-for-nominations-2018-acm-sigmod-innovations-contributions-test-of-time-awards/", 0.62, 0.78],
+        ["/call-for-nominations-2016-acm-sigmod-innovations-and-contributions-awards/", "/call-for-nominations-2019-acm-sigmod-innovations-and-contributions-award/", 0.61, 0.78],
+        ["/call-for-nominations-2018-acm-sigmod-innovations-contributions-test-of-time-awards/", "/2017-acm-sigmod-awards-call-for-nominations/", 0.61, 0.76],
+        ["/call-for-nominations-2019-acm-sigmod-innovations-and-contributions-award/", "/2017-acm-sigmod-awards-call-for-nominations/", 0.60, 0.76]
+      ]
+    },
+    {
+      "verdict": "Merge candidate",
+      "title": "Two 'Publications' pages",
+      "why": "Same title. /publications/ is an old link list (dead portal.acm.org links, PubZone, Digital Review); /publications/publications/ is the current hub the menu used.",
+      "suggestion": "Keep /publications/publications/, move any still-useful links from /publications/ into it, and redirect /publications/ there.",
+      "pages": ["/publications/publications/", "/publications/"],
+      "pairs": []
+    },
+    {
+      "verdict": "Expected overlap",
+      "title": "Yearly award announcements repeat the award pages",
+      "why": "The yearly news post quotes the citation that is also on the award page. This is by design.",
+      "suggestion": "No change.",
+      "pages": ["/2023-sigmod-awards/", "/2023-sigmod-systems-award/", "/sigmod-awards/sigmod-systems-award/", "/2021-sigmod-awards-announcement/", "/2021-sigmod-test-of-time-award/"],
+      "pairs": [
+        ["/2023-sigmod-awards/", "/2023-sigmod-systems-award/", 0.54, 0.89],
+        ["/sigmod-awards/sigmod-systems-award/", "/2023-sigmod-systems-award/", 0.21, 0.82],
+        ["/2021-sigmod-awards-announcement/", "/2021-sigmod-test-of-time-award/", 0.23, 0.81]
+      ]
+    },
+    {
+      "verdict": "Expected overlap",
+      "title": "Samuel Madden's biography on two award pages",
+      "why": "His 2016 Contributions Award page and the 2017 Test of Time page (he is a co-author) carry the same biography.",
+      "suggestion": "No change.",
+      "pages": ["/sigmod-awards/people/samuel-madden-2016-sigmod-contributions-award/", "/sigmod-awards/citations/2017-sigmod-test-of-time-award/"],
+      "pairs": [["/sigmod-awards/people/samuel-madden-2016-sigmod-contributions-award/", "/sigmod-awards/citations/2017-sigmod-test-of-time-award/", 0.23, 0.85]]
+    },
+    {
+      "verdict": "Not duplicates",
+      "title": "Same title, different pages",
+      "why": "The 2004 and 2006 Test of Time pages with a '-2' address are a second winning paper in the same year. The two 'Committees' pages are SIGMOD's committees and the (empty) awards-committees parent page.",
+      "suggestion": "No change. The empty /sigmod-awards/committees/ page could link to the award committee pages.",
+      "pages": ["/sigmod-awards/citations/2004-sigmod-test-of-time-award/", "/sigmod-awards/citations/2004-sigmod-test-of-time-award-2/", "/sigmod-awards/citations/2006-sigmod-test-of-time-award/", "/sigmod-awards/citations/2006-sigmod-test-of-time-award-2/", "/about-sigmod/committees/", "/sigmod-awards/committees/"],
+      "pairs": []
+    },
+    {
+      "verdict": "Merged",
+      "title": "SIGMOD Anthology",
+      "why": "/publications/anthology/ and /publications/anthologyhome/ had the same content (87% of the text). anthologyhome had the newer links (2019); anthology had the paragraph on the editors.",
+      "suggestion": "Done: /publications/anthology/ has the 2019 content plus the editors paragraph; /publications/anthologyhome/ redirects to it.",
+      "pages": ["/publications/anthology/", "/publications/anthologyhome/"],
+      "pairs": []
+    }
+  ]
+}

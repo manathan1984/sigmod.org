@@ -1,0 +1,221 @@
+<meta charset="utf-8">
+<title>SIGMOD Site Link Check</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap">
+<style>
+/* Layout: one reading column; a sticky filter bar; each issue group is a section of page rows that expand to their links. */
+:root {
+  --bg: #f7f8fb; --surface: #ffffff; --ink: #141a2b; --body: #3b4256; --muted: #6a7187; --line: #dde1ea;
+  --accent: #1f4fa3; --accent-soft: #e8eefa; --warn: #9a5b00; --warn-soft: #fdf1dc; --ok: #1d7a46; --ok-soft: #e3f4ea; --bad: #b3261e; --bad-soft: #fbe9e7;
+  --sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #10141f; --surface: #171c2a; --ink: #eef1f8; --body: #c6cbda; --muted: #8f96ab; --line: #2a3146;
+  --accent: #8fb0ff; --accent-soft: #1d2843; --warn: #f0b35a; --warn-soft: #33270f; --ok: #6fd39b; --ok-soft: #12301f; --bad: #ff8a80; --bad-soft: #3a1a18; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #10141f; --surface: #171c2a; --ink: #eef1f8; --body: #c6cbda; --muted: #8f96ab; --line: #2a3146;
+  --accent: #8fb0ff; --accent-soft: #1d2843; --warn: #f0b35a; --warn-soft: #33270f; --ok: #6fd39b; --ok-soft: #12301f; --bad: #ff8a80; --bad-soft: #3a1a18; color-scheme: dark }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--body); font: 15px/1.55 var(--sans); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+.wrap { max-width: 980px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+header { padding-block: 36px 20px; }
+h1 { font: 600 2rem/1.15 var(--serif); color: var(--ink); margin: 0 0 10px; text-wrap: balance; }
+.lead { max-width: 65ch; margin: 0; }
+.meta { color: var(--muted); font-size: .85rem; margin-top: 8px; }
+
+.summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 8px; margin-top: 22px; }
+.chip { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; text-align: left; font: inherit; color: var(--body); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 9px 12px; cursor: pointer; }
+.chip:hover { border-color: var(--accent); }
+.chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--ink); }
+.chip b { font: 500 .95rem var(--mono); color: var(--ink); font-variant-numeric: tabular-nums; }
+.chip.kept { color: var(--muted); }
+
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+.bar .wrap { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; padding-block: 10px; }
+.bar input[type="search"] { flex: 1 1 260px; min-width: 0; font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 7px 10px; }
+.bar label { display: flex; gap: 6px; align-items: center; font-size: .9rem; white-space: nowrap; }
+.progress { font-size: .9rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.progress b { color: var(--ink); }
+
+main { padding-block: 8px 60px; }
+section { margin-top: 30px; }
+section h2 { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; font: 600 1.25rem/1.3 var(--serif); color: var(--ink); margin: 0 0 4px; }
+.count { font: 500 .8rem var(--mono); color: var(--muted); }
+.decide { margin: 0 0 12px; max-width: 70ch; }
+.tag { font: 600 .7rem var(--sans); text-transform: uppercase; letter-spacing: .07em; padding: 2px 7px; border-radius: 4px; background: var(--warn-soft); color: var(--warn); }
+.tag.kept { background: var(--ok-soft); color: var(--ok); }
+
+.pages { display: grid; gap: 6px; }
+.row { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.row.done { opacity: .6; }
+.row-head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px 12px; align-items: start; padding: 10px 12px; }
+.row-head input { margin-top: 4px; width: 16px; height: 16px; accent-color: var(--accent); }
+.ptitle { color: var(--ink); font-weight: 500; overflow-wrap: anywhere; }
+.ppath { font: .8rem var(--mono); color: var(--muted); overflow-wrap: anywhere; }
+.plinks { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .88rem; margin-top: 3px; }
+.n { font: 500 .8rem var(--mono); color: var(--muted); white-space: nowrap; padding-top: 3px; font-variant-numeric: tabular-nums; }
+details { border-top: 1px solid var(--line); }
+summary { cursor: pointer; padding: 7px 12px 7px 40px; font-size: .88rem; color: var(--muted); }
+summary:hover { color: var(--accent); }
+.fix { margin: 0 12px 8px 40px; font-size: .9rem; }
+.tablewrap { overflow-x: auto; padding: 0 12px 10px 40px; }
+table { border-collapse: collapse; width: 100%; font-size: .85rem; }
+th { text-align: left; font: 600 .7rem var(--sans); text-transform: uppercase; letter-spacing: .07em; color: var(--muted); padding: 6px 8px 4px 0; border-bottom: 1px solid var(--line); }
+td { padding: 5px 8px 5px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.line { font: .8rem var(--mono); color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+td.url { font: .8rem var(--mono); overflow-wrap: anywhere; min-width: 18ch; }
+.st { display: inline-block; font-size: .75rem; padding: 1px 6px; border-radius: 4px; white-space: nowrap; background: var(--bad-soft); color: var(--bad); }
+.st.live { background: var(--ok-soft); color: var(--ok); }
+.st.na { background: var(--accent-soft); color: var(--muted); }
+.empty { color: var(--muted); padding: 20px 0; }
+@media (max-width: 560px) { h1 { font-size: 1.6rem; } summary, .fix, .tablewrap { padding-left: 12px; margin-left: 12px; } .tablewrap { margin-left: 0; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="wrap">
+  <h1>SIGMOD site link check</h1>
+  <p class="lead" id="lead"></p>
+  <p class="meta" id="meta"></p>
+  <div class="summary" id="summary"></div>
+</header>
+<div class="bar"><div class="wrap">
+  <input type="search" id="q" placeholder="Filter by page, file or link" aria-label="Filter by page, file or link">
+  <label><input type="checkbox" id="hide"> Hide checked pages</label>
+  <span class="progress" id="progress"></span>
+</div></div>
+<main class="wrap"><div id="list"></div><div id="dups"></div><p class="meta" id="extnote"></p></main>
+
+<script>
+const DATA = /*DATA*/null;
+const KEY = "old-sigmod-links-checked";
+let checked = {};
+try { checked = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(checked)); } catch (e) {} };
+let only = null;
+
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const status = (s) => {
+  const cls = /^live|^200/.test(s) ? "live" : /not checked|n\/a/.test(s) ? "na" : "";
+  return `<span class="st ${cls}">${esc(s || "unknown")}</span>`;
+};
+const open = DATA.groups.filter((g) => !g.kept && !g.archive);
+const openPages = open.flatMap((g) => g.pages.map((p) => g.id + " " + p.page))
+  .concat(DATA.duplicates.filter((d) => d.verdict === "Merge candidate").map((d) => "dup " + d.title));
+
+const extCount = DATA.groups.filter((g) => g.external && !g.archive).reduce((n, g) => n + g.count, 0);
+document.getElementById("lead").textContent =
+  `${DATA.open} links to sigmod.org addresses are broken: sigmod.org now serves the new site, which does not have these files or pages. ` +
+  `${extCount} links to other sites are broken or did not answer, and ${DATA.duplicates.filter((d) => d.verdict === "Merge candidate").length} groups of pages look like duplicates. ` +
+  (DATA.archive ? `Another ${DATA.archive} broken links are inside old pages copied as-is (DiSC, Anthology, DBLP); select their groups above to list them. ` : "") +
+  `Each page links to its old version on www-old.sigmod.org (for comparison only: fixes must not depend on it) and to the new site. Tick a page once you have checked it.`;
+document.getElementById("meta").textContent = `Generated ${DATA.generated}` + (DATA.external ? `; external links checked ${DATA.external.checked}` : "") + `. Ticks are saved in this browser only.`;
+if (DATA.external) {
+  const u = DATA.external.unverified.map(([h, n]) => `${h} (${n})`).join(", ");
+  document.getElementById("extnote").textContent = `External links: ${DATA.external.total} checked. ${DATA.external.counts.ok || 0} work. ` +
+    `${DATA.external.counts.unverified || 0} could not be checked because the site blocks automated requests: ${u}. Open a few of these by hand.`;
+}
+
+document.getElementById("summary").innerHTML = DATA.groups.map((g) =>
+  `<button class="chip${g.kept ? " kept" : ""}" data-g="${g.id}" aria-pressed="false"><span>${esc(g.title)}</span><b>${g.count}</b></button>`).join("") +
+  (DATA.duplicates.length ? `<button class="chip" data-g="dups" aria-pressed="false"><span>Likely duplicate pages</span><b>${DATA.duplicates.length}</b></button>` : "");
+document.getElementById("summary").addEventListener("click", (e) => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  only = only === b.dataset.g ? null : b.dataset.g;
+  document.querySelectorAll(".chip").forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.g === only)));
+  render();
+});
+
+document.getElementById("list").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-show]"); if (!b) return;
+  only = b.dataset.show;
+  document.querySelectorAll(".chip[data-g]").forEach((c) => c.setAttribute("aria-pressed", String(c.dataset.g === only)));
+  render(); window.scrollTo(0, 0);
+});
+
+function renderDups(q) {
+  const el = document.getElementById("dups");
+  if (!DATA.duplicates.length || (only && only !== "dups")) { el.innerHTML = ""; return; }
+  let h = `<section id="dups"><h2>Likely duplicate pages <span class="count">${DATA.duplicates.length} groups</span></h2>` +
+    `<p class="decide">Pages whose text overlaps heavily, reviewed one by one. “Merge candidate” groups need a decision; the others are listed so you can confirm them.</p><div class="pages">`;
+  for (const d of DATA.duplicates) {
+    const pages = d.pages.filter((p) => !q || (d.title + " " + p.title + " " + p.page).toLowerCase().includes(q));
+    if (!pages.length) continue;
+    const k = "dup " + d.title;
+    const kept = d.verdict !== "Merge candidate";
+    h += `<div class="row${checked[k] ? " done" : ""}"><div class="row-head">` +
+      `<input type="checkbox" data-k="${esc(k)}" ${checked[k] ? "checked" : ""} aria-label="Checked ${esc(d.title)}">` +
+      `<div><div class="ptitle">${esc(d.title)} <span class="tag${kept ? " kept" : ""}">${esc(d.verdict)}</span></div>` +
+      `<p class="fix" style="margin:4px 0 0">${esc(d.why)}</p><p class="fix" style="margin:4px 0 0"><b>Suggestion:</b> ${esc(d.suggestion)}</p></div>` +
+      `<span class="n">${d.pages.length} pages</span></div>` +
+      `<details open><summary>Pages</summary><div class="tablewrap"><table><thead><tr><th>Page</th><th>Compare</th></tr></thead><tbody>` +
+      pages.map((p) => `<tr><td>${esc(p.title)}<div class="ppath">${esc(p.page)}</div></td><td class="plinks" style="margin:0">` +
+        `<a href="${esc(p.current)}" target="_blank" rel="noopener">Old ↗</a> <a href="${esc(p.new)}" target="_blank" rel="noopener">New ↗</a>` +
+        (p.source ? ` <a href="${esc(p.source)}" target="_blank" rel="noopener">Source ↗</a>` : "") + `</td></tr>`).join("") +
+      `</tbody></table></div></details></div>`;
+  }
+  el.innerHTML = h + `</div></section>`;
+}
+function render() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const hide = document.getElementById("hide").checked;
+  let html = "";
+  for (const g of DATA.groups) {
+    if (only && g.id !== only) continue;
+    if (g.archive && only !== g.id && !q) {  // thousands of copied pages: list them only on request
+      html += `<section id="${g.id}"><h2>${esc(g.title)} <span class="count">${g.count} link${g.count === 1 ? "" : "s"} · ${g.pages.length} page${g.pages.length === 1 ? "" : "s"}</span>` +
+        `<span class="tag kept">Copies</span></h2><p class="decide">${esc(g.decide)}</p>` +
+        `<p class="decide"><button class="chip" data-show="${g.id}">List these ${g.pages.length} pages</button></p></section>`;
+      continue;
+    }
+    const pages = g.pages.filter((p) => {
+      const k = g.id + " " + p.page;
+      if (hide && checked[k]) return false;
+      if (!q) return true;
+      return (p.title + " " + p.page + " " + p.file + " " + p.links.map((l) => l.url).join(" ")).toLowerCase().includes(q);
+    });
+    if (!pages.length) continue;
+    html += `<section id="${g.id}"><h2>${esc(g.title)} <span class="count">${g.count} link${g.count === 1 ? "" : "s"} · ${g.pages.length} page${g.pages.length === 1 ? "" : "s"}</span>` +
+      `<span class="tag${g.kept ? " kept" : ""}">${g.kept ? "Keep" : "Decide"}</span></h2><p class="decide">${esc(g.decide)}</p><div class="pages">`;
+    for (const p of pages) {
+      const k = g.id + " " + p.page;
+      const fixes = [...new Set(p.links.map((l) => l.fix))];
+      const sameFix = fixes.length === 1;
+      html += `<div class="row${checked[k] ? " done" : ""}"><div class="row-head">` +
+        `<input type="checkbox" data-k="${esc(k)}" ${checked[k] ? "checked" : ""} aria-label="Checked ${esc(p.title)}">` +
+        `<div><div class="ptitle">${esc(p.title)}</div><div class="ppath">${esc(p.page)}</div>` +
+        `<div class="plinks"><a href="${esc(p.current)}" target="_blank" rel="noopener">Old site ↗</a>` +
+        `<a href="${esc(p.new)}" target="_blank" rel="noopener">New site ↗</a>` +
+        `<a href="${esc(p.source)}" target="_blank" rel="noopener">Source file ↗</a></div></div>` +
+        `<span class="n">${p.links.length} link${p.links.length === 1 ? "" : "s"}</span></div>` +
+        `<details${p.links.length <= 3 ? " open" : ""}><summary>${p.links.length === 1 ? "Show the link" : "Show the " + p.links.length + " links"}</summary>` +
+        (sameFix && fixes[0] ? `<p class="fix">${esc(fixes[0])}</p>` : "") +
+        `<div class="tablewrap"><table><thead><tr><th>Line</th><th>Link</th><th>Status</th>${sameFix ? "" : "<th>Suggestion</th>"}</tr></thead><tbody>` +
+        p.links.map((l) => `<tr><td class="line">${l.line || "–"}</td><td class="url"><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.url.replace(/^https?:\/\//, ""))}</a></td>` +
+          `<td>${status(l.status)}</td>${sameFix ? "" : `<td>${esc(l.fix)}</td>`}</tr>`).join("") +
+        `</tbody></table></div></details></div>`;
+    }
+    html += `</div></section>`;
+  }
+  renderDups(q);
+  document.getElementById("list").innerHTML = html || (only === "dups" ? "" : `<p class="empty">No pages match. Clear the filter to see them all.</p>`);
+  const done = openPages.filter((k) => checked[k]).length;
+  document.getElementById("progress").innerHTML = `<b>${done}</b> of ${openPages.length} items checked`;
+}
+document.querySelector("main").addEventListener("change", (e) => {
+  const k = e.target.dataset.k; if (!k) return;
+  if (e.target.checked) checked[k] = true; else delete checked[k];
+  save(); render();
+});
+document.getElementById("q").addEventListener("input", render);
+document.getElementById("hide").addEventListener("change", render);
+render();
+</script>
