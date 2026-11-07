@@ -23,7 +23,7 @@ The [SIGMOD Conference](/conferences/ "About SIGMOD") started in [1975](/confere
     3.  [1998 Jim Gray](http://amturing.acm.org/award_winners/gray_3649936.cfm)  ([ACM Author Profile](http://portal.acm.org/author_page.cfm?id=81100403088))
     4.  [2015 Michael Stonebraker](http://amturing.acm.org/award_winners/stonebraker_1172121.cfm) ([ACM Author Profile](http://dl.acm.org/author_page.cfm?id=81337493529))
 
--   [Distinguished Profiles](/publications/interview/ "Interview Page")
+-   [Distinguished Profiles](https://sigmod-org.github.io/archive/publications/interview/ "Interview Page")
 -   [PC Chairs of previous SIGMOD Conferences](/sigmod-history/program-chair/)
 -   [PC Chairs of previous PODS Conferences](/pods-home/pods-organization/ "PODS Organization")
 -   [Previous SIGMOD/PODS Conferences](/conferences/ "Conferences")

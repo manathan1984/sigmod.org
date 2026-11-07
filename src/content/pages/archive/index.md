@@ -14,4 +14,4 @@ the *Anthology*, and a look back to past publications (and publications not in 
 
 -   [SIGMOD Digital Symposium Collection (DiSC)](https://sigmod-org.github.io/archive/publications/discs/) (ended in 2011)
 -   [Anthology](https://sigmod-org.github.io/archive/publications/anthology/) (ended in 2007)
--   [Distinguished Profiles](/publications/interview/) (ended 2010)
+-   [Distinguished Profiles](https://sigmod-org.github.io/archive/publications/interview/) (ended 2010)

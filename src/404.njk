@@ -8,7 +8,7 @@ eleventyExcludeFromCollections: true
 <p>Try the <a href="/">home page</a>, the <a href="/news/">news</a>, or the menus above.</p>
 {#- Old addresses of the past conference copies (/publications/pastconf/sigmodYYYY/…)
     now live on mirror.sigmod.org: send the reader to the same file there, or to the copy's start page.
-    DiSC, Anthology and DBLP DVD pages (/publications/discs|anthology|dblp/…) go to the same path on the SIGMOD Archive. -#}
+    DiSC, Anthology, DBLP DVD and Distinguished Profiles pages (/publications/discs|anthology|dblp|interview|interviews/…) go to the same path on the SIGMOD Archive. -#}
 <p id="archive-note" hidden>This page is now in the <a id="archive-link" href="https://sigmod-org.github.io/archive/">SIGMOD Archive</a>.</p>
 <p id="mirror-note" hidden>This is an archived conference website. It is now at <a id="mirror-link" href="https://mirror.sigmod.org/">mirror.sigmod.org</a>.</p>
 <script>
@@ -18,8 +18,8 @@ eleventyExcludeFromCollections: true
     (c.links || []).forEach(function (l) { if (l.label === "Local Mirror") starts["sigmod" + c.year] = l.url; });
   });
   var p = location.pathname, m, folder, rest;
-  // DiSC, the Anthology and the DBLP DVD pages moved to the SIGMOD Archive, at the same paths
-  if (/^\/publications\/(discs|anthology|dblp)(\/|$)/i.test(p)) {
+  // DiSC, the Anthology, the DBLP DVD pages and Distinguished Profiles moved to the SIGMOD Archive, at the same paths
+  if (/^\/publications\/(discs|anthology|dblp|interviews?)(\/|$)/i.test(p)) {
     var arch = "https://sigmod-org.github.io/archive" + p + location.hash;
     document.getElementById("archive-link").href = arch;
     document.getElementById("archive-note").hidden = false;
